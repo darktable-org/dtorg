@@ -18,3 +18,17 @@ Content for the front page by priority at the moment:
 ## News/Blog
 
 These are two distinct things, possibly merge them but get a consensus from the dt team what they want.
+
+
+## Tools
+
+Pelican uses Python.
+This is set up using:
+
+```
+$ python --version
+Python 2.7.13
+
+$ pelican --version
+3.6.3
+```

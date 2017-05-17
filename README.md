@@ -10,9 +10,10 @@ This is a repository for testing migrating [darktable.org][] to [Pelican][].
 ## Front Page
 
 Content for the front page by priority at the moment:
-    * Project name + description
-    * Screenshots
-    * 3-4 features to highlight
+
+* Project name + description
+* Screenshots
+* 3-4 features to highlight
 
 
 ## News/Blog

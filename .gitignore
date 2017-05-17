@@ -1,0 +1,18 @@
+# Pelican site cache
+cache/
+
+# Pelican output directory
+output/
+
+# Pelican PID files
+/pelican.pid
+/srv.pid
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Vim swap files
+*.swp
+

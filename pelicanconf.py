@@ -8,6 +8,8 @@ SITEURL = ''
 
 PATH = 'content'
 
+THEME = 'theme/dt.org'
+
 TIMEZONE = 'Etc/UTC'
 
 DEFAULT_LANG = u'en'
@@ -33,3 +35,8 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['summary']
+
+TYPOGRIFY = True

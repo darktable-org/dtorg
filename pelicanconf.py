@@ -8,7 +8,8 @@ SITEURL = ''
 
 PATH = 'content'
 
-THEME = 'theme/dt.org'
+#THEME = 'theme/dt.org'
+THEME = 'theme/patdavid'
 
 TIMEZONE = 'Etc/UTC'
 
@@ -31,12 +32,47 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 10
-
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['summary']
 
+# Use pretty type options in output
 TYPOGRIFY = True
+
+# Path for site content and various URL/SAVE_AS options
+# Reminder: "page" is static content like "about", "features"
+#           "article" is timely content, "blog" or "news" posts
+PATH = 'content'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
+
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
+
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS = '{slug}/index.html'
+
+DRAFT_URL = 'drafts/{slug}/'
+DRAFT_SAVE_AS = 'drafts/{slug}/index.html'
+
+TAG_URL = 'tag/{slug}/'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
+
+AUTHOR_URL = 'author/{slug}/'
+AUTHOR_SAVE_AS = 'author/{slug}/index.html'
+
+MENUITEMS = (
+        ('News', '/news/'),
+        ('Blog', '/blog/')
+    )
+
+
+# Pagination options for list pages
+DEFAULT_ORPHANS = 3
+DEFAULT_PAGINATION = 5
+PAGINATION_PATTERNS = (
+        (1, '{base_name}/', '{base_name}/index.html'),
+        (2, '{base_name}/{number}/', '{base_name}/{number}/index.html')
+        )

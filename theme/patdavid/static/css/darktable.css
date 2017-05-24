@@ -1,0 +1,21 @@
+#menu {
+    text-align: right;
+    background-color: #202020;
+    height: 50px;
+    line-height: 50px;
+}
+
+#menu ul {
+    margin: 0;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 2.5rem;
+    letter-spacing: 0.05rem;
+}
+
+#menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}

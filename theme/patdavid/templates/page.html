@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+
+<title>{% block title %}{{ page.title |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
+
+
+{% endblock head %}
+
+{% block content %}
+
+    <div class='container title'>
+        <div class='row'>
+            <div class='column'>
+                {% block data %}
+                {{ page.content }}
+                {% endblock data %}
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -5,12 +5,26 @@
 
 <title>{% block title %}{{ page.title |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
 
-
 {% endblock head %}
+
+
+{% block header %}
+    <section class='lede'>
+        <img class='lede-img' src='/theme/images/lede-about.jpg'>
+    </section>
+{% endblock header %}
 
 {% block content %}
 
     <div class='container title'>
+        <div class='row'>
+            <div class='column'>
+                {{ page.title |striptags|lower }}
+            </div>
+        </div>
+    </div>
+
+    <div class='container content'>
         <div class='row'>
             <div class='column'>
                 {% block data %}

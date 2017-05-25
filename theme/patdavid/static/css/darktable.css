@@ -1,5 +1,5 @@
 html {
-    font: 100%/1.6 "Open Sans Light", sans-serif;
+    font: 100%/1.6 "Open Sans", sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
@@ -70,5 +70,5 @@ body {
 }
 .container.content {
     background-color: #fcfcfc;
-    padding: 3rem;
+    padding: 3rem 5rem;
 }

@@ -310,11 +310,11 @@ li {
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
+code, pre {
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 90%;
-  white-space: nowrap;
+  white-space: pre-wrap;
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
   border-radius: 4px; }

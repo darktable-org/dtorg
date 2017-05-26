@@ -1,3 +1,5 @@
+/* Initial stuff
+ * ------------- */
 html {
     font: 100%/1.6 "Open Sans", sans-serif;
     font-weight: 400;
@@ -60,15 +62,54 @@ body {
 ============== */
 
 .container.title {
+    z-index: 1;
+}
+.container.title h1 {
     text-align: right;
     font-size: 3rem;
     color: #ecf0f1;
     line-height: 0.9;
-    margin-top: 1rem;
-    z-index: 1;
+    margin: 1rem 0 0 0;
     text-shadow: 0 0 2px #202020;
 }
 .container.content {
     background-color: #fcfcfc;
+}
+
+/* Page styling
+ * ============
+ */
+.page .content {
     padding: 3rem 5rem;
+}
+
+
+
+/* Styling for category list pages
+ * so, /blog/ and /news/ right now
+ * ===============================
+ */
+
+.category article {
+    margin-top: 3rem;
+}
+
+article > section.content {
+    padding: 0 3rem;
+}
+
+article h1.entry-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+article h1.entry-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+article .post-info {
+    margin-bottom: 1.5rem;
+}
+article address.vcard.author {
+    display: inline;
 }

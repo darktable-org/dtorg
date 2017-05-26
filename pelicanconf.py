@@ -68,9 +68,12 @@ MENUITEMS = (
         ('Blog', '/blog/')
     )
 
+DIRECT_TEMPLATES = ['category']
+PAGINATED_DIRECT_TEMPLATES = ['index', 'category']
+
 
 # Pagination options for list pages
-DEFAULT_ORPHANS = 3
+DEFAULT_ORPHANS = 0
 DEFAULT_PAGINATION = 5
 PAGINATION_PATTERNS = (
         (1, '{base_name}/', '{base_name}/index.html'),

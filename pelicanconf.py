@@ -74,7 +74,7 @@ PAGINATED_DIRECT_TEMPLATES = ['index', 'category']
 
 # Pagination options for list pages
 DEFAULT_ORPHANS = 0
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 PAGINATION_PATTERNS = (
         (1, '{base_name}/', '{base_name}/index.html'),
         (2, '{base_name}/{number}/', '{base_name}/{number}/index.html')

@@ -46,6 +46,13 @@
                     {% block data %}
                     {{ article.content }}
                     {% endblock data %}
+
+                    <small>
+                    Filed under: 
+                    {% for tag in article.tags %}
+                    <a href='/{{ tag.url }}'>{{ tag }}</a>
+                    {% endfor %}
+                    </small>
                 </div>
             </div>
         </div>

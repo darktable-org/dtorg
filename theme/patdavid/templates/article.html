@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+
+<title>{% block title %}{{ article.title |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
+
+{% endblock head %}
+
+
+{% block header %}
+    <section class='lede'>
+        <img class='lede-img' src='/theme/images/lede-about.jpg'>
+    </section>
+{% endblock header %}
+
+{% block content %}
+
+    <section class='article'>
+        <!--
+
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='article-title'>{{ article.title |striptags|lower }}</h1>
+                </div>
+            </div>
+        </div>
+        -->
+
+        <div class='container content'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='article-title'>{{ article.title |striptags|lower }}</h1>
+
+                    <div class='post-info'>
+                        posted on 
+                        <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                        <address class="vcard author">by
+                            {% for author in article.authors %}
+                            <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a> 
+                            {% endfor %}
+                        </address>
+                    </div>
+
+                    {% block data %}
+                    {{ article.content }}
+                    {% endblock data %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

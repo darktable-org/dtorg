@@ -6,13 +6,13 @@ link: http://www.darktable.org/2017/01/rawsamples-ch-replacement/
 slug: rawsamples-ch-replacement
 title: rawsamples.ch replacement
 wordpress_id: 4694
-tags: announcement, blog, community, '@andabata', '@lebedevri', '@pixlsus', foss, photography, rawsamples
+tags: announcement, blog, community, @andabata, @lebedevri, @pixlsus, foss, photography, rawsamples
 
 [Rawsamples.ch](http://rawsamples.ch) is a website with the goal to:
 
 
 
-<blockquote> …provide RAW-Files of nearly all available Digitalcameras mainly to software-developers.  [sic]</blockquote>
+> …provide RAW-Files of nearly all available Digitalcameras mainly to software-developers.  [sic]
 
 
 
@@ -40,36 +40,18 @@ In addition to browsing the archive, it would be fantastic if you're able to sup
 
 
   * Lens mounted on the camera
-
-
   * Lens cap off
-
-
   * In focus
-
-
   * With normal exposure, not underexposed and not overexposed
-
-
   * Landscape orientation
-
-
   * Licensed under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
-
-
 
 **We are _not_ looking for:**
 
 
-
-
   * Series of images with different ISO, aperture, shutter, wb, or lighting  
 (Even if it's a shot of a color target)
-
-
   * DNG files created with Adobe DNG Converter
-
-
 
 Please take a moment and see if you can provide samples to help the developers!
 

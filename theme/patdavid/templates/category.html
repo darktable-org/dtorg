@@ -32,12 +32,11 @@
                     {% for article in articles_page.object_list %}
 
                     <article>
-
                         <section class='article-lede'>
-
                         </section>
 
                         <section class='content'>
+
                             <h1 class='entry-title'>
                                 <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                                     {{ article.title }}

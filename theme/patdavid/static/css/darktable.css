@@ -106,9 +106,13 @@ article h1.entry-title a {
     text-decoration: none;
     color: inherit;
 }
+article h2 {
+    font-size: 1.4rem;
+}
 
 article .post-info {
     margin-bottom: 1.5rem;
+    font-size: 0.8rem;
 }
 article address.vcard.author {
     display: inline;

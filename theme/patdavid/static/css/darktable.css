@@ -57,6 +57,19 @@ body {
     max-width: 100%;
 }
 
+/* Headings, 1.25:1 ratio
+ * ----------------------*/
+h1 { font-size: 3.052rem; }
+h1 { font-size: 2.441rem; }
+h2 { font-size: 1.953rem; }
+h3 { font-size: 1.563rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; font-variant: small-caps;}
+
+
+.category hr {
+    max-width: 33%;
+}
 
 /* Page Title
 ============== */

@@ -68,8 +68,8 @@ MENUITEMS = (
         ('Blog', '/blog/')
     )
 
-DIRECT_TEMPLATES = ['category']
-PAGINATED_DIRECT_TEMPLATES = ['index', 'category']
+DIRECT_TEMPLATES = ['categories', 'tags']
+PAGINATED_DIRECT_TEMPLATES = ['index', 'category', 'tag']
 
 
 # Pagination options for list pages

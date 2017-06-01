@@ -76,13 +76,13 @@ body {
     background-color: #fcfcfc;
 }
 
-/* Page styling
+/* Page & article padding
  * ============
  */
-.page .content {
+.page .content,
+.article .content {
     padding: 3rem 5rem;
 }
-
 
 
 /* Styling for category list pages
@@ -98,7 +98,7 @@ article > section.content {
     padding: 0 3rem;
 }
 
-article h1.entry-title {
+article h1 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
@@ -110,10 +110,10 @@ article h2 {
     font-size: 1.4rem;
 }
 
-article .post-info {
+.post-info {
     margin-bottom: 1.5rem;
     font-size: 0.8rem;
 }
-article address.vcard.author {
+address.vcard.author {
     display: inline;
 }

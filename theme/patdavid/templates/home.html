@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}" itemscope itemtype="http://schema.org/WebSite">
+    <head>
+        {% block head %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+        <link rel="icon" href="/images/favicon.png" type="image/png" />
+
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="/theme/css/normalize.css">
+        <link rel="stylesheet" href="/theme/css/skeleton.css">
+        <link rel="stylesheet" href="/theme/css/darktable.css">
+
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+
+        {% endblock head %}
+
+    </head>
+
+<body>
+
+    <span id='logo'>
+        <a href='/' title='darktable.org'>
+            <img src='/theme/images/logo-name-small.png'>
+        </a>
+    </span>
+
+    <nav id="menu">
+        <ul>
+            <li><a href='/news/'>news</a></li>
+            <li><a href='/about/'>about</a></li>
+            <li><a href='/blog/'>blog</a></li>
+            <li><a href='/install/'>install</a></li>
+            <li><a href='/resources/'>resources</a></li>
+            <li><a href='/development/'>development</a></li>
+            <li><a href='/contact/'>contact</a></li>
+        </ul>
+    </nav>
+
+
+    {#
+    {% block header %}
+    {% endblock header %}
+
+    {% block content %}
+    {% endblock %}
+    #}
+</body>
+</html>

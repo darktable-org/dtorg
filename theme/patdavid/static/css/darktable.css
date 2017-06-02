@@ -78,7 +78,8 @@ h5 { font-size: 1rem; font-variant: small-caps;}
 .container.title {
     z-index: 1;
 }
-.container.title h1 {
+.container.title h1,
+.description .desc-title {
     text-align: right;
     font-size: 3rem;
     color: #ecf0f1;
@@ -130,4 +131,42 @@ article h2 {
 }
 address.vcard.author {
     display: inline;
+}
+
+
+
+/* Home Page Styles
+ * ---------------- */
+#home-lede {
+    position: absolute;
+    max-width: 100%;
+}
+
+#home-logo { padding-top: 2rem; }
+#home-logo img { 
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+    max-width: 85%;
+    position: relative;
+    z-index: 1;
+}
+
+.description p {
+    margin: 2rem 3rem;
+}
+
+.screenshot img {
+    position: relative;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+section.description {
+    margin-top: 5rem;
+}
+section.description .feature {
+    margin-bottom: 2rem;
 }

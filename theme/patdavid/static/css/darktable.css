@@ -55,6 +55,7 @@ body {
 
 .lede-img {
     max-width: 100%;
+    display: block;
 }
 
 /* Headings, 1.25:1 ratio

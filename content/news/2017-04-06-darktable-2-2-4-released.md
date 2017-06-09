@@ -27,108 +27,42 @@ and the changelog as compared to 2.2.3 can be found below.
 
 
 ## New features:
-
-
-
-
-
  	
   * Better brush trace handing of opacity to get better control.
-
- 	
   * tools: Add script to purge stale thumbnails
-
- 	
   * tools: A script to watch a folder for new images
 
 
 
-
 ## Bugfixes:
-
-
-
-
-
  	
   * DNG: fix camera name demangling. It used to report some wrong name for some cameras.
-
- 	
   * When using wayland, prefer XWayland, because native Wayland support is not fully functional yet
-
- 	
   * EXIF: properly handle image orientation '2' and '4' (swap them)
-
- 	
   * OpenCL: a few fixes in profiled denoise, demosaic and colormapping
-
- 	
   * tiling: do not process uselessly small end tiles
-
- 	
   * masks: avoid assertion failure in early phase of path generation,
-
- 	
   * masks: reduce risk of unwanted self-finalization of small path shapes
-
- 	
   * Fix rare issue when expanding $() variables in import/export string
-
- 	
   * Camera import: fix ignore_jpg setting not having an effect
-
- 	
   * Picasa web exporter: unbreak after upstream API change
-
- 	
   * collection: fix query string for folders ( 'a' should match 'a/b' and 'a/c', but not 'ac/' )
 
 
 
-
 ## Base Support:
-
-
-
-
-
  	
   * Fujifilm X-T20 (only uncompressed raw, at the moment)
-
- 	
   * Fujifilm X100F (only uncompressed raw, at the moment)
-
- 	
   * Nikon COOLPIX B700 (12bit-uncompressed)
-
- 	
   * Olympus E-M1MarkII
-
- 	
   * Panasonic DMC-TZ61 (4:3, 3:2, 1:1, 16:9)
-
- 	
   * Panasonic DMC-ZS40 (4:3, 3:2, 1:1, 16:9)
-
- 	
   * Sony ILCE-6500
 
 
-
-
 ## Noise Profiles:
-
-
-
-
-
  	
   * Canon PowerShot G7 X Mark II
-
- 	
   * Olympus E-M1MarkII
-
- 	
   * Lge Nexus 5X
-
-

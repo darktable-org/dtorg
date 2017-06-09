@@ -41,10 +41,16 @@ PLUGINS = ['summary']
 # Use pretty type options in output
 TYPOGRIFY = True
 
-STATIC_PATHS = ['extra/favicon.ico']
+STATIC_PATHS = ['extra/favicon.ico', 'blog', 'news']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
+
+# These two options allow us to specify the category
+# of the files with a regex.  We basically set 'news'
+# and 'blog' even if they're nested in sub-dirs
+USE_FOLDER_AS_CATEGORY = False
+PATH_METADATA = '(?P<category>blog|news)/.*'
 
 # Path for site content and various URL/SAVE_AS options
 # Reminder: "page" is static content like "about", "features"

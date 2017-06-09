@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use File::Basename;
+use File::Copy;
+
 die "Usage: $0 <lede images csv file> <path to content/>\n" if($#ARGV != 1);
 
 my $csv = shift;
@@ -56,6 +59,9 @@ foreach my $file (@mdfiles)
   my @lines = readline $IN;
   close $IN;
 
+  my $wlede = '';
+  my $shortlede = '';
+
   open my $OUT, ">$file" or die "Can't open $file: $!";
   my $header = 1;
   foreach (@lines)
@@ -67,7 +73,20 @@ foreach my $file (@mdfiles)
       if(/^wordpress_id:[ ]*([0-9]*)/)
       {
         my $lede = $ledes{$1};
-        print $OUT "wordpress_lede: $lede\n" if($lede);
+        if( $lede ne '')
+        {
+            $wlede = "ledes/$lede";
+            my($filename, $dirs, $suffix) = fileparse( $lede );
+            print "baselede: $filename\n";
+            $shortlede = $filename;
+        }
+        else
+        {
+            $wlede = '';
+            $shortlede = '';
+        }
+        #print $OUT "wordpress_lede: $lede\n" if($lede);
+        print $OUT "wordpress_lede: $shortlede\n" if($lede);
       }
       elsif($_ eq "")
       {
@@ -77,4 +96,27 @@ foreach my $file (@mdfiles)
     print $OUT "$_\n";
   }
   close $OUT;
+
+    my $newdir = basename($file, '.md');
+    print basename($file, '.md');
+    print "\n";
+    print "$file\n";
+    print "$wlede\n\n";
+    mkdir $newdir;
+    $newdir = $newdir . "/";
+    copy $file, $newdir;
+    copy $wlede, $newdir;
 }
+
+# go through all .md files, create sub-dirs, move .md file + lede img
+#foreach my $file (@mdfiles)
+#{
+#    my $newdir = basename($file, '.md');
+#    print basename($file, '.md');
+#    print "\n";
+#    print "$file\n";
+#    print "$lede\n\n";
+#    mkdir $newdir;
+#    $newdir = $newdir . "/";
+#    move $file, $newdir;
+#}

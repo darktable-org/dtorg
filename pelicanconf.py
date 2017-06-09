@@ -41,6 +41,11 @@ PLUGINS = ['summary']
 # Use pretty type options in output
 TYPOGRIFY = True
 
+STATIC_PATHS = ['extra/favicon.ico']
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
+
 # Path for site content and various URL/SAVE_AS options
 # Reminder: "page" is static content like "about", "features"
 #           "article" is timely content, "blog" or "news" posts

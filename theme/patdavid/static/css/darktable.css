@@ -170,3 +170,10 @@ section.description {
 section.description .feature {
     margin-bottom: 2rem;
 }
+
+
+/* Paginator
+ * --------- */
+.paginator {
+    text-align: center;
+}

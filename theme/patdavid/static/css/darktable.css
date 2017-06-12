@@ -125,9 +125,6 @@ article h2 {
     font-size: 1.4rem;
 }
 
-h1.article-title {
-    margin-bottom: 0.5rem;
-}
 
 .post-info {
     margin-bottom: 1.5rem;
@@ -180,4 +177,16 @@ section.description .feature {
  * --------- */
 .paginator {
     text-align: center;
+}
+
+
+/* Articles
+ * ---------- */
+
+h1.article-title {
+    margin-bottom: 0.5rem;
+}
+
+div.column img.lede-img {
+    margin-bottom: 0.5rem;
 }

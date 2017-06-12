@@ -9,9 +9,6 @@ wordpress_lede: teaser.jpg
 wordpress_id: 4064
 tags: blog, development, further, upcoming
 
-# colour manipulation with the colour checker lut module
-
-
 
 **[update 2016/07/31: there was a section about intermediate export to csv and manually changing that file. this is no longer needed, exporting the style directly from darktable-chart is fine now.]**
 
@@ -23,15 +20,9 @@ tags: blog, development, further, upcoming
 for raw photography there exist great presets for nice colour rendition:
 
 
-
- 	
-  * in-camera colour processing such as canon picture styles
-
- 	
-  * fuji film-emulation-like presets (provia velvia astia classic-chrome)
-
- 	
-  * [pat david's film emulation luts](http://gmic.eu/film_emulation/)
+* in-camera colour processing such as canon picture styles
+* fuji film-emulation-like presets (provia velvia astia classic-chrome)
+* [pat david's film emulation luts](http://gmic.eu/film_emulation/)
 
 
 unfortunately these are eat-it-or-die canned styles or icc lut profiles. you
@@ -192,20 +183,10 @@ and initialise the mapping to identity (no change to the image).
 
 
  	
-  * the grid shows a list of coloured patches. the colours of the patches are
-the source points [latex]\mathbf{s}[/latex].
-
- 	
-  * the target colour [latex]t_i[/latex] of the selected patch [latex]i[/latex] is shown as
-offset controlled by sliders in the ui under the grid of patches.
-
- 	
-  * an outline is drawn around patches that have been altered, i.e. the source
-and target colours differ.
-
- 	
-  * the selected patch is marked with a white square, and the number shows
-in the combo box below.
+  * the grid shows a list of coloured patches. the colours of the patches are the source points [latex]\mathbf{s}[/latex].
+  * the target colour [latex]t_i[/latex] of the selected patch [latex]i[/latex] is shown as offset controlled by sliders in the ui under the grid of patches.
+  * an outline is drawn around patches that have been altered, i.e. the source and target colours differ.
+  * the selected patch is marked with a white square, and the number shows in the combo box below.
 
 
 
@@ -221,26 +202,12 @@ somewhere).
 
 
  	
-  * you can change lightness (L), green-red (a), blue-yellow (b), or saturation
-(C) of the target colour via sliders.
-
- 	
-  * select a patch by left clicking on it, or using the combo box, or using the
-colour picker
-
- 	
-  * to change source colour, select a new colour from your image by using the
-colour picker, and shift-left-click on the patch you want to replace.
-
- 	
+  * you can change lightness (L), green-red (a), blue-yellow (b), or saturation (C) of the target colour via sliders.
+  * select a patch by left clicking on it, or using the combo box, or using the colour picker
+  * to change source colour, select a new colour from your image by using the colour picker, and shift-left-click on the patch you want to replace.
   * to reset a patch, double-click it.
-
- 	
   * right-click a patch to delete it.
-
- 	
-  * shift-left-click on empty space to add a new patch (with the currently
-picked colour as source colour).
+  * shift-left-click on empty space to add a new patch (with the currently picked colour as source colour).
 
 
 
@@ -321,80 +288,27 @@ note that this is essentially similar to [pascal's colormatch script](https://gi
  	
   * need an it8 (sorry, could lift that, maybe, similar to what we do for
 [basecurve fitting](http://www.darktable.org/2013/10/about-basecurves/))
-
- 	
   * shoot the chart with your camera:
-
- 	
     * shoot raw + jpg
-
- 	
-    * avoid glare and shadow and extreme angles, potentially the rims of your
-image altogether
-
- 	
-    * shoot a lot of exposures, try to match L=92 for G00 (or look that up in
-your it8 description)
-
-
-
-
- 	
+    * avoid glare and shadow and extreme angles, potentially the rims of your image altogether
+    * shoot a lot of exposures, try to match L=92 for G00 (or look that up in your it8 description)
   * develop the images in darktable:
-
- 	
     * lens and vignetting correction needed on both or on neither of raw + jpg
-
- 	
     * (i calibrated for vignetting, see [lensfun](http://wilson.bronger.org/lens_calibration_tutorial/#id3))
-
- 	
-    * output colour space to Lab (set the secret option in `darktablerc`:
-`allow_lab_output=true`)
-
- 	
+    * output colour space to Lab (set the secret option in `darktablerc`: `allow_lab_output=true`)
     * standard input matrix and camera white balance for the raw, srgb for jpg.
-
- 	
     * no gamut clipping, no basecurve, no anything else.
-
- 	
     * maybe do [perspective correction](http://www.darktable.org/2016/03/a-new-module-for-automatic-perspective-correction/) and crop the chart
-
- 	
     * export as float pfm
-
-
-
-
- 	
   * `darktable-chart`
-
- 	
     * load the pfm for the raw image and the jpg target in the second tab
-
- 	
     * drag the corners to make the mask match the patches in the image
-
- 	
-    * maybe adjust the security margin using the slider in the top right, to
-avoid stray colours being blurred into the patch readout
-
- 	
+    * maybe adjust the security margin using the slider in the top right, to avoid stray colours being blurred into the patch readout
     * you need to select the gray ramp in the combo box (not auto-detected)
-
-        
     * click _process_
-
- 	
     * export
-
- 	
     * fix up style description in the export dialog if you want
-
- 	
-    * outputs a `.dtstyle` with everything properly switched off, and two modules
-on: colour checker + tonecurve in Lab
+    * outputs a `.dtstyle` with everything properly switched off, and two modules on: colour checker + tonecurve in Lab
 
 
 
@@ -459,14 +373,8 @@ would.
 
  	
   * there is a button for this in the `darktable-chart` tool
-
- 	
   * needs careful shooting, to match brightness of reference value closely.
-
- 	
   * at this point it's not clear to me how white balance should best be handled here.
-
- 	
   * need reference reflectances of the it8 (wolf faust ships some for a few illuminants).
 
 
@@ -483,8 +391,6 @@ calibration though.
 
  	
   * [0] Ken Anjyo and J. P. Lewis and Frédéric Pighin, "Scattered data interpolation for computer graphics" in Proceedings of SIGGRAPH 2014 Courses, Article No. 27, 2014. [pdf](http://scribblethink.org/Courses/ScatteredInterpolation/scatteredinterpcoursenotes.pdf)
-
- 	
   * [1] J. A. Tropp and A. C. Gilbert, "Signal Recovery From Random Measurements Via Orthogonal Matching Pursuit", in IEEE Transactions on Information Theory, vol. 53, no. 12, pp. 4655-4666, Dec. 2007.
 
 
@@ -492,32 +398,12 @@ calibration though.
 
 ## links
 
-
-
-
-
  	
   * [pat david's film emulation luts](http://gmic.eu/film_emulation/)
-
- 	
   * [download fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz)
-
- 	
   * [darktable's user manual on styles](https://www.darktable.org/usermanual/ch02s03s08.html.php)
-
- 	
   * [it8 target](http://targets.coloraid.de)
-
-        
   * [pascal's colormatch](https://github.com/pmjdebruijn/colormatch)
-
- 	
   * [lensfun calibration](http://wilson.bronger.org/lens_calibration_tutorial/#id3)
-
- 	
   * [perspective correction in darktable](http://www.darktable.org/2016/03/a-new-module-for-automatic-perspective-correction/)
-
- 	
   * [fit basecurves for darktable](http://www.darktable.org/2013/10/about-basecurves/)
-
-

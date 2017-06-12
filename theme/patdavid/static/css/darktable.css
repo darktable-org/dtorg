@@ -125,6 +125,10 @@ article h2 {
     font-size: 1.4rem;
 }
 
+h1.article-title {
+    margin-bottom: 0.5rem;
+}
+
 .post-info {
     margin-bottom: 1.5rem;
     font-size: 0.8rem;

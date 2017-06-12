@@ -11,7 +11,7 @@
 {% block header %}
     {% if article.wordpress_lede %}
     <section class='lede'>
-        <img class='lede-img' src='{filename}/images/snowice.jpg'>
+        <img class='lede-img' src='{{ article.wordpress_lede }}'>
     </section>
     {% else %}
     <section class='lede'>

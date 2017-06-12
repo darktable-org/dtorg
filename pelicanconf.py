@@ -36,7 +36,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['summary']
+PLUGINS = ['summary', 'attach_ledeimg']
 
 # Use pretty type options in output
 TYPOGRIFY = True
@@ -52,10 +52,12 @@ EXTRA_PATH_METADATA = {
 USE_FOLDER_AS_CATEGORY = False
 PATH_METADATA = '(?P<category>blog|news)/.*'
 
+
 # Path for site content and various URL/SAVE_AS options
 # Reminder: "page" is static content like "about", "features"
 #           "article" is timely content, "blog" or "news" posts
 PATH = 'content'
+
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 

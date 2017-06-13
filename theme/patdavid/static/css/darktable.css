@@ -134,6 +134,12 @@ address.vcard.author {
     display: inline;
 }
 
+section.article-lede.wordpress {
+    padding: 0 3rem;
+}
+section.article-lede.wordpress .wordpress-lede-img {
+    max-width: 100%;
+}
 
 
 /* Home Page Styles

@@ -35,6 +35,4 @@ def detach_lede( generator, content ):
 
 def register():
     signals.article_generator_pretaxonomy.connect( attach_lede )
-    #signals.article_generator_finalized.connect( detach_lede )
     signals.article_generator_write_article.connect( detach_lede )
-    #signals.article_writer_finalized.connect( detach_lede )

@@ -25,7 +25,7 @@ def attach_lede( generator ):
             art._content = art._content + lede
 
 
-def detach_lede( generator ):
+def detach_lede( generator, content ):
     gen = generator
     for art in gen.articles:
         if hasattr( art, 'wordpress_lede'):
@@ -35,4 +35,6 @@ def detach_lede( generator ):
 
 def register():
     signals.article_generator_pretaxonomy.connect( attach_lede )
-    signals.article_generator_finalized.connect( detach_lede )
+    #signals.article_generator_finalized.connect( detach_lede )
+    signals.article_generator_write_article.connect( detach_lede )
+    #signals.article_writer_finalized.connect( detach_lede )

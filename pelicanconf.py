@@ -92,3 +92,9 @@ PAGINATION_PATTERNS = (
         (1, '{base_name}/', '{base_name}/index.html'),
         (2, '{base_name}/{number}/', '{base_name}/{number}/index.html')
         )
+
+# using 'headerid' in MD_EXTENSIONS seems to be working for now,
+# but http://pythonhosted.org/Markdown/extensions/header_id.html
+# indicates that it is pending deprecation, and to use toc instead
+#MD_EXTENSIONS = ['toc(anchorlink=true)']
+MD_EXTENSIONS = ['headerid']

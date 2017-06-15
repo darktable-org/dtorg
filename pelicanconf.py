@@ -96,4 +96,4 @@ PAGINATION_PATTERNS = (
 # toc(permalink=True) sets all headers to have an id
 # set, and an <a> after the heading.
 # see: http://pythonhosted.org/Markdown/extensions/toc.html
-MD_EXTENSIONS = ['toc(permalink=True)']
+MD_EXTENSIONS = ['toc(permalink=)']

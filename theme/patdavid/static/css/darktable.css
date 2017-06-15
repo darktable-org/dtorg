@@ -158,10 +158,10 @@ section.article-lede.wordpress .wordpress-lede-img {
     display: block;
     margin: 0 auto;
     margin-bottom: -1rem;
-    max-width: 85%;
     position: relative;
     z-index: 1;
     max-width: 760px;
+    width: 90%;
 }
 
 .description p {

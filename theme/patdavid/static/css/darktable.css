@@ -106,7 +106,7 @@ h5 { font-size: 1rem; font-variant: small-caps;}
  * ===============================
  */
 
-.category article {
+.category article section.article-lede.wordpress:first-of-type {
     margin-top: 3rem;
 }
 
@@ -141,6 +141,7 @@ section.article-lede.wordpress {
 section.article-lede.wordpress .wordpress-lede-img {
     max-width: 100%;
 }
+
 
 
 /* Home Page Styles

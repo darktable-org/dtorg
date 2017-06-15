@@ -57,6 +57,7 @@ body {
 .lede-img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 /* Headings, 1.25:1 ratio
@@ -106,7 +107,8 @@ h5 { font-size: 1rem; font-variant: small-caps;}
  * ===============================
  */
 
-.category article section.article-lede.wordpress:first-of-type {
+.category article section.article-lede.wordpress:first-of-type, 
+.category .column > article:first-of-type > section.content:first-child {
     margin-top: 3rem;
 }
 

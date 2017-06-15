@@ -116,6 +116,10 @@ article > section.content {
     padding: 0 3rem;
 }
 
+.category .container.content {
+    padding: 0;
+}
+
 article h1 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
@@ -166,6 +170,12 @@ section.article-lede.wordpress .wordpress-lede-img {
 
 .description p {
     margin: 2rem 3rem;
+    margin: 2rem 0;
+}
+@media (min-width: 40rem) {
+    .description p {
+        margin: 2rem 3rem;
+    }
 }
 
 .screenshot img {

@@ -23,13 +23,19 @@ def attach_lede( generator ):
         if hasattr( art, 'wordpress_lede' ):
             lede = u'<img src="{{attach}}{}" class="hidden-lede">'.format( art.wordpress_lede )
             art._content = art._content + lede
+        if hasattr( art, 'lede' ):
+            lede = u'<img src="{{attach}}{}" class="hidden-lede">'.format( art.lede )
+            art._content = art._content + lede
 
 
 def detach_lede( generator, content ):
     gen = generator
     for art in gen.articles:
-        if hasattr( art, 'wordpress_lede'):
+        if hasattr( art, 'wordpress_lede' ):
             lede = ur'<img src=\".*?' + re.escape( art.wordpress_lede ) + ur'\" class=\"hidden-lede\">'
+            art._content = re.sub( lede , '', art._content)
+        elif hasattr( art, 'lede' ):
+            lede = ur'<img src=\".*?' + re.escape( art.lede ) + ur'\" class=\"hidden-lede\">'
             art._content = re.sub( lede , '', art._content)
 
 

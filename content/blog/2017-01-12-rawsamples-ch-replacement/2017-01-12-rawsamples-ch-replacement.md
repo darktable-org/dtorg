@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2017/01/rawsamples-ch-replacement/
 slug: rawsamples-ch-replacement
 title: rawsamples.ch replacement
-wordpress_lede: snowice.jpg
+lede: snowice-andabata.jpg
 wordpress_id: 4694
 tags: announcement, blog, community, @andabata, @lebedevri, @pixlsus, foss, photography, rawsamples
 

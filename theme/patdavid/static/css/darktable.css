@@ -201,3 +201,12 @@ h1.article-title {
 div.column img.lede-img {
     margin-bottom: 0.5rem;
 }
+
+ul {
+    list-style: initial;
+    list-style-type: circle;
+}
+
+ol, ul {
+    padding-left: 2rem;
+}

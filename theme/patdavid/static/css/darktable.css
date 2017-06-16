@@ -1,6 +1,4 @@
-/* Initial stuff
- * ------------- */
-html {
+/* Initial stuff * ------------- */ html {
     font: 100%/1.6 "Open Sans", sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -70,6 +68,14 @@ h3 { font-size: 1.563rem; }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1rem; font-variant: small-caps;}
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
+    margin-top: 0;
+}
 
 .category hr {
     max-width: 33%;
@@ -81,6 +87,7 @@ h5 { font-size: 1rem; font-variant: small-caps;}
 .container.title {
     z-index: 1;
 }
+
 .container.title h1,
 .description .desc-title {
     text-align: right;
@@ -100,7 +107,7 @@ h5 { font-size: 1rem; font-variant: small-caps;}
 .page .content,
 .article .content {
     padding: 3rem 5rem;
-    padding: 0 3rem;
+    /* padding: 1rem 3rem; */
 }
 
 

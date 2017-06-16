@@ -13,7 +13,7 @@ def attach_lede( generator ):
 
     gen = generator
     for art in gen.articles:
-        print "title: %s" % art.title
+        #print "title: %s" % art.title
         art.title = re.sub( ur'&nbsp;(\S+)$', r' \g<1>', art.title)
 
 

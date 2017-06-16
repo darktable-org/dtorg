@@ -58,6 +58,7 @@ body {
     max-width: 100%;
     display: block;
     height: auto;
+    width: 100%;
 }
 
 /* Headings, 1.25:1 ratio
@@ -99,6 +100,7 @@ h5 { font-size: 1rem; font-variant: small-caps;}
 .page .content,
 .article .content {
     padding: 3rem 5rem;
+    padding: 0 3rem;
 }
 
 

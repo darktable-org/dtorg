@@ -36,7 +36,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['summary', 'attach_ledeimg']
+PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title']
 
 # Use pretty type options in output
 TYPOGRIFY = True

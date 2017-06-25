@@ -121,7 +121,7 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
  * ===============================
  */
 
-.category article section.article-lede.wordpress:first-of-type, 
+.category article section.article-lede.wordpress:first-of-type,
 .category .column > article:first-of-type > section.content:first-child {
     margin-top: 3rem;
 }
@@ -172,7 +172,7 @@ section.article-lede.wordpress .wordpress-lede-img {
 }
 
 #home-logo { padding-top: 2rem; }
-#home-logo img { 
+#home-logo img {
     display: block;
     margin: 0 auto;
     margin-bottom: -1rem;
@@ -234,4 +234,8 @@ ul {
 
 ol, ul {
     padding-left: 2rem;
+}
+
+.article-content img {
+  max-width: 100%;
 }

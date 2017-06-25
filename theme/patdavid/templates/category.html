@@ -34,11 +34,11 @@
                     <article>
                         {% if article.wordpress_lede %}
                         <section class='article-lede wordpress'>
-                            <img src='/{{ article.url }}{{ article.wordpress_lede }}' class='wordpress-lede-img'>
+                            <a href="/{{ article.url }}"><img src='/{{ article.url }}{{ article.wordpress_lede }}' class='wordpress-lede-img'></a>
                         </section>
                         {% elif article.lede %}
                         <section class='article-lede'>
-                            <img src='/{{ article.url }}{{ article.lede }}' class='lede-img' width='960' height='401'>
+                            <a href="/{{ article.url }}"><img src='/{{ article.url }}{{ article.lede }}' class='lede-img' width='960' height='401'></a>
                         </section>
                         {% endif %}
 
@@ -51,11 +51,11 @@
                             </h1>
 
                             <div class='post-info'>
-                                posted on 
+                                posted on
                                 <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
                                 <address class="vcard author">by
                                     {% for author in article.authors %}
-                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a> 
+                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a>
                                     {% endfor %}
                                 </address>
                             </div>

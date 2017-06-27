@@ -1,7 +1,7 @@
 Title: Meta
 Date: 2017-06-16T13:50:27-06:00
 Author: Pat David
-Slug: about/meta/
+Slug: about/meta
 
 
 This is a meta page about this website and building it.

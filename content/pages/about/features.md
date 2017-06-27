@@ -1,7 +1,7 @@
 Title: Features
 Date: 2017-06-13T21:58:51-06:00 
 Lede: http://www.darktable.org/wp-content/uploads/2012/01/darktable-v2.png
-Slug: about/features/
+Slug: about/features
 
 
 These are some of darktable's current features, and a coarse overview over the current image operation modules. You can find a more detailed description of every single item in our [online user manual](http://www.darktable.org/usermanual/index.html.php "usermanual").

@@ -71,5 +71,12 @@
 
     {% block content %}
     {% endblock %}
+
+    <section class='footer'>
+        {% for page in pages|sort(attribute='url') %}
+        <div>{{ page.title }} - {{ page.slug }} - {{ page.url }}</div>
+        {% endfor %}
+    </section>
+
 </body>
 </html>

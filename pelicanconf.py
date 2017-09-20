@@ -36,7 +36,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title']
+PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math']
 
 # Use pretty type options in output
 TYPOGRIFY = True
@@ -96,4 +96,13 @@ PAGINATION_PATTERNS = (
 # toc(permalink=True) sets all headers to have an id
 # set, and an <a> after the heading.
 # see: http://pythonhosted.org/Markdown/extensions/toc.html
-MD_EXTENSIONS = ['toc(permalink=)']
+MARKDOWN = {
+  'extension_configs' : {
+    #'markdown.extensions.fenced_code' : {},
+    #'markdown.extensions.codehilite' : {'css_class': 'codehilite'},
+    #'markdown.extensions.extra' : {},
+    #'markdown.extensions.headerid' : {},
+    'markdown.extensions.toc(permalink=)' : {}
+  }
+}
+

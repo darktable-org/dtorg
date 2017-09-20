@@ -1,4 +1,4 @@
-Title: Features
+Title: features
 Date: 2017-06-13T21:58:51-06:00 
 Lede: http://www.darktable.org/wp-content/uploads/2012/01/darktable-v2.png
 Slug: about/features
@@ -6,9 +6,10 @@ Slug: about/features
 
 These are some of darktable's current features, and a coarse overview over the current image operation modules. You can find a more detailed description of every single item in our [online user manual](http://www.darktable.org/usermanual/index.html.php "usermanual").
 
-![](http://www.darktable.org/wp-content/uploads/2011/07/gold.jpg "gold")
 
 # General
+
+![](http://www.darktable.org/wp-content/uploads/2011/07/gold.jpg "gold")
 
 *   darktable runs on **GNU/Linux / GNOME**, **Mac OS X / macports** and **Solaris 11 / GNOME**.
 *   Fully **non-destructive** editing.
@@ -21,9 +22,10 @@ These are some of darktable's current features, and a coarse overview over the c
 *   The **powerful export system** supports Picasa webalbum, flickr upload, disk storage, 1:1 copy, email attachments and can generate a simple html-based web gallery. darktable allows you to export to low dynamic range (JPEG, PNG, TIFF), 16-bit (PPM, TIFF), or linear high dynamic range (PFM, EXR) images.
 *   darktable uses both **XMP sidecar** files as well as its **fast database** for saving metadata and processing settings. All Exif data is read and written using libexiv2.
 
-![](http://www.darktable.org/wp-content/uploads/2011/07/moon.jpg "gold")
 
 # Modules
+
+![](http://www.darktable.org/wp-content/uploads/2011/07/moon.jpg "gold")
 
 Currently darktable serves 47 image operation modules in L*a*b* and profiled rgb. Some of them can be used as **blending operators** offering blend functionality that works on the incoming image information and the output of the current module.
 

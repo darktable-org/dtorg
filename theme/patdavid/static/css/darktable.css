@@ -1,4 +1,7 @@
-/* Initial stuff * ------------- */ html {
+/* Initial stuff * 
+ * ------------- */ 
+
+html {
     font: 100%/1.6 "Open Sans", sans-serif;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -21,6 +24,10 @@ body {
     background-color: #202020;
     color: red;
     color: #585858;
+}
+
+.clearfix {
+    clear: both;
 }
 
 #logo img {
@@ -238,4 +245,50 @@ ol, ul {
 
 .article-content img {
   max-width: 100%;
+}
+
+
+
+/* Footer
+ * ------ */
+.footer {
+    background-color: #111;
+    color: #787878;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.footer a {
+    text-decoration: none;
+}
+
+.footer .sitenav {
+    list-style-type: none;
+}
+.footer .sitenav li {
+    margin-bottom: 0;
+}
+
+.footer .badge {
+    font-size: small;
+    line-height: 0.8rem;
+}
+.footer .badge-logo {
+    text-decoration: none;
+    float: left;
+    padding-right: 0.5rem;
+}
+.footer .badge-text {
+    float: left;
+    min-width: 290px;
+    margin-bottom: 1.5rem;
+}
+
+.footer .pixlslove {
+    margin-top: 2rem;
+}
+.footer .pixlslove p {
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: solid 1px #222;
 }

@@ -75,14 +75,44 @@
     <section class='footer'>
         <div class='container'>
             <div class='row'>
-                <div class='four columns'>
+                <div class='six columns'>
                     <ul class='sitenav'>
                     {% for page in pages|sort(attribute='url') %}
-                    <li>{{ page.title }} ({{ page.slug }} - {{ page.url }})</li>
+                    <li><a href="/{{ page.url }}">{{ page.title }}</a>{# ({{ page.slug }} - {{ page.url }}) #}</li>
                     {% endfor %}
                     </ul>
                 </div>
+                <div class='six columns'>
+
+                    <div class='badge'>
+                        <a class='badge-logo' target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+                            <img alt="Creative Commons License" src="/theme/images/gplv3-88x31.png">
+                        </a> 
+                        <div class='badge-text'>
+                            darktable is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0</a><br>
+                            <a href="/">copyright 2017 by the darktable team.</a> »
+                            <a href="/credits/">credits</a>
+                        </div>
+					</div>
+
+                    <div class='badge clearfix'>
+                        <a class='badge-logo' target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+                            <img alt="Creative Commons License" src="/theme/images/CCBYSANC_88x31.png">
+                        </a>
+                        <div class='badge-text'>
+                            These websites and images are licensed under a<br><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 3.0 Unported License</a>.
+                        </div>
+					</div>
+
+                </div>
             </div>
+
+            <div class='row pixlslove'>
+                <div class='four columns offset-by-four'>
+                    <p><a href="https://pixls.us">pixls.us</a> ♡'s darktable</p>
+                </div>
+            </div>
+
         </div>
     </section>
 

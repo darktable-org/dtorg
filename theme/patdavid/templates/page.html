@@ -26,6 +26,16 @@
         </div>
 
         <div class='container content'>
+
+            <div class='subnav'>
+            {% set curtitle = page.title %}
+            {% for page in pages|sort(attribute='url') %}
+                {% if page.url.startswith( curtitle ) and ( page.url != curtitle+"/" ) %}
+                <a href="/{{ page.url }}">{{ page.title |striptags|lower }}</a> 
+                {% endif %}
+            {% endfor %}
+            </div>
+
             <div class='row'>
                 <div class='column'>
                     {% block data %}

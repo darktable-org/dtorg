@@ -108,6 +108,28 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
     background-color: #fcfcfc;
 }
 
+/* Sub-navigation for pages (ie: about/features, about/meta) */
+.subnav {
+    float: right;
+    margin-right: -2rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 750px){
+    .subnav {
+        margin-top: -2rem;
+    }
+}
+
+.subnav a {
+    text-decoration: none;
+}
+.subnav a::after {
+    content: " |";
+}
+.subnav a:last-of-type::after {
+    content: "";
+}
+
 /* Page & article padding
  * ============
  */
@@ -139,6 +161,7 @@ article > section.content {
 
 .category .container.content {
     padding: 0;
+    padding-bottom: 4rem;
 }
 
 article h1 {
@@ -243,6 +266,18 @@ ol, ul {
     padding-left: 2rem;
 }
 
+ul ul, ul ol, ol ol, ol ul {
+    margin: 0.5rem 0 0 0;
+}
+
+li {
+    /* margin-bottom: 0.5rem; */
+}
+
+li p {
+    margin-bottom: 0.5rem;
+}
+
 .article-content img {
   max-width: 100%;
 }
@@ -291,4 +326,5 @@ ol, ul {
     padding-top: 2rem;
     margin-bottom: 2rem;
     border-top: solid 1px #222;
+    font-size: 0.8rem;
 }

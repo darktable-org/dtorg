@@ -6,7 +6,7 @@ wordpress_id: 118
 
 # Choose your OS:
 
-<p >
+<p class="chooseos">
 <img class='chooseos' alt="ubuntu" src="{filename}/images/OS/ubuntu.jpg">
 <img class='chooseos' alt="fedora" src="{filename}/images/OS/fedora.jpg">
 <img class='chooseos' alt="opensuse" src="{filename}/images/OS/opensuse.jpg">
@@ -19,10 +19,13 @@ wordpress_id: 118
 </p>
 
 <style>
+p.chooseos {
+    text-align: center;
+}
 img.chooseos {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0px 5px 10px -3px #666;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 5px 10px -3px #666;
 }
 </style>
 

@@ -33,7 +33,8 @@ SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math']
@@ -41,7 +42,7 @@ PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math']
 # Use pretty type options in output
 TYPOGRIFY = True
 
-STATIC_PATHS = ['extra/favicon.ico', 'blog', 'news']
+STATIC_PATHS = ['extra/favicon.ico', 'blog', 'news', 'pages', 'images']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }

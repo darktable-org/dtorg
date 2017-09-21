@@ -1,4 +1,4 @@
-Title: Meta
+Title: meta
 Date: 2017-06-16T13:50:27-06:00
 Author: Pat David
 Slug: about/meta

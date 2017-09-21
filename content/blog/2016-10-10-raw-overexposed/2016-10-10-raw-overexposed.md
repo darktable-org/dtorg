@@ -15,9 +15,7 @@ Have you ever over-exposed your images? Have you ever noticed that your images l
 
 
 
-## the Problem
-
-
+## the problem
 
 First, why would you want to know which pixels are **overexposed**, clipped?
 
@@ -27,11 +25,15 @@ Consider this image:
 … Why is the sky so white? Why is the image so flat and dull?
 
 Let's enable [`overexposure indicator`](https://www.darktable.org/usermanual/ch03s03s09.html.php#overexposed)..
+
 [![rawoverexposed-0.5](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-0.5-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-0.5.jpeg)
+
 Nope, it does not indicate any part of the image to be overexposed.
 
 Now, let's see what happens if we disable the [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module
+
 [![rawoverexposed-1](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-1-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-1.jpeg)
+
 Eww, the sky is pink!
 
 An experienced person knows that it means the image was taken [overexposed](https://en.wikipedia.org/wiki/Exposure_(photography)#Overexposure_and_underexposure), and it is so dull and flat because a negative **exposure compensation** was applied via the [`exposure`](https://www.darktable.org/usermanual/ch03s04.html.php#exposure) module.
@@ -42,16 +44,12 @@ Many of you have sometimes unintentionally overexposed your images. As you know,
 
 ### But. What if it is actually very easy to figure out?
 
-
-
 I'll show you the end result, what darktable's new, `raw-based overexposure indicator` says about that image, and then we will discuss details:
 [![rawoverexposed-2](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-1-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-1.jpeg)
 
 
 
 ## digital image processing, mathematical background
-
-
 
 While modern sensors capture an astonishing dynamic range, they still can capture only so much.
 A [Sensor](https://en.wikipedia.org/wiki/Image_sensor) consists of millions of pixel sensors, each pixel containing a [photodetector](https://en.wikipedia.org/wiki/Photodetector) and an active amplifier. Each of these pixels could be thought of as a bucket: there is some upper limit of [photons](https://en.wikipedia.org/wiki/Photon) it can capture.
@@ -115,7 +113,7 @@ As you may have guessed by now, the signal amplification is the factor that resu
 
 
 
-#### **TL;DR, so _why?_**
+#### TL;DR, so _why?_
 
 Because of the analog [gain](https://en.wikipedia.org/wiki/Gain_(electronics)) that was applied to the data to bring it into the nominal range and not blow (clip, make them bigger than $\mathbf{16383}$) the usable highlights. The [gain](https://en.wikipedia.org/wiki/Gain_(electronics)) is applied in finite discrete steps, it may be impossible to apply a finer [gain](https://en.wikipedia.org/wiki/Gain_(electronics)), so that the **white level** is closer to $\mathbf{16383}$.
 
@@ -128,7 +126,9 @@ All right, we got a sensor readout - an array of unsigned integers - how do we g
 
 1. Convert the values from [integer](https://en.wikipedia.org/wiki/Integer_(computer_science)) (most often 16-bit unsigned) to [float](https://en.wikipedia.org/wiki/Floating_point) (not strictly required, but best for [precision](https://en.wikipedia.org/wiki/Precision_(computer_science)) reasons; we use [32-bit float](https://en.wikipedia.org/wiki/Single-precision_floating-point_format))
 2. Subtract **black level**
+
 3. [Normalize](https://en.wikipedia.org/wiki/Normalization_(image_processing)) the pixels so that the **white level** is $\mathbf{1.0}$
+
     Simplest way to do that is to divide each value by $\mathbf{({white level} - {black level})}$
 
     These 3 steps are done by the [`raw black/white point`](https://www.darktable.org/usermanual/ch03s04.html.php#raw_black_white_point) module.

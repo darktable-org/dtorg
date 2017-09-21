@@ -30,6 +30,14 @@ body {
     clear: both;
 }
 
+.smalltext {
+    font-size: 0.8rem;
+}
+
+.altrows tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
 #logo img {
     position: absolute;
     margin-left: 1rem;
@@ -117,6 +125,7 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
 @media (min-width: 750px){
     .subnav {
         margin-top: -2rem;
+        margin-right: -4rem;
     }
 }
 
@@ -264,6 +273,7 @@ ul {
 
 ol, ul {
     padding-left: 2rem;
+    list-style-position: unset;
 }
 
 ul ul, ul ol, ol ol, ol ul {
@@ -276,6 +286,10 @@ li {
 
 li p {
     margin-bottom: 0.5rem;
+}
+
+li > p:first-child {
+    display: inline;
 }
 
 .article-content img {

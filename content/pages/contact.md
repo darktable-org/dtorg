@@ -26,17 +26,17 @@ Here are some people you might meet on the mailing list or in IRC:
 <table class='smalltext altrows' markdown=1>
 <tbody >
 <tr class="odd" >
-<td >**photo**
+<td ><strong>photo</strong>
 </td>
-<td >**irc nick**
+<td ><strong>irc nick</strong>
 </td>
-<td >**real name**
+<td ><strong>real name</strong>
 </td>
-<td >**project role**
+<td ><strong>project role</strong>
 </td>
-<td >**homepage**
+<td ><strong>homepage</strong>
 </td>
-<td >**gallery**
+<td ><strong>gallery</strong>
 </td>
 </tr>
 <tr class="even" >
@@ -291,9 +291,9 @@ The translations of darktable are brought to you by:
 <tr class="odd" >
 <td >
 </td>
-<td >**Language**
+<td ><strong>Language</strong>
 </td>
-<td >**Name**
+<td ><strong>Name</strong>
 </td>
 </tr>
 <tr class="even" >
@@ -522,9 +522,9 @@ The translations of the darktable user manual are brought to you by:
 <tr class="odd" >
 <td >
 </td>
-<td >**Language**
+<td ><strong>Language</strong>
 </td>
-<td >**Name**
+<td ><strong>Name</strong>
 </td>
 </tr>
 <tr class="even" >

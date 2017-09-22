@@ -39,16 +39,29 @@ body {
 }
 
 #logo img {
-    position: absolute;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    max-width: 240px;
+    position: relative;
+    margin: 1rem auto 0;
+    display: block;
+    max-width: 90%;
+}
+#menu {
+    text-align: center;
+    line-height: 2rem;
+}
+/* @media (min-width: 64rem) { */
+@media (min-width: 1000px) {
+    #logo img {
+        position: absolute;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        max-width: 240px;
+    }
+    #menu {
+        text-align: right;
+        line-height: 50px;
+    }
 }
 
-#menu {
-    text-align: right;
-    line-height: 50px;
-}
 
 #menu ul {
     margin: 0;
@@ -133,7 +146,7 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
     text-decoration: none;
 }
 .subnav a::after {
-    content: " |";
+    content: " ·";
 }
 .subnav a:last-of-type::after {
     content: "";
@@ -341,4 +354,9 @@ li > p:first-child {
     margin-bottom: 2rem;
     border-top: solid 1px #222;
     font-size: 0.8rem;
+}
+.footer .pixlslove .heart {
+    color: red;
+    font-size: 1.2rem;
+    vertical-align: middle;
 }

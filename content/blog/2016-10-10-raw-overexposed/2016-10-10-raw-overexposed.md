@@ -13,8 +13,6 @@ Have you ever over-exposed your images? Have you ever noticed that your images l
 
 <!-- more -->
 
-
-
 ## the problem
 
 First, why would you want to know which pixels are **overexposed**, clipped?
@@ -211,7 +209,7 @@ Good news is, it just works for both the [Bayer](https://en.wikipedia.org/wiki/B
 The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
 
-1. ### `mark with CFA color`
+1. `mark with CFA color`
     * If the clipped pixel was Red, a Red pixel will be displayed.
     * If the clipped pixel was Green, a Green pixel will be displayed.
     * If the clipped pixel was Blue, a Blue pixel will be displayed.
@@ -222,7 +220,7 @@ The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
     [![rawoverexposed-xtrans-mode-cfa](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-cfa-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-cfa.jpeg)
 
-2. ### `mark with solid color`
+2. `mark with solid color`
     * If the raw pixel was clipped, it will be displayed in a given color (one of: red, green, blue, black)
 
     Same area, with `color scheme` = `black`.
@@ -231,7 +229,7 @@ The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
     [![rawoverexposed-xtrans-mode-solid-black](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-solid-black-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-solid-black.jpeg)
 
-3. ### `false color`
+3. `false color`
     * If the clipped pixel was Red, the Red channel for current pixel will be set to $\mathbf{0.0}$
     * If the clipped pixel was Green, the Green channel for current pixel will be set to $\mathbf{0.0}$
     * If the clipped pixel was Blue, the Blue channel for current pixel will be set to $\mathbf{0.0}$

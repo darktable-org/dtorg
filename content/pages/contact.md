@@ -24,21 +24,23 @@ Every file released by darktable as of version 1.4.1 gets signed with the GPG ke
 
 Here are some people you might meet on the mailing list or in IRC:
 <table class='smalltext altrows' markdown=1>
-<tbody >
+<thead>
 <tr class="odd" >
-<td ><strong>photo</strong>
-</td>
-<td ><strong>irc nick</strong>
-</td>
-<td ><strong>real name</strong>
-</td>
-<td ><strong>project role</strong>
-</td>
-<td ><strong>homepage</strong>
-</td>
-<td ><strong>gallery</strong>
-</td>
+<th >photo
+</th>
+<th >irc nick
+</th>
+<th >real name
+</th>
+<th >project role
+</th>
+<th >homepage
+</th>
+<th >gallery
+</th>
 </tr>
+</thead>
+<tbody >
 <tr class="even" >
 <td >![henrik]({filename}/images/team/07d83b598e6a654dacf173f221b8a241.png)
 </td>
@@ -287,15 +289,17 @@ Here are some people you might meet on the mailing list or in IRC:
 
 The translations of darktable are brought to you by:
 <table class='smalltext altrows' markdown=1>
-<tbody >
+<thead>
 <tr class="odd" >
-<td >
-</td>
-<td ><strong>Language</strong>
-</td>
-<td ><strong>Name</strong>
-</td>
+<th >
+</th>
+<th >Language
+</th>
+<th >Name
+</th>
 </tr>
+</thead>
+<tbody >
 <tr class="even" >
 <td >af
 </td>
@@ -518,15 +522,17 @@ The translations of darktable are brought to you by:
 The translations of the darktable user manual are brought to you by:
 
 <table class='smalltext altrows' markdown=1>
-<tbody >
+<thead>
 <tr class="odd" >
-<td >
-</td>
-<td ><strong>Language</strong>
-</td>
-<td ><strong>Name</strong>
-</td>
+<th >
+</th>
+<th >Language
+</th>
+<th >Name
+</th>
 </tr>
+</thead>
+<tbody >
 <tr class="even" >
 <td >fr
 </td>

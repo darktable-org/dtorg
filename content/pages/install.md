@@ -1,5 +1,5 @@
 Title: install
-Date: 2017-09-20T16:48:38-06:00 
+Date: 2017-09-20T16:48:38-06:00
 author: smn
 link: http://www.darktable.org/install/
 wordpress_id: 118
@@ -118,8 +118,8 @@ Only darktable-1.0.5 can be provided for these distributions due to restrictions
   * install the linuxtech.repo config file if you don't have it already:
 
 ```
-su - root  
-cd /etc/yum.repos.d/  
+su - root
+cd /etc/yum.repos.d/
 wget http://pkgrepo.linuxtech.net/el6/release/linuxtech.repo
 ```
 
@@ -199,7 +199,7 @@ and have fun.
 
 
 # Current release from source
-![]({filename}/images/OS/leaves1.png)
+![]({filename}/images/OS/leaves1.jpg)
 
 * Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.2.5) (recent version: darktable 2.2.5) – make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.

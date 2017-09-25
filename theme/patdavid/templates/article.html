@@ -14,13 +14,12 @@
         normal lede items. #}
     {% if article.lede %}
     <section class='lede'>
-        <img class='lede-img' src='{{ article.lede }}'>
+        <img class='lede-img' src='{{ article.lede }}' alt='darktable article lede image'>
     </section>
     {% else %}
     <section class='lede'>
         {# If we want to use a 'default' lede image, define it here #}
         {# <img class='lede-img' src='/theme/images/lede-about.jpg'> #}
-        &nbsp;
     </section>
     {% endif %}
 {% endblock header %}

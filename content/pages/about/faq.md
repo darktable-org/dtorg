@@ -5,7 +5,6 @@ author: smn
 link: http://www.darktable.org/about/faq/
 wordpress_id: 1536
 
-![](http://www.darktable.org/wp-content/uploads/2012/01/darktable-v2.png)
 
 * **What's the best way to contact the developers/report bugs?**
 

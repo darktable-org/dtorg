@@ -35,7 +35,7 @@ img.chooseos {
 
 
 # Prerequisites
-![](http://www.darktable.org/wp-content/uploads/2011/07/bee.jpg)
+![]({attach}bee.jpg)
 
   * *nix (tested: Debian, Ubuntu, Arch Linux, Funtoo, Gentoo, Fedora, Macintosh OS X with Macports)
   * We strongly recommend using a **64bit operating system**!

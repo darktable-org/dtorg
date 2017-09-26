@@ -154,7 +154,7 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 </tr>
 <tr class="even" >
-<td >![upegelow](http://www.darktable.org/wp-content/uploads/2011/07/IMG_2536_0001_01-e1332276694816.jpg)
+<td >![upegelow]({filename}/images/team/IMG_2536_0001_01-e1332276694816.jpg)
 </td>
 <td >pegelow
 </td>

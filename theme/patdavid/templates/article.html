@@ -17,9 +17,10 @@
         <img class='lede-img' src='{{ article.lede }}' alt='darktable article lede image'>
     </section>
     {% else %}
-    <section class='lede'>
+    <section class='lede default'>
         {# If we want to use a 'default' lede image, define it here #}
         {# <img class='lede-img' src='/theme/images/lede-about.jpg'> #}
+        {# Also change the styling on section.lede.default to remove the 50px margin #}
     </section>
     {% endif %}
 {% endblock header %}

@@ -74,6 +74,7 @@ body {
         width: 100%;
         position: absolute;
         right: 0;
+        top: 0;
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
         text-shadow: black 0 0 4px;
     }
@@ -103,6 +104,13 @@ body {
     display: block;
     height: auto;
     width: 100%;
+}
+
+/* This is for when there's
+ * no lede defined.  If we
+ * use a default lede, change this */
+section.lede.default {
+    margin-top: 50px;
 }
 
 /* Headings, 1.25:1 ratio

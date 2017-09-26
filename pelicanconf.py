@@ -42,7 +42,7 @@ PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math']
 # Use pretty type options in output
 TYPOGRIFY = True
 
-STATIC_PATHS = ['extra/favicon.ico', 'blog', 'news', 'pages', 'images']
+STATIC_PATHS = ['extra/favicon.ico', 'blog', 'news', 'pages', 'images', 'wp-content']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }

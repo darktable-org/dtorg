@@ -71,6 +71,11 @@ body {
     #menu {
         text-align: right;
         line-height: 50px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+        text-shadow: black 0 0 4px;
     }
 }
 
@@ -140,6 +145,8 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
 }
 .container.content {
     background-color: #fcfcfc;
+    background-color: #DFDFDF;
+    background-color: #eeeeee;
 }
 
 /* Sub-navigation for pages (ie: about/features, about/meta) */
@@ -248,8 +255,11 @@ section.article-lede.wordpress .wordpress-lede-img {
 }
 
 .description p {
-    margin: 2rem 3rem;
+    /* margin: 2rem 3rem; */
     margin: 2rem 0;
+}
+.description p+p {
+    margin-top: -1.5rem;
 }
 @media (min-width: 40rem) {
     .description p {

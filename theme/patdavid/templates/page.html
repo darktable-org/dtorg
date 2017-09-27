@@ -1,17 +1,85 @@
 {% extends "base.html" %}
 
-{% block head %}
-{{ super() }}
+{% block title %}
+        <title itemprop='name'>{{ page.title |striptags|lower }} | {{ SITENAME }}</title>
+{%endblock title%}
 
-<title>{% block title %}{{ page.title |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
 
-{% endblock head %}
+        <meta itemprop="name" content="{{ page.title |striptags|lower }}" >
+        <meta name="twitter:title" content="{{ page.title |striptags|lower }}" >
+        <meta property="og:title" content="{{ page.title |striptags|lower }}" >
+		<meta itemprop="headline" content="{{ page.title |striptags|lower }}" >
+
+        <meta property="og:type" content="article">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if page.author %}
+        <meta itemprop="author" content="{{ page.author }}" />
+        <meta property="og:author" content="{{ page.author }}" />
+        {% endif %}
+
+        {% if page.date %}
+        <meta itemprop="datePublished" content="{{ page.date }}" />
+        <meta property="og:published_time" content="{{ page.date }}" />
+        {% endif %}
+
+        {% if page.lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ page.url }}{{ page.lede }}"> 
+        <meta property="og:image" content="{{ SITEURL }}/{{ page.url }}{{ page.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ page.url }}{{ page.lede }}">
+        {% elif page.wordpress_lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ page.url }}{{ page.wordpress_lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/{{ page.url }}{{ page.wordpress_lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ page.url }}{{ page.wordpress_lede }}">
+        {% else %}
+        <meta itemprop="image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        {% endif %}
+
+        {% if page.summary %}
+        <meta itemprop="description" content="{{ page.summary |striptags }}">
+        <meta property="og:description" content="{{ page.summary |striptags }}">
+        <meta name="twitter:description" content="{{ page.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta property="og:description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta name="twitter:description" content="darktable is an open source photography workflow application and raw developer.">
+        {% endif %}
+
+        {% if page.author_twitter %}
+        <meta name="twitter:creator" content="{{ page.author_twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if page.canonical %}
+        <link rel="canonical" href="{{ page.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ page.canonical }}" />
+        <meta property="url" content="{{ page.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ page.url }}" />
+        {% endif %}
+{%endblock metadata %}
 
 
 {% block header %}
+    {% if page.lede %}
+    <section class='lede'>
+        <img class='lede-img' src='{{ page.lede }}' alt='darktable page lede image'>
+    </section>
+    {% else %}
     <section class='lede'>
         <img class='lede-img' src='/theme/images/lede-about.jpg'>
     </section>
+    {% endif %}
 {% endblock header %}
 
 {% block content %}

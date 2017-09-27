@@ -1,16 +1,82 @@
 {% extends "base.html" %}
 
-{% block head %}
-{{ super() }}
 
-<title>{% block title %}{{ category |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
+{% block title %}
+<title itemprop='name'>{{ author |striptags }} | {{ SITENAME }}</title>
+{% endblock title %}
 
-{% endblock head %}
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
+
+        <meta itemprop="name" content="posts by {{ author |striptags|lower }}" >
+        <meta name="twitter:title" content="posts by {{ author |striptags|lower }}" >
+        <meta property="og:title" content="posts by {{ author |striptags|lower }}" >
+		<meta itemprop="headline" content="posts by {{ author |striptags|lower }}" >
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if author %}
+        <meta itemprop="author" content="{{ author }}" />
+        <meta property="og:author" content="{{ author }}" />
+        {% endif %}
+
+        {% if author.date %}
+        <meta itemprop="datePublished" content="{{ author.date }}" />
+        <meta property="og:published_time" content="{{ author.date }}" />
+        {% endif %}
+
+        {% if author.lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ author.url }}{{ author.lede }}"> 
+        <meta property="og:image" content="{{ SITEURL }}/{{ author.url }}{{ author.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ author.url }}{{ author.lede }}">
+        {% elif author.wordpress_lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ author.url }}{{ author.wordpress_lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/{{ author.url }}{{ author.wordpress_lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ author.url }}{{ author.wordpress_lede }}">
+        {% else %}
+        {# Don't forget to change this if it gets changed below #}
+        <meta itemprop="image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
+        {% endif %}
+
+        {% if author.summary %}
+        <meta itemprop="description" content="{{ author.summary |striptags }}">
+        <meta property="og:description" content="{{ author.summary |striptags }}">
+        <meta name="twitter:description" content="{{ author.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="Posts by {{ author }} on darktable.org">
+        <meta property="og:description" content="Posts by {{ author }} on darktable.org">
+        <meta name="twitter:description" content="Posts by {{ author }} on darktable.org">
+        {% endif %}
+
+        {% if author.author_twitter %}
+        <meta name="twitter:creator" content="{{ author.author_twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if author.canonical %}
+        <link rel="canonical" href="{{ author.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ author.canonical }}" />
+        <meta property="url" content="{{ author.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ author.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ author.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ author.url }}" />
+        {% endif %}
+{%endblock metadata %}
+
 
 
 {% block header %}
     <section class='lede'>
-        <img class='lede-img' src='/theme/images/lede-author.jpg'>
+        {# If you change this, don't forget to change it in the metadata above #}
+        <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-author.jpg'>
     </section>
 {% endblock header %}
 

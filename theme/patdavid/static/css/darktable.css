@@ -109,6 +109,13 @@ body {
     height: auto;
     width: 100%;
 }
+.lede .lede-img {
+    height: 41.35vw;
+    /* this can be set to force a height
+     * for lede images, might help the flash
+     * of content being pushed down.
+     * downside: requires ledes be cropped to 2.39:1 */
+}
 
 /* This is for when there's
  * no lede defined.  If we

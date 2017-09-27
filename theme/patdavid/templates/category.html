@@ -1,16 +1,81 @@
 {% extends "base.html" %}
 
-{% block head %}
-{{ super() }}
+{% block title %}
+        <title itemprop='name'>{{ category |striptags|lower }} | {{ SITENAME }}</title>
+{% endblock title %}
 
-<title>{% block title %}{{ category |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
 
-{% endblock head %}
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
 
+        <meta itemprop="name" content="darktable {{ category.name |striptags|lower }}" >
+        <meta name="twitter:title" content="darktable {{ category.name |striptags|lower }}" >
+        <meta property="og:title" content="darktable {{ category.name |striptags|lower }}" >
+		<meta itemprop="headline" content="darktable {{ category.name |striptags|lower }}" >
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if author %}
+        <meta itemprop="author" content="{{ author }}" />
+        <meta property="og:author" content="{{ author }}" />
+        {% endif %}
+
+        {% if category.date %}
+        <meta itemprop="datePublished" content="{{ category.date }}" />
+        <meta property="og:published_time" content="{{ category.date }}" />
+        {% endif %}
+
+        {% if category.lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}"> 
+        <meta property="og:image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
+        {% elif category.wordpress_lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ category.url }}{{ category.wordpress_lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/{{ category.url }}{{ category.wordpress_lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ category.url }}{{ category.wordpress_lede }}">
+        {% else %}
+        {# Don't forget to change this if it gets changed below #}
+        <meta itemprop="image" content="{{ SITEURL }}/theme/images/lede-about.jpg">
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/lede-about.jpg">
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/lede-about.jpg">
+        {% endif %}
+
+        {% if category.summary %}
+        <meta itemprop="description" content="{{ category.summary |striptags }}">
+        <meta property="og:description" content="{{ category.summary |striptags }}">
+        <meta name="twitter:description" content="{{ category.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="{{ category.name }} posts on darktable.org">
+        <meta property="og:description" content="{{ category.name }} posts on darktable.org">
+        <meta name="twitter:description" content="{{ category.name }} posts on darktable.org">
+        {% endif %}
+
+        {% if category.author_twitter %}
+        <meta name="twitter:creator" content="{{ category.author_twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if category.canonical %}
+        <link rel="canonical" href="{{ category.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ category.canonical }}" />
+        <meta property="url" content="{{ category.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ category.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ category.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ category.url }}" />
+        {% endif %}
+{%endblock metadata %}
 
 {% block header %}
     <section class='lede'>
-        <img class='lede-img' src='/theme/images/lede-about.jpg'>
+        {# don't forget to change this above if you change it here #}
+        {# ie: in the metadata/opengraph stuff #}
+        <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-about.jpg'>
     </section>
 {% endblock header %}
 

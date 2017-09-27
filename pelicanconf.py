@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'darktable'
 SITENAME = u'darktable'
+SITEURL = 'https://www.darktable.org'
 SITEURL = ''
 
 PATH = 'content'

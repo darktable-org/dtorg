@@ -1,11 +1,76 @@
 {% extends "base.html" %}
 
-{% block head %}
-{{ super() }}
+{% block title %}
+        <title itemprop='name'>{{ article.title |striptags|lower }} | {{ SITENAME }}</title>
+{%endblock title%}
 
-<title>{% block title %}{{ article.title |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
 
-{% endblock head %}
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
+
+        <meta itemprop="name" content="{{ article.title |striptags|lower }}" >
+        <meta name="twitter:title" content="{{ article.title |striptags|lower }}" >
+        <meta property="og:title" content="{{ article.title |striptags|lower }}" >
+		<meta itemprop="headline" content="{{ article.title |striptags|lower }}" >
+
+        <meta property="og:type" content="article">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if article.author %}
+        <meta itemprop="author" content="{{ article.author }}" />
+        <meta property="og:author" content="{{ article.author }}" />
+        {% endif %}
+
+        {% if article.date %}
+        <meta itemprop="datePublished" content="{{ article.date }}" />
+        <meta property="og:published_time" content="{{ article.date }}" />
+        {% endif %}
+
+        {% if article.lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}"> 
+        <meta property="og:image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}">
+        {% elif article.wordpress_lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ article.url }}{{ article.wordpress_lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/{{ article.url }}{{ article.wordpress_lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ article.url }}{{ article.wordpress_lede }}">
+        {% else %}
+        <meta itemprop="image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        {% endif %}
+
+        {% if article.summary %}
+        <meta itemprop="description" content="{{ article.summary |striptags }}">
+        <meta property="og:description" content="{{ article.summary |striptags }}">
+        <meta name="twitter:description" content="{{ article.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta property="og:description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta name="twitter:description" content="darktable is an open source photography workflow application and raw developer.">
+        {% endif %}
+
+        {% if article.author_twitter %}
+        <meta name="twitter:creator" content="{{ article.author_twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if article.canonical %}
+        <link rel="canonical" href="{{ article.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ article.canonical }}" />
+        <meta property="url" content="{{ article.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ article.url }}" />
+        {% endif %}
+
+
+{%endblock metadata %}
 
 
 {% block header %}

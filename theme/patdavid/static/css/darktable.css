@@ -59,6 +59,10 @@ body {
     text-align: center;
     line-height: 2rem;
 }
+#menu.home {
+    z-index: 1;
+    line-height: 25px;
+}
 /* @media (min-width: 64rem) { */
 @media (min-width: 1000px) {
     #logo img {
@@ -110,7 +114,7 @@ body {
  * no lede defined.  If we
  * use a default lede, change this */
 section.lede.default {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 /* Headings, 1.25:1 ratio

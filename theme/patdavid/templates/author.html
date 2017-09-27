@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+
+<title>{% block title %}{{ category |striptags|lower }} | {{ SITENAME }}{% endblock title %}</title>
+
+{% endblock head %}
+
+
+{% block header %}
+    <section class='lede'>
+        <img class='lede-img' src='/theme/images/lede-about.jpg'>
+    </section>
+{% endblock header %}
+
+{% block content %}
+
+    <section class='category'>
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='page-title'>posts by {{ author }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='container content'>
+            <div class='row'>
+                <div class='column'>
+
+                    {% for article in articles_page.object_list %}
+
+                    <article>
+                        <section class='article-lede'>
+                        </section>
+
+                        <section class='content'>
+
+                            <h1 class='entry-title'>
+                                <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                    {{ article.title }}
+                                </a>
+                            </h1>
+
+                            <div class='post-info'>
+                                posted on 
+                                <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                                <address class="vcard author">by
+                                    {% for author in article.authors %}
+                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a> 
+                                    {% endfor %}
+                                </address>
+
+                            </div>
+
+                            <div class='entry-content'>
+                                {% if article.summary %}
+                                {{ article.summary }}
+                                {% else %}
+                                {{ article.content|truncate() }}
+                                {% endif %}
+                                <p>
+                                    <a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                        Continue Reading &rarr;
+                                    </a>
+                                    </p>
+                            </div>
+                        </section>
+
+                    </article>
+
+                    <hr/>
+
+                    {% endfor %}
+                    {% if articles_page.has_other_pages() %}
+                    {% include 'pagination.html' %}
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

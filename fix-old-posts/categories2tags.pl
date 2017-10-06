@@ -67,10 +67,10 @@ while(<$IN>)
   }
   elsif($state eq "PROCESS")
   {
-    if($_ =~ /^[ ]*\-[ ]+([^ ]*)/)
+    if($_ =~ /^[ ]*\-[ ]+(.*)$/)
     {
       $print = 0;
-      push @tags, $1 if($1 ne "");
+      push @tags, $1 if($1 ne "" and $1 ne "news");
     }
     else
     {

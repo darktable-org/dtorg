@@ -97,6 +97,9 @@
 
             <div class='subnav'>
             {% set curtitle = page.title %}
+            {% if curtitle+"/" in pages %}
+            <span>curtitle, {{ curtitle }} is in pages</span>
+            {% endif %}
             {% for page in pages|sort(attribute='url') %}
                 {% if page.url.startswith( curtitle ) and ( page.url != curtitle+"/" ) %}
                 <a href="/{{ page.url }}">{{ page.title |striptags|lower }}</a> 

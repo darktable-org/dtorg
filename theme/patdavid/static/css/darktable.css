@@ -173,6 +173,8 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
     float: right;
     margin-right: -2rem;
     margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    box-shadow: 0 6px 6px -6px grey;
 }
 @media (min-width: 750px){
     .subnav {
@@ -183,6 +185,8 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
 
 .subnav a {
     text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
 }
 .subnav a::after {
     content: " ·";
@@ -401,4 +405,14 @@ li > p:first-child {
     color: red;
     font-size: 1.2rem;
     vertical-align: middle;
+}
+
+.rss_link {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+}
+.rss_link svg {
+    width: 16px;
+    height: 16px;
 }

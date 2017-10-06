@@ -7,7 +7,7 @@ slug: darktable-2-0-7-released
 title: darktable 2.0.7 released
 wordpress_lede: river.jpg
 wordpress_id: 4587
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the seventh bugfix release for the 2.0 series of darktable, 2.0.7!
 

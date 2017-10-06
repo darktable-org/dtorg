@@ -7,7 +7,7 @@ slug: released-darktable-1-6-1
 title: released darktable 1.6.1
 wordpress_lede: fireworks.jpg
 wordpress_id: 3530
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We are happy to announce that darktable 1.6.1 has been released. Due to an oversight on our side we forgot to do this announcement back when the actual release was done, so this is mostly for historical reasons.
 

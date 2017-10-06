@@ -7,7 +7,7 @@ slug: release-candidate-darktable1-0rc1
 title: Release Candidate darktable1.0~rc1
 wordpress_lede: img_0001_28.jpg
 wordpress_id: 1306
-tags: announcement, darktable, candidate, release, tarball
+tags: announcement, darktable release, candidate, release, tarball
 
 There are still bug fixes coming, which is good. But nevertheless we just released a release candidate tarball, available for download from here:
 

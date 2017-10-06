@@ -7,7 +7,7 @@ slug: using-lowpass-filter-to-recover-shadows
 title: Using lowpass filter to recover shadows
 wordpress_lede: lp-thumb.jpg
 wordpress_id: 1131
-tags: blog, development, darktable, highlights, lowpass, shadow, tone, tutorial
+tags: blog, development, darktable, highlights, lowpass, shadow recovery, tone curves, tutorial
 
 Outdoor photographers are often confronted with unfavorable light conditions. This often entails too high contrast. Two of the most frequent consequences are blown highlights and deep shadows in your digital images. Overexposed highlights are challenging to repair in digital post post-processing, still darktable offers a decent set of valuable tools as long as you take your pictures in raw ([see Jo's blog post "why you want raw"](http://www.darktable.org/2012/02/why-you-want-raw/)). Fortunately, it’s much easier to take care of the deep shadows.
 

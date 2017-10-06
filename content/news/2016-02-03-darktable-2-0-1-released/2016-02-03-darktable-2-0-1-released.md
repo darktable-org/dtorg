@@ -7,7 +7,7 @@ slug: darktable-2-0-1-released
 title: darktable 2.0.1 released
 wordpress_lede: race_cars.jpg
 wordpress_id: 3945
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the first bugfix release for the 2.0 series of darktable, 2.0.1!
 

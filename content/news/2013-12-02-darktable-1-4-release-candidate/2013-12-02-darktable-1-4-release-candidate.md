@@ -7,7 +7,7 @@ slug: darktable-1-4-release-candidate
 title: darktable 1.4 release candidate
 wordpress_lede: oasis.png
 wordpress_id: 3133
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We just packaged darktable 1.4rc1 for more testing before releasing 1.4 proper in a few weeks. We've got tarballs,
 

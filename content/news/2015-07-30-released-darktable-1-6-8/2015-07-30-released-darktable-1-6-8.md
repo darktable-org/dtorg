@@ -7,7 +7,7 @@ slug: released-darktable-1-6-8
 title: released darktable 1.6.8
 wordpress_lede: dt-2.jpg
 wordpress_id: 3745
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We are happy to announce that darktable 1.6.8 has been released.
 

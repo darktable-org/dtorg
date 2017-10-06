@@ -7,7 +7,7 @@ slug: color-management-on-linux
 title: Color Management On Linux
 wordpress_lede: img_0001_29.jpg
 wordpress_id: 996
-tags: further
+tags: further reading
 
 Pascal de Bruijn wrote an extensive article about color management on Linux systems, covering basic explanations as well as the description of some tools.
 

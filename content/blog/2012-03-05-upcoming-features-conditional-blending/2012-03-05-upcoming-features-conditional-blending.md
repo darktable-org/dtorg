@@ -7,7 +7,7 @@ slug: upcoming-features-conditional-blending
 title: 'Upcoming features: Conditional Blending'
 wordpress_lede: IMG_1474_thumb.sm_.jpg
 wordpress_id: 1318
-tags: blog, development, upcoming, blending, color, conditional, darktable, halos, Lab, tone, tutorial
+tags: blog, development, upcoming feature, blending, color, conditional blending, darktable, halos, Lab, tone curves, tutorial
 
 # or „If one slider is not enough“
 

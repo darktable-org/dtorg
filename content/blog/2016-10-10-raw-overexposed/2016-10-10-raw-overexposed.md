@@ -7,7 +7,7 @@ slug: raw-overexposed
 title: Visualizing the raw (sensor) highlight clipping
 wordpress_lede: rawprepare-lenscorrection-glitchart.jpeg
 wordpress_id: 4239
-tags: blog, development, upcoming, color, highlights
+tags: blog, development, upcoming feature, color, highlights
 
 Have you ever over-exposed your images? Have you ever noticed that your images look flat and dull after you apply negative exposure compensation? Even though the over/underexposed warning says there is no overexposure? Have you ever wondered what is going on? Read on.
 

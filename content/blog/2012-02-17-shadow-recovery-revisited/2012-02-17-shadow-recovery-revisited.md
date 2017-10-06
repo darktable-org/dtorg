@@ -7,7 +7,7 @@ slug: shadow-recovery-revisited
 title: Shadow recovery revisited
 wordpress_lede: sh-thumb.sm_.jpg
 wordpress_id: 1175
-tags: blog, development, darktable, highlights, shadow, tutorial
+tags: blog, development, darktable, highlights, shadow recovery, tutorial
 
 One of the remaining shortcomings of digital cameras is their rather low dynamic range in comparison to analog - especially black-and-white - film. Scenes with strong differences between highlights and shadows are very difficult to capture. Even if they are exposed properly with no blown-out highlights they will too often only give acceptable results after extensive post-processing.
 

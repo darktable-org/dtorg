@@ -7,7 +7,7 @@ slug: fourth-release-candidate-for-darktable-2-0
 title: fourth release candidate for darktable 2.0
 wordpress_lede: img_0001.jpg
 wordpress_id: 3903
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the fourth and hopefully last release candidate in the new feature release of darktable, 2.0~rc4.
 

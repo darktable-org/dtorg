@@ -7,7 +7,7 @@ slug: third-release-candidate-for-darktable-2-0
 title: third release candidate for darktable 2.0 & string freeze
 wordpress_lede: autumn_path.jpg
 wordpress_id: 3883
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the third release candidate in the new feature release of darktable, 2.0~rc3.
 

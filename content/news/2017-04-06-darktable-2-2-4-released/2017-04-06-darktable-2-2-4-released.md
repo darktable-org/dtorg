@@ -7,7 +7,7 @@ slug: darktable-2-2-4-released
 title: darktable 2.2.4 released
 wordpress_lede: thistels.jpg
 wordpress_id: 4757
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the fourth bugfix release for the 2.2 series of darktable, 2.2.4!
 

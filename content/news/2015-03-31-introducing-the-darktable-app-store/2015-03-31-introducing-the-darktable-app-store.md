@@ -7,7 +7,7 @@ slug: introducing-the-darktable-app-store
 title: Introducing the darktable app store
 wordpress_lede: hipsters_in_the_streets.jpg
 wordpress_id: 3630
-tags: announcement, blog, development, upcoming
+tags: announcement, blog, development, upcoming feature
 
 Today we are happy to announce a big new feature that we will not only ship with the big 2.0 release later this year but also with our next point release, 1.6.4, which is due in about a week: even more darkroom modules!
 

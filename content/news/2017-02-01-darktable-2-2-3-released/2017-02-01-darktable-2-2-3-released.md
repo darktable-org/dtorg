@@ -7,7 +7,7 @@ slug: darktable-2-2-3-released
 title: darktable 2.2.3 released
 wordpress_lede: turtle_small.jpeg
 wordpress_id: 4732
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the third bugfix release for the 2.2 series of darktable, 2.2.3!
 

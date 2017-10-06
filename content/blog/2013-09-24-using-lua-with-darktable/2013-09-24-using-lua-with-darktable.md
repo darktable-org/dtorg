@@ -7,7 +7,7 @@ slug: using-lua-with-darktable
 title: Using Lua with darktable
 wordpress_lede: img_0057.jpg
 wordpress_id: 3036
-tags: upcoming
+tags: upcoming feature
 
 The next major release of darktable will contain multiple features that have been discussed on this blog and that will make it more powerful than ever. These new features will allow you to process your images in new and creative ways.
 

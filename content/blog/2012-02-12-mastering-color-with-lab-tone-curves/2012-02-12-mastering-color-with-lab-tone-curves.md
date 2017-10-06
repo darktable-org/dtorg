@@ -7,7 +7,7 @@ slug: mastering-color-with-lab-tone-curves
 title: Mastering color with Lab tone curves
 wordpress_lede: tc2-thumbnail.sm_.jpg
 wordpress_id: 1098
-tags: blog, development, color, darktable, Lab, saturation, tone, tutorial
+tags: blog, development, color, darktable, Lab, saturation, tone curves, tutorial
 
 ## or “How to bring the jungle back”
 

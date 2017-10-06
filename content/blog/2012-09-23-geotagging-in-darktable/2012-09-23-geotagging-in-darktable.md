@@ -7,7 +7,7 @@ slug: geotagging-in-darktable
 title: Geotagging in darktable
 wordpress_lede: IMG_6337_export.jpg
 wordpress_id: 2162
-tags: upcoming
+tags: upcoming feature
 
 [caption id="attachment_2166" align="alignleft" width="188"][![](http://www.darktable.org/wp-content/uploads/2012/09/geotagging_module-188x62.jpg)](http://www.darktable.org/2012/09/geotagging-in-darktable/geotagging_module/) Geotagging module[/caption]
 

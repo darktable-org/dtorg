@@ -7,7 +7,7 @@ slug: darktable-2-0-5-released
 title: darktable 2.0.5 released
 wordpress_lede: landscape.jpg
 wordpress_id: 4155
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the fifth bugfix release for the 2.0 series of darktable, 2.0.5!
 

@@ -7,7 +7,7 @@ slug: released-darktable-1-6
 title: Released darktable 1.6
 wordpress_lede: dt_shirt_text.jpg
 wordpress_id: 3445
-tags: announcement, darktable, '1.6', announcement, darktable, release
+tags: announcement, darktable release, '1.6', announcement, darktable, release
 
 We are happy to announce that almost after one year darktable 1.6 has just been released.
 

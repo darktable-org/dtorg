@@ -6,7 +6,7 @@ link: http://www.darktable.org/2013/03/darktable-1-1-4-release/
 slug: darktable-1-1-4-release
 title: darktable 1.1.4 release
 wordpress_id: 2793
-tags: announcement, darktable
+tags: announcement, darktable release
 
 Hi,
 

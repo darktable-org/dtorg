@@ -7,7 +7,7 @@ slug: compressing-dynamic-range-with-exposure-fusion
 title: compressing dynamic range with exposure fusion
 wordpress_lede: img_0001_03.jpg
 wordpress_id: 4181
-tags: blog, development, further, upcoming
+tags: blog, development, further reading, upcoming feature
 
 modern sensor capture an astonishing dynamic range, namely some sony sensors or canon with [magic lantern's dual iso feature](http://www.magiclantern.fm/forum/?topic=7139.0).
 

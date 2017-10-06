@@ -7,7 +7,7 @@ slug: released-darktable-1-4-1
 title: released darktable 1.4.1
 wordpress_lede: paua.jpg.jpg
 wordpress_id: 3250
-tags: announcement, darktable
+tags: announcement, darktable release
 
 hi all,
 

@@ -7,7 +7,7 @@ slug: interview-with-richard-hughes
 title: Interview with Richard Hughes
 wordpress_lede: colorhug1.jpg
 wordpress_id: 1017
-tags: further
+tags: further reading
 
 Mukund Sivaraman from [banu.com](http://banu.com) held an interesting interview with Richard Hughes, the maker of the ColorHug colorimeter:
 

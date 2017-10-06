@@ -7,7 +7,7 @@ slug: released-darktable-1-2-3
 title: released darktable 1.2.3
 wordpress_lede: ginko_01.jpg
 wordpress_id: 3014
-tags: darktable
+tags: darktable release
 
 Dear all,
 

@@ -7,7 +7,7 @@ slug: color-mapping
 title: Color Mapping
 wordpress_lede: cm_featured.jpg
 wordpress_id: 2853
-tags: blog, development, upcoming, blending, color, color, Lab, tutorial
+tags: blog, development, upcoming feature, blending, color, color mapping, Lab, tutorial
 
 I'd like to give a few words on a new module named "color mapping" that is currently under development in our master branch. This module is a rework and enhancement of the older "color transfer" module. That older module had several issues which made a migration impossible. So we leave the old one behind as deprecated (old history stack still work as before) and for all new history stacks "color mapping" should be used instead.
 

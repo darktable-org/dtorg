@@ -7,7 +7,7 @@ slug: 0-3-beta-released
 title: 0.3 beta released
 wordpress_lede: crowrock.jpg
 wordpress_id: 207
-tags: announcement, darktable
+tags: announcement, darktable release
 
 there have been some major internal changes in dt since 0.2, and some of them result in cool new features for the user, so it is time to pass it on to the non-git audience. this includes:
 

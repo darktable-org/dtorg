@@ -7,7 +7,7 @@ slug: darktable-2-0-4-released
 title: darktable 2.0.4 released
 wordpress_lede: mairi.jpg
 wordpress_id: 4059
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the fourth bugfix release for the 2.0 series of darktable, 2.0.4!
 

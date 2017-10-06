@@ -7,7 +7,7 @@ slug: release-candidate-for-darktable-1-6
 title: Release Candidate for darktable 1.6
 wordpress_lede: 20110428_london_20110428_IMG_3966_01_small.jpg
 wordpress_id: 3421
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We are happy to announce the first release candidate for the upcoming darktable 1.6.
 

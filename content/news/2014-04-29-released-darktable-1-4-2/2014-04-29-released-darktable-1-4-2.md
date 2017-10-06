@@ -7,7 +7,7 @@ slug: released-darktable-1-4-2
 title: released darktable 1.4.2
 wordpress_lede: dt_shirt_text.jpg
 wordpress_id: 3278
-tags: announcement, darktable
+tags: announcement, darktable release
 
 Hello everyone,
 

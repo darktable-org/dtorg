@@ -7,7 +7,7 @@ slug: darktable-1-0-5-released
 title: darktable 1.0.5 released
 wordpress_lede: ladybugs.jpg
 wordpress_id: 1890
-tags: announcement, darktable
+tags: announcement, darktable release
 
 It's our pleasure to announce that darktable-1.0.5 has been released. Find the tarball on sf.net:
 

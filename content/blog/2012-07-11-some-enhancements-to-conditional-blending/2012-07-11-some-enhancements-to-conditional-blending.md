@@ -7,7 +7,7 @@ slug: some-enhancements-to-conditional-blending
 title: Some enhancements to conditional blending
 wordpress_lede: IMG_4287x_0004.jpg
 wordpress_id: 1862
-tags: blog, community, development, blending, color, conditional, darktable, Lab, monochrome, saturation
+tags: blog, community, development, blending, color, conditional blending, darktable, Lab, monochrome, saturation
 
 Conditional blending, also known as "blend if", is a feature which is currently under development in our master branch. A general description of the idea together with some examples can be found [here](http://www.darktable.org/2012/03/upcoming-features-conditional-blending/). In short, conditional blending allows you to limit the effect of a module to certain pixels of an image, determined by their color coordinates. For modules in Lab space, you can restrict the effect of a module depending on the pixel’s L, a, and b value. For modules in RGB space, you can restrict the effect of a module depending on color channels Red, Green, and Blue plus a Gray value.
 

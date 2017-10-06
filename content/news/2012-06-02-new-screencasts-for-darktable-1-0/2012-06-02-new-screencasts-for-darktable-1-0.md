@@ -7,7 +7,7 @@ slug: new-screencasts-for-darktable-1-0
 title: New screencasts for darktable 1.0
 wordpress_lede: Bildschirmfoto-vom-2012-06-02-182519.png
 wordpress_id: 1777
-tags: further
+tags: further reading
 
 Pascal recorded some new screencasts using the latest stable version of darktable, 1.0.4.
 

@@ -7,7 +7,7 @@ slug: second-release-candidate-for-darktable-2-0
 title: second release candidate for darktable 2.0
 wordpress_lede: cannobio2.jpg
 wordpress_id: 3855
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the second release candidate in the new feature release of darktable, 2.0~rc2.
 

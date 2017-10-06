@@ -7,7 +7,7 @@ slug: profiling-sensor-and-photon-noise
 title: profiling sensor and photon noise
 wordpress_lede: denoise_teaser.jpg
 wordpress_id: 2368
-tags: blog, development, upcoming
+tags: blog, development, upcoming feature
 
 # .. and how to get rid of it.
 

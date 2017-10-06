@@ -7,7 +7,7 @@ slug: darktable-2-2-2-released
 title: darktable 2.2.2 released
 wordpress_lede: pygmy_chameleon.jpg
 wordpress_id: 4727
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the second bugfix release for the 2.2 series of darktable, 2.2.2!
 

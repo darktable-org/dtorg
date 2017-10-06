@@ -7,7 +7,7 @@ slug: of-histograms-and-waveforms
 title: Of Histograms and Waveforms
 wordpress_lede: featured_image.jpg
 wordpress_id: 3141
-tags: blog, upcoming
+tags: blog, upcoming feature
 
 [caption id="attachment_3143" align="alignleft" width="188"][![The gradient test image](http://www.darktable.org/wp-content/uploads/2013/12/grey-188x117.png)](https://www.darktable.org/wp-content/uploads/2013/12/grey.png) _Figure 1_: the gradient test image – download and play with it in darktable[/caption]
 

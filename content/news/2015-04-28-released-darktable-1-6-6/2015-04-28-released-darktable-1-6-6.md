@@ -7,7 +7,7 @@ slug: released-darktable-1-6-6
 title: released darktable 1.6.6
 wordpress_lede: wheat.jpg
 wordpress_id: 3659
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We are happy to announce that darktable 1.6.6 has been released. Please note that the 1.6.5 release was broken so 1.6.6 was directly pushed out. Just pretend 1.6.5 had been skipped.
 

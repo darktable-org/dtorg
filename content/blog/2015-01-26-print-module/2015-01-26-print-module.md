@@ -7,7 +7,7 @@ slug: print-module
 title: Print Module
 wordpress_lede: dt-print-settingsv2.jpg
 wordpress_id: 3507
-tags: upcoming
+tags: upcoming feature
 
 After being in the camera our pictures deserve some love and to be shared. Every photographer will tell you the joy of having a picture in the hands. At last the pixels have taken form on a piece of paper to give birth to a photography which can be put on the wall!
 

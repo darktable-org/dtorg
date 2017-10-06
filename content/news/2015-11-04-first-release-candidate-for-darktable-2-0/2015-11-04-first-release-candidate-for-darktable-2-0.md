@@ -7,7 +7,7 @@ slug: first-release-candidate-for-darktable-2-0
 title: first release candidate for darktable 2.0
 wordpress_lede: nut.jpg
 wordpress_id: 3835
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We're proud to announce the first release candidate in the new feature release of darktable, 2.0~rc1.
 

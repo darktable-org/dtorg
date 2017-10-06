@@ -7,7 +7,7 @@ slug: running-on-non-x86-platforms
 title: Running on non-x86 platforms
 wordpress_lede: coin.jpg
 wordpress_id: 4030
-tags: blog, development, upcoming
+tags: blog, development, upcoming feature
 
 For many years darktable would only run on x86 CPUs that also support at least SSE2. While that is nowadays almost everything looking like a PC it's still limiting. Consequently Roman sat down and started work on dropping that hard requirement. While his work isn't complete yet it's definitely becoming useful. So with a little tweaking you can for example use the development versions on an ARM, like the Raspberry Pi. Together with a touchscreen that has the potential to make a fun little package.
 

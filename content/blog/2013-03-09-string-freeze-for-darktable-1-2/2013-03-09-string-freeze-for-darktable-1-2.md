@@ -7,7 +7,7 @@ slug: string-freeze-for-darktable-1-2
 title: String freeze for darktable 1.2
 wordpress_lede: IMG_8143_export.jpg
 wordpress_id: 2783
-tags: announcement, darktable
+tags: announcement, darktable release
 
 Dear all,
 

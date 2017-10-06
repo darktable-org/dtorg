@@ -7,7 +7,7 @@ slug: darktable-2-0-6-released
 title: darktable 2.0.6 released
 wordpress_lede: spider.jpg
 wordpress_id: 4226
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the sixth bugfix release for the 2.0 series of darktable, 2.0.6!
 

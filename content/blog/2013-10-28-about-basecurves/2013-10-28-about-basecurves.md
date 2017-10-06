@@ -7,7 +7,7 @@ slug: about-basecurves
 title: about basecurves
 wordpress_lede: basecurve-0.png
 wordpress_id: 3065
-tags: blog, further
+tags: blog, further reading
 
 the purpose of the basecurve is to make the otherwise scene-referred linear (linear raw rgb) color look good on your output devices. this is done independently of any color managed transforms which are also done in the pipeline, so we can establish a certain look independent of the devices. this will affect how highlights and shadows are balanced against each other, the overall contrast of the image, as well as color saturation. it basically boils down to:
 

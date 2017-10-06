@@ -7,7 +7,7 @@ slug: upcoming-features-new-interpolation-modes-and-better-resize
 title: 'Upcoming features: New interpolation modes and better resize'
 wordpress_lede: dt-interpolation-results-testchart.png
 wordpress_id: 1527
-tags: blog, development, upcoming, bicubic, bilinear, interpolation, lanczos, lens, rotation
+tags: blog, development, upcoming feature, bicubic, bilinear, interpolation, lanczos, lens correction, rotation
 
 darktable is all about providing you the best tools in order to get the most out of your photographies. This blog entry will explain how an existing feature can help you get more detailed exports and it will try to give you a glimpse of what is cooking in an unscheduled but upcoming version of darktable for even better detail preservation.
 

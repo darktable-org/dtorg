@@ -7,7 +7,7 @@ slug: released-darktable-1-2-1
 title: released darktable 1.2.1
 wordpress_lede: IMG_5490_export2.jpg
 wordpress_id: 2930
-tags: announcement, darktable
+tags: announcement, darktable release
 
 Dear all,
 

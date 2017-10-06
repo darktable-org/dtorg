@@ -7,7 +7,7 @@ slug: string-freeze-for-darktable-1-6
 title: String freeze for darktable 1.6
 wordpress_lede: 20121118-Chile-IMG-7388medium_large.1409694179.jpg
 wordpress_id: 3415
-tags: announcement, darktable, darktable, string, translation
+tags: announcement, darktable release, darktable, string freeze, translation
 
 Dear all,
 

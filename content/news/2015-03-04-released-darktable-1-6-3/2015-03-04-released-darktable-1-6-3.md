@@ -7,7 +7,7 @@ slug: released-darktable-1-6-3
 title: released darktable 1.6.3
 wordpress_lede: speicherstadt.jpg
 wordpress_id: 3570
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We are happy to announce that darktable 1.6.3 has been released.
 

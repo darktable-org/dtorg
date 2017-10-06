@@ -7,7 +7,7 @@ slug: darktable-2-2-0rc1-released
 title: darktable 2.2.0rc1 released
 wordpress_lede: castle2.jpg
 wordpress_id: 4610
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the second release candidate of darktable 2.2.0, with some fixes over the previous release candidate. the most important one might be bringing back read support for very old xmp files (~4 years).
 

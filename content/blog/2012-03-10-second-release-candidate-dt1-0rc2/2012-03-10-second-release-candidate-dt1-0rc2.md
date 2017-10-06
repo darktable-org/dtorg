@@ -7,7 +7,7 @@ slug: second-release-candidate-dt1-0rc2
 title: Second release candidate dt1.0~rc2
 wordpress_lede: IMG_5561_export_01.jpg
 wordpress_id: 1361
-tags: announcement, darktable, darktable, download, release, tarball
+tags: announcement, darktable release, darktable, download, release candidate, tarball
 
 Our second release candidate is out!
 We have had a couple of tiny bugfixes, better translations, new rawspeed (brings support for the new Canon 5D Mark3), and slight

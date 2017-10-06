@@ -7,7 +7,7 @@ slug: released-darktable-1-4
 title: released darktable 1.4
 wordpress_lede: dt.png
 wordpress_id: 3181
-tags: announcement, darktable
+tags: announcement, darktable release
 
 merry christmas!
 

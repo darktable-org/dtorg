@@ -7,7 +7,7 @@ slug: darktable-2-2-0rc2-released
 title: darktable 2.2.0rc2 released
 wordpress_lede: castle4.jpg
 wordpress_id: 4625
-tags: announcement, darktable
+tags: announcement, darktable release
 
 we're proud to announce the third release candidate of darktable 2.2.0, with some fixes over the previous release candidate.
 

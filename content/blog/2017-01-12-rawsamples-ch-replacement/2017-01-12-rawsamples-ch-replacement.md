@@ -7,7 +7,7 @@ slug: rawsamples-ch-replacement
 title: rawsamples.ch replacement
 lede: snowice-andabata.jpg
 wordpress_id: 4694
-tags: announcement, blog, community, @andabata, @lebedevri, @pixlsus, foss, photography, rawsamples
+tags: announcement, blog, community, '@andabata', '@lebedevri', '@pixlsus', foss, photography, rawsamples
 
 [Rawsamples.ch](http://rawsamples.ch) is a website with the goal to:
 

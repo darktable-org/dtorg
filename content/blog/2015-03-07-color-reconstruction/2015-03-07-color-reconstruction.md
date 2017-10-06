@@ -7,7 +7,7 @@ slug: color-reconstruction
 title: Color Reconstruction
 wordpress_lede: colorreconstruction_icon.jpg
 wordpress_id: 3590
-tags: blog, development, upcoming, bilateral, color, color, highlights, Lab, overexposed
+tags: blog, development, upcoming feature, bilateral, color, color reconstruction, highlights, Lab, overexposed
 
 **If you overexpose a photo with your digital camera you are in trouble. That’s what most photography related textbooks tell you – and it’s true. So you better pay close attention to your camera’s metering while shooting. However, what to do when the “bad thing” happened and you got this one non-repeatable shot, which is so absolutely brilliant, but unfortunately has some ugly signs of overexposure?**
 

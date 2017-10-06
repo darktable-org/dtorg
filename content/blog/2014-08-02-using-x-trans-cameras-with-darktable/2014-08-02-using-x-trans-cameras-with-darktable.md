@@ -7,7 +7,7 @@ slug: using-x-trans-cameras-with-darktable
 title: Using X-Trans cameras with darktable
 wordpress_lede: xtrans_21.png
 wordpress_id: 3334
-tags: blog, development, upcoming, darktable, demosaicing, dynamic, fujifilm, interpolation, x-trans
+tags: blog, development, upcoming feature, darktable, demosaicing, dynamic range, fujifilm, interpolation, x-trans
 
 There is now a development branch of darktable with experimental support for raw files from many recent Fujifilm cameras. These cameras include those with the X-Trans sensor (X-Pro1, X-E1, X20, X100S, X-M1, XQ1, X-E2, and X-T1), X-Series cameras with conventional sensors (X100, X10, X-S1, XF-1, X-A1), and some from Fujifilm’s other lines (S6000fd, E550, IS-1, S3Pro, S5Pro, S5600, E900, S2Pro, S5000, S5200, S5500, S6500fd, S9500, S9600, S9600fd). Previously, darktable would fail to read RAF-type raw files produced by these cameras.
 

@@ -7,7 +7,7 @@ slug: experimental-darktable-os-x-image
 title: Experimental darktable OS X image
 wordpress_lede: spider.jpg
 wordpress_id: 1959
-tags: announcement, darktable
+tags: announcement, darktable release
 
 After the progress reported in the [latest blog post](http://www.darktable.org/2012/08/bringing-current-darktable-to-os-x/) on the OS X port of darktable we now have something new for the Mac users:
 

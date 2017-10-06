@@ -7,7 +7,7 @@ slug: released-darktable-1-6-7
 title: released darktable 1.6.7
 wordpress_lede: town_hall.jpg
 wordpress_id: 3697
-tags: announcement, darktable
+tags: announcement, darktable release
 
 We are happy to announce that darktable 1.6.7 has been released.
 

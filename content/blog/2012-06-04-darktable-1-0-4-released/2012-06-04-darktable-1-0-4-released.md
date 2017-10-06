@@ -7,7 +7,7 @@ slug: darktable-1-0-4-released
 title: darktable 1.0.4 released
 wordpress_lede: 20110428_IMG_3966_export.jpg
 wordpress_id: 1794
-tags: announcement, darktable
+tags: announcement, darktable release
 
 Pascal was so kind to tend to a stable branch, the next incarnation of which we have the good fortune to announce.
 

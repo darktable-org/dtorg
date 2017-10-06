@@ -14,6 +14,7 @@ THEME = 'theme/patdavid'
 
 TIMEZONE = 'Etc/UTC'
 
+LOCALE = u'C'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing

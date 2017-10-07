@@ -3,8 +3,8 @@ comments: true
 date: 2011-06-25 21:15:19+00:00
 layout: post
 link: http://www.darktable.org/2011/06/darktable%e2%80%99s-new-keyboard-shortcut-system/
-slug: darktable%e2%80%99s-new-keyboard-shortcut-system
-title: Darktable’s New Keyboard Shortcut System
+slug: darktables-new-keyboard-shortcut-system
+title: darktable’s New Keyboard Shortcut System
 wordpress_id: 420
 tags: GSoC
 
@@ -16,7 +16,7 @@ If you enter the preferences dialog now, you’ll see a new tab on the right han
 
 As you remap keys, the system will also automatically delete any conflicting keybindings.  The rules for this are somewhat nuanced, as a shortcut may be usable throughout the entire program, or only in one of the views (darkroom, lighttable, capture, and filmstrip).  Global shortcuts, obviously, will conflict with shortcuts in any other group.  Lighttable shortcuts, however, will only conflict with other lighttable shortcuts (other than globals).  Darkroom and capture shortcuts will conflict with shortcuts from their own group or shortcuts from the filmstrip, because the filmstrip can appear in either of those views.
 
-Basically, you can map the same key to multiple shortcuts as long as there’s no way they could feasibly activate at the same time.  This means that you’re more than welcome to set a key to mean one thing in lighttable mode and another in darkroom mode.  You can also map shortcuts to keys without any modifiers (for instance, just the ‘l’ key to switch to lighttable mode), as Darktable deactivates keyboard shortcuts whenever focus is on a text entry widget.
+Basically, you can map the same key to multiple shortcuts as long as there’s no way they could feasibly activate at the same time.  This means that you’re more than welcome to set a key to mean one thing in lighttable mode and another in darkroom mode.  You can also map shortcuts to keys without any modifiers (for instance, just the ‘l’ key to switch to lighttable mode), as darktable deactivates keyboard shortcuts whenever focus is on a text entry widget.
 
 Another helpful feature (at the suggestion of boucman on IRC) is that every darkroom module has a “show” accelerator in the dialog box, which is empty by default.  You can define these shortcuts for modules which you use frequently.  When activated,  they will show the module in question and bring it to focus.
 

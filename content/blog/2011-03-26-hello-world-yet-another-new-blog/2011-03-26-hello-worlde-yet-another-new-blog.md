@@ -3,7 +3,7 @@ comments: true
 date: 2011-03-26 22:11:29+00:00
 layout: post
 link: http://www.darktable.org/2011/03/%e2%80%9chello-world%e2%80%9d-%e2%80%93-yet-another-new-blog/
-slug: '%e2%80%9chello-world%e2%80%9d-%e2%80%93-yet-another-new-blog'
+slug: hello-world-yet-another-new-blog'
 title: “Hello, world!” – yet another new blog?
 wordpress_id: 464
 tags: development

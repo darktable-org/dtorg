@@ -4,7 +4,7 @@ date: 2011-03-28 22:08:40+00:00
 layout: post
 link: http://www.darktable.org/2011/03/darktable-user-manual-revisited/
 slug: darktable-user-manual-revisited
-title: Darktable user manual revisited
+title: darktable user manual revisited
 wordpress_id: 457
 tags: development
 

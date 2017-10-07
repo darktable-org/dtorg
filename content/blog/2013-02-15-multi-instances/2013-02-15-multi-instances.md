@@ -16,7 +16,7 @@ Modules that can be instantiated multiple times have a new icon in their header,
 Keeping with darktable's philosophy, you can only rearrange modules of the same kind. The order of modules of different kind is optimized by the darktable developers in order to minimize quality loss. The different modules are, as usual, applied from bottom to top.
 
 
-# 
+#
 
 
 
@@ -33,7 +33,7 @@ Here is what can be achieve :
 [![mi_screen_gnd](http://www.darktable.org/wp-content/uploads/2013/02/mi_screen_gnd-494x290.jpg)](https://www.darktable.org/wp-content/uploads/2013/02/mi_screen_gnd.jpg)
 
 
-# 
+#
 
 
 
@@ -44,7 +44,7 @@ Here is what can be achieve :
 The previous example is nice, but apart for illustrating diffraction, it is not that useful.
 Multi-instance really shows its power when used with selective adjustments and the next example will show you how to do that.
 
-Darktable does not currently implement masks, but we have a very powerful alternative, conditional blending, that allows to select region based on their color and luminance rather than their position.
+darktable does not currently implement masks, but we have a very powerful alternative, conditional blending, that allows to select region based on their color and luminance rather than their position.
 So here is another example using conditional blending :
 
 Let's start from this simple image :
@@ -63,7 +63,7 @@ Now we simply desaturate the image by pulling down the saturation line. This giv
 [![mi_image4](http://www.darktable.org/wp-content/uploads/2013/02/mi_image4-494x287.jpg)](https://www.darktable.org/wp-content/uploads/2013/02/mi_image4.jpg)
 
 
-# 
+#
 
 
 

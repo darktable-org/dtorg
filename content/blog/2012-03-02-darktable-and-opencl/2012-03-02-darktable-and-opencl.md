@@ -4,7 +4,7 @@ date: 2012-03-02 20:29:00+00:00
 layout: post
 link: http://www.darktable.org/2012/03/darktable-and-opencl/
 slug: darktable-and-opencl
-title: Darktable and OpenCL (updated)
+title: darktable and OpenCL (updated)
 wordpress_lede: ocl-menu-thumb.jpeg
 wordpress_id: 1279
 tags: blog, development, darktable, OpenCL, tutorial
@@ -17,7 +17,7 @@ Many readers will have already heard about GPU processing and the fact that dark
 
 Processing high resolution images belongs to the more demanding tasks in modern computing. Both, in terms of memory requirements and in terms of CPU power, getting the best out of a typical 15, 20 or 25 Megapixel image can quickly bring your computer to its limits.
 
-Darktable’s requirements are no exception. Our decision to not compromise processing quality, has led to all calculations being done on 4 × 32bit floating point numbers. This is slower than “ordinary” 8 or 16bit integer algebra, but eliminates all problems of tonal breaks or loss of information.
+darktable’s requirements are no exception. Our decision to not compromise processing quality, has led to all calculations being done on 4 × 32bit floating point numbers. This is slower than “ordinary” 8 or 16bit integer algebra, but eliminates all problems of tonal breaks or loss of information.
 
 A lot of hand optimization has been invested to make darktable as fast as possible. If you run a current version of darktable on a modern computer, you might not even notice any “slowness”. However, there are conditions and certain modules where you feel (or hear from the howling of your CPU fan) how much your poor multi-core processor has to struggle.
 
@@ -57,8 +57,8 @@ For a single run of my pixelpipe in interactive mode (so called “full” pipel
 
 
 
-    
-<table cellpadding="7" width="433" cellspacing="0" > 
+
+<table cellpadding="7" width="433" cellspacing="0" >
 <tbody >
 <tr valign="TOP" >
 
@@ -85,8 +85,8 @@ With the same image and the same settings, I profiled the export pixelpipe when 
 
 
 
-    
-<table cellpadding="7" width="433" cellspacing="0" > 
+
+<table cellpadding="7" width="433" cellspacing="0" >
 <tbody >
 <tr valign="TOP" >
 
@@ -121,7 +121,7 @@ There can be various reasons why OpenCL failed. We depend on hardware requiremen
 
 In that case, the best thing to do is start darktable from a console with
 
-    
+
     <span style="font-family: Courier New,monospace">d</span><span style="font-family: Courier New,monospace">arktable</span><span style="font-family: Courier New,monospace"> –</span><span style="font-family: Courier New,monospace">d</span><span style="font-family: Courier New,monospace"> opencl</span>
 
 
@@ -153,7 +153,7 @@ Here are a few more words about optimization of your OpenCL setup once it's runn
 
 The most limiting resource for OpenCL is GPU memory. Modern graphics cards might be equipped with 1GB or even 2GB RAM, but this is low compared to core memory and it is not too much if we want to do an export of a high resolution image. One further problem with GPU memory is the fact, that we do not know what is really free. At startup we will read from each OpenCL device the amount of available memory, but we can not take all of it. There is some (unknown) amount which the GPU driver will need for its overhead and for X11 video tasks. Trying to allocate more memory for our purposes than is available at a time will cause allocation failures and the pixelpipe to abort.
 
-Darktable's escape route out of this limitation is “tiling”. Images that are too big are processed in smaller parts (rectangular tiles) one after the other and then combined again. This happens on a per-module basis, i.e. for each module that we want to process, a decision is taken if and how many tiles we will need.
+darktable's escape route out of this limitation is “tiling”. Images that are too big are processed in smaller parts (rectangular tiles) one after the other and then combined again. This happens on a per-module basis, i.e. for each module that we want to process, a decision is taken if and how many tiles we will need.
 
 Before going into the details, the above already makes clear that we should not process several images in parallel with OpenCL. We already make maximum use of GPU memory by tiling and the nature of GPU processing will already parallelize processing to the max on a pixel by pixel basis. No room for additional parallelization. In preferences set "export multiple images in parallel" to 1.
 

@@ -9,4 +9,4 @@ wordpress_lede: initial_release.jpg
 wordpress_id: 600
 tags: announcement, book, darktable, release
 
-The book **Digital photo development with Darktable** has been released. Check out the [pdf](http://sourceforge.net/projects/darktable/files/darktable/book/1.0/darktable.pdf/download) or [packaged](http://sourceforge.net/projects/darktable/files/darktable/book/1.0/darktable-book-1.0.zip/download) version and, as usual, send your comments and feedback to the [darktable user list](https://lists.sourceforge.net/lists/listinfo/darktable-users). 
+The book **Digital photo development with darktable** has been released. Check out the [pdf](http://sourceforge.net/projects/darktable/files/darktable/book/1.0/darktable.pdf/download) or [packaged](http://sourceforge.net/projects/darktable/files/darktable/book/1.0/darktable-book-1.0.zip/download) version and, as usual, send your comments and feedback to the [darktable user list](https://lists.sourceforge.net/lists/listinfo/darktable-users).

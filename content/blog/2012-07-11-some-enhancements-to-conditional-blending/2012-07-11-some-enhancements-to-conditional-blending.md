@@ -41,7 +41,7 @@ Let’s go for an example. I took this photo of a poppy blossom because I liked 
 
 On the problematic side remains a somewhat low contrast within the blossom. The petals appear a bit like a red blob, a typical problem of unprocessed raw images. The droplets, which the last shower of rain has left behind, are hardly discernible. Admittedly the blossom is a bit soft too, probably due to sloppy focusing on my side.
 
-OK, there are a few modules in darktable which we could take to improve the image. Darktable’s swiss knife _equalizer_ comes to mind, or module _highpass_ combined with a suited blend mode.
+OK, there are a few modules in darktable which we could take to improve the image. darktable’s swiss knife _equalizer_ comes to mind, or module _highpass_ combined with a suited blend mode.
 
 I took highpass with blend mode _soft light_ in this case as it will increase contrast and sharpness, easily controlled with only two sliders. As described, I want to apply the module only to the red petals of the poppy flower; that’s why I need conditional blending.
 

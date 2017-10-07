@@ -4,7 +4,7 @@ date: 2012-03-28 16:11:48+00:00
 layout: post
 link: http://www.darktable.org/2012/03/darktable-and-memory/
 slug: darktable-and-memory
-title: Darktable and Memory
+title: darktable and Memory
 wordpress_lede: skull-thumb.jpeg
 wordpress_id: 1425
 tags: blog, 32-bit, 64-bit, bugfixes, memory, skull, tutorial
@@ -32,13 +32,13 @@ Theoretically you could also run darktable with lower amounts of physical RAM an
 
 Besides the total amount of system memory there is another limiting factor: the available address space of your hardware architecture. How much memory can be addressed by a process depends on the number of address bits your CPU offers. For a CPU with 32-bit address registers, this is 2^32 bytes, which makes a total of 4GB. This is the absolute upper limit of memory that can be used by a process and it constitutes a tight situation for darktable as we have seen above.
 
-Darktable’s escape route is called tiling. Instead of processing an image in one big chunk, we split the image into smaller parts for every processing step (module). This will still require one full input and output buffer, but intermediate buffers can be made small enough to have everything fit into the hardware limits.
+darktable’s escape route is called tiling. Instead of processing an image in one big chunk, we split the image into smaller parts for every processing step (module). This will still require one full input and output buffer, but intermediate buffers can be made small enough to have everything fit into the hardware limits.
 
 
 ## Memory fragmentation
 
 
-Unfortunately this is not the full story yet. There is an effect called memory fragmentation, which can and will hit software that needs to do extensive memory management. If such a program allocates 5 times 300MB at a time and frees it again, that memory should normally be available for one big 1.5GB allocation afterwards. This however is often not the case. The system’s memory allocator might no longer see this area as one contiguous 1.5GB block but as a row of 300MB areas. If there is no other free area of 1.5GB available, the allocation would fail. During a program run this mechanism will take away more and more of the larger memory blocks in favor of smaller ones. Darktable 1.0 introduces a caching algorithm to address this problem. It pre-allocates blocks of memory and makes them available on request.
+Unfortunately this is not the full story yet. There is an effect called memory fragmentation, which can and will hit software that needs to do extensive memory management. If such a program allocates 5 times 300MB at a time and frees it again, that memory should normally be available for one big 1.5GB allocation afterwards. This however is often not the case. The system’s memory allocator might no longer see this area as one contiguous 1.5GB block but as a row of 300MB areas. If there is no other free area of 1.5GB available, the allocation would fail. During a program run this mechanism will take away more and more of the larger memory blocks in favor of smaller ones. darktable 1.0 introduces a caching algorithm to address this problem. It pre-allocates blocks of memory and makes them available on request.
 
 
 ## Further Limitations
@@ -89,7 +89,7 @@ This controls how many thumbnails (or mip maps) can be stored in memory at a tim
 To avoid the problem of memory fragmentation during longer runs of darktable, the new caching scheme frontloads the memory costs and allocates this cache once at the beginning. Some Linux kernels use over-committing memory allocation, which means you don't immediately pay for all of the memory in terms of RSS (resident set size, the non-swapped physical memory), but in any case you pay for the address space. As explained before, this poses a problem for 32-bit systems and will at first sight appear as a regression over the (terribly slow, but that's another story) 0.9.3-style cache. In the long run however, this is all memory that's ever going to be allocated for thumbnails, so if we can successfully grab this portion once, we are relieving a lot of pressure on fragmentation for long sessions.
 
 
-## Darktable on 64-bit systems
+## darktable on 64-bit systems
 
 
 There's not much to be said here. Of course also 64-bit systems require a sufficient amount of main memory. So the 4GB plus swap recommendation holds true. On the other hand, 64-bit architectures do not suffer from the specific 32-bit limitations like small address space and fragmentation madness.

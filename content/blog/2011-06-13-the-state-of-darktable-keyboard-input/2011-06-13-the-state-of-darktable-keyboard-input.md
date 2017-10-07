@@ -4,19 +4,19 @@ date: 2011-06-13 21:32:50+00:00
 layout: post
 link: http://www.darktable.org/2011/06/the-state-of-darktable-keyboard-input/
 slug: the-state-of-darktable-keyboard-input
-title: The State of Darktable Keyboard Input
+title: The State of darktable Keyboard Input
 wordpress_id: 442
 tags: GSoC
 
 
 
-I’m about a week in on my work on Darktable’s keyboard input system, and I’m hoping by the end of this week to be more or less done.  Here’s a quick look at where I am and where I’m going.
+I’m about a week in on my work on darktable’s keyboard input system, and I’m hoping by the end of this week to be more or less done.  Here’s a quick look at where I am and where I’m going.
 
 **The Current Status**
 
-If you check out my git branch (it’s called bieber), you’ll find that so far I’ve removed all of the explicit calls to Darktable’s old accelerator registration system, and replaced them with calls to gtk_accel_map_add_entry and gtk_accel_group_connect_by_path.  These functions create an entry in a global accelerator table, linking an accelerator to a path that looks something like, for instance, <Darktable>/iops/clipping/commit, rather than a specific keycode.  Other GTK function calls will later give us the ability to change the actual key mappings for these paths at runtime, so user remapping will be a breeze.  If you compile and run Darktable from my branch at the moment, you’ll see a file called “testkeys” pop up in your current working directory.  This is what the GTK keybindings file looks like, at this point just auto-generated from the default key mappings specified in the source code.  Soon you’ll be able to modify this file (either directly or from an interface within Dartable’s preferences) to change your shortcut key mappings.
+If you check out my git branch (it’s called bieber), you’ll find that so far I’ve removed all of the explicit calls to darktable’s old accelerator registration system, and replaced them with calls to gtk_accel_map_add_entry and gtk_accel_group_connect_by_path.  These functions create an entry in a global accelerator table, linking an accelerator to a path that looks something like, for instance, <Darktable>/iops/clipping/commit, rather than a specific keycode.  Other GTK function calls will later give us the ability to change the actual key mappings for these paths at runtime, so user remapping will be a breeze.  If you compile and run darktable from my branch at the moment, you’ll see a file called “testkeys” pop up in your current working directory.  This is what the GTK keybindings file looks like, at this point just auto-generated from the default key mappings specified in the source code.  Soon you’ll be able to modify this file (either directly or from an interface within Dartable’s preferences) to change your shortcut key mappings.
 
-There are also several shortcuts throughout Darktable defined by manually searching for keycodes within the key_pressed functions of different views and modules.  Some of these were easy to transition to explicit accelerators using the GTK function calls, but others are a little more sophisticated, relying on key press and key release to enter and leave some state.  For instance, the full-screen preview in the lighttable view enters when you press the ‘z’ key, and remains there as long as you hold the key down.  These shortcuts will have to remain in the key_pressed methods, but I do have a plan to make them remappable.  In the meantime, while I haven’t gotten around to adding them to the accelerator table just yet, I have gotten as far as removing them from modules and making sure that the remaining key_pressed functions operate on GTK keyvals rather than hardware keycodes, so they’ll be compatible with the accelerator map.
+There are also several shortcuts throughout darktable defined by manually searching for keycodes within the key_pressed functions of different views and modules.  Some of these were easy to transition to explicit accelerators using the GTK function calls, but others are a little more sophisticated, relying on key press and key release to enter and leave some state.  For instance, the full-screen preview in the lighttable view enters when you press the ‘z’ key, and remains there as long as you hold the key down.  These shortcuts will have to remain in the key_pressed methods, but I do have a plan to make them remappable.  In the meantime, while I haven’t gotten around to adding them to the accelerator table just yet, I have gotten as far as removing them from modules and making sure that the remaining key_pressed functions operate on GTK keyvals rather than hardware keycodes, so they’ll be compatible with the accelerator map.
 
 **Where I’m Going**
 
@@ -26,6 +26,6 @@ After that, I’ll rip out the old accelerator system, which manually compared k
 
 With that groundwork laid, I’ll be ready to build the GUI for actually remapping the keys.  I plan to display them all in a treeview on a new panel of the preferences dialog, where a double-click will allow a user to remap a key.  The keybindings will be saved to a file in the data directory (probably keybindingsrc, or some similar name), which will be saved whenever keys get remapped, and loaded whenever the application starts up.  I also plan to add an import and export feature, so that users can easily save and share their keybindings.
 
-Once I have everything working in Darktable, my last planned task with regards to keyboard accelerators is to write a script, keybindings2docbook, which will convert the generated keybindings file into a table to be included in the Darktable manual.  I’m open to suggestions for just how this should work, but unless I hear objections I’m thinking a command-line script in Ruby ought to do the job well enough.
+Once I have everything working in darktable, my last planned task with regards to keyboard accelerators is to write a script, keybindings2docbook, which will convert the generated keybindings file into a table to be included in the darktable manual.  I’m open to suggestions for just how this should work, but unless I hear objections I’m thinking a command-line script in Ruby ought to do the job well enough.
 
 

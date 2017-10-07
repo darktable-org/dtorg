@@ -11,7 +11,7 @@ tags: blog, HDR, processing, workflow
 
 **Introduction**
 
-This blog post will go through a simple workflow when working with high dynamic ranged images using darktable and the modules for processing, you need use Darktable 1.1RC for this guide. The example image used in the screenshots can be downloaded at following link: [AtriumMorning](http://www.mpi-inf.mpg.de/resources/hdr/img_hdr/AtriumMorning.exr)
+This blog post will go through a simple workflow when working with high dynamic ranged images using darktable and the modules for processing, you need use darktable 1.1RC for this guide. The example image used in the screenshots can be downloaded at following link: [AtriumMorning](http://www.mpi-inf.mpg.de/resources/hdr/img_hdr/AtriumMorning.exr)
 
 
 # **How to make an HDR image**

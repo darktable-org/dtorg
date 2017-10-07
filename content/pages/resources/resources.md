@@ -44,8 +44,8 @@ To create a new darktable style just alter your image the way you want. Then cli
 
 Stefano Fornari, Mario Latronico and Nicholas Manea wrote a book about photo development with darktable:
 
-**Digital photo development with darktable**  
-_Manage and develop your digital images with Darktable._
+**Digital photo development with darktable**
+_Manage and develop your digital images with darktable._
 
 It introduces you to the process of developing your images with darktable explaining the basic features. It starts over with a simple tutorial on importing and developing your first photo(s). After describing the darktable user interface it provides some workflow suggestions and background informations on (perception of light, sensors, patterns, colors).
 

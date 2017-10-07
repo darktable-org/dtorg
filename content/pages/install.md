@@ -69,7 +69,7 @@ $ dpkg-buildpackage -rfakeroot
 <h2 id='fedora'>Fedora packages</h2>
 ![]({filename}/images/OS/fedora.jpg)
 
-Fedora ships with Darktable. A simple command should be enough.
+Fedora ships with darktable. A simple command should be enough.
 
 `# dnf install darktable`
 
@@ -86,7 +86,7 @@ If you want to build darktable from the source on Fedora, here are the build dep
 
 openSUSE ships with darktable. A simple `zypper install darktable` should be enough.
 
-  * If you want the latest stable version you can use [Darktable from the Graphics Repository](http://software.opensuse.org/download.html?project=graphics&package=darktable).
+  * If you want the latest stable version you can use [darktable from the Graphics Repository](http://software.opensuse.org/download.html?project=graphics&package=darktable).
   * If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.0 Snapshot repository](http://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.0&package=darktable). Don't use this repository if you do time critical work with darktable!
   * And lastly, there is is a repository for [nightly builds](http://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
 

@@ -9,13 +9,13 @@ wordpress_lede: dtonosx.png
 wordpress_id: 1918
 tags: blog, development, bugfixes, darktable, git, macports, os x
 
-Darktable has been software of my choice for raw photo development for quite some time now, I've occasionally submitted bug reports and patches and kept an eye on current development by using git master version. My main operating system is Linux, which is the priority target of darktable support, but recently I bought MacBook Air to take with me on trips and such. Also my current project at work consists of porting a library to OS X, so this presented to me as a great opportunity to contribute to one of my favorite open-source projects and make darktable work reliably on Macs. Some work has already been done in the past, there's even a package of an old darktable version for OS X, but of course I was interested in bringing the latest darktable experience to OS X.
+darktable has been software of my choice for raw photo development for quite some time now, I've occasionally submitted bug reports and patches and kept an eye on current development by using git master version. My main operating system is Linux, which is the priority target of darktable support, but recently I bought MacBook Air to take with me on trips and such. Also my current project at work consists of porting a library to OS X, so this presented to me as a great opportunity to contribute to one of my favorite open-source projects and make darktable work reliably on Macs. Some work has already been done in the past, there's even a package of an old darktable version for OS X, but of course I was interested in bringing the latest darktable experience to OS X.
 
 
 # How things were at the beginning of my work
 
 
-Since OS X support was present in some way in current codebase, compiling darktable wasn't a problem. All I had to do is install dependencies via macports, checkout git repository and run cmake and make. Darktable even successfully started, at least sometimes :) That was a good start actually.
+Since OS X support was present in some way in current codebase, compiling darktable wasn't a problem. All I had to do is install dependencies via macports, checkout git repository and run cmake and make. darktable even successfully started, at least sometimes :) That was a good start actually.
 
 
 # Killed bugs
@@ -53,19 +53,19 @@ To build darktable on OS X follow these steps:
 
 
 
-	
+
   1. Install MacPorts (instructions and prerequisites can be found on [official website](http://www.macports.org/install.php)), please use default installation path (/opt/local)
 
-	
+
   2. Add "+no_gnome +no_x11 +quartz -x11 -gnome" to /opt/local/etc/macports/variants.conf
 
-	
+
   3. Install required dependencies: sudo port install git exiv2 libgphoto2 gtk-engines2 gtk-osx-application-gtk2 lensfun librsvg libsoup openexr json-glib flickcurl GraphicsMagick openjpeg15 lua webp libsecret
 
-	
+
   4. Clone darktable git repository: git clone git://github.com/darktable-org/darktable.git
 
-	
+
   5. Finally build and install darktable: cd darktable ; mkdir build ; cd build ; cmake .. ; make ; sudo make install
 
 

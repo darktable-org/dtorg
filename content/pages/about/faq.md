@@ -1,6 +1,6 @@
 Title: faq
 Slug: about/faq
-Date: 2017-09-20T16:18:43-06:00 
+Date: 2017-09-20T16:18:43-06:00
 author: smn
 link: http://www.darktable.org/about/faq/
 wordpress_id: 1536
@@ -40,7 +40,7 @@ wordpress_id: 1536
 
 * **darktable crashes with SIGILL. What's up?**
 
-    Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run Darktable is one which supports SSE2. If your cpu does not support SSE2 more than ten years after the feature's introducion, then it really is time for you to upgrade. Please see [the Wikipedia page](http://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
+    Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than ten years after the feature's introducion, then it really is time for you to upgrade. Please see [the Wikipedia page](http://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
 
 * **How do I open images? I only see a white canvas.**
 

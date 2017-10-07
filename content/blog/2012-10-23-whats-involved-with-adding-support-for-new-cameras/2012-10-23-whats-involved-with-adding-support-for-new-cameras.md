@@ -21,7 +21,7 @@ If it still doesn't work, it's a good idea to check if the latest dcraw (the ver
 
 Install the build dependancies liblcms-dev(el) libjpeg-dev(el) and libjasper-dev(el) (or whatever your distro calls them)
 
-    
+
     # wget http://www.cybercom.net/~dcoffin/dcraw/dcraw.c
     # gcc -o dcraw -O4 dcraw.c -lm -ljasper -ljpeg -llcms
     # ./dcraw -v -w -o 1 -f -T IMG_0000.RAW
@@ -37,7 +37,7 @@ darktable currently only supports regular Bayer style sensors (which probably ac
 Take a sample RAW. Convert it to DNG via Adobe DNG Converter (make sure you have the latest version, assuming Adobe updated the converter for your particular camera model).
 The Blacklevel usually corrects for a green or purplish color cast:
 
-    
+
     exiv2 -pt MY.DNG | grep BlackLevel
     Exif.SubImage1.BlackLevel Rational 4 37376/256 37376/256 37376/256 37376/256
 
@@ -45,7 +45,7 @@ The Blacklevel usually corrects for a green or purplish color cast:
 This effectively means the blacklevel is 37376/256 = 146, expected values are usually well below 1000.
 On the other hand the whitelevel influences highlight handling:
 
-    
+
     exiv2 -pt MY.DNG | grep WhiteLevel
     Exif.SubImage1.WhiteLevel Short 1 3956
 
@@ -55,12 +55,12 @@ Expected values ranges commonly range from about 3000 to 17000.
 **Panasonic Aspect Ratio's**
 Most modern cameras which output RAW files, also allow the user to set non sensor native aspect ratio's. So even if the sensor has a real world aspect ratio of 4:3, you can have the camera automatically center crop your images to for example 3:2. This usually only affects JPEG output, leaving the output RAW still at an uncropped full resolution at it's original aspect ratio 4:3.
 Panasonic cameras are different however, they actually seem to crop the RAW images themselves, which means every aspect ratio mode needs it's each set of parameters.
-For most Panasonic cameras we have data for the 4:3 mode, but often not for the other modes. When we don't have data for the other modes Darktable falls back to use LibRaw, which may or may not work properly.
+For most Panasonic cameras we have data for the 4:3 mode, but often not for the other modes. When we don't have data for the other modes darktable falls back to use LibRaw, which may or may not work properly.
 If you own a Panasonic camera, please check the file below, if your camera has defined support for all four aspect ratio modes (4:3/3:2/16:9/1:1):
 
 
 
- 	
+
   * [https://github.com/darktable-org/darktable/blob/master/src/external/rawspeed/data/cameras.xml](https://github.com/darktable-org/darktable/blob/master/src/external/rawspeed/data/cameras.xml)
 
 
@@ -80,14 +80,14 @@ Take a sample RAW
 
 Convert it to DNG via Adobe DNG Converter (make sure you have the latest version, assuming Adobe updated the converter for your particular camera model)
 
-    
+
     exiv2 -pt MY.DNG 2>/dev/null | grep CalibrationIlluminant2
     # Exif.Image.CalibrationIlluminant2 Short 1  21
 
 
 Assuming the above is 21:
 
-    
+
     # exiv2 -pt MY.DNG 2>/dev/null | grep ColorMatrix2
     Exif.Image.ColorMatrix2 SRational 9  7798/10000 -2562/10000 -740/10000 -3879/10000 11584/10000 2613/10000 -1055/10000 2248/10000 5434/10000
 
@@ -96,7 +96,7 @@ The enhanced color matrix which we calculate from user submitted color charts.
 
 
 
- 	
+
   * [http://blog.pcode.nl/2010/06/28/darktable-camera-color-profiling/](http://blog.pcode.nl/2010/06/28/darktable-camera-color-profiling/)
 
 
@@ -111,7 +111,7 @@ Shoot a single RAW file for each of the camera's white balance presets (make sur
 
 Download http://ufraw.cvs.sourceforge.net/viewvc/ufraw/ufraw/wb_extract.pl
 
-    
+
     perl wb_extract.pl  2>/dev/null
 
 
@@ -126,7 +126,7 @@ darktable uses the Exiv2 library to read EXIF data from image files. As with all
 
 You can check what Exiv2 can (or can't) read from your RAW file using the exiv2 command line utility:
 
-    
+
     # exiv2 -pt IMG_0000.RAW
 
 
@@ -146,16 +146,16 @@ These articles might be helpful:
 
 
 
- 	
+
     * [http://www.darktable.org/2013/07/have-your-lens-calibrated/](http://www.darktable.org/2013/07/have-your-lens-calibrated/)
 
- 	
+
     * [http://libregraphicsworld.org/blog/entry/creating-lens-distorsion-models-with-hugin-lens-calibrator](http://libregraphicsworld.org/blog/entry/creating-lens-distorsion-models-with-hugin-lens-calibrator)
 
- 	
+
     * [http://lensfun.sourceforge.net/calibration/](http://lensfun.sourceforge.net/calibration/)
 
- 	
+
     * [http://wilson.bronger.org/lens_calibration_tutorial/](http://wilson.bronger.org/lens_calibration_tutorial/)
 
 
@@ -170,5 +170,5 @@ Where appropriate include RAW samples so developers can check your problem (plea
 
 For some issues it's useful to upload screenshots, however please make screenshots of darktable using an English GUI:
 
-    
+
     # LANG=C darktable

@@ -4,7 +4,7 @@ date: 2012-03-05 18:36:43+00:00
 layout: post
 link: http://www.darktable.org/2012/03/upcoming-features-conditional-blending/
 slug: upcoming-features-conditional-blending
-title: 'Upcoming features: Conditional Blending'
+title: Upcoming features: Conditional Blending
 wordpress_lede: IMG_1474_thumb.sm_.jpg
 wordpress_id: 1318
 tags: blog, development, upcoming feature, blending, color, conditional blending, darktable, halos, Lab, tone curves, tutorial
@@ -46,12 +46,12 @@ Each tab shows two gradient sliders named “input” and “output”. We stick
 
 
 
-	
+
   * two filled triangles above the slider: pixels with values in the range between these two markers are treated as if they have an opacity of 100%
 
 
 
-	
+
   * two open triangles below the slider: pixels with values outside of these two markers are treated as if they have an opacity of zero
 
 
@@ -67,17 +67,17 @@ This configuration can be interpreted in the following way:
 
 
 
-	
+
   * L values below 20 or above 80 are treated as if they have an opacity of 0
 
 
 
-	
+
   * L values between 40 and 60 are treated as if they have an opacity of 100%
 
 
 
-	
+
   * L values between 20 and 40 and between 60 and 80, respectively, are gradually blended using an opacity that linearly changes between the markers.
 
 
@@ -145,17 +145,17 @@ There are many other possible uses for conditional blending:
 
 
 
-	
+
   * restrict noise reduction to only certain parts where noise is most visible
 
 
 
-	
+
   * add grain to an image with different strength depending on tonal values
 
 
 
-	
+
   * desaturate an image but leave a certain range of colors intact (colorkey, yuck)
 
 

@@ -4,7 +4,7 @@ date: 2012-06-02 07:34:51+00:00
 layout: post
 link: http://www.darktable.org/2012/06/upcoming-features-new-interpolation-modes-and-better-resize/
 slug: upcoming-features-new-interpolation-modes-and-better-resize
-title: 'Upcoming features: New interpolation modes and better resize'
+title: Upcoming features: New interpolation modes and better resize
 wordpress_lede: dt-interpolation-results-testchart.png
 wordpress_id: 1527
 tags: blog, development, upcoming feature, bicubic, bilinear, interpolation, lanczos, lens correction, rotation

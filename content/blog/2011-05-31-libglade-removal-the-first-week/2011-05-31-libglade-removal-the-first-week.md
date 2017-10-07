@@ -4,7 +4,7 @@ date: 2011-05-31 21:34:22+00:00
 layout: post
 link: http://www.darktable.org/2011/05/libglade-removal-the-first-week/
 slug: libglade-removal-the-first-week
-title: 'libglade Removal: The First Week'
+title: libglade Removal: The First Week
 wordpress_id: 447
 tags: GSoC
 

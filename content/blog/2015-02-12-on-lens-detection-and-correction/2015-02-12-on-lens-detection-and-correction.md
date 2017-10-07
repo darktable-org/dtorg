@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/02/on-lens-detection-and-correction/
 slug: on-lens-detection-and-correction
 title: On Lens Detection and Correction
-wordpress_lede: lens.jpg
+lede: lens_wide.jpg
 wordpress_id: 3543
 tags: blog
 
@@ -21,19 +21,19 @@ It's in these undocumented MakerNotes that the camera vendors tend to encode a l
 
 You can use Exiv2's command line tool to search for lens related tags in your own raw files like so:
 
-    
+
     # exiv2 -pt IMG_1234.CR2 | grep -ai lens
 
 
 And if you have a lens that's already been reported to the Exiv2 project, you'll see something along these lines:
 
-    
+
     Exif.CanonCs.LensType       Short       1  Canon EF-S 24mm f/2.8 STM
 
 
 However if you have a fairly new lens, chances are it hasn't been reported yet, and you'll get something like this:
 
-    
+
     Exif.CanonCs.LensType       Short       1  (4154)
 
 
@@ -45,22 +45,22 @@ So if you have a lens that is not being properly reported, the best course of ac
 
 
 
-	
+
   * Canon bodies: [http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/canonmn.cpp#L600](http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/canonmn.cpp#L600)
 
-	
+
   * Sony or Minolta bodies: [http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/minoltamn.cpp#L1613](http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/minoltamn.cpp#L1613)
 
-	
+
   * Nikon bodies: [http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/nikonmn.cpp#L1737](http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/nikonmn.cpp#L1737)
 
-	
+
   * Olympus bodies: [http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/olympusmn.cpp#L1254](http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/olympusmn.cpp#L1254)
 
-	
+
   * Pentax bodies: [http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/pentaxmn.cpp#L687](http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/pentaxmn.cpp#L687)
 
-	
+
   * Samsung bodies: [http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/samsungmn.cpp#L52](http://dev.exiv2.org/projects/exiv2/repository/entry/trunk/src/samsungmn.cpp#L52)
 
 
@@ -68,28 +68,28 @@ If you can find your lens in one of the above source files, it means even though
 
 If you still can't find your lens, please file a feature request with the Exiv2 project here (and yes, you'll need to create an account):
 
-	
+
   * [http://dev.exiv2.org/projects/exiv2/issues/new](http://dev.exiv2.org/projects/exiv2/issues/new)
 
 
 Please include the following information:
 
-	
+
   * Full output of:
 
-    
+
     exiv2 -pt FILENAME | grep -ai lens
 
 
 
 
-	
+
   * The proper full name of the lens (be mindful of capitalization)
 
-	
+
   * Preferably include a link to the lens' product page on the manufacturers website
 
-	
+
   * Attach a sample low resolution JPEG (unmodified, most cameras allow you to shoot lower resolution JPEGs)
 
 
@@ -108,10 +108,10 @@ So if you're missing your particular lens in your particular version of Lensfun,
 
 
 
-	
+
   * [http://lensfun.sourceforge.net/lenslist/](http://lensfun.sourceforge.net/lenslist/)
 
-	
+
   * [http://sourceforge.net/p/lensfun/code/ci/master/tree/data/db/](http://sourceforge.net/p/lensfun/code/ci/master/tree/data/db/)
 
 
@@ -119,7 +119,7 @@ As you might notice, not all types of correction are available for all lenses.
 
 If you want to generate correction data for your own lenses and submit it to the Lensfun project, please have a look here:
 
-	
+
   * [http://lensfun.sourceforge.net/calibration/](http://lensfun.sourceforge.net/calibration/)
 
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/02/released-darktable-1-6-1/
 slug: released-darktable-1-6-1
 title: released darktable 1.6.1
-wordpress_lede: fireworks.jpg
+lede: fireworks_wide.jpg
 wordpress_id: 3530
 tags: announcement, darktable release
 
@@ -33,37 +33,37 @@ e3e0014361081364b56b6c02e886ba2fba6c6887 darktable-1.6.1.tar.xz
 
 
 
-	
+
   * Hide mouse in slideshow mode
 
-	
+
   * Show option for txt overlay in the preferences Bugfixes:
 
-	
+
   * ImageIO format TIFF: use scanline-based I/O. Fixes bug #10230
 
-	
+
   * exif: always try to use Exiv2's lens detection for Olympus
 
-	
+
   * demosaic: fix assertion
 
-	
+
   * Do not deadlock in input color profile on unsupported input profiles
 
-	
+
   * ensure that quick access preset menu is displayed correctly
 
-	
+
   * Properly disconnect from the mipmap signal when leaving tethering mode
 
-	
+
   * Avoid integer overflow on big images
 
-	
+
   * OSX HiDPI fixes
 
-	
+
   * Lua fixes
 
 
@@ -75,31 +75,31 @@ e3e0014361081364b56b6c02e886ba2fba6c6887 darktable-1.6.1.tar.xz
 
 
 
-	
+
   * masks: enhance mouse hover detection
 
-	
+
   * masks: allow smaller radius for circle and ellipse
 
-	
+
   * spots: fix icon states bug #10216
 
-	
+
   * spots: rounded correction. Fix bug #10045
 
-	
+
   * spots: legacy_params(): adapt for latest mask changes
 
-	
+
   * flip: fix legacy presets update
 
-	
+
   * exposure: enable soft boundaries for black
 
-	
+
   * zonesystem: remove stale button_release() callback
 
-	
+
   * graduatednd: avoid rounding issues for rotation after moving whole line. Fixes bug #10241
 
 
@@ -111,13 +111,13 @@ e3e0014361081364b56b6c02e886ba2fba6c6887 darktable-1.6.1.tar.xz
 
 
 
-	
+
   * Pentax *istDL
 
-	
+
   * 7D Mark II sRAW/mRAW
 
-	
+
   * Samsung NX1
 
 
@@ -129,10 +129,10 @@ e3e0014361081364b56b6c02e886ba2fba6c6887 darktable-1.6.1.tar.xz
 
 
 
-	
+
   * 7D Mark II
 
-	
+
   * Panasonic DMC-LX7
 
 

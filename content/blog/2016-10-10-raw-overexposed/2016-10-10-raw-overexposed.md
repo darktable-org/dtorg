@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2016/10/raw-overexposed/
 slug: raw-overexposed
 title: Visualizing the raw (sensor) highlight clipping
-wordpress_lede: rawprepare-lenscorrection-glitchart.jpeg
+lede: rawprepare-lenscorrection-glitchart_wide.jpeg
 wordpress_id: 4239
 tags: blog, development, upcoming feature, color, highlights
 

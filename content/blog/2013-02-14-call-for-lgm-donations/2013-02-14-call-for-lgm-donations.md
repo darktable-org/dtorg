@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2013/02/call-for-lgm-donations/
 slug: call-for-lgm-donations
 title: Call for LGM donations
-wordpress_lede: give_me_your_money.jpg
+lede: give_me_your_money_wide.jpg
 wordpress_id: 2737
 tags: community
 

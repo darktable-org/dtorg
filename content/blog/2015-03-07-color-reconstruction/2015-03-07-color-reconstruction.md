@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/03/color-reconstruction/
 slug: color-reconstruction
 title: Color Reconstruction
-wordpress_lede: colorreconstruction_icon.jpg
+lede: colorreconstruction_icon_wide.png
 wordpress_id: 3590
 tags: blog, development, upcoming feature, bilateral, color, color reconstruction, highlights, Lab, overexposed
 
@@ -47,8 +47,8 @@ Combining this fact with the phenomenon of overexposure we can differentiate thr
 
 
 
-	
-  1. 
+
+  1.
 
 
 All three color channels have valid readings below the clipping value
@@ -56,8 +56,8 @@ All three color channels have valid readings below the clipping value
 
 
 
-	
-  2. 
+
+  2.
 
 
 At least one color channel is clipped and at least one color channel has a valid reading
@@ -65,7 +65,7 @@ At least one color channel is clipped and at least one color channel has a valid
 
 
 
-	
+
   3. All three color channels are clipped
 
 
@@ -370,10 +370,10 @@ The behavior of this module on zoomed-in image views has been improved recently.
 
 
 
-	
+
   * If you have highlight areas which are adjacent to high-contrast edges, you may observe a slight magenta shift when zooming in.
 
-	
+
   * If you combine this module with the “reconstruct color” method of the “highlight reconstruction” module, highlights may be rendered colorless or in a wrong color when zooming in.
 
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2012/07/exporting-images-on-the-command-line/
 slug: exporting-images-on-the-command-line
 title: Exporting images on the command line
-wordpress_lede: dtcli_thumb.jpg
+lede: dtcli_wide.jpg
 wordpress_id: 1837
 tags: blog, development
 
@@ -13,25 +13,25 @@ Recent builds from git will bring you a new executable, “darktable-cli”. Wit
 
 The simplest way to call the utility is
 
-    
+
     darktable-cli <input> <output>
 
 
 This will take the _input_ image, look for the XMP file associated with it, process it at maximal resolution and write the output to _output_, trying to guess the output format from the output filename. You can also explicitly give a XMP file by running
 
-    
+
     darktable-cli <input> <xmp> <output>
 
 
 When a scaled down output is needed you can overwrite the default 0x0 size by adding one or both of
 
-    
+
     --width <max x size> --height <max y size>
 
 
 These settings work the same as in the darktable gui. There is also a setting
 
-    
+
     --bpp <max bitdepth>
 
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/07/why-dont-you-provide-a-windows-build/
 slug: why-dont-you-provide-a-windows-build
 title: Why don't you provide a Windows build?
-wordpress_lede: windows.jpg
+lede: windows_wide.jpg
 wordpress_id: 3717
 tags: blog
 

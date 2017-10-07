@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/04/released-darktable-1-6-6/
 slug: released-darktable-1-6-6
 title: released darktable 1.6.6
-wordpress_lede: wheat.jpg
+lede: wheat_wide.jpg
 wordpress_id: 3659
 tags: announcement, darktable release
 
@@ -19,7 +19,7 @@ Please only use our provided packages ("darktable-1.6.6.*" tar.xz and dmg) not t
 
 this is another point release in the stable 1.6.x series.
 
-    
+
     sha256sum darktable-1.6.6.tar.xz
     f85e4b8219677eba34f5a41e1a0784cc6ec06576326a99f04e460a4f41fd21a5
     sha256sum darktable-1.6.6.dmg
@@ -34,16 +34,16 @@ this is another point release in the stable 1.6.x series.
 
 
 
-	
+
   * fix the Olympus E330 support (which was accidentally broken in 1.6.4)
 
-	
+
   * fix white balance reading for the Canon Powershot SX50 HS
 
-	
+
   * white balance presets for RICOH GR
 
-	
+
   * minor assorted bug fixes (masks, lens correction, profiled denoise, etc)
 
 

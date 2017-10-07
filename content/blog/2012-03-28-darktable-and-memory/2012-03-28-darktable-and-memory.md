@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2012/03/darktable-and-memory/
 slug: darktable-and-memory
 title: darktable and Memory
-wordpress_lede: skull-thumb.jpeg
+lede: skull-thumb_wide.png
 wordpress_id: 1425
 tags: blog, 32-bit, 64-bit, bugfixes, memory, skull, tutorial
 

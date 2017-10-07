@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/11/third-release-candidate-for-darktable-2-0/
 slug: third-release-candidate-for-darktable-2-0
 title: third release candidate for darktable 2.0 & string freeze
-wordpress_lede: autumn_path.jpg
+lede: autumn_path_wide.jpg
 wordpress_id: 3883
 tags: announcement, darktable release
 
@@ -19,7 +19,7 @@ please only use our provided packages ("darktable-2.0.rc3.*" tar.xz and dmg) not
 
 the checksums are:
 
-    
+
     $ sha256sum darktable-2.0~rc3.tar.xz
     4d81527350e6f722da484bdcd3f620918321b0e15b1fdad219821abbf23c2c89
     darktable-2.0~rc3.tar.xz
@@ -36,37 +36,37 @@ the changes from rc2 include minor bugfixes, such as:
 
 
 
-	
+
   * camera support improvements
 
-	
+
     * add support for the Canon PowerShot G5 X
 
-	
+
     * basic support for Olympus SP320
 
-	
+
     * Panasonic LF1 noise profile and white balance presets
 
-	
+
     * noiseprofiles: add Sony A77mk2
 
 
 
 
-	
+
   * high-dpi fixes
 
-	
+
   * fixed a few memleaks
 
-	
+
   * 3:1 aspect ratio as preset in crop&rotate
 
-	
+
   * magic lantern-style deflicker has been activated in the exposure module
 
-	
+
   * updated translations
 
 
@@ -76,91 +76,91 @@ when updating from the currently stable 1.6.x series, please bear in mind that y
 
 happy 2.0~rc3 everyone :)
 
-	
+
   * darktable has been ported to gtk-3.0
 
-	
+
   * new thumbnail cache replaces mipmap cache (much improved speed, less crashiness)
 
-	
+
   * added print mode
 
-	
+
   * reworked screen color management (softproof, gamut check etc.)
 
-	
+
   * removed dependency on libraw
 
-	
+
   * removed dependency on libsquish (solves patent issues as a side effect)
 
-	
+
   * unbundled pugixml, osm-gps-map and colord-gtk
 
-	
+
   * text watermarks
 
-	
+
   * color reconstruction module
 
-	
+
   * raw black/white point module
 
-	
+
   * delete/trash feature
 
-	
+
   * addition to shadows&highlights
 
-	
+
   * more proper Kelvin temperature, fine-tuning preset interpolation in WB iop
 
-	
+
   * noiseprofiles are in external JSON file now
 
-	
+
   * monochrome raw demosaicing (not sure whether it will stay for release, like Deflicker, but hopefully it will stay)
 
-	
+
   * aspect ratios for crop&rotate can be added to conf (ae36f03)
 
-	
+
   * navigating lighttable with arrow keys and space/enter
 
-	
+
   * pdf export – some changes might happen there still
 
-	
+
   * brush size/hardness/opacity have key accels
 
-	
+
   * the facebook login procedure is a little different now
 
-	
+
   * export can upscale
 
-	
+
   * we no longer drop history entries above the selected one when leaving darkroom or switching images
 
-	
+
   * text/font/color in watermarks
 
-	
+
   * image information now supports GPS altitude
 
-	
+
   * allow adding tone- and basecurve nodes with ctrl-click
 
-	
+
   * new "mode" parameter in the export panel
 
-	
+
   * high quality export now downsamples before watermark and frame to guarantee consistent results
 
-	
+
   * Lua scripts can now add UI elements to the lighttable view (buttons, sliders etc …)
 
-	
+
   * a new repository for external Lua scripts was started
 
 

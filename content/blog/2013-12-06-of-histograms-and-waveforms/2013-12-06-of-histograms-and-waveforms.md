@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2013/12/of-histograms-and-waveforms/
 slug: of-histograms-and-waveforms
 title: Of Histograms and Waveforms
-wordpress_lede: featured_image.jpg
+lede: rose_wide.jpg
 wordpress_id: 3141
 tags: blog, upcoming feature
 
@@ -53,9 +53,9 @@ All of this sounds more complicated than it really is. Let's look at our grey te
 
 Now that you have hopefully understood how histogram and waveform work we will have a look at how to interpret and make use of them.
 
-[caption id="attachment_3154" align="alignright" width="193"][![the rose histograms & waveform](http://www.darktable.org/wp-content/uploads/2013/12/rose_histograms.jpg)](https://www.darktable.org/wp-content/uploads/2013/12/rose_histograms.jpg) _Figure 6_: the rose histograms & waveform  
-top: logarithmic  
-middle: linear  
+[caption id="attachment_3154" align="alignright" width="193"][![the rose histograms & waveform](http://www.darktable.org/wp-content/uploads/2013/12/rose_histograms.jpg)](https://www.darktable.org/wp-content/uploads/2013/12/rose_histograms.jpg) _Figure 6_: the rose histograms & waveform
+top: logarithmic
+middle: linear
 bottom: waveform[/caption]
 
 _Figure 5_ shows a real world photo and _figure 6_ its histograms and waveform. Looking at the histogram we first notice that suddenly there are colors. This is because we don't work with a monochrome image any longer. So each color channel gets its own histogram overlaid over the others. In the linear histogram you see that most pixels are quite dark with lots of slightly lighter green pixels. Almost all of the middle bright and brighter pixels are red. On the very right side of the histogram we see a red spike which tells us that the red channel has quite a few pixels that are at the maximum value – a sure sign that there was clipping. The logarithmic variant also shows that there are other colours than pure red in the brighter parts of the image. All of that can be seen in the waveform, too. There is a bright band of colours in the lower part, not touching the bottom line though – shadows are not crushed. And then there is the red thing in the middle, even touching the top border. These are the clipped pixels we spotted in the histogram already. But contrary to the former we can now even see where in the image the clipping occured: the middle. Looking at the rose we can confirm that. We can even see the greenish, sun lit twig on the bottom left of the blossom in the waveform as a dim green fog.

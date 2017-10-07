@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/04/introducing-the-darktable-app-store/
 slug: introducing-the-darktable-app-store
 title: Introducing the darktable app store
-wordpress_lede: hipsters_in_the_streets.jpg
+lede: hipsters_in_the_streets_wide.jpg
 wordpress_id: 3630
 tags: announcement, blog, development, upcoming feature
 

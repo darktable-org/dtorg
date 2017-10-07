@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2014/12/released-darktable-1-6/
 slug: released-darktable-1-6
 title: Released darktable 1.6
-wordpress_lede: dt_shirt_text.jpg
+lede: dt_shirt_text_wide.jpg
 wordpress_id: 3445
 tags: announcement, darktable release, '1.6', announcement, darktable, release
 
@@ -35,37 +35,37 @@ Enjoy the release!
 
 
 
-	
+
   * high DPI monitor support
 
-	
+
   * signed OSX packages
 
-	
+
   * map view now allows to only show images from the current collection on the map
 
-	
+
   * slideshow
 
-	
+
   * darktable-cli now works without a running X server for use on headless systems
 
-	
+
   * support for audio notes playback
 
-	
+
   * sticky preview
 
-	
+
   * added the option to overwrite files when exporting to disk
 
-	
+
   * crawler that syncs all xmp files on start
 
-	
+
   * support huge images (> 32 bit pixel index). darktable can open 26770x13385 TIFFs and should in theory be able to process arbitrary sized images. don't try this on a 32 bit system though!
 
-	
+
   * lens iop presets are copy/pastable between different images
 
 
@@ -77,16 +77,16 @@ Enjoy the release!
 
 
 
-	
+
   * tiff read/write rewritten, works on 32-bit float now, supports compression
 
-	
+
   * allow setting PPI for exported JPEGs, defaulting to 300
 
-	
+
   * pwstorage libsecret
 
-	
+
   * use HTTPS when exporting to flickr
 
 
@@ -98,25 +98,25 @@ Enjoy the release!
 
 
 
-	
+
   * new defringe image operation
 
-	
+
   * automatic mode for levels module
 
-	
+
   * allow to disable white balance
 
-	
+
   * new colour reconstruction mode for highlight recovery that tries to add both colour and structure to clipped areas. thanks to a1ex from magic lantern!
 
-	
+
   * better basecurve tool to create basecurves from raw/jpg pairs
 
-	
+
   * soft boundaries in sliders (right click and type 8 in exposure compensation for example)
 
-	
+
   * input colour gamut mapping to avoid problems with saturated blues causing purple artefacts
 
 
@@ -128,13 +128,13 @@ Enjoy the release!
 
 
 
-	
+
   * color conversion speedup (openmp for lcms2 case)
 
-	
+
   * add linear Rec2020 as a build-in profile
 
-	
+
   * embedded icc profile support for png/tiff (read/write)
 
 
@@ -146,37 +146,37 @@ Enjoy the release!
 
 
 
-	
+
   * copy, move, reset and delete images via lua
 
-	
+
   * handle progress bars via lua
 
-	
+
   * limited manipulation of libs an views UI via lua
 
-	
+
   * import and export styles via lua
 
-	
+
   * trigger lua when the grouping mode changes
 
-	
+
   * trigger lua when the overlay mode changes
 
-	
+
   * trigger lua when the active view changes
 
-	
+
   * manipulate snapshots via lua
 
-	
+
   * handle more types of preferences, including enums, directories and file names
 
-	
+
   * lua API is now versioned: use darktable.configuration.check_version to check
 
-	
+
   * lua API incompatibilities: darktable.modules has been removed, use darktable.new_format and darktable.new_storage to access the constructors
 
 
@@ -188,22 +188,22 @@ Enjoy the release!
 
 
 
-	
+
   * many speed improvements by adding sse code for image operations
 
-	
+
   * make white balance work faster
 
-	
+
   * make invert work faster
 
-	
+
   * much faster exr export with optional compression (multicore support)
 
-	
+
   * speedup of pfm writing
 
-	
+
   * speedup of amaze. it is still slow but not as bad as it used to be
 
 
@@ -215,16 +215,16 @@ Enjoy the release!
 
 
 
-	
+
   * module parameter introspection
 
-	
+
   * clang/address-sanitizer/etc compiler warnings fixed
 
-	
+
   * flip iop used for raw auto-orientation (simplifies code)
 
-	
+
   * complete rawspeed migration for raw loading
 
 
@@ -236,16 +236,16 @@ Enjoy the release!
 
 
 
-	
+
   * hdr bracketing fixes
 
-	
+
   * masks cleanup and bugfixes
 
-	
+
   * correct lens detection for compact cameras
 
-	
+
   * avoid clipping in vignette, lowpass, shadows & highlights, a/b channels of colorcontrast and tonecurve
 
 
@@ -257,13 +257,13 @@ Enjoy the release!
 
 
 
-	
+
   * initial support for x-trans sensors
 
-	
+
   * new demosaicing algorithms: markesteijn for x-trans and vng for x-trans and regular bayer raws
 
-	
+
   * There is support for several dozens of new cameras, and loads of new noise profiles for denoising have been added. Check out the full list in the release notes on github.
 
 
@@ -275,10 +275,10 @@ Enjoy the release!
 
 
 
-	
+
   * updated usermanual
 
-	
+
   * lots of small performance improvements and code cleanup
 
 

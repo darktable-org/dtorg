@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2016/04/running-on-non-x86-platforms/
 slug: running-on-non-x86-platforms
 title: Running on non-x86 platforms
-wordpress_lede: coin.jpg
+lede: coin_wide.jpg
 wordpress_id: 4030
 tags: blog, development, upcoming feature
 

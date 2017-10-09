@@ -355,6 +355,12 @@ li > p:first-child {
   max-width: 100%;
 }
 
+blockquote {
+  border-left: 2px solid #888;
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+  font-style: italic;
+}
 
 
 /* Footer

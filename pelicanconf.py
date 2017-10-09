@@ -113,3 +113,4 @@ MARKDOWN = {
   }
 }
 
+MD_EXTENSIONS = ['extra', 'headerid']

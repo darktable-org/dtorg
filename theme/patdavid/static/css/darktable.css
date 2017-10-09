@@ -422,3 +422,47 @@ blockquote {
     width: 16px;
     height: 16px;
 }
+
+/* Figure + figcaption styling
+ * --------------------------- */
+
+figure {
+    display: table;
+    margin: 1.5rem auto;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1rem;
+    display: table-caption;
+    caption-side: bottom;
+}
+figure img {
+    max-width: 100%;
+}
+figure.u-pull-right {
+    margin: 0 0 1rem 1rem;
+    max-width: 50%;
+}
+figure.u-pull-left {
+    margin: 0 1rem 1rem 0;
+    max-width: 50%;
+}
+
+
+/* code pre styling
+ * ---------------- */
+pre {
+    margin: 1rem 0;
+    padding: 0;
+    border: none;
+}
+code {
+    background-color: white;
+}
+pre > code {
+    margin: 0;
+    white-space: pre-wrap;
+    padding: .2rem .5rem;
+}

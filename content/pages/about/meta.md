@@ -52,7 +52,7 @@ An example image, with caption, with markdown parsed in the figcaption:
 Should render as:
 
 <figure markdown='span'>
-<img src="{attach}dot-eyes.jpg" alt="ALT_TEXT">
+<img src="{attach}dot-eyes.jpg" alt="ALT_TEXT" width="640" height="479">
 <figcaption>**Bolded** as well as _italics_, or even [a link](https://patdavid.net).</figcaption>
 </figure>
 

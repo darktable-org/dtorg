@@ -41,7 +41,9 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = False
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math']
+PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_links']
+
+THUMBNAIL_SIZE = 768
 
 # Use pretty type options in output
 TYPOGRIFY = True

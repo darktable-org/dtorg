@@ -34,17 +34,9 @@ since darktable's audience are mostly pro users, we want maximal user control an
 
 you can manipulate the wavelet transform in LCh space based on five curves in three tabs:
 
-
-
-
-  * L gain, L threshold (tab 1: luma)
-
-
-  * C gain, C threshold (tab 2: chroma)
-
-
-  * softness/edge weight (tab 3: sharpness)
-
+* L gain, L threshold (tab 1: luma)
+* C gain, C threshold (tab 2: chroma)
+* softness/edge weight (tab 3: sharpness)
 
 all of which allow you to fine tune parameters for each frequency band separately: on the left you adjust coarse/large structures, on the right are the fine details (thus _equalizer_. it's just the same as an audio equalizer. works on frequency bands, bass is left, treble is right).
 
@@ -62,11 +54,11 @@ the last tab gives you access to the edge-avoiding part of the wavelet transform
 
 consider this black and white image of a cloud over nelson (right click and open in new tab to view full-res image):
 
-[![](http://www.darktable.org/wp-content/uploads/2011/11/original.jpg)](http://www.darktable.org/2011/11/darktable-and-research/original/)
+@![original](original.jpg)
 
 we want to remove coarse contrast to flatten the look a bit, but enhance small details, to give it a more textured feel. this can be done at the same time, by manipulating the respective frequency bands in the equalizer module, like so:
 
-[![](http://www.darktable.org/wp-content/uploads/2011/11/sharp.jpg)](http://www.darktable.org/2011/11/darktable-and-research/sharp/)
+@![sharp](sharp.jpg)
 
 the vertical gray bars in the background show you the sample points where the curve you drew is actually evaluated for the given zoom. since wavelets work on a discrete number of bands, depending on the actual pixel resolution, we use this step to translate the user input (what you actually meant) to what the algorithm understands (the closest we can get you at the current zoom). this actually makes some sense in the context of darktable's scale-invariant pixel pipeline, and given the fact that our wavelets are shift invariant, and thus able to detect edges at every location and scale.
 
@@ -77,17 +69,9 @@ the vertical gray bars in the background show you the sample points where the cu
 
 quite some. this is the exercises for the reader section:
 
-
-
-
-  * increase saturation only for small things (e.g. berries)
-
-
-  * achieve a bloom effect
-
-
-  * chroma denoise your image
-
+* increase saturation only for small things (e.g. berries)
+* achieve a bloom effect
+* chroma denoise your image
 
 if cheating by looking at the presets, try to understand why they do what they do! :)
 
@@ -98,61 +82,36 @@ another useful hint: the scrollwheel works like it does in blender's proportiona
 ## references
 
 
+* **[swe97]** wim sweldens,
+
+    the lifting scheme: A construction of second generation wavelets.
+
+    siam j. math. anal. 29, 2 (1997).
 
 
+* **[far07]** raanan fattal, maneesh agrawala, szymon rusinkiewicz,
 
-<blockquote>**[swe97] ** wim sweldens,  
+    multiscale shape and detail enhancement from multi-light image collections.
 
-the lifting scheme: A construction of second generation wavelets.  
-
-siam j. math. anal. 29, 2 (1997).  
-</blockquote>
+    siggraph 2007.
 
 
+* **[fat09]** raanan fattal,
+
+    edge-avoiding wavelets and their applications.
+
+    siggraph 2009.
 
 
+* **[dsh10]** holger dammertz, daniel sewtz, johannes hanika, hendrik lensch,
 
-<blockquote>**[far07] ** raanan fattal, maneesh agrawala, szymon rusinkiewicz,  
+    [edge-avoiding a-trous wavelet transform for fast global illumination filtering.](http://www.uni-ulm.de/in/mi/graphics/atrous-filter.html)
 
-multiscale shape and detail enhancement from multi-light image collections.  
-
-siggraph 2007.  
-</blockquote>
+    high performance graphics 2010.
 
 
+* **[hdl11]** johannes hanika, holger dammertz, hendrik lensch,
 
+    edge-optimized a-trous wavelets for local contrast enhancement with robust denoising. (see attached pdfs below)
 
-
-<blockquote>**[fat09] ** raanan fattal,  
-
-edge-avoiding wavelets and their applications.  
-
-siggraph 2009.  
-</blockquote>
-
-
-
-
-
-<blockquote>**[dsh10] ** holger dammertz, daniel sewtz, johannes hanika, hendrik lensch,  
-
-[edge-avoiding a-trous wavelet transform for fast global illumination filtering.](http://www.uni-ulm.de/in/mi/graphics/atrous-filter.html)  
-
-high performance graphics 2010.  
-</blockquote>
-
-
-
-
-
-<blockquote>**[hdl11] ** johannes hanika, holger dammertz, hendrik lensch,  
-
-edge-optimized a-trous wavelets for local contrast enhancement with robust denoising. (see attached pdfs below)  
-
-pacific graphics 2011.  
-</blockquote>
-
-
-
-
-
+    pacific graphics 2011.

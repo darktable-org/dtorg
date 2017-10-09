@@ -37,7 +37,7 @@ Now you can change the polarity of each slider by an additional toggle button. A
 
 Let’s go for an example. I took this photo of a poppy blossom because I liked the strong color contrast effect. As the flower grows in front of a pile sun-bleached dead wood, it receives a strong accent to its intense, lively red.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/07/IMG_4287x_0001.jpg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/img_4287x_0001/)
+@![IMG_4287x_0001](IMG_4287x_0001.jpg)
 
 On the problematic side remains a somewhat low contrast within the blossom. The petals appear a bit like a red blob, a typical problem of unprocessed raw images. The droplets, which the last shower of rain has left behind, are hardly discernible. Admittedly the blossom is a bit soft too, probably due to sloppy focusing on my side.
 
@@ -47,24 +47,28 @@ I took highpass with blend mode _soft light_ in this case as it will increase co
 
 Module highpass works in Lab mode and it would certainly be possible to select the right part of the images with the L, a, and b sliders. However, this is much easier done with channels C and h. Just take the color picker to identify the hue of the blossom and select a narrow band around this hue value. Then in addition limit the effect in chroma channel to the more saturated colors.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/07/blendif2-1.jpeg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/blendif2-1/)[![](http://www.darktable.org/wp-content/uploads/2012/07/blendif2-2.jpeg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/blendif2-2/)
+<span style="display: table-row;">
+<span style="display: table-cell">![blendif2-1]({attach}blendif2-1.jpeg)</span>
+&nbsp;
+<span style="display: table-cell">![blendif2-2]({attach}blendif2-2.jpeg)</span>
+</span>
 
 With the recently added _display mask_ option, it’s now very easy to see what gets blended and what not. The yellow color shows you that we really only selected the petals of the poppy, everything else remains unaffected.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/07/blendif2-3.jpeg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/blendif2-3/)
+@![blendif2-3](blendif2-3.jpeg)
 
 Here is the resulting image with some additional contrast enhancement.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/07/IMG_4287x_0002.jpg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/img_4287x_0002/)
+@![IMG_4287x_0002](IMG_4287x_0002.jpg)
 
 Now let’s assume we would want to turn this natural almost-colorkey image into a full colorkey (just for demonstration purposes; personally I do not like colorkey in most cases).
 
 If we want to gray out all parts of the image except of the petals, we can use our monochrome module and use blendif’s new polarity option. Again we define a narrow band around the red hue of the blossom but this time with inverted polarity.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/07/blendif2-4.jpeg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/blendif2-4/)
+![blendif2-4]({attach}blendif2-4.jpeg)
 
 Here is the result of our exercise:
 
-[![](http://www.darktable.org/wp-content/uploads/2012/07/IMG_4287x_0003.jpg)](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/img_4287x_0003/)
+@![IMG_4287x_0003](IMG_4287x_0003.jpg)
 
 When exporting images with highly saturated colors like this – where colors are relevant for the message of the image - you might experience some disappointment. If you have a wide gamut monitor like me and then export into a JPEG in sRGB color space, part of the color variation you achieved may get lost again. That’s because saturated colors may be well within the gamut of your monitor, but are already out of gamut for sRGB. Choosing AdobeRGB as output profile combined with a different output intent (like _relative colorimetric_ instead of perceptual) in darktable’s _output color_ module can help to improve the situation.

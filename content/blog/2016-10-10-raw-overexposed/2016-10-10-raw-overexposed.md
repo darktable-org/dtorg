@@ -18,19 +18,20 @@ Have you ever over-exposed your images? Have you ever noticed that your images l
 First, why would you want to know which pixels are **overexposed**, clipped?
 
 Consider this image:
-[![rawoverexposed-0]({attach}rawoverexposed-0.jpeg)]({attach}rawoverexposed-0.jpeg)
+
+@![rawoverexposed-0](rawoverexposed-0.jpeg)
 
 … Why is the sky so white? Why is the image so flat and dull?
 
-Let's enable [`overexposure indicator`](https://www.darktable.org/usermanual/ch03s03s09.html.php#overexposed)..
+Let's enable [`overexposure indicator`](https://www.darktable.org/usermanual/ch03s03s09.html.php#overexposed) ...
 
-[![rawoverexposed-0.5](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-0.5-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-0.5.jpeg)
+@![rawoverexposed-0.5](rawoverexposed-0.5.jpeg)
 
 Nope, it does not indicate any part of the image to be overexposed.
 
 Now, let's see what happens if we disable the [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module
 
-[![rawoverexposed-1](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-1-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-1.jpeg)
+@![rawoverexposed-1](rawoverexposed-1.jpeg)
 
 Eww, the sky is pink!
 
@@ -43,7 +44,8 @@ Many of you have sometimes unintentionally overexposed your images. As you know,
 ### But. What if it is actually very easy to figure out?
 
 I'll show you the end result, what darktable's new, `raw-based overexposure indicator` says about that image, and then we will discuss details:
-[![rawoverexposed-2](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-1-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-1.jpeg)
+
+@![rawoverexposed-2](rawoverexposed-2-1.jpeg)
 
 
 
@@ -204,7 +206,7 @@ Good news is, it just works for both the [Bayer](https://en.wikipedia.org/wiki/B
 ## modes of operation
 
 
-[![rawoverexposed-ui](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-ui.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-ui.jpeg)
+![rawoverexposed-ui]({attach}rawoverexposed-ui.jpeg)
 
 The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
@@ -218,7 +220,7 @@ The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
     There are some Blue, Green and Red pixels clipped (counting to the centre)
 
-    [![rawoverexposed-xtrans-mode-cfa](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-cfa-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-cfa.jpeg)
+    @![rawoverexposed-xtrans-mode-cfa](rawoverexposed-xtrans-mode-cfa.jpeg)
 
 2. `mark with solid color`
     * If the raw pixel was clipped, it will be displayed in a given color (one of: red, green, blue, black)
@@ -227,7 +229,7 @@ The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
     The more black dots the area contains, the more clipped pixels there are in that area.
 
-    [![rawoverexposed-xtrans-mode-solid-black](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-solid-black-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-solid-black.jpeg)
+    @![rawoverexposed-xtrans-mode-solid-black](rawoverexposed-xtrans-mode-solid-black.jpeg)
 
 3. `false color`
     * If the clipped pixel was Red, the Red channel for current pixel will be set to $\mathbf{0.0}$
@@ -236,7 +238,7 @@ The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
     Same area.
 
-    [![rawoverexposed-xtrans-mode-falsecolor](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-falsecolor-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-xtrans-mode-falsecolor.jpeg)
+    @![rawoverexposed-xtrans-mode-falsecolor](rawoverexposed-xtrans-mode-falsecolor.jpeg)
 
 
 ## understanding raw overexposure visualization
@@ -244,7 +246,7 @@ The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 
 So, let's go back to the fourth image in this article:
 
-[![rawoverexposed-2](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-1-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-1.jpeg)
+@![rawoverexposed-2](rawoverexposed-2-1.jpeg)
 
 This is `mode` = `mark with CFA color`.
 
@@ -276,17 +278,17 @@ The colors may be clipped, while the sensor is still not clipping.
 
 Example:
 
-[![rawoverexposed-2](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-2.jpeg)
+@![rawoverexposed-2](rawoverexposed-2.jpeg)
 
 Let's enable indicator...
 
-[![rawoverexposed-3](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-3-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-3.jpeg)
+@![rawoverexposed-3](rawoverexposed-3.jpeg)
 
 The visualization says that Red and Blue channels are clipped.
 
 But now let's disable the [`white balance`](https://www.darktable.org/usermanual/ch03s04.html.php#whitebalance) module, while keeping indicator active:
 
-[![rawoverexposed-4](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-4-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-4.jpeg)
+@![rawoverexposed-4](rawoverexposed-4.jpeg)
 
 Interesting, isn't it? So actually there is no sensor-level clipping, but the image is still overexposed, because after the [`white balance`](https://www.darktable.org/usermanual/ch03s04.html.php#whitebalance) is applied, the channels do clip.
 
@@ -296,7 +298,7 @@ If you ever used it, you know that it used to produce pretty useless results.
 
 But not anymore:
 
-[![highlight-reconstruction-reconstruct-in-lch](https://www.darktable.org/wp-content/uploads/2016/10/highlight-reconstruction-reconstruct-in-lch-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/highlight-reconstruction-reconstruct-in-lch.jpeg)
+@![highlight-reconstruction-reconstruct-in-lch](highlight-reconstruction-reconstruct-in-lch.jpeg)
 
 As you can compare that with the first version of this image in this block, the highlights, although they are clipped, are actually somewhat reconstructed, so the image is not so flat and dull, there is _some_ gradient to it.
 
@@ -306,13 +308,13 @@ As you can compare that with the first version of this image in this block, the 
 
 With sufficiently exposed image (or just set `black levels` to $\mathbf{0}$ and `white level` to $\mathbf{1}$ in [`raw black/white point`](https://www.darktable.org/usermanual/ch03s04.html.php#raw_black_white_point) module; and `clipping threshold` = $\mathbf{0.0}$, `mode` = `mark with CFA color` in `raw overexposure indicator`), and a lucky combination of image size, output size and zoom level, produces a familiar-looking pattern :)
 
-[![rawoverexposed-bayer-pattern](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-bayer-pattern-494x278.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-bayer-pattern.jpeg)
+@![rawoverexposed-bayer-pattern](rawoverexposed-bayer-pattern.jpeg)
 
 That is basically an artefact due to the downscaling for display. Though, feedback may ask to actually properly implement this as a feature...
 
 Now, what if we enable the [lens correction](https://www.darktable.org/usermanual/ch03s04s04.html.php#lens_correction) module? :)
 
-[![rawoverexposed-bayer-pattern-and-lens-correction](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-bayer-pattern-and-lens-correction-494x271.jpeg)](https://www.darktable.org/wp-content/uploads/2016/10/rawoverexposed-bayer-pattern-and-lens-correction.jpeg)
+@![rawoverexposed-bayer-pattern-and-lens-correction](rawoverexposed-bayer-pattern-and-lens-correction.jpeg)
 
 So we could even create glitch-art with this thing!
 

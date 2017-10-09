@@ -11,7 +11,7 @@ tags: blog, development, upcoming feature, blending, color, color mapping, Lab, 
 
 I'd like to give a few words on a new module named "color mapping" that is currently under development in our master branch. This module is a rework and enhancement of the older "color transfer" module. That older module had several issues which made a migration impossible. So we leave the old one behind as deprecated (old history stack still work as before) and for all new history stacks "color mapping" should be used instead.
 
-[![cm](http://www.darktable.org/wp-content/uploads/2013/04/cm.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm.jpg)
+![cm]({attach}cm.jpg)
 
 The general aim of the module is transferring the look and feel of one image onto another. You can use it if you intend to harmonize the image's colors of a photo series - or you may want to completely change the atmoshpere of an image, maybe even into an unnatural, surrealistic look. As its purpose is mainly an artistic one, the new module was put into the effect group.
 
@@ -21,10 +21,10 @@ To use this module two steps are required:
 
 
 
-	
+
   * First you open the source image in darkroom mode and acquire its color characteristics by pressing the "acquire as source" button. A set of color clusters is generated and displayed in the source clusters area. Each cluster is represented by a set of nine color swatches with the mean value in the center surrounded by swatches indicating the color variance within that cluster. The clusters are sorted in ascending order by their weight, which reflects the relative number of pixels that contribute to the clusters.
 
-	
+
   * Next you open your target image in darkroom mode. darktable has remembered the previously collected source clusters; if they are not yet displayed, press the reset button in the module's expander bar. You now press the "acquire as target" button to generate a corresponding set of color clusters for your target image. It is displayed in the target clusters area.
 
 
@@ -34,23 +34,23 @@ The number of color clusters to apply - from 1 to 5 - is a central parameter. In
 
 Let's look at an example. We will take the following image as our target image. It shows a scene of Valencia's Ciudad de las Artes y de las Ciencias.
 
-[![cm_ex1](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex1.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex1.jpg)
+@![cm_ex1](cm_ex1.jpg)
 
 First we go for a grotesque case with strong color shifts to make the effects obvious. I want to transfer the greenish color atmosphere of this image (an abandoned cold war shelter's washroom) to our target image.
 
-[![cm_ex2](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex2.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex2.jpg)
+@![cm_ex2](cm_ex2.jpg)
 
 If I only take one cluster I get the following output.
 
-[![cm_ex3](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex3.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex3.jpg)
+@![cm_ex3](cm_ex3.jpg)
 
 All colors are shifted towards the dominant green tint of the source image. The picture changes a bit if I take two clusters.
 
-[![cm_ex4](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex4.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex4.jpg)
+@![cm_ex4](cm_ex4.jpg)
 
 Within the source image a first cluster now represents the greens, the second cluster the more neutral tones. In our target image one cluster represents the more blueish colors and the second the more reddish ones. The cluster mapping will apply the green tones of the source image onto the blue tones of the target image leaving the other colors neutral. This gives the overall impression of a sky with poisoned green clouds. And here finally the image if we take five clusters:
 
-[![cm_ex5](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex5.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex5.jpg)
+@![cm_ex5](cm_ex5.jpg)
 
 Now the color variety of the target image is much better preserved. Still the greenish tint of the source image has found its way into the target. The overall result is more credible but also less pronounced as in the previous two examples. Generally a higher number of clusters leads to a less pronounced effect.
 
@@ -60,15 +60,15 @@ Typically the colorizing effect at 0% is rather subtle whereas it is quite bold 
 
 Let's take a new source image: one of the Gehry buildings in Düsseldorf's Medienhafen shot shortly after sunset.
 
-[![cm_ex6](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex6.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex6.jpg)
+@![cm_ex6](cm_ex6.jpg)
 
 Obviously the image has two dominant colors: blue and orange. So let's take two color clusters. Here is the result if we set parameter "color dominance" to 0%.
 
-[![cm_ex7](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex7.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex7.jpg)
+@![cm_ex7](cm_ex7.jpg)
 
 The same source and target clusters, now applied with a color dominance of 100% give a much stronger effect.
 
-[![cm_ex8](http://www.darktable.org/wp-content/uploads/2013/04/cm_ex8.jpg)](https://www.darktable.org/wp-content/uploads/2013/04/cm_ex8.jpg)
+@![cm_ex8](cm_ex8.jpg)
 
 In the last two cases I set parameter "histogram equalization" to 80%. This parameter controls how strong the tonal contrast of the source image is transferred onto the target image.
 

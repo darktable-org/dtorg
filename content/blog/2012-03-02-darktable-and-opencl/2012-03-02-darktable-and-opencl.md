@@ -45,7 +45,7 @@ When darktable starts, it will first try to find and load libOpenCL.so and – o
 
 As we still regard darktable’s OpenCL support as experimental, we require the user in addition to positively activate OpenCL. Go into the preferences dialog and look for core options. Here you find a checkbox that says: “activate opencl support (experimental)”. Check that box and from that on OpenCL is used by darktable.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/03/ocl-menu-mk.jpeg)](http://www.darktable.org/2012/03/darktable-and-opencl/ocl-menu-mk/)
+@![ocl-menu-mk](ocl-menu-mk.jpeg)
 
 You can at any time switch it off and on again. Depending on the type of modules you are using, you will notice the effect as a general speed-up during interactive work and during export. Not all modules can take advantage of OpenCL at the moment and not all modules are demanding enough to make a noticeable difference. In order to feel a real difference, take modules like “shadows & highlights”, “sharpen”, “lowpass”, “highpass” or as an extreme case “equalizer”.
 

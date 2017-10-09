@@ -10,7 +10,7 @@ wordpress_id: 120
 
 
 # User manual
-![]({attach}drop.jpg)
+![drop]({attach}drop.jpg)
 
 You can either read the manual [online](/usermanual/index.html.php) or download it in PDF format:
 
@@ -30,7 +30,7 @@ structures and functions. You can either read the documentation [online](/lua-ap
 
 
 # darktable Styles
-![]({attach}styles.jpg)
+![styles]({attach}styles.jpg)
 
 There is an online repository with darktable styles available for download at <http://dtstyle.net/>. It features live preview of the styles with four different sample images.
 
@@ -40,7 +40,7 @@ To create a new darktable style just alter your image the way you want. Then cli
 
 
 # The book
-![]({attach}cover.jpg)
+![cover]({attach}cover.jpg)
 
 Stefano Fornari, Mario Latronico and Nicholas Manea wrote a book about photo development with darktable:
 
@@ -53,7 +53,7 @@ You can download the [pdf](http://sourceforge.net/projects/darktable/files/darkt
 
 
 # Screencast tutorials
-![]({attach}vaxholmen.jpg)
+![vaxholmen]({attach}vaxholmen.jpg)
 
 ## Screencasts recorded using the latest development versions of darktable
 
@@ -115,7 +115,7 @@ Related but not only suitable for darktable is his screencast on **how to create
 
 
 # Supported Cameras
-![]({attach}cameras.jpg)
+![cameras]({attach}cameras.jpg)
 
 See our support matrix for the status of camera support:
 

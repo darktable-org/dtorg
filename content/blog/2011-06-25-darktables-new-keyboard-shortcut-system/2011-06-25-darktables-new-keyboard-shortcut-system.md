@@ -8,9 +8,11 @@ title: darktable’s New Keyboard Shortcut System
 wordpress_id: 420
 tags: GSoC
 
-It took longer than I expected thanks to some unforeseen twists and turns, but the new keyboard accelerator system is basically finished.  There may still be some need for minor bug fixes and string changes (in particular, the new translation system needs to be tested out), but by and large everything that needs to be in place is, and next week I plan to start working on changes to the color picker module.  Now that the accelerator interface is stable, lets take a little tour of it.
+<span style="float: left; margin-right: 2rem">
+![Screenshot-darktable-preferences-300x163]({attach}Screenshot-darktable-preferences-300x163.png)
+</span>
 
-![](http://www.darktable.org/wp-content/uploads/2011/09/Screenshot-darktable-preferences-300x163.png)
+It took longer than I expected thanks to some unforeseen twists and turns, but the new keyboard accelerator system is basically finished.  There may still be some need for minor bug fixes and string changes (in particular, the new translation system needs to be tested out), but by and large everything that needs to be in place is, and next week I plan to start working on changes to the color picker module.  Now that the accelerator interface is stable, lets take a little tour of it.
 
 If you enter the preferences dialog now, you’ll see a new tab on the right hand side.  This tab has a tree view which displays every keyboard accelerator registered in the system, organized into groups that you can expand and contract.  Double-clicking on an entry will allow you to remap it, and pressing backspace will clear a keyboard accelerator.  You can use the buttons below the tree-view to export your shortcut bindings to a file, import another set of shortcut bindings from a file, or reset everything to the default values.
 

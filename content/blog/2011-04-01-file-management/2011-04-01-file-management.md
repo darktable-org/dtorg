@@ -18,6 +18,6 @@ To test this you have to build from git and have libvte-dev installed. Pascal’
 
 **Update:** This is supposed to be fixed so it should compile with libvte >= 0.26, too.
 
-**Update 2:** Of course this was an April Fool’s Joke. The so-called “file manager” was nothing but a shell and the “documentation” a tool tip mentioning a few commands like cp, ls, mv, …
+**Update 2:** Of course this was an April Fool’s Joke. The so-called “file manager” was nothing but a shell and the “documentation” a tool tip mentioning a few commands like cp, ls, mv, ...
 
-![](http://www.darktable.org/wp-content/uploads/2011/09/april_fools_file_manager.png)
+![april_fools_file_manager]({attach}april_fools_file_manager.png)

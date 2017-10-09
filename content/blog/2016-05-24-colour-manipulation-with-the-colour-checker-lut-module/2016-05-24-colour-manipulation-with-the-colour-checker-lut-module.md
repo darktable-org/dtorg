@@ -59,7 +59,7 @@ certain way to achieve a particular look. an example of this are the fuji film
 emulation modes. to this end, we will fit a colour checker lut to achieve their
 colour rendition, as well as a tone curve to achieve the tonal contrast.
 
-![target](https://www.darktable.org/wp-content/uploads/2016/05/target.jpg)
+![target]({attach}target.jpg)
 
 to create the colour lut, it is currently necessary to take a picture of an
 [it8 target](http://targets.coloraid.de) (well, technically we support any similar target, but
@@ -169,7 +169,7 @@ best use of gui real estate.
 ## the colour checker lut module
 
 
-![clut-iop](https://www.darktable.org/wp-content/uploads/2016/05/clut-iop.png)
+![clut-iop]({attach}clut-iop.png)
 
 
 ### gui elements
@@ -182,7 +182,7 @@ and initialise the mapping to identity (no change to the image).
 
 
 
- 	
+
   * the grid shows a list of coloured patches. the colours of the patches are the source points [latex]\mathbf{s}[/latex].
   * the target colour [latex]t_i[/latex] of the selected patch [latex]i[/latex] is shown as offset controlled by sliders in the ui under the grid of patches.
   * an outline is drawn around patches that have been altered, i.e. the source and target colours differ.
@@ -201,7 +201,7 @@ somewhere).
 
 
 
- 	
+
   * you can change lightness (L), green-red (a), blue-yellow (b), or saturation (C) of the target colour via sliders.
   * select a patch by left clicking on it, or using the combo box, or using the colour picker
   * to change source colour, select a new colour from your image by using the colour picker, and shift-left-click on the patch you want to replace.
@@ -230,7 +230,11 @@ box) to select two skin tones: very bright highlights and dark shadow tones.
 the former i dragged the brightness down a bit, the latter i brightened up a
 bit via the lightness (L) slider. this is the result:
 
-![original](https://www.darktable.org/wp-content/uploads/2016/05/pat_crop_02.png)![dialed down contrast in skin tones](https://www.darktable.org/wp-content/uploads/2016/05/pat_crop_03_flat.png)
+<span style="display: table-row;">
+<span style="display: table-cell">@![original](pat_crop_02.png "original")</span>
+&nbsp;
+<span style="display: table-cell">@![dialed down contrast in skin tones](pat_crop_03_flat.png)</span>
+</span>
 
 
 ### example 2: skin tones and eyes
@@ -243,10 +247,13 @@ picked the iris colour and saturated this tone via the saturation slider.
 as a side note, the flash didn't fire in this image (iso 800) so i needed to
 stop it up by 2.5ev and the rest is all natural lighting..
 
-[![original](https://www.darktable.org/wp-content/uploads/2016/05/mairi_crop_01.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/mairi_crop_01.jpg)
+@![original](mairi_crop_01.jpg)
 
-[![+2.5ev classic chrome](https://www.darktable.org/wp-content/uploads/2016/05/mairi_crop_02.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/mairi_crop_02.jpg)[![saturated eyes](https://www.darktable.org/wp-content/uploads/2016/05/mairi_crop_03.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/mairi_crop_03.jpg)
-
+<span style="display: table-row;">
+<span style="display: table-cell">@![+2.5ev classic chrome](mairi_crop_02.jpg)</span>
+&nbsp;
+<span style="display: table-cell">@![saturated eyes](mairi_crop_03.jpg)</span>
+</span>
 
 ## use `darktable-chart` to create a style
 
@@ -285,7 +292,7 @@ note that this is essentially similar to [pascal's colormatch script](https://gi
 
 
 
- 	
+
   * need an it8 (sorry, could lift that, maybe, similar to what we do for
 [basecurve fitting](http://www.darktable.org/2013/10/about-basecurves/))
   * shoot the chart with your camera:
@@ -312,12 +319,18 @@ note that this is essentially similar to [pascal's colormatch script](https://gi
 
 
 
+<span style="display: table-row;">
+<span style="display: table-cell">@![darktable-lut-tool-crop-01](darktable-lut-tool-crop-01.jpg)</span>
+&nbsp;
+<span style="display: table-cell">@![darktable-lut-tool-crop-02](darktable-lut-tool-crop-02.jpg)</span>
+</span>
 
+<span style="display: table-row;">
+<span style="display: table-cell">@![darktable-lut-tool-crop-03](darktable-lut-tool-crop-03.jpg)</span>
+&nbsp;
+<span style="display: table-cell">@![darktable-lut-tool-crop-04](darktable-lut-tool-crop-04.jpg)</span>
+</span>
 
-
-[![darktable-lut-tool-crop-01](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-01.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-01.jpg)[![darktable-lut-tool-crop-02](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-02.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-02.jpg)
-
-[![darktable-lut-tool-crop-03](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-03.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-03.jpg)[![darktable-lut-tool-crop-04](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-04.jpg)](https://www.darktable.org/wp-content/uploads/2016/05/darktable-lut-tool-crop-04.jpg)
 
 to fix wide gamut input, it may be needed to enable gamut clipping in the input colour
 profile module when applying the resulting style to an image with highly
@@ -342,22 +355,22 @@ and max [latex]\Delta E \approx 10[/latex] for 24 patches and a bit less for 49.
 unfortunately the error does not decrease very fast in the number of patches
 (and will of course drop to zero when using all the patches of the input chart).
 
-    
+
     provia 24:rank 28/24 avg DE 2.42189 max DE 7.57084
     provia 49:rank 53/49 avg DE 1.44376 max DE 5.39751
-    
+
     astia-24:rank 27/24 avg DE 2.12006 max DE 10.0213
     astia-49:rank 52/49 avg DE 1.34278 max DE 7.05165
-    
+
     velvia-24:rank 27/24 avg DE 2.87005 max DE 16.7967
     velvia-49:rank 53/49 avg DE 1.62934 max DE 6.84697
-    
+
     classic chrome-24:rank 28/24 avg DE 1.99688 max DE 8.76036
     classic chrome-49:rank 53/49 avg DE 1.13703 max DE 6.3298
-    
+
     mono-24:rank 27/24 avg DE 0.547846 max DE 3.42563
     mono-49:rank 52/49 avg DE 0.339011 max DE 2.08548
-    
+
 
 
 
@@ -371,7 +384,7 @@ would.
 
 
 
- 	
+
   * there is a button for this in the `darktable-chart` tool
   * needs careful shooting, to match brightness of reference value closely.
   * at this point it's not clear to me how white balance should best be handled here.
@@ -389,7 +402,7 @@ calibration though.
 
 
 
- 	
+
   * [0] Ken Anjyo and J. P. Lewis and Frédéric Pighin, "Scattered data interpolation for computer graphics" in Proceedings of SIGGRAPH 2014 Courses, Article No. 27, 2014. [pdf](http://scribblethink.org/Courses/ScatteredInterpolation/scatteredinterpcoursenotes.pdf)
   * [1] J. A. Tropp and A. C. Gilbert, "Signal Recovery From Random Measurements Via Orthogonal Matching Pursuit", in IEEE Transactions on Information Theory, vol. 53, no. 12, pp. 4655-4666, Dec. 2007.
 
@@ -398,7 +411,7 @@ calibration though.
 
 ## links
 
- 	
+
   * [pat david's film emulation luts](http://gmic.eu/film_emulation/)
   * [download fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz)
   * [darktable's user manual on styles](https://www.darktable.org/usermanual/ch02s03s08.html.php)

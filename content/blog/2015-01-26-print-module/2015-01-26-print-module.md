@@ -19,20 +19,18 @@ Though, printing is not easy, there are many technical aspects to take into acco
 
 Nothing fancy there, just the page displayed as it will be printed on the paper. The display will show the page itself, the borders and the image properly aligned:
 
-[![dt-print-modulev2](https://www.darktable.org/wp-content/uploads/2015/01/dt-print-modulev2-494x354.jpg)](https://www.darktable.org/wp-content/uploads/2015/01/dt-print-modulev2.jpg)
+@![dt-print-modulev2](dt-print-modulev2.jpg)
 
 
-
-	
   * the white area is the paper with the proper aspect ratio
 
-	
+
   * the little black markers in each corner are representing the non printable area. These markers are not displayed for printers supporting border-less mode.
 
-	
+
   * the gray area is the print area, that is, the paper minus the borders
 
-	
+
   * finally the picture take place on the print area with the proper alignment, above the alignment is set to top.
 
 
@@ -43,37 +41,35 @@ Nothing fancy there, just the page displayed as it will be printed on the paper.
 
 Let's look at the print settings offered by this module:
 
-[![dt-print-settingsv2](https://www.darktable.org/wp-content/uploads/2015/01/dt-print-settingsv2.jpg)](https://www.darktable.org/wp-content/uploads/2015/01/dt-print-settingsv2.jpg)
+![dt-print-settingsv2]({attach}dt-print-settingsv2.jpg)
 
 Using the control offered we can:
 
 
-
-	
   * select the printer
 
-	
+
   * set the printer profile and intent which is the most important settings
 
-	
+
   * select the paper
 
-	
+
   * set the orientation of the page either landscape or portrait
 
-	
+
   * select the unit for the border values
 
-	
+
   * set the borders or each side separately or identically using the lock button
 
-	
-  * use one of the nine possible alignment of the picture on the page : left, right, bottom-right, centered...
 
-	
+  * use one of the nine possible alignment of the picture on the page : left, right, bottom-right, centered ...
+
+
   * specify the way to export the picture : export profile and intent
 
-	
+
   * add a style during the export, this comes handy to add a signature or whatever watermark for example. it is also the way to adjust the exposure, indeed when printing B&W pictures it is often needed to add some lights.
 
 
@@ -93,10 +89,10 @@ When it is installed head your Web browser to [http://localhost:631](http://loca
 
 
 
-	
+
   * Uncorrected : If the printer offers different color settings select the one that does nothing. That is, asking the driver to not try to be smart at all.
 
-	
+
   * Borderless : If you intend to print borderless you need to activate this option on the CUPS interface.
 
 

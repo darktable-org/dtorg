@@ -1,17 +1,17 @@
 Title: development
-Date: 2017-09-21T14:55:35-06:00 
+Date: 2017-09-21T14:55:35-06:00
 author: smn
 link: http://www.darktable.org/development/
 wordpress_id: 404
 
 <div class="subnav">
-    <a href="http://darktable.org/redmine/projects/darktable/wiki">developer's wiki</a> 
-    <a href="http://darktable.org/redmine/projects/darktable/issues">bug tracker</a> 
-    <a href="http://darktable.org/redmine/projects/darktable/repository">browse code</a> 
+    <a href="http://darktable.org/redmine/projects/darktable/wiki">developer's wiki</a>
+    <a href="http://darktable.org/redmine/projects/darktable/issues">bug tracker</a>
+    <a href="http://darktable.org/redmine/projects/darktable/repository">browse code</a>
 </div>
 
 # Contributing...
-![]({attach}mushroom.jpg)
+![mushroom]({attach}mushroom.jpg)
 
 If you feel like contributing to this project, here are a few suggestions.
 
@@ -33,7 +33,7 @@ You can help us by providing a _color matrix_ for your specific camera. Color ma
 
 
 # Coding
-![]({attach}firering.jpg)
+![firering]({attach}firering.jpg)
 
 Write image operation _modules_! Submit _patches_! Help to track down bugs by supplying _backtraces_!
 

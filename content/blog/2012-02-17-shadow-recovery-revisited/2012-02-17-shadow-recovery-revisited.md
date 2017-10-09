@@ -19,22 +19,22 @@ The module offers four sliders to control the effect. Sliders “shadows” and 
 
 Let’s look at a typical picture as an example.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/02/sh-img1.sm_.jpg)](http://www.darktable.org/2012/02/shadow-recovery-revisited/sh-img1-sm/)
+@![sh-img1.sm_](sh-img1.sm_.jpg)
 
 This one was taken from inside an old barn located in a museum village in Bavaria. A typical high dynamic range situation: the outside is in bright sunlight, the interior only lighted by the open barn door. I did have no time, tripod and temper to do a proper multi-shot approach, which could give rise to process the scene with DRI (dynamic range increase). Instead I made only one shot - “exposing to the right” for the outside, sun-lit wall. As a consequence parts of the interiors of the barn remain pitch black. Even worse, in the end the mid tones would require a slight contrast boost, which would drive even more parts into the dark…
 
 So, let's use “shadows and highlights”. In order to optimize the settings I started with rather extreme values: “shadows” set to its maximum, “compress” to 100%, “radius” left as it is. “highlights” is set to zero, as I don’t need any highlights correction here. The combination of high shadow correction and high compression leads to an effect limited to the very extreme dark parts, which is not visible. Starting from here, let’s now see what happens when we reduce “compress”. The lightening of shadows will progressively extend from the darkest spots into the middle grays. After playing around a bit, somehow reducing the “shadows” parameters a bit, I ended with: “shadows” = 170, “highlights” = 0, “radius” = 100, “compress” = 60.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/02/sh-img2.sm_.jpg)](http://www.darktable.org/2012/02/shadow-recovery-revisited/sh-img2-sm/)
+@![sh-img2.sm_](sh-img2.sm_.jpg)
 
 The result is already quite good. The doorway and the inner walls of the barn are much more defined and the inner side of the barn door shows structure as well. In many cases we could leave it like that. However, the result is a little bit too hefty; the image looks somewhat surreal.
 
 What could we do to reduce the strength of the effect? We can easily tune down the exaggerated nature by blending the result with the original image (blend mode “normal”). Here are the parameters:
 
-[![](http://www.darktable.org/wp-content/uploads/2012/02/sh-parameters.jpeg)](http://www.darktable.org/2012/02/shadow-recovery-revisited/sh-parameters/)
+![sh-parameters]({attach}sh-parameters.jpeg)
 
 And here is the final image. In this case I was even able to give some more contrast to the image (medium S-like curve to L-channel in module “tone curve”), without driving too much of the dark grays back into the dark.
 
-[![](http://www.darktable.org/wp-content/uploads/2012/02/sh-img3.sm_.jpg)](http://www.darktable.org/2012/02/shadow-recovery-revisited/sh-img3-sm/)
+@![sh-img3.sm_](sh-img3.sm_.jpg)
 
 Taking the technical limitations into account, the result is not too bad. Still it’s miles away from the quality that (since decades) could have been reached with a view camera on analog b&w film. Digital cameras still have a long way to go.

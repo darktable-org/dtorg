@@ -75,6 +75,6 @@ After this darktable will be installed in /usr/local directory and can be starte
 
 There's an issue with gphoto on OS X, which prevents a plugged-in camera from appearing in darktable - OS X starts PTPCamera daemon when it detects a camera, which blocks the access to the device from any other application. To fix it simply run "killall PTPCamera" command after connecting the camera. An automated solution also exists (I haven't tried it myself, so no warranties): [http://valelab.ucsf.edu/~MM/MMwiki/index.php/GPhoto](http://valelab.ucsf.edu/~MM/MMwiki/index.php/GPhoto) (scroll to the bottom).
 
-[![darktable on OS X](http://www.darktable.org/wp-content/uploads/2012/08/dtonosx.png)](http://www.darktable.org/2012/08/bringing-current-darktable-to-os-x/dtonosx/)
+@![darktable on OS X](dtonosx.png)
 
 

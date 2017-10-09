@@ -8,9 +8,9 @@ title: Introducing The Levels Module
 wordpress_id: 426
 tags: GSoC
 
-For my final GSOC 2011 task, I set out to build a levels module for darktable, which would behave more or less like the levels tool in GIMP and similar image editors.  The user sets a white point, black point, and middle grey point for their image on a histogram, and the tool adjusts the image to match the chosen boundaries.  In my git branch, I now have the levels module functional.
+<span style="float: left; margin-right: 2rem;">![Screenshot]({attach}Screenshot.png)</span>
 
-[![](http://www.darktable.org/wp-content/uploads/2011/09/Screenshot.png)](http://www.darktable.org/2011/07/introducing-the-levels-module/screenshot/)
+For my final GSOC 2011 task, I set out to build a levels module for darktable, which would behave more or less like the levels tool in GIMP and similar image editors.  The user sets a white point, black point, and middle grey point for their image on a histogram, and the tool adjusts the image to match the chosen boundaries.  In my git branch, I now have the levels module functional.
 
 The interface for the levels module looks very similar to that of the tone curve module.  This is no coincidence: I got started on this task by copying the source files for the tone curve module and modifying them to fit my needs.  Interface-wise, the histogram, grid, and drag handles at the bottom are all identical to tone curve, but I removed the curve and added the vertical indicator lines.
 

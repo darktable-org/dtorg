@@ -31,9 +31,7 @@ For instance, on my system (dual-core/dual-processor 3.0GHz Opteron cpus with 32
       3 167336                dt_tag_new:return dt_tag_new(clouds, 134506508) took  9226022 nsec
 
 
-
-
-[![](http://www.darktable.org/wp-content/uploads/2012/05/supermoon-ss-494x300.jpg)](http://www.darktable.org/2012/05/darktable-and-solaris-it-just-workstm-and-there-are-some-nifty-benefits-too/supermoon-ss/)
+@![supermoon-ss](supermoon-ss.jpg)
 
 That's a fairly simple one-liner for a very simple use-case. It's a bit of a worry that it took 9 milliseconds (thankyou to the commenters below for picking up my error with the order of magnitude) for that function to return. Now that I've got some hard data I can get started with drilling down into what the possible causes are, using the analytical troubleshooting system (an implementation of [Kepner-Tregoe's Problem Solving and Decision Management](http://www.kepner-tregoe.com/TheKTWay/WorkingWithKT-TeachYou-PSDM.cfm) methodology) which I was taught while working at (the late) Sun Microsystems.
 

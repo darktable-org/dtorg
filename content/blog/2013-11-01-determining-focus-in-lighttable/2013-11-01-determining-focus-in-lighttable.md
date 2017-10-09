@@ -13,9 +13,9 @@ wouldn't it be great if you could judge sharpness of your images in lighttable m
 
 to tell whether or not you got the focus right during the shoot, we would like to look at the full resolution. the most you get out of lighttable mode will look like this:
 
-[![image2](http://www.darktable.org/wp-content/uploads/2013/11/image2.jpg)](https://www.darktable.org/wp-content/uploads/2013/11/image2.jpg)
+@![image2](image2.jpg)
 
-[![image1](http://www.darktable.org/wp-content/uploads/2013/11/image1.jpg)](https://www.darktable.org/wp-content/uploads/2013/11/image1.jpg)
+@![image1](image1.jpg)
 
 which one is sharper?
 
@@ -53,24 +53,17 @@ switch on the new gui setting `plugins/lighttable/display_focus` or _indicate fo
 
 if you now select a picture in lighttable mode and press `z' to switch to full res preview, you should get something like
 
-<table >
-<tr >
-<td >
-[![red](http://www.darktable.org/wp-content/uploads/2013/11/red2.jpg)](https://www.darktable.org/wp-content/uploads/2013/11/red.jpg)
-
-</td>
-<td >
-[![blue](http://www.darktable.org/wp-content/uploads/2013/11/blue2.jpg)](https://www.darktable.org/wp-content/uploads/2013/11/blue.jpg)
-
-</td></tr></table>
+<span style="display: table-row;">
+<span style="display: table-cell">@![red](red.jpg)</span>
+&nbsp;
+<span style="display: table-cell">@![blue](blue.jpg)</span>
+</span>
 
 double checking in darkroom mode and zooming to 200% shows that the one with the red boxes is indeed sharper:
 
-[![red_closeup](http://www.darktable.org/wp-content/uploads/2013/11/red_closeup.jpg)](https://www.darktable.org/wp-content/uploads/2013/11/red_closeup.jpg)
+![red_closeup]({attach}red_closeup.jpg)
 
-[![blue_closeup](http://www.darktable.org/wp-content/uploads/2013/11/blue_closeup.jpg)](https://www.darktable.org/wp-content/uploads/2013/11/blue_closeup.jpg)
-
-
+![blue_closeup]({attach}blue_closeup.jpg)
 
 
 # where to get it

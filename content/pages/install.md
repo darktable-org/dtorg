@@ -35,7 +35,7 @@ img.chooseos {
 
 
 # Prerequisites
-![]({attach}bee.jpg)
+![bee]({attach}bee.jpg)
 
   * *nix (tested: Debian, Ubuntu, Arch Linux, Funtoo, Gentoo, Fedora, Macintosh OS X with Macports)
   * We strongly recommend using a **64bit operating system**!
@@ -44,7 +44,7 @@ img.chooseos {
 
 
 <h2 id='ubuntu'>Ubuntu packages</h2>
-![]({filename}/images/OS/ubuntu.jpg)
+![ubuntu]({filename}/images/OS/ubuntu.jpg)
 
 We provide several PPAs to add to your Ubuntu installation:
 
@@ -67,7 +67,7 @@ $ dpkg-buildpackage -rfakeroot
 
 
 <h2 id='fedora'>Fedora packages</h2>
-![]({filename}/images/OS/fedora.jpg)
+![fedora]({filename}/images/OS/fedora.jpg)
 
 Fedora ships with darktable. A simple command should be enough.
 
@@ -82,7 +82,7 @@ If you want to build darktable from the source on Fedora, here are the build dep
 
 
 <h2 id='opensuse'>openSUSE packages</h2>
-![]({filename}/images/OS/opensuse.jpg)
+![opensuse]({filename}/images/OS/opensuse.jpg)
 
 openSUSE ships with darktable. A simple `zypper install darktable` should be enough.
 
@@ -92,7 +92,7 @@ openSUSE ships with darktable. A simple `zypper install darktable` should be eno
 
 
 <h2 id='arch'>Arch Linux</h2>
-![]({filename}/images/OS/arch.jpg)
+![arch]({filename}/images/OS/arch.jpg)
 
     $ pacman -S darktable
 
@@ -100,7 +100,7 @@ openSUSE ships with darktable. A simple `zypper install darktable` should be eno
 
 
 <h2 id='gentoo'>Funtoo/Gentoo Linux</h2>
-![]({filename}/images/OS/gentoo.jpg)
+![gentoo]({filename}/images/OS/gentoo.jpg)
 
 darktable is in portage!
 
@@ -111,7 +111,7 @@ $ darktable
 
 
 <h2 id='rhel'>RHEL 6 / SL 6 / Centos 6</h2>
-![]({filename}/images/OS/scientificlinux.jpg)
+![scientificlinux]({filename}/images/OS/scientificlinux.jpg)
 
 Only darktable-1.0.5 can be provided for these distributions due to restrictions on the Glib version available. Still, try it out, 1.0 has many nice features already and most of the hardware support has been ported back by Pascal - that's where the .5 comes from.
 
@@ -131,7 +131,7 @@ yum --enablerepo=linuxtech-testing install darktable
 
 
 <h2 id='macos'>macOS</h2>
-![]({filename}/images/OS/macosx.jpg)
+![macosx]({filename}/images/OS/macosx.jpg)
 
   * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.2.4/darktable-2.2.4.6.dmg)
   * Mount the thing
@@ -159,7 +159,7 @@ sudo port install darktable +quartz
 
 
 <h2 id='debian'>Debian</h2>
-![]({filename}/images/OS/debian.png)
+![debian]({filename}/images/OS/debian.png)
 
 (Of course) there is a darktable package in the Debian repositories. The current stable version _Jessie_ still has darktable 1.4.2 packaged, but version 1.6.9 is available through the backports. This is also what already landed in _Stretch_. See package description here: <https://packages.debian.org/stable/darktable>.
 
@@ -173,14 +173,14 @@ A description on how to enable the backports repository can be found here: <http
 
 
 <h2 id='solaris'>Solaris</h2>
-![]({filename}/images/OS/opensolaris.png)
+![opensolaris]({filename}/images/OS/opensolaris.png)
 
 The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <http://www.jmcpdotcom.com/blog/category/darktable/>.
 He has both the [darktable packages](http://www.jmcpdotcom.com/Packages/) and a [dependency package](http://www.jmcpdotcom.com/Packages/dt-deps.p5p.gz) in case this is the first time you are installing darktable on your system.
 
 
 <h2 id='freebsd'>FreeBSD</h2>
-![]({filename}/images/OS/freebsd.png)
+![freebsd]({filename}/images/OS/freebsd.png)
 
 darktable is packaged and compiled for FreeBSD, the binary package can be found here:
 <http://ftp.freebsd.org/pub/FreeBSD/ports/packages/graphics/>.
@@ -199,7 +199,7 @@ and have fun.
 
 
 # Current release from source
-![]({filename}/images/OS/leaves1.jpg)
+![leaves1]({filename}/images/OS/leaves1.jpg)
 
 * Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.2.5) (recent version: darktable 2.2.5) – make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.
@@ -234,7 +234,7 @@ $ darktable
 For a more complete set of instructions for different distributions have a look at [our Wiki](http://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
 
 # git version
-![]({filename}/images/OS/fire.jpg)
+![fire]({filename}/images/OS/fire.jpg)
 
 _First a word of warning_: Using the development version of darktable might be risky in that it can break anytime, kill your edits, eat your kittens or do other nasty things. It is also not guaranteed that XMP sidecars written by a development version will work with a release version. It is also quite certain that any older version of darktable will **NOT** be able to read the database once a development build updated it to the latest schema. So for your own safety and our sanity, do make backups of your XMP files as well as your `library.db` (by default it is in `~/.config/darktable/`) **BEFORE** upgrading to the self compiled git version. That being said, it should be quite safe to actually use it and never go back, so all of this might be no issue for you at all. Just keep in mind that **IF** you ever want to go back it might be hard.
 

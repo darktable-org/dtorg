@@ -1,12 +1,12 @@
 Title: contact
-Date: 2017-09-21T15:10:23-06:00 
+Date: 2017-09-21T15:10:23-06:00
 author: smn
 link: http://www.darktable.org/contact/
 wordpress_id: 124
 
 
 # How to get in contact
-![]({attach}sun.jpg)
+![sun]({attach}sun.jpg)
 
 Use our mailing lists! Please subscribe instead of just sending mails to the lists - we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
 
@@ -20,7 +20,7 @@ Every file released by darktable as of version 1.4.1 gets signed with the GPG ke
 
 
 # Developers / darktable Team
-![]({attach}sails.jpg)
+![sails]({attach}sails.jpg)
 
 Here are some people you might meet on the mailing list or in IRC:
 <table class='smalltext altrows' markdown=1>
@@ -284,7 +284,7 @@ Here are some people you might meet on the mailing list or in IRC:
 
 
 # darktable Translators
-![]({attach}img_0001_29.jpg)
+![img_0001_29]({attach}img_0001_29.jpg)
 
 
 The translations of darktable are brought to you by:

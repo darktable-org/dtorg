@@ -32,36 +32,36 @@ if you think about it it's surprising that we can get useful information from th
 
 
 
-	
+
   * take a blurry shot, to rule out effects of sharpening, noise, and denoising.
 
-	
+
   * try to get as much dynamic range as you can, blacks and blown highlights (you probably need to go one or two stops over what you think you need to make the raw overexpose, too).
 
-	
+
   * Shoot using the camera's default image style (often called "standard" _not_ "neutral") if you have special image filters, hipster modes, dynamic light enhancement things in your camera, switch them off (such as `Nikon Active D-Light', `Canon Auto Lighting Optimizer (ALO)', `Sony Dynamic Range Optimizer (DRO)' or Samsung Smart Range, etc).
 
-	
+
   * try to make the target appear as black and white as possible (after camera white balancing).
 
 
 a suitable shot might look like this user contributed shot here:
 
-[![example](http://www.darktable.org/wp-content/uploads/2013/10/example.jpg)](https://www.darktable.org/wp-content/uploads/2013/10/example.jpg)
+![example]({attach}example.jpg)
 
 you will need a git checkout of darktable and build and run the tool as follows. note that you don't need to compile darktable itself from git, also you don't need most build dependencies. in the directory of your local git checkout, navigate [to the tools/basecurve subdirectory](https://github.com/darktable-org/darktable/tree/master/tools/basecurve) and execute a few commands:
 
-    
+
     cd tools/basecurve
     make
     dcraw -6 -W -g 1 1 -w input.raw
-    
+
     # now create the jpg by either /one/ of the two:
     # use thumbnail
     dcraw -e input.raw && mv inputraw_thumb.ppm inputjpg.ppm
     # use jpg you took in raw+jpg mode
     convert input.jpg inputjpg.ppm
-    
+
     # create basecurve
     ./basecurve input.ppm inputjpg.ppm
     gnuplot plot
@@ -70,9 +70,9 @@ you will need a git checkout of darktable and build and run the tool as follows.
 
 that should look something like
 
-[![basecurve-0](http://www.darktable.org/wp-content/uploads/2013/10/basecurve-0.png)](https://www.darktable.org/wp-content/uploads/2013/10/basecurve-0.png)
+![basecurve-0]({attach}basecurve-0.png)
 
-[![basecurve-1](http://www.darktable.org/wp-content/uploads/2013/10/basecurve-1.png)](https://www.darktable.org/wp-content/uploads/2013/10/basecurve-1.png)
+![basecurve-1]({attach}basecurve-1.png)
 
 where the last plot compares the green channel to the fitted spline which will be exported for use in darktable. to improve the fit you can give a third parameter to the basecurve tool to set the number of nodes. 20 is the maximum.
 
@@ -86,7 +86,7 @@ to use your newly created curve, all you need to do is to copy/paste the output 
 
 it might look something like:
 
-    
+
     echo "INSERT INTO presets VALUES('measured basecurve','','basecurve',2,X'00000000c2b8d03a2c113f3bfbf7fe3a2c11bf3cc304b33c7c36a13d21750b3e2c113f3e1577ba3ec496ba3e62e7213f7c36213ff4135c3f0000803f0000803f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000020000000000000000000000',1,X'00000000180000000000C842000000000000000000000000000000000000000000000000000000000000000000000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F00000000000000000000803F0000803F',7,0,'','%','%','%',0.0,51200.0,0.0,10000000.0,0.0,100000000.0,0.0,1000.0,0,0,0,0,2);" | sqlite3 ~/.config/darktable/library.db
 
 

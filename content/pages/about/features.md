@@ -1,5 +1,5 @@
 Title: features
-Date: 2017-06-13T21:58:51-06:00 
+Date: 2017-06-13T21:58:51-06:00
 Slug: about/features
 
 
@@ -8,7 +8,7 @@ These are some of darktable's current features, and a coarse overview over the c
 
 # General
 
-![]({attach}gold.jpg "gold")
+![gold]({attach}gold.jpg "gold")
 
 *   darktable runs on **GNU/Linux / GNOME**, **Mac OS X / macports** and **Solaris 11 / GNOME**.
 *   Fully **non-destructive** editing.
@@ -24,7 +24,7 @@ These are some of darktable's current features, and a coarse overview over the c
 
 # Modules
 
-![]({attach}moon.jpg "moon")
+![moon]({attach}moon.jpg "moon")
 
 Currently darktable serves 47 image operation modules in L*a*b* and profiled rgb. Some of them can be used as **blending operators** offering blend functionality that works on the incoming image information and the output of the current module.
 

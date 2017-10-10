@@ -63,13 +63,17 @@ What can we tell about those values?
 
 
 
-- Sensor readout results in some [noise](https://en.wikipedia.org/wiki/Image_noise) ([black](https://en.wikipedia.org/wiki/Dark_current_(physics)) noise + [readout](https://en.wikipedia.org/wiki/Bias_frame) noise), meaning that even with the shortest [exposure](https://en.wikipedia.org/wiki/Exposure_(photography)), the pixels will not have zero value.<br/>
-That is a **black level**.<br/>
-For Canon it is often between $\mathbf{2000}$ and $\mathbf{2050}$.
+- Sensor readout results in some [noise](https://en.wikipedia.org/wiki/Image_noise) ([black](https://en.wikipedia.org/wiki/Dark_current_(physics)) noise + [readout](https://en.wikipedia.org/wiki/Bias_frame) noise), meaning that even with the shortest [exposure](https://en.wikipedia.org/wiki/Exposure_(photography)), the pixels will not have zero value.
 
-- Due to the non-magical nature of photosensitive pixels and [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter), there is some upper limit on the value each pixel can have. That limit may be different for each pixel, be it due to the different [CFA](https://en.wikipedia.org/wiki/Color_filter_array) color, or just manufacturing tolerances. Most modern Canon cameras produce 14-bit raw images, which means each pixel may have a value between $\mathbf{0}$ and $\mathbf{{2^{14}}-1}$ (i.e. $\mathbf{16383}$).<br/>
-So the lowest maximal value that still can be represented by all the pixels is called the **white level**.<br/>
-For Canon it is often between $\mathbf{13000}$ and $\mathbf{16000}$.
+    That is a **black level**.
+
+    For Canon it is often between $\mathbf{2000}$ and $\mathbf{2050}$.
+
+- Due to the non-magical nature of photosensitive pixels and [ADC](https://en.wikipedia.org/wiki/Analog-to-digital_converter), there is some upper limit on the value each pixel can have. That limit may be different for each pixel, be it due to the different [CFA](https://en.wikipedia.org/wiki/Color_filter_array) color, or just manufacturing tolerances. Most modern Canon cameras produce 14-bit raw images, which means each pixel may have a value between $\mathbf{0}$ and $\mathbf{{2^{14}}-1}$ (i.e. $\mathbf{16383}$).
+
+    So the lowest maximal value that still can be represented by all the pixels is called the **white level**.
+
+    For Canon it is often between $\mathbf{13000}$ and $\mathbf{16000}$.
 
 Both of these parameters also often depend on [ISO](https://en.wikipedia.org/wiki/Film_speed#Digital_camera_ISO_speed_and_exposure_index).
 

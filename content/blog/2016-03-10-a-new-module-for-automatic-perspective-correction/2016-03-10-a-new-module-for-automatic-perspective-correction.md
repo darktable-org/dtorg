@@ -11,16 +11,20 @@ tags: blog, development, upcoming feature, darktable, new feature, perspective c
 
 **Since many years darktable offers a versatile tool for manual perspective correction in the crop & rotate module [1]. Although the principle is simple and straightforward, there are cases where it can prove difficult to get a convincing correction, especially if no distinct vertical or horizontal features can be spotted in the image. To overcome these limitations a new “perspective correction” module has just been added that is able to automatically correct for converging lines. The underlying mechanism is inspired by the program ShiftN developed by Marcus Hebel and published under the GPL [2].**
 
+<figure markdown="span" role="group">
 ![The GUI of the perspective correction module.]({attach}ashift_1.jpg)
-<br/>*The GUI of the perspective correction module.*
+<figcaption>The GUI of the perspective correction module.</figcaption>
+</figure>
 
 
-## **Background**
+## Background
 
 Perspective distortions are a natural effect when projecting a three dimensional scene onto a two dimensional plane photographically. As such they are not to be confused with lens errors which can be corrected in darktable’s lens correction module [3]. Perspective distortions cause objects close to the viewer to appear much larger than objects further away in the background. The closer you get to a subject the stronger the effect. As lenses with a short focal length force you to get closer to your subject, photos taken with wide angle lenses are more prone to show strong perspective distortions than telephoto lenses. Once again this is not an effect of the lens but an effect of the perspective (distance) of the viewer or camera to the scene.
 
+<figure markdown="span" role="group">
 @![Two lions and a castle. Taken with 14mm (APS-C) the two sculptures cover different areas in the image although they have the same size](ashift_7.jpg)
-<br/>*Two lions and a castle. Taken with 14mm (APS-C) the two sculptures cover different areas in the image although they have the same size. Note the converging lines of the vertical architectural features.*
+<figcaption>Two lions and a castle. Taken with 14mm (APS-C) the two sculptures cover different areas in the image although they have the same size. Note the converging lines of the vertical architectural features.</figcaption>
+</figure>
 
 Converging lines are a special case of perspective distortions frequently seen in architecture photographs. Parallel lines are an essential feature of most types of architecture; when photographed at an angle parallel lines get transformed into converging lines that meet at some vantage point within or outside the image frame.
 
@@ -28,26 +32,32 @@ Converging lines are a special case of perspective distortions frequently seen i
 
 There are a few ways to overcome this effect when taking a photo. One way is keeping the camera's optical axis pointing to the horizon so that vertical lines run parallel to the sensor plane. However, this will bring a lot of potentially boring foreground into the lower part of the image which typically needs to be cropped afterward in image processing. Alternatively, one could use a shift lens [4] which gives more control on what part of the scene gets onto the camera sensor. Shift lenses tend to be heavy and expensive, so not everybody keeps them in his or her camera bag. That’s where perspective corrections in image processing come into play.
 
+<figure markdown="span" role="group">
 @![To illustrate the workflow of this module we take this example image with converging lines and a deliberately skewed horizon.](ashift_8.jpg)
-<br/>*To illustrate the workflow of this module we take this example image with converging lines and a deliberately skewed horizon.*
+<figcaption>To illustrate the workflow of this module we take this example image with converging lines and a deliberately skewed horizon.</figcaption>
+</figure>
 
 
-## **Working principle of the perspective correction module**
+## Working principle of the perspective correction module
 
 Converging lines can be corrected by warping the image in such a way that the lines in question get parallel. The perspective correction module in darktable simulates the effects of a shift lens and – in its simplest form – only needs a single lens shift parameter to correct converging lines along one direction. Corrections can be done in vertical and horizontal direction, either separately or in combination.
 
 Images quite often come with a tilted horizon. As we want lines not only to be parallel among themselves but also to align with the image frame the module additionally applies a rotation angle which is controlled by a further parameter.
 
+<figure markdown="span" role="group">
 ![The three basic adjustment parameters are controlled with sliders in the upper part of the module's GUI.]({attach}ashift_1_1.jpg)
-<br/>*The three basic adjustment parameters are controlled with sliders in the upper part of the module's GUI.*
+<figcaption>The three basic adjustment parameters are controlled with sliders in the upper part of the module's GUI.</figcaption>
+</figure>
 
 
-## **Automatic corrections**
+## Automatic corrections
 
 Although a manual adjustment of the parameters is possible users will typically want to rely on the auto-correction feature of this module.
 
+<figure markdown="span" role="group">
 ![The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.]({attach}ashift_1_2.jpg)
-<br/>*The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.*
+<figcaption>The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.</figcaption>
+</figure>
 
 The principle way of working is as follows. darktable analyzes the image for structural features consisting of line segments. These line segments are evaluated and ranked to identify those lines which form a set of converging lines meeting in a vantage point. Please note that by far not all line segments in an image represent suited vertical or horizontal lines of the scene – it is crucial that unsuited lines are identified and eliminated from the set. Based on the remaining lines an automatic fitting procedure is then started that tries to identify the best values of the module parameters (rotation angle and lens shift in one direction, or rotation angle and lens shift in both directions) to get the image straight, i.e. adjust the converging lines to run parallel and/or horizontal to the image frame.
 
@@ -61,8 +71,10 @@ Pressing the “get structure” icon causes darktable to analyze the image for 
 * **<span style="color: yellow">yellow</span>** lines that are horizontal but are not part of the set of converging lines
 * **<span style="color: gray">grey</span>** lines that are detected but not of interest to this module
 
+<figure markdown="span" role="group">
 @![Structure detection with additional edge enhancement.](ashift_9.jpg)
-<br/>*Structure detection with additional edge enhancement.*
+<figcaption>Structure detection with additional edge enhancement.</figcaption>
+</figure>
 
 Lines marked in green and blue are taken for the further processing steps.
 
@@ -92,8 +104,10 @@ The middle icon performs an optimization of rotation angle and horizontal lens s
 
 The rightmost icon performs an optimization of all three parameters based on selected vertical as well as horizontal lines (the green and the blue ones). This typically leads to a compromise between the two other options.
 
+<figure markdown="span" role="group">
 @![The example image after fitting for all three correction parameters by clicking on the rightmost icon.](ashift_10.jpg)
-<br/>*The example image after fitting for all three correction parameters by clicking on the rightmost icon.*
+<figcaption>The example image after fitting for all three correction parameters by clicking on the rightmost icon.</figcaption>
+</figure>
 
 In some cases you may want to only fit the rotation angle parameter while keeping the lens shift parameter(s) constant. You can do so by ctrl-clicking on one of the icons. The structural data used for fitting are the same as described above. Likewise you may shift-click on the icons to only fit the lens shift parameter(s) while keeping the rotation angle constant.
 
@@ -101,19 +115,23 @@ As a general rule all parameters that are not affected by the respective fitting
 
 > One remark about correcting horizontal perspective distortions. Due to our way of living in a “mostly planar world” horizontal perspective distortions tend to be much stronger than vertical distortions in many images without viewers taking much notice. We are used to see converging horizontal lines, e.g. when looking along a street, and in fact we take advantage of them to estimate relative distances. However, that also means that horizontal lines tend to converge so strongly in a photographic image that it is out of the scope of this module to correct them. The horizontal vantage point may even lie within the image frame, giving a so called central perspective. For obvious reasons there is no way to correct for this image characteristic.
 
-## **Further options**
+## Further options
 
 This module offers a number of further useful features which are controlled by a set of comboboxes in the middle part of the GUI.
 
+<figure markdown="span" role="group">
 ![ashift_1_3]({attach}ashift_1_3.jpg)
-<br/>*Further options of the perspective correction module.*
+<figcaption>Further options of the perspective correction module.</figcaption>
+</figure>
 
 The “guides” combobox lets you activate a set of horizontal and vertical guidelines laid over the image. You may use them to judge the quality of the automatic correction or let them assist you when doing manual adjustments.
 
 The “automatic cropping” feature does what the name implies. When working with this module you will see immediately that any correction leads to more or less pronounced black corners around the warped image. You need to crop the image in order to get rid of the corners. This can be done either in the crop & rotate module [1], or by activating the “automatic cropping” combobox. “Largest area” finds the largest rectangular area which just fits into the warped image, while “original format” does the same with the additional prerequisite of keeping the aspect ratio of the original image.
 
+<figure markdown="span" role="group">
 @![Activate guide lines and automatic cropping for "largest area".](ashift_11.jpg)
-<br/>*Activate guide lines and automatic cropping for "largest area".*
+<figcaption>Activate guide lines and automatic cropping for "largest area".</figcaption>
+</figure>
 
 Please note that you always see the full image as soon as the “perspective correction” module is in focus; cropping is not applied in order to grant a complete overview of the image. Automatic cropping, if activated, displays a frame around the cropping area that it has selected.
 
@@ -127,10 +145,12 @@ The “lens model” option controls some details of the underlying warping algo
 
 The default setting is “generic” which gives a realistic results in most cases. For images taken with a long focal length you may want to switch to “lens specific” which opens a number of sliders that let you define the focal length and the crop factor of your camera. You may also freely adjust the aspect ratio of the resulting image with the “aspect adjust” slider.
 
+<figure markdown="span" role="group">
 @![The final image after perspective correction.](ashift_12.jpg)
-<br/>*The final image after perspective correction.*
+<figcaption>The final image after perspective correction.</figcaption>
+</figure>
 
-## **Availability**
+## Availability
 
 The new module has recently been added to the development branch of darktable [5]. It can be found in the “correction group” after activating it in “more modules”. Users of the unstable branch are invited to test it and give feedback. The usual disclaimer applies: as this module is still in the development phase we might change its behavior without further notice, don’t use it for productive work unless you know what you are doing. Users of the stable branch will see the final “perspective correction” module as part of darktable's next feature release.
 

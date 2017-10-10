@@ -19,8 +19,10 @@ In darktable, the pixel pipeline is responsible for processing your photography 
 
 The option _“Do high quality resampling ...”_, available in the core preferences panel, controls when the photo is resized to its final dimensions during the export process.
 
+<figure markdown="span" role="group">
 @![Preferences panel showing HQ resampling and new interpolators](dt-uipref-commented.png)
-<br/>*Preferences panel showing HQ resampling and new interpolators*
+<figcaption>Preferences panel showing HQ resampling and new interpolators</figcaption>
+</figure>
 
 For a long time, the default setting was to resize early in the pixel pipeline in order to lower both memory requirements and processing time. This may seem appealing but it has a serious drawback; an early resize throws away lot of precious detail that modules could use at your advantage.
 
@@ -34,8 +36,10 @@ Some users complain about some observable blurriness when they use the _lens dis
 
 These two modules work the same way. They iterate over the output sampling grid and for an output pixel (x,y), they compute its corresponding pixel (x', y') in the original image. So far so good, but the computed (x', y') coordinates are rarely aligned on the original photo sampling grid (read x' and y' aren't integers anymore); It is then necessary to interpolate the pixel value using its neighbors.
 
+<figure markdown="span" role="group">
 @![Interpolation input pixels](dt-rotation-grid.png)
-<br/>*Interpolation input pixels*
+<figcaption>Interpolation input pixels</figcaption>
+</figure>
 
 For doing so, darktable 1.0.x used to implement bilinear interpolation. The bilinear interpolation considers only the four pixels surrounding the pixel at (x', y') position. This algorithm is fast, and good enough for lot of applications.
 
@@ -51,8 +55,10 @@ But some smart men already detailed practical solutions that try to approximate 
 
 See their 1D graph:
 
+<figure markdown="span" role="group">
 ![Interpolation functions]({attach}kernels.png)
-<br/>*Interpolation functions*
+<figcaption>Interpolation functions</figcaption>
+</figure>
 
 As you can see on the graphics, the bicubic and lanczos family of interpolation functions have a greater kernel support. In 1D sampling, the kernel size is only 2 samples large for the bilinear function, 4 pixels large for the bicubic and the lanczos2 functions, and finally reaches 6 samples large for the lanczos3 function. You can see the 2D kernel support size in the figure explaining the rotation module.
 
@@ -70,5 +76,7 @@ Hopefully, all interpolation functions detailed in this blog entry are also lowp
 
 As a conclusion see the results for a sensor test chart where arbitrary rotation/lens distortion correction is applied and the export is done using a 512 pixel width:
 
+<figure markdown="span" role="group">
 @![Interpolation results](dt-interpolation-results-testchart.png)
-Interpolation results&nbsp;– See fullsize version for better review
+<figcaption>Interpolation results&nbsp;– See fullsize version for better review</figcaption>
+</figure>

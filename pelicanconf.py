@@ -107,10 +107,11 @@ MARKDOWN = {
   'extension_configs' : {
     #'markdown.extensions.fenced_code' : {},
     #'markdown.extensions.codehilite' : {'css_class': 'codehilite'},
-    #'markdown.extensions.extra' : {},
-    #'markdown.extensions.headerid' : {},
+    'markdown.extensions.extra' : {},
+    'markdown.extensions.headerid' : {},
     'markdown.extensions.toc(permalink=)' : {}
   }
 }
 
-MD_EXTENSIONS = ['extra', 'headerid']
+# these are deprecated, use MARKDOWN instead!
+#MD_EXTENSIONS = ['extra', 'headerid']

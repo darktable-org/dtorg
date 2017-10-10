@@ -39,7 +39,7 @@ so even if we don't want to look at the thumbnail, we can extract focus informat
 # how it works
 
 
-i tried simple edge-detection filters, such as the ones used for in-camera focus detection in the excellent [magic lantern firmware](http://magiclantern.fm). since different lenses have different sharpness and high-iso might make these numbers noisy, dt uses a slightly different approach.
+i tried simple edge-detection filters, such as the ones used for in-camera focus detection in the excellent [magic lantern firmware](https://magiclantern.fm/). since different lenses have different sharpness and high-iso might make these numbers noisy, dt uses a slightly different approach.
 
 we do a two-scale decimated cdf 2,2 wavelet transform and use a threshold on the detail coefficients. the second scale is only computed if the first scale (the sharper one) doesn't yield any results. visually, these are displayed as red clusters (first scale, very sharp) and blue clusters (second scale, not quite as sharp).
 

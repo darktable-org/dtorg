@@ -11,8 +11,7 @@ tags: blog, development, darktable, OpenCL, tutorial
 
 Many readers will have already heard about GPU processing and the fact that darktable can make use of OpenCL to improve performance. As we still lack a detailed documentation of that topic, please find here a few explanations and howtos.
 
-
-## **The Background**
+## The Background
 
 
 Processing high resolution images belongs to the more demanding tasks in modern computing. Both, in terms of memory requirements and in terms of CPU power, getting the best out of a typical 15, 20 or 25 Megapixel image can quickly bring your computer to its limits.
@@ -28,20 +27,20 @@ You are not a gamer and you don’t take advantage of that power? Well, then you
 For the task of highly parallel floating point calculations modern GPUs are much faster than CPUs. That is especially true, when you want to do the same few processing steps over millions of items. Typical use case: processing of megapixel images.
 
 
-## **How OpenCL works**
+## How OpenCL works
 
 
 As you can imagine, hardware architectures of GPUs can vary significantly. There are different producers, and even different generations of GPUs from the same producer may differ clearly. At the same time GPU manufacturers are normally not willing to disclose many hardware details of their products to the public. One of the known consequences is the need to use proprietary drivers under Linux, if you want to take full advantage of your graphics card.
 
-Fortunately an industry consortium lead by [The Khronos Group](http://www.khronos.org) has developed an open, standardized interface called [OpenCL](http://www.khronos.org/registry/cl/specs/opencl-1.0.pdf). It eases the use of your GPU as a numerical processing device. OpenCL offers a C99-like programming language with a strong focus on parallel computing. An application that wants to use OpenCL will need to bring along a suited OpenCL source code that it then hands over to a hardware specific OpenCL compiler at run-time. This way the application can use OpenCL on different GPU architectures (even at the same time). All “hardware secrets” are hidden in this compiler and are normally not visible to the user (or the application). The compiled OpenCL code is loaded onto your GPU and - with certain API calls - it is ready to do calculations for you.
+Fortunately an industry consortium lead by [The Khronos Group](https://www.khronos.org) has developed an open, standardized interface called [OpenCL](https://www.khronos.org/registry/cl/specs/opencl-1.0.pdf). It eases the use of your GPU as a numerical processing device. OpenCL offers a C99-like programming language with a strong focus on parallel computing. An application that wants to use OpenCL will need to bring along a suited OpenCL source code that it then hands over to a hardware specific OpenCL compiler at run-time. This way the application can use OpenCL on different GPU architectures (even at the same time). All “hardware secrets” are hidden in this compiler and are normally not visible to the user (or the application). The compiled OpenCL code is loaded onto your GPU and&nbsp;– with certain API calls&nbsp;– it is ready to do calculations for you.
 
 
-## **How to activate OpenCL in darktable**
+## How to activate OpenCL in darktable
 
 
 Using OpenCL in darktable requires that your PC is equipped with a suitable graphics card and that it has the required libraries in place. Namely modern graphics cards from NVIDIA and ATI come with full OpenCL support. The OpenCL compiler is normally shipped as part of the proprietary graphics driver; it is reachable as a dynamic library called “libOpenCL.so”. This library must be in a folder where it is found by your system’s dynamic linker.
 
-When darktable starts, it will first try to find and load libOpenCL.so and – on success – check if the available graphics card comes with OpenCL support. A sufficient amount of graphics memory (1GB+) needs to be available to take advantage of the GPU. If that is OK, darktable tries to setup its OpenCL environment: a processing context needs to be initialized, a calculation pipeline to be started, OpenCL source code files (extension is .cl) need to be read and compiled and the included routines (called OpenCL kernels) need to be prepared for DT’s modules. If all that is done, the preparation is finished.
+When darktable starts, it will first try to find and load libOpenCL.so and&nbsp;– on success&nbsp;– check if the available graphics card comes with OpenCL support. A sufficient amount of graphics memory (1GB+) needs to be available to take advantage of the GPU. If that is OK, darktable tries to setup its OpenCL environment: a processing context needs to be initialized, a calculation pipeline to be started, OpenCL source code files (extension is .cl) need to be read and compiled and the included routines (called OpenCL kernels) need to be prepared for DT’s modules. If all that is done, the preparation is finished.
 
 As we still regard darktable’s OpenCL support as experimental, we require the user in addition to positively activate OpenCL. Go into the preferences dialog and look for core options. Here you find a checkbox that says: “activate opencl support (experimental)”. Check that box and from that on OpenCL is used by darktable.
 
@@ -112,7 +111,7 @@ If you are interested in more profiling figures, you can call darktable with com
 Besides the speed-up you should not see any difference in the results between CPU and GPU processing. Except of rounding errors, the results are designed to be identical. If, for some reasons, darktable fails to properly finish a GPU calculation, it will normally notice and automatically (and transparently) fall back to CPU processing.
 
 
-## **Possible Problems and Solutions**
+## Possible Problems and Solutions
 
 
 If severe OpenCL errors occur at run-time, or the setup of our OpenCL environment fails during initialization, OpenCL will be automatically deactivated. You will notice if you open the preferences dialog and the activation checkbox has been reset to “off”.
@@ -121,9 +120,7 @@ There can be various reasons why OpenCL failed. We depend on hardware requiremen
 
 In that case, the best thing to do is start darktable from a console with
 
-
-    <span style="font-family: Courier New,monospace">d</span><span style="font-family: Courier New,monospace">arktable</span><span style="font-family: Courier New,monospace"> –</span><span style="font-family: Courier New,monospace">d</span><span style="font-family: Courier New,monospace"> opencl</span>
-
+    darktable -d opencl
 
 This will give additional debugging output about the initialization and use of OpenCL. First see if you find a line that starts with “[opencl_init] FINALLY …” This should tell you, if OpenCL support is available for you or not. If initialization failed, look at the messages above for anything that reads like “could not be detected” or “could not be created”. Check if there is a hint about where it failed.
 
@@ -140,7 +137,7 @@ DT might on some systems fail to compile its OpenCL source files at run-time. In
 There also exist a few on-CPU implementations of OpenCL. These come as drivers provided by INTEL or AMD. We observed that they do not give us any speed gain versus our hand-optimized CPU code. Therefore we simply discard these devices.
 
 
-## **Summary**
+## Summary
 
 
 Although OpenCL support in darktable is still experimental and incomplete, it is already very usable. Give it a try and see what it can do for you!
@@ -157,10 +154,10 @@ darktable's escape route out of this limitation is “tiling”. Images that are
 
 Before going into the details, the above already makes clear that we should not process several images in parallel with OpenCL. We already make maximum use of GPU memory by tiling and the nature of GPU processing will already parallelize processing to the max on a pixel by pixel basis. No room for additional parallelization. In preferences set "export multiple images in parallel" to 1.
 
-When you are running darktable with OpenCL support and if you suspect slow processing (namely during image exports), restart DT from a console with option '-d opencl'.
+When you are running darktable with OpenCL support and if you suspect slow processing (namely during image exports), restart DT from a console with option `-d opencl`.
 
 Watch out for modules that fail with an error message. Pay special attention to error code -4; this is the error we get when on-GPU memory allocation fails. Module “equalizer” is a hot candidate for this. Sometimes you might get a message on a module failing due to not fulfilled “roi” requests (esp. module “demosaic”). This can be ignored; it is a current darktable limitation but does not indicate any OpenCL problem.
 
-If you get “-4” errors, go into file $HOME/.config/darktable/darktablerc, where DT stores its configuration parameters and look for opencl_memory_headroom. This value tells darktable how many megabytes (out of the totally available amount) should be left free for driver and video purposes. By default it is set to 300MB, which works well with current NVIDIA cards. If you increase this value (steps of 50 are a good choice), you even further reduce danger to run into allocation failures. On the negative side, this requires stronger tiling (more but smaller tiles) which is a bit less efficient. In the end you should rather accept more tiling than more allocation failures!
+If you get “-4” errors, go into file `$HOME/.config/darktable/darktablerc`, where DT stores its configuration parameters and look for `opencl_memory_headroom`. This value tells darktable how many megabytes (out of the totally available amount) should be left free for driver and video purposes. By default it is set to 300MB, which works well with current NVIDIA cards. If you increase this value (steps of 50 are a good choice), you even further reduce danger to run into allocation failures. On the negative side, this requires stronger tiling (more but smaller tiles) which is a bit less efficient. In the end you should rather accept more tiling than more allocation failures!
 
 With current Radeon cards users have observed a different issue. Those cards will often only report to have less available memory than they physically own; typically 512MB out of 1GB. In the first place this will prevent them from being accepted as valuable OpenCL devices by DT (we set a minimum requirement of 768MB). You can change this behavior if you set opencl_memory_requirement to 512. The good news is that Radeon cards seem to have less memory overhead (at least within the reported 512MB). Therefore you can try to set opencl_memory_headroom to a value as low as 150 or even 100. This should leave you with a quite reasonable amount of free GPU memory for OpenCL processing. Give it a try and share your success stories at [darktable-users@sourceforge.net](mailto:darktable-users@sourceforge.net).

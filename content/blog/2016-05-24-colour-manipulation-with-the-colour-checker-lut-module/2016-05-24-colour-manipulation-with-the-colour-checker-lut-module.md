@@ -22,7 +22,7 @@ for raw photography there exist great presets for nice colour rendition:
 
 * in-camera colour processing such as canon picture styles
 * fuji film-emulation-like presets (provia velvia astia classic-chrome)
-* [pat david's film emulation luts](http://gmic.eu/film_emulation/)
+* [pat david's film emulation luts](https://gmic.eu/film_emulation/)
 
 
 unfortunately these are eat-it-or-die canned styles or icc lut profiles. you
@@ -62,10 +62,10 @@ colour rendition, as well as a tone curve to achieve the tonal contrast.
 ![target]({attach}target.jpg)
 
 to create the colour lut, it is currently necessary to take a picture of an
-[it8 target](http://targets.coloraid.de) (well, technically we support any similar target, but
+[it8 target](http://targets.coloraid.de/) (well, technically we support any similar target, but
 didn't try them yet so i won't really comment on it). this gives us a raw
 picture with colour values for a few colour patches, as well as a in-camera jpg
-reference (in the raw thumbnail..), and measured reference values (what we know
+reference (in the raw thumbnail ...), and measured reference values (what we know
 it _should_ look like).
 
 to map all the other colours (that fell in between the patches on the chart) to
@@ -76,8 +76,8 @@ mapping.
 ## theory
 
 
-we want to express a smooth mapping from input colours [latex]\mathbf{s}[/latex] to target
-colours [latex]\mathbf{t}[/latex], defined by a couple of sample points (which will in our
+we want to express a smooth mapping from input colours $\mathbf{s}$ to target
+colours $\mathbf{t}$, defined by a couple of sample points (which will in our
 case be the 288 patches of an it8 chart).
 
 the following is a quick summary of what we implemented and much better
@@ -92,11 +92,11 @@ via
 
 $$f(x) = \sum_i c_i\cdot\phi(\| x - s_i\|),$$
 
-with some appropriate kernel [latex]\phi(r)[/latex] (we'll get to that later) and a set of
-coefficients [latex]c_i[/latex] chosen to make the mapping [latex]f(x)[/latex] behave like we want it at
-and in between the source colour positions [latex]s_i[/latex]. now to make
-sure the function actually passes through the target colours, i.e. [latex]f(s_i) =
-t_i[/latex], we need to solve a linear system. because we want the function to take
+with some appropriate kernel $\phi(r)$ (we'll get to that later) and a set of
+coefficients $c_i$ chosen to make the mapping $f(x)$ behave like we want it at
+and in between the source colour positions $s_i$. now to make
+sure the function actually passes through the target colours, i.e. $f(s_i) =
+t_i$, we need to solve a linear system. because we want the function to take
 on a simple form for simple problems, we also add a polynomial part to it. this
 makes sure that black and white profiles turn out to be black and white and
 don't oscillate around zero saturation colours wildly. the system is
@@ -114,9 +114,9 @@ $$A=\left(\begin{array}{ccc}
 \cdots & & \cdots
 \end{array}\right),$$
 
-and [latex]r_{ij} = \| s_i - t_j \|[/latex] is the distance (CIE 76 [latex]\Delta[/latex]E,
-[latex]\sqrt{(L_s - L_t)^2 + (a_s - a_t)^2 + (b_s - b_t)^2}[/latex] ) between
-source colour [latex]s_i[/latex] and target colour [latex]t_j[/latex], in our case
+and $r_{ij} = \| s_i - t_j \|$ is the distance (CIE 76 $\Delta E$,
+$\sqrt{(L_s - L_t)^2 + (a_s - a_t)^2 + (b_s - b_t)^2}$) between
+source colour $s_i$ and target colour $t_j$, in our case
 
 $$P=\left(\begin{array}{cccc}
 L_{s_0}& a_{s_0}& b_{s_0}& 1\\
@@ -124,10 +124,10 @@ L_{s_1}& a_{s_1}& b_{s_1}& 1\\
 \cdots
 \end{array}\right)$$
 
-is the polynomial part, and [latex]\mathbf{d}[/latex] are the coefficients to the polynomial
-part. these are here so we can for instance easily reproduce [latex]t = s[/latex] by setting
-[latex]\mathbf{d} = (1, 1, 1, 0)[/latex] in the respective row. we will need to solve this
-system for the coefficients [latex]\mathbf{c}=(c_0,c_1,\cdots)^t[/latex] and [latex]\mathbf{d}[/latex].
+is the polynomial part, and $\mathbf{d}$ are the coefficients to the polynomial
+part. these are here so we can for instance easily reproduce $t = s$ by setting
+$\mathbf{d} = (1, 1, 1, 0)$ in the respective row. we will need to solve this
+system for the coefficients $\mathbf{c}=(c_0,c_1,\cdots)^t$ and $\mathbf{d}$.
 
 many options will do the trick and solve the system here. we use singular value
 decomposition in our implementation. one advantage is that it is robust against
@@ -160,9 +160,9 @@ this, so we were looking to reduce this number without introducing large error.
 indeed this is possible, and literature provides a nice algorithm to do so, which
 is called _orthogonal matching pursuit_ [1].
 
-this algorithm will select the most important hand full of coefficients [latex]\in
-\mathbf{c},\mathbf{d}[/latex], to keep the overall error low. In practice we run it up
-to a predefined number of patches ([latex]24=6\times 4[/latex] or [latex]49=7\times 7[/latex]), to make
+this algorithm will select the most important hand full of coefficients $\in
+\mathbf{c},\mathbf{d}$, to keep the overall error low. In practice we run it up
+to a predefined number of patches ($24=6\times 4$ or $49=7\times 7$), to make
 best use of gui real estate.
 
 
@@ -176,19 +176,14 @@ best use of gui real estate.
 
 
 when you select the module in darkroom mode, it should look something like the
-image above (configurations with more than 24 patches are shown in a 7[latex]\times[/latex]7 grid
+image above (configurations with more than 24 patches are shown in a 7×7 grid
 instead). by default, it will load the 24 patches of a colour checker classic
 and initialise the mapping to identity (no change to the image).
 
-
-
-
-  * the grid shows a list of coloured patches. the colours of the patches are the source points [latex]\mathbf{s}[/latex].
-  * the target colour [latex]t_i[/latex] of the selected patch [latex]i[/latex] is shown as offset controlled by sliders in the ui under the grid of patches.
-  * an outline is drawn around patches that have been altered, i.e. the source and target colours differ.
-  * the selected patch is marked with a white square, and the number shows in the combo box below.
-
-
+* the grid shows a list of coloured patches. the colours of the patches are the source points $\mathbf{s}$.
+* the target colour $t_i$ of the selected patch $i$ is shown as offset controlled by sliders in the ui under the grid of patches.
+* an outline is drawn around patches that have been altered, i.e. the source and target colours differ.
+* the selected patch is marked with a white square, and the number shows in the combo box below.
 
 
 ### interaction
@@ -199,17 +194,12 @@ colours. the main use case is to change the target colours however, and start
 with an appropriate _palette_ (see the presets menu, or download a style
 somewhere).
 
-
-
-
-  * you can change lightness (L), green-red (a), blue-yellow (b), or saturation (C) of the target colour via sliders.
-  * select a patch by left clicking on it, or using the combo box, or using the colour picker
-  * to change source colour, select a new colour from your image by using the colour picker, and shift-left-click on the patch you want to replace.
-  * to reset a patch, double-click it.
-  * right-click a patch to delete it.
-  * shift-left-click on empty space to add a new patch (with the currently picked colour as source colour).
-
-
+* you can change lightness (L), green-red (a), blue-yellow (b), or saturation (C) of the target colour via sliders.
+* select a patch by left clicking on it, or using the combo box, or using the colour picker
+* to change source colour, select a new colour from your image by using the colour picker, and shift-left-click on the patch you want to replace.
+* to reset a patch, double-click it.
+* right-click a patch to delete it.
+* shift-left-click on empty space to add a new patch (with the currently picked colour as source colour).
 
 
 ## example use cases
@@ -245,7 +235,7 @@ a download link), to achieve the subdued look in the skin tones. then, i
 picked the iris colour and saturated this tone via the saturation slider.
 
 as a side note, the flash didn't fire in this image (iso 800) so i needed to
-stop it up by 2.5ev and the rest is all natural lighting..
+stop it up by 2.5ev and the rest is all natural lighting ...
 
 @![original](mairi_crop_01.jpg)
 
@@ -265,7 +255,7 @@ generally do a good job at creating pleasant colours. this was done using the
 Lab space in the darktable pipeline).
 
 
-here is the [link to the fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz), and [how to use them](https://www.darktable.org/usermanual/ch02s03s08.html.php).
+here is the [link to the fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz), and [how to use them](/usermanual/ch02s03s08.html.php).
 i should be doing pat's film emulation presets with this, too, and maybe
 styles from other cameras (canon picture styles?). `darktable-chart` will
 output a dtstyle file, with the mapping split into tone curve and colour
@@ -293,21 +283,25 @@ note that this is essentially similar to [pascal's colormatch script](https://gi
 
 
 
-  * need an it8 (sorry, could lift that, maybe, similar to what we do for
-[basecurve fitting](http://www.darktable.org/2013/10/about-basecurves/))
-  * shoot the chart with your camera:
+* need an it8 (sorry, could lift that, maybe, similar to what we do for [basecurve fitting]({filename}/blog/2013-10-28-about-basecurves/2013-10-28-about-basecurves.md))
+* shoot the chart with your camera:
+
     * shoot raw + jpg
     * avoid glare and shadow and extreme angles, potentially the rims of your image altogether
     * shoot a lot of exposures, try to match L=92 for G00 (or look that up in your it8 description)
-  * develop the images in darktable:
+
+* develop the images in darktable:
+
     * lens and vignetting correction needed on both or on neither of raw + jpg
     * (i calibrated for vignetting, see [lensfun](http://wilson.bronger.org/lens_calibration_tutorial/#id3))
     * output colour space to Lab (set the secret option in `darktablerc`: `allow_lab_output=true`)
     * standard input matrix and camera white balance for the raw, srgb for jpg.
     * no gamut clipping, no basecurve, no anything else.
-    * maybe do [perspective correction](http://www.darktable.org/2016/03/a-new-module-for-automatic-perspective-correction/) and crop the chart
+    * maybe do [perspective correction]({filename}/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md) and crop the chart
     * export as float pfm
-  * `darktable-chart`
+
+* `darktable-chart`
+
     * load the pfm for the raw image and the jpg target in the second tab
     * drag the corners to make the mask match the patches in the image
     * maybe adjust the security margin using the slider in the top right, to avoid stray colours being blurred into the patch readout
@@ -344,14 +338,14 @@ writes.
 
 when processing the list of colour pairs into a set of coefficients for the
 thin plate spline, the program will output the approximation error, indicated
-by average and maximum CIE 76 [latex]\Delta E[/latex] for the input patches (the it8 in the
+by average and maximum CIE 76 $\Delta E$ for the input patches (the it8 in the
 examples here). of course we don't know anything about colours which aren't
 represented in the patch. the hope would be that the sampling is dense enough
 for all intents and purposes (but nothing is holding us back from using a
 target with even more patches).
 
-for the fuji styles, these errors are typically in the range of mean [latex]\Delta E\approx 2[/latex]
-and max [latex]\Delta E \approx 10[/latex] for 24 patches and a bit less for 49.
+for the fuji styles, these errors are typically in the range of mean $\Delta E\approx 2$
+and max $\Delta E \approx 10$ for 24 patches and a bit less for 49.
 unfortunately the error does not decrease very fast in the number of patches
 (and will of course drop to zero when using all the patches of the input chart).
 
@@ -382,14 +376,10 @@ it is possible to match the reference values of the it8 instead of a reference
 jpg output, to calibrate the camera more precisely than the colour matrix
 would.
 
-
-
-
-  * there is a button for this in the `darktable-chart` tool
-  * needs careful shooting, to match brightness of reference value closely.
-  * at this point it's not clear to me how white balance should best be handled here.
-  * need reference reflectances of the it8 (wolf faust ships some for a few illuminants).
-
+* there is a button for this in the `darktable-chart` tool
+* needs careful shooting, to match brightness of reference value closely.
+* at this point it's not clear to me how white balance should best be handled here.
+* need reference reflectances of the it8 (wolf faust ships some for a few illuminants).
 
 another next step we would like to take with this is to match real film footage
 (porta etc). both reference and film matching will require some global exposure
@@ -398,25 +388,25 @@ calibration though.
 
 ## references
 
+* [0] Ken Anjyo and J. P. Lewis and Frédéric Pighin,
 
+    "Scattered data interpolation for computer graphics"
 
+    in Proceedings of SIGGRAPH 2014 Courses, Article No. 27, 2014. [pdf](http://scribblethink.org/Courses/ScatteredInterpolation/scatteredinterpcoursenotes.pdf)
 
+* [1] J. A. Tropp and A. C. Gilbert,
 
+    "Signal Recovery From Random Measurements Via Orthogonal Matching Pursuit",
 
-  * [0] Ken Anjyo and J. P. Lewis and Frédéric Pighin, "Scattered data interpolation for computer graphics" in Proceedings of SIGGRAPH 2014 Courses, Article No. 27, 2014. [pdf](http://scribblethink.org/Courses/ScatteredInterpolation/scatteredinterpcoursenotes.pdf)
-  * [1] J. A. Tropp and A. C. Gilbert, "Signal Recovery From Random Measurements Via Orthogonal Matching Pursuit", in IEEE Transactions on Information Theory, vol. 53, no. 12, pp. 4655-4666, Dec. 2007.
-
-
-
+    in IEEE Transactions on Information Theory, vol. 53, no. 12, pp. 4655-4666, Dec. 2007.
 
 ## links
 
-
-  * [pat david's film emulation luts](http://gmic.eu/film_emulation/)
-  * [download fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz)
-  * [darktable's user manual on styles](https://www.darktable.org/usermanual/ch02s03s08.html.php)
-  * [it8 target](http://targets.coloraid.de)
-  * [pascal's colormatch](https://github.com/pmjdebruijn/colormatch)
-  * [lensfun calibration](http://wilson.bronger.org/lens_calibration_tutorial/#id3)
-  * [perspective correction in darktable](http://www.darktable.org/2016/03/a-new-module-for-automatic-perspective-correction/)
-  * [fit basecurves for darktable](http://www.darktable.org/2013/10/about-basecurves/)
+* [pat david's film emulation luts](https://gmic.eu/film_emulation/)
+* [download fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz)
+* [darktable's user manual on styles](/usermanual/ch02s03s08.html.php)
+* [it8 target](http://targets.coloraid.de)
+* [pascal's colormatch](https://github.com/pmjdebruijn/colormatch)
+* [lensfun calibration](http://wilson.bronger.org/lens_calibration_tutorial/#id3)
+* [perspective correction in darktable]({filename}/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md)
+* [fit basecurves for darktable]({filename}/blog/2013-10-28-about-basecurves/2013-10-28-about-basecurves.md)

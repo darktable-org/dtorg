@@ -26,10 +26,10 @@ and rejects to deliver any more useful information past this point. unfortunatel
 
 
 
-usually digital cameras come with a [color filter array (CFA)](http://en.wikipedia.org/wiki/Color_filter_array) of [absorptive filters](http://en.wikipedia.org/wiki/Filter_(optics)) in front of an array of 
-[CCD](http://en.wikipedia.org/wiki/Charge-coupled_device) or [CMOS](http://en.wikipedia.org/wiki/CMOS_sensor) sensor which collect electrons proportional to the incoming photons according to the [photoelectric effect](http://en.wikipedia.org/wiki/Photoelectric_effect).
+usually digital cameras come with a [color filter array (CFA)](https://en.wikipedia.org/wiki/Color_filter_array) of [absorptive filters](https://en.wikipedia.org/wiki/Filter_(optics)) in front of an array of
+[CCD](https://en.wikipedia.org/wiki/Charge-coupled_device) or [CMOS](https://en.wikipedia.org/wiki/CMOS_sensor) sensor which collect electrons proportional to the incoming photons according to the [photoelectric effect](https://en.wikipedia.org/wiki/Photoelectric_effect).
 
-most cameras use some simple variation of an RGGB layout in 2x2 blocks for these color filters, and we must take care to reconstruct three color channels per pixel out of these one different color per pixel formats ([demosaicing](http://en.wikipedia.org/wiki/Demosaicing)). some manufacturers choose to give their cameras more esoteric layouts.
+most cameras use some simple variation of an RGGB layout in 2x2 blocks for these color filters, and we must take care to reconstruct three color channels per pixel out of these one different color per pixel formats ([demosaicing](https://en.wikipedia.org/wiki/Demosaicing)). some manufacturers choose to give their cameras more esoteric layouts.
 
 
 
@@ -56,7 +56,7 @@ however, some of the rest here still applies to these models too, if you whiteba
 
 once a photon comes past the absorptive filter, it is converted to an electron and stored until it is read out to form the image. maybe your chip has a full well capacity of 90000 electrons. after that it overflows and still returns 90000 (it's saturated, your value clips).
 
-this is in turn converted to a value between 0 and 4096 (say, if your camera supports 12 bits. note that this is also the reason why setting your camera to high iso makes sense as compared to just cranking up exposure in post. you lose this precision on-chip). then you [whitebalance](http://en.wikipedia.org/wiki/Color_balance) your image. this is just a multiplication with a scalar value per channel, and meant to compensate both the different absorption in the color filters, and the colorful illumination. this can make a photograph of a grey patch look grey in your image again.
+this is in turn converted to a value between 0 and 4096 (say, if your camera supports 12 bits. note that this is also the reason why setting your camera to high iso makes sense as compared to just cranking up exposure in post. you lose this precision on-chip). then you [whitebalance](https://en.wikipedia.org/wiki/Color_balance) your image. this is just a multiplication with a scalar value per channel, and meant to compensate both the different absorption in the color filters, and the colorful illumination. this can make a photograph of a grey patch look grey in your image again.
 
 typically your whitebalance coefficients will be something like (2.0, 1.0, 1.4), normalized to 1.0 for green. this means that an overexposed picture of the sun will fill up all your sensors and result in a value of (2.0, 1.0, 1.4) in your final image, which is magenta.
 
@@ -66,7 +66,7 @@ typically your whitebalance coefficients will be something like (2.0, 1.0, 1.4),
 
 
 
-yes, at high contrast edges (mountain ridge against overexposed sky). this typically results in [purple fringing](http://en.wikipedia.org/wiki/Purple_fringing).
+yes, at high contrast edges (mountain ridge against overexposed sky). this typically results in [purple fringing](https://en.wikipedia.org/wiki/Purple_fringing).
 
 
 
@@ -86,7 +86,7 @@ find these two options in the `highlight reconstruction' plugin in the basic gro
 
 
 
-the clipping threshold is determined during hdr construction [(merging a couple of exposures together)](http://en.wikipedia.org/wiki/Bracketing), and bracketing might expose issues with a slightly off value much more gravely.
+the clipping threshold is determined during hdr construction [(merging a couple of exposures together)](https://en.wikipedia.org/wiki/Bracketing), and bracketing might expose issues with a slightly off value much more gravely.
 
 
 

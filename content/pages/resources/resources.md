@@ -6,7 +6,7 @@ wordpress_id: 120
 
 # Find us on...
 
-[Facebook](http://www.facebook.com/darktable) - [Flickr](http://www.flickr.com/groups/darktable/) - [Twitter](http://twitter.com/#!/darktable_org) - [Google+](http://www.google.com/+darktable)
+[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)&nbsp;– [Google+](https://www.google.com/+darktable)
 
 
 # User manual
@@ -32,9 +32,9 @@ structures and functions. You can either read the documentation [online](/lua-ap
 # darktable Styles
 ![styles]({attach}styles.jpg)
 
-There is an online repository with darktable styles available for download at <http://dtstyle.net/>. It features live preview of the styles with four different sample images.
+There is an online repository with darktable styles available for download at <https://dtstyle.net/>. It features live preview of the styles with four different sample images.
 
-We also have a [wiki page](http://darktable.org/redmine/projects/darktable/wiki/DarktableStyles) to share different styles for darktable. Feel free to put your own there and share them with others!
+We also have a [wiki page](https://darktable.org/redmine/projects/darktable/wiki/DarktableStyles) to share different styles for darktable. Feel free to put your own there and share them with others!
 
 To create a new darktable style just alter your image the way you want. Then click the button located in the history module in darkroom mode to create a style from the current history stack. In advanced options you can include or exclude single modules. To export or import a new style use the styles module in lighttable mode.
 
@@ -49,7 +49,7 @@ _Manage and develop your digital images with darktable._
 
 It introduces you to the process of developing your images with darktable explaining the basic features. It starts over with a simple tutorial on importing and developing your first photo(s). After describing the darktable user interface it provides some workflow suggestions and background informations on (perception of light, sensors, patterns, colors).
 
-You can download the [pdf](http://sourceforge.net/projects/darktable/files/darktable/book/1.1.1/darktable-1.1.1.pdf/download) or [packaged](http://sourceforge.net/projects/darktable/files/darktable/book/1.1.1/darktable-book-1.1.1.zip/download) version of the current release (v1.1.1). Your comments and feedback are always welcome on the [darktable user mailing list](mailto:darktable-user+subscribe@lists.darktable.org).
+You can download the [pdf](https://sourceforge.net/projects/darktable/files/darktable/book/1.1.1/darktable-1.1.1.pdf/download) or [packaged](https://sourceforge.net/projects/darktable/files/darktable/book/1.1.1/darktable-book-1.1.1.zip/download) version of the current release (v1.1.1). Your comments and feedback are always welcome on the [darktable user mailing list](mailto:darktable-user+subscribe@lists.darktable.org).
 
 
 # Screencast tutorials
@@ -59,35 +59,35 @@ You can download the [pdf](http://sourceforge.net/projects/darktable/files/darkt
 
 There are many brilliant screencasts on darktable, its various modules and general image development workflow made by Robert Hutton. You can get the full playlist of these very educational screencasts here:
 
-  * [Robert Hutton's darktable screencast playlist](http://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
+  * [Robert Hutton's darktable screencast playlist](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
 
-Pascal de Bruijn provides several useful screencasts on his website explaining the different functions of dartkable. Find the [0.7 screencast library](http://blog.pcode.nl/2010/12/06/darktable-0-7-screencast-library/), the [0.9 screencast library addition](http://blog.pcode.nl/2011/11/05/darktable-0-9-screencast-library-addition/) and the [1.0 screencast library addition](http://blog.pcode.nl/2012/06/02/darktable-1-0-screencast-library-addition/) or just pick the one you want:
+Pascal de Bruijn provides several useful screencasts on his website explaining the different functions of dartkable. Find the [0.7 screencast library](https://encrypted.pcode.nl/blog/2010/12/06/darktable-0-7-screencast-library/), the [0.9 screencast library addition](https://encrypted.pcode.nl/blog/2011/11/05/darktable-0-9-screencast-library-addition/) and the [1.0 screencast library addition](https://encrypted.pcode.nl/blog/2012/06/02/darktable-1-0-screencast-library-addition/) or just pick the one you want:
 
 ## Screencasts recorded using darktable 1.0
 
-  * [darktable 1.0 Update](http://blog.pcode.nl/wp-content/uploads/2012/05/darktable-10-update.ogv)
+  * [darktable 1.0 Update](https://encrypted.pcode.nl/blog/wp-content/uploads/2012/05/darktable-10-update.ogv)
 
-  * [darktable Archiving & Backup](http://blog.pcode.nl/wp-content/uploads/2012/05/darktable-10-archiving.ogv)
+  * [darktable Archiving & Backup](https://encrypted.pcode.nl/blog/wp-content/uploads/2012/05/darktable-10-archiving.ogv)
 
 ## Screencasts recorded using darktable 0.9
 
-  * [darktable 0.9 Update](http://blog.pcode.nl/wp-content/uploads/2011/10/22/darktable-update.ogv)
-  * [darktable B&W Film Emulation](http://blog.pcode.nl/wp-content/uploads/2011/10/22/darktable-bwfilmemu.ogv)
-  * [darktable Denoising](http://blog.pcode.nl/wp-content/uploads/2011/10/22/darktable-denoise.ogv)
-  * [darktable Spot Removal](http://blog.pcode.nl/wp-content/uploads/2011/10/22/darktable-spotremoval.ogv)
+  * [darktable 0.9 Update](https://encrypted.pcode.nl/blog/wp-content/uploads/2011/10/22/darktable-update.ogv)
+  * [darktable B&W Film Emulation](https://encrypted.pcode.nl/blog/wp-content/uploads/2011/10/22/darktable-bwfilmemu.ogv)
+  * [darktable Denoising](https://encrypted.pcode.nl/blog/wp-content/uploads/2011/10/22/darktable-denoise.ogv)
+  * [darktable Spot Removal](https://encrypted.pcode.nl/blog/wp-content/uploads/2011/10/22/darktable-spotremoval.ogv)
 
 ## Screencasts recorded using darktable 0.7 (but still valid)
 
-  * [darktable Installation On Ubuntu](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-ubuntu-installation.ogv)
-  * [darktable Lighttable Basics](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-lighttable-basics.ogv)
-  * [darktable Tagging & Collect Modules](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-lighttable-tagging-collect.ogv)
-  * [darktable Darkroom Basics](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-darkroom-basics.ogv)
-  * [darktable Darkroom Black & White Modules](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-darkroom-plugins-bw.ogv)
-  * [darktable Darkroom GND Module](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-darkroom-plugins-gnd.ogv)
-  * [darktable Darkroom Colorzones Module](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-darkroom-plugins-colorzones.ogv)
-  * [darktable Darkroom Watermark Module](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-darkroom-plugins-watermark.ogv)
-  * [darktable Working With Styles](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-styles.ogv)
-  * [darktable Capture Basics](http://blog.pcode.nl/wp-content/uploads/2010/12/darktable-capture-basics.ogv)
+  * [darktable Installation On Ubuntu](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-ubuntu-installation.ogv)
+  * [darktable Lighttable Basics](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-lighttable-basics.ogv)
+  * [darktable Tagging & Collect Modules](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-lighttable-tagging-collect.ogv)
+  * [darktable Darkroom Basics](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-darkroom-basics.ogv)
+  * [darktable Darkroom Black & White Modules](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-darkroom-plugins-bw.ogv)
+  * [darktable Darkroom GND Module](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-darkroom-plugins-gnd.ogv)
+  * [darktable Darkroom Colorzones Module](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-darkroom-plugins-colorzones.ogv)
+  * [darktable Darkroom Watermark Module](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-darkroom-plugins-watermark.ogv)
+  * [darktable Working With Styles](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-styles.ogv)
+  * [darktable Capture Basics](https://encrypted.pcode.nl/blog/wp-content/uploads/2010/12/darktable-capture-basics.ogv)
 
 ## Tutorial videos in Spanish (with subtitles in French and English)
 
@@ -103,7 +103,7 @@ There is also a set of French videos available that cover a good part of darktab
 
 ## Tutorials and videos in German
 
-Mirco has some nice tutorials and screencasts for draktable on his blog - in German. Check them out:
+Mirco has some nice tutorials and screencasts for draktable on his blog&nbsp;– in German. Check them out:
 
   * [Tutorials für darktable](http://www.shutter-speed.ch/?cat=22)
 
@@ -111,7 +111,7 @@ Mirco has some nice tutorials and screencasts for draktable on his blog - in Ger
 
 Related but not only suitable for darktable is his screencast on **how to create helpful backtraces with gdb**:
 
-  * [Contributing Backtraces](http://blog.pcode.nl/2010/08/31/contributing-backtraces/)
+  * [Contributing Backtraces](https://encrypted.pcode.nl/blog/2010/08/31/contributing-backtraces/)
 
 
 # Supported Cameras

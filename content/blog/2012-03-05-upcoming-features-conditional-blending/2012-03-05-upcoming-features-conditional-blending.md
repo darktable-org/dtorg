@@ -9,16 +9,16 @@ wordpress_lede: IMG_1474_thumb.sm_.jpg
 wordpress_id: 1318
 tags: blog, development, upcoming feature, blending, color, conditional blending, darktable, halos, Lab, tone curves, tutorial
 
-# or „If one slider is not enough“
+# or "If one slider is not enough"
 
 
-Diligent readers of our small blog series are already aware of the blending feature that darktable offers as part of many modules. Instead of just handing over their result to the subsequent module in pixelpipe, “blending modules” take a moment to reconsider. Based on the blend setting they will take their original output together with their input and do a re-processing. As an example refer to [here](http://www.darktable.org/2012/02/using-lowpass-filter-to-recover-shadows/), where we took blend mode “overlay” with module “lowpass” to do shadow recovery.
+Diligent readers of our small blog series are already aware of the blending feature that darktable offers as part of many modules. Instead of just handing over their result to the subsequent module in pixelpipe, “blending modules” take a moment to reconsider. Based on the blend setting they will take their original output together with their input and do a re-processing. As an example refer to [here]({filename}/blog/2012-02-13-using-lowpass-filter-to-recover-shadows/2012-02-13-using-lowpass-filter-to-recover-shadows.md), where we took blend mode “overlay” with module “lowpass” to do shadow recovery.
 
 
 ## Totally normal
 
 
-In many cases it is the most basic blend mode “normal” that we want. Depending on the setting of slider “opacity” this allows to control the strength of a module's effect. Think of this as a layer of two transparencies. The lower one represents the input image, the upper one is the original output of our module (the one we would get without blending). If opacity is 100% the upper layer will completely mask the lower one; you get the full effect of the module. If opacity is 0% the upper layer is completely transparent, you see the input image as if the module has no effect. In-between opacity values allow to gradually blend the effect of this module into the original image. We already used this technique [here](http://www.darktable.org/2012/02/shadow-recovery-revisited/) to tone down the effect of shadow recovery.
+In many cases it is the most basic blend mode “normal” that we want. Depending on the setting of slider “opacity” this allows to control the strength of a module's effect. Think of this as a layer of two transparencies. The lower one represents the input image, the upper one is the original output of our module (the one we would get without blending). If opacity is 100% the upper layer will completely mask the lower one; you get the full effect of the module. If opacity is 0% the upper layer is completely transparent, you see the input image as if the module has no effect. In-between opacity values allow to gradually blend the effect of this module into the original image. We already used this technique [here]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md) to tone down the effect of shadow recovery.
 
 ![sh-parameters]({attach}sh-parameters.jpeg)
 
@@ -42,7 +42,7 @@ Enter a module that supports blending, like “tone curve”, and activate blend
 
 You find a row of notebook tabs named after color channels: “L”, “a” and “b” for modules that act in Lab color space; “gray”, “red”, “green” and “blue” for modules that work in RGB color space. Gray is just a weighted average of RGB and acts as a measure of lightness (gray = 0.3 × red + 0.59 × green + 0.11 × blue).
 
-Each tab shows two gradient sliders named “input” and “output”. We stick to the visual interpretation that our pixelpipe extends from bottom to top. So the input that a module receives lies below the output that it produces. These sliders allow you - independently for input and output and separately for each color channel – to define how pixels should be blended. For this purpose there are four markers per slider:
+Each tab shows two gradient sliders named “input” and “output”. We stick to the visual interpretation that our pixelpipe extends from bottom to top. So the input that a module receives lies below the output that it produces. These sliders allow you&nbsp;– independently for input and output and separately for each color channel&nbsp;– to define how pixels should be blended. For this purpose there are four markers per slider:
 
 * two filled triangles above the slider: pixels with values in the range between these two markers are treated as if they have an opacity of 100%
 * two open triangles below the slider: pixels with values outside of these two markers are treated as if they have an opacity of zero
@@ -87,7 +87,7 @@ Let's go for a practical example now. I took the following image in the open-pit
 
 @![IMG_1474_0005.sm_](IMG_1474_0005.sm_.jpg)
 
-What I am still missing: I'd like to put some more definition into the different colors of the soil in the background. From [this post](http://www.darktable.org/2012/02/mastering-color-with-lab-tone-curves/) we know what to do. Let's give the a- and b-channel a little bit more punch:
+What I am still missing: I'd like to put some more definition into the different colors of the soil in the background. From [this post]({filename}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md) we know what to do. Let's give the a- and b-channel a little bit more punch:
 
 @![bl-bild1-tonecurve](bl-bild1-tonecurve.jpg)
 
@@ -129,4 +129,4 @@ There are many other possible uses for conditional blending:
 
 You should have gotten the point now. In general the most important step is to find a strategy how to select those pixels you want to save from the original image or you want to get processed from the respective module. Some cases are difficult to solve with what we’ve discussed so far. For example, we might want a module to act on the major part of an image but exclude a minority of pixels which are defined by a very narrow band of values. For this purpose a new blend mode “inverse” has been introduced. It behaves like blend mode “normal”, only that the logic of what is blended with 100% opacity and zero opacity, respectively, is reversed. Give it a try to find out how it works!
 
-Finally a small exercise: one reader has detected in one of my earlier [blog posts](http://www.darktable.org/2012/02/mastering-color-with-lab-tone-curves/#comment-563) an artifact. I leave it to you to propose a way how to avoid the bluish tint of the rocks in the brook bed. Anyone?
+Finally a small exercise: one reader has detected in one of my earlier [blog posts]({filename}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md#comment-563) an artifact. I leave it to you to propose a way how to avoid the bluish tint of the rocks in the brook bed. Anyone?

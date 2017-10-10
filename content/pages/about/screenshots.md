@@ -10,7 +10,7 @@ Click on a image to get it in full resolution.
 
 [![screenshot-1]({filename}/images/screenshot-1_768.png)]({filename}/images/screenshot-1.png)
 darktable's _lighttable mode_ showing a collection.
-Notice how the collection module (left panel) is used to narrow down a bunch of images by using different metadata attributes. In the import module you can see an entry "Canon EOS 550D" - that means this camera is attached and ready for direct import or tethered shooting right now. In the right panel you can see the tagging module allowing you to assign tags to your images. This makes it easier for you to hunt down the ones you are looking for.
+Notice how the collection module (left panel) is used to narrow down a bunch of images by using different metadata attributes. In the import module you can see an entry "Canon EOS 550D"&nbsp;– that means this camera is attached and ready for direct import or tethered shooting right now. In the right panel you can see the tagging module allowing you to assign tags to your images. This makes it easier for you to hunt down the ones you are looking for.
 
 <hr>
 
@@ -22,7 +22,7 @@ In the left panel we have the recently used collections module and the image inf
 
 [![screenshot-2]({filename}/images/screenshot-2_768.png)]({filename}/images/screenshot-2.png)
 darktable's _darkroom mode_ with an image opened.
-The left panel offers you informations about the processed image and your editing history. Beside that the snapshot module can be found there - useful to compare the image (or parts of it) before and after a change in the process values - as shown here. In this example the powerful color zones module has been used to change the green hue of the leaf into orange.
+The left panel offers you informations about the processed image and your editing history. Beside that the snapshot module can be found there&nbsp;– useful to compare the image (or parts of it) before and after a change in the process values&nbsp;– as shown here. In this example the powerful color zones module has been used to change the green hue of the leaf into orange.
 
 <hr>
 
@@ -34,4 +34,4 @@ Yet another screenshot of the darkroom mode. Here you can see both the tone curv
 
 [![screenshot-5]({filename}/images/screenshot-5_768.png)]({filename}/images/screenshot-5.png)
 darktable's _darkroom mode_, split toning an image.
-This time, the top panel is expaned - you can switch the view here (top right corner) or assign color labels or rating directly to the opened image. Here we fill the lights by +0.25EV in four zones by using the fill light module, then giving the image a yellowish tint with the split toning module by removing all saturation from the shadows and coloring the highlights yellow.
+This time, the top panel is expaned&nbsp;– you can switch the view here (top right corner) or assign color labels or rating directly to the opened image. Here we fill the lights by +0.25EV in four zones by using the fill light module, then giving the image a yellowish tint with the split toning module by removing all saturation from the shadows and coloring the highlights yellow.

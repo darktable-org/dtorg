@@ -9,7 +9,7 @@ wordpress_lede: img_0001_03.jpg
 wordpress_id: 4181
 tags: blog, development, further reading, upcoming feature
 
-modern sensor capture an astonishing dynamic range, namely some sony sensors or canon with [magic lantern’s dual iso feature](http://www.magiclantern.fm/forum/?topic=7139.0).
+modern sensor capture an astonishing dynamic range, namely some sony sensors or canon with [magic lantern’s dual iso feature](https://www.magiclantern.fm/forum/?topic=7139.0).
 
 this is in a range where the image has to be processed carefully to display it in pleasing ways on a monitor, let alone the limited dynamic range of print media.
 
@@ -21,13 +21,13 @@ this is in a range where the image has to be processed carefully to display it i
 
 @![graduated density filter](img_0015.jpg "graduated density filter")
 
-using the [graudated density iop](http://www.darktable.org/usermanual/ch03s04s05.html.php#graduated_density) works well in this case since the horizon here is more or less straight, so we can easily mask it out with a simple gradient in the graduated density module. now what if the objects can’t be masked out so easily?
+using the [graudated density iop](/usermanual/ch03s04s05.html.php#graduated_density) works well in this case since the horizon here is more or less straight, so we can easily mask it out with a simple gradient in the graduated density module. now what if the objects can’t be masked out so easily?
 
 ### more complex example
 
 this image needed to be substantially underexposed in order not to clip the interesting highlight detail in the clouds.
 
-original image, then extreme settings in [the shadows and highlights iop](http://www.darktable.org/2012/02/shadow-recovery-revisited/) (heavy fringing despite bilateral filter used for smoothing). also note how the shadow detail is still very dark. third one is [tone mapped (drago)](http://www.darktable.org/usermanual/ch03s04s02.html.php#global_tonemap) and fourth is default darktable processing with +6ev exposure.
+original image, then extreme settings in [the shadows and highlights iop]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md) (heavy fringing despite bilateral filter used for smoothing). also note how the shadow detail is still very dark. third one is [tone mapped (drago)](/usermanual/ch03s04s02.html.php#global_tonemap) and fourth is default darktable processing with +6ev exposure.
 
 @![original](img_0007.jpg "original")
 
@@ -49,9 +49,9 @@ this can be observed for most images, here is another example (original, then pu
 
 ## exposure fusion
 
-this is precisely the motivation behind the great paper entitled [Exposure Fusion](http://web.stanford.edu/class/cs231m/project-1/exposure-fusion.pdf): what if we develop the image a couple of times, each time exposing for a different feature (highlights, mid-tones, shadows), and then merge the results where they look best?
+this is precisely the motivation behind the great paper entitled [Exposure Fusion](https://web.stanford.edu/class/cs231m/project-1/exposure-fusion.pdf): what if we develop the image a couple of times, each time exposing for a different feature (highlights, mid-tones, shadows), and then merge the results where they look best?
 
-this has been available in software for a while in [enfuse](http://wiki.panotools.org/Enfuse)
+this has been available in software for a while in [enfuse](https://wiki.panotools.org/Enfuse)
 
 even with a gui called [EnfuseGUI](http://software.bergmark.com/enfuseGUI/Main.html).
 
@@ -113,15 +113,15 @@ note that the feature is currently merged to git master, but unreleased.
 
 ## links
 
-* [magic lantern dual iso](http://www.magiclantern.fm/forum/?topic=7139.0)
-* [graudated density iop](http://www.darktable.org/usermanual/ch03s04s05.html.php#graduated_density)
-* [shadows and highlights iop](http://www.darktable.org/2012/02/shadow-recovery-revisited/)
-* [tone mapping iop](http://www.darktable.org/usermanual/ch03s04s02.html.php#global_tonemap)
+* [magic lantern dual iso](https://www.magiclantern.fm/forum/?topic=7139.0)
+* [graudated density iop](/usermanual/ch03s04s05.html.php#graduated_density)
+* [shadows and highlights iop]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md)
+* [tone mapping iop](/usermanual/ch03s04s02.html.php#global_tonemap)
 * Tom Mertens, Jan Kautz, and Frank Van Reeth. 2007.
 
-    [Exposure Fusion](http://web.stanford.edu/class/cs231m/project-1/exposure-fusion.pdf).
+    [Exposure Fusion](https://web.stanford.edu/class/cs231m/project-1/exposure-fusion.pdf).
 
     In Proceedings of the 15th Pacific Conference on Computer Graphics and Applications (PG '07). IEEE Computer Society, 382-390.
 
-* [enfuse](http://wiki.panotools.org/Enfuse)
+* [enfuse](https://wiki.panotools.org/Enfuse)
 * [EnfuseGUI](http://software.bergmark.com/enfuseGUI/Main.html)

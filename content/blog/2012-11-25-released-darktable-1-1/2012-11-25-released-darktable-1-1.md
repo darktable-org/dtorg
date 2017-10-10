@@ -13,158 +13,54 @@ tags: announcement
 
 this is a feature release, so there is a lot of new stuff:
 
-
 # general
 
-
-
-
-
-	
-  * new camera support, new whitebalance presets, etc., including
-canon eos m support and samsung nx fix
-
-	
-  * similarity matching search for images that look alike.
-
-	
-  * geotagging, complete with map view (thanks to dinamic for starting that ages ago and to houz for actually bringing it home):
-[http://www.darktable.org/2012/09/geotagging-in-darktable/](http://www.darktable.org/2012/09/geotagging-in-darktable/)
-
-	
-  * mac os package: [http://www.darktable.org/2012/08/bringing-current-darktable-to-os-x/](http://www.darktable.org/2012/08/bringing-current-darktable-to-os-x/)
-
-	
-  * a lot of bugfixes (mainly thanks to ulrich for his meticulous work)
-
-	
-  * facebook exporter (for those who have an account there)
-
-
-
+* new camera support, new whitebalance presets, etc., including canon eos m support and samsung nx fix
+* similarity matching search for images that look alike.
+* geotagging, complete with map view (thanks to dinamic for starting that ages ago and to houz for actually bringing it home):
+"[Geotagging in darktable]({filename}/blog/2012-09-23-geotagging-in-darktable/2012-09-23-geotagging-in-darktable.md)"
+* mac os package: "[Bringing current darktable to OS X]({filename}/blog/2012-08-14-bringing-current-darktable-to-os-x/2012-08-14-bringing-current-darktable-to-os-x.md)"
+* a lot of bugfixes (mainly thanks to ulrich for his meticulous work)
+* facebook exporter (for those who have an account there)
 
 # ui
 
-
-
-
-
-	
-  * reworked the much hated `more plugins' widget (thanks to boucman)
-
-	
-  * image grouping: [http://www.darktable.org/2012/09/grouping/](http://www.darktable.org/2012/09/grouping/)
-
-	
-  * command line interface! [http://www.darktable.org/2012/07/exporting-images-on-the-command-line/](http://www.darktable.org/2012/07/exporting-images-on-the-command-line/)
-
-	
-  * tone and base curves got a new user interface to better support fine grained workflow as in: [http://www.darktable.org/2012/02/mastering-color-with-lab-tone-curves/](http://www.darktable.org/2012/02/mastering-color-with-lab-tone-curves/)
-
-	
-  * visually low-profile controls with finetuning: [http://www.darktable.org/2012/03/bauhaus-widgets/](http://www.darktable.org/2012/03/bauhaus-widgets/)
-
-	
-  * color correction module ([http://www.darktable.org/2012/03/color-correction](http://www.darktable.org/2012/03/color-correction/)/) got a GUI update since the blog post (two circles indicating shadows and highlights instead of the quad).
-
-	
-  * live view for tethered shooting! [http://www.darktable.org/2012/05/live-view/](http://www.darktable.org/2012/05/live-view/)
-
-
-
+* reworked the much hated `more plugins' widget (thanks to boucman)
+* image grouping: "[Grouping]({filename}/blog/2012-09-23-grouping/2012-09-23-grouping.md)"
+* command line interface! "[Exporting images on the command line]({filename}/blog/2012-07-05-exporting-images-on-the-command-line/2012-07-05-exporting-images-on-the-command-line.md)"
+* tone and base curves got a new user interface to better support fine grained workflow as in: "[Mastering color with Lab tone curves”]({filename}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md)"
+* visually low-profile controls with finetuning: "[bauhaus widgets]({filename}/blog/2012-03-02-bauhaus-widgets/2012-03-02-bauhaus-widgets.md)"
+* color correction module ("[color correction]({filename}/blog/2012-03-11-color-correction/2012-03-11-color-correction.md)") got a GUI update since the blog post (two circles indicating shadows and highlights instead of the quad).
+* live view for tethered shooting! "[Live view]({filename}/blog/2012-05-30-live-view/2012-05-30-live-view.md)"
 
 # darkroom
 
-
-
-
-
-	
-  * extensive use of edge-aware filtering techniques to suppress noise, halos and ringing all around darktable: [http://www.darktable.org/2012/09/edge-aware-image-development/](http://www.darktable.org/2012/09/edge-aware-image-development/)
-
-	
-  * conditional blending, and a lot of goodies around it! [http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/](http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/)
-
-	
-  * magenta highlights: [http://www.darktable.org/2012/07/magenta-highlights/](http://www.darktable.org/2012/07/magenta-highlights/)improved on high-contrast edges to overexposed areas (should get rid of purple highlights on tiny water waves and purple fringes around tree leaves for example)
-
-	
-  * much improved sharpness for both export and darkroom view, especially for downsampled images and if you use lens corrections or rotations/perspective corrections. check the new options in the preferences dialog, also one more than mentioned in the blog ("demosaicing for zoomed out darkroom mode" to trade performance for even more sharpness): [http://www.darktable.org/2012/06/upcoming-features-new-interpolation-modes-and-better-resize/](http://www.darktable.org/2012/06/upcoming-features-new-interpolation-modes-and-better-resize/)
-
-
-
+* extensive use of edge-aware filtering techniques to suppress noise, halos and ringing all around darktable: "[edge aware image development"]({filename}/blog/2012-09-02-edge-aware-image-development/2012-09-02-edge-aware-image-development.md)"
+* conditional blending, and a lot of goodies around it! "[Some enhancements to conditional blending]({filename}/blog/2012-07-11-some-enhancements-to-conditional-blending/2012-07-11-some-enhancements-to-conditional-blending.md)"
+* magenta highlights: "[magenta highlights]({filename}/blog/2012-07-05-magenta-highlights/2012-07-05-magenta-highlights.md)" improved on high-contrast edges to overexposed areas (should get rid of purple highlights on tiny water waves and purple fringes around tree leaves for example)
+* much improved sharpness for both export and darkroom view, especially for downsampled images and if you use lens corrections or rotations/perspective corrections. check the new options in the preferences dialog, also one more than mentioned in the blog ("demosaicing for zoomed out darkroom mode" to trade performance for even more sharpness): "[Upcoming features: New interpolation modes and better resize]({filename}/blog/2012-06-02-upcoming-features-new-interpolation-modes-and-better-resize/2012-06-02-upcoming-features-new-interpolation-modes-and-better-resize.md)"
 
 # color management
 
-
-
-
-
-	
-  * improved per-screen color management (should reload the screen profile automatically)
-
-	
-  * more compatible embedded color profiles (should fix problems on windows viewing our images, if that matters)
-
-	
-  * read embedded color profiles from jpg
-
-
-
+* improved per-screen color management (should reload the screen profile automatically)
+* more compatible embedded color profiles (should fix problems on windows viewing our images, if that matters)
+* read embedded color profiles from jpg
 
 # opencl
 
-
-
-
-
-	
-  * most of our modules now can take advantage of your computer's gpu power
-
-	
-  * caching for compiled opencl kernels (even in case the driver doesn't do it) for faster startup times
-
-
-
+* most of our modules now can take advantage of your computer's gpu power
+* caching for compiled opencl kernels (even in case the driver doesn't do it) for faster startup times
 
 # usermanual
 
-
-
-
-
-
-
-
-	
-  * find a pdf snapshot here: [https://sourceforge.net/projects/darktable/files/darktable/1.1/darktable-usermanual.pdf/download](https://sourceforge.net/projects/darktable/files/darktable/1.1/darktable-usermanual.pdf/download)
-
-	
-  * is reasonably up to date again
-
-	
-  * not translated so far
-
-
-
-
-
-
+* find a pdf snapshot here: [https://sourceforge.net/projects/darktable/files/darktable/1.1/darktable-usermanual.pdf/download](https://sourceforge.net/projects/darktable/files/darktable/1.1/darktable-usermanual.pdf/download)
+* is reasonably up to date again
+* not translated so far
 
 # translations
 
-
-
-
-
-	
-  * two new translations (both portuguese.. ;) )
-
-	
-  * well translated: cs de es fr it ja nl pl pt_BR pt_PT sv
-
-	
-  * half translated: ca fi gl ro ru sq th zh_CN
-
+* two new translations (both portuguese ... ;) )
+* well translated: cs de es fr it ja nl pl pt_BR pt_PT sv
+* half translated: ca fi gl ro ru sq th zh_CN
 
 enjoy!

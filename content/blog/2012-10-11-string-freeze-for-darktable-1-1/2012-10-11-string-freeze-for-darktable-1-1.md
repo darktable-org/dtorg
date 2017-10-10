@@ -15,20 +15,9 @@ As of today we are in string freeze for the next darktable version. Version 1.1 
 
 As usual we follow our release procedure:
 
+* String freeze (as of now). Translators get time to catch up and it's a good means to stop overly crazy development to be merged into master
+* A couple of weeks of translating and bug hunting
+* Then we'll release release candidates again, to enable bread testing even from users who aren't comfortable with "unstable" packages or git.
+* ...&nbsp;and finally there will be a new stable version of darktable.
 
-
-	
-  * String freeze (as of now). Translators get time to catch up and it's a good means to stop overly crazy development to be merged into master
-
-	
-  * A couple of weeks of translating and bug hunting
-
-	
-  * Then we'll release release candidates again, to enable bread testing even from users who aren't comfortable with "unstable" packages or git.
-
-	
-  * ...and finally there will be a new stable version of darktable.
-
-
-
-Please help us to make this release another success, translate if there is something to translate, test, find bugs and report them to our [bug tracker](http://darktable.org/redmine/projects/darktable/issues). If you have any questions, [join us on IRC or the mailing lists](http://www.darktable.org/contact/).
+Please help us to make this release another success, translate if there is something to translate, test, find bugs and report them to our [bug tracker](https://darktable.org/redmine/projects/darktable/issues). If you have any questions, [join us on IRC or the mailing lists]({filename}/pages/contact.md).

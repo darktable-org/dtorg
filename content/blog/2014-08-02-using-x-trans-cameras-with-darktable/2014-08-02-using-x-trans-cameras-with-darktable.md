@@ -94,7 +94,7 @@ The “create HDR” function currently does not work for X-Trans images.
 ## Dynamic Range
 
 
-When darktable processes X-Trans images, it will not replicate the JPEG which the camera produces. X-Trans cameras have JPEG-specific options such as film simulation, highlight tone, shadow tone, color, and sharpness which do not alter raw file data. You are on your own with darktable to tune the image as you choose – whether to simulate these settings or to do what you feel best serves the particular image.
+When darktable processes X-Trans images, it will not replicate the JPEG which the camera produces. X-Trans cameras have JPEG-specific options such as film simulation, highlight tone, shadow tone, color, and sharpness which do not alter raw file data. You are on your own with darktable to tune the image as you choose&nbsp;– whether to simulate these settings or to do what you feel best serves the particular image.
 
 Of particular note is the Fujifilm “Dynamic Range” option, which controls image contrast. As with similar options on other cameras (“Nikon Active D-Light”, “Canon Auto Lighting Optimizer (ALO)”, “Sony Dynamic Range Optimizer (DRO)” or “Samsung Smart Range”), darktable will not specially handle images taken when Dynamic Range is enabled.
 
@@ -118,13 +118,13 @@ If you don’t appreciate sensor noise, you may want to use a denoise module as 
 
 There are some other ways to deal with these images: In the “zone system” module, you can set the minimum number of zones and drag the zones to the right. In the “global tonemap” module, you can leave the operator on "drago" and adjust "target" until the the tonality looks right. Or in the “levels” module, drag the middle handle to the left. All those solutions come a bit later in the processing pipeline than the exposure module, hence are not ideal. There has been some suggestion that basecurves specific to particular Dynamic Range modes could also be helpful.
 
-Dealing with Fujifilm Dynamic Range images is, as they say, a field of continuing research. The choices in processing these images are akin to those in processing HDR images – how to fit a large tonal range into a constrained output space. The camera does record EXIF data describing if DR200 or DR400 is set, so it would be interesting to code an automatic compensation for these settings. It is not yet clear, though, what such automatic compensation should be.
+Dealing with Fujifilm Dynamic Range images is, as they say, a field of continuing research. The choices in processing these images are akin to those in processing HDR images&nbsp;– how to fit a large tonal range into a constrained output space. The camera does record EXIF data describing if DR200 or DR400 is set, so it would be interesting to code an automatic compensation for these settings. It is not yet clear, though, what such automatic compensation should be.
 
 
 
 ## Improving and Continuing X-Trans support
 
 
-Though darktable now can read and process X-Trans files, there are plenty of opportunities to improve camera support. In particular, as mentioned in "[What's involved with adding support for new cameras](http://www.darktable.org/2012/10/whats-involved-with-adding-support-for-new-cameras/)", each camera model could benefit from its own [basecurve](http://www.darktable.org/2013/10/about-basecurves/), white balance presets, lens correction, and [noise profile](http://www.darktable.org/2012/12/profiling-sensor-and-photon-noise/). Bug reports and ideas for improvement are also most welcome.
+Though darktable now can read and process X-Trans files, there are plenty of opportunities to improve camera support. In particular, as mentioned in "[What's involved with adding support for new cameras]({filename}/blog/2012-10-23-whats-involved-with-adding-support-for-new-cameras/2012-10-23-whats-involved-with-adding-support-for-new-cameras.md)", each camera model could benefit from its own [basecurve]({filename}/blog/2013-10-28-about-basecurves/2013-10-28-about-basecurves.md), white balance presets, lens correction, and [noise profile]({filename}/blog/2012-12-11-profiling-sensor-and-photon-noise/2012-12-11-profiling-sensor-and-photon-noise.md). Bug reports and ideas for improvement are also most welcome.
 
 There has been understandable reluctance to support an exotic image sensor such as the X-Trans. Such support requires much intervention into the darktable code, for a technology which may just be a flash in the pan. But many open source and commercial image processing developers have now either chosen to support X-Trans raw files or are moving towards such support. X-Trans raw handling in darktable allows for enthusiast users of these cameras to enjoy darktable’s finely crafted image processing environment.

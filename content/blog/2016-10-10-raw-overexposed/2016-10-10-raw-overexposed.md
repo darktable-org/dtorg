@@ -23,19 +23,19 @@ Consider this image:
 
 … Why is the sky so white? Why is the image so flat and dull?
 
-Let's enable [`overexposure indicator`](https://www.darktable.org/usermanual/ch03s03s09.html.php#overexposed) ...
+Let's enable [`overexposure indicator`](/usermanual/ch03s03s09.html.php#overexposed) ...
 
 @![rawoverexposed-0.5](rawoverexposed-0.5.jpeg)
 
 Nope, it does not indicate any part of the image to be overexposed.
 
-Now, let's see what happens if we disable the [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module
+Now, let's see what happens if we disable the [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module
 
 @![rawoverexposed-1](rawoverexposed-1.jpeg)
 
 Eww, the sky is pink!
 
-An experienced person knows that it means the image was taken [overexposed](https://en.wikipedia.org/wiki/Exposure_(photography)#Overexposure_and_underexposure), and it is so dull and flat because a negative **exposure compensation** was applied via the [`exposure`](https://www.darktable.org/usermanual/ch03s04.html.php#exposure) module.
+An experienced person knows that it means the image was taken [overexposed](https://en.wikipedia.org/wiki/Exposure_(photography)#Overexposure_and_underexposure), and it is so dull and flat because a negative **exposure compensation** was applied via the [`exposure`](/usermanual/ch03s04.html.php#exposure) module.
 
 Many of you have sometimes unintentionally overexposed your images. As you know, it is hard to figure out exactly which part of the image is overexposed, clipped.
 
@@ -88,7 +88,7 @@ Both of these parameters also often depend on [ISO](https://en.wikipedia.org/wik
 
 You may ask, why **white level** is less than the maximal value that can be stored in the raw file (that is, e.g. for 14-bit raw images, less than $\mathbf{{2^{14}}-1}$ (i.e. $\mathbf{16383}$))?
 
-I have intentionally skipped over one more component of the sensor - an active [amplifier](https://en.wikipedia.org/wiki/Amplifier).
+I have intentionally skipped over one more component of the sensor&nbsp;– an active [amplifier](https://en.wikipedia.org/wiki/Amplifier).
 
 It is the second most important component of the sensor (after the [photodetectors](https://en.wikipedia.org/wiki/Photodetector) themselves).
 
@@ -121,12 +121,12 @@ As you may have guessed by now, the signal amplification is the factor that resu
 
 Because of the analog [gain](https://en.wikipedia.org/wiki/Gain_(electronics)) that was applied to the data to bring it into the nominal range and not blow (clip, make them bigger than $\mathbf{16383}$) the usable highlights. The [gain](https://en.wikipedia.org/wiki/Gain_(electronics)) is applied in finite discrete steps, it may be impossible to apply a finer [gain](https://en.wikipedia.org/wiki/Gain_(electronics)), so that the **white level** is closer to $\mathbf{16383}$.
 
-This is a very brief summary, for a detailed write-up i can direct you to the Magic Lantern's [CMOS/ADTG/Digic register investigation on ISO](http://www.magiclantern.fm/forum/index.php?topic=10111.0).
+This is a very brief summary, for a detailed write-up i can direct you to the Magic Lantern's [CMOS/ADTG/Digic register investigation on ISO](https://www.magiclantern.fm/forum/index.php?topic=10111.0).
 
 
 ### the first steps of processing a raw file
 
-All right, we got a sensor readout - an array of unsigned integers - how do we get from that to an image, that can be displayed?
+All right, we got a sensor readout&nbsp;– an array of unsigned integers&nbsp;– how do we get from that to an image, that can be displayed?
 
 1. Convert the values from [integer](https://en.wikipedia.org/wiki/Integer_(computer_science)) (most often 16-bit unsigned) to [float](https://en.wikipedia.org/wiki/Floating_point) (not strictly required, but best for [precision](https://en.wikipedia.org/wiki/Precision_(computer_science)) reasons; we use [32-bit float](https://en.wikipedia.org/wiki/Single-precision_floating-point_format))
 2. Subtract **black level**
@@ -135,7 +135,7 @@ All right, we got a sensor readout - an array of unsigned integers - how do we g
 
     Simplest way to do that is to divide each value by $\mathbf{({white level} - {black level})}$
 
-    These 3 steps are done by the [`raw black/white point`](https://www.darktable.org/usermanual/ch03s04.html.php#raw_black_white_point) module.
+    These 3 steps are done by the [`raw black/white point`](/usermanual/ch03s04.html.php#raw_black_white_point) module.
 
 4. Next, the [white balance](https://en.wikipedia.org/wiki/Color_balance) is applied. It is as simple as multiplying each separate [CFA](https://en.wikipedia.org/wiki/Color_filter_array) color by a specific coefficient. This so-called **white balance** vector can be acquired from several places:
 
@@ -162,7 +162,7 @@ All right, we got a sensor readout - an array of unsigned integers - how do we g
 
     In practice, however, the **white balance** vector is most often [normalized](https://en.wikipedia.org/wiki/Normalization_(image_processing)) so that the Green channel multiplier is $\mathbf{1.0}$.
 
-    That step is done by the [`white balance`](https://www.darktable.org/usermanual/ch03s04.html.php#whitebalance) module.
+    That step is done by the [`white balance`](/usermanual/ch03s04.html.php#whitebalance) module.
 
 5. And last, highlight handling.
     As we know from definition, all the data values which are bigger than the **white level** are unusable, [clipped](https://en.wikipedia.org/wiki/Clipping_(photography)). Without / before **white balance** correction, it is clear that all the values which are bigger than $\mathbf{1.0}$ are the clipped values, and they are useless without some advanced processing.
@@ -171,19 +171,19 @@ All right, we got a sensor readout - an array of unsigned integers - how do we g
 
     As we all know, the white color is $${\begin{pmatrix} 1.0 , 1.0 , 1.0 \end{pmatrix}}^{T}$$. But the maximal values (the per-channel **white levels**) are $${\begin{pmatrix} 2.0 , 0.9 , 1.5 \end{pmatrix}}^{T}$$, so our "white" will not be white, but, as experienced users may guess, purple-ish. What do we do?
 
-    Since for white color, all the components have exact the same value - $\mathbf{1.0}$ - we just need to make sure that the maximal values are the same value. We can not scale each of the channels separately, because that would change **white balance**. We simply need to pick the minimal **white level** - $\mathbf{0.9}$ - in our case, and clip all the data to that level. I.e. all the data which had a value of less than or equal to that threshold, will retain the same value; and all the pixels with the value greater than the threshold will have the value of threshold - $\mathbf{0.9}$.
+    Since for white color, all the components have exact the same value&nbsp;– $\mathbf{1.0}$&nbsp;– we just need to make sure that the maximal values are the same value. We can not scale each of the channels separately, because that would change **white balance**. We simply need to pick the minimal **white level**&nbsp;– $\mathbf{0.9}$&nbsp;– in our case, and clip all the data to that level. I.e. all the data which had a value of less than or equal to that threshold, will retain the same value; and all the pixels with the value greater than the threshold will have the value of threshold&nbsp;– $\mathbf{0.9}$.
 
-    Alternatively, one could try to recover these highlights, see [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module; and [
-    Color Reconstruction](https://www.darktable.org/2015/03/color-reconstruction/) (though this last one only guesses color based on surroundings, does not actually reconstruct the channels, and is a _bit_ too late in the pipe).
+    Alternatively, one could try to recover these highlights, see [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module; and [
+    Color Reconstruction]({filename}/blog/2015-03-07-color-reconstruction/2015-03-07-color-reconstruction.md) (though this last one only guesses color based on surroundings, does not actually reconstruct the channels, and is a _bit_ too late in the pipe).
 
-    If you don't do highlight handling, you get what you have seen in the third image in this article - ugly, unnaturally looking, discolored, highlights.
+    If you don't do highlight handling, you get what you have seen in the third image in this article&nbsp;– ugly, unnaturally looking, discolored, highlights.
 
 
     <blockquote>Note: you might know that there are more steps required (namely: demosaicing, base curve, input color profile, output color profile; there may be others.), but for the purpose of detection and visualization of highlight clipping, they are unimportant, so i will not talk about them here.</blockquote>
 
 
 
-From that list, it should now be clear that all the pixels which have a value greater than the minimal per-channel **white level** right before the [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module, are the clipped pixels.
+From that list, it should now be clear that all the pixels which have a value greater than the minimal per-channel **white level** right before the [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module, are the clipped pixels.
 
 
 
@@ -191,8 +191,8 @@ From that list, it should now be clear that all the pixels which have a value gr
 
 
 
-But a technical problem arises: we need to visualize the clipped pixels on top of the fully processed image, while we only know whether the pixel is clipped or not in the input buffer of [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module.
-And we can not visualize clipping in the [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module itself, because the data is still [mosaiced](https://en.wikipedia.org/wiki/Demosaicing), and other modules will be applied after that anyway.
+But a technical problem arises: we need to visualize the clipped pixels on top of the fully processed image, while we only know whether the pixel is clipped or not in the input buffer of [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module.
+And we can not visualize clipping in the [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module itself, because the data is still [mosaiced](https://en.wikipedia.org/wiki/Demosaicing), and other modules will be applied after that anyway.
 
 The problem was solved by back-transforming the given **white balance** coefficients and the **white level**, and then comparing the values of original raw buffer produced by camera with that threshold. And, back-transforming output pixel coordinates through all the geometric distortions to figure out which pixel in the original input buffer needs to be checked.
 
@@ -267,10 +267,10 @@ Now you know that, you:
 
 1. Will know better than to over-expose so much next time :) (hint to myself, mostly)
 2. Could try to recover from clipping a bit
-    1. either by not applying negative **exposure compensation** in [`exposure`](https://www.darktable.org/usermanual/ch03s04.html.php#exposure) module
-    2. or using [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module with `mode` = `reconstruct in LCh`
-    3. or using [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module with `mode` = `reconstruct color`, though it is known to produce artefacts
-    4. or using [`color reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#color_reconstruction) module
+    1. either by not applying negative **exposure compensation** in [`exposure`](/usermanual/ch03s04.html.php#exposure) module
+    2. or using [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module with `mode` = `reconstruct in LCh`
+    3. or using [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module with `mode` = `reconstruct color`, though it is known to produce artefacts
+    4. or using [`color reconstruction`](/usermanual/ch03s04.html.php#color_reconstruction) module
 
 
 ## an important note about sensor clipping vs. color clipping
@@ -290,13 +290,13 @@ Let's enable indicator...
 
 The visualization says that Red and Blue channels are clipped.
 
-But now let's disable the [`white balance`](https://www.darktable.org/usermanual/ch03s04.html.php#whitebalance) module, while keeping indicator active:
+But now let's disable the [`white balance`](/usermanual/ch03s04.html.php#whitebalance) module, while keeping indicator active:
 
 @![rawoverexposed-4](rawoverexposed-4.jpeg)
 
-Interesting, isn't it? So actually there is no sensor-level clipping, but the image is still overexposed, because after the [`white balance`](https://www.darktable.org/usermanual/ch03s04.html.php#whitebalance) is applied, the channels do clip.
+Interesting, isn't it? So actually there is no sensor-level clipping, but the image is still overexposed, because after the [`white balance`](/usermanual/ch03s04.html.php#whitebalance) is applied, the channels do clip.
 
-While there, i wanted to show [`highlight reconstruction`](https://www.darktable.org/usermanual/ch03s04.html.php#highlight_reconstruction) module, `mode` = `reconstruct in LCh`.
+While there, i wanted to show [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module, `mode` = `reconstruct in LCh`.
 
 If you ever used it, you know that it used to produce pretty useless results.
 
@@ -310,13 +310,13 @@ As you can compare that with the first version of this image in this block, the 
 
 ## Too boring? :)
 
-With sufficiently exposed image (or just set `black levels` to $\mathbf{0}$ and `white level` to $\mathbf{1}$ in [`raw black/white point`](https://www.darktable.org/usermanual/ch03s04.html.php#raw_black_white_point) module; and `clipping threshold` = $\mathbf{0.0}$, `mode` = `mark with CFA color` in `raw overexposure indicator`), and a lucky combination of image size, output size and zoom level, produces a familiar-looking pattern :)
+With sufficiently exposed image (or just set `black levels` to $\mathbf{0}$ and `white level` to $\mathbf{1}$ in [`raw black/white point`](/usermanual/ch03s04.html.php#raw_black_white_point) module; and `clipping threshold` = $\mathbf{0.0}$, `mode` = `mark with CFA color` in `raw overexposure indicator`), and a lucky combination of image size, output size and zoom level, produces a familiar-looking pattern :)
 
 @![rawoverexposed-bayer-pattern](rawoverexposed-bayer-pattern.jpeg)
 
 That is basically an artefact due to the downscaling for display. Though, feedback may ask to actually properly implement this as a feature...
 
-Now, what if we enable the [lens correction](https://www.darktable.org/usermanual/ch03s04s04.html.php#lens_correction) module? :)
+Now, what if we enable the [lens correction](/usermanual/ch03s04s04.html.php#lens_correction) module? :)
 
 @![rawoverexposed-bayer-pattern-and-lens-correction](rawoverexposed-bayer-pattern-and-lens-correction.jpeg)
 

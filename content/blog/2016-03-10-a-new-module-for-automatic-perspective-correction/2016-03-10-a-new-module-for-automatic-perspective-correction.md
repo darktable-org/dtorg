@@ -28,7 +28,7 @@ Perspective distortions are a natural effect when projecting a three dimensional
 
 Converging lines are a special case of perspective distortions frequently seen in architecture photographs. Parallel lines are an essential feature of most types of architecture; when photographed at an angle parallel lines get transformed into converging lines that meet at some vantage point within or outside the image frame.
 
-> Interestingly, viewers are mostly disturbed if they see a photo with converging lines that they know or assume to be vertical in reality. The reason seems to be that our brain is trained to unconsciously correct for vertical lines in the picture delivered by our eyes – vertical lines appear still vertical to us although the eye sees an image with converging lines as a camera would do. When watching the same scene in a photographic image the viewing situation is different and our brain does not apply its corrections. Now we clearly can identify the lines as converging and that conflicts to what we are used to see naturally.
+> Interestingly, viewers are mostly disturbed if they see a photo with converging lines that they know or assume to be vertical in reality. The reason seems to be that our brain is trained to unconsciously correct for vertical lines in the picture delivered by our eyes&nbsp;– vertical lines appear still vertical to us although the eye sees an image with converging lines as a camera would do. When watching the same scene in a photographic image the viewing situation is different and our brain does not apply its corrections. Now we clearly can identify the lines as converging and that conflicts to what we are used to see naturally.
 
 There are a few ways to overcome this effect when taking a photo. One way is keeping the camera's optical axis pointing to the horizon so that vertical lines run parallel to the sensor plane. However, this will bring a lot of potentially boring foreground into the lower part of the image which typically needs to be cropped afterward in image processing. Alternatively, one could use a shift lens [4] which gives more control on what part of the scene gets onto the camera sensor. Shift lenses tend to be heavy and expensive, so not everybody keeps them in his or her camera bag. That’s where perspective corrections in image processing come into play.
 
@@ -40,7 +40,7 @@ There are a few ways to overcome this effect when taking a photo. One way is kee
 
 ## Working principle of the perspective correction module
 
-Converging lines can be corrected by warping the image in such a way that the lines in question get parallel. The perspective correction module in darktable simulates the effects of a shift lens and – in its simplest form – only needs a single lens shift parameter to correct converging lines along one direction. Corrections can be done in vertical and horizontal direction, either separately or in combination.
+Converging lines can be corrected by warping the image in such a way that the lines in question get parallel. The perspective correction module in darktable simulates the effects of a shift lens and&nbsp;– in its simplest form&nbsp;– only needs a single lens shift parameter to correct converging lines along one direction. Corrections can be done in vertical and horizontal direction, either separately or in combination.
 
 Images quite often come with a tilted horizon. As we want lines not only to be parallel among themselves but also to align with the image frame the module additionally applies a rotation angle which is controlled by a further parameter.
 
@@ -59,7 +59,7 @@ Although a manual adjustment of the parameters is possible users will typically 
 <figcaption>The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.</figcaption>
 </figure>
 
-The principle way of working is as follows. darktable analyzes the image for structural features consisting of line segments. These line segments are evaluated and ranked to identify those lines which form a set of converging lines meeting in a vantage point. Please note that by far not all line segments in an image represent suited vertical or horizontal lines of the scene – it is crucial that unsuited lines are identified and eliminated from the set. Based on the remaining lines an automatic fitting procedure is then started that tries to identify the best values of the module parameters (rotation angle and lens shift in one direction, or rotation angle and lens shift in both directions) to get the image straight, i.e. adjust the converging lines to run parallel and/or horizontal to the image frame.
+The principle way of working is as follows. darktable analyzes the image for structural features consisting of line segments. These line segments are evaluated and ranked to identify those lines which form a set of converging lines meeting in a vantage point. Please note that by far not all line segments in an image represent suited vertical or horizontal lines of the scene&nbsp;– it is crucial that unsuited lines are identified and eliminated from the set. Based on the remaining lines an automatic fitting procedure is then started that tries to identify the best values of the module parameters (rotation angle and lens shift in one direction, or rotation angle and lens shift in both directions) to get the image straight, i.e. adjust the converging lines to run parallel and/or horizontal to the image frame.
 
 ![ashift_2]({attach}ashift_2.jpg)
 
@@ -137,7 +137,7 @@ Please note that you always see the full image as soon as the “perspective cor
 
 The example image above illustrates that you may lose a quite significant part of your image border when doing perspective corrections. You should take this into account when taking the shot and leave sufficient room around your main subject.
 
-Of course the automatic cropping feature does not have any knowledge of the contents of your image – we recommend to use it in simple cases. Frequently you will want to have full artistic control on what parts of the image to crop; this power is only offered by the crop & rotate module [1]. We suggest to use either the automatic or the manual cropping option; combining both may lead to surprising results as soon as you change any parameters.
+Of course the automatic cropping feature does not have any knowledge of the contents of your image&nbsp;– we recommend to use it in simple cases. Frequently you will want to have full artistic control on what parts of the image to crop; this power is only offered by the crop & rotate module [1]. We suggest to use either the automatic or the manual cropping option; combining both may lead to surprising results as soon as you change any parameters.
 
 The “lens model” option controls some details of the underlying warping algorithm, namely the level of image compression perpendicular to the lens shift direction.
 
@@ -162,12 +162,8 @@ Clicking on the “fit both” icon (the rightmost in the automatic fit row) now
 
 A GUI enhancement suggested by Aldric has been added which allows to mass-select or deselect lines (changing their color from green/blue to red/yellow, or vice versa). You press the shift button  and then draw a rectangular area on the image base. All lines within that area are being selected or deselected on button release. The left mouse button selects, the right mouse button deselects.
 
-[1] _[http://www.darktable.org/usermanual/ch03s04.html.php#basic_group](http://www.darktable.org/usermanual/ch03s04.html.php#basic_group)_
-
-[2] _[http://www.shiftn.de/](http://www.shiftn.de/)_
-
-[3] _[http://www.darktable.org/usermanual/ch03s04s04.html.php](http://www.darktable.org/usermanual/ch03s04s04.html.php)_
-
-[4] _[https://en.wikipedia.org/wiki/Perspective_control_lens](https://en.wikipedia.org/wiki/Perspective_control_lens)_
-
-[5] _[https://github.com/darktable-org/darktable](https://github.com/darktable-org/darktable)_
+* [1] [Usermanual for basic modules](/usermanual/ch03s04.html.php#basic_group)
+* [2] [http://www.shiftn.de/](http://www.shiftn.de/)
+* [3] [Usermanual for correction modules](/usermanual/ch03s04s04.html.php)
+* [4] [https://en.wikipedia.org/wiki/Perspective_control_lens](https://en.wikipedia.org/wiki/Perspective_control_lens)
+* [5] [https://github.com/darktable-org/darktable](https://github.com/darktable-org/darktable)

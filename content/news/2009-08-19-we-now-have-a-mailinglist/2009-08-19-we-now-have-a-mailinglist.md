@@ -8,4 +8,4 @@ title: we now have a mailinglist
 wordpress_lede: mailinglist.jpg
 wordpress_id: 202
 
-in the hope to start a small community and to avoid duplicate email traffic, i created this [mailing list](https://lists.sourceforge.net/lists/listinfo/darktable-devel). also note that there are the [forums](http://sourceforge.net/forum/forum.php?forum_id=938786).
+in the hope to start a small community and to avoid duplicate email traffic, i created this [mailing list](https://lists.sourceforge.net/lists/listinfo/darktable-devel). also note that there are the [forums](https://sourceforge.net/forum/forum.php?forum_id=938786).

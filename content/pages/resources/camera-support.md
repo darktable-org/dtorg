@@ -1,6 +1,6 @@
 Title: camera support
 Slug: resources/camera-support/
-Date: 2017-09-21T14:00:56-06:00 
+Date: 2017-09-21T14:00:56-06:00
 author: pedrocr
 link: http://www.darktable.org/resources/camera-support/
 wordpress_id: 3676
@@ -21,7 +21,7 @@ The table has the following fields:
 
 There currently are [![count of unique cameras in the archive](https://raw.pixls.us/button-cameras.svg)](https://raw.pixls.us/) unique cameras, [![total count of unique samples](https://raw.pixls.us/button-samples.svg)](https://raw.pixls.us/) unique samples.
 
-### **[Please contribute samples!](https://raw.pixls.us/)**
+### [Please contribute samples!](https://raw.pixls.us/)
 
   * **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the temperature module
 
@@ -32,23 +32,23 @@ There currently are [![count of unique cameras in the archive](https://raw.pixls
 <table markdown=1><tbody >
 <tr class="odd" >
   <th>
-  Camera  
+  Camera
   534 (100%)
   </th>
   <th>
-  Raw Sample  
+  Raw Sample
   397 (74%)
   </th>
   <th>
-  WB Presets  
+  WB Presets
   383 (71%)
   </th>
   <th>
-  Noise Profile  
+  Noise Profile
   245 (45%)
   </th>
   <th>
-  Custom Matrix  
+  Custom Matrix
   116 (21%)
   </th>
 </tr>

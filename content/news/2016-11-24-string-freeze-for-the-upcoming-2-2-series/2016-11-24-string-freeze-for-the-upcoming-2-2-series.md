@@ -23,4 +23,4 @@ As a quick reminder, these are the steps to update the translation if you are wo
     <edit language_code.po>
 
 
-If you don't have a build environment set up to compile darktable you can also use [this .pot file](https://darktable.org/files/darktable_2.2.0.pot).
+If you don't have a build environment set up to compile darktable you can also use [this .pot file](/files/darktable_2.2.0.pot).

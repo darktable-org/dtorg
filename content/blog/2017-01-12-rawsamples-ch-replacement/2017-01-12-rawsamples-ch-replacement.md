@@ -9,25 +9,17 @@ lede: snowice-andabata.jpg
 wordpress_id: 4694
 tags: announcement, blog, community, '@andabata', '@lebedevri', '@pixlsus', foss, photography, rawsamples
 
-[Rawsamples.ch](http://rawsamples.ch) is a website with the goal to:
-
-
+[Rawsamples.ch](https://rawsamples.ch) is a website with the goal to:
 
 > …provide RAW-Files of nearly all available Digitalcameras mainly to software-developers.  [sic]
 
-
-
 It was created by Jakob Rohrbach and had been running since March 2007, having amassed over 360 raw files in that time from various manufacturers and cameras. Unfortunately, back in 2016 the site was hit with an SQL-injection that ended up corrupting the database for the Joomla install that hosted the site. To compound the pain, there were no database backups … :(
 
-Luckily, [Kees Guequierre](https://www.flickr.com/photos/andabata) ([dtstyle.net](https://dtstyle.net/)) decided to build a site where contributors could upload sample raw files from their cameras for everyone to use - particularly developers. We downloaded the archive of the raw files kept at rawsamples.ch to include with files that we already had. The biggest difference between the files from [rawsamples.ch](http://rawsamples.ch) and [raw.pixls.us](https://raw.pixls.us) is the licensing. The existing files, and the preference for any new contributions, are licensed as [Creative Commons Zero – Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) (as opposed to [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
+Luckily, [Kees Guequierre](https://www.flickr.com/photos/andabata) ([dtstyle.net](https://dtstyle.net/)) decided to build a site where contributors could upload sample raw files from their cameras for everyone to use&nbsp;– particularly developers. We downloaded the archive of the raw files kept at rawsamples.ch to include with files that we already had. The biggest difference between the files from [rawsamples.ch](https://rawsamples.ch) and [raw.pixls.us](https://raw.pixls.us) is the licensing. The existing files, and the preference for any new contributions, are licensed as [Creative Commons Zero&nbsp;– Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) (as opposed to [CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
 
 After some hacking, with input and guidance from darktable developer [Roman Lebedev](https://github.com/LebedevRI), the site was finally ready.
 
-
-
 ## raw.pixls.us
-
-
 
 The site is now live at [https://raw.pixls.us](https://raw.pixls.us).
 
@@ -37,22 +29,17 @@ In addition to browsing the archive, it would be fantastic if you're able to sup
 
 **We are looking for shots that are:**
 
-
-
-
-  * Lens mounted on the camera
-  * Lens cap off
-  * In focus
-  * With normal exposure, not underexposed and not overexposed
-  * Landscape orientation
-  * Licensed under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
+* Lens mounted on the camera
+* Lens cap off
+* In focus
+* With normal exposure, not underexposed and not overexposed
+* Landscape orientation
+* Licensed under the [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **We are _not_ looking for:**
 
-
-  * Series of images with different ISO, aperture, shutter, wb, or lighting  
-(Even if it's a shot of a color target)
-  * DNG files created with Adobe DNG Converter
+* Series of images with different ISO, aperture, shutter, wb, or lighting (Even if it's a shot of a color target)
+* DNG files created with Adobe DNG Converter
 
 Please take a moment and see if you can provide samples to help the developers!
 

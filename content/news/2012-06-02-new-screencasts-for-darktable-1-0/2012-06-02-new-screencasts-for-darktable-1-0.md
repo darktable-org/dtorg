@@ -13,8 +13,8 @@ Pascal recorded some new screencasts using the latest stable version of darktabl
 
 The first is (one can start speaking of "as usual") dedicated to the changes and new features of darktable 1.0, giving an overview over improvements, new UI elements and workflow changes.
 
-The second one is a bit more general. Pascal elaborates on RAW file archiving and backups, about the pros and cons of DNG and Vendor formats and whether you want to embed your metadata or not.
+The second one is a bit more general. Pascal elaborates on raw file archiving and backups, about the pros and cons of DNG and Vendor formats and whether you want to embed your metadata or not.
 
-Find them either on our [resource page](http://www.darktable.org/resources/#screencasts) or on [Pascal's website](http://blog.pcode.nl/2012/06/02/darktable-1-0-screencast-library-addition/).
+Find them either on our [resource page](/resources/#screencast-tutorials) or on [Pascal's website](https://encrypted.pcode.nl/blog/2012/06/02/darktable-1-0-screencast-library-addition/).
 
 Enjoy watching them, thanks to Pascal!

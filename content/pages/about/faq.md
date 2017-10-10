@@ -8,7 +8,7 @@ wordpress_id: 1536
 
 * **What's the best way to contact the developers/report bugs?**
 
-    For fast discussions and short questions it's best to visit us in IRC (on Freenode, channel #darktable), especially in the Western European evening hours. If you don't want to use IRC, don't know what it is or want something less transient you can use our mailing lists. See our [contact page](http://www.darktable.org/contact/).
+    For fast discussions and short questions it's best to visit us in IRC (on Freenode, channel #darktable), especially in the Western European evening hours. If you don't want to use IRC, don't know what it is or want something less transient you can use our mailing lists. See our [contact page]({filename}/pages/contact.md).
 
 * **How do I move/rename/... files on my hard disk?**
 
@@ -36,11 +36,11 @@ wordpress_id: 1536
 
 * **What about a Windows port?**
 
-    Please refer to [this blog post](http://www.darktable.org/2015/07/why-dont-you-provide-a-windows-build/) for a detailed explanation of the status of Windows builds.
+    Please refer to [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) for a detailed explanation of the status of Windows builds.
 
 * **darktable crashes with SIGILL. What's up?**
 
-    Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than ten years after the feature's introducion, then it really is time for you to upgrade. Please see [the Wikipedia page](http://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
+    Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than ten years after the feature's introducion, then it really is time for you to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
 
 * **How do I open images? I only see a white canvas.**
 
@@ -60,7 +60,7 @@ wordpress_id: 1536
 
 * **This confuses me. Is there a manual?**
 
-    Yes, [here](http://www.darktable.org/usermanual/index.html.php). There is also [a book](http://www.darktable.org/resources/#book) in finished PDF format or .zip file containing the Open Document source and image files.Pascal has created some [screencast tutorials](http://www.darktable.org/resources/#screencasts) that cover many fundamental use cases and descriptions of technical expressions.
+    Yes, [here](/usermanual/). There is also [a book]({filename}/pages/resources/resources.md#the-book) in finished PDF format or .zip file containing the Open Document source and image files.Pascal has created some [screencast tutorials]({filename}/pages/resources/resources.md#screencast-tutorials) that cover many fundamental use cases and descriptions of technical expressions.
 
 * **My auto-applied presets aren't enabled for pictures imported before upgrade to version 1.1 (or higher), what's happening?**
 
@@ -68,4 +68,4 @@ wordpress_id: 1536
 
 * **I attached and turned on my camera, but it doesn't show up in darktable, what's wrong?**
 
-    If the camera in question is supported by libgphoto2, then the most likely cause is that some other process is blocking the device. If you're using Linux, check that your desktop environment hasn't auto-mounted it. In case of OS X, there's PTPCamera daemon which starts for every attached camera, so you must kill it before you can use the camera in darktable. Either run "killall PTPCamera" or implement more automated solution like described at the bottom of this page: [http://valelab.ucsf.edu/~MM/MMwiki/index.php/GPhoto](http://valelab.ucsf.edu/~MM/MMwiki/index.php/GPhoto).
+    If the camera in question is supported by libgphoto2, then the most likely cause is that some other process is blocking the device. If you're using Linux, check that your desktop environment hasn't auto-mounted it. In case of OS X, there's PTPCamera daemon which starts for every attached camera, so you must kill it before you can use the camera in darktable. Either run "killall PTPCamera" or implement more automated solution like described at the bottom of this page: [https://micro-manager.org/wiki/GPhoto](https://micro-manager.org/wiki/GPhoto).

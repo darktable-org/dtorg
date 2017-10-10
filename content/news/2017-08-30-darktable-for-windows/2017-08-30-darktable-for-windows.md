@@ -14,6 +14,6 @@ Then two years ago there was yet [another post]({filename}/blog/2015-07-13-why-d
 
 Then Peter Budai came along. Like some people before he managed to compile darktable on Windows and offered us the patches he had to do, but other than what we had seen before he stuck around, helped fix bugs and was open to suggestions how to solve things in a better way. Eventually we became confident that the lack of Windows maintainership might be solved.
 
-To cut a long story short, we are extremely pleased – albeit wary – to announce a very first official pre-alpha development snapshot for 64 bit Windows. We know it's still buggy, but as a sign of goodwill and request for help in testing it we would like to ask you to give it a try. Please report useful bugs in our [bug tracker](https://redmine.darktable.org/projects/darktable/issues/new).
+To cut a long story short, we are extremely pleased&nbsp;– albeit wary&nbsp;– to announce a very first official pre-alpha development snapshot for 64 bit Windows. We know it's still buggy, but as a sign of goodwill and request for help in testing it we would like to ask you to give it a try. Please report useful bugs in our [bug tracker](https://redmine.darktable.org/projects/darktable/issues/new).
 
 You can find the link to the binary on the [pixls.us forum](https://discuss.pixls.us/t/darktable-for-windows/4966) (a great place btw., you should check it out).

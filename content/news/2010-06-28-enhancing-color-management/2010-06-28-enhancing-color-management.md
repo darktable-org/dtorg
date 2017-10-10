@@ -10,9 +10,6 @@ wordpress_id: 215
 
 still no release? doh! but there is now a nice, detailed doc about how to profile your camera for darktable to get rich and precise color rendition out of your images (ever been sad about the flat reds in your expensive 5D?)
 
-
-
-	
-  * read [how to contribute a color matrix!](http://blog.pcode.nl/2010/06/28/darktable-camera-color-profiling/)
+read [how to contribute a color matrix!](https://encrypted.pcode.nl/blog/2010/06/28/darktable-camera-color-profiling/)
 
 

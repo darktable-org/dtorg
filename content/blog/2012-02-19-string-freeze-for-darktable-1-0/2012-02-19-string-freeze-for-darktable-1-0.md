@@ -11,8 +11,8 @@ tags: announcement
 
 We are in string freeze for the master branch now. Translators might now update their translations for the upcoming release of
 
-**darktable 1.0**
+## darktable 1.0
 
 There will be tons of new features, stay tuned!
 
-If you're willing to help getting this out of the door soon you might want to install the development version and help out to track down some bugs. You can find an installation guide [here](http://www.darktable.org/install/#git) and some informations for contributing backtraces for bugs [here](http://www.darktable.org/development/).
+If you're willing to help getting this out of the door soon you might want to install the development version and help out to track down some bugs. You can find an installation guide [here]({filename}/pages/install.md#git-version) and some informations for contributing backtraces for bugs [here]({filename}/pages/development.md).

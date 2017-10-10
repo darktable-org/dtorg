@@ -16,4 +16,4 @@ On my [darktable-unstable](https://launchpad.net/~pmjdebruijn/+archive/ubuntu/da
 
 In general updates on my [darktable-unstable](https://launchpad.net/~pmjdebruijn/+archive/ubuntu/darktable-unstable) [PPA](https://en.wikipedia.org/wiki/Personal_Package_Archive) should be expected to be fairly erratic, completely depending on the number and significance of changes being made in [git master](https://github.com/darktable-org/darktable/commits/master). That said, I expect that it will probably average out at once a week or so.
 
-If you find any issues with these darktable release candidates please do report them to our [bug tracker](http://redmine.darktable.org/issues).
+If you find any issues with these darktable release candidates please do report them to our [bug tracker](https://redmine.darktable.org/issues).

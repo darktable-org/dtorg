@@ -15,4 +15,4 @@ At the moment this is still in heavy development and you have to compile darktab
 
 
 
-If you want to meet us and see stuff like this live you should come to [LGM in London](http://libregraphicsmeeting.org/2016/). If you can't go we'd like to ask you for a little donation to the [Pixls.us Pledgie](https://pledgie.com/campaigns/30905). The money collected will be used to pay our stay in London.
+If you want to meet us and see stuff like this live you should come to [LGM in London](https://libregraphicsmeeting.org/2016/). If you can't go we'd like to ask you for a little donation to the [Pixls.us Pledgie](https://pledgie.com/campaigns/30905). The money collected will be used to pay our stay in London.

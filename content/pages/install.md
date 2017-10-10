@@ -31,7 +31,7 @@ img.chooseos {
 </style>
 
 
-...or get the latest stable source package and build it yourself, look what to do if you are running Windows or get the hot new stuff from our git repository.
+...&nbsp;or get the latest stable source package and build it yourself, look what to do if you are running Windows or get the hot new stuff from our git repository.
 
 
 # Prerequisites
@@ -73,8 +73,8 @@ Fedora ships with darktable. A simple command should be enough.
 
 `# dnf install darktable`
 
-  * If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.0 Snapshot repository](http://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.0&package=darktable). Don't use this repository if you do time critical work with darktable!
-  * And lastly, there is is a repository for [nightly builds](http://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
+* If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.2 Snapshot repository](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.2&package=darktable). Don't use this repository if you do time critical work with darktable!
+* And lastly, there is is a repository for [nightly builds](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
 
 If you want to build darktable from the source on Fedora, here are the build dependencies:
 
@@ -86,9 +86,9 @@ If you want to build darktable from the source on Fedora, here are the build dep
 
 openSUSE ships with darktable. A simple `zypper install darktable` should be enough.
 
-  * If you want the latest stable version you can use [darktable from the Graphics Repository](http://software.opensuse.org/download.html?project=graphics&package=darktable).
-  * If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.0 Snapshot repository](http://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.0&package=darktable). Don't use this repository if you do time critical work with darktable!
-  * And lastly, there is is a repository for [nightly builds](http://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
+* If you want the latest stable version you can use [darktable from the Graphics Repository](https://software.opensuse.org/download.html?project=graphics&package=darktable).
+* If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.0 Snapshot repository](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.2&package=darktable). Don't use this repository if you do time critical work with darktable!
+* And lastly, there is is a repository for [nightly builds](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
 
 
 <h2 id='arch'>Arch Linux</h2>
@@ -96,8 +96,7 @@ openSUSE ships with darktable. A simple `zypper install darktable` should be eno
 
     $ pacman -S darktable
 
-  * thx to chressie for this, arch _is_ non-ancient :)
-
+* thx to chressie for this, arch _is_ non-ancient :)
 
 <h2 id='gentoo'>Funtoo/Gentoo Linux</h2>
 ![gentoo]({filename}/images/OS/gentoo.jpg)
@@ -109,11 +108,10 @@ darktable is in portage!
 $ darktable
 ```
 
-
 <h2 id='rhel'>RHEL 6 / SL 6 / Centos 6</h2>
 ![scientificlinux]({filename}/images/OS/scientificlinux.jpg)
 
-Only darktable-1.0.5 can be provided for these distributions due to restrictions on the Glib version available. Still, try it out, 1.0 has many nice features already and most of the hardware support has been ported back by Pascal - that's where the .5 comes from.
+Only darktable-1.0.5 can be provided for these distributions due to restrictions on the Glib version available. Still, try it out, 1.0 has many nice features already and most of the hardware support has been ported back by Pascal&nbsp;– that's where the .5 comes from.
 
   * install the linuxtech.repo config file if you don't have it already:
 
@@ -169,21 +167,21 @@ darktable can be installed just by running
 sudo apt-get install darktable
 ```
 
-A description on how to enable the backports repository can be found here: <http://backports.debian.org/Instructions/>
+A description on how to enable the backports repository can be found here: <https://backports.debian.org/Instructions/>
 
 
 <h2 id='solaris'>Solaris</h2>
 ![opensolaris]({filename}/images/OS/opensolaris.png)
 
-The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <http://www.jmcpdotcom.com/blog/category/darktable/>.
-He has both the [darktable packages](http://www.jmcpdotcom.com/Packages/) and a [dependency package](http://www.jmcpdotcom.com/Packages/dt-deps.p5p.gz) in case this is the first time you are installing darktable on your system.
+The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <https://www.jmcpdotcom.com/blog/category/darktable/>.
+He has both the [darktable packages](https://www.jmcpdotcom.com/Packages/) and a [dependency package](https://www.jmcpdotcom.com/Packages/dt-deps.p5p.gz) in case this is the first time you are installing darktable on your system.
 
 
 <h2 id='freebsd'>FreeBSD</h2>
 ![freebsd]({filename}/images/OS/freebsd.png)
 
 darktable is packaged and compiled for FreeBSD, the binary package can be found here:
-<http://ftp.freebsd.org/pub/FreeBSD/ports/packages/graphics/>.
+<https://ftp.freebsd.org/pub/FreeBSD/ports/packages/graphics/>.
 
 To install darktable on your system, run
 
@@ -193,15 +191,15 @@ and have fun.
 
 # Microsoft Windows
 
-  * Unfortunately the community of this commercial distro didn't natively build dt yet.
-  * Read [this blog post](http://www.darktable.org/2015/07/why-dont-you-provide-a-windows-build/) if you want to learn more about the reasons.
-  * As an alternative - give Linux a chance! Download and burn a live ISO of a Linux distribution, reboot and try darktable.
+  * Unfortunately there are no stable releases yet.
+  * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port and where to get a development build.
+  * As an alternative&nbsp;– give Linux a chance! Download and burn a live ISO of a Linux distribution, reboot and try darktable.
 
 
 # Current release from source
 ![leaves1]({filename}/images/OS/leaves1.jpg)
 
-* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.2.5) (recent version: darktable 2.2.5) – make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
+* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.2.5) (recent version: darktable 2.2.5)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.
 * Unpack:
 
@@ -231,7 +229,7 @@ $ darktable
     $ ln -s /opt/darktable/share/applications/darktable.desktop /usr/share/applications/darktable.desktop
     ```
 
-For a more complete set of instructions for different distributions have a look at [our Wiki](http://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
+For a more complete set of instructions for different distributions have a look at [our Wiki](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
 
 # git version
 ![fire]({filename}/images/OS/fire.jpg)

@@ -8,9 +8,9 @@ wordpress_id: 124
 # How to get in contact
 ![sun]({attach}sun.jpg)
 
-Use our mailing lists! Please subscribe instead of just sending mails to the lists - we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
+Use our mailing lists! Please subscribe instead of just sending mails to the lists&nbsp;– we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
 
-  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): bugs, ideas, patches, translations - all goes here. This is also the right place to report vulnerabilities. If you are interested in technical details, choose this list (can be about 30 mails per day). posts are made by subscribers only, subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
+  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): bugs, ideas, patches, translations&nbsp;– all goes here. This is also the right place to report vulnerabilities. If you are interested in technical details, choose this list (can be about 30 mails per day). posts are made by subscribers only, subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
   * [users mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): for all concerns of a darktable user: usage questions, experience reports... posts are made by subscribers only, subscribe via email to `darktable-user+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
   * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/): read-only, high traffic(!) `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
 
@@ -50,9 +50,9 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >developer / translator
 </td>
-<td >[homepage](http://www.ohloh.net/accounts/hean01/)
+<td >[homepage](https://www.openhub.net/accounts/hean01/)
 </td>
-<td >[gallery](http://www.flickr.com/photos/dinamic/)
+<td >[gallery](https://www.flickr.com/photos/dinamic/)
 </td>
 </tr>
 <tr class="odd" >
@@ -64,7 +64,7 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >project founder / developer
 </td>
-<td >[homepage](http://jo.dreggn.org/home/)
+<td >[homepage](https://jo.dreggn.org/home/)
 </td>
 <td >
 </td>
@@ -78,7 +78,7 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >developer / translator
 </td>
-<td >[homepage](http://houz.org/)
+<td >[homepage](https://houz.org/)
 </td>
 <td >
 </td>
@@ -92,9 +92,9 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >color management
 </td>
-<td >[homepage](http://blog.pcode.nl/)
+<td >[homepage](https://encrypted.pcode.nl/blog/)
 </td>
-<td >[gallery](http://photos.pcode.nl/)
+<td >[gallery](https://encrypted.pcode.nl/photos/)
 </td>
 </tr>
 <tr class="even" >
@@ -150,7 +150,7 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >
 </td>
-<td >[gallery](http://www.flickr.com/photos/jsogo)
+<td >[gallery](https://www.flickr.com/photos/jsogo)
 </td>
 </tr>
 <tr class="even" >
@@ -176,7 +176,7 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >Solaris package maintainer / miscellaneous
 </td>
-<td >[homepage](http://www.jmcpdotcom.com/blog)
+<td >[homepage](https://www.jmcpdotcom.com/blog)
 </td>
 <td >
 </td>
@@ -218,7 +218,7 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td >miscellaneous
 </td>
-<td >[homepage](http://www.tellefsen.net/)
+<td >[homepage](https://www.tellefsen.net/)
 </td>
 <td >
 </td>

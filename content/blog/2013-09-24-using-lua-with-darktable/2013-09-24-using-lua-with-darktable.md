@@ -27,7 +27,7 @@ The following tutorial will only work with the latest master branch and if Lua w
 
 When darktable starts it will run a single Lua script called _luarc_ within your configuration directory. This file probably doesn't exist, so create it and add the following lines in it:
 
-    
+
     dt = require "darktable"
     dt.print("Hello World!")
 
@@ -48,7 +48,7 @@ A common way to organize images is to store them all in subdirectories of a comm
 
 This time put the following lines in your _luarc_ file
 
-    
+
     dt = import "darktable"
     dt.storage.import("<<em>path to your directory></em>")
 
@@ -63,10 +63,10 @@ If it doesn't work, check any message printed by Lua on the console. This is whe
 
 Ok, this is nice but we can improve it a little. Writing the path in the script is not very flexible and it would be much better to be able to set the path in darktable's configuration menu. Let's do that.
 
-    
+
     dt = require "darktable"
     dt.preferences.register("myScript","load_directory","string","Image directory","A directory that will be automatically reloaded on startup","")
-    
+
     dt.database.import(dt.preferences.read("myScript","load_directory","string"))
 
 
@@ -76,19 +76,19 @@ _dt.preferences.register_ will add a new preference in the Lua tab of the prefer
 
 
 
-	
+
   * The first two parameters are a script name and the name of the preference. These two strings are invisible to the user and will uniquely identify the preference.
 
-	
+
   * The next parameter is the type of the preference. In our case it is a simple string, so we use _"string"_ here.
 
-	
+
   * The parameter after that is the text of the preference as it will appear in the preference menu.
 
-	
+
   * Then comes a tooltip that will be displayed when the user hovers over the text box.
 
-	
+
   * And last is the default value to report when someone attempts to read the preference and the user hasn't set it yet. It is also used to reset the preference when the user double-clicks on the preference label in the preference menu.
 
 
@@ -98,7 +98,7 @@ The default value for our preference is the empty string, and this is causing th
 
 Let's replace the line importing the directory with the following line:
 
-    
+
     pcall(dt.database.import,dt.preferences.read("myScript","load_directory","string"))
 
 
@@ -114,10 +114,10 @@ Another common request on the darktable mailing list is to have a way to select 
 
 First a little feature to make the darktable selection more handy
 
-    
+
     dt = require "darktable"
     local bounce_buffer = {}
-    
+
     local function callback()
         bounce_buffer = dt.gui.selection(bounce_buffer)
     end
@@ -140,10 +140,10 @@ Now that the code is in place, you will see an entry for this action in the _lu
 
 That's nice, but let's try something different. When I use darktable, each color label has a precise meaning for me and I tend to want to quickly select all images with a given color label. The following code allows me to define a shortcut to do just that.
 
-    
+
     dt = import "darktable"
     table = import "table"
-    
+
     local function callback()
        local selection = {}
        for _,image in ipairs(dt.database) do
@@ -153,7 +153,7 @@ That's nice, but let's try something different. When I use darktable, each color
        end
        dt.gui.selection(selection)
     end
-    
+
     dt.register_event("shortcut",callback,"select all red images")
 
 
@@ -169,7 +169,7 @@ We will use GraphicsMagick to create a mosaic image out of our current selection
 
 GraphicsMagick has an all-purpose command line tool that has the following (simplified) syntax
 
-    
+
     gm montage <input files…> output_file
 
 
@@ -177,7 +177,7 @@ We will integrate this into the existing export user interface so we can use dar
 
 The following code will do that for us:
 
-    
+
     local function merge_images(storage,image_table)
         dt.print_error("Will try to stitch now")
         command = "gm montage "
@@ -186,10 +186,10 @@ The following code will do that for us:
         end
         command = command..dt.configuration.tmp_dir.."/darktable_export.png"
         os.execute(command)
-    
+
         dt.print("Stitching saved to "..dt.configuration.tmp_dir.."/darktable_export.png")
     end
-    
+
     dt.register_storage("mosaic","mosaic generator",nil,merge_images)
 
 
@@ -202,16 +202,16 @@ _dt.register_storage_ will add a new storage implemented in Lua. Storages are th
 
 
 
-	
+
   * The first parameter is a unique name for the storage.
 
-	
+
   * The second parameter is the name as it will appear inside darktable.
 
-	
+
   * The third parameter is a function to be called once for each image. We don't use it here so we set it to _nil_.
 
-	
+
   * The last parameter is a function to be called once all images have been exported. This is where we do the real job.
 
 
@@ -225,6 +225,6 @@ Simple isn't it?
 
 We have only scratched the surface of the Lua language and what can be done with it in darktable, but I hope this article has given you some ideas of new stuff to do using this nice new feature.
 
-If you are interested, you can find the Lua reference manual [here](http://www.lua.org/manual/5.2/manual.html).
+If you are interested, you can find the Lua reference manual [here](https://www.lua.org/manual/5.2/manual.html).
 
-darktable's Lua interface is documented [here](http://darktable.org/redmine/projects/darktable/wiki/LuaAPI).
+darktable's Lua interface is documented [here](https://darktable.org/redmine/projects/darktable/wiki/LuaAPI).

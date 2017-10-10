@@ -9,7 +9,7 @@ wordpress_lede: denoise_teaser.jpg
 wordpress_id: 2368
 tags: blog, development, upcoming feature
 
-# .. and how to get rid of it.
+# ... and how to get rid of it.
 
 
 **[update 20/12/2012: ‘how to profile your camera’ includes instructions with the new gen-profile script]**
@@ -413,4 +413,4 @@ lower would be better for both axes, but note that lower gaussian noise level mi
 
 note how the four versions of the eos 400d gather around almost the same spot. three of those have been taken at almost the same time, and one of them comes from a different day with different lighting. this shows that the method can produce consistent results (and that you might gain some accuracy by averaging a few runs). it would now be interesting to see how far away from that cluster a different device of the same type is, to verify using someone else’s presets is a good idea.
 
-someone noted that, at times, noise still stays in your image, visible as large color blotches (not fine grained anymore). these can be alleviated by the equalizer, using something [similar to this style](http://darktable.org/redmine/attachments/download/351/suppress%20color%20blotches.dtstyle).
+someone noted that, at times, noise still stays in your image, visible as large color blotches (not fine grained anymore). these can be alleviated by the equalizer, using something [similar to this style](https://darktable.org/redmine/attachments/download/351/suppress%20color%20blotches.dtstyle).

@@ -9,9 +9,9 @@ wordpress_lede: lmaskdtyellow.png
 wordpress_id: 3473
 tags: blog
 
-Pat David has a great [blog](http://blog.patdavid.net/) on photoediting in [GIMP](http://www.gimp.org/). I recently read his [post](http://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) on luminosity masks and was fairly impressed. Can darktable do something similar? Yes&nbsp;– they're a special case of [parametric masks](http://www.darktable.org/usermanual/ch03s02s08.html.php).
+Pat David has a great [blog](https://blog.patdavid.net/) on photoediting in [GIMP](https://www.gimp.org/). I recently read his [post](https://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) on luminosity masks and was fairly impressed. Can darktable do something similar? Yes&nbsp;– they're a special case of [parametric masks](/usermanual/ch03s02s08.html.php).
 
-I thought I'd post a quick tutorial on luminosity masks using parametric masks. First, I strongly suggest you read Pat David's [post](http://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) and thoroughly understand what's going on.
+I thought I'd post a quick tutorial on luminosity masks using parametric masks. First, I strongly suggest you read Pat David's [post](https://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) and thoroughly understand what's going on.
 
 A quick and simplistic explanation follows: Normally, if we make a selection and, say, adjust the brightness dramatically in that selection, we get a sharp (and ugly) transition near the edge of the selection:
 
@@ -66,7 +66,7 @@ The resulting mask looks like:
 
 @![lmaskdtyellow](lmaskdtyellow.png)
 
-What did I do here? To fully understand it, you should read the [parametric masks](http://www.darktable.org/usermanual/ch03s02s08.html.php) page in the darktable manual. By sliding the upper left triangle all the way to right, I told it to _fully_ select the brightest pixels, _not_ select the darkest pixels, and do a linear interpolation for all the intermediate pixels (so a 50% bright pixel is "half" selected).
+What did I do here? To fully understand it, you should read the [parametric masks](/usermanual/ch03s02s08.html.php) page in the darktable manual. By sliding the upper left triangle all the way to right, I told it to _fully_ select the brightest pixels, _not_ select the darkest pixels, and do a linear interpolation for all the intermediate pixels (so a 50% bright pixel is "half" selected).
 
 Another way of looking at it: Apply the module to all the pixels, but apply an opacity on each pixel depending on its luminosity.
 
@@ -147,15 +147,15 @@ If we wanted DDD, we'd move the lower triangle two thirds of the way instead of 
 
 Why did this work? Let's jump into the math:
 
-Let the luminosity of a pixel be denoted by [latex]lp[/latex]. A value of 1 means fully bright, 0 means fully dark, and 0.5 means 50% bright. In the L mask, [latex]lp[/latex] gives the percentage selection directly (1 means fully selected, 0.5 means half selected, etc).
+Let the luminosity of a pixel be denoted by $lp$. A value of 1 means fully bright, 0 means fully dark, and 0.5 means 50% bright. In the L mask, $lp$ gives the percentage selection directly (1 means fully selected, 0.5 means half selected, etc).
 
-To get the D mask, we select the whole image (which means each pixel is _fully_ selected), and subtract the luminosity from it. Thus, in the D mask, the "selectedness" is [latex]1-lp[/latex]. So if [latex]lp[/latex] was very bright (close to 1), it is now barely selected, as [latex]1-lp[/latex] will be a small number close to 0. Similarly, if it was originally very dark (close to 0), [latex]1-lp[/latex] is now close to 1 and it is almost fully selected.
+To get the D mask, we select the whole image (which means each pixel is _fully_ selected), and subtract the luminosity from it. Thus, in the D mask, the "selectedness" is $1-lp$. So if $lp$ was very bright (close to 1), it is now barely selected, as $1-lp$ will be a small number close to 0. Similarly, if it was originally very dark (close to 0), $1-lp$ is now close to 1 and it is almost fully selected.
 
 Does my darktable D mask translate to the same thing? Yes, as I believe darktable does a linear interpolation.
 
-What about the DD mask? Pat obtained it by subtracting the L channel from the D channel. In terms of our equations, this is just [latex]1-2lp[/latex]. Note that if [latex]lp \geq 0.5[/latex], (greater than 50% brightness), then [latex]1-2lp \leq 0[/latex], which means it is not selected at all. Only pixels less than 50% brightness are selected in this mask.
+What about the DD mask? Pat obtained it by subtracting the L channel from the D channel. In terms of our equations, this is just $1-2lp$. Note that if $lp \geq 0.5$, (greater than 50% brightness), then $1-2lp \leq 0$, which means it is not selected at all. Only pixels less than 50% brightness are selected in this mask.
 
-Again, my darktable DD mask translates to the same mask, as I cut it off at 0.5. Since darktable uses linear interpolation, the slope from 0.5 to 0 will be double the slope I had in D. Hence, the factor of 2 in [latex]1-2lp[/latex].
+Again, my darktable DD mask translates to the same mask, as I cut it off at 0.5. Since darktable uses linear interpolation, the slope from 0.5 to 0 will be double the slope I had in D. Hence, the factor of 2 in $1-2lp$.
 
 I'm assuming the M mask translates as well but I'm not 100% sure what the algorithm GIMP uses to perform intersection.
 

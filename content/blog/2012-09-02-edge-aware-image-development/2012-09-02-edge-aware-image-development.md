@@ -11,7 +11,7 @@ tags: blog, development, upcoming feature
 
 in an ideal world, an image is piecewise smooth. it has soft gradients, some detail and edges. in particular there's no noise and the edges are sharp. given these assumptions, you can do a lot of cool things to your pictures, using techniques like frequency space editing, wavelets, or local histograms.
 
-darktable's [equalizer module](http://www.darktable.org/2011/11/darktable-and-research/) demonstrates some of this, using the wavelet approach. you can use it to sharpen and denoise, enhance or attenuate certain frequencies in your image, while keeping the edges intact.
+darktable's [equalizer module]({filename}/blog/2011-11-05-darktable-and-research/2011-11-05-darktable-and-research.md) demonstrates some of this, using the wavelet approach. you can use it to sharpen and denoise, enhance or attenuate certain frequencies in your image, while keeping the edges intact.
 
 today's blog post is about a different technique which does similar things, and i'll demonstrate a few usecases in our new pipeline.
 
@@ -51,21 +51,17 @@ this problem has been described and solved automatically by [2], and our equaliz
 
 our implementation of the 3d unnormalized bilateral grid is straight forward, not particularly optimized and very fast. especially for large sigma the number of grid points is very low and thus the blur step doesn't have a lot of work to do.
 
-the only difference to a regular bilateral grid is the third blur step, which blurs along the dimension of brightness. instead of blurring it with a gaussian, a kernel that looks very similar to the derivative of a gaussian is used. this leads to what is better described in [3], that the effect of the filter is toned down at the edges instead of being normalized to a weight of 1.0, leading in a slightly uninformed result. more precisely, take the bilateral filter [latex]B_p[/latex] at pixel p:
+the only difference to a regular bilateral grid is the third blur step, which blurs along the dimension of brightness. instead of blurring it with a gaussian, a kernel that looks very similar to the derivative of a gaussian is used. this leads to what is better described in [3], that the effect of the filter is toned down at the edges instead of being normalized to a weight of 1.0, leading in a slightly uninformed result. more precisely, take the bilateral filter $B_p$ at pixel p:
 
-[latex]
-B_p = \frac{1}{W_p} \sum_q I_q G_{\sigma_r}(|| I_q - I_p ||) G_{\sigma_s}(||q-p||)
-[/latex]
-[latex]
- \mbox{ with } W_p = \sum_q G_{\sigma_r}(|| I_q - I_p ||) G_{\sigma_s}(||q-p||),
-[/latex]
+$$B_p = \frac{1}{W_p} \sum_q I_q G_{\sigma_r}(|| I_q - I_p ||) G_{\sigma_s}(||q-p||)$$
+
+$$\mbox{ with } W_p = \sum_q G_{\sigma_r}(|| I_q - I_p ||) G_{\sigma_s}(||q-p||),$$
 
 and the unnormalized variant:
-[latex]
-B'_p = I_p + \sum_q (I_q-I_p) G_{\sigma_r}(|| I_q - I_p ||) G_{\sigma_s}(||q-p||).
-[/latex]
 
-pulling [latex]I_p[/latex] out of the sum is just a no-op. the interesting part is leaving away the division by the weight. for small values of the two gaussians, this results in a very low magnitude of the sum overall, effectively leaving the input image [latex]I_p[/latex] unchanged. this happens near edges, where only half the neighbourhood is considered close by with respect to the range sigma. the awesome side effect is that we don't have to compute [latex]W_p[/latex].
+$$B'_p = I_p + \sum_q (I_q-I_p) G_{\sigma_r}(|| I_q - I_p ||) G_{\sigma_s}(||q-p||).$$
+
+pulling $I_p$ out of the sum is just a no-op. the interesting part is leaving away the division by the weight. for small values of the two gaussians, this results in a very low magnitude of the sum overall, effectively leaving the input image $I_p$ unchanged. this happens near edges, where only half the neighbourhood is considered close by with respect to the range sigma. the awesome side effect is that we don't have to compute $W_p$.
 
 during the first phase, splatting, we need to rasterize the 3d points in the input image into the downsampled grid. this turns out to be a synchronization problem when using a lot of threads (on the gpu). this still results in underwhelming performance after some shared memory tricks.
 our opencl implementation thus detects the gpu at compile time and uses inline ptx assembly for nvidia's floating point atomics in global memory. as a reference for all the poor guys who need the same instruction in opencl and don't feel like digging through the manuals, here it is:
@@ -104,7 +100,7 @@ this example has been treated with the `filmic response curve' and lost a lot of
 
 ## shadows/highlights
 
-[this module](http://www.darktable.org/2012/02/shadow-recovery-revisited/) makes use of a lowpass filter to achieve a consistent shadow recovery operation. on high contrast edges, it can suffer from halos, so it now has the option to switch from pure lowpass (gaussian) to edge aware (bilateral filter). the difference is illustrated in the following three pictures (original, gaussian, bilateral):
+[this module]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md) makes use of a lowpass filter to achieve a consistent shadow recovery operation. on high contrast edges, it can suffer from halos, so it now has the option to switch from pure lowpass (gaussian) to edge aware (bilateral filter). the difference is illustrated in the following three pictures (original, gaussian, bilateral):
 
 @![halos_0001_05](halos_0001_05.jpg)
 
@@ -131,10 +127,7 @@ there is the possibility of a standalone bilateral local contrast tool with a re
 
 # references
 
-[0] Real-Time Edge-Aware Image Processing with the Bilateral Grid. Jiawen Chen, Sylvain Paris, Frédo Durand, 2007.
-
-[1] Fast High-Dimensional Filtering Using the Permutohedral Lattice. Andrew Adams, Jongmin Baek, Abe Davis. 2010.
-
-[2] Smoothed Local Histogram Filters. Michael Kass, Justin Solomon. 2010.
-
-[3] Fast and Robust Pyramid-based Image Processing. Mathieu Aubry, Sylvain Paris, Samuel Hasinoff, Jan Jautz, Frédo Durand. 2011.
+* [0] Real-Time Edge-Aware Image Processing with the Bilateral Grid. Jiawen Chen, Sylvain Paris, Frédo Durand, 2007.
+* [1] Fast High-Dimensional Filtering Using the Permutohedral Lattice. Andrew Adams, Jongmin Baek, Abe Davis. 2010.
+* [2] Smoothed Local Histogram Filters. Michael Kass, Justin Solomon. 2010.
+* [3] Fast and Robust Pyramid-based Image Processing. Mathieu Aubry, Sylvain Paris, Samuel Hasinoff, Jan Jautz, Frédo Durand. 2011.

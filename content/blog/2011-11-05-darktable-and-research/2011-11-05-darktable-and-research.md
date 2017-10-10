@@ -105,7 +105,7 @@ another useful hint: the scrollwheel works like it does in blender's proportiona
 
 * **[dsh10]** holger dammertz, daniel sewtz, johannes hanika, hendrik lensch,
 
-    [edge-avoiding a-trous wavelet transform for fast global illumination filtering.](http://www.uni-ulm.de/in/mi/graphics/atrous-filter.html)
+    [edge-avoiding a-trous wavelet transform for fast global illumination filtering.](https://www.uni-ulm.de/in/mi/graphics/atrous-filter.html)
 
     high performance graphics 2010.
 

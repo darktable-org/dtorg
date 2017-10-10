@@ -9,7 +9,7 @@ wordpress_lede: fibonacci.jpg
 wordpress_id: 1230
 tags: development
 
-disclaimer: this is only to tease you and will not make it into the next release, but the one after..
+disclaimer: this is only to tease you and will not make it into the next release, but the one after ...
 
 when reading gui-guidelines, most of them seem to be too general, or too specific for a certain kind of programming environment (gnome and gtk, qt, etc).
 

@@ -467,16 +467,96 @@ pre > code {
     padding: .2rem .5rem;
 }
 
-/* the tipue search box in the top */
+
+/* the tipue search box in the top 
+ * -------------------------------*/
 #menu li form {
   display: inline;
 }
 
-.searchbox {
-  padding: 4px 10px 4px 28px !important;
-  background: url(/theme/images/search.png) no-repeat scroll 5px 4px transparent;
-  background-color: #eee9 !important; /* is alpha in there widely supported? */
+#tipue_search_input::placeholder {
+    color: white;
 }
-.searchbox:focus {
-  background-color: #fff !important;
+#tipue_search_input:focus::placeholder {
+    color: #666;
+}
+#tipue_search_input {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    border-radius: 0;
+    color:white;
+    height: auto;
+}
+#tipue_search_input:focus {
+    border-bottom: solid 1px white;
+    width: 18rem;
+    padding-left: 0.2rem;
+    font-size: 1.5rem;
+    height: auto;
+}
+.page.search {
+    margin-top: 4rem;
+}
+ 
+.page.search #searchform {
+    text-align: right;
+}
+.page.search #tipue_search_input {
+    border-bottom: solid 1px white;
+    width: 18rem;
+    padding-left: 0.2rem;
+    font-size: 1.5rem;
+    height: auto;
+    width: 90%;
+    color: #1EAEDB;
+}
+@media (min-width: 750px){
+    .page.search #tipue_search_input {
+        width: 50%;
+    }
+}
+
+div#tipue_search_results_count {
+    font-size: 0.8rem;
+}
+div#tipue_search_results_count:before {
+    content: "Found ";
+}
+.tipue_search_content_title a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.tipue_search_content_url {
+    font-size: small;
+}
+.tipue_search_content_text {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+div#tipue_search_foot {
+    text-align: center;
+}
+ul#tipue_search_foot_boxes {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+#tipue_search_foot_boxes li {
+    display: inline;
+    border: solid 1px gray;
+    margin: 0 0.1rem;
+}
+#tipue_search_foot_boxes li a, li.current {
+    cursor: pointer;
+    min-width: 50px;
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+}
+li.current {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
 }

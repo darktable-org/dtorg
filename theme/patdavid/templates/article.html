@@ -14,7 +14,7 @@
         <meta itemprop="name" content="{{ article.title |striptags|lower }}" >
         <meta name="twitter:title" content="{{ article.title |striptags|lower }}" >
         <meta property="og:title" content="{{ article.title |striptags|lower }}" >
-		<meta itemprop="headline" content="{{ article.title |striptags|lower }}" >
+        <meta itemprop="headline" content="{{ article.title |striptags|lower }}" >
 
         <meta property="og:type" content="article">
         <meta property="og:site_name" content="darktable.org">
@@ -30,7 +30,7 @@
         {% endif %}
 
         {% if article.lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}"> 
+        <meta itemprop="image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}">
         <meta property="og:image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}">
         <meta name="twitter:image" content="{{ SITEURL }}/{{ article.url }}{{ article.lede }}">
         {% elif article.wordpress_lede %}

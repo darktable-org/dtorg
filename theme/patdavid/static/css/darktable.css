@@ -1,5 +1,5 @@
-/* Initial stuff * 
- * ------------- */ 
+/* Initial stuff *
+ * ------------- */
 
 html {
     font: 100%/1.6 "Open Sans", sans-serif;
@@ -465,4 +465,18 @@ pre > code {
     margin: 0;
     white-space: pre-wrap;
     padding: .2rem .5rem;
+}
+
+/* the tipue search box in the top */
+#menu li form {
+  display: inline;
+}
+
+.searchbox {
+  padding: 4px 10px 4px 28px !important;
+  background: url(/theme/images/search.png) no-repeat scroll 5px 4px transparent;
+  background-color: #eee9 !important; /* is alpha in there widely supported? */
+}
+.searchbox:focus {
+  background-color: #fff !important;
 }

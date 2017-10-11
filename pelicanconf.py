@@ -41,7 +41,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = False
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_links']
+PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_links', 'tipue_search']
 
 THUMBNAIL_SIZE = 768
 
@@ -88,7 +88,7 @@ MENUITEMS = (
         ('Blog', '/blog/')
     )
 
-DIRECT_TEMPLATES = ['categories', 'tags']
+DIRECT_TEMPLATES = ['categories', 'tags', 'search']
 PAGINATED_DIRECT_TEMPLATES = ['index', 'category', 'tag']
 
 

@@ -489,6 +489,7 @@ pre > code {
     border-radius: 0;
     color:white;
     height: auto;
+    transition: 0.3s width ease;
 }
 #tipue_search_input:focus {
     border-bottom: solid 1px white;

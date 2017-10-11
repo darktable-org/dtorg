@@ -490,6 +490,13 @@ pre > code {
     color:white;
     height: auto;
     transition: 0.3s width ease;
+    /* below is for houz
+     * fixes the "click on the icon"
+     * to display the searchbar thing */
+    width: 4.5rem;
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+    cursor: pointer;
 }
 #tipue_search_input:focus {
     border-bottom: solid 1px white;
@@ -497,6 +504,10 @@ pre > code {
     padding-left: 0.2rem;
     font-size: 1.5rem;
     height: auto;
+    /* below if for houz
+     * fixes the neg margin stuff :) */
+    margin-left: 0;
+    cursor: text;
 }
 .page.search {
     margin-top: 4rem;

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2016/09/darktable-2-0-6-released/
 slug: darktable-2-0-6-released
 title: darktable 2.0.6 released
-wordpress_lede: spider.jpg
+lede: spider_wide.jpg
 wordpress_id: 4226
 tags: announcement, darktable release
 

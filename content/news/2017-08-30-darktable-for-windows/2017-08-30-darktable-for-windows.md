@@ -5,6 +5,7 @@ link: http://www.darktable.org/2017/08/darktable-for-windows/
 slug: darktable-for-windows
 title: darktable for Windows
 lede: horse_in_stable_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 4788
 tags: announcement, darktable release
 

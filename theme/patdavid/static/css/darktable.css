@@ -124,6 +124,23 @@ section.lede.default {
     margin-top: 100px;
 }
 
+section.lede {
+    position: relative;
+}
+
+.lede-author {
+    bottom: 0.5rem;
+    right: 1rem;
+    position: absolute;
+    font-style: italic;
+    color: #f0f; /* TODO: make this visible while not being annoying :-) */
+}
+
+.lede-author a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Headings, 1.25:1 ratio
  * ----------------------*/
 h1 { font-size: 3.052rem; }

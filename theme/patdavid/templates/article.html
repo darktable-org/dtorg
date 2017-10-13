@@ -80,6 +80,9 @@
     {% if article.lede %}
     <section class='lede'>
         <img class='lede-img' src='{{ article.lede }}' alt='darktable article lede image'>
+        {% if article.lede_author %}
+          <div class="lede-author">{{ article.lede_author }}</div>
+        {% endif %}
     </section>
     {% else %}
     <section class='lede default'>

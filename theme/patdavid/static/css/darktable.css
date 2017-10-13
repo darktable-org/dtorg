@@ -392,7 +392,6 @@ blockquote {
     padding-right: 0.5rem;
 }
 .footer .badge-text {
-    float: left;
     min-width: 290px;
     margin-bottom: 1.5rem;
 }

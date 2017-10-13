@@ -468,7 +468,7 @@ pre > code {
 }
 
 
-/* the tipue search box in the top 
+/* the tipue search box in the top
  * -------------------------------*/
 #menu li form {
   display: inline;
@@ -509,10 +509,14 @@ pre > code {
     margin-left: 0;
     cursor: text;
 }
+.expanded_searchbox {
+  margin-left: 0 !important;
+  padding-left: 0.2rem !important;
+}
 .page.search {
     margin-top: 4rem;
 }
- 
+
 .page.search #searchform {
     text-align: right;
 }

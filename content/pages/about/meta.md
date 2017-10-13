@@ -77,3 +77,7 @@ In this case I have also set a `max-width: 50%;` on the `<figure>` element if yo
 If it gets too big, it's awkward to read the remaining text, and is best to just let it be a block-level element.
 The rest of this paragraph is filler to demonstrate the float better.
 Bacon ipsum dolor amet chicken porchetta cow short loin drumstick, capicola jerky pancetta strip steak kielbasa brisket tri-tip tail. Tenderloin ham hock shoulder prosciutto andouille picanha pork loin cow meatloaf leberkas jowl spare ribs strip steak porchetta landjaeger. Ham hock prosciutto cupim sausage, ribeye t-bone short ribs kielbasa pork chop drumstick pork loin shoulder andouille spare ribs jowl. Pork belly bacon short ribs, frankfurter tri-tip swine rump tail.
+
+## Lede images
+
+The old blog had ledes of size 200x100. The new one uses the aspect ratio 2.39:1 and prefers an image size of 2048x857. There is a [list of old ledes](/small_ledes.html) that we still need a big and wide version for. If you provided images for the old website it would be awesome if you could look through the list, check if any are from you and if you have them in high res, cropped to the required format. If you know that some image is from you but don't have the original any longer or prefer to not upload a high res version licensed CC-BY-SA then please tell us so we can pick some other image as a replacement.

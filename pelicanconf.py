@@ -88,7 +88,7 @@ MENUITEMS = (
         ('Blog', '/blog/')
     )
 
-DIRECT_TEMPLATES = ['categories', 'tags', 'search']
+DIRECT_TEMPLATES = ['categories', 'tags', 'search', 'small_ledes']
 PAGINATED_DIRECT_TEMPLATES = ['index', 'category', 'tag']
 
 

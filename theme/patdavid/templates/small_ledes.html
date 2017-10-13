@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title itemprop='name'>small ledes | {{ SITENAME }}</title>
+{% endblock title %}
+
+{% block header %}
+    <section class='lede'>
+        {# don't forget to change this above if you change it here #}
+        {# ie: in the metadata/opengraph stuff #}
+        <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-about.jpg'>
+    </section>
+{% endblock header %}
+
+{% block content %}
+
+    <section class='category'>
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='page-title'>missing lede images</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='container content'>
+            <div class='row'>
+                <div class='column'>
+
+                    {% for article in articles %}
+
+                    {% if article.wordpress_lede %}
+                        <article>
+                            <section class='article-lede wordpress'>
+                                <a href="/{{ article.url }}"><img src='/{{ article.url }}{{ article.wordpress_lede }}' class='wordpress-lede-img'></a>
+                            </section>
+                        </article>
+
+                        <hr/>
+                    {% endif %}
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

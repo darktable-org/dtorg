@@ -58,9 +58,9 @@ body {
 #menu {
     text-align: center;
     line-height: 2rem;
+    z-index: 1;
 }
 #menu.home {
-    z-index: 1;
     line-height: 25px;
 }
 /* @media (min-width: 64rem) { */
@@ -133,7 +133,12 @@ section.lede {
     right: 1rem;
     position: absolute;
     font-style: italic;
-    color: #f0f; /* TODO: make this visible while not being annoying :-) */
+    font-size: small;
+    color: white;
+    text-shadow: black -1px -1px 1px, 
+                 black 1px -1px 1px, 
+                 black 1px 1px 1px, 
+                 black -1px 1px 1px;
 }
 
 .lede-author a {

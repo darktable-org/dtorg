@@ -54,11 +54,11 @@ As we’ve seen 32-bit systems are difficult environments for darktable. Still m
 
 There are several adjustment parameters to get it running. If you make a fresh install, DT will detect your system and set conservative values by default. However, if you upgrade DT from an older version (e.g. coming from 0.9.3 and going to 1.0), chances are you have unfavorable settings in your preferences. The consequences might be DT aborting due to allocation failures or&nbsp;– very typically&nbsp;– DT not being able to properly import a new film roll. As a frequent symptom you get skulls displayed instead of thumbs for many of your pictures.
 
-![skull]({attach}skull.jpeg)
+@![skull](skull.jpeg)
 
 Take a minute to optimize the preference settings in this case. You will find them under “core options” in DT’s preference dialog. You might also find these parameters as configuration variables in $HOME/.config/darktable/darktablerc and edit them there.
 
-![memory_options]({attach}memory_options.jpeg)
+@![memory_options](memory_options.jpeg)
 
 Here is a short explanation of the relevant parameters and their proposed settings.
 

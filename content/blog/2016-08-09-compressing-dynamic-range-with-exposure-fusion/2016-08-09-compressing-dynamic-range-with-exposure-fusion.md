@@ -59,7 +59,7 @@ we now have this feature in darktable, too.
 
 find the new fusion combo box in the darktable base curve module:
 
-![gui]({attach}gui.png "gui")
+@![gui](gui.png "gui")
 
 options are to merge the image with itself two or three times. each extra copy of the image will be boosted by an additional three stops (+3ev and +6ev), then the base curve will be applied to it and the laplacian pyramids of the resulting images will be merged.
 

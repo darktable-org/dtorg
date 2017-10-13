@@ -59,7 +59,7 @@ certain way to achieve a particular look. an example of this are the fuji film
 emulation modes. to this end, we will fit a colour checker lut to achieve their
 colour rendition, as well as a tone curve to achieve the tonal contrast.
 
-![target]({attach}target.jpg)
+@![target](target.jpg)
 
 to create the colour lut, it is currently necessary to take a picture of an
 [it8 target](http://targets.coloraid.de/) (well, technically we support any similar target, but
@@ -169,7 +169,7 @@ best use of gui real estate.
 ## the colour checker lut module
 
 
-![clut-iop]({attach}clut-iop.png)
+@![clut-iop](clut-iop.png)
 
 
 ### gui elements

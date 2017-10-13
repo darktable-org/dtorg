@@ -28,7 +28,7 @@ Nothing fancy there, just the page displayed as it will be printed on the paper.
 
 Let's look at the print settings offered by this module:
 
-![dt-print-settingsv2]({attach}dt-print-settingsv2.jpg)
+@![dt-print-settingsv2](dt-print-settingsv2.jpg)
 
 Using the control offered we can:
 

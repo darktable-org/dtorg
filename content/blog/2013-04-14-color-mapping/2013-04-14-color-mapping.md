@@ -11,7 +11,7 @@ tags: blog, development, upcoming feature, blending, color, color mapping, Lab, 
 
 I'd like to give a few words on a new module named "color mapping" that is currently under development in our master branch. This module is a rework and enhancement of the older "color transfer" module. That older module had several issues which made a migration impossible. So we leave the old one behind as deprecated (old history stack still work as before) and for all new history stacks "color mapping" should be used instead.
 
-![cm]({attach}cm.jpg)
+@![cm](cm.jpg)
 
 The general aim of the module is transferring the look and feel of one image onto another. You can use it if you intend to harmonize the image's colors of a photo series&nbsp;– or you may want to completely change the atmoshpere of an image, maybe even into an unnatural, surrealistic look. As its purpose is mainly an artistic one, the new module was put into the effect group.
 

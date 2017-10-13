@@ -19,7 +19,7 @@ The sensor cells of a digital camera translate the amount of light that falls on
 
 For a digital camera to sense the color of light three color channels are required: red, green and blue. A camera sensor achieves color sensitivity by organizing sensor cells carrying color filters in a certain pattern, most frequently a Bayer pattern.
 
-![colorreconstruction_bayer_matrix]({attach}colorreconstruction_bayer_matrix.jpg)
+@![colorreconstruction_bayer_matrix](colorreconstruction_bayer_matrix.jpg)
 
 Combining this fact with the phenomenon of overexposure we can differentiate three cases:
 
@@ -44,21 +44,21 @@ Just in order to manage expectations: a heavily overexposed image or one with a 
 
 Logically one of the basic modifications you need to consider for an overexposed image is an exposure correction. A negative exposure correction in the “exposure” module is frequently indispensable in order to bring brightest highlights into a more reasonable tonal range.
 
-![colorreconstruction_scr_1]({attach}colorreconstruction_scr_11.jpg)
+@![colorreconstruction_scr_1](colorreconstruction_scr_11.jpg)
 
 Additionally you should take into account that the curve defined in the “base curve” module has a strong effect on highlights as well. You may try out different alternatives as offered in the module's presets to find the one that best fits to your expectations. A base curve with a more continuous increase that slowly reaches the top right corner (right example) is often better suited for images with overexposed areas than one that already reaches the top at a moderately high input luminance level (left example).
 
 <span style="display: table-row;">
-<span style="display: table-cell">![colorreconstruction_scr_2]({attach}colorreconstruction_scr_2.jpg)</span>
+<span style="display: table-cell">@![colorreconstruction_scr_2](colorreconstruction_scr_2.jpg)</span>
 &nbsp;
-<span style="display: table-cell">![colorreconstruction_scr_3]({attach}colorreconstruction_scr_3.jpg)</span>
+<span style="display: table-cell">@![colorreconstruction_scr_3](colorreconstruction_scr_3.jpg)</span>
 </span>
 
 ## Bringing back detail into highlights
 
 The “highlight reconstruction” module comes early in the pixel pipeline acting on raw data. This is the central module that deals with the different cases of overexposure as described above. As a default the module uses the “clip highlights” method: it will make sure that pixels, which have all or only part of the RGB channels clipped (cases 2 and 3), are converted to neutral white highlights instead of showing some kind of color cast. This is the minimum you want to do with highlights. For that reason this method is activated by default for all raw input images.
 
-![colorreconstruction_scr_4]({attach}colorreconstruction_scr_4.jpg)
+@![colorreconstruction_scr_4](colorreconstruction_scr_4.jpg)
 
 As an alternative option the “highlight reconstruction” module offers the method “reconstruct in LCh”. This method is able to effectively deal with case (2) as described above. The luminance of partly clipped pixels can be reconstructed, the pixels get back their tonal information but result in a colorless neutral gray.
 
@@ -74,7 +74,7 @@ Often it works perfectly but sometimes it might struggle to successfully fill al
 
 The existing limitations of the “highlight reconstruction” module when it comes to colors has led to the development of a new module called “color reconstruction”. This module is currently part of the master development branch and will be part of darktable with the next feature release.
 
-![colorreconstruction_scr_5]({attach}colorreconstruction_scr_5.jpg)
+@![colorreconstruction_scr_5](colorreconstruction_scr_5.jpg)
 
 As we have discussed above there is no way to know the “true” color of a clipped highlight, we can only make an estimate.
 
@@ -92,7 +92,7 @@ The fountain statue has a glossy gold-plated surface. Even with proper metering 
 
 With the “color reconstruction” module activated I only needed to adjust the “luma threshold” to get the desired result.
 
-![colorreconstruction_scr_6]({attach}colorreconstruction_scr_6.jpg)
+@![colorreconstruction_scr_6](colorreconstruction_scr_6.jpg)
 
 The highlights are converted into a gold-yellow cast which nicely blends with the surrounding color of the statue.
 
@@ -116,7 +116,7 @@ Obviously the sky is overexposed and lacks good rendition of colors&nbsp;– vis
 
 These are the settings I used:
 
-![colorreconstruction_scr_7]({attach}colorreconstruction_scr_7.jpg)
+@![colorreconstruction_scr_7](colorreconstruction_scr_7.jpg)
 
 If you let darktable zoom into the image you will immediately see that reconstructed colors change with every zoom step. This is an unwanted side-effect of the way darktable's pixel pipeline deals with zoomed-in images. As only the visible part of the image is processed for speed reasons our “color reconstruction” module “sees” different surroundings depending on the zoom level. These lead to different colors in the visible area. It is therefore recommended to adjust the “color reconstruction” parameters while viewing the full image in the darkroom. We'll try to fix this behavior in future versions of the module** [ see below for an update ]**.
 
@@ -128,7 +128,7 @@ As a final example let's look at this photo of the colorful window of a Spanish 
 
 This time I needed to make sure that highlights do not get colored in some homogeneous orange-brownish hue that we would get when averaging all the various colors of the window tiles. Instead we need to take best care that each tile retains its individual color. Therefore, replacement colors need to be looked for in close geometrical proximity to the highlights. This requires a low setting of the “spatial blur” parameter. Here are the details:
 
-![colorreconstruction_scr_8]({attach}colorreconstruction_scr_8.jpg)
+@![colorreconstruction_scr_8](colorreconstruction_scr_8.jpg)
 
 And here is the resulting image with some additional adjustment in the “shadows and highlights” module. The mood of the scene, which has been dominated by the rich and intensive primary colors, is nicely reconstructed.
 

@@ -9,7 +9,7 @@ wordpress_id: 426
 tags: GSoC
 
 <figure markdown="span" class="u-pull-left">
-![Screenshot]({attach}Screenshot.png)
+@![Screenshot](Screenshot.png)
 </figure>
 
 For my final GSOC 2011 task, I set out to build a levels module for darktable, which would behave more or less like the levels tool in GIMP and similar image editors.  The user sets a white point, black point, and middle grey point for their image on a histogram, and the tool adjusts the image to match the chosen boundaries.  In my git branch, I now have the levels module functional.

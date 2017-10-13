@@ -12,7 +12,7 @@ tags: blog, development, upcoming feature, darktable, new feature, perspective c
 **Since many years darktable offers a versatile tool for manual perspective correction in the crop & rotate module [1]. Although the principle is simple and straightforward, there are cases where it can prove difficult to get a convincing correction, especially if no distinct vertical or horizontal features can be spotted in the image. To overcome these limitations a new “perspective correction” module has just been added that is able to automatically correct for converging lines. The underlying mechanism is inspired by the program ShiftN developed by Marcus Hebel and published under the GPL [2].**
 
 <figure markdown="span" role="group">
-![The GUI of the perspective correction module.]({attach}ashift_1.jpg)
+@![The GUI of the perspective correction module.](ashift_1.jpg)
 <figcaption>The GUI of the perspective correction module.</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ Converging lines can be corrected by warping the image in such a way that the li
 Images quite often come with a tilted horizon. As we want lines not only to be parallel among themselves but also to align with the image frame the module additionally applies a rotation angle which is controlled by a further parameter.
 
 <figure markdown="span" role="group">
-![The three basic adjustment parameters are controlled with sliders in the upper part of the module's GUI.]({attach}ashift_1_1.jpg)
+@![The three basic adjustment parameters are controlled with sliders in the upper part of the module's GUI.](ashift_1_1.jpg)
 <figcaption>The three basic adjustment parameters are controlled with sliders in the upper part of the module's GUI.</figcaption>
 </figure>
 
@@ -55,13 +55,13 @@ Images quite often come with a tilted horizon. As we want lines not only to be p
 Although a manual adjustment of the parameters is possible users will typically want to rely on the auto-correction feature of this module.
 
 <figure markdown="span" role="group">
-![The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.]({attach}ashift_1_2.jpg)
+@![The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.](ashift_1_2.jpg)
 <figcaption>The icons presented in the lower part of the module's GUI trigger structure detection and automatic perspective correction.</figcaption>
 </figure>
 
 The principle way of working is as follows. darktable analyzes the image for structural features consisting of line segments. These line segments are evaluated and ranked to identify those lines which form a set of converging lines meeting in a vantage point. Please note that by far not all line segments in an image represent suited vertical or horizontal lines of the scene&nbsp;– it is crucial that unsuited lines are identified and eliminated from the set. Based on the remaining lines an automatic fitting procedure is then started that tries to identify the best values of the module parameters (rotation angle and lens shift in one direction, or rotation angle and lens shift in both directions) to get the image straight, i.e. adjust the converging lines to run parallel and/or horizontal to the image frame.
 
-![ashift_2]({attach}ashift_2.jpg)
+@![ashift_2](ashift_2.jpg)
 
 Pressing the “get structure” icon causes darktable to analyze the image for structural elements. Line segments are detected, evaluated and ranked. The line segments are then displayed as overlays on the image base. A color code tells you what type of line darktable has found:
 
@@ -86,15 +86,15 @@ As this module needs to find straight lines, it is generally a good idea to have
 
 If your image exhibits a rather low contrast with few defined features the overall number of detected lines might be low. In this case you may try to ctrl-click on the “get structure” icon which activates an additional edge enhancing step before line detection. This leads to significantly more lines being detected.
 
-![ashift_3]({attach}ashift_3.jpg)
+@![ashift_3](ashift_3.jpg)
 
 Pressing the “clear structure” icon discards all collected structural information.
 
-![ashift_4]({attach}ashift_4.jpg)
+@![ashift_4](ashift_4.jpg)
 
 Pressing the “display structure” icon temporarily blocks the overlay display of lines so you have a better view of your image. Press the icon again to re-enable overlay display.
 
-![ashift_5]({attach}ashift_5.jpg)
+@![ashift_5](ashift_5.jpg)
 
 Pressing one of the “automatic fit” icons starts an optimization process which tries to detect the best fitting parameters for perspective correction of the image.
 
@@ -120,7 +120,7 @@ As a general rule all parameters that are not affected by the respective fitting
 This module offers a number of further useful features which are controlled by a set of comboboxes in the middle part of the GUI.
 
 <figure markdown="span" role="group">
-![ashift_1_3]({attach}ashift_1_3.jpg)
+@![ashift_1_3](ashift_1_3.jpg)
 <figcaption>Further options of the perspective correction module.</figcaption>
 </figure>
 
@@ -141,7 +141,7 @@ Of course the automatic cropping feature does not have any knowledge of the cont
 
 The “lens model” option controls some details of the underlying warping algorithm, namely the level of image compression perpendicular to the lens shift direction.
 
-![ashift_6]({attach}ashift_6.jpg)
+@![ashift_6](ashift_6.jpg)
 
 The default setting is “generic” which gives a realistic results in most cases. For images taken with a long focal length you may want to switch to “lens specific” which opens a number of sliders that let you define the focal length and the crop factor of your camera. You may also freely adjust the aspect ratio of the resulting image with the “aspect adjust” slider.
 

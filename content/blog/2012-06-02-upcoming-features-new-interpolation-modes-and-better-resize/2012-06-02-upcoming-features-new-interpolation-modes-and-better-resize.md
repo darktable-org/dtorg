@@ -56,7 +56,7 @@ But some smart men already detailed practical solutions that try to approximate 
 See their 1D graph:
 
 <figure markdown="span" role="group">
-![Interpolation functions]({attach}kernels.png)
+@![Interpolation functions](kernels.png)
 <figcaption>Interpolation functions</figcaption>
 </figure>
 

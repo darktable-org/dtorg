@@ -20,4 +20,4 @@ To test this you have to build from git and have libvte-dev installed. Pascal’
 
 **Update 2:** Of course this was an April Fool’s Joke. The so-called “file manager” was nothing but a shell and the “documentation” a tool tip mentioning a few commands like cp, ls, mv, ...
 
-![april_fools_file_manager]({attach}april_fools_file_manager.png)
+@![april_fools_file_manager](april_fools_file_manager.png)

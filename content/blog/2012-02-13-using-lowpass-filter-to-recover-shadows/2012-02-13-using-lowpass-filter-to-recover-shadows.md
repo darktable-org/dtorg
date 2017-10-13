@@ -39,7 +39,7 @@ Applying the above parameters to darktable will give the following intermediate 
 
 Not very useful in itself, but let’s now activate blend mode “overlay” and play with the opacity slider. I felt than an opacity value of about 90% is best suited in my case.
 
-![sr-lowpass]({attach}sr-lowpass.jpeg)
+@![sr-lowpass](sr-lowpass.jpeg)
 
 Here is the result after shadow recovery:
 

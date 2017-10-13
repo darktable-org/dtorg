@@ -30,7 +30,7 @@
         {% endif %}
 
         {% if category.lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}"> 
+        <meta itemprop="image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
         <meta property="og:image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
         <meta name="twitter:image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
         {% elif category.wordpress_lede %}
@@ -86,7 +86,7 @@
             <div class='row'>
                 <div class='column'>
                     {% if CATEGORY_FEED_RSS and category %}
-                    <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ category }} RSS Feed" class='rss_link'>feed 
+                    <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ category }} RSS Feed" class='rss_link'>feed
                         <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="48" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48.000001">
  <g transform="translate(0 -1004.4)">
   <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" cx="6.4379" cy="1045.9" r="6.5" fill="#1eaedb"/>
@@ -114,7 +114,7 @@
                         </section>
                         {% elif article.lede %}
                         <section class='article-lede'>
-                            <a href="/{{ article.url }}"><img src='/{{ article.url }}{{ article.lede }}' class='lede-img' width='960' height='401'></a>
+                            <a href="/{{ article.url }}"><img src='/{{ article.url }}{{ article.lede | insert_thumbnail }}' class='lede-img' width='960' height='401'></a>
                         </section>
                         {% endif %}
 

@@ -31,7 +31,7 @@ The result is already quite good. The doorway and the inner walls of the barn ar
 
 What could we do to reduce the strength of the effect? We can easily tune down the exaggerated nature by blending the result with the original image (blend mode “normal”). Here are the parameters:
 
-![sh-parameters]({attach}sh-parameters.jpeg)
+@![sh-parameters](sh-parameters.jpeg)
 
 And here is the final image. In this case I was even able to give some more contrast to the image (medium S-like curve to L-channel in module “tone curve”), without driving too much of the dark grays back into the dark.
 

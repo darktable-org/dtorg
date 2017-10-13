@@ -10,8 +10,8 @@ wordpress_id: 3141
 tags: blog, upcoming feature
 
 <figure markdown="span" role="group">
-[![The gradient test image]({attach}grey.png)](grey.png)
-<figcaption>*Figure 1:* the gradient test image – download and play with it in darktable</figcaption>
+@![The gradient test image](grey.png)
+<figcaption>*Figure 1:* the gradient test image – follow the link, download and play with it in darktable</figcaption>
 </figure>
 
 People using image editors or similar (raster) graphics editors are probably familiar with histograms. You also have them in almost all digital cameras. In darktable you can find it very prominently in the top right corner of darkroom mode, but also as a backdrop of modules like _levels_, _tonecurve_ and similar.
@@ -22,7 +22,7 @@ From a mathematical point of view they are a diagram displaying the amount of pi
 ## From linear …
 
 <figure markdown="span" class="u-pull-left" role="group">
-![the linear histogram]({attach}linear.jpg)
+@![the linear histogram](linear.jpg)
 <figcaption>*Figure 2:* the linear histogram</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ Let's look at the example picture in _figure 1_. For a bigger view you can click
 
 
 <figure markdown="span" class="u-pull-left" role="group">
-![the logarithmic histogram]({attach}logarithmic.jpg)
+@![the logarithmic histogram](logarithmic.jpg)
 <figcaption>*Figure 3:* the logarithmic histogram</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ As of version 1.4 of darktable there is also a third mode, the **waveform**. Whi
 
 
 <figure markdown="span" class="u-pull-left" role="group">
-![the waveform]({attach}waveform.jpg)
+@![the waveform](waveform.jpg)
 <figcaption>*Figure 4:* the waveform</figcaption>
 </figure>
 
@@ -61,14 +61,14 @@ All of this sounds more complicated than it really is. Let's look at our grey te
 
 
 <figure markdown="span" role="group">
-![rose]({attach}rose.jpg)
+@![rose](rose.jpg)
 <figcaption>*Figure 5:* A rose by any other name …</figcaption>
 </figure>
 
 Now that you have hopefully understood how histogram and waveform work we will have a look at how to interpret and make use of them.
 
 <figure markdown="span" class="u-pull-right" role="group">
-![the rose histograms & waveform]({attach}rose_histograms.jpg)
+@![the rose histograms & waveform](rose_histograms.jpg)
 <figcaption>*Figure 6:* the rose histograms & waveform
 <br/>
 top: logarithmic

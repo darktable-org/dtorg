@@ -13,106 +13,54 @@ Most modules in darktable are working on changing pixels color, lightness, etc. 
 
 The liquify module offer more ways to move pixels around by applying some free style distortions to parts of the image. There is three tools to help doing that:
 
+* point
+* line
+* curve
 
+@![liquify-0](liquify-0.png)
 
-
-  * point
-
-
-  * line
-
-
-  * curve
-
-
-![liquify-0]({attach}liquify-0.png)
-
-Each tool is based on nodes. A point is given by a single node, a line
-or curve by a set of nodes which defines the path.
+Each tool is based on nodes. A point is given by a single node, a line or curve by a set of nodes which defines the path.
 
 Next to the count, in order we have the following tools:
 
-
-
-
-  * hide/show the warps
-
-
-  * the **point** tool
-
-
-  * the **line** tool
-
-
-  * the **curve** tool
-
-
-  * the node edit tool
-
+* hide/show the warps
+* the **point** tool
+* the **line** tool
+* the **curve** tool
+* the node edit tool
 
 Let's see what a node does:
 
-![liquify-1]({attach}liquify-1.png)
+@![liquify-1](liquify-1.png)
 
-
-
-
-  * **center** : with the central point, it is possible to drag this point with the mouse to move it around
-
-
-  * **radius** : the radius describes the area of the applied effect, that is the distortion occurs only inside this radius. It is possible to increase the radius using the small dot on the circle.
-
-
-  * **strength vector** : the vector starting from the center describes the direction of the distortion and the strength. The strength depends on the length of the vector.
-
+* **center** : with the central point, it is possible to drag this point with the mouse to move it around
+* **radius** : the radius describes the area of the applied effect, that is the distortion occurs only inside this radius. It is possible to increase the radius using the small dot on the circle.
+* **strength vector** : the vector starting from the center describes the direction of the distortion and the strength. The strength depends on the length of the vector.
 
 The point, line and curve tools are all based on nodes as described above. That is, a line is a set of nodes linked together for example.
 
-
 # Point Tool
 
+A point is formed by a single node. In a point the strength vector has three different modes which are toggled using ctrl-click over the strength vector itself.
 
-A point is formed by a single node. In a point the strength vector
-has three different modes which are toggled using ctrl-click over the
-strength vector itself.
-
-
-
-
-  * **linear** : the linear mode make the distortion linear inside the circle. Starting from the opposite side of the strength vector and following the strength vector direction. This is the default mode.
-
-
-  * **radial growing** : in this mode the strength vector effect is radial, starting with a strength of 0% in the center and growing when going away from the center.
-
-
-
-
-  * ![liquify-4]({attach}liquify-4.png)
+* **linear** : the linear mode make the distortion linear inside the circle. Starting from the opposite side of the strength vector and following the strength vector direction. This is the default mode.
+* **radial growing** : in this mode the strength vector effect is radial, starting with a strength of 0% in the center and growing when going away from the center.
+* @![liquify-4](liquify-4.png)
 
     **radial shrinking** : in this mode the strength vector effect is radial, starting with a strength of 100% in the center and shrinking when going away from the center.
 
-
-![liquify-3]({attach}liquify-3.png)
+@![liquify-3](liquify-3.png)
 
 Furthermore it is possible to set the feathered effect by clicking on the center of the circle.
 
-![liquify-2]({attach}liquify-2.png)
+@![liquify-2](liquify-2.png)
 
-
-
-
-  * **default** : linear from the center to the radius
-
-
-  * **feathered** : two control circles are displayed and can be used to feather the strength of the effect.
-
-
-
+* **default** : linear from the center to the radius
+* **feathered** : two control circles are displayed and can be used to feather the strength of the effect.
 
 # Line Tool
 
-
-![liquify-5]({attach}liquify-5.png)
+@![liquify-5](liquify-5.png)
 
 A line is a set of point. The points are linked together, the effect is interpolated by a set of strength vectors.
 
@@ -122,11 +70,9 @@ A right-click on a segment will remove the shape completely.
 
 A ctrl-alt-click on a segment will change it to a curve segment.
 
-
 # Curve Tool
 
-
-![liquify-6]({attach}liquify-6.png)
+@![liquify-6](liquify-6.png)
 
 A curve is a set of point. The points are linked together, the effect is interpolated as a bezier curve by a set of strength vectors.
 
@@ -138,20 +84,10 @@ A ctrl-alt-click on a segment will change it to a line segment.
 
 It is possible to change the way the points of the curve are linked together by using ctrl-click on the center. There is four modes which correspond to different way of handling the two bezier curve points:
 
-
-
-
-  * **autosmooth** : control points are always giving a smooth curve, this is the default mode in which the control points are not displayed (as automatically computed).
-
-
-  * **cups** : control points can be moved independently.
-
-
-  * **smooth** : control points are always giving a smooth curve
-
-
-  * **symmetrical** : control points are always moved together
-
+* **autosmooth** : control points are always giving a smooth curve, this is the default mode in which the control points are not displayed (as automatically computed).
+* **cups** : control points can be moved independently.
+* **smooth** : control points are always giving a smooth curve
+* **symmetrical** : control points are always moved together
 
 Finally, note that at any moment it is possible to right-click on the image to show or hide the liquify controls.
 

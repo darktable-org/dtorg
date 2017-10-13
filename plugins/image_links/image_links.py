@@ -9,6 +9,7 @@ original file.
 """
 
 DEFAULT_THUMBNAIL_SIZE = 600
+exts = ['.jpg', '.jpeg', '.png']
 
 import os
 import sys
@@ -39,8 +40,6 @@ except ImportError as e:
 def process_settings(pelicanobj):
     """Sets user specified settings (see README for more details)"""
     image_links_settings = {}
-
-    image_links_settings['config'] = {'THUMBNAIL_SIZE': pelicanobj.settings.get('THUMBNAIL_SIZE', DEFAULT_THUMBNAIL_SIZE)}
 
     return image_links_settings
 
@@ -77,7 +76,7 @@ def pelican_init(pelicanobj):
 # the code that generates the small versions of all images
 
 def create_thumbnails(pelicanobj):
-    exts = ['.jpg', '.jpeg', '.png']
+    global exts
     THUMBNAIL_SIZE = pelicanobj.settings.get('THUMBNAIL_SIZE', DEFAULT_THUMBNAIL_SIZE)
 
     for dirpath, _, filenames in os.walk(pelicanobj.settings['OUTPUT_PATH']):
@@ -85,22 +84,16 @@ def create_thumbnails(pelicanobj):
             image_filename = os.path.join(dirpath, image_filename)
             (base, ext) = os.path.splitext(image_filename)
             if ext.lower() in exts:
-                thumb_filename = base + '_' + str(THUMBNAIL_SIZE) + ext
-                if not os.path.exists(thumb_filename):
+                thumb_filename = base + '_thumb'  + ext
+                if not base.endswith('_thumb') and not os.path.exists(thumb_filename):
                     try:
                         image = Image.open(image_filename)
-                        if image.size[0] > THUMBNAIL_SIZE or image.size[1] > THUMBNAIL_SIZE:
-                            image.thumbnail((THUMBNAIL_SIZE, THUMBNAIL_SIZE), Image.ANTIALIAS)
-                            image.save(thumb_filename)
-                            try:
-                                logger.info("Generated Thumbnail for {0}".format(image_filename))
-                            except UnicodeEncodeError:
-                                logger.info("Generated Thumbnail for a file with unicode name")
-                        else:
-                            try:
-                                logger.info("No Thumbnail for smallish {0}".format(image_filename))
-                            except UnicodeEncodeError:
-                                logger.info("No Thumbnail for a smallish file with unicode name")
+                        image.thumbnail((THUMBNAIL_SIZE, THUMBNAIL_SIZE), Image.ANTIALIAS)
+                        image.save(thumb_filename)
+                        try:
+                            logger.info("Generated Thumbnail for {0}".format(image_filename))
+                        except UnicodeEncodeError:
+                            logger.info("Generated Thumbnail for a file with unicode name")
                     except IOError:
                         try:
                             logger.warn("Generating Thumbnail for {0} failed".format(image_filename))
@@ -115,3 +108,19 @@ def register():
         signals.finalized.connect(create_thumbnails)
     except AttributeError:
         pass
+
+# we also want a filter to use in templates for automatic insertion of thumbnails
+
+from jinja2 import evalcontextfilter, filters
+from pelican import settings
+
+@evalcontextfilter
+def insert_thumbnail(eval_ctx, image):
+    global exts
+    (base, ext) = os.path.splitext(image)
+    if ext.lower() in exts and not base.endswith('_thumb'):
+        return base + '_thumb' + ext
+    return image
+
+
+filters.FILTERS['insert_thumbnail'] = insert_thumbnail

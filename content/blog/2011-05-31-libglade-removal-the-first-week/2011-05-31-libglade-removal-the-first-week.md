@@ -12,11 +12,11 @@ I’m now a week into my first task of removing darktable’s dependency on libg
 
 Now that I’ve learned more or less as much as I need for this task, I’ve been steadily chugging along replacing elements of the glade file with function calls in the applications GUI initialization.  So far, I’ve removed the center drawing area, the lower toolbar, the right panel area, and the left and right borders from the glade file.  For a little visual comparison, this is the glade file in the current master branch.
 
-![Screenshot1]({attach}Screenshot1.png)
+@![Screenshot1](Screenshot1.png)
 
 This is the current glade file in my working branch.
 
-![Screenshot-1]({attach}Screenshot-1.png)
+@![Screenshot-1](Screenshot-1.png)
 
 By the end of this week, I hope to get the rest of that interface moved into the code and get rid of the libglade dependency altogether.  Then I can get this all merged into master and start working on the fun tasks.  Up next on my list will be renovating the keyboard shortcut system.
 

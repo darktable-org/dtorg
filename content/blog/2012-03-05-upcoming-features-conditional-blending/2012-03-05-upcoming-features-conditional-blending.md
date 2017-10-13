@@ -20,7 +20,7 @@ Diligent readers of our small blog series are already aware of the blending feat
 
 In many cases it is the most basic blend mode “normal” that we want. Depending on the setting of slider “opacity” this allows to control the strength of a module's effect. Think of this as a layer of two transparencies. The lower one represents the input image, the upper one is the original output of our module (the one we would get without blending). If opacity is 100% the upper layer will completely mask the lower one; you get the full effect of the module. If opacity is 0% the upper layer is completely transparent, you see the input image as if the module has no effect. In-between opacity values allow to gradually blend the effect of this module into the original image. We already used this technique [here]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md) to tone down the effect of shadow recovery.
 
-![sh-parameters]({attach}sh-parameters.jpeg)
+@![sh-parameters](sh-parameters.jpeg)
 
 
 ## More sliders please
@@ -38,7 +38,7 @@ As this is done with four parameters for each channel, you are in the position t
 
 Enter a module that supports blending, like “tone curve”, and activate blending with the corresponding checkbox. You see the already familiar controls (blend mode, opacity) plus a new checkbox that says “blend if ...” If you toggle that box, a further control area appears beneath.
 
-![bl-menu1]({attach}bl-menu1.jpeg)
+@![bl-menu1](bl-menu1.jpeg)
 
 You find a row of notebook tabs named after color channels: “L”, “a” and “b” for modules that act in Lab color space; “gray”, “red”, “green” and “blue” for modules that work in RGB color space. Gray is just a weighted average of RGB and acts as a measure of lightness (gray = 0.3 × red + 0.59 × green + 0.11 × blue).
 
@@ -53,7 +53,7 @@ You can drag the sliders around with a left-click of your mouse, moving first th
 
 To make all this a bit clearer let’s look at an example. Below we have a slider of an input L-channel with one potential configuration. The left open marker is at L=20, the left upper marker at L=40, the right upper marker at L=60 and the right lower marker at L=80. The numerical positions of the markers (from left to right) are displayed above the slider.
 
-![bl-menu2]({attach}bl-menu2.jpeg)
+@![bl-menu2](bl-menu2.jpeg)
 
 This configuration can be interpreted in the following way:
 
@@ -63,7 +63,7 @@ This configuration can be interpreted in the following way:
 
 In order to ease understanding, here is a graphical representation as an opacity curve:
 
-![graph1.lml_]({attach}graph1.lml_.png)
+@![graph1.lml_](graph1.lml_.png)
 
 OK, with this tool we now are able to define a per channel opacity depending on pixel value.
 
@@ -115,7 +115,7 @@ Another possible use of conditional blending is to prevent artifacts which might
 
 Unfortunately some modules, in this example mainly “equalizer”, can produce artifacts in high contrast edges of large structures. Look at the left example and pay attention the sky close to the roof of the structure: a light halo is visible. In the right example I restricted the effect of modules “equalizer”, “shadows and highlights” and “tone curve” only to the dark to mid tones, keeping the light tones of the sky unchanged; the halo is gone and the sky keeps its neutral color.
 
-![bl-bild2-blendif2]({attach}bl-bild2-blendif2.jpeg)
+@![bl-bild2-blendif2](bl-bild2-blendif2.jpeg)
 
 
 ## Going even further

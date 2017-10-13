@@ -48,9 +48,9 @@ I took highpass with blend mode _soft light_ in this case as it will increase co
 Module highpass works in Lab mode and it would certainly be possible to select the right part of the images with the L, a, and b sliders. However, this is much easier done with channels C and h. Just take the color picker to identify the hue of the blossom and select a narrow band around this hue value. Then in addition limit the effect in chroma channel to the more saturated colors.
 
 <span style="display: table-row;">
-<span style="display: table-cell">![blendif2-1]({attach}blendif2-1.jpeg)</span>
+<span style="display: table-cell">@![blendif2-1](blendif2-1.jpeg)</span>
 &nbsp;
-<span style="display: table-cell">![blendif2-2]({attach}blendif2-2.jpeg)</span>
+<span style="display: table-cell">@![blendif2-2](blendif2-2.jpeg)</span>
 </span>
 
 With the recently added _display mask_ option, it’s now very easy to see what gets blended and what not. The yellow color shows you that we really only selected the petals of the poppy, everything else remains unaffected.
@@ -65,7 +65,7 @@ Now let’s assume we would want to turn this natural almost-colorkey image into
 
 If we want to gray out all parts of the image except of the petals, we can use our monochrome module and use blendif’s new polarity option. Again we define a narrow band around the red hue of the blossom but this time with inverted polarity.
 
-![blendif2-4]({attach}blendif2-4.jpeg)
+@![blendif2-4](blendif2-4.jpeg)
 
 Here is the result of our exercise:
 

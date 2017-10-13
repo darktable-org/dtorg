@@ -15,11 +15,11 @@ I thought I'd post a quick tutorial on luminosity masks using parametric masks. 
 
 A quick and simplistic explanation follows: Normally, if we make a selection and, say, adjust the brightness dramatically in that selection, we get a sharp (and ugly) transition near the edge of the selection:
 
-![sharpedge]({attach}sharpedge.png)
+@![sharpedge](sharpedge.png)
 
 The quick solution is to blur the mask (feathering in GIMP). Feathering simply makes the transition less sharp:
 
-![sharpedge1]({attach}sharpedge1.png)
+@![sharpedge1](sharpedge1.png)
 
 Better, but still too sharp a transition. You can feather it even more if you wish, but however much you feather it, the transition is determined too heavily by your choice of selection (a rectangle in this case). We'd really like is a way to select based on the actual _contents_ of the image.
 
@@ -35,7 +35,7 @@ Consider the following image:
 
 Let's say I want to brighten it. Let me apply an aggressive curve:
 
-![curve]({attach}curve.png)
+@![curve](curve.png)
 
 The result is:
 
@@ -60,7 +60,7 @@ How do we get this in darktable?
 
 Go to the Tone Curve module, set blend to parametric mask. Now comes the important part: In the Input sliders, select the _top left_ triangle and move it all the way to the right:
 
-![lmaskdt]({attach}lmaskdt.png)
+@![lmaskdt](lmaskdt.png)
 
 The resulting mask looks like:
 
@@ -83,7 +83,7 @@ To create the D mask, Pat selected the whole image, and subtracted the L channel
 
 In darktable, we simply do the opposite of what we did for the L mask. We now move the _top right_ triangle to the extreme left:
 
-![dmaskdt]({attach}dmaskdt.png)
+@![dmaskdt](dmaskdt.png)
 
 The mask now looks like:
 
@@ -100,7 +100,7 @@ The result of the curve:
 
 What about medium? Let's try:
 
-![mmaskdt]({attach}mmaskdt.png)
+@![mmaskdt](mmaskdt.png)
 
 Here we moved both the upper triangles to the center.
 
@@ -130,7 +130,7 @@ What about the DD mask?
 
 This is obtained by subtracting the L channel from the D mask. The equivalent mask in darktable is:
 
-![ddmaskdt]({attach}ddmaskdt.png)
+@![ddmaskdt](ddmaskdt.png)
 
 This is the same as the D mask, but notice I moved the lower right triangle half way to the left. This has the effect that anything that is more than 50% bright will not be selected _at all_.
 

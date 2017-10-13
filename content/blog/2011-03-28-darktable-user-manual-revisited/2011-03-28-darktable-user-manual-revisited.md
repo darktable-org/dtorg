@@ -8,7 +8,7 @@ title: darktable user manual revisited
 wordpress_id: 457
 tags: development
 
-![usermanual]({attach}usermanual.jpg)
+<figure markdown="span" class="u-pull-left">@![usermanual](usermanual.jpg)</figure>
 
 Up till recently the usermanual has been only available for those who got the source and the necessary tools to generate and even than it would generate a HUGE pdf file due to the amount of high resolution of screenshots. I revisited the build system with the goals of shrink-en the size of the final PDF and to produce an html output that could be integrated in our website.
 

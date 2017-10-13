@@ -28,8 +28,6 @@ class PelicanImageLinksMarkdownExtensionPattern(markdown.inlinepatterns.Pattern)
         into
             <span>[![alt text](filename_thumb.jpg)]({attach}filename.jpg)</span>
         """
-        THUMBNAIL_SIZE = self.config['THUMBNAIL_SIZE']
-
         node = etree.Element('span')
         # TODO: do we want to assign some special class to the span?
         #node.set('class', 'image_preview')
@@ -50,7 +48,7 @@ class PelicanImageLinksMarkdownExtensionPattern(markdown.inlinepatterns.Pattern)
 
         src_parts = src.rsplit('.', 1)
         if len(src_parts) == 2:
-            thumbnail = src_parts[0] + '_' + str(THUMBNAIL_SIZE) + '.' + src_parts[1]
+            thumbnail = src_parts[0] + '_thumb' + '.' + src_parts[1]
         else:
             thumbnail = src
 
@@ -73,4 +71,5 @@ class PelicanImageLinksMarkdownExtension(markdown.Extension):
 
     def extendMarkdown(self, md, md_globals):
         inline_regex = r'@' + markdown.inlinepatterns.IMAGE_LINK_RE
+
         md.inlinePatterns.add('image_links', PelicanImageLinksMarkdownExtensionPattern(self, inline_regex), '_begin')

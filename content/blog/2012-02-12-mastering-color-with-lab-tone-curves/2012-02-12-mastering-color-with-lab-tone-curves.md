@@ -37,7 +37,7 @@ Here is the result of my changes:
 
 OK, the green is now more visible and the red is better under control. Still the image lacks something convincing to turn the green into a real jungle. In fact all “greens” are more or less the same here. That's not the case for green foliage in reality. Leaves show all kinds of variations, from a more yellowish green to a more blueish green. If that's the case, why not enhance the blue-yellow differentiation? We can do this by giving the b channel a very steep S-like curve:
 
-![tc2-bild2-b]({attach}tc2-bild2-b.jpg)
+@![tc2-bild2-b](tc2-bild2-b.jpg)
 
 Here is the final result. Quite convincing and close to what I felt, when I made the shot.
 

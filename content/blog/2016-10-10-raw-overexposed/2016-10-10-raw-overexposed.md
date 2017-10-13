@@ -210,7 +210,7 @@ Good news is, it just works for both the [Bayer](https://en.wikipedia.org/wiki/B
 ## modes of operation
 
 
-![rawoverexposed-ui]({attach}rawoverexposed-ui.jpeg)
+@![rawoverexposed-ui](rawoverexposed-ui.jpeg)
 
 The `raw-based overexposure indicator` has 3 different `mode`s of operation:
 

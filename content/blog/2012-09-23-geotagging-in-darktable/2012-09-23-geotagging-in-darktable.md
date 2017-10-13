@@ -10,7 +10,7 @@ wordpress_id: 2162
 tags: upcoming feature
 
 <figure markdown="span" class="u-pull-left" role="group">
-![Geotagging module]({attach}geotagging_module.jpg)
+@![Geotagging module](geotagging_module.jpg)
 <figcaption>Geotagging module</figcaption>
 </figure>
 

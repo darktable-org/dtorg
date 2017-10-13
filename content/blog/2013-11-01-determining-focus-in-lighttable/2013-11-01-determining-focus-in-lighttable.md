@@ -61,9 +61,9 @@ if you now select a picture in lighttable mode and press `z' to switch to full r
 
 double checking in darkroom mode and zooming to 200% shows that the one with the red boxes is indeed sharper:
 
-![red_closeup]({attach}red_closeup.jpg)
+@![red_closeup](red_closeup.jpg)
 
-![blue_closeup]({attach}blue_closeup.jpg)
+@![blue_closeup](blue_closeup.jpg)
 
 
 # where to get it

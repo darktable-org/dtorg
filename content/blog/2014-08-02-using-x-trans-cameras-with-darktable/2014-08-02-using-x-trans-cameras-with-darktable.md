@@ -13,7 +13,7 @@ There is now a development branch of darktable with experimental support for raw
 
 Using darktable with Fujifilm cameras is similar to using it with any other camera’s raw files. There are a few differences, though, in the case of the X-Trans sensor. The X-Trans sensor uses an exotic design (unlike the Bayer pattern which is in most cameras), and hence darktable must use different math to process what the sensor records.
 
-![Bayer vs. X-Trans]({attach}bayer_vs_xtrans.png)
+@![Bayer vs. X-Trans](bayer_vs_xtrans.png)
 
 There will be more technical information about this processing in a second blog post.
 
@@ -23,25 +23,25 @@ There will be more technical information about this processing in a second blog 
 
 The demosaic module has different options when you are working with an X-Trans image. For Bayer images, the module looks something like this:
 
-![Bayer demosaic]({attach}demosaic_bayer.png)
+@![Bayer demosaic](demosaic_bayer.png)
 
 For X-Trans images, you will see a simpler set of options:
 
-![X-Trans demosaic]({attach}demosaic_xtrans.png)
+@![X-Trans demosaic](demosaic_xtrans.png)
 
 The “method” sets how darktable processes what the sensor sees (a mosaic of red, green, and blue) into a color image. The current default X-Trans demosaicing is done via a VNG demosaic. This is a decent quality and relatively fast method. For producing images for screen resolution, it should be great. If you are a pixel peeper, or are making large prints, you may not be happy with VNG. It can produce artifacts in fine detail and at sharp edges.
 
 Clicking on VNG will show you some higher quality choices:
 
-![X-Trans demosaic methods]({attach}demosaic_xtrans_methods.png)
+@![X-Trans demosaic methods](demosaic_xtrans_methods.png)
 
 Markesteijn 1-pass is a vast improvement over VNG, though it is also twice as slow. If even Markesteijn 1-pass is producing artifacts, the 3-pass variant will offer a slight improvement at the cost of twice as much processing time again. Here are example crops at 200% of the three methods:
 
-![demosaic methods]({attach}demosaic_methods.png)
+@![demosaic methods](demosaic_methods.png)
 
 The color smoothing option is the same one used with conventional Bayer sensors. It eliminates color artifacts with a median filter. This may be helpful if you have an image with exceptionally fine detail such as a camera test pattern. Here is an a 200% detail of a problematic X-Trans image with increasing color smoothing applied:
 
-![color smoothing]({attach}color_smoothing.png)
+@![color smoothing](color_smoothing.png)
 
 Note that the bright color fringes disappear with more color smoothing.
 
@@ -53,7 +53,7 @@ No matter what demosaic method you use for X-Trans images, darktable will take a
 
 One solution is to go to the global preferences, select the “core options” tab, and set “demosaicing for zoomed out darkroom mode” to “always bilinear (fast)”:
 
-![demosaic_zoomed_out]({attach}demosaic_zoomed_out.png)
+@![demosaic_zoomed_out](demosaic_zoomed_out.png)
 
 When you are not at 100% or 200% zoom, darktable will now display the image with an extremely fast but low quality demosaic method (bilinear). This will allow modules which depend upon the mosaiced image data (any active modules displayed below “demosaic”) to respond more fluidly. The trade-off is that you may see some artifacts as you zoom out the image to just slightly below 100%. Regardless of this setting, image export will always use the method you choose in the demosaic module. The modules which will be more responsive if you choose “always bilinear” are raw denoise, hot pixels, chromatic aberrations (though see the note below), highlight reconstruction, white balance, and invert.
 
@@ -63,11 +63,11 @@ When you are not at 100% or 200% zoom, darktable will now display the image with
 
 Currently the default demosaic method for new images is VNG. If you want imported image to default to a higher quality default (such as Markesteijn 1-pass), you can do this via a preset. Take any X-Trans image, set the demosaic method to your preference, then click on the "hamburger" menu and choose “store new preset...”:
 
-![store new preset]({attach}preset1.png)
+@![store new preset](preset1.png)
 
 Then choose to auto-apply the preset to raw images from your camera. For example, if you have an "X100S", you might do this:
 
-![preset]({attach}preset2.png)
+@![preset](preset2.png)
 
 Another possibility would be to make a style in the lighttable based on an image for which you've applied your chosen demosaic method. Then in Exporter you can choose this style under global options.
 
@@ -77,11 +77,11 @@ Another possibility would be to make a style in the lighttable based on an image
 
 Other modules besides demosaic should behave as expected. An exception is the “chromatic aberrations” module. It cannot currently handle non-Bayer sensors, and hence will always be disabled for X-Trans images:
 
-![chromatic aberrations]({attach}cacorrect.png)
+@![chromatic aberrations](cacorrect.png)
 
 If your camera and lens are supported in the “lens correction” module, you may be able to get good results via its TCA correction:
 
-![lens correction]({attach}lens_correction.png)
+@![lens correction](lens_correction.png)
 
 Note that support for particular cameras and lenses comes via the great [Lensfun](http://lensfun.sourceforge.net/) project. The version of Lensfun which you have installed will change your lens support.
 
@@ -100,7 +100,7 @@ Of particular note is the Fujifilm “Dynamic Range” option, which controls im
 
 Images taken with DR200, DR400, or AUTO DR will look as expected in lighttable upon import, as darktable will display a camera-processed preview JPEG. But when these images are opened in darkroom mode, they will appear quite dark. Here is how the camera-processed JPEG of a DR400 image looks compared to the image which darkroom mode initially shows:
 
-![DR jpeg vs. darktable]({attach}dr_jpeg_vs_dt.png)
+@![DR jpeg vs. darktable](dr_jpeg_vs_dt.png)
 
 What you are seeing in darkroom is the image as recorded by the sensor without post-processing to compensate for the Dynamic Range setting. Dynamic Range exposes the image at a lower ISO without altering f-stop or shutter speed. This preserves highlight detail at the cost of forcing more image data into the dark tones. In photo-talk terms, Dynamic Range and its ilk are an “expose to the left” solution to highlight retention.
 
@@ -108,11 +108,11 @@ As appealing as the DR feature is, it may be worth instead photographing at DR10
 
 Regardless of whether you rely on the DR feature or purposely underexpose, you will most likely want to raise the image exposure overall (e.g. by 1 EV if the image is exposed with DR200, by 2 EV if it is exposed with DR400) while figuring out a way to retain some highlight detail. One way to do the latter is by setting the exposure module's blend mode to "parametric mask" and setting the gray (“g”) tab’s two input sliders such that the mask starts at black and fades out across the midtones (you'll have to tune this by eye):
 
-![exposure mask]({attach}exposure_mask.png)
+@![exposure mask](exposure_mask.png)
 
 This will lighten the shadows and midtones while smoothly tapering the exposure adjustment in the highlights. Here is that DR400 image processed with an exposure mask:
 
-![DR400 with exposure mask]({attach}DR400_exposure_mask.png)
+@![DR400 with exposure mask](DR400_exposure_mask.png)
 
 If you don’t appreciate sensor noise, you may want to use a denoise module as well.
 

@@ -22,9 +22,9 @@ today's blog post is about a different technique which does similar things, and 
 a bilateral filter is basically a high dimensional gaussian blur, which can be evaluated very quickly at reasonable memory cost (and with a simple implementation) if you limit yourself to 3d (pixel position and brightness) [0]. this is what it looks like (left: original, right: bilateral filter applied):
 
 <span style="display: table-row;">
-<span style="display: table-cell">![bilateral_original_crop]({attach}bilateral_original_crop.jpg)</span>
+<span style="display: table-cell">@![bilateral_original_crop](bilateral_original_crop.jpg)</span>
 &nbsp;
-<span style="display: table-cell">![bilateral_baselayer_crop]({attach}bilateral_baselayer_crop.jpg)</span>
+<span style="display: table-cell">@![bilateral_baselayer_crop](bilateral_baselayer_crop.jpg)</span>
 </span>
 
 a bit boring, eh? while we actually use this filter for denoising in one of our modules (in 5d and using the permutohedral lattice [1] instead of the grid), it's mainly useful as a building block (base layer for local contrast enhancement etc).
@@ -36,9 +36,9 @@ take local contrast enhancement as an example. it works much like the standard `
 let's do this on a one dimensional line. the following graphs show a 1d signal **I** (red), the blurred base layer **B** (green), the detail **D** (difference between the two, blue), and the signal after local contrast enhancement **B + 2 D** (magenta):
 
 <span style="display: table-row;">
-<span style="display: table-cell">![halo]({attach}halo.jpg)</span>
+<span style="display: table-cell">@![halo](halo.jpg)</span>
 &nbsp;
-<span style="display: table-cell">![gradientrev]({attach}gradientrev.jpg)</span>
+<span style="display: table-cell">@![gradientrev](gradientrev.jpg)</span>
 </span>
 
 the left graph shows an overblurred base layer, the right one is too sharp (the edge is almost a step function, no smooth gradient). for local contrast enhancement we'd actually like to keep the edges as they are, so these curves should all line up perfectly (and detail should be zero), we only want to enhance small structures, not change edges.
@@ -119,9 +119,9 @@ this might be useful to increase the stability of blend-if masks in the future. 
 there is the possibility of a standalone bilateral local contrast tool with a reasonably low amount of edge artifacts. it currently sits in the `bilateral' branch because we already have so many modules and i'm not sure how useful it is. as a teaser, you can do the following to a 1Mpix image in 20ms on an i7:
 
 <span style="display: table-row;">
-<span style="display: table-cell">![bilateral_original_crop]({filename}bilateral_original_crop.jpg)</span>
+<span style="display: table-cell">@![bilateral_original_crop](bilateral_original_crop.jpg)</span>
 &nbsp;
-<span style="display: table-cell">![bilateral_localcontrast_crop]({attach}bilateral_localcontrast_crop.jpg)</span>
+<span style="display: table-cell">@![bilateral_localcontrast_crop](bilateral_localcontrast_crop.jpg)</span>
 </span>
 
 

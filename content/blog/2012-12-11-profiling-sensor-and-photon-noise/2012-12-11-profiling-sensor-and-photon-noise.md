@@ -60,7 +60,7 @@ the results had certain wavelety artifacts, so the following is using our nlmean
 
 to illustrate the above noise model, here’s a plot of noise standard deviation sigma vs. brightness from a canon eos 5dm2 at iso 3200:
 
-![iso_3200_02-1]({attach}iso_3200_02-1.jpg)
+@![iso_3200_02-1](iso_3200_02-1.jpg)
 
 note how noise increases at higher brightness (caused by the poissonian distribution) and has a global offset (caused by the additive gaussian). only the green channel is saturated, the other two channels absorb too much of the light to go all the way to the right.
 
@@ -78,11 +78,11 @@ note that our fit in the above graph (smooth curve, green) goes below zero, whic
 
 these fits can be used to construct conversion curves [1], which look as follows:
 
-![iso_3200_02_flat-2]({attach}iso_3200_02_flat-2.jpg)
+@![iso_3200_02_flat-2](iso_3200_02_flat-2.jpg)
 
 applying those to an image, and then computing the noise levels vs. brightness again, we get this nice flat graph that mostly shows sigma=1 (which indicates white additive gaussian noise, yay!):
 
-![iso_3200_02_flat-0]({attach}iso_3200_02_flat-0.jpg)
+@![iso_3200_02_flat-0](iso_3200_02_flat-0.jpg)
 
 this is easy to process with your favourite denoising filter (wiener filter and dct, bm3d, wavelet-based methods, nlmeans etc).
 
@@ -221,13 +221,13 @@ interestingly, i get better results out of iso 1600 than from 800. this can have
 
 here are a couple of 1:1 screen grabs to illustrate the numbers. from top to bottom: iso 3200, 6400, 12800 and 25600 with one-click denoise results:
 
-![iso3200_denoised]({attach}iso3200_denoised.jpg)
+@![iso3200_denoised](iso3200_denoised.jpg)
 
-![iso6400_denoised]({attach}iso6400_denoised.jpg)
+![iso6400_denoised](iso6400_denoised.jpg)
 
-![iso12800_denoised21]({attach}iso12800_denoised21.jpg)
+@![iso12800_denoised21](iso12800_denoised21.jpg)
 
-![iso25600_denoised3]({attach}iso25600_denoised3.jpg)
+@![iso25600_denoised3](iso25600_denoised3.jpg)
 
 iso 25600 seems to have trouble with the black level, judging by the color cast (lifting the black level manually helps a little, fixing whitebalance instead of using auto made things worse). apart from that i’m still not going to recommend it for everyday use, but maybe downsized resolutions will be useful for some purposes at times.
 
@@ -256,7 +256,7 @@ take them for you via gphoto2. you need gphoto2, exiv2 and gnuplot installed to 
 
 your images should look something like this:
 
-![example_profile]({attach}example_profile.jpg)
+@![example_profile](example_profile.jpg)
 
 
 ## generate plots and fits
@@ -320,7 +320,7 @@ the goal of this work was to give you a simple, single-click denoiser that alway
 
 it seems that the fit parameters (a, b) behave quite nicely with iso, so it might be possible to interpolate them for your exact iso setting. see for example this plot of the parameter a (poissonian component) for a canon eos 5dm2 indicating that simple linear interpolation will be enough:
 
-![plot]({attach}plot.jpg)
+@![plot](plot.jpg)
 
 it should also be easy to auto-create this graph as a quick sanity check for new presets.
 

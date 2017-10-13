@@ -43,7 +43,7 @@ RELATIVE_URLS = False
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_links', 'tipue_search']
 
-THUMBNAIL_SIZE = 768
+THUMBNAIL_SIZE = 960
 
 # Use pretty type options in output
 TYPOGRIFY = True

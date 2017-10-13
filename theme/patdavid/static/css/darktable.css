@@ -488,7 +488,8 @@ pre > code {
     border-radius: 0;
     color:white;
     height: auto;
-    transition: 0.3s width ease;
+    transition: 0.3s width ease,
+                0.3s font-size ease;
     /* below is for houz
      * fixes the "click on the icon"
      * to display the searchbar thing */

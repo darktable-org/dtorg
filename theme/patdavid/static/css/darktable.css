@@ -509,10 +509,6 @@ pre > code {
     margin-left: 0;
     cursor: text;
 }
-.expanded_searchbox {
-  margin-left: 0 !important;
-  padding-left: 0.2rem !important;
-}
 .page.search {
     margin-top: 4rem;
 }
@@ -520,6 +516,7 @@ pre > code {
 .page.search #searchform {
     text-align: right;
 }
+/* search input on search.html only */
 .page.search #tipue_search_input {
     border-bottom: solid 1px white;
     width: 18rem;
@@ -528,6 +525,8 @@ pre > code {
     height: auto;
     width: 90%;
     color: #1EAEDB;
+    margin-left: 0;
+    cursor: initial;
 }
 @media (min-width: 750px){
     .page.search #tipue_search_input {

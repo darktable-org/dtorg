@@ -173,8 +173,7 @@ All right, we got a sensor readout&nbsp;– an array of unsigned integers&nbsp;�
 
     Since for white color, all the components have exact the same value&nbsp;– $\mathbf{1.0}$&nbsp;– we just need to make sure that the maximal values are the same value. We can not scale each of the channels separately, because that would change **white balance**. We simply need to pick the minimal **white level**&nbsp;– $\mathbf{0.9}$&nbsp;– in our case, and clip all the data to that level. I.e. all the data which had a value of less than or equal to that threshold, will retain the same value; and all the pixels with the value greater than the threshold will have the value of threshold&nbsp;– $\mathbf{0.9}$.
 
-    Alternatively, one could try to recover these highlights, see [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module; and [
-    Color Reconstruction]({filename}/blog/2015-03-07-color-reconstruction/2015-03-07-color-reconstruction.md) (though this last one only guesses color based on surroundings, does not actually reconstruct the channels, and is a _bit_ too late in the pipe).
+    Alternatively, one could try to recover these highlights, see [`highlight reconstruction`](/usermanual/ch03s04.html.php#highlight_reconstruction) module; and [Color Reconstruction]({filename}/blog/2015-03-07-color-reconstruction/2015-03-07-color-reconstruction.md) (though this last one only guesses color based on surroundings, does not actually reconstruct the channels, and is a _bit_ too late in the pipe).
 
     If you don't do highlight handling, you get what you have seen in the third image in this article&nbsp;– ugly, unnaturally looking, discolored, highlights.
 

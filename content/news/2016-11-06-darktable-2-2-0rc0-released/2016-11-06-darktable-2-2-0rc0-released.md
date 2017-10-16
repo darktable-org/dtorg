@@ -23,20 +23,20 @@ and the changelog as compared to 2.0.0 can be found below.
 
 ## The Big Ones:
 
-* Add new automatic perspective correction module ("[A new module for automatic perspective correction]({filename}/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md)")
-* Liquify tool for all your fancy pixel moving ("[Liquify, liquify?]({filename}/blog/2016-04-03-liquify-liquify/2016-04-03-liquify-liquify.md)")
-* A new image module to use a Color Look Up Table (CLUT) to change colors in the image ("[colour manipulation with the colour checker lut module]({filename}/blog/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module.md)")
+* Add new automatic perspective correction module ("[{article.title}/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md]({filename}/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md)")
+* Liquify tool for all your fancy pixel moving ("[{article.title}/blog/2016-04-03-liquify-liquify/2016-04-03-liquify-liquify.md]({filename}/blog/2016-04-03-liquify-liquify/2016-04-03-liquify-liquify.md)")
+* A new image module to use a Color Look Up Table (CLUT) to change colors in the image ("[{article.title}/blog/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module.md]({filename}/blog/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module.md)")
 * In Highlight reconstruction module, the mode LCh reconstruction was completedy rewritten, and is no longer useless!
 * A new tool, darktable-chart, that goes along with the CLUT module, to create styles for the corresponding module
-* Exposure fusion in the basecurve module to lower the dynamic range of images ("[compressing dynamic range with exposure fusion]({filename}/blog/2016-08-09-compressing-dynamic-range-with-exposure-fusion/2016-08-09-compressing-dynamic-range-with-exposure-fusion.md)")
-* Add new raw overexposure indication ("[Visualizing the raw (sensor) highlight clipping]({filename}/blog/2016-10-10-raw-overexposed/2016-10-10-raw-overexposed.md)")
+* Exposure fusion in the basecurve module to lower the dynamic range of images ("[{article.title}/blog/2016-08-09-compressing-dynamic-range-with-exposure-fusion/2016-08-09-compressing-dynamic-range-with-exposure-fusion.md]({filename}/blog/2016-08-09-compressing-dynamic-range-with-exposure-fusion/2016-08-09-compressing-dynamic-range-with-exposure-fusion.md)")
+* Add new raw overexposure indication ("[{article.title}/blog/2016-10-10-raw-overexposed/2016-10-10-raw-overexposed.md]({filename}/blog/2016-10-10-raw-overexposed/2016-10-10-raw-overexposed.md)")
 * Darkroom: the preview (in top-left corner) is now no longer pre-demosaiced, thus the preview, color picker, histogram show the proper results when there is highlight clipping.
 * Add undo/redo support for the darkroom
 
 ## Quite Interesting Changes:
 
 * Split the database into a library containing images and a general one with styles, presets and tags. That allows having access to those when for example running with a :memory: library
-* Support running on platforms other than x86 (64bit little-endian, currently ARM64 only) ("[Running on non-x86 platforms]({filename}/blog/2016-04-01-running-on-non-x86-platforms/2016-04-01-running-on-non-x86-platforms.md)")
+* Support running on platforms other than x86 (64bit little-endian, currently ARM64 only) ("[{article.title}/blog/2016-04-01-running-on-non-x86-platforms/2016-04-01-running-on-non-x86-platforms.md]({filename}/blog/2016-04-01-running-on-non-x86-platforms/2016-04-01-running-on-non-x86-platforms.md)")
 * darktable is now happy to use smaller stack sizes. That should allow using musl libc
 * Allow darktable-cli to work on directories
 * Allow to import/export tags from Lightroom keyword files

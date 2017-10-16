@@ -11,7 +11,7 @@ tags: blog, development, darktable, highlights, shadow recovery, tutorial
 
 One of the remaining shortcomings of digital cameras is their rather low dynamic range in comparison to analog&nbsp;– especially black-and-white&nbsp;– film. Scenes with strong differences between highlights and shadows are very difficult to capture. Even if they are exposed properly with no blown-out highlights they will too often only give acceptable results after extensive post-processing.
 
-Fortunately, darktable is progressing with a high pace. Some days ago I wrote an article on how to recover shadows with a technique using lowpass filter plus blend mode ([Using lowpass filter to recover shadows]({filename}/blog/2012-02-13-using-lowpass-filter-to-recover-shadows/2012-02-13-using-lowpass-filter-to-recover-shadows.md)). In between a new, even better module called “shadows and highlights” was integrated into darktable, that obsoletes this technique.
+Fortunately, darktable is progressing with a high pace. Some days ago I wrote an article on how to recover shadows with a technique using lowpass filter plus blend mode ("[{article.title}/blog/2012-02-13-using-lowpass-filter-to-recover-shadows/2012-02-13-using-lowpass-filter-to-recover-shadows.md]({filename}/blog/2012-02-13-using-lowpass-filter-to-recover-shadows/2012-02-13-using-lowpass-filter-to-recover-shadows.md)"). In between a new, even better module called “shadows and highlights” was integrated into darktable, that obsoletes this technique.
 
 As the name implies the new module serves to improve images by lightening shadows and darkening highlights. It’s at the same time more powerful and more convenient to use than the lowpass/blend approach.
 

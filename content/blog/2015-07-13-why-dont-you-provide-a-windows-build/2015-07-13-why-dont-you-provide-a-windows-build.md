@@ -69,5 +69,4 @@ We hope that this reasoning is comprehensible and that no one feels disrespected
 
 # References
 
-
-[That other OS]({filename}/blog/2011-07-17-that-other-os/2011-07-17-that-other-os.md)
+* [{article.title}/blog/2011-07-17-that-other-os/2011-07-17-that-other-os.md]({filename}/blog/2011-07-17-that-other-os/2011-07-17-that-other-os.md)

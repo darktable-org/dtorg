@@ -134,7 +134,7 @@ Assuming Exiv2 translated the LensID in EXIF in to a proper lens name. The Lensf
 
 These articles might be helpful:
 
-* darktable blog: "[have your lens calibrated!]({filename}/blog/2013-07-30-have-your-lens-calibrated/2013-07-30-have-your-lens-calibrated.md)"
+* darktable blog: "[{article.title}/blog/2013-07-30-have-your-lens-calibrated/2013-07-30-have-your-lens-calibrated.md]({filename}/blog/2013-07-30-have-your-lens-calibrated/2013-07-30-have-your-lens-calibrated.md)"
 * [http://libregraphicsworld.org/blog/entry/creating-lens-distorsion-models-with-hugin-lens-calibrator](http://libregraphicsworld.org/blog/entry/creating-lens-distorsion-models-with-hugin-lens-calibrator)
 * [http://lensfun.sourceforge.net/calibration/](http://lensfun.sourceforge.net/calibration/)
 * [http://wilson.bronger.org/lens_calibration_tutorial/](http://wilson.bronger.org/lens_calibration_tutorial/)

@@ -9,7 +9,7 @@ wordpress_lede: lp-thumb.jpg
 wordpress_id: 1131
 tags: blog, development, darktable, highlights, lowpass, shadow recovery, tone curves, tutorial
 
-Outdoor photographers are often confronted with unfavorable light conditions. This often entails too high contrast. Two of the most frequent consequences are blown highlights and deep shadows in your digital images. Overexposed highlights are challenging to repair in digital post post-processing, still darktable offers a decent set of valuable tools as long as you take your pictures in raw ([see Jo's blog post "why you want raw"]({filename}/blog/2012-02-02-why-you-want-raw/2012-02-02-why-you-want-raw.md)). Fortunately, it’s much easier to take care of the deep shadows.
+Outdoor photographers are often confronted with unfavorable light conditions. This often entails too high contrast. Two of the most frequent consequences are blown highlights and deep shadows in your digital images. Overexposed highlights are challenging to repair in digital post post-processing, still darktable offers a decent set of valuable tools as long as you take your pictures in raw (see Jo's blog post "[{article.title}/blog/2012-02-02-why-you-want-raw/2012-02-02-why-you-want-raw.md]({filename}/blog/2012-02-02-why-you-want-raw/2012-02-02-why-you-want-raw.md)"). Fortunately, it’s much easier to take care of the deep shadows.
 
 When talking about deep shadows I not only refer to almost pitch black parts of the image. Even if an important part of the picture is considerably too dark, the photo will miss to catch the interest of the viewer. So it’s worth a try to recover shadows in many cases.
 
@@ -47,7 +47,7 @@ Here is the result after shadow recovery:
 
 The image shows much more detail in areas that were somehow weak and unappealing in the original image. Sometimes you might observe halo-effects if edges have a high tonal contrast. In that case try to reduce the blur radius a bit.
 
-To give the photo its final snap, I added some additional contrast via an S-like L-curve and some color contrast in the blues and yellows via a steep S-like b-curve ([see blog post "Mastering color with Lab tone curves"]({filename}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md)).
+To give the photo its final snap, I added some additional contrast via an S-like L-curve and some color contrast in the blues and yellows via a steep S-like b-curve (see blog post "[{article.title}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md]({filename}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md)").
 
 @![sr-tonecurve](sr-tonecurve.jpeg)
 

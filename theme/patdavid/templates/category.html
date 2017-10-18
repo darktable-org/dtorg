@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-        <title itemprop='name'>{{ category |striptags|lower }} | {{ SITENAME }}</title>
+        <title itemprop='name'>{{ category |striptags }} | {{ SITENAME }}</title>
 {% endblock title %}
 
 
@@ -11,10 +11,10 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@darktable_org">
 
-        <meta itemprop="name" content="darktable {{ category.name |striptags|lower }}" >
-        <meta name="twitter:title" content="darktable {{ category.name |striptags|lower }}" >
-        <meta property="og:title" content="darktable {{ category.name |striptags|lower }}" >
-		<meta itemprop="headline" content="darktable {{ category.name |striptags|lower }}" >
+        <meta itemprop="name" content="darktable {{ category.name |striptags }}" >
+        <meta name="twitter:title" content="darktable {{ category.name |striptags }}" >
+        <meta property="og:title" content="darktable {{ category.name |striptags }}" >
+        <meta itemprop="headline" content="darktable {{ category.name |striptags }}" >
 
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="darktable.org">
@@ -96,7 +96,7 @@
 </svg>
                     </a>
                     {% endif %}
-                    <h1 class='page-title'>{{ category |lower }}</h1>
+                    <h1 class='page-title'>{{ category }}</h1>
                 </div>
             </div>
         </div>

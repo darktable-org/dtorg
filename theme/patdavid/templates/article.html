@@ -8,20 +8,24 @@
 {%block metadata %}
         {# <!-- OpenGraph/Twitter/Schema Stuff
         –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        {% if article.lede %}
         <meta name="twitter:card" content="summary_large_image">
+        {% else %}
+        <meta name="twitter:card" content="summary">
+        {% endif %}
         <meta name="twitter:site" content="@darktable_org">
 
-        <meta itemprop="name" content="{{ article.title |striptags|lower }}" >
-        <meta name="twitter:title" content="{{ article.title |striptags|lower }}" >
-        <meta property="og:title" content="{{ article.title |striptags|lower }}" >
-        <meta itemprop="headline" content="{{ article.title |striptags|lower }}" >
+        <meta itemprop="name" content="{{ article.title |striptags }}" >
+        <meta name="twitter:title" content="{{ article.title |striptags }}" >
+        <meta property="og:title" content="{{ article.title |striptags }}" >
+        <meta itemprop="headline" content="{{ article.title |striptags }}" >
 
         <meta property="og:type" content="article">
         <meta property="og:site_name" content="darktable.org">
 
         {% if article.author %}
         <meta itemprop="author" content="{{ article.author }}" />
-        <meta property="og:author" content="{{ article.author }}" />
+        <meta property="article:author" content="{{ article.author }}" />
         {% endif %}
 
         {% if article.date %}

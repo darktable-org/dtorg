@@ -30,7 +30,7 @@
 
         {% if article.date %}
         <meta itemprop="datePublished" content="{{ article.date }}" />
-        <meta property="og:published_time" content="{{ article.date }}" />
+        <meta property="article:published_time" content="{{ article.date }}" />
         {% endif %}
 
         {% if article.lede %}
@@ -135,9 +135,9 @@
                     </small>
 
                     <p class='social_share'>
-                    Share this on: <a href="https://plus.google.com/share?url=https://www.darktable.org/{{ article.url|urlencode }}" target="_blank" title="Share this post on Google+">Google+</a> |
-                    <a href="https://twitter.com/intent/tweet?url=https://www.darktable.org/{{ article.url|urlencode }}" target="_blank" title="Share this post on twitter">Twitter</a> |
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.darktable.org/{{ article.url|urlencode }}" target="_blank" title="Share this post on Facebook">Facebook</a>
+                    Share this on: <a href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url|urlencode }}" target="_blank" title="Share this post on Google+">Google+</a> |
+                    <a href="https://twitter.com/intent/tweet?url={{ SITEURL }}/{{ article.url|urlencode }}" target="_blank" title="Share this post on twitter">Twitter</a> |
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url|urlencode }}" target="_blank" title="Share this post on Facebook">Facebook</a>
                     </p>
 
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/07/released-darktable-1-6-8/
 slug: released-darktable-1-6-8
 title: released darktable 1.6.8
-wordpress_lede: dt-2.jpg
+lede: dt-2_wide.jpg
 wordpress_id: 3745
 tags: announcement, darktable release
 

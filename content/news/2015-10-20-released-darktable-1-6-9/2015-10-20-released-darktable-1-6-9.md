@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/10/released-darktable-1-6-9/
 slug: released-darktable-1-6-9
 title: released darktable 1.6.9
-wordpress_lede: dt-3.jpg
+lede: lede_wide.jpg
 wordpress_id: 3820
 tags: announcement, darktable release
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2016/03/a-new-module-for-automatic-perspective-correction/
 slug: a-new-module-for-automatic-perspective-correction
 title: A new module for automatic perspective correction
-wordpress_lede: ashift_0.jpg
+lede: ashift_0_wide.jpg
 wordpress_id: 3986
 tags: blog, development, upcoming feature, darktable, new feature, perspective correction
 

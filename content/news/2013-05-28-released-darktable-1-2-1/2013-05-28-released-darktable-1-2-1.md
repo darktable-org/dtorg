@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2013/05/released-darktable-1-2-1/
 slug: released-darktable-1-2-1
 title: released darktable 1.2.1
-wordpress_lede: IMG_5490_export2.jpg
+lede: IMG_5490_export2_wide.jpg
 wordpress_id: 2930
 tags: announcement, darktable release
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2015/01/luminosity-masks-in-darktable/
 slug: luminosity-masks-in-darktable
 title: Luminosity Masks in darktable
-wordpress_lede: lmaskdtyellow.png
+lede: lmaskdtyellow_wide.jpg
 wordpress_id: 3473
 tags: blog
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2013/03/updated-user-manual-online/
 slug: updated-user-manual-online
 title: Updated user manual online
-wordpress_lede: Bildschirmfoto-vom-2013-02-17-232553.png
+lede: Bildschirmfoto-vom-2013-02-17-232553_wide.png
 wordpress_id: 2736
 
 Dear all,

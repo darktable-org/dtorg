@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2014/11/release-candidate-for-darktable-1-6/
 slug: release-candidate-for-darktable-1-6
 title: Release Candidate for darktable 1.6
-wordpress_lede: 20110428_london_20110428_IMG_3966_01_small.jpg
+lede: 20110428_london_20110428_IMG_3966_01_small_wide.jpg
 wordpress_id: 3421
 tags: announcement, darktable release
 

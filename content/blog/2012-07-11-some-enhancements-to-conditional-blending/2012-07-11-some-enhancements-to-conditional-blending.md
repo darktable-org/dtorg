@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2012/07/some-enhancements-to-conditional-blending/
 slug: some-enhancements-to-conditional-blending
 title: Some enhancements to conditional blending
-wordpress_lede: IMG_4287x_0004.jpg
+lede: IMG_4287x_0004_wide.jpg
 wordpress_id: 1862
 tags: blog, community, development, blending, color, conditional blending, darktable, Lab, monochrome, saturation
 

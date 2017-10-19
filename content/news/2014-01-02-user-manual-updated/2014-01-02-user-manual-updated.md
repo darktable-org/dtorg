@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2014/01/user-manual-updated/
 slug: user-manual-updated
 title: user manual updated
-wordpress_lede: IMG_55722.jpg
+lede: IMG_55722_wide.jpg
 wordpress_id: 3205
 tags: website
 

@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2013/03/string-freeze-for-darktable-1-2/
 slug: string-freeze-for-darktable-1-2
 title: String freeze for darktable 1.2
-wordpress_lede: IMG_8143_export.jpg
+lede: IMG_8143_export_wide.jpg
 wordpress_id: 2783
 tags: announcement, darktable release
 

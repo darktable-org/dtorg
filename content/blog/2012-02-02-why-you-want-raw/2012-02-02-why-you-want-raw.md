@@ -5,7 +5,7 @@ layout: post
 link: http://www.darktable.org/2012/02/why-you-want-raw/
 slug: why-you-want-raw
 title: why you want raw
-wordpress_lede: 00-output.jpg
+lede: 00-output_wide.jpg
 wordpress_id: 985
 tags: blog, color zones, highlights, monochrome, tutorial
 

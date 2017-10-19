@@ -1,0 +1,51 @@
+table, tr, th, td {
+  border-width: 0px;
+}
+
+.breadcrumbs {
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+  margin-left: -3rem;
+  font-size: smaller;
+}
+
+.navheader {
+  text-align: center;
+  margin: 0 -3rem;
+  font-size: smaller;
+}
+
+.navfooter {
+  text-align: center;
+  margin: 4rem -3rem 0 -3rem;
+  font-size: smaller;
+}
+
+.usermanual_nav_clear {
+  clear: both;
+}
+
+.usermanual_nav_left {
+  width: 33%;
+  text-align: left;
+  float: left;
+}
+
+.usermanual_nav_right {
+  width: 33%;
+  text-align: right;
+  float: right;
+}
+
+.usermanual_nav_center {
+  width: 33%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title code, .breadcrumbs code {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+}

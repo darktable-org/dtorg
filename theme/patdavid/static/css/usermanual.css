@@ -49,3 +49,21 @@ table, tr, th, td {
   padding: 0;
   margin: 0;
 }
+
+.language_list {
+  display: inline;
+}
+
+.language_list_entry {
+  display:inline;
+}
+
+.language_list_entry::after {
+  content: " | ";
+  margin: 0 0.3rem;
+}
+
+.language_list_entry:last-child::after {
+  content: "";
+  margin: 0;
+}

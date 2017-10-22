@@ -67,3 +67,11 @@ table, tr, th, td {
   content: "";
   margin: 0;
 }
+
+.informaltable table table {
+  width: 100%;
+}
+
+.informaltable table table th, .informaltable table table td{
+  padding: 0;
+}

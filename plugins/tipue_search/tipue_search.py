@@ -13,7 +13,7 @@ from __future__ import unicode_literals
 
 import os.path
 import json
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
 from codecs import open
 try:
     from urlparse import urljoin
@@ -80,17 +80,23 @@ class Tipue_Search_JSON_Generator(object):
 
     def create_usermanual_nodes(self):
         usermanual = os.path.join(self.output_path, 'usermanual')
+        search_content = SoupStrainer(id='search_content')
 
         for dirpath, _, filenames in os.walk(usermanual):
             for filename in filenames:
                 if filename.endswith('.html'):
                     srcfile = os.path.join(dirpath, filename)
-                    with open(srcfile, 'r') as f:
-                        soup = BeautifulSoup(f, 'html.parser')
-                        page_title = soup.title.string if soup.title is not None else ''
-                        page_text = soup.get_text()
+                    with open(srcfile, 'r') as fd:
+                        soup = BeautifulSoup(fd, 'html.parser', parse_only=search_content)
 
-                        page_url = urljoin(self.siteurl, 'usermanual' + srcfile[len(usermanual):])
+                        page_title = soup.find(class_='title')
+                        page_title = page_title.get_text(' ', strip=True).replace('&nbsp;', ' ').replace('“', '"').replace('”', '"').replace('’', "'").replace('^', '&#94;') if page_title is not None else ''
+
+                        page_text = soup.get_text(' ', strip=True).replace('“', '"').replace('”', '"').replace('’', "'").replace('¶', ' ').replace('^', '&#94;')
+                        page_text = ' '.join(page_text.split())
+
+                        # page_url = urljoin(self.siteurl, 'usermanual' + srcfile[len(usermanual):])
+                        page_url = 'usermanual' + srcfile[len(usermanual):] # seeing the domain name for all results is annoying!
 
                         node = {'title': page_title,
                                 'text': page_text,

@@ -78,6 +78,28 @@ class Tipue_Search_JSON_Generator(object):
         self.json_nodes.append(node)
 
 
+    def create_usermanual_nodes(self):
+        usermanual = os.path.join(self.output_path, 'usermanual')
+
+        for dirpath, _, filenames in os.walk(usermanual):
+            for filename in filenames:
+                if filename.endswith('.html'):
+                    srcfile = os.path.join(dirpath, filename)
+                    with open(srcfile, 'r') as f:
+                        soup = BeautifulSoup(f, 'html.parser')
+                        page_title = soup.title.string if soup.title is not None else ''
+                        page_text = soup.get_text()
+
+                        page_url = urljoin(self.siteurl, 'usermanual' + srcfile[len(usermanual):])
+
+                        node = {'title': page_title,
+                                'text': page_text,
+                                'tags': 'usermanual',
+                                'url': page_url}
+
+                        self.json_nodes.append(node)
+
+
     def generate_output(self, writer):
         path = os.path.join(self.output_path, 'tipuesearch_content.json')
 
@@ -91,6 +113,9 @@ class Tipue_Search_JSON_Generator(object):
 
         for page in pages:
             self.create_json_node(page)
+
+        self.create_usermanual_nodes()
+
         root_node = {'pages': self.json_nodes}
 
         with open(path, 'w', encoding='utf-8') as fd:

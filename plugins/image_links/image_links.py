@@ -79,26 +79,29 @@ def create_thumbnails(pelicanobj):
     global exts
     THUMBNAIL_SIZE = pelicanobj.settings.get('THUMBNAIL_SIZE', DEFAULT_THUMBNAIL_SIZE)
 
+    usermanual_base = os.path.join(pelicanobj.settings['OUTPUT_PATH'], 'usermanual')
+
     for dirpath, _, filenames in os.walk(pelicanobj.settings['OUTPUT_PATH']):
-        for image_filename in filenames:
-            image_filename = os.path.join(dirpath, image_filename)
-            (base, ext) = os.path.splitext(image_filename)
-            if ext.lower() in exts:
-                thumb_filename = base + '_thumb'  + ext
-                if not base.endswith('_thumb') and not os.path.exists(thumb_filename):
-                    try:
-                        image = Image.open(image_filename)
-                        image.thumbnail((THUMBNAIL_SIZE, THUMBNAIL_SIZE), Image.ANTIALIAS)
-                        image.save(thumb_filename)
-                        try:
-                            logger.info("Generated Thumbnail for {0}".format(image_filename))
-                        except UnicodeEncodeError:
-                            logger.info("Generated Thumbnail for a file with unicode name")
-                    except IOError:
-                        try:
-                            logger.warn("Generating Thumbnail for {0} failed".format(image_filename))
-                        except UnicodeEncodeError:
-                            logger.warn("Generating Thumbnail for a file with unicode name failed")
+        if not dirpath.startswith(usermanual_base):
+          for image_filename in filenames:
+              image_filename = os.path.join(dirpath, image_filename)
+              (base, ext) = os.path.splitext(image_filename)
+              if ext.lower() in exts:
+                  thumb_filename = base + '_thumb'  + ext
+                  if not base.endswith('_thumb') and not os.path.exists(thumb_filename):
+                      try:
+                          image = Image.open(image_filename)
+                          image.thumbnail((THUMBNAIL_SIZE, THUMBNAIL_SIZE), Image.ANTIALIAS)
+                          image.save(thumb_filename)
+                          try:
+                              logger.info("Generated Thumbnail for {0}".format(image_filename))
+                          except UnicodeEncodeError:
+                              logger.info("Generated Thumbnail for a file with unicode name")
+                      except IOError:
+                          try:
+                              logger.warn("Generating Thumbnail for {0} failed".format(image_filename))
+                          except UnicodeEncodeError:
+                              logger.warn("Generating Thumbnail for a file with unicode name failed")
 
 
 def register():

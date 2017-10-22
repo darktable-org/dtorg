@@ -78,11 +78,11 @@ class Tipue_Search_JSON_Generator(object):
         self.json_nodes.append(node)
 
 
-    def create_usermanual_nodes(self):
-        usermanual = os.path.join(self.output_path, 'usermanual')
+    def create_extra_nodes(self, folder):
+        base = os.path.join(self.output_path, folder)
         search_content = SoupStrainer(id='search_content')
 
-        for dirpath, _, filenames in os.walk(usermanual):
+        for dirpath, _, filenames in os.walk(base):
             for filename in filenames:
                 if filename.endswith('.html'):
                     srcfile = os.path.join(dirpath, filename)
@@ -95,20 +95,27 @@ class Tipue_Search_JSON_Generator(object):
                         page_text = soup.get_text(' ', strip=True).replace('“', '"').replace('”', '"').replace('’', "'").replace('¶', ' ').replace('^', '&#94;')
                         page_text = ' '.join(page_text.split())
 
-                        # page_url = urljoin(self.siteurl, 'usermanual' + srcfile[len(usermanual):])
-                        page_url = 'usermanual' + srcfile[len(usermanual):] # seeing the domain name for all results is annoying!
+                        # page_url = urljoin(self.siteurl, folder + srcfile[len(base):])
+                        page_url = folder + srcfile[len(base):] # seeing the domain name for all results is annoying!
 
                         node = {'title': page_title,
                                 'text': page_text,
-                                'tags': 'usermanual',
+                                'tags': folder,
                                 'url': page_url}
 
                         self.json_nodes.append(node)
 
 
-    def generate_output(self, writer):
-        path = os.path.join(self.output_path, 'tipuesearch_content.json')
+    def write_output(self, filename):
+        path = os.path.join(self.output_path, filename)
 
+        root_node = {'pages': self.json_nodes}
+
+        with open(path, 'w', encoding='utf-8') as fd:
+            json.dump(root_node, fd, separators=(',', ':'), ensure_ascii=False)
+
+
+    def generate_output(self, writer):
         pages = self.context['pages'] + self.context['articles']
 
         for article in self.context['articles']:
@@ -120,12 +127,15 @@ class Tipue_Search_JSON_Generator(object):
         for page in pages:
             self.create_json_node(page)
 
-        self.create_usermanual_nodes()
+        self.create_extra_nodes('usermanual')
 
-        root_node = {'pages': self.json_nodes}
+        self.write_output('tipuesearch_content.json')
 
-        with open(path, 'w', encoding='utf-8') as fd:
-            json.dump(root_node, fd, separators=(',', ':'), ensure_ascii=False)
+        del self.json_nodes[:]
+
+        self.create_extra_nodes('lua-api')
+
+        self.write_output('tipuesearch_lua_api.json')
 
 
 def get_generators(generators):

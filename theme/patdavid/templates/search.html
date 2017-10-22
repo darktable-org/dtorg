@@ -9,12 +9,36 @@
     <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
     <script>
+        // taken from tipuesearch.js as it's handy
+        function getURLP(name)
+        {
+            var _locSearch = location.search;
+            var _splitted = (new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(_locSearch)||[,""]);
+            var searchString = _splitted[1].replace(/\+/g, '%20');
+            try
+            {
+                searchString = decodeURIComponent(searchString);
+            }
+            catch(e)
+            {
+                searchString = unescape(searchString);
+            }
+            return searchString || null;
+        }
+
         $(document).ready(function() {
+            var contentLocation = 'tipuesearch_content.json';
+            if(getURLP('search') == 'lua-api')
+            {
+                contentLocation = 'tipuesearch_lua_api.json';
+                $("input[name='search'][value='lua-api']").prop("checked","checked");
+            }
+
             $('#tipue_search_input').tipuesearch({
               'mode' : 'json',
               'show': 10,
               'newWindow': false,
-              'contentLocation': 'tipuesearch_content.json'
+              'contentLocation': contentLocation
             });
         });
     </script>
@@ -37,6 +61,13 @@
                          </g>
                     </svg>
                     <input type="text" class="searchbox" name="q" id="tipue_search_input" placeholder="search">
+                    <fieldset class="searchmode" id="searchmode">
+                      <span>Search in</span>
+                      <input type="radio" name="search" value="website" id="searchmode_website" checked>
+                      <label for="searchmode_website">website and usermanual</label>
+                      <input type="radio" name="search" value="lua-api" id="searchmode_lua_api">
+                      <label for="searchmode_lua_api">lua api</label>
+                    </fieldset>
                 </form>
                 </div>
             </div>

@@ -126,6 +126,7 @@ section.lede.default {
 
 section.lede {
     position: relative;
+    min-height: 3rem;
 }
 
 .lede-author {

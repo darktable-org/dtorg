@@ -234,6 +234,10 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
         top: 2.6rem;
         max-width: initial;
     }
+    .page.search .container.title {
+        position: initial;
+        top: initial;
+    }
     .page .container.title .row, 
     .category .container.title .row {
         position: relative;

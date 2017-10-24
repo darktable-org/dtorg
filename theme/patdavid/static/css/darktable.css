@@ -510,6 +510,7 @@ blockquote {
     position: absolute;
     bottom: 0;
     text-decoration: none;
+    margin-left: 20px;
 }
 .rss_link svg {
     width: 16px;

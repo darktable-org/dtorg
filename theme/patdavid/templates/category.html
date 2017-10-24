@@ -72,7 +72,16 @@
 {%endblock metadata %}
 
 {% block header %}
-    <section class='lede'>
+    {% if articles_page.object_list[0].wordpress_lede %}
+    <section class='lede-bg wp'>
+        <img src='/{{ articles_page.object_list[0].url }}{{ articles_page.object_list[0].wordpress_lede }}'>
+    </section>
+    {% elif articles_page.object_list[0].lede %}
+    <section class='lede-bg'>
+        <img src='/{{ articles_page.object_list[0].url }}{{ articles_page.object_list[0].lede | insert_thumbnail }}'>
+    </section>
+    {% endif %}
+    <section class='lede default'>
         {# don't forget to change this above if you change it here #}
         {# ie: in the metadata/opengraph stuff #}
         {# <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-about.jpg'> #}

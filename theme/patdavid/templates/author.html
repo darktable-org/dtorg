@@ -74,7 +74,11 @@
 
 
 {% block header %}
-    <section class='lede'>
+    <section class='lede-bg'>
+        {# If you change this, don't forget to change it in the metadata above #}
+        <img src='{{ SITEURL }}/theme/images/lede-author.jpg'>
+    </section>
+    <section class='lede author'>
         {# If you change this, don't forget to change it in the metadata above #}
         <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-author.jpg'>
     </section>

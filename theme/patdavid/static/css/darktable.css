@@ -121,12 +121,57 @@ body {
  * no lede defined.  If we
  * use a default lede, change this */
 section.lede.default {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 section.lede {
     position: relative;
-    min-height: 3rem;
+}
+section.lede-bg {
+    display: none;
+}
+
+@media( min-width: 1367px ){
+    .lede {
+        margin-top: 50px;
+    }
+    .lede.page, .lede.author,
+    .lede.tag {
+        margin-bottom: -3.7rem;
+    }
+    .lede .lede-img {
+        width: 960px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .lede-author {
+        bottom: 0;
+        right: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .lede-author > div {
+        width: 960px;
+        margin: 0 auto;
+        text-align: right;
+    }
+    section.lede-bg {
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        display: initial;
+        margin-left: -25%;
+        background: linear-gradient( #202020, #000000 );
+    }
+    section.lede-bg.wp {
+        margin-left: 0;
+    }
+    section.lede-bg img {
+        min-height: 100vh;
+        min-width: 100vw;
+        opacity: 0.1;
+        filter: grayscale(100%);
+    }
 }
 
 .lede-author {

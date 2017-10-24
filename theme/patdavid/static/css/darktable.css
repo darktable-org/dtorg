@@ -137,7 +137,8 @@ section.lede-bg {
     }
     .lede.page, .lede.author,
     .lede.tag {
-        margin-bottom: -3.7rem;
+        /* margin-bottom: -3.7rem; */
+        margin-top: 120px;
     }
     .lede .lede-img {
         width: 960px;
@@ -171,6 +172,12 @@ section.lede-bg {
         min-width: 100vw;
         opacity: 0.1;
         filter: grayscale(100%);
+    }
+    section.lede.default {
+        /* This fixes aggregate pages
+         * like blog/ and news/ to push
+         * down content so the H1 shows */
+        margin-top: 120px;
     }
 }
 
@@ -219,6 +226,20 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
 
 .container.title {
     z-index: 1;
+}
+@media( min-width: 1367px ){
+    .page .container.title,
+    .category .container.title {
+        position: absolute;
+        left: 50%;
+        top: 2.6rem;
+    }
+    .page .container.title .row, 
+    .category .container.title .row {
+        position: relative;
+        left: -50%;
+        padding-right: 20px;
+    }
 }
 
 .container.title h1,

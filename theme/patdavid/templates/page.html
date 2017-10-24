@@ -71,26 +71,29 @@
 
 
 {% block header %}
+
+    <section class='lede-bg'>
     {% if page.lede %}
-    <section class='lede-bg'>
         <img src='{{ page.lede }}' alt='darktable page lede image'>
-    </section>
-    <section class='lede page'>
-        <img class='lede-img' src='{{ page.lede }}' alt='darktable page lede image'>
-    </section>
     {% else %}
-    <section class='lede-bg'>
-        <img src='/theme/images/lede-about.jpg'>
-    </section>
-    <section class='lede page'>
-        <img class='lede-img' src='/theme/images/lede-about.jpg'>
-    </section>
+        <img src='/theme/images/lede-about.jpg' alt='darktable page lede image'>
     {% endif %}
+    </section>
+
+    <section class='lede page'>
+    {% if page.lede %}
+        <img class='lede-img' src='{{ page.lede }}' alt='darktable page lede image'>
+    {% else %}
+        <img class='lede-img' src='/theme/images/lede-about.jpg' alt='darktable page lede image'>
+    {% endif %}
+    </section>
+
 {% endblock header %}
 
 {% block content %}
 
     <section class='page'>
+
         <div class='container title'>
             <div class='row'>
                 <div class='column'>
@@ -100,6 +103,7 @@
         </div>
 
         <div class='container content'>
+
 
             <div class='subnav'>
             {% set curtitle = page.title %}

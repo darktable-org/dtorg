@@ -51,7 +51,9 @@ table, tr, th, td {
 }
 
 .language_list {
+  padding-left: 0;
   display: inline;
+  float: left;
 }
 
 .language_list_entry {

@@ -64,7 +64,7 @@ body {
     line-height: 25px;
 }
 /* @media (min-width: 64rem) { */
-@media (min-width: 1000px) {
+@media (min-width: 1000px ) {
     #logo img {
         position: absolute;
         margin-left: 1rem;
@@ -131,7 +131,7 @@ section.lede-bg {
     display: none;
 }
 
-@media( min-width: 1367px ){
+@media( min-width: 1000px ){ /* for wider screens */
     .lede {
         margin-top: 50px;
     }
@@ -227,7 +227,7 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
 .container.title {
     z-index: 1;
 }
-@media( min-width: 1367px ){
+@media( min-width: 1000px ){ /* for wider screens */
     .page .container.title,
     .category .container.title {
         position: absolute;

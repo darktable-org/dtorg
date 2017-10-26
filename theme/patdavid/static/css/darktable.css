@@ -187,6 +187,10 @@ section.home-lede-bg {
          * down content so the H1 shows */
         margin-top: 120px;
     }
+    nav.home ~ section.footer {
+        background: rgba(16, 16, 16, 0.66);
+        padding-top: 4rem;
+    }
 }
 
 .lede-author {

@@ -159,11 +159,12 @@ section.home-lede-bg {
     }
     section.lede-bg,
     section.home-lede-bg{
-        position: fixed;
+        /*position: fixed;
         top: 0;
+        margin-left: -25%;
+        */
         z-index: -1;
         display: initial;
-        margin-left: -25%;
         background: linear-gradient( #202020, #000000 );
     }
     section.lede-bg.wp,
@@ -175,6 +176,10 @@ section.home-lede-bg {
         min-width: 100vw;
         opacity: 0.1;
         filter: grayscale(100%);
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate( -50%, 0);
     }
     section.home-lede-bg img {
       min-height: 100vh;

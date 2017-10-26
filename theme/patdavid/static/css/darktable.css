@@ -469,10 +469,14 @@ blockquote {
 /* Footer
  * ------ */
 .footer {
-    background-color: #111;
     color: #787878;
     padding-top: 2rem;
     padding-bottom: 4rem;
+}
+@media( max-width: 1000px ){ /* for smaller screens */
+  .footer {
+    background-color: #111;
+  }
 }
 .footer a {
     text-decoration: none;

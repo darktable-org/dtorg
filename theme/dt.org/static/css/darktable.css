@@ -458,7 +458,8 @@ li > p:first-child {
     display: inline;
 }
 
-.article-content img {
+.article-content img,
+.container.content img {
   max-width: 100%;
 }
 

@@ -29,17 +29,13 @@
         {% endif %}
 
         {% if page.lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ page.url }}{{ page.lede }}"> 
-        <meta property="og:image" content="{{ SITEURL }}/{{ page.url }}{{ page.lede }}">
-        <meta name="twitter:image" content="{{ SITEURL }}/{{ page.url }}{{ page.lede }}">
-        {% elif page.wordpress_lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ page.url }}{{ page.wordpress_lede }}">
-        <meta property="og:image" content="{{ SITEURL }}/{{ page.url }}{{ page.wordpress_lede }}">
-        <meta name="twitter:image" content="{{ SITEURL }}/{{ page.url }}{{ page.wordpress_lede }}">
+        <meta itemprop="image" content="{{ SITEURL }}/images/ledes/{{ page.lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/images/ledes/{{ page.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/ledes/{{ page.lede }}">
         {% else %}
-        <meta itemprop="image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
-        <meta property="og:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
-        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta itemprop="image" content="{{ SITEURL }}{{ DEFAULT_LEDE }}">
+        <meta property="og:image" content="{{ SITEURL }}{{ DEFAULT_LEDE }}">
+        <meta name="twitter:image" content="{{ SITEURL }}{{ DEFAULT_LEDE }}">
         {% endif %}
 
         {% if page.summary %}
@@ -74,17 +70,17 @@
 
     <section class='lede-bg'>
     {% if page.lede %}
-        <img src='{{ page.lede }}' alt='darktable page lede image'>
+        <img src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image'>
     {% else %}
-        <img src='/theme/images/lede-about.jpg' alt='darktable page lede image'>
+        <img src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image'>
     {% endif %}
     </section>
 
     <section class='lede page'>
     {% if page.lede %}
-        <img class='lede-img' src='{{ page.lede }}' alt='darktable page lede image' width='960' height='402'>
+        <img class='lede-img' src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image' width='960' height='402'>
     {% else %}
-        <img class='lede-img' src='/theme/images/lede-about.jpg' alt='darktable page lede image' width='960' height='402'>
+        <img class='lede-img' src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image' width='960' height='402'>
     {% endif %}
     </section>
 
@@ -109,7 +105,7 @@
             {% set curtitle = page.title %}
             {% for page in pages|sort(attribute='url') %}
                 {% if page.url.startswith( curtitle ) and ( page.url != curtitle+"/" ) %}
-                <a href="/{{ page.url }}">{{ page.title |striptags|lower }}</a> 
+                <a href="/{{ page.url }}">{{ page.title |striptags|lower }}</a>
                 {% endif %}
             {% endfor %}
             </div>

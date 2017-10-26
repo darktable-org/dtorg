@@ -91,6 +91,8 @@ MENUITEMS = (
 DIRECT_TEMPLATES = ['categories', 'tags', 'search', 'small_ledes']
 PAGINATED_DIRECT_TEMPLATES = ['index', 'category', 'tag']
 
+# choose a default page lede that sticks out enough to force people to care about it and add a custom lede :-)
+DEFAULT_LEDE = '/theme/images/darktable_skull+logo.png'
 
 # Pagination options for list pages
 DEFAULT_ORPHANS = 0

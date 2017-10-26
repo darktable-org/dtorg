@@ -3,6 +3,7 @@ Date: 2017-09-21T15:10:23-06:00
 author: smn
 link: http://www.darktable.org/contact/
 wordpress_id: 124
+lede: lede-contact.jpg
 
 
 # How to get in contact

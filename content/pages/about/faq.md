@@ -4,7 +4,7 @@ Date: 2017-09-20T16:18:43-06:00
 author: smn
 link: http://www.darktable.org/about/faq/
 wordpress_id: 1536
-
+lede: lede-faq.jpg
 
 * **What's the best way to contact the developers/report bugs?**
 

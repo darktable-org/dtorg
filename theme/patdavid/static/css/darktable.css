@@ -170,8 +170,8 @@ section.lede-bg {
     section.lede-bg img {
         min-height: 100vh;
         min-width: 100vw;
-        opacity: 0.1;
-        filter: grayscale(100%);
+        opacity: 0.5;
+/*         filter: grayscale(100%); */
     }
     section.lede.default {
         /* This fixes aggregate pages
@@ -238,7 +238,7 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
         position: initial;
         top: initial;
     }
-    .page .container.title .row, 
+    .page .container.title .row,
     .category .container.title .row {
         position: relative;
         width: 960px;

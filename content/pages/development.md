@@ -3,6 +3,7 @@ Date: 2017-09-21T14:55:35-06:00
 author: smn
 link: http://www.darktable.org/development/
 wordpress_id: 404
+lede: lede-development.jpg
 
 <div class="subnav">
     <a href="https://darktable.org/redmine/projects/darktable/wiki">developer's wiki</a>

@@ -4,6 +4,7 @@ Date: 2017-09-20T14:56:21-06:00
 author: smn
 link: http://www.darktable.org/about/screenshots/
 wordpress_id: 116
+lede: lede-screenshots.jpg
 
 Click on a image to get it in full resolution.
 

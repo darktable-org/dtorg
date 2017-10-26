@@ -127,7 +127,8 @@ section.lede.default {
 section.lede {
     position: relative;
 }
-section.lede-bg {
+section.lede-bg,
+section.home-lede-bg {
     display: none;
 }
 
@@ -156,7 +157,8 @@ section.lede-bg {
         margin: 0 auto;
         text-align: right;
     }
-    section.lede-bg {
+    section.lede-bg,
+    section.home-lede-bg{
         position: fixed;
         top: 0;
         z-index: -1;
@@ -164,14 +166,20 @@ section.lede-bg {
         margin-left: -25%;
         background: linear-gradient( #202020, #000000 );
     }
-    section.lede-bg.wp {
+    section.lede-bg.wp,
+    section.home-lede-bg.wp {
         margin-left: 0;
     }
     section.lede-bg img {
         min-height: 100vh;
         min-width: 100vw;
-        opacity: 0.5;
-/*         filter: grayscale(100%); */
+        opacity: 0.1;
+        filter: grayscale(100%);
+    }
+    section.home-lede-bg img {
+      min-height: 100vh;
+      min-width: 100vw;
+      opacity: 0.5;
     }
     section.lede.default {
         /* This fixes aggregate pages

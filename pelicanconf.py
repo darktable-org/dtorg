@@ -9,8 +9,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-#THEME = 'theme/dt.org'
-THEME = 'theme/patdavid'
+THEME = 'theme/dt.org'
 
 TIMEZONE = 'Etc/UTC'
 

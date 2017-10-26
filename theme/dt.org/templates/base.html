@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
-<head>
+<html lang="{{ DEFAULT_LANG }}" itemscope itemtype="http://schema.org/WebSite">
+    <head>
         {% block head %}
-        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
         <meta charset="utf-8" />
-        <link rel="shortcut icon" href="/theme/images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {%block title %}
+        <title itemprop="name">{{ SITENAME }}</title>
+        {%endblock title%}
+
+        {%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
+
+        <meta itemprop="name" content="darktable - the photo workflow software">
+        <meta name="twitter:title" content="darktable - the photo workflow software">
+        <meta property="og:title" content="darktable - the photo workflow software" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="darktable.org" />
+        <meta itemprop="headline" content="darktable - the photo workflow software" />
+
+        <meta itemprop="image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/darktable_skull+logo.png">
+
+        <meta itemprop="description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta property="og:description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta name="twitter:description" content="darktable is an open source photography workflow application and raw developer.">
+
+        <meta name="twitter:creator" content="@darktable_org">
+
+        <meta property="og:url" content="{{ SITEURL }}" />
+        <meta property="url" content="{{ SITEURL }}" />
+
+
+        <link rel="canonical" href="{{ SITEURL }}" itemprop="url">
+        {%endblock metadata %}
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="/theme/css/normalize.css">
+        <link rel="stylesheet" href="/theme/css/skeleton.css">
+        <link rel="stylesheet" href="/theme/css/darktable.css">
+
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
         {% endif %}
@@ -21,7 +63,7 @@
         <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
         {% endif %}
         {% if CATEGORY_FEED_RSS and category %}
-        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ category }} RSS Feed" />
         {% endif %}
         {% if TAG_FEED_ATOM and tag %}
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
@@ -29,36 +71,57 @@
         {% if TAG_FEED_RSS and tag %}
         <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
         {% endif %}
-        {% endblock head %}
-</head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in pages %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        {% else %}
-          {% if DISPLAY_CATEGORIES_ON_MENU %}
-            {% for cat, null in categories %}
-              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-            {% endfor %}
-          {% endif %}
-        {% endif %}
-        </ul></nav><!-- /#menu -->
-        {% block content %}
-        {% endblock %}
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+        {% endblock head %}
+
+    </head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href='/news/'>news</a></li>
+            <li><a href='/blog/'>blog</a></li>
+            <li><a href='/about/'>about</a></li>
+            <li><a href='/install/'>install</a></li>
+            <li><a href='/resources/'>resources</a></li>
+            <li><a href='/development/'>development</a></li>
+            <li><a href='/contact/'>contact</a></li>
+            {% block searchtop %}
+            {# This block is here so I can exclude it from the actual "search" page #}
+            <li>
+                <form id="searchform" action="/search.html">
+                    <svg viewBox="0 0 16 16" height='16' width='16' style='vertical-align: middle;'>
+                         <g transform="translate(0 -1036.4)">
+                          <ellipse style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#fff;stroke-width:2;fill:none;" rx="5.0368" ry="5.0368" cy="1042.4" cx="9.9632"/>
+                          <path style="stroke:#fff;stroke-width:3;fill:none" d="m1.0607 1051.3 5.114-5.114"/>
+                         </g>
+                    </svg>
+                    <input type="text" class="searchbox" name="q" id="tipue_search_input" placeholder="search" />
+                </form>
+            </li>
+            {% endblock searchtop %}
+        </ul>
+    </nav>
+
+    <span id='logo'>
+        <a href='/' title='darktable.org'>
+            <img src='/theme/images/darktable-logo-name-480w.png'>
+        </a>
+    </span>
+
+
+    {% block header %}
+    {% endblock header %}
+
+    {% block content %}
+    {% endblock %}
+
+
+    {% include "footer.html" %}
+
+    {% block script %}
+    {% endblock script %}
+
 </body>
 </html>

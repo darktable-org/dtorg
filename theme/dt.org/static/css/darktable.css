@@ -556,6 +556,7 @@ figcaption {
 }
 figure img {
     max-width: 100%;
+    height: auto;
 }
 figure.u-pull-right {
     margin: 0 0 1rem 1rem;

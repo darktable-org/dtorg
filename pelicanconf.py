@@ -116,4 +116,3 @@ MARKDOWN = {
 
 # these are deprecated, use MARKDOWN instead!
 #MD_EXTENSIONS = ['extra', 'headerid']
-# Dummy line for testing a push to the repo

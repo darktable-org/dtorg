@@ -13,14 +13,19 @@
         <meta itemprop="name" content="{{ page.title |striptags|lower }}" >
         <meta name="twitter:title" content="{{ page.title |striptags|lower }}" >
         <meta property="og:title" content="{{ page.title |striptags|lower }}" >
-		<meta itemprop="headline" content="{{ page.title |striptags|lower }}" >
+        <meta itemprop="headline" content="{{ page.title |striptags|lower }}" >
 
         <meta property="og:type" content="article">
         <meta property="og:site_name" content="darktable.org">
 
         {% if page.author %}
+        {% if page.author|string in AUTHORS and AUTHORS.get(page.author|string).displayname %}
+        <meta itemprop="author" content="{{ AUTHORS.get(page.author|string).displayname }}" />
+        <meta property="article:author" content="{{ AUTHORS.get(page.author|string).displayname }}" />
+        {% else %}
         <meta itemprop="author" content="{{ page.author }}" />
         <meta property="article:author" content="{{ page.author }}" />
+        {% endif %}
         {% endif %}
 
         {% if page.date %}
@@ -48,8 +53,8 @@
         <meta name="twitter:description" content="darktable is an open source photography workflow application and raw developer.">
         {% endif %}
 
-        {% if page.author_twitter %}
-        <meta name="twitter:creator" content="{{ page.author_twitter }}">
+        {% if page.author and page.author|string in AUTHORS and AUTHORS.get(page.author|string).twitter %}
+        <meta name="twitter:creator" content="{{ AUTHORS.get(page.author|string).twitter }}">
         {% else %}
         <meta name="twitter:creator" content="@darktable_org">
         {% endif %}

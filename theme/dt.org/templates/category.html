@@ -140,7 +140,11 @@
                                 <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
                                 <address class="vcard author">by
                                     {% for author in article.authors %}
+                                    {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
+                                    {% else %}
                                     <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a>
+                                    {% endif %}
                                     {% endfor %}
                                 </address>
                             </div>

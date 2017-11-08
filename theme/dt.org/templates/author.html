@@ -2,7 +2,11 @@
 
 
 {% block title %}
+{% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+<title itemprop='name'>{{ AUTHORS.get(author|string).displayname }} | {{ SITENAME }}</title>
+{% else %}
 <title itemprop='name'>{{ author |striptags }} | {{ SITENAME }}</title>
+{% endif %}
 {% endblock title %}
 
 {%block metadata %}
@@ -11,32 +15,34 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@darktable_org">
 
-        <meta itemprop="name" content="posts by {{ author |striptags|lower }}" >
-        <meta name="twitter:title" content="posts by {{ author |striptags|lower }}" >
-        <meta property="og:title" content="posts by {{ author |striptags|lower }}" >
-		<meta itemprop="headline" content="posts by {{ author |striptags|lower }}" >
+        {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+        <meta itemprop="name" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta name="twitter:title" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta property="og:title" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta itemprop="headline" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta itemprop="author" content="{{ AUTHORS.get(author|string).displayname }}" />
+        <meta property="og:author" content="{{ AUTHORS.get(author|string).displayname }}" />
+        {% else %}
+        <meta itemprop="name" content="posts by {{ author |striptags }}" >
+        <meta name="twitter:title" content="posts by {{ author |striptags }}" >
+        <meta property="og:title" content="posts by {{ author |striptags }}" >
+        <meta itemprop="headline" content="posts by {{ author |striptags }}" >
+        <meta itemprop="author" content="{{ author |striptags }}" />
+        <meta property="og:author" content="{{ author |striptags }}" />
+        {% endif %}
 
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="darktable.org">
-
-        {% if author %}
-        <meta itemprop="author" content="{{ author }}" />
-        <meta property="og:author" content="{{ author }}" />
-        {% endif %}
 
         {% if author.date %}
         <meta itemprop="datePublished" content="{{ author.date }}" />
         <meta property="og:published_time" content="{{ author.date }}" />
         {% endif %}
 
-        {% if author.lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ author.url }}{{ author.lede }}"> 
-        <meta property="og:image" content="{{ SITEURL }}/{{ author.url }}{{ author.lede }}">
-        <meta name="twitter:image" content="{{ SITEURL }}/{{ author.url }}{{ author.lede }}">
-        {% elif author.wordpress_lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ author.url }}{{ author.wordpress_lede }}">
-        <meta property="og:image" content="{{ SITEURL }}/{{ author.url }}{{ author.wordpress_lede }}">
-        <meta name="twitter:image" content="{{ SITEURL }}/{{ author.url }}{{ author.wordpress_lede }}">
+        {% if author|string in AUTHORS and AUTHORS.get(author|string).lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}">
         {% else %}
         {# Don't forget to change this if it gets changed below #}
         <meta itemprop="image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
@@ -54,8 +60,8 @@
         <meta name="twitter:description" content="Posts by {{ author }} on darktable.org">
         {% endif %}
 
-        {% if author.author_twitter %}
-        <meta name="twitter:creator" content="{{ author.author_twitter }}">
+        {% if author|string in AUTHORS and AUTHORS.get(author|string).twitter  %}
+        <meta name="twitter:creator" content="{{ AUTHORS.get(author|string).twitter }}">
         {% else %}
         <meta name="twitter:creator" content="@darktable_org">
         {% endif %}
@@ -74,6 +80,15 @@
 
 
 {% block header %}
+    {% if author|string in AUTHORS and AUTHORS.get(author|string).lede %}
+    <section class='lede-bg'>
+        {# If you change this, don't forget to change it in the metadata above #}
+        <img src='{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}'>
+    </section>
+    <section class='lede author'>
+        <img class='lede-img' src='{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}'>
+    </section>
+    {% else %}
     <section class='lede-bg'>
         {# If you change this, don't forget to change it in the metadata above #}
         <img src='{{ SITEURL }}/theme/images/lede-author.jpg'>
@@ -82,6 +97,7 @@
         {# If you change this, don't forget to change it in the metadata above #}
         <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-author.jpg'>
     </section>
+    {% endif %}
 {% endblock header %}
 
 {% block content %}
@@ -90,7 +106,11 @@
         <div class='container title'>
             <div class='row'>
                 <div class='column'>
+                    {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                    <h1 class='page-title'>posts by {{ AUTHORS.get(author|string).displayname }}</h1>
+                    {% else %}
                     <h1 class='page-title'>posts by {{ author }}</h1>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -114,11 +134,15 @@
                             </h1>
 
                             <div class='post-info'>
-                                posted on 
+                                posted on
                                 <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
                                 <address class="vcard author">by
                                     {% for author in article.authors %}
-                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a> 
+                                    {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
+                                    {% else %}
+                                    <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a>
+                                    {% endif %}
                                     {% endfor %}
                                 </address>
 

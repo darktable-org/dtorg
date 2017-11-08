@@ -24,8 +24,13 @@
         <meta property="og:site_name" content="darktable.org">
 
         {% if article.author %}
+        {% if article.author|string in AUTHORS and AUTHORS.get(article.author|string).displayname %}
+        <meta itemprop="author" content="{{ AUTHORS.get(article.author|string).displayname }}" />
+        <meta property="article:author" content="{{ AUTHORS.get(article.author|string).displayname }}" />
+        {% else %}
         <meta itemprop="author" content="{{ article.author }}" />
         <meta property="article:author" content="{{ article.author }}" />
+        {% endif %}
         {% endif %}
 
         {% if article.date %}
@@ -57,8 +62,8 @@
         <meta name="twitter:description" content="darktable is an open source photography workflow application and raw developer.">
         {% endif %}
 
-        {% if article.author_twitter %}
-        <meta name="twitter:creator" content="{{ article.author_twitter }}">
+        {% if article.author and article.author|string in AUTHORS and AUTHORS.get(article.author|string).twitter  %}
+        <meta name="twitter:creator" content="{{ AUTHORS.get(article.author|string).twitter }}">
         {% else %}
         <meta name="twitter:creator" content="@darktable_org">
         {% endif %}
@@ -121,7 +126,11 @@
                         <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
                         <address class="vcard author">by
                             {% for author in article.authors %}
-                            <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a>
+                             {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                              <a class="url fn" rel='author' href="/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
+                            {% else %}
+                              <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a>
+                            {% endif %}
                             {% endfor %}
                         </address>
                     </div>

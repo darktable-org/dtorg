@@ -24,7 +24,7 @@
         {% endif %}
 
         {% if tag.lede %}
-        <meta itemprop="image" content="{{ SITEURL }}/{{ tag.url }}{{ tag.lede }}"> 
+        <meta itemprop="image" content="{{ SITEURL }}/{{ tag.url }}{{ tag.lede }}">
         <meta property="og:image" content="{{ SITEURL }}/{{ tag.url }}{{ tag.lede }}">
         <meta name="twitter:image" content="{{ SITEURL }}/{{ tag.url }}{{ tag.lede }}">
         {% elif tag.wordpress_lede %}
@@ -33,9 +33,9 @@
         <meta name="twitter:image" content="{{ SITEURL }}/{{ tag.url }}{{ tag.wordpress_lede }}">
         {% else %}
         {# Don't forget to change this if it gets changed below #}
-        <meta itemprop="image" content="{{ SITEURL }}/theme/images/lede-about.jpg">
-        <meta property="og:image" content="{{ SITEURL }}/theme/images/lede-about.jpg">
-        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/lede-about.jpg">
+        <meta itemprop="image" content="{{ SITEURL }}/images/ledes/lede-about.jpg">
+        <meta property="og:image" content="{{ SITEURL }}/images/ledes/lede-about.jpg">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/ledes/lede-about.jpg">
         {% endif %}
 
         {% if tag.summary %}
@@ -68,10 +68,10 @@
 
 {% block header %}
     <section class='lede-bg'>
-        <img src='/theme/images/lede-about.jpg'>
+        <img src='/images/ledes/lede-about.jpg'>
     </section>
     <section class='lede tag'>
-        <img class='lede-img' src='/theme/images/lede-about.jpg'>
+        <img class='lede-img' src='/images/ledes/lede-about.jpg'>
     </section>
 {% endblock header %}
 

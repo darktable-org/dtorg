@@ -713,3 +713,27 @@ li.current {
     text-align: center;
     margin-top: 2rem;
 }
+
+#static-comment-pagination {
+  text-align: center;
+}
+
+#static-comment-pagination a {
+  text-decoration: none;
+}
+
+.static_comment {
+  padding-left: 0.5rem;
+  margin-top: 1em;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #ddd;
+}
+
+.static_comment_author {
+/*   font-size: smaller; */
+}
+
+.static_comment_date {
+  font-size: smaller;
+}

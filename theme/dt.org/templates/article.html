@@ -154,6 +154,82 @@
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url|urlencode }}" target="_blank" title="Share this post on Facebook">Facebook</a>
                     </p>
 
+                    {% if article.static_comments %}
+                    <div class="comments" id="static-comments">
+                    <i>These are comments from the old website, archived as static HTML</i>
+                    <ol id="static-comments-list">
+                    {% for comment in article.static_comments %}
+                      <li class="static_comment" id="comment-{{ comment.id }}">
+                        <div>
+                          <span class="static_comment_author">
+                        {% if comment.author_url %}
+                          <a href="{{ comment.author_url }}">{{ comment.author }}</a>
+                        {% else %}
+                          {{ comment.author }}
+                        {% endif %}
+                          </span>
+                          <span class="static_comment_date">on <a href="#comment-{{ comment.id }}">{{ comment.datetime.strftime("%c") }}</a>:</span>
+                        </div>
+                        <div class="static_comment_content">{{ comment.comment }}</div>
+                      </li>
+                    {% endfor %}
+                    </ol>
+                    <div id="static-comment-pagination"></div>
+                    </div>
+                    <script type="text/javascript">
+                      var static_comments = document.getElementsByClassName('static_comment');
+                      var static_comments_list = document.getElementById('static-comments-list');
+                      var pagination = document.getElementById('static-comment-pagination');
+                      var n_pages = Math.ceil(static_comments.length / {{ DEFAULT_PAGINATION }});
+                      var current_page = 0;
+                      if(location.hash)
+                      {
+                        for(var i = 0; i < static_comments.length; i++)
+                        {
+                          if(static_comments[i].id == location.hash.substring(1))
+                          {
+                            current_page = Math.floor(i / {{ DEFAULT_PAGINATION }});
+                            break;
+                          }
+                        }
+                      }
+
+                      function set_page(current_page)
+                      {
+                        if(n_pages > 1)
+                        {
+                          pagination.innerHTML = '';
+                          if(current_page != 0)
+                            pagination.innerHTML += '<a href="#' + static_comments[(current_page - 1) * {{ DEFAULT_PAGINATION }}].id + '" onclick="set_page(' + (current_page - 1) + ')">&lt;</a> ';
+                          for(var i = 0; i < n_pages; i++)
+                          {
+                            if(i == current_page)
+                              pagination.innerHTML += (i + 1) + ' ';
+                            else
+                              pagination.innerHTML += '<a href="#' + static_comments[i * {{ DEFAULT_PAGINATION }}].id + '" onclick="set_page(' + i + ')">' + (i + 1) + '</a> ';
+                          }
+                          if(current_page != n_pages - 1)
+                            pagination.innerHTML += '<a href="#' + static_comments[(current_page + 1) * {{ DEFAULT_PAGINATION }}].id + '" onclick="set_page(' + (current_page + 1) + ')">&gt;</a> ';
+                        }
+                        else
+                          pagination.style.display = 'none';
+
+                        // now toggle the visibility
+                        for(var i = 0; i < static_comments.length; i++)
+                        {
+                          var page = Math.floor(i / {{ DEFAULT_PAGINATION }});
+                          if(page == current_page)
+                            static_comments[i].style.display = '';
+                          else
+                            static_comments[i].style.display = 'none';
+                        }
+                        static_comments_list.start = current_page * {{ DEFAULT_PAGINATION }} + 1;
+                      }
+
+                      set_page(current_page);
+                    </script>
+                    {% endif %}
+
 
                 </div>
             </div>

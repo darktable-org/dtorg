@@ -724,6 +724,7 @@ li.current {
 
 #static-comments-list {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .static_comment {

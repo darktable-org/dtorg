@@ -728,6 +728,7 @@ li.current {
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   background-color: #ddd;
+  font-size: smaller;
 }
 
 .static_comment_author {
@@ -735,5 +736,5 @@ li.current {
 }
 
 .static_comment_date {
-  font-size: smaller;
+/*   font-size: smaller; */
 }

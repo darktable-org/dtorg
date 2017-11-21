@@ -722,6 +722,10 @@ li.current {
   text-decoration: none;
 }
 
+#static-comments-list {
+  list-style-type: none;
+}
+
 .static_comment {
   padding-left: 0.5rem;
   margin-top: 1em;

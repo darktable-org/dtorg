@@ -1,7 +1,7 @@
 author: houz
 date: 2017-12-03 15:23:00+00:00
 layout: post
-_slug: darktable-2-4-0rc0-released
+slug: darktable-2-4-0rc0-released
 title: darktable 2.4.0rc0 released
 lede: tit_lede.jpg
 tags: announcement, darktable release

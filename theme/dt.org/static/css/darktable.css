@@ -714,15 +714,15 @@ li.current {
     margin-top: 2rem;
 }
 
-#static-comment-pagination {
+#static_comment_pagination {
   text-align: center;
 }
 
-#static-comment-pagination a {
+#static_comment_pagination a {
   text-decoration: none;
 }
 
-#static-comments-list {
+#static_comments_list {
   list-style-type: none;
   padding-left: 0;
 }
@@ -742,4 +742,8 @@ li.current {
 
 .static_comment_date {
 /*   font-size: smaller; */
+}
+
+#discourse-comments {
+  margin: 4rem 0 4rem 0;
 }

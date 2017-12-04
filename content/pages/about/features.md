@@ -3,7 +3,7 @@ Date: 2017-06-13T21:58:51-06:00
 Slug: about/features
 lede: lede-features.jpg
 
-These are some of darktable's current features, and a coarse overview over the current image operation modules. You can find a more detailed description of every single item in our [online user manual](/usermanual/ "usermanual").
+These are some of darktable's current features, and a coarse overview over the current image operation modules. You can find a more detailed description of every single item in our [online user manual](/usermanual/en/ "usermanual").
 
 # General
 

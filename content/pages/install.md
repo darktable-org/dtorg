@@ -18,6 +18,7 @@ lede: lede-install.jpg
 <a href='#debian' title='Debian'><img class='chooseos' alt="debian" src="{filename}/images/OS/debian.png"></a>
 <a href='#solaris' title='Solaris'><img class='chooseos' alt="opensolaris" src="{filename}/images/OS/opensolaris.png"></a>
 <a href='#freebsd' title='FreeBSD'><img class='chooseos' alt="freebsd" src="{filename}/images/OS/freebsd.png"></a>
+<a href='#windows' title='Microsoft Windows'><img class='chooseos' alt="windows" src="{filename}/images/OS/windows.png"></a>
 </p>
 
 <style>
@@ -32,7 +33,7 @@ img.chooseos {
 </style>
 
 
-...&nbsp;or get the latest stable source package and build it yourself, look what to do if you are running Windows or get the hot new stuff from our git repository.
+...&nbsp;or get the latest stable source package and build it yourself, look what to do if you are running OSX or Windows or get the hot new stuff from our git repository.
 
 
 # Prerequisites
@@ -57,14 +58,12 @@ We provide several PPAs to add to your Ubuntu installation:
 
 If you want to have nice packages on debian you can rebuild the PPA sources for debian: Download `darktable_$VERSION.orig.tar.gz` and `darktable_$VERSION.debian.tar.gz` from one of the PPAs.
 
-```
-$ sudo apt-get install debhelper dpkg-dev fakeroot
-$ sudo apt-get build-dep darktable
-$ tar zxvf darktable_$VERSION.orig.tar.gz
-$ cd darktable-$VERSION
-$ tar zxvf ../darktable_$VERSION.debian.tar.gz
-$ dpkg-buildpackage -rfakeroot
-```
+    $ sudo apt-get install debhelper dpkg-dev fakeroot
+    $ sudo apt-get build-dep darktable
+    $ tar zxvf darktable_$VERSION.orig.tar.gz
+    $ cd darktable-$VERSION
+    $ tar zxvf ../darktable_$VERSION.debian.tar.gz
+    $ dpkg-buildpackage -rfakeroot
 
 
 <h2 id='fedora'>Fedora packages</h2>
@@ -72,7 +71,7 @@ $ dpkg-buildpackage -rfakeroot
 
 Fedora ships with darktable. A simple command should be enough.
 
-`# dnf install darktable`
+    # dnf install darktable
 
 * If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.2 Snapshot repository](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.2&package=darktable). Don't use this repository if you do time critical work with darktable!
 * And lastly, there is is a repository for [nightly builds](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
@@ -104,10 +103,8 @@ openSUSE ships with darktable. A simple `zypper install darktable` should be eno
 
 darktable is in portage!
 
-```
-# emerge darktable
-$ darktable
-```
+    # emerge darktable
+    $ darktable
 
 <h2 id='rhel'>RHEL 6 / SL 6 / Centos 6</h2>
 ![scientificlinux]({filename}/images/OS/scientificlinux.jpg)
@@ -116,17 +113,13 @@ Only darktable-1.0.5 can be provided for these distributions due to restrictions
 
   * install the linuxtech.repo config file if you don't have it already:
 
-```
-su - root
-cd /etc/yum.repos.d/
-wget http://pkgrepo.linuxtech.net/el6/release/linuxtech.repo
-```
+        su - root
+        cd /etc/yum.repos.d/
+        wget http://pkgrepo.linuxtech.net/el6/release/linuxtech.repo
 
   * install darktable:
 
-```
-yum --enablerepo=linuxtech-testing install darktable
-```
+        yum --enablerepo=linuxtech-testing install darktable
 
 
 <h2 id='macos'>macOS</h2>
@@ -139,22 +132,20 @@ yum --enablerepo=linuxtech-testing install darktable
 
 This bundle supports macOS versions starting with 10.7 (Lion) running on 64 bit Intel architecture.
 
-What to do with dialog saying ""darktable" can't be opened because it was not downloaded from the Mac App Store":
+What to do with dialog saying *"darktable" can't be opened because it was not downloaded from the Mac App Store*:
 
   * Locate darktable in Applications folder (or wherever you installed it) using Finder
   * Do "Open" via context menu
   * You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application
   * After that you will be able to start darktable without this trick (well, until you update it, then you will have to do above steps again)
 
-or you can prevent this from happening by running "xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg" command before mounting the image (or "xattr -dr com.apple.quarantine /Applications/darktable.app" after installing).
+or you can prevent this from happening by running `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg` command before mounting the image (or `xattr -dr com.apple.quarantine /Applications/darktable.app` after installing).
 
 ### macOS MacPorts
 
 darktable can be installed through MacPorts:
 
-```
-sudo port install darktable +quartz
-```
+    sudo port install darktable +quartz
 
 
 <h2 id='debian'>Debian</h2>
@@ -164,9 +155,7 @@ sudo port install darktable +quartz
 
 darktable can be installed just by running
 
-```
-sudo apt-get install darktable
-```
+    sudo apt-get install darktable
 
 A description on how to enable the backports repository can be found here: <https://backports.debian.org/Instructions/>
 
@@ -190,11 +179,12 @@ To install darktable on your system, run
 
 and have fun.
 
-# Microsoft Windows
+<h2 id='windows'>Microsoft Windows</h2>
+![Microsoft Windows]({filename}/images/OS/windows.png)
 
-  * Unfortunately there are no stable releases yet.
-  * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port and where to get a development build.
-  * As an alternative&nbsp;– give Linux a chance! Download and burn a live ISO of a Linux distribution, reboot and try darktable.
+  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.0rc0/darktable-2.4.0rc0-win64.exe).
+  * Run it and install darktable.
+  * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port.
 
 
 # Current release from source
@@ -204,38 +194,30 @@ and have fun.
 * Install the dependencies. For details see the link below.
 * Unpack:
 
-    ```
-    $ tar xvf darktable-2.2.4.tar.xz && cd darktable-2.2.4
-    ```
+        $ tar xvf darktable-2.2.4.tar.xz && cd darktable-2.2.4
 
 * Then either do
 
-    ```
-    $ ./build.sh
-    ```
+        $ ./build.sh
 
 * or, manually:
 
-```
-$ mkdir build && cd build/
-$ cmake -DCMAKE_BUILD_TYPE=Release ..
-$ make -j5
-# make install
-$ darktable
-```
+        $ mkdir build && cd build/
+        $ cmake -DCMAKE_BUILD_TYPE=Release ..
+        $ make -j5
+        # make install
+        $ darktable
 
   * In order to get darktable displayed along with your other applications you need to set a symlink:
 
-    ```
-    $ ln -s /opt/darktable/share/applications/darktable.desktop /usr/share/applications/darktable.desktop
-    ```
+        $ ln -s /opt/darktable/share/applications/darktable.desktop /usr/share/applications/darktable.desktop
 
 For a more complete set of instructions for different distributions have a look at [our Wiki](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
 
 # git version
 ![fire]({filename}/images/OS/fire.jpg)
 
-_First a word of warning_: Using the development version of darktable might be risky in that it can break anytime, kill your edits, eat your kittens or do other nasty things. It is also not guaranteed that XMP sidecars written by a development version will work with a release version. It is also quite certain that any older version of darktable will **NOT** be able to read the database once a development build updated it to the latest schema. So for your own safety and our sanity, do make backups of your XMP files as well as your `library.db` (by default it is in `~/.config/darktable/`) **BEFORE** upgrading to the self compiled git version. That being said, it should be quite safe to actually use it and never go back, so all of this might be no issue for you at all. Just keep in mind that **IF** you ever want to go back it might be hard.
+_First a word of warning_: Using the development version of darktable might be risky in that it can break anytime, kill your edits, eat your kittens or do other nasty things. It is also not guaranteed that XMP sidecars written by a development version will work with a release version. It is also quite certain that any older version of darktable will **NOT** be able to read the database once a development build updated it to the latest schema. So for your own safety and our sanity, do make backups of your XMP files as well as your `library.db` and `data.db` (by default it is in `~/.config/darktable/`) **BEFORE** upgrading to the self compiled git version. That being said, it should be quite safe to actually use it and never go back, so all of this might be no issue for you at all. Just keep in mind that **IF** you ever want to go back it might be hard.
 
 Be sure to have all the build dependencies installed. You can find a list of them here. If you don't have it already, install git from your distribution's repositories. For Ubuntu:
 
@@ -250,9 +232,9 @@ The cloned files from the git repository are now stored in $HOME/darktable.
 
 ### Getting rawspeed submodule
 
-	$ cd $HOME/darktable
-	$ git submodule init
-	$ git submodule update
+    $ cd $HOME/darktable
+    $ git submodule init
+    $ git submodule update
 
 ### Building with build.sh
 
@@ -265,24 +247,24 @@ The files get prepared to be installed in /opt. If you want to install at anothe
 
 After the build process finished you can install darktable:
 
-cd build && sudo make install
+    cd build && sudo make install
 
 ### Updating existing git-files
 
-	$ cd $HOME/darktable
-	$ git pull
+    $ cd $HOME/darktable
+    $ git pull
 
 ### Building manually
 
-	$ mkdir $HOME/darktable/build
-	$ cd $HOME/darktable/build
-	$ cmake -DCMAKE_BUILD_TYPE=Release ..
+    $ mkdir $HOME/darktable/build
+    $ cd $HOME/darktable/build
+    $ cmake -DCMAKE_BUILD_TYPE=Release ..
 
 ### make and install
 
-	$ cd $HOME/darktable/build
-	$ make
-	$ sudo make install
+    $ cd $HOME/darktable/build
+    $ make
+    $ sudo make install
 
 ### Starting the program
 

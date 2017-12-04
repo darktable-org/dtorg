@@ -155,9 +155,9 @@
                     </p>
 
                     {% if article.static_comments %}
-                    <div class="comments" id="static-comments">
+                    <div class="static_comments" id="static_comments">
                     <i>These are comments from the old website, archived as static HTML</i>
-                    <ol id="static-comments-list">
+                    <ol id="static_comments_list">
                     {% for comment in article.static_comments %}
                       <li class="static_comment" id="comment-{{ comment.id }}">
                         <div>
@@ -174,12 +174,12 @@
                       </li>
                     {% endfor %}
                     </ol>
-                    <div id="static-comment-pagination"></div>
+                    <div id="static_comment_pagination"></div>
                     </div>
                     <script type="text/javascript">
                       var static_comments = document.getElementsByClassName('static_comment');
-                      var static_comments_list = document.getElementById('static-comments-list');
-                      var pagination = document.getElementById('static-comment-pagination');
+                      var static_comments_list = document.getElementById('static_comments_list');
+                      var pagination = document.getElementById('static_comment_pagination');
                       var n_pages = Math.ceil(static_comments.length / {{ DEFAULT_PAGINATION }});
                       var current_page = 0;
                       if(location.hash)

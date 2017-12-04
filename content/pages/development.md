@@ -8,7 +8,7 @@ lede: lede-development.jpg
 <div class="subnav">
     <a href="https://darktable.org/redmine/projects/darktable/wiki">developer's wiki</a>
     <a href="https://darktable.org/redmine/projects/darktable/issues">bug tracker</a>
-    <a href="https://darktable.org/redmine/projects/darktable/repository">browse code</a>
+    <a href="https://github.com/darktable-org/darktable">browse code</a>
 </div>
 
 # Contributing ...
@@ -80,7 +80,7 @@ If you plan to make major changes, code new features or add another module it's 
 
 ## Now, tell me how to contribute patches ...
 
-For bug fixes and "minor" enhancements (minor mostly in terms of code and complexity) you should always work on our master branch. This is the main developing branch for darktable and the one to become the next major release version. If your patch is also valuable for the currently maintained stable branch (so darktable-2.4.x) it will be cherry-picked to that branch by one of the developers (Pascal usually takes care of this). This applies mostly to bug fixes and small usability enhancements (like a changed sorting order of list items, for example).
+For bug fixes and "minor" enhancements (minor mostly in terms of code and complexity) you should always work on our master branch. This is the main developing branch for darktable and the one to become the next major release version. If your patch is also valuable for the currently maintained stable branch (so darktable-2.4.x) it will be cherry-picked to that branch by one of the developers (make sure to remind us if we forget to do so). This applies mostly to bug fixes and small usability enhancements (like a changed sorting order of list items, for example).
 
 Supplied patches will always be reviewed by a core developer. "Review" does not mean a formal process but more a "that patch looks okay to me, I push it ...". In most cases you will be informed whether your patch has been pushed to the main repository or not. In the latter case you should get information on why we didn't want your patch and what to change so you can get it pushed. Please be patient if your patches don't get reviewed immediately, we are all quite busy (and darktable is a spare time project for all of us). If you hear nothing for two weeks you might want to bump us again&nbsp;– some things do just get lost in a flood of emails.
 

@@ -5,7 +5,7 @@ Slug: about/meta
 lede: lede-meta.jpg
 
 This is a meta page about this website and building it.
-[Pat David](https://patdavid.net), created this page for notes about building the site.
+[Pat David](https://patdavid.net) created this page for notes about building the site.
 
 
 

@@ -13,7 +13,7 @@ lede: lede-resources.jpg
 # User manual
 ![drop]({attach}drop.jpg)
 
-You can either read the manual [online](/usermanual/index.html.php) or download it in PDF format:
+You can either read the manual [online](/usermanual/en/) or download it in PDF format:
 
   * [English](https://github.com/darktable-org/darktable/releases/download/release-2.2.0/darktable-usermanual.pdf)
   * [French](https://github.com/darktable-org/darktable/releases/download/release-2.2.0/darktable-usermanual-fr.pdf)
@@ -26,7 +26,7 @@ Translations into other languages are currently being worked on and will be publ
 # Lua API documentation
 
 darktable's Lua API is documented in its own manual with a detailed description of all data
-structures and functions. You can either read the documentation [online](/lua-api/index.html.php) or download the API manual from
+structures and functions. You can either read the documentation [online](/lua-api/) or download the API manual from
 [here](https://github.com/darktable-org/darktable/releases/download/release-2.0.0/darktable-lua-api.pdf).
 
 

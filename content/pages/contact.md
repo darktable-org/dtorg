@@ -17,7 +17,7 @@ Use our mailing lists! Please subscribe instead of just sending mails to the lis
 
 Join us on IRC! You will find us at _irc.freenode.net_, channel _#darktable_.
 
-Every file released by darktable as of version 1.4.1 gets signed with the GPG key with the fingerprint `C4CB C150 6999 56E2 A326 8EF5 BB5C C829 5B17 79C9` for the signing part.
+Every file released by darktable as of version 1.4.1 gets signed with the GPG key with the fingerprint `C4CB C150 6999 56E2 A326 8EF5 BB5C C829 5B17 79C9` for the signing part. The fingerprint is also in the topic of the IRC channel to cross-check.
 
 
 # Developers / darktable Team

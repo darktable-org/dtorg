@@ -24,6 +24,7 @@ ed560de786340cbdd94e446615cec8eef52fbbeb3ac81f7d10edfeee1e5b74ee darktable-2.4.0
 #### Important note: to make sure that darktable can keep on supporting the raw file format for your camera, *please* read [this post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) on how/what raw samples you can contribute to ensure that we have the *full* raw sample set for your camera under CC0 license!
 
 and the changelog as compared to 2.2.0 can be found below. Some of the fixes might have been backported to the stable 2.2.x series already.
+
 - The maintainership of the RawSpeed library was transferred to the darktable project. The work on code cleanup, hardening, modernization, simplification and testing is ongoing.
 - Well over 2 thousand commits to darktable+rawspeed since 2.2.0
 - 244 pull requests handled
@@ -31,9 +32,11 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Updated user manual is coming soon™
 
 ## Hell Froze Over
-- As you might have read on our [news post](https://www.darktable.org/2017/08/darktable-for-windows/) we finally ported darktable to Windows and intend to support it in the future. At the moment it's still lacking a few features (for example there is not printing support), has a few limitations (tethering requires special drivers to be installed) and comes with its own set of bugs. But overall we are confident that it's quite usable already and hope you will enjoy it. A very special thanks goes to Peter Budai who finally convinced us to agree to the port and who did most of the work.
+
+- As you might have read on our [news post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) we finally ported darktable to Windows and intend to support it in the future. At the moment it's still lacking a few features (for example there is not printing support), has a few limitations (tethering requires special drivers to be installed) and comes with its own set of bugs. But overall we are confident that it's quite usable already and hope you will enjoy it. A very special thanks goes to Peter Budai who finally convinced us to agree to the port and who did most of the work.
 
 ## The Big Ones
+
 - A new module for haze removal
 - The local contrast module can now be pushed much further, it also got a new local laplacian mode
 - Add undo support for masks and more intelligent grouping of undo steps
@@ -50,6 +53,7 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Xmp sidecar files are no longer written to disk when the content didn't actually change. That mostly helps with network storage and backup systems that use files' time stamps
 
 ## New Features And Changes
+
 - Show a dialog window that tells when locking the database/library failed
 - Don't shade the whole region on the map when searching for a location. Instead just draw a border around it.
 - Also in map mode: Clear the search list and map indicators when resetting the search module.
@@ -79,6 +83,7 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Some more small improvements were made
 
 ## Bugfixes
+
 - Fix the problem with rating images by accident when moving the mouse while typing an image size in the export module
 - Fix several oddities in folder and tag mode of the collect module.
 - Print mode's color profile settings no longer interact with the export module
@@ -109,6 +114,7 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Many more bugs got fixed
 
 ## Lua
+
 - darktable now uses Lua 5.3. The bundled copy got updated accordingly
 - Add dt.print_log. It's like print_error but without the ERROR prefix
 - Reorder callback parameters for intermediate export image: add the actual image to the parameters of the event
@@ -117,16 +123,18 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - New widget type: section_label, adds a label which looks like a section change
 
 ## Changed Dependencies
+
 - CMake 3.1 is now required.
 - In order to compile darktable you now need at least gcc-4.9+/clang-3.4+, and gcc-5.0+ is *highly* recommended.
 - ZLIB is now required for the DNG Deflate compressed raw support.
 - darktable now uses Lua 5.3
 
-### Camera support, compared to 2.2.0
+## Camera support, compared to 2.2.0
 
 #### Warning: support for Nikon NEF 'lossy after split' raws was unintentionally broken due to the lack of such samples. Please see [this post](https://discuss.pixls.us/t/nikon-a-specific-raw-sample-wanted/5483?u=lebedevri) for more details. If you have affected raws, please contribute samples!
 
-## Base Support:
+### Base Support
+
 - Canon EOS 200D
 - Canon EOS Kiss X9
 - Canon EOS Rebel SL2
@@ -193,7 +201,8 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Sony ILCE-6500
 - Sony ILCE-9
 
-## White Balance Presets:
+### White Balance Presets
+
 - Canon EOS 6D Mark II
 - Fujifilm X-T20
 - Fujifilm X100F
@@ -207,7 +216,8 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Panasonic DMC-ZS110
 - Pentax K-3 II
 
-## Noise Profiles:
+### Noise Profiles
+
 - Canon EOS 1300D
 - Canon EOS Kiss X80
 - Canon EOS Rebel T6
@@ -251,6 +261,7 @@ and the changelog as compared to 2.2.0 can be found below. Some of the fixes mig
 - Sony ILCE-6500
 
 ## Updated Translations
+
 - Dutch
 - French
 - German

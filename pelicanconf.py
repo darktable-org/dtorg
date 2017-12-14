@@ -128,4 +128,4 @@ MARKDOWN = {
 # these are deprecated, use MARKDOWN instead!
 #MD_EXTENSIONS = ['extra', 'headerid']
 
-#dummy line i removed before, sorry for the spam.
+# dummy line i removed before, sorry for the spam.

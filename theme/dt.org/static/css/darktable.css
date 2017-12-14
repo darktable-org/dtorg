@@ -192,6 +192,7 @@ section.lede-bg {
     nav.home ~ section.footer {
         background: rgba(16, 16, 16, 0.66);
         padding-top: 4rem;
+        margin-top: 4rem;
     }
 }
 

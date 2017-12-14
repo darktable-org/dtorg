@@ -26,7 +26,7 @@ Every file released by darktable as of version 1.4.1 gets signed with the GPG ke
 Here are some people you might meet on the mailing list or in IRC:
 <table class='smalltext altrows' markdown=1>
 <thead>
-<tr class="odd" >
+<tr>
 <th >photo
 </th>
 <th >irc nick
@@ -42,242 +42,214 @@ Here are some people you might meet on the mailing list or in IRC:
 </tr>
 </thead>
 <tbody >
-<tr class="even" >
-<td >![henrik]({filename}/images/team/07d83b598e6a654dacf173f221b8a241.png)
+<tr>
+<td>![hanatos]({filename}/images/team/hanatos.jpg)
 </td>
-<td >dinamic
+<td>hanatos
 </td>
-<td >Henrik Andersson
+<td>johannes hanika
 </td>
-<td >developer / translator
+<td>project founder / developer
 </td>
-<td >[homepage](https://www.openhub.net/accounts/hean01/)
+<td>[homepage](https://jo.dreggn.org/home/)
 </td>
-<td >[gallery](https://www.flickr.com/photos/dinamic/)
-</td>
-</tr>
-<tr class="odd" >
-<td >![hanatos]({filename}/images/team/hanatos.jpg)
-</td>
-<td >hanatos
-</td>
-<td >Johannes Hanika
-</td>
-<td >project founder / developer
-</td>
-<td >[homepage](https://jo.dreggn.org/home/)
-</td>
-<td >
+<td>
 </td>
 </tr>
-<tr class="even" >
-<td >![houz]({filename}/images/team/avatar_houz.jpg)
+<tr>
+<td>![houz]({filename}/images/team/avatar_houz.jpg)
 </td>
-<td >houz
+<td>houz
 </td>
-<td >Tobias Ellinghaus
+<td>Tobias Ellinghaus
 </td>
-<td >developer / translator
+<td>developer / translator
 </td>
-<td >[homepage](https://houz.org/)
+<td>[homepage](https://houz.org/)
 </td>
-<td >
-</td>
-</tr>
-<tr class="odd" >
-<td >![pmjdebruijn]({filename}/images/team/pmjdebruijn.png)
-</td>
-<td >pmjdebruijn
-</td>
-<td >Pascal de Bruijn
-</td>
-<td >color management
-</td>
-<td >[homepage](https://encrypted.pcode.nl/blog/)
-</td>
-<td >[gallery](https://encrypted.pcode.nl/photos/)
+<td>
 </td>
 </tr>
-<tr class="even" >
-<td >![prokoudine]({filename}/images/team/prokoudine.jpg)
+<tr>
+<td>![LebedevRI]({filename}/images/team/lebedevri.png)
 </td>
-<td >prokoudine
+<td>LebedevRI
 </td>
-<td >Alexandre Prokoudine
+<td>Roman Lebedev
 </td>
-<td >translation expert / day one battle tester
+<td>developer
 </td>
-<td >[homepage](http://prokoudine.info/)
+<td>
 </td>
-<td >[gallery](http://prokoudine.info/gallery/)
-</td>
-</tr>
-<tr class="odd" >
-<td >![boucman]({filename}/images/team/boucman.jpg)
-</td>
-<td >Boucman
-</td>
-<td >Jérémy Rosen
-</td>
-<td >miscellaneous
-</td>
-<td >
-</td>
-<td >[gallery](https://picasaweb.google.com/103880712495616324041)
+<td>
 </td>
 </tr>
-<tr class="even" >
-<td >![_smn]({filename}/images/team/ava_smn.jpg)
+<tr>
+<td>![upegelow]({filename}/images/team/pegelow.jpg)
 </td>
-<td >_smn
+<td>pegelow
 </td>
-<td >Simon Spannagel
+<td>Ulrich Pegelow
 </td>
-<td >webmaster / miscellaneous
+<td>developer / OpenCL expert / documentation author
 </td>
-<td >
+<td>
 </td>
-<td >[gallery](http://www.fourdimensions.eu)
-</td>
-</tr>
-<tr class="odd" >
-<td >![jcsogo]({filename}/images/team/jcsogo.jpg)
-</td>
-<td >jcsogo
-</td>
-<td >José Carlos García Sogo
-</td>
-<td >miscellaneous
-</td>
-<td >
-</td>
-<td >[gallery](https://www.flickr.com/photos/jsogo)
+<td>[gallery](http://www.tongareva.de/)
 </td>
 </tr>
-<tr class="even" >
-<td >![upegelow]({filename}/images/team/IMG_2536_0001_01-e1332276694816.jpg)
+<tr>
+<td>![peterbud]({filename}/images/team/peterbud.jpg)
 </td>
-<td >pegelow
+<td>peterbud
 </td>
-<td >Ulrich Pegelow
+<td>Peter Budai
 </td>
-<td >OpenCL expert / blog author
+<td>Windows maintainer
 </td>
-<td >
+<td>
 </td>
-<td >[gallery](http://www.tongareva.de/)
-</td>
-</tr>
-<tr class="odd" >
-<td >![McBofh]({filename}/images/team/mcbofh.jpg)
-</td>
-<td >McBofh
-</td>
-<td >James C. McPherson
-</td>
-<td >Solaris package maintainer / miscellaneous
-</td>
-<td >[homepage](https://www.jmcpdotcom.com/blog)
-</td>
-<td >
+<td>
 </td>
 </tr>
-<tr class="even" >
-<td >![GomGom]({filename}/images/team/gomgom.jpg)
+<tr>
+<td>![boucman]({filename}/images/team/boucman.jpg)
 </td>
-<td >GomGom
+<td>Boucman
 </td>
-<td >Edouard Gomez
+<td>Jérémy Rosen
 </td>
-<td >
+<td>developer / Lua
 </td>
-<td >
+<td>
 </td>
-<td >
-</td>
-</tr>
-<tr class="odd" >
-<td >![parafin]({filename}/images/team/parafin.png)
-</td>
-<td >parafin
-</td>
-<td >Igor Kuzmin
-</td>
-<td >OS X package maintainer
-</td>
-<td >[homepage](http://paraf.in/)
-</td>
-<td >[gallery](http://wiki.paraf.in/~parafin/photos)
+<td>[gallery](https://picasaweb.google.com/103880712495616324041)
 </td>
 </tr>
-<tr class="even" >
-<td >![christte]({filename}/images/team/christte_52px.png)
+<tr>
+<td>![pobry]({filename}/images/team/obry.jpg)
 </td>
-<td >christte
+<td>pobry
 </td>
-<td >Christian Tellefsen
+<td>Pascal Obry
 </td>
-<td >miscellaneous
+<td>developer / miscellaneous
 </td>
-<td >[homepage](https://www.tellefsen.net/)
+<td>[homepage](http://www.obry.net/)
 </td>
-<td >
-</td>
-</tr>
-<tr class="odd" >
-<td >![alicvb]({filename}/images/team/aldric_100.jpg)
-</td>
-<td >alicvb
-</td>
-<td >Aldric Renaudin
-</td>
-<td >developer (masks, multi-instances)
-</td>
-<td >
-</td>
-<td >
+<td>[gallery](http://photos.obry.net)
 </td>
 </tr>
-<tr class="even" >
-<td >![pobry]({filename}/images/team/obry.jpg)
+<tr>
+<td>![pmjdebruijn]({filename}/images/team/pmjdebruijn.png)
 </td>
-<td >pobry
+<td>pmjdebruijn
 </td>
-<td >Pascal Obry
+<td>Pascal de Bruijn
 </td>
-<td >miscellaneous
+<td>color management / Ubuntu PPA
 </td>
-<td >[homepage](http://www.obry.net/)
+<td>[homepage](https://encrypted.pcode.nl/blog/)
 </td>
-<td >[gallery](http://photos.obry.net)
-</td>
-</tr>
-<tr class="odd" >
-<td >![LebedevRI](https://avatars3.githubusercontent.com/u/88600?v=3&s=50)
-</td>
-<td >LebedevRI
-</td>
-<td >Roman Lebedev
-</td>
-<td >developer
-</td>
-<td >
-</td>
-<td >
+<td>[gallery](https://encrypted.pcode.nl/photos/)
 </td>
 </tr>
-<tr class="even" >
-<td >![pedrorc]({filename}/images/team/pedrorc.png)
+<tr>
+<td>![McBofh]({filename}/images/team/mcbofh.jpg)
 </td>
-<td >pedrocr
+<td>McBofh
 </td>
-<td >Pedro Côrte-Real
+<td>James C. McPherson
 </td>
-<td >developer
+<td>Solaris package maintainer / miscellaneous
 </td>
-<td >[homepage](http://pedrocr.pt/)
+<td>[homepage](https://www.jmcpdotcom.com/blog)
 </td>
-<td >[gallery](https://www.flickr.com/photos/pedrocr/)
+<td>
+</td>
+</tr>
+<tr>
+<td>![parafin]({filename}/images/team/parafin.png)
+</td>
+<td>parafin
+</td>
+<td>Igor Kuzmin
+</td>
+<td>OS X maintainer
+</td>
+<td>[homepage](http://paraf.in/)
+</td>
+<td>[gallery](http://wiki.paraf.in/~parafin/photos)
+</td>
+</tr>
+<tr>
+<td>![alicvb]({filename}/images/team/aldric_100.jpg)
+</td>
+<td>alicvb
+</td>
+<td>Aldric Renaudin
+</td>
+<td>developer (masks, multi-instances)
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>![schenlap]({filename}/images/team/schenlap.jpg)
+</td>
+<td>schenlap
+</td>
+<td>Stefan Schöfegger
+</td>
+<td>miscellaneous
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>![darix]({filename}/images/team/darix.png)
+</td>
+<td>darix
+</td>
+<td>Marcus Rückert
+</td>
+<td>packager for various platforms
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>![supertobi]({filename}/images/team/supertobi.png)
+</td>
+<td>supertobi
+</td>
+<td>Tobias Jakobs
+</td>
+<td>Lua scripts
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>![patdavid]({filename}/images/team/patdavid.jpg)
+</td>
+<td>patdavid
+</td>
+<td>Pat David
+</td>
+<td>website designer / community
+</td>
+<td>[homepage](https://pixls.us/)
+</td>
+<td>
 </td>
 </tr>
 </tbody>
@@ -291,7 +263,7 @@ Here are some people you might meet on the mailing list or in IRC:
 The translations of darktable are brought to you by:
 <table class='smalltext altrows' markdown=1>
 <thead>
-<tr class="odd" >
+<tr>
 <th >
 </th>
 <th >Language
@@ -301,220 +273,220 @@ The translations of darktable are brought to you by:
 </tr>
 </thead>
 <tbody >
-<tr class="even" >
-<td >af
+<tr>
+<td>af
 </td>
-<td >Afrikaans
+<td>Afrikaans
 </td>
-<td >
-</td>
-</tr>
-<tr class="odd" >
-<td >ca
-</td>
-<td >Catalan
-</td>
-<td >Josep Puigdemont
+<td>
 </td>
 </tr>
-<tr class="even" >
-<td >cs
+<tr>
+<td>ca
 </td>
-<td >Czech
+<td>Catalan
 </td>
-<td >František Šidák
-</td>
-</tr>
-<tr class="odd" >
-<td >da
-</td>
-<td >Danish
-</td>
-<td >Thomas Pryds
+<td>Josep Puigdemont
 </td>
 </tr>
-<tr class="even" >
-<td >de
+<tr>
+<td>cs
 </td>
-<td >German
+<td>Czech
 </td>
-<td >Tobias Ellinghaus
-</td>
-</tr>
-<tr class="odd" >
-<td >el
-</td>
-<td >Greek
-</td>
-<td >Dimitrios Psychogios
+<td>František Šidák
 </td>
 </tr>
-<tr class="even" >
-<td >es
+<tr>
+<td>da
 </td>
-<td >Spanish
+<td>Danish
 </td>
-<td >Jose Carlos Garcia Sogo, Tatica Leandro
-</td>
-</tr>
-<tr class="odd" >
-<td >fi
-</td>
-<td >Finnish
-</td>
-<td >Mikko Ruohola
+<td>Thomas Pryds
 </td>
 </tr>
-<tr class="even" >
-<td >fr
+<tr>
+<td>de
 </td>
-<td >French
+<td>German
 </td>
-<td >Pascal Obry, Olivier Tribout
-</td>
-</tr>
-<tr class="odd" >
-<td >gl
-</td>
-<td >Galician
-</td>
-<td >Roberto Quintero
+<td>Tobias Ellinghaus
 </td>
 </tr>
-<tr class="odd" >
-<td >he
+<tr>
+<td>el
 </td>
-<td >Hebrew
+<td>Greek
 </td>
-<td >Shlomi Braitbart
-</td>
-</tr>
-<tr class="even" >
-<td >hu
-</td>
-<td >Hungarian
-</td>
-<td >Péter Báthory
+<td>Dimitrios Psychogios
 </td>
 </tr>
-<tr class="odd" >
-<td >it
+<tr>
+<td>es
 </td>
-<td >Italian
+<td>Spanish
 </td>
-<td >Germano Massullo
-</td>
-</tr>
-<tr class="even" >
-<td >ja
-</td>
-<td >Japanese
-</td>
-<td >"a3novy"
+<td>Jose Carlos Garcia Sogo, Tatica Leandro
 </td>
 </tr>
-<tr class="odd" >
-<td >nl
+<tr>
+<td>fi
 </td>
-<td >Dutch
+<td>Finnish
 </td>
-<td >Ger Siemerink
-</td>
-</tr>
-<tr class="even" >
-<td >pl
-</td>
-<td >Polish
-</td>
-<td >Michał Prędotka
+<td>Mikko Ruohola
 </td>
 </tr>
-<tr class="odd" >
-<td >pt_BR
+<tr>
+<td>fr
 </td>
-<td >Brazilian Portugese
+<td>French
 </td>
-<td >Guilherme Brondani Torri
-</td>
-</tr>
-<tr class="even" >
-<td >pt_PT
-</td>
-<td >Portugese Portugese
-</td>
-<td >José Carlos Casimiro
+<td>Pascal Obry, Olivier Tribout
 </td>
 </tr>
-<tr class="odd" >
-<td >ro
+<tr>
+<td>gl
 </td>
-<td >Romanian
+<td>Galician
 </td>
-<td >Florin Balate
-</td>
-</tr>
-<tr class="even" >
-<td >ru
-</td>
-<td >Russian
-</td>
-<td >Alexandre Prokoudine
+<td>Roberto Quintero
 </td>
 </tr>
-<tr class="odd" >
-<td >sk
+<tr>
+<td>he
 </td>
-<td >Slovak
+<td>Hebrew
 </td>
-<td >Dušan Kazik
-</td>
-</tr>
-<tr class="even" >
-<td >sl
-</td>
-<td >Slovenian
-</td>
-<td >Matjaž Jeran
+<td>Shlomi Braitbart
 </td>
 </tr>
-<tr class="odd" >
-<td >sq
+<tr>
+<td>hu
 </td>
-<td >Albanian
+<td>Hungarian
 </td>
-<td >Besmir Godole
-</td>
-</tr>
-<tr class="even" >
-<td >sv
-</td>
-<td >Swedish
-</td>
-<td >Henrik Andersson
+<td>Péter Báthory
 </td>
 </tr>
-<tr class="odd" >
-<td >th
+<tr>
+<td>it
 </td>
-<td >Thai
+<td>Italian
 </td>
-<td >Phondanai Khanti
-</td>
-</tr>
-<tr class="even" >
-<td >uk
-</td>
-<td >Ukrainian
-</td>
-<td >Nazarii Vitak
+<td>Germano Massullo
 </td>
 </tr>
-<tr class="odd" >
-<td >zh_CN
+<tr>
+<td>ja
 </td>
-<td >Simplified Chinese
+<td>Japanese
 </td>
-<td >"jiero"
+<td>"a3novy"
+</td>
+</tr>
+<tr>
+<td>nl
+</td>
+<td>Dutch
+</td>
+<td>Ger Siemerink
+</td>
+</tr>
+<tr>
+<td>pl
+</td>
+<td>Polish
+</td>
+<td>Michał Prędotka
+</td>
+</tr>
+<tr>
+<td>pt_BR
+</td>
+<td>Brazilian Portugese
+</td>
+<td>Guilherme Brondani Torri
+</td>
+</tr>
+<tr>
+<td>pt_PT
+</td>
+<td>Portugese Portugese
+</td>
+<td>José Carlos Casimiro
+</td>
+</tr>
+<tr>
+<td>ro
+</td>
+<td>Romanian
+</td>
+<td>Florin Balate
+</td>
+</tr>
+<tr>
+<td>ru
+</td>
+<td>Russian
+</td>
+<td>Alexandre Prokoudine
+</td>
+</tr>
+<tr>
+<td>sk
+</td>
+<td>Slovak
+</td>
+<td>Dušan Kazik
+</td>
+</tr>
+<tr>
+<td>sl
+</td>
+<td>Slovenian
+</td>
+<td>Matjaž Jeran
+</td>
+</tr>
+<tr>
+<td>sq
+</td>
+<td>Albanian
+</td>
+<td>Besmir Godole
+</td>
+</tr>
+<tr>
+<td>sv
+</td>
+<td>Swedish
+</td>
+<td>Henrik Andersson
+</td>
+</tr>
+<tr>
+<td>th
+</td>
+<td>Thai
+</td>
+<td>Phondanai Khanti
+</td>
+</tr>
+<tr>
+<td>uk
+</td>
+<td>Ukrainian
+</td>
+<td>Nazarii Vitak
+</td>
+</tr>
+<tr>
+<td>zh_CN
+</td>
+<td>Simplified Chinese
+</td>
+<td>"jiero"
 </td>
 </tr>
 </tbody>
@@ -524,7 +496,7 @@ The translations of the darktable user manual are brought to you by:
 
 <table class='smalltext altrows' markdown=1>
 <thead>
-<tr class="odd" >
+<tr>
 <th >
 </th>
 <th >Language
@@ -534,28 +506,28 @@ The translations of the darktable user manual are brought to you by:
 </tr>
 </thead>
 <tbody >
-<tr class="even" >
-<td >fr
+<tr>
+<td>fr
 </td>
-<td >French
+<td>French
 </td>
-<td >Victor Lamoine, Michel Leblond
-</td>
-</tr>
-<tr class="odd" >
-<td >it
-</td>
-<td >Italian
-</td>
-<td >Maurizio Paglia, Federico Bruni
+<td>Victor Lamoine, Michel Leblond
 </td>
 </tr>
-<tr class="even" >
-<td >es
+<tr>
+<td>it
 </td>
-<td >Spanish
+<td>Italian
 </td>
-<td >Tatica Leandro
+<td>Maurizio Paglia, Federico Bruni
+</td>
+</tr>
+<tr>
+<td>es
+</td>
+<td>Spanish
+</td>
+<td>Tatica Leandro
 </td>
 </tr>
 </tbody>

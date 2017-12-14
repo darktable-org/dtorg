@@ -39,13 +39,13 @@
 
         <link rel="canonical" href="{{ SITEURL }}" itemprop="url">
         {%endblock metadata %}
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
 
         <!-- CSS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="/theme/css/normalize.css">
-        <link rel="stylesheet" href="/theme/css/skeleton.css">
-        <link rel="stylesheet" href="/theme/css/darktable.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/darktable.css">
 
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -80,17 +80,17 @@
 
     <nav id="menu">
         <ul>
-            <li><a href='/news/'>news</a></li>
-            <li><a href='/blog/'>blog</a></li>
-            <li><a href='/about/'>about</a></li>
-            <li><a href='/install/'>install</a></li>
-            <li><a href='/resources/'>resources</a></li>
-            <li><a href='/development/'>development</a></li>
-            <li><a href='/contact/'>contact</a></li>
+            <li><a href='{{ SITEURL }}/news/'>news</a></li>
+            <li><a href='{{ SITEURL }}/blog/'>blog</a></li>
+            <li><a href='{{ SITEURL }}/about/'>about</a></li>
+            <li><a href='{{ SITEURL }}/install/'>install</a></li>
+            <li><a href='{{ SITEURL }}/resources/'>resources</a></li>
+            <li><a href='{{ SITEURL }}/development/'>development</a></li>
+            <li><a href='{{ SITEURL }}/contact/'>contact</a></li>
             {% block searchtop %}
             {# This block is here so I can exclude it from the actual "search" page #}
             <li>
-                <form id="searchform" action="/search.html">
+                <form id="searchform" action="{{ SITEURL }}/search.html">
                     <svg viewBox="0 0 16 16" height='16' width='16' style='vertical-align: middle;'>
                          <g transform="translate(0 -1036.4)">
                           <ellipse style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#fff;stroke-width:2;fill:none;" rx="5.0368" ry="5.0368" cy="1042.4" cx="9.9632"/>
@@ -105,8 +105,8 @@
     </nav>
 
     <span id='logo'>
-        <a href='/' title='darktable.org'>
-            <img src='/theme/images/darktable-logo-name-480w.png'>
+        <a href='{{ SITEURL }}/' title='darktable.org'>
+            <img src='{{ SITEURL }}/theme/images/darktable-logo-name-480w.png'>
         </a>
     </span>
 

@@ -50,7 +50,7 @@
 {% block content %}
 
 <section class='lede-bg'>
-    <img src='/theme/images/lede-search.jpg' alt='darktable page lede image'>
+    <img src='{{ SITEURL }}/theme/images/lede-search.jpg' alt='darktable page lede image'>
 </section>
 
 <section class='page search'>
@@ -58,7 +58,7 @@
             <div class='row'>
                 <div class='column'>
                     <h1 class='page-title'>Search</h1>
-                    <form id="searchform" action="/search.html">
+                    <form id="searchform" action="{{ SITEURL }}/search.html">
                     <svg viewBox="0 0 16 16" height="16" width="16" style="vertical-align: middle;">
                          <g transform="translate(0 -1036.4)">
                           <ellipse style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#fff;stroke-width:2;fill:none;" rx="5.0368" ry="5.0368" cy="1042.4" cx="9.9632"></ellipse>

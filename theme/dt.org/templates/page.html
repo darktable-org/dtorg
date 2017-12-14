@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-        <title itemprop='name'>{{ page.title |striptags|lower }} | {{ SITENAME }}</title>
+        <title itemprop='name'>{{ page.title |striptags }} | {{ SITENAME }}</title>
 {%endblock title%}
 
 {%block metadata %}
@@ -10,10 +10,10 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@darktable_org">
 
-        <meta itemprop="name" content="{{ page.title |striptags|lower }}" >
-        <meta name="twitter:title" content="{{ page.title |striptags|lower }}" >
-        <meta property="og:title" content="{{ page.title |striptags|lower }}" >
-        <meta itemprop="headline" content="{{ page.title |striptags|lower }}" >
+        <meta itemprop="name" content="{{ page.title |striptags }}" >
+        <meta name="twitter:title" content="{{ page.title |striptags }}" >
+        <meta property="og:title" content="{{ page.title |striptags }}" >
+        <meta itemprop="headline" content="{{ page.title |striptags }}" >
 
         <meta property="og:type" content="article">
         <meta property="og:site_name" content="darktable.org">
@@ -77,7 +77,7 @@
     {% if page.lede %}
         <img src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image'>
     {% else %}
-        <img src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image'>
+        <img src='{{ SITEURL }}/{{ DEFAULT_LEDE }}' alt='darktable page lede image'>
     {% endif %}
     </section>
 
@@ -85,7 +85,7 @@
     {% if page.lede %}
         <img class='lede-img' src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image' width='960' height='402'>
     {% else %}
-        <img class='lede-img' src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image' width='960' height='402'>
+        <img class='lede-img' src='{{ SITEURL }}/{{ DEFAULT_LEDE }}' alt='darktable page lede image' width='960' height='402'>
     {% endif %}
     </section>
 
@@ -98,7 +98,7 @@
         <div class='container title'>
             <div class='row'>
                 <div class='column'>
-                    <h1 class='page-title'>{{ page.title |striptags|lower }}</h1>
+                    <h1 class='page-title'>{{ page.title |striptags }}</h1>
                 </div>
             </div>
         </div>
@@ -110,7 +110,7 @@
             {% set curtitle = page.title %}
             {% for page in pages|sort(attribute='url') %}
                 {% if page.url.startswith( curtitle ) and ( page.url != curtitle+"/" ) %}
-                <a href="/{{ page.url }}">{{ page.title |striptags|lower }}</a>
+                <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title |striptags }}</a>
                 {% endif %}
             {% endfor %}
             </div>

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-        <title itemprop='name'>{{ article.title |striptags|lower }} | {{ SITENAME }}</title>
+        <title itemprop='name'>{{ article.title |striptags }} | {{ SITENAME }}</title>
 {%endblock title%}
 
 
@@ -116,7 +116,7 @@
                 <div class='column'>
 
                     {% if article.wordpress_lede %}
-                    <img class='lede-img' src='{{ article.wordpress_lede }}'>
+                    <img class='lede-img' src='{{ SITEURL }}/{{ article.wordpress_lede }}'>
                     {% endif %}
 
                     <h1 class='article-title'>{{ article.title |striptags }}</h1>
@@ -127,9 +127,9 @@
                         <address class="vcard author">by
                             {% for author in article.authors %}
                              {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
-                              <a class="url fn" rel='author' href="/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
+                              <a class="url fn" rel='author' href="{{ SITEURL }}/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
                             {% else %}
-                              <a class="url fn" rel='author' href="/{{ author.url }}">{{ author }}</a>
+                              <a class="url fn" rel='author' href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                             {% endif %}
                             {% endfor %}
                         </address>
@@ -144,7 +144,7 @@
                     <small class='clearfix'>
                     Filed under:
                     {% for tag in article.tags %}
-                    <a href='/{{ tag.url }}'>{{ tag }}</a>
+                    <a href='{{ SITEURL }}/{{ tag.url }}'>{{ tag }}</a>
                     {% endfor %}
                     </small>
 
@@ -163,7 +163,7 @@
                         <div>
                           <span class="static_comment_author">
                         {% if comment.author_url %}
-                          <a href="{{ comment.author_url }}">{{ comment.author }}</a>
+                          <a href="{{ SITEURL }}/{{ comment.author_url }}">{{ comment.author }}</a>
                         {% else %}
                           {{ comment.author }}
                         {% endif %}

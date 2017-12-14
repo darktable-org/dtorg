@@ -36,13 +36,13 @@
 
 
         <link rel="canonical" href="{{ SITEURL }}" itemprop="url">
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" />
 
         <!-- CSS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="/theme/css/normalize.css">
-        <link rel="stylesheet" href="/theme/css/skeleton.css">
-        <link rel="stylesheet" href="/theme/css/darktable.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/skeleton.css">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/darktable.css">
 
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -77,15 +77,15 @@
 
     <nav id="menu" class="home">
         <ul>
-            <li><a href='/news/'>news</a></li>
-            <li><a href='/blog/'>blog</a></li>
-            <li><a href='/about/'>about</a></li>
-            <li><a href='/install/'>install</a></li>
-            <li><a href='/resources/'>resources</a></li>
-            <li><a href='/development/'>development</a></li>
-            <li><a href='/contact/'>contact</a></li>
+            <li><a href='{{ SITEURL }}/news/'>news</a></li>
+            <li><a href='{{ SITEURL }}/blog/'>blog</a></li>
+            <li><a href='{{ SITEURL }}/about/'>about</a></li>
+            <li><a href='{{ SITEURL }}/install/'>install</a></li>
+            <li><a href='{{ SITEURL }}/resources/'>resources</a></li>
+            <li><a href='{{ SITEURL }}/development/'>development</a></li>
+            <li><a href='{{ SITEURL }}/contact/'>contact</a></li>
             <li>
-                <form id="searchform" action="/search.html">
+                <form id="searchform" action="{{ SITEURL }}/search.html">
                     <svg viewBox="0 0 16 16" height="16" width="16" style="vertical-align: middle;">
                          <g transform="translate(0 -1036.4)">
                           <ellipse style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#fff;stroke-width:2;fill:none;" rx="5.0368" ry="5.0368" cy="1042.4" cx="9.9632"></ellipse>
@@ -99,21 +99,21 @@
     </nav>
 
     <section class='home lede-bg'>
-        <img src='/theme/images/lede-home.jpg' alt='darktable page lede image'>
+        <img src='{{ SITEURL }}/theme/images/lede-home.jpg' alt='darktable page lede image'>
     </section>
 
     <section class='home-project'>
-        {# <img id="home-lede" src="/theme/images/lede-home.jpg"> #}
+        {# <img id="home-lede" src="{{ SITEURL }}/theme/images/lede-home.jpg"> #}
 
         <div id='home-logo'>
-            <img src='/theme/images/darktable-logo-name-1520w.png'>
+            <img src='{{ SITEURL }}/theme/images/darktable-logo-name-1520w.png'>
         </div>
 
         <div class='container content description'>
             <div class-'row'>
                 <div class='column'>
                     <p>darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.</p>
-                    <p>Have a look at our current <a href="/about/features/" title="features">features</a> and how to <a href="/install/" title="install">install</a> it on your system.</p>
+                    <p>Have a look at our current <a href="{{ SITEURL }}/about/features/" title="features">features</a> and how to <a href="{{ SITEURL }}/install/" title="install">install</a> it on your system.</p>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@
     </section>
 
     <section class='screenshot'>
-        <img src='/theme/images/screenshot-1.jpg' width='1440' height='900'>
+        <img src='{{ SITEURL }}/theme/images/screenshot-1.jpg' width='1440' height='900'>
     </section>
 
     <section class='description'>

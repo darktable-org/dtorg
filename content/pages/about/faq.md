@@ -12,7 +12,7 @@ lede: lede-faq.jpg
 
 * **After updating my system I suddenly see red borders and giant buttons everywhere!**
 
-    darktable uses GTK3 to create its GUI. We make heavy use of styling to change the look to what you are used to. Unfortunately there were severl incompatible changes in the past with how GTK3 handles that. As a result darktable needs to be compiled for the same version of the library as what it's being used with later. Otherwise you risk GTK3 not supporting the stylesheet darktable uses. When you see those red borders that's exatly what's happening.
+    darktable uses GTK3 to create its GUI. We make heavy use of styling to change the look to what you are used to. Unfortunately there were several incompatible changes in the past with how GTK3 handles that. As a result darktable needs to be compiled for the same version of the library as what it's being used with later. Otherwise you risk GTK3 not supporting the stylesheet darktable uses. When you see those red borders that's exatly what's happening.
 
     * Most of the time this happens when using third party package repos like Pascal's PPA on Ubuntu. When upgrading the base system the PPA gets disabled while the old darktable package is still installed. Just make sure to reenable it, point it to the right distro release version and update darktable. That should fix the problem.
     * If you compiled darktable yourself make sure to remove both the installed files as well as your build/ folder before re-compiling.
@@ -34,10 +34,6 @@ lede: lede-faq.jpg
 * **Modules? What modules?**
 
     See the section below about the manual, book and tutorial videos.
-
-* **What about a Windows port?**
-
-    Please refer to [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) for a detailed explanation of the status of Windows builds.
 
 * **darktable crashes with SIGILL. What's up?**
 
@@ -77,11 +73,37 @@ lede: lede-faq.jpg
 
     In case of OS X, there's PTPCamera daemon which starts for every attached camera, so you must kill it before you can use the camera in darktable. Either run `killall PTPCamera` or implement more automated solution like described at the bottom of this page: [https://micro-manager.org/wiki/GPhoto](https://micro-manager.org/wiki/GPhoto).
 
-    On Windows the situation is a little more complicated. libgphoto2 doesn't work with the default Windows drivers used for connecting them via USB.  For thethering to work (in general for libgphoto2 and libusb to work):
+    On Windows the situation is a little more complicated. libgphoto2 doesn't work with the default Windows drivers used for connecting them via USB. For thethering to work (in general for libgphoto2 and libusb to work):
 
-    * Use [this program](http://zadig.akeo.ie/) to install USB driver on Windows for your camera:
-    * follow [the description](https://github.com/pbatard/libwdi/wiki/Zadig).
+    * Use [this program](http://zadig.akeo.ie/) to install USB driver on Windows for your camera
+    * Follow [the description](https://github.com/pbatard/libwdi/wiki/Zadig).
     * When you run it, replace the current Windows camera driver with WinUSB driver.
     * Start darktable after replacing the driver.
 
-    That might break other software accessing the camera though!
+    In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) - but then your camera won't work with darktable.
+
+* **I see there is now a new Windows version, what can I expect?**
+
+    The Windows port is relatively new, and therefore might have some rough edges, or missing functionality compared to the more mature OS ports. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or beieve that you have found a new bug, please report it through our [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
+
+    * **How the OpenCL support in darktable works on Windows?**
+    The Windows port of darktable fully supports OpenCL with all the performance benefits, assuming you have a GPU with appropriate OpenCL drivers installed. Popular NVIDIA and AMD GPUs are working fine, but please note that in some cases the default drivers which are installed/updated by Windows Update are not necessarily containing the OpenCL driver. The best solution is typically to install the driver directly from the GPU manufacturers (like) [NVIDIA drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us) or [AMD drivers](http://support.amd.com/en-us/download)), and check the OpenCL support at the driver first.
+      * You can always run an OpenCL test by launching <code>"C:\Program Files\darktable\bin\darktable-cltest.exe"</code> from a command line window, this will give you detailed information on your current OpenCL status.
+
+    * **I cannot see the Print module in the Windows version. How can I print my images?**
+    Please be patient, currently you can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require futher efforts to find a proper solution for printing in the Windows vesion as well. Unil that time you can use your favorite image printing software spearately to print the exported images.
+
+    * **I have started darktable and it's user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?**
+    By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to English user interface in multiple ways:
+      * You can launch darktable using the command line <code>darkable --conf ui_last/gui_language=C</code>
+      * You can change the darktable shortcut at the Start Menu and append <code>--conf ui_last/gui_language=C</code> to the Target field
+      * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable <code>C:\Users\[[username]]\AppData\Local\darktable\darktablerc</code>, find the line "ui_last/gui_language=" and modify it to "ui_last/gui_language=C". Please ue a text editor which can handle Unix line endings, like Notepad++ or similar
+
+    * **I try to export to a TIFF file and it takes ages, what's happening?**
+    We have got a few similar reports on slow TIFF export, but so far we were not able to repro. If you have such problem, please help us by reproducing it and sharing the image file and the repro steps using  [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
+
+    * **I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?**
+    Windows is handling path names very diffetenly than Unix-like systems. One of the biggets challanges of porting to Windows was making sure that path and file name handling works both on original Unix-like opeating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new)).
+
+    * **I was working with darktable and it suddenly has just crashed! What should I do?**
+    Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new), and send the so called "backtrace" file as well. You can find thr location of this backtrace file at the folder where the crash dialog is saying.

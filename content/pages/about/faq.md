@@ -80,30 +80,38 @@ lede: lede-faq.jpg
     * When you run it, replace the current Windows camera driver with WinUSB driver.
     * Start darktable after replacing the driver.
 
-    In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) - but then your camera won't work with darktable.
+    In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) – but then your camera won't work with darktable.
 
 * **I see there is now a new Windows version, what can I expect?**
 
     The Windows port is relatively new, and therefore might have some rough edges, or missing functionality compared to the more mature OS ports. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
 
-    * **How does the OpenCL support in darktable works on Windows?**
-    The Windows port of darktable fully supports OpenCL with all the performance benefits, assuming you have a GPU with appropriate OpenCL drivers installed. Popular NVIDIA and AMD GPUs are working fine, but please note that in some cases the default drivers which are installed/updated by Windows Update are not necessarily containing the OpenCL driver. The best solution is typically to install the driver directly from the GPU manufacturers (like) [NVIDIA drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us) or [AMD drivers](http://support.amd.com/en-us/download)), and check the OpenCL support at the driver first.
-      * You can always run an OpenCL test by launching <code>"C:\Program Files\darktable\bin\darktable-cltest.exe"</code> from a command line window, this will give you detailed information on your current OpenCL status.
+    * **How does the OpenCL support in darktable work on Windows?**
+
+        The Windows port of darktable fully supports OpenCL with all the performance benefits, assuming you have a GPU with appropriate OpenCL drivers installed. Popular NVIDIA and AMD GPUs are working fine, but please note that in some cases the default drivers which are installed/updated by Windows Update are not necessarily containing the OpenCL driver. The best solution is typically to install the driver directly from the GPU manufacturers (like) [NVIDIA drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us) or [AMD drivers](http://support.amd.com/en-us/download)), and check the OpenCL support at the driver first.
+
+        * You can always run an OpenCL test by launching `C:\Program Files\darktable\bin\darktable-cltest.exe` from a command line window, this will give you detailed information on your current OpenCL status.
 
     * **I cannot see the Print module in the Windows version. How can I print my images?**
-    Please be patient, currently you can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
+
+        Please be patient, currently you can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
 
     * **I have started darktable and it's user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?**
-    By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to English user interface in multiple ways:
-      * You can launch darktable using the command line <code>darkable --conf ui_last/gui_language=C</code>
-      * You can change the darktable shortcut at the Start Menu and append <code>--conf ui_last/gui_language=C</code> to the Target field
-      * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable <code>C:\Users\[[username]]\AppData\Local\darktable\darktablerc</code>, find the line "ui_last/gui_language=" and modify it to "ui_last/gui_language=C". Please use a text editor which can handle Unix line endings, like Notepad++ or similar
+
+        By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
+
+        * You can launch darktable using the command line `darkable --conf ui_last/gui_language=C`
+        * You can change the darktable shortcut at the Start Menu and append `--conf ui_last/gui_language=C` to the Target field
+        * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `C:\Users\[[username]]\AppData\Local\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
 
     * **I try to export to a TIFF file and it takes ages, what's happening?**
-    We have got a few similar reports on slow TIFF export, but so far we were not able to reproduce it. If you have this problem, please help us by reproducing it and sharing the image file and the reproduction steps using the [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
+
+        We have got a few similar reports on slow TIFF export, but so far we were not able to reproduce it. If you have this problem, please help us by reproducing it and sharing the image file and the reproduction steps using the [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
 
     * **I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?**
-    Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new)).
+
+        Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases, mostly due to external libraries used by darktable. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new).
 
     * **I was working with darktable and it suddenly just crashed! What should I do?**
+
         Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates.

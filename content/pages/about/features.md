@@ -10,14 +10,14 @@ Here is a short list of highlights where darktable can improve your digital phot
 ![gold]({attach}gold.jpg "gold")
 
 *   **Non-destructive** editing throughout the complete workflow, your original images are never modified.
-*   **Take advantage of the real power of RAW**: All darktable core functions operate on **4x32-bit floating point pixel buffers** enabling SSE instructions for speedups.
-*   **GPU accelarated image processing**: many image opertions are lightning fast thanks to  **OpenCL** support (runtime detection and enabling).
+*   **Take advantage of the real power of raw**: All darktable core functions operate on **4x32-bit floating point pixel buffers**, enabling SSE instructions for speedups.
+*   **GPU accelerated image processing**: many image opertions are lightning fast thanks to  **OpenCL** support (runtime detection and enabling).
 *   **Professional color management**: darktable is fully color managed, supporting automatic display profile detection on most systems, including built-in ICC profile support for sRGB, Adobe RGB, XYZ and linear RGB color spaces.
-*   **Cross platform**: darktable runs on GNU/Linux / GNOME, Mac OS X / macports, Windows and Solaris 11 / GNOME.
+*   **Cross platform**: darktable runs on Linux, Mac OS X / macports, BSD, Windows and Solaris 11 / GNOME.
 *   **Filtering and sorting**: search your image collections by tags, image rating (stars), color labels and many more, use flexible database queries on all metadata of your images.
 *   **Image formats**: darktable can import a variety of standard, raw and high dynamic range image formats (e.g. JPEG, CR2, NEF, HDR, PFM, RAF ... ).
 *   **Zero-latency, zoomable user interface**: through multi-level software caches darktable provides a fluid experience.
-*   **Tethered shooting**: support for instrumentation of your camera with live view.
+*   **Tethered shooting**: support for instrumentation of your camera with live view for some camera brands.
 *   **Speaks your language**: darktable currently comes with **21 translations:** Albanian, Catalan, Czech, Danish, Dutch, French, German, Greek, Hebrew, Hungarian, Italian, Japanese, Polish, Portugese (Brazilian and Portugese), Russian, Slovak, Slovenian, Spanish, Swedish, Ukrainian.
 *   **Powerful export system** supports G+ and Facebook webalbums, flickr upload, disk storage, 1:1 copy, email attachments and can generate a simple html-based web gallery. darktable allows you to export to low dynamic range (JPEG, PNG, TIFF), 16-bit (PPM, TIFF), or linear high dynamic range (PFM, EXR) images.
 *   **Never lose your image development settings** darktable uses both **XMP sidecar** files as well as its **fast database** for saving metadata and processing settings. All Exif data is read and written using libexiv2.

@@ -3,31 +3,31 @@ Date: 2017-06-13T21:58:51-06:00
 Slug: about/features
 lede: lede-features.jpg
 
-These are some of darktable's current features, and a coarse overview over the current image operation modules. You can find a more detailed description of every single item in our [online user manual](/usermanual/en/ "usermanual").
+Here is a short list of highlights where darktable can improve your digital photography processing workflow and help you to make better images with less effort. You can find a more detailed description of every single item in our [online user manual](/usermanual/en/ "usermanual").
 
-# General
+# General Features
 
 ![gold]({attach}gold.jpg "gold")
 
-*   darktable runs on **GNU/Linux / GNOME**, **Mac OS X / macports** and **Solaris 11 / GNOME**.
-*   Fully **non-destructive** editing.
-*   All darktable core functions operate on **4x32-bit floating point pixel buffers**, enabling SSE instructions for speedups. It offers GPU acceleration via **OpenCL** (runtime detection and enabling) and has **built-in ICC profile** support: sRGB, Adobe RGB, XYZ and linear RGB.
-*   A _collect_ module allows you to execute **flexible database queries**, search your images by tags, image rating (stars), color labels and many more. **Filtering and sorting** your collections within the base query or simple tagging by related tags are useful tools in your every-day photo workflow.
-*   Import a variety of standard, raw and high dynamic range image formats (e.g. jpg, cr2, hdr, pfm, ... ).
-*   darktable has a zero-latency **fullscreen, zoomable user interface** through multi-level software caches.
-*   Tethered shooting.
-*   darktable currently comes with **21 translations:** Albanian, Catalan, Czech, Danish, Dutch, French, German, Greek, Hebrew, Hungarian, Italian, Japanese, Polish, Portugese (Brazilian and Portugese), Russian, Slovak, Slovenian, Spanish, Swedish, Ukrainian.
-*   The **powerful export system** supports G+ and Facebook webalbums, flickr upload, disk storage, 1:1 copy, email attachments and can generate a simple html-based web gallery. darktable allows you to export to low dynamic range (JPEG, PNG, TIFF), 16-bit (PPM, TIFF), or linear high dynamic range (PFM, EXR) images.
-*   darktable uses both **XMP sidecar** files as well as its **fast database** for saving metadata and processing settings. All Exif data is read and written using libexiv2.
-*   Several aspects of darktable can be scripted in Lua.
-*   darktable is fully color managed, supporting automatic display profile detection on most systems.
-
+*   **Non-destructive** editing throughout the complete workflow, your original images are never modified.
+*   **Take advantage of the real power of RAW**: All darktable core functions operate on **4x32-bit floating point pixel buffers** enabling SSE instructions for speedups.
+*   **GPU accelarated image processing**: many image opertions are lightning fast thanks to  **OpenCL** support (runtime detection and enabling).
+*   **Professional color management**: darktable is fully color managed, supporting automatic display profile detection on most systems, including built-in ICC profile support for sRGB, Adobe RGB, XYZ and linear RGB color spaces.
+*   **Cross platform**: darktable runs on GNU/Linux / GNOME, Mac OS X / macports, Windows and Solaris 11 / GNOME.
+*   **Filtering and sorting**: search your image collections by tags, image rating (stars), color labels and many more, use flexible database queries on all metadata of your images.
+*   **Image formats**: darktable can import a variety of standard, raw and high dynamic range image formats (e.g. JPEG, CR2, NEF, HDR, PFM, RAF ... ).
+*   **Zero-latency, zoomable user interface**: through multi-level software caches darktable provides a fluid experience.
+*   **Tethered shooting**: support for instrumentation of your camera with live view.
+*   **Speaks your language**: darktable currently comes with **21 translations:** Albanian, Catalan, Czech, Danish, Dutch, French, German, Greek, Hebrew, Hungarian, Italian, Japanese, Polish, Portugese (Brazilian and Portugese), Russian, Slovak, Slovenian, Spanish, Swedish, Ukrainian.
+*   **Powerful export system** supports G+ and Facebook webalbums, flickr upload, disk storage, 1:1 copy, email attachments and can generate a simple html-based web gallery. darktable allows you to export to low dynamic range (JPEG, PNG, TIFF), 16-bit (PPM, TIFF), or linear high dynamic range (PFM, EXR) images.
+*   **Never lose your image development settings** darktable uses both **XMP sidecar** files as well as its **fast database** for saving metadata and processing settings. All Exif data is read and written using libexiv2.
+*   **Automate repetitive tasks**: Many aspects of darktable can be scripted in Lua.
 
 # Modules
 
 ![moon]({attach}moon.jpg "moon")
 
-Currently darktable serves 61 image operation modules in L\*a\*b\* and profiled rgb. Some of them can be used as **blending operators** offering blend functionality that works on the incoming image information and the output of the current module or be used with drawn masks.
+Currently darktable contains 61 image operation modules. Many modules support powerful **blending operators** offering blend functionality that works on the incoming image information and the output of the current module or be used with drawn masks.
 
 ## Basic image operations:
 

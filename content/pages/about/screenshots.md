@@ -23,7 +23,7 @@ In the left panel we have the image information module currently expanded. It sh
 darktable's _darkroom mode_ with an image opened.
 
 The left panel offers you informations about the processed image and your editing history. Beside that the snapshot module can be found there&nbsp;– useful to compare the image (or parts of it) before and after a change in the process values&nbsp;– as shown here. In this example the powerful color zones module has been used to change the green hue of the leaf into orange. You can also see the mask manager
-and color picker with a live sample on the left. Notice also the top and bottom toolbars&nbsp;&ndash; ou can switch the view there (top right corner) or assign color labels or rating directly to the opened image
+and color picker with a live sample on the left. Notice also the top and bottom toolbars&nbsp;&ndash; you can switch the view there (top right corner) or assign color labels or rating directly to the opened image.
 
 <hr>
 

@@ -9,7 +9,7 @@ lede: lede-screenshots.jpg
 Click on a image to get it in full resolution.
 
 
-[![lighttable mode](/images/screenshot_lighttable_thumb.jpg)](/images/screenshot_lighttable.jpg)
+[![lighttable mode](screenshot_lighttable_thumb.jpg)]({attach}/images/screenshot_lighttable.jpg)
 
 darktable's _lighttable mode_ showing a collection.
 
@@ -18,7 +18,7 @@ In the left panel we have the image information module currently expanded. It sh
 
 <hr>
 
-[![darkroom mode](/images/screenshot_darkroom1_thumb.jpg)](/images/screenshot_darkroom1.jpg)
+[![darkroom mode](screenshot_darkroom1_thumb.jpg)]({attach}/images/screenshot_darkroom1.jpg)
 
 darktable's _darkroom mode_ with an image opened.
 
@@ -27,7 +27,7 @@ and color picker with a live sample on the left. Notice also the top and bottom 
 
 <hr>
 
-[![darkroom mode](/images/screenshot_darkroom2_thumb.jpg)](/images/screenshot_darkroom2.jpg)
+[![darkroom mode](screenshot_darkroom2_thumb.jpg)]({attach}/images/screenshot_darkroom2.jpg)
 
 darktable's _darkroom mode_, sharpening an image.
 
@@ -35,7 +35,7 @@ Yet another screenshot of the darkroom mode. Here you can see both the tone curv
 
 <hr>
 
-[![darkroom mode](/images/screenshot_darkroom3_thumb.jpg)](/images/screenshot_darkroom3.jpg)
+[![darkroom mode](screenshot_darkroom3_thumb.jpg)]({attach}/images/screenshot_darkroom3.jpg)
 
 darktable's _darkroom mode_, split toning an image.
 
@@ -43,7 +43,7 @@ This time, the top and bottom panels are collapsed to safe some screen space. He
 
 <hr>
 
-[![map mode](/images/screenshot_map_thumb.jpg)](/images/screenshot_map.jpg)
+[![map mode](screenshot_map_thumb.jpg)]({attach}/images/screenshot_map.jpg)
 
 darktable's _map mode_.
 
@@ -51,7 +51,7 @@ In darktable's map mode you can geo tag your images by placing them on a map via
 
 <hr>
 
-[![print mode](/images/screenshot_print_thumb.jpg)](/images/screenshot_print.jpg)
+[![print mode](screenshot_print_thumb.jpg)]({attach}/images/screenshot_print.jpg)
 
 darktable's _print mode_.
 

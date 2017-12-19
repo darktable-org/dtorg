@@ -9,30 +9,50 @@ lede: lede-screenshots.jpg
 Click on a image to get it in full resolution.
 
 
-[![screenshot-1]({filename}/images/screenshot-1_768.png)]({filename}/images/screenshot-1.png)
+[![lighttable mode](/images/screenshot_lighttable_thumb.jpg)](/images/screenshot_lighttable.jpg)
+
 darktable's _lighttable mode_ showing a collection.
-Notice how the collection module (left panel) is used to narrow down a bunch of images by using different metadata attributes. In the import module you can see an entry "Canon EOS 550D"&nbsp;– that means this camera is attached and ready for direct import or tethered shooting right now. In the right panel you can see the tagging module allowing you to assign tags to your images. This makes it easier for you to hunt down the ones you are looking for.
+
+Notice how the collection module (left panel) is used to narrow down a bunch of images by using different metadata attributes.
+In the left panel we have the image information module currently expanded. It shows you information such as focal length, exposure, resolution about the image you are currently hovering.
 
 <hr>
 
-[![screenshot]({filename}/images/screenshot_768.png)]({filename}/images/screenshot.png)
-darktable's _lighttable mode_ how it should look when starting.
-In the left panel we have the recently used collections module and the image information module currently expanded. While the latter shows you informations such as focal length, exposure, resolution about the image you are currently hovering, the first one allows you to quickly switch between the last collections of images you put together. That can be a whole filmroll (images imported together) or a composed collection as described above.
+[![darkroom mode](/images/screenshot_darkroom1_thumb.jpg)](/images/screenshot_darkroom1.jpg)
 
-<hr>
-
-[![screenshot-2]({filename}/images/screenshot-2_768.png)]({filename}/images/screenshot-2.png)
 darktable's _darkroom mode_ with an image opened.
-The left panel offers you informations about the processed image and your editing history. Beside that the snapshot module can be found there&nbsp;– useful to compare the image (or parts of it) before and after a change in the process values&nbsp;– as shown here. In this example the powerful color zones module has been used to change the green hue of the leaf into orange.
+
+The left panel offers you informations about the processed image and your editing history. Beside that the snapshot module can be found there&nbsp;– useful to compare the image (or parts of it) before and after a change in the process values&nbsp;– as shown here. In this example the powerful color zones module has been used to change the green hue of the leaf into orange. You can also see the mask manager
+and color picker with a live sample on the left. Notice also the top and bottom toolbars&nbsp;&ndash; ou can switch the view there (top right corner) or assign color labels or rating directly to the opened image
 
 <hr>
 
-[![screenshot-3]({filename}/images/screenshot-3_768.png)]({filename}/images/screenshot-3.png)
+[![darkroom mode](/images/screenshot_darkroom2_thumb.jpg)](/images/screenshot_darkroom2.jpg)
+
 darktable's _darkroom mode_, sharpening an image.
+
 Yet another screenshot of the darkroom mode. Here you can see both the tone curve module and our equalizer in action. While the first is used to increase the contrast by changing the lightness the equalizer is here used with its "sharpen" preset that enhances the local contrasts. At the bottom you see the filmstrip allowing you to quickly switch between the images included in your current collection.
 
 <hr>
 
-[![screenshot-5]({filename}/images/screenshot-5_768.png)]({filename}/images/screenshot-5.png)
+[![darkroom mode](/images/screenshot_darkroom3_thumb.jpg)](/images/screenshot_darkroom3.jpg)
+
 darktable's _darkroom mode_, split toning an image.
-This time, the top panel is expaned&nbsp;– you can switch the view here (top right corner) or assign color labels or rating directly to the opened image. Here we fill the lights by +0.25EV in four zones by using the fill light module, then giving the image a yellowish tint with the split toning module by removing all saturation from the shadows and coloring the highlights yellow.
+
+This time, the top and bottom panels are collapsed to safe some screen space. Here we are giving the image a chocolate brownish tint with the split toning module using one of the default presets.
+
+<hr>
+
+[![map mode](/images/screenshot_map_thumb.jpg)](/images/screenshot_map.jpg)
+
+darktable's _map mode_.
+
+In darktable's map mode you can geo tag your images by placing them on a map via drag&drop. On the right you can select between different map providers, like OpenStreetMap, Google and a few more.
+
+<hr>
+
+[![print mode](/images/screenshot_print_thumb.jpg)](/images/screenshot_print.jpg)
+
+darktable's _print mode_.
+
+In print mode you can prepare your images for printing, telling darktable where to put it on the paper. Notice that here a pseudo PDF printer is selected, but of course all printers supported by CUPS can be used.

@@ -249,7 +249,8 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
         top: 2.6rem;
         max-width: initial;
     }
-    .page.search .container.title {
+    .page.search .container.title,
+    .page.minimal .container.title {
         position: initial;
         top: initial;
     }
@@ -747,4 +748,13 @@ li.current {
 
 #discourse-comments {
   margin: 4rem 0 4rem 0;
+}
+
+/* a page template without lede in the top. used for 403/404 error pages. */
+.page.minimal {
+  margin-top: 4rem;
+}
+
+.container.content.minimal {
+  margin-top: 3rem;
 }

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+        <title itemprop='name'>{{ page.title |striptags }} | {{ SITENAME }}</title>
+{%endblock title%}
+
+{% block content %}
+
+<section class='lede-bg'>
+    <img src='{{ SITEURL }}/theme/images/lede-search.jpg' alt='darktable page lede image'>
+</section>
+
+<section class='page minimal'>
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='page-title'>{{ page.title |striptags }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='container content minimal'>
+            <div class="row">
+                <div class='column'>
+                    {% block data %}
+                    {{ page.content }}
+                    {% endblock data %}
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock content %}

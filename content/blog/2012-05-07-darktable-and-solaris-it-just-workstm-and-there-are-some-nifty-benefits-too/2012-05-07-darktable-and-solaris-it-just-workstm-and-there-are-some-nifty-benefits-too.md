@@ -31,7 +31,7 @@ For instance, on my system (dual-core/dual-processor 3.0GHz Opteron cpus with 32
 
 That's a fairly simple one-liner for a very simple use-case. It's a bit of a worry that it took 9 milliseconds (thankyou to the commenters below for picking up my error with the order of magnitude) for that function to return. Now that I've got some hard data I can get started with drilling down into what the possible causes are, using the analytical troubleshooting system (an implementation of [Kepner-Tregoe's Problem Solving and Decision Management](https://www.kepner-tregoe.com/TheKTWay/WorkingWithKT-TeachYou-PSDM.cfm) methodology) which I was taught while working at (the late) Sun Microsystems.
 
-Looking through the code for dt_tag_new, I think we've got the possibility of some small optimisations. I've been trying out the idea of keeping the tags and tagxtag tables in memory and updating the on-disk versions using a SQLite3 trigger. However.... more investigation is needed. I'll be using Dtrace to help me see what works best.
+Looking through the code for dt_tag_new, I think we've got the possibility of some small optimisations. I've been trying out the idea of keeping the tags and tagxtag tables in memory and updating the on-disk versions using a SQLite3 trigger. However ... more investigation is needed. I'll be using Dtrace to help me see what works best.
 
 
 

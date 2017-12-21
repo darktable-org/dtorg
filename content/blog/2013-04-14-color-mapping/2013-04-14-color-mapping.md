@@ -19,14 +19,9 @@ Mathematically "color mapping" uses an enhanced model of the groundbreaking work
 
 To use this module two steps are required:
 
+* First you open the source image in darkroom mode and acquire its color characteristics by pressing the "acquire as source" button. A set of color clusters is generated and displayed in the source clusters area. Each cluster is represented by a set of nine color swatches with the mean value in the center surrounded by swatches indicating the color variance within that cluster. The clusters are sorted in ascending order by their weight, which reflects the relative number of pixels that contribute to the clusters.
 
-
-
-  * First you open the source image in darkroom mode and acquire its color characteristics by pressing the "acquire as source" button. A set of color clusters is generated and displayed in the source clusters area. Each cluster is represented by a set of nine color swatches with the mean value in the center surrounded by swatches indicating the color variance within that cluster. The clusters are sorted in ascending order by their weight, which reflects the relative number of pixels that contribute to the clusters.
-
-
-  * Next you open your target image in darkroom mode. darktable has remembered the previously collected source clusters; if they are not yet displayed, press the reset button in the module's expander bar. You now press the "acquire as target" button to generate a corresponding set of color clusters for your target image. It is displayed in the target clusters area.
-
+* Next you open your target image in darkroom mode. darktable has remembered the previously collected source clusters; if they are not yet displayed, press the reset button in the module's expander bar. You now press the "acquire as target" button to generate a corresponding set of color clusters for your target image. It is displayed in the target clusters area.
 
 When both source and target clusters are collected an automatic color mapping is applied to the target image. In its default settings the overall effect can be quite exaggerated. A set of sliders gives you control of the effect's strength. You can also use blending operator "normal" to tame the effect. As the color mapping module comes early in the pixelpipe, you have a lot of freedom to further finetune the colors with modules like tone curve or color correction.
 

@@ -19,133 +19,51 @@ Please only use our provided packages ("darktable-1.6.8.*" tar.xz and dmg) not t
 
 this is a point release in the stable series. the sha256sum is
 
-    
     sha256sum darktable-1.6.8.tar.xz
     b676f81bd8cc661a8f76e03ad449da4444f770b6bec3e9accf013c636f690905
     sha256sum darktable-1.6.8.dmg
     ec4b1ad797ea7a483d7fc94724de99a1d18da7d7f75071220e1d313e0a4d8a53
-    
-
 
 and as always, please don't use the tarballs provided by github (marked as "Source code").
 
-
 ## changes
 
-
-
-
-
-	
-  * clipping, santiy check for custom aspect ratios
-
-	
-  * read lensmodel from xmp
-
-	
-  * handle canon lens recognition special case
-
-	
-  * general cleanups
-
-
-
+* clipping, santiy check for custom aspect ratios
+* read lensmodel from xmp
+* handle canon lens recognition special case
+* general cleanups
 
 ## rawspeed
 
-
-
-
-
-	
-  * Canon EOS M3
-
-	
-  * Canon EOS 5Ds (R)
-
-	
-  * Nikon 1 J5
-
-	
-  * Panasonic DMC-G7 (4:3 aspect ratio only)
-
-	
-  * Fujifilm X-T10
-
-	
-  * Pentax K-S2
-
-	
-  * Panasonic TZ71
-
-	
-  * Olympus TG-4
-
-	
-  * Leica VLUX1 4:3 aspect ratio mode
-
-
-
+* Canon EOS M3
+* Canon EOS 5Ds (R)
+* Nikon 1 J5
+* Panasonic DMC-G7 (4:3 aspect ratio only)
+* Fujifilm X-T10
+* Pentax K-S2
+* Panasonic TZ71
+* Olympus TG-4
+* Leica VLUX1 4:3 aspect ratio mode
 
 ## standard color matrices
 
-
-
-
-
-	
-  * Canon EOS M3
-
-	
-  * Canon EOS 5Ds (R)
-
-	
-  * Nikon 1 J5
-
-	
-  * Panasonic DMC-G7
-
-	
-  * Fujifilm X-T10
-
-	
-  * Pentax K-S2
-
-	
-  * Olympus TG-4
-
-
-
+* Canon EOS M3
+* Canon EOS 5Ds (R)
+* Nikon 1 J5
+* Panasonic DMC-G7
+* Fujifilm X-T10
+* Pentax K-S2
+* Olympus TG-4
 
 ## white balance presets
 
-
-
-
-
-	
-  * Samsung NX500
-
-	
-  * Panasonic TZ71
-
-
-
+* Samsung NX500
+* Panasonic TZ71
 
 ## noise profiles
 
-
-
-
-
-	
-  * Sony ILCE-5100
-
-	
-  * Fujifilm HS50EXR
-
-	
-  * Canon EOS 5Ds R
-
+* Sony ILCE-5100
+* Fujifilm HS50EXR
+* Canon EOS 5Ds R
 
 So now go out, enjoy the summer and take a lot of photos!

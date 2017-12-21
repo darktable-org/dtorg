@@ -19,206 +19,72 @@ Please only use our provided packages ("darktable-1.6.7.*" tar.xz and dmg) not t
 
 this is another point release in the stable 1.6.x series.
 
-
     sha256sum darktable-1.6.7.tar.xz
     a75073b49df0a30cd2686624feeb6210bc083bc37112ae6e045f8523db4c4c98
     sha256sum darktable-1.6.7.dmg
     6630230049e6d2c4cdfd39585f95fbd1ee439a8dad107f7332aefeb1dd75b831
 
-
-
-
-
 ## security
 
-
-
-
-
-
-  * libraw [CVE-2015-3885](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3885): fix integer overflow in ljpeg_start()
-
-
-
+* libraw [CVE-2015-3885](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3885): fix integer overflow in ljpeg_start()
 
 ## miscellaneous
 
-
-
-
-
-
-  * improvements to facebook export
-
-
-  * interpolation fixups
-
-
-  * demosaic code cleanups
-
-
-  * slideshow should handle very small images better
-
-
-  * improve Olympus lens detection
-
-
-  * various minor memory leak fixes
-
-
-  * various other fixes
-
-
-  * Pentax (K-x) DNG old embedded preview left over is now removed
-
-
-  * modern OSX display profile handling
-
-
-
+* improvements to facebook export
+* interpolation fixups
+* demosaic code cleanups
+* slideshow should handle very small images better
+* improve Olympus lens detection
+* various minor memory leak fixes
+* various other fixes
+* Pentax (K-x) DNG old embedded preview left over is now removed
+* modern OSX display profile handling
 
 ## camera support
 
-
-
-
-
-
-  * Nikon D7200 (both 12bit and 14bit compressed NEFs)
-
-
-  * Nikon Coolpix P340
-
-
-  * Canon EOS 750D
-
-
-  * Canon EOS 760D
-
-
-  * Canon EOS M2
-
-
-  * Panasonic DMC-CM1
-
-
-  * Panasonic DMC-GF7 (4:3 only)
-
-
-  * Olympus XZ-10
-
-
-  * Olympus SP570UZ
-
-
-  * Samsung NX500
-
-
-  * Fuji F600EXR
-
-
-
+* Nikon D7200 (both 12bit and 14bit compressed NEFs)
+* Nikon Coolpix P340
+* Canon EOS 750D
+* Canon EOS 760D
+* Canon EOS M2
+* Panasonic DMC-CM1
+* Panasonic DMC-GF7 (4:3 only)
+* Olympus XZ-10
+* Olympus SP570UZ
+* Samsung NX500
+* Fuji F600EXR
 
 ## aspect ratios
 
-
-
-
-
-
-  * Pansonic DMC-G5
-
-
-  * Panasonic DMC-GM5
-
-
-  * Panasonic FZ200
-
-
-
+* Pansonic DMC-G5
+* Panasonic DMC-GM5
+* Panasonic FZ200
 
 ## white balance presets
 
-
-
-
-
-
-  * Nikon D7200
-
-
-  * Nikon Coolpix P340
-
-
-  * Panasonic DMC-GM1
-
-
-  * Panasonic DMC-GM5
-
-
-  * Olympus E-M10 (updated)
-
-
-  * Olympus E-PL7
-
-
-  * Olympus XZ-10
-
-
-
+* Nikon D7200
+* Nikon Coolpix P340
+* Panasonic DMC-GM1
+* Panasonic DMC-GM5
+* Olympus E-M10 (updated)
+* Olympus E-PL7
+* Olympus XZ-10
 
 ## noise profiles
 
-
-
-
-
-
-  * Canon Powershot G9
-
-
-  * Sony A350
-
-
-
+* Canon Powershot G9
+* Sony A350
 
 ## basecurves
 
-
-
-
-
-
-  * Nikon D7200
-
-
-  * Nikon D7000
-
-
-  * Nikon D750
-
-
-  * Nikon D90
-
-
-
+* Nikon D7200
+* Nikon D7000
+* Nikon D750
+* Nikon D90
 
 ## translations
 
-
-
-
-
-
-  * Catalan
-
-
-  * German
-
-
-  * Spanish
-
-
-  * Swedish
-
-
+* Catalan
+* German
+* Spanish
+* Swedish

@@ -11,7 +11,7 @@ tags: further reading
 
 Mukund Sivaraman from [banu.com](https://banu.com) held an interesting interview with Richard Hughes, the maker of the ColorHug colorimeter:
 
->The ColorHug is a colorimeter that can be used to calibrate computer displays. It was created by Richard Hughes (hughsie). It is a fully open hardware project, and the design, drivers and firmware are available on the Gitorious code hosting website.
+> The ColorHug is a colorimeter that can be used to calibrate computer displays. It was created by Richard Hughes (hughsie). It is a fully open hardware project, and the design, drivers and firmware are available on the Gitorious code hosting website.
 
 Read the full interview here: [https://banu.com/blog/41/interview-of-colorhug-maker-richard-hughes/](https://banu.com/blog/41/interview-of-colorhug-maker-richard-hughes/)
 

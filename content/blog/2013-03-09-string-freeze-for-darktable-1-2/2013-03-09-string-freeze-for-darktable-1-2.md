@@ -11,6 +11,6 @@ tags: announcement, darktable release
 
 Dear all,
 
-since March 3 we are in the string freeze phase for the upcoming darktable 1.2 release. This release will be a major new version introducing tons of new features (as you might have guessed by all the blog articles in the last months...).
+since March 3 we are in the string freeze phase for the upcoming darktable 1.2 release. This release will be a major new version introducing tons of new features (as you might have guessed by all the blog articles in the last months ...).
 
 Please don't push or provide patches with any new translatable strings to master or change them (that's the ones in _("...") ).

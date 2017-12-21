@@ -23,7 +23,11 @@ If you are using any distribution's packages, please be patient for the packager
 
 Thanks to our great community and all the contributors for making this possible!
 
-See the development visualised: [https://www.youtube.com/watch?v=N-ST2PDcDUg](https://www.youtube.com/watch?v=N-ST2PDcDUg)
+See the development visualised:
+
+<div style="text-align: center">
+<iframe width="650" height="400" src="https://www.youtube-nocookie.com/embed/N-ST2PDcDUg?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 Enjoy the release!
 

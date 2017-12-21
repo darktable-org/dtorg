@@ -28,7 +28,9 @@ when updating from the currently stable 2.0.x series, please bear in mind that y
 
 Gource visualization of git log from 2.0.0 to right before 2.2.0:
 
-[https://youtu.be/E2UU5x7sS3g](https://youtu.be/E2UU5x7sS3g)
+<div style="text-align: center">
+<iframe width="650" height="400" src="https://www.youtube-nocookie.com/embed/E2UU5x7sS3g?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
 
 ## The Big Ones:
 

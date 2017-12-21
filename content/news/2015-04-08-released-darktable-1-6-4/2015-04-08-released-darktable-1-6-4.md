@@ -19,131 +19,49 @@ Please only use our provided packages ("darktable-1.6.4.*" tar.xz and dmg) not t
 
 this is another point release in the stable 1.6.x series.
 
-    
     sha256sum darktable-1.6.4.tar.xz
      c5f705e8164c014acf0dac2ffc5b730362068c2864622121ca6fa9f330368d2a
     sha256sum darktable-1.6.4.dmg
      e5bbf00fefcf116aec0e66d1d0cf2e2396cb0b19107402d2ef70d1fa0ab375f6
-    
-
-
-
 
 ## General improvements:
 
-
-
-
-
-	
-  * major rawspeed update
-
-	
-  * facebook exporter update (first authentication usability should be much better now)
-
-	
-  * first run opencl benchmark to prevent opencl auto-activation if GPU is obviously slower than CPU
-
-	
-  * lensfun cornercase fixes
-
-	
-  * some mask cornercase fixes
-
-	
-  * zonesystem now updates it's gui when number of zones changes
-
-	
-  * spots iop updates
-
-	
-  * ui_last/gui_language should work more reliably now
-
-	
-  * internal lua updated from 5.2.3 to 5.2.4 (distro typically use their own version of lua)
-
-	
-  * gcc 5 should build now
-
-
-
+* major rawspeed update
+* facebook exporter update (first authentication usability should be much better now)
+* first run opencl benchmark to prevent opencl auto-activation if GPU is obviously slower than CPU
+* lensfun cornercase fixes
+* some mask cornercase fixes
+* zonesystem now updates it's gui when number of zones changes
+* spots iop updates
+* ui_last/gui_language should work more reliably now
+* internal lua updated from 5.2.3 to 5.2.4 (distro typically use their own version of lua)
+* gcc 5 should build now
 
 ## Camera support:
 
-
-
-
-
-	
-  * Canon Digital Rebel (non-european 300D)
-
-	
-  * Nikon D5500 (experimental)
-
-	
-  * Olympus E-M5 Mark II (experimental)
-
-	
-  * Samsung NX500 (experimental)
-
-
-
+* Canon Digital Rebel (non-european 300D)
+* Nikon D5500 (experimental)
+* Olympus E-M5 Mark II (experimental)
+* Samsung NX500 (experimental)
 
 ## White balance presets:
 
-
-
-
-
-	
-  * Sony A77 II
-
-	
-  * Fujifilm X-E2
-
-	
-  * Olympus E-M5 Mark II
-
-
-
+* Sony A77 II
+* Fujifilm X-E2
+* Olympus E-M5 Mark II
 
 ## Noise profiles:
 
-
-
-
-
-	
-  * Canon 7D Mark II
-
-
-
+* Canon 7D Mark II
 
 ## updated translations:
 
-
-
-
-
-	
-  * German
-
-	
-  * French
-
-	
-  * Russian
-
-	
-  * Danish
-
-	
-  * Catalan
-
-	
-  * Japanese
-
-	
-  * Dutch
+* German
+* French
+* Russian
+* Danish
+* Catalan
+* Japanese
+* Dutch
 
 

@@ -74,23 +74,11 @@ This works… but with a twist. There is an error in the console because the dir
 
 _dt.preferences.register_ will add a new preference in the Lua tab of the preference menu.
 
-
-
-
-  * The first two parameters are a script name and the name of the preference. These two strings are invisible to the user and will uniquely identify the preference.
-
-
-  * The next parameter is the type of the preference. In our case it is a simple string, so we use _"string"_ here.
-
-
-  * The parameter after that is the text of the preference as it will appear in the preference menu.
-
-
-  * Then comes a tooltip that will be displayed when the user hovers over the text box.
-
-
-  * And last is the default value to report when someone attempts to read the preference and the user hasn't set it yet. It is also used to reset the preference when the user double-clicks on the preference label in the preference menu.
-
+* The first two parameters are a script name and the name of the preference. These two strings are invisible to the user and will uniquely identify the preference.
+* The next parameter is the type of the preference. In our case it is a simple string, so we use _"string"_ here.
+* The parameter after that is the text of the preference as it will appear in the preference menu.
+* Then comes a tooltip that will be displayed when the user hovers over the text box.
+* And last is the default value to report when someone attempts to read the preference and the user hasn't set it yet. It is also used to reset the preference when the user double-clicks on the preference label in the preference menu.
 
 After that, we read the preference (using the script name and the preference name to identify the preference we want to read) and call _dt.database.import_ to do the real job for us.
 
@@ -98,9 +86,7 @@ The default value for our preference is the empty string, and this is causing th
 
 Let's replace the line importing the directory with the following line:
 
-
     pcall(dt.database.import,dt.preferences.read("myScript","load_directory","string"))
-
 
 Note that we don't call _dt.database.import_ directly. We pass that function as a parameter to pcall. pcall will catch all exceptions and report them as its own result (which we ignore here).
 
@@ -200,20 +186,10 @@ _os.execute_ is a standard Lua function that will take a string as a parameter a
 
 _dt.register_storage_ will add a new storage implemented in Lua. Storages are the different methods that darktable can use to store images (facebook, picasa, e-mail or simply as files on the local computer).
 
-
-
-
-  * The first parameter is a unique name for the storage.
-
-
-  * The second parameter is the name as it will appear inside darktable.
-
-
-  * The third parameter is a function to be called once for each image. We don't use it here so we set it to _nil_.
-
-
-  * The last parameter is a function to be called once all images have been exported. This is where we do the real job.
-
+* The first parameter is a unique name for the storage.
+* The second parameter is the name as it will appear inside darktable.
+* The third parameter is a function to be called once for each image. We don't use it here so we set it to _nil_.
+* The last parameter is a function to be called once all images have been exported. This is where we do the real job.
 
 With this code in your _luarc_ and GraphicsMagick installed, you should have a new entry in the export module allowing you to export the selection and generate a composite image out of it.
 

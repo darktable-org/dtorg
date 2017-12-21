@@ -11,7 +11,7 @@ tags: further reading
 
 Pascal de Bruijn wrote an extensive article about color management on Linux systems, covering basic explanations as well as the description of some tools.
 
->There seems to be a lot of confusion about what color management is, what it is supposed to do, and most particularly how to use it on Linux.
+> There seems to be a lot of confusion about what color management is, what it is supposed to do, and most particularly how to use it on Linux.
 
 Find the article here:
 

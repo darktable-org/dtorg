@@ -21,6 +21,6 @@ Enjoy reading the new chapters about Lua, drawn masks and many other improvement
 
 Happy new year!
 
-(and yes, we are aware of the fact that in some cultures new year might not have started yesterday...)
+(and yes, we are aware of the fact that in some cultures new year might not have started yesterday ...)
 
 /Simon

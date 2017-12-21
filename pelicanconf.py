@@ -100,8 +100,10 @@ MENUITEMS = (
         ('Blog', '/blog/')
     )
 
-DIRECT_TEMPLATES = ['categories', 'tags', 'search', 'small_ledes']
+DIRECT_TEMPLATES = ['categories', 'tags', 'search', 'small_ledes', 'sitemap']
 PAGINATED_DIRECT_TEMPLATES = ['index', 'category', 'tag']
+
+SITEMAP_SAVE_AS = 'sitemap.xml'
 
 # choose a default page lede that sticks out enough to force people to care about it and add a custom lede :-)
 DEFAULT_LEDE = '/theme/images/darktable_skull+logo.png'

@@ -25,5 +25,6 @@ AUTHORS = {
     'dtorop' : {'displayname' : 'dtorop'},
     'mueen' : {'displayname' : 'Mueen Nawaz'},
     'pedrocr' : {'displayname' : 'pedrocr'},
-    'LebedevRI' : {'displayname' : 'Roman'}
+    'LebedevRI' : {'displayname' : 'Roman'},
+    'patdavid' : {'displayname' : 'Pat David', 'twitter' : '@patdavid', 'lede' : 'lede-patdavid.jpg'}
 }

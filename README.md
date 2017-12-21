@@ -33,3 +33,10 @@ Python 2.7.13
 $ pelican --version
 3.6.3
 ```
+
+Additionally, some extra modules should be available:
+
+* PIL/pillow  
+ `$ pip install pillow`
+* python-twitter  
+ `$ pip install python-twitter`

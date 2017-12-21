@@ -115,3 +115,6 @@ another useful hint: the scrollwheel works like it does in blender's proportiona
     edge-optimized a-trous wavelets for local contrast enhancement with robust denoising. (see attached pdfs below)
 
     pacific graphics 2011.
+
+    * [hdl11_talk.pdf]({attach}hdl11_talk.pdf) – Talk September, 17 2011
+    * [hdl11_paper.pdf]({attach}hdl11_paper.pdf) – Edge-Optimized À-Trous Wavelets for Local Contrast Enhancement with Robust Denoising

@@ -1,0 +1,57 @@
+.cato {
+  width:100%;
+  height: auto;
+  position: relative;
+  border:1px;
+  border-color:#000;
+  background-size: 50% 100%;
+}
+
+.cato img {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  opacity:0;
+}
+
+.cato div p {
+  padding:1em;
+  display: inline;
+  position: absolute;
+  z-index: 2;
+}
+.cato div .cato_right {
+  text-align:right;
+  right: 0px;
+}
+
+.cato .cato_divider {
+  width:2px;
+  opacity:0.5;
+  height:100%;
+  left:50%;
+  top:0px;
+  background:#ffffff;
+}
+
+.cato div {
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  user-select: none;
+  border:1px;
+  border-color:#000;
+  color: white;
+  text-shadow:
+     -1px -1px 2px #000,
+      1px -1px 2px #000,
+     -1px  1px 2px #000,
+      1px  1px 2px #000;
+}

@@ -45,7 +45,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 RELATIVE_URLS = False
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_links', 'tipue_search', 'social_media', 'article_metadata', 'static_comments']
+PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_links', 'tipue_search', 'social_media', 'article_metadata', 'static_comments', 'image_compare']
 
 THUMBNAIL_SIZE = 960
 

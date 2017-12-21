@@ -58,11 +58,11 @@ class PelicanArticleMetadataMarkdownExtension(markdown.Extension):
     def __init__(self, config):
         try:
             # Needed for Markdown versions >= 2.5
-            self.config['config'] = ['{}', 'config for markdown extension']
+            #self.config['config'] = ['{}', 'config for markdown extension']
             super(PelicanArticleMetadataMarkdownExtension,self).__init__(**config)
         except AttributeError:
             # Markdown versions < 2.5
-            config['config'] = [config['config'], 'config for markdown extension']
+            #config['config'] = [config['config'], 'config for markdown extension']
             super(PelicanArticleMetadataMarkdownExtension, self).__init__(config)
 
     def extendMarkdown(self, md, md_globals):

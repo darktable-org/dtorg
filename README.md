@@ -40,3 +40,8 @@ Additionally, some extra modules should be available:
  `$ pip install pillow`
 * python-twitter  
  `$ pip install python-twitter`
+
+To build the site:
+```bash
+$ pelican -s pelicanconf.py
+```

@@ -50,10 +50,10 @@ PLUGINS = ['summary', 'attach_ledeimg', 'rm_nbsp_title', 'render_math', 'image_l
 THUMBNAIL_SIZE = 960
 
 # DO NOT CHANGE THEM HERE BUT SET THEM IN ANOTHER PLACE!
-TWITTER_CONSUMER_KEY = '****'
-TWITTER_CONSUMER_SECRET = '****'
-TWITTER_ACCESS_TOKEN_KEY = '****'
-TWITTER_ACCESS_TOKEN_SECRET = '****'
+TWITTER_CONSUMER_KEY = ''
+TWITTER_CONSUMER_SECRET = ''
+TWITTER_ACCESS_TOKEN_KEY = ''
+TWITTER_ACCESS_TOKEN_SECRET = ''
 
 # web site statistics
 PIWIK_URL = 'darktable.org/piwik/'

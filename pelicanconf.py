@@ -55,6 +55,10 @@ TWITTER_CONSUMER_SECRET = '****'
 TWITTER_ACCESS_TOKEN_KEY = '****'
 TWITTER_ACCESS_TOKEN_SECRET = '****'
 
+# web site statistics
+PIWIK_URL = 'darktable.org/piwik/'
+PIWIK_SITE_ID = 1
+
 # Use pretty type options in output
 TYPOGRIFY = True
 

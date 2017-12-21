@@ -1,10 +1,8 @@
 title: a new website
-author: Pat David
-date: 2017-12-21T11:02:54-06:00 
-layout: post
+author: patdavid
+date: 2017-12-21T11:02:54-06:00
 lede: Glades.jpg
-comments: true
-tags: announcement, blog, community 
+tags: announcement, blog, community
 
 A new year is coming on us quickly, so how about a nice new website to go with it?
 
@@ -13,7 +11,7 @@ A new year is coming on us quickly, so how about a nice new website to go with i
 <img alt="Babynew" src="{filename}Babynew.jpg" width="288" height="369"/>
 </a>
 <figcaption>
-Baby New Year from 110 years ago...
+Baby New Year from 110 years ago ...
 </figcaption>
 </figure>
 
@@ -65,7 +63,7 @@ This lets us moderate comments in one place, allows for cross-pollination of kno
 
 ## Happy New Year
 
-Have a look around the new site and please don't hesitate to point out any problems you may run into!  
-From me, thank you x1000 to the developers for this awesome project. 
+Have a look around the new site and please don't hesitate to point out any problems you may run into!
+From me, thank you x1000 to the developers for this awesome project.
 
 [patdavid](https://patdavid.net "Pat David") &hearts;'s darktable

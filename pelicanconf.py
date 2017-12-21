@@ -58,9 +58,11 @@ TWITTER_ACCESS_TOKEN_SECRET = '****'
 # Use pretty type options in output
 TYPOGRIFY = True
 
-STATIC_PATHS = ['extra/favicon.ico', 'blog', 'news', 'pages', 'images', 'wp-content']
+STATIC_PATHS = ['extra', 'blog', 'news', 'pages', 'images']
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/update_website_github.php': {'path': 'update_website_github.php'}
 }
 
 # These two options allow us to specify the category

@@ -76,7 +76,7 @@ def post_on_twitter(settings, new_posts):
         free_space = limit - twitter.twitter_utils.calc_expected_status_length(message % ('', url))
         title = shorten(article.title, free_space)
         post = message % (title, url)
-        print(post)
+        print(post.encode('utf-8'))
         # api.PostUpdate(post) # TODO: add this line and maybe do some error checking
 
     return True

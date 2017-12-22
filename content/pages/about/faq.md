@@ -2,7 +2,6 @@ Title: faq
 Slug: about/faq
 Date: 2017-09-20T16:18:43-06:00
 author: smn
-link: http://www.darktable.org/about/faq/
 wordpress_id: 1536
 lede: lede-faq.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>

@@ -1,7 +1,6 @@
 Title: resources
 Date: 2017-09-21T13:43:33-06:00
 author: smn
-link: http://www.darktable.org/resources/
 wordpress_id: 120
 lede: lede-resources.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>

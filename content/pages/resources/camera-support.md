@@ -1,8 +1,7 @@
 Title: camera support
-Slug: resources/camera-support/
+Slug: resources/camera-support
 Date: 2017-09-21T14:00:56-06:00
 author: pedrocr
-link: http://www.darktable.org/resources/camera-support/
 wordpress_id: 3676
 lede: lede-camera-support.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>

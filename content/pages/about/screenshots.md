@@ -2,7 +2,6 @@ Title: screenshots
 Slug: about/screenshots
 Date: 2017-09-20T14:56:21-06:00
 author: smn
-link: http://www.darktable.org/about/screenshots/
 wordpress_id: 116
 lede: lede-screenshots.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>

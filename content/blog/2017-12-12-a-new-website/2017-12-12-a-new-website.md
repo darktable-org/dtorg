@@ -18,7 +18,7 @@ Baby New Year from 110 years ago ...
 
 houz and I have been working hard over the past few months to migrate the old website from Wordpress to a new static site, using [Python][]/[Pelican][].
 This should make things more secure and safer for both you and us (see the [problems that rawsamples.ch][rawsamples] had for the perils of using a db-driven backend for a website).
-Not to mention it makes collaboration and contributing a bit easier now, as the entire site gets it's [own GitHub repository][] (I'll be eagerly awaiting your pull requests).
+Not to mention it makes collaboration and contributing a bit easier now, as the entire site gets its [own GitHub repository][] (I'll be eagerly awaiting your pull requests).
 
 [Python]: https://www.python.org/ "Python homepage"
 [Pelican]: https://blog.getpelican.com/ "Pelican Static Site Generator"

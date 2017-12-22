@@ -9,7 +9,7 @@
 AUTHORS = {
     'smn' : {'displayname' : 'smn'},
     'dt' : {'displayname' : 'dt'},
-    'houz' : {'displayname' : 'houz'},
+    'houz' : {'displayname' : 'houz', 'lede' : 'lede-houz.jpg'},
     'bieber' : {'displayname' : 'bieber'},
     'Henrik Andersson' : {'displayname' : 'Henrik Andersson'},
     'jo' : {'displayname' : 'jo'},

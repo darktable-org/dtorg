@@ -97,7 +97,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
         Please be patient, currently you can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
 
-    * **I have started darktable and it's user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?**
+    * **I have started darktable and its user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?**
 
         By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
 

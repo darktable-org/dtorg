@@ -81,7 +81,7 @@ def post_on_twitter(settings, new_posts):
         title = shorten(article.title, free_space)
         post = message % (title, url)
         print(post.encode('utf-8'))
-        # api.PostUpdate(post) # TODO: add this line and maybe do some error checking
+        api.PostUpdate(post) # TODO: add this line and maybe do some error checking
 
     return True
 

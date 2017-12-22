@@ -154,6 +154,21 @@
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url|urlencode }}" target="_blank" title="Share this post on Facebook">Facebook</a>
                     </p>
 
+
+                    <div id='discourse-comments'></div>
+
+                    <script type="text/javascript">
+                      DiscourseEmbed = { discourseUrl: 'https://discuss.pixls.us/',
+                                         discourseEmbedUrl: '{% if article.canonical %}{{ article.canonical }}{% else %}{{ SITEURL }}/{{ article.url }}{% endif %}' };
+
+                      (function() {
+                        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                      })();
+                    </script>
+
+
                     {% if article.static_comments %}
                     <div class="static_comments" id="static_comments">
                     <i>These are comments from the old website, archived as static HTML</i>

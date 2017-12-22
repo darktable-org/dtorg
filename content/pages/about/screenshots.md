@@ -5,6 +5,7 @@ author: smn
 link: http://www.darktable.org/about/screenshots/
 wordpress_id: 116
 lede: lede-screenshots.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 Click on a image to get it in full resolution.
 

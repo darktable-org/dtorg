@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/02/darktable-2-0-1-released/
 slug: darktable-2-0-1-released
 title: darktable 2.0.1 released
 lede: race_cars_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3945
 tags: announcement, darktable release
 

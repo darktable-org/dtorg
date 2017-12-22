@@ -5,6 +5,7 @@ author: smn
 link: http://www.darktable.org/about/faq/
 wordpress_id: 1536
 lede: lede-faq.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 * **What's the best way to contact the developers/report bugs?**
 

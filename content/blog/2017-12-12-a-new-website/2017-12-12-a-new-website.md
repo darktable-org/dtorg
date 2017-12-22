@@ -2,6 +2,7 @@ title: a new website
 author: patdavid
 date: 2017-12-21T11:02:54-06:00
 lede: Glades.jpg
+lede_author: <a href="https://blog.patdavid.net/">Pat David</a>
 tags: announcement, blog, community
 
 A new year is coming on us quickly, so how about a nice new website to go with it?

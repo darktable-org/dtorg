@@ -4,6 +4,7 @@ author: smn
 link: http://www.darktable.org/install/
 wordpress_id: 118
 lede: lede-install.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 # Choose your OS:
 

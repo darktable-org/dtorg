@@ -4,6 +4,7 @@ author: smn
 link: http://www.darktable.org/resources/
 wordpress_id: 120
 lede: lede-resources.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 # Find us on...
 

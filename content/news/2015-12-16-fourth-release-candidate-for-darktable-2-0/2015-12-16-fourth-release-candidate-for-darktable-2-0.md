@@ -6,6 +6,7 @@ link: http://www.darktable.org/2015/12/fourth-release-candidate-for-darktable-2-
 slug: fourth-release-candidate-for-darktable-2-0
 title: fourth release candidate for darktable 2.0
 lede: sail_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3903
 tags: announcement, darktable release
 

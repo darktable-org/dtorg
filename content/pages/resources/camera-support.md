@@ -5,6 +5,7 @@ author: pedrocr
 link: http://www.darktable.org/resources/camera-support/
 wordpress_id: 3676
 lede: lede-camera-support.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 This is an auto-generated list of the state of support of different camera models. Cameras that produce DNG files should be supported even if they are not on the list but samples are still appreciated.
 

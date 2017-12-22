@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/10/darktable-2-0-7-released/
 slug: darktable-2-0-7-released
 title: darktable 2.0.7 released
 lede: river_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 4587
 tags: announcement, darktable release
 

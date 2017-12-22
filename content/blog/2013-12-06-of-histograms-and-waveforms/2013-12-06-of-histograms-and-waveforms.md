@@ -6,6 +6,7 @@ link: http://www.darktable.org/2013/12/of-histograms-and-waveforms/
 slug: of-histograms-and-waveforms
 title: Of Histograms and Waveforms
 lede: rose_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3141
 tags: blog, upcoming feature
 

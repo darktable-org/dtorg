@@ -6,6 +6,7 @@ link: http://www.darktable.org/2013/02/call-for-lgm-donations/
 slug: call-for-lgm-donations
 title: Call for LGM donations
 lede: give_me_your_money_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 2737
 tags: community
 

@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/08/compressing-dynamic-range-with-exposure-f
 slug: compressing-dynamic-range-with-exposure-fusion
 title: compressing dynamic range with exposure fusion
 lede: lede_wide.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 wordpress_id: 4181
 tags: blog, development, further reading, upcoming feature
 

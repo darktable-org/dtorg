@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/03/darktable-2-0-2-released/
 slug: darktable-2-0-2-released
 title: darktable 2.0.2 released
 lede: honda_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3967
 tags: announcement, darktable release
 

@@ -6,6 +6,7 @@ link: http://www.darktable.org/2015/04/released-darktable-1-6-6/
 slug: released-darktable-1-6-6
 title: released darktable 1.6.6
 lede: wheat_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3659
 tags: announcement, darktable release
 

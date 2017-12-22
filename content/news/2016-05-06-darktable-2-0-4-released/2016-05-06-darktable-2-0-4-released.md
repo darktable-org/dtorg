@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/05/darktable-2-0-4-released/
 slug: darktable-2-0-4-released
 title: darktable 2.0.4 released
 lede: mairi_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 4059
 tags: announcement, darktable release
 

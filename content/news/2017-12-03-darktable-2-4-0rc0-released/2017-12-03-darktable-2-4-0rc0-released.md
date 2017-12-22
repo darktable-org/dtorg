@@ -4,6 +4,7 @@ layout: post
 slug: darktable-2-4-0rc0-released
 title: darktable 2.4.0rc0 released
 lede: tit_lede.jpg
+lede_author: <a href="https://www.flickr.com/photos/andabata">Kees Guequierre</a>
 tags: announcement, darktable release
 
 we're proud to announce the first release candidate for the upcoming 2.4 series of darktable, 2.4.0rc0!

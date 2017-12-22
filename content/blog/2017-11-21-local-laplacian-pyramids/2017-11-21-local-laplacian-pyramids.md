@@ -4,6 +4,7 @@ layout: post
 slug: local-laplacian-pyramids
 title: local laplacian pyramids
 lede: header.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 tags: blog, development, further reading, upcoming feature
 
 # improving contrast with the local laplacian filter

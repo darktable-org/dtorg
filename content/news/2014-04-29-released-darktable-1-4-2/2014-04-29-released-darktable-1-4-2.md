@@ -6,6 +6,7 @@ link: http://www.darktable.org/2014/04/released-darktable-1-4-2/
 slug: released-darktable-1-4-2
 title: released darktable 1.4.2
 lede: dt_shirt_text_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3278
 tags: announcement, darktable release
 

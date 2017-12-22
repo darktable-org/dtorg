@@ -6,6 +6,7 @@ link: http://www.darktable.org/2013/05/released-darktable-1-2-1/
 slug: released-darktable-1-2-1
 title: released darktable 1.2.1
 lede: IMG_5490_export2_wide.jpg
+lede_author: <a href="http://www.fourdimensions.eu/">Simon Spannagel</a>
 wordpress_id: 2930
 tags: announcement, darktable release
 

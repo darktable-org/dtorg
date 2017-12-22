@@ -84,6 +84,11 @@
     <section class='lede page'>
     {% if page.lede %}
         <img class='lede-img' src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image' width='960' height='402'>
+        {% if page.lede_author %}
+        <div class="lede-author">
+            <div>{{ page.lede_author }}</div>
+        </div>
+        {% endif %}
     {% else %}
         <img class='lede-img' src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image' width='960' height='402'>
     {% endif %}

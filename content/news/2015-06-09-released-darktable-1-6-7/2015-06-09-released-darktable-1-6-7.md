@@ -6,6 +6,7 @@ link: http://www.darktable.org/2015/06/released-darktable-1-6-7/
 slug: released-darktable-1-6-7
 title: released darktable 1.6.7
 lede: town_hall_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3697
 tags: announcement, darktable release
 

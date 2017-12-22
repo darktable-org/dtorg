@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/03/darktable-2-0-3-released/
 slug: darktable-2-0-3-released
 title: darktable 2.0.3 released
 lede: lake_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 4021
 tags: announcement, darktable release
 

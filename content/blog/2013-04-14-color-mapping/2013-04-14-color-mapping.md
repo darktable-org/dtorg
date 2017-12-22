@@ -6,6 +6,7 @@ link: http://www.darktable.org/2013/04/color-mapping/
 slug: color-mapping
 title: Color Mapping
 wordpress_lede: cm_featured.jpg
+lede_author: Ulrich Pegelow
 wordpress_id: 2853
 tags: blog, development, upcoming feature, blending, color, color mapping, Lab, tutorial
 

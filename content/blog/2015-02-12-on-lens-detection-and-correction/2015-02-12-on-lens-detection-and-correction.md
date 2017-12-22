@@ -6,6 +6,7 @@ link: http://www.darktable.org/2015/02/on-lens-detection-and-correction/
 slug: on-lens-detection-and-correction
 title: On Lens Detection and Correction
 lede: lens_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3543
 tags: blog
 

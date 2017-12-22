@@ -4,6 +4,7 @@ layout: post
 slug: darktable-2-4-0rc1-released
 title: darktable 2.4.0rc1 released
 lede: snow_midget.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 tags: announcement, darktable release
 
 we're proud to announce the second release candidate for the upcoming 2.4 series of darktable, 2.4.0rc1!

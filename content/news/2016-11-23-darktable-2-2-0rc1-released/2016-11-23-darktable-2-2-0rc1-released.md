@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/11/darktable-2-2-0rc1-released/
 slug: darktable-2-2-0rc1-released
 title: darktable 2.2.0rc1 released
 lede: castle2_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 4610
 tags: announcement, darktable release
 

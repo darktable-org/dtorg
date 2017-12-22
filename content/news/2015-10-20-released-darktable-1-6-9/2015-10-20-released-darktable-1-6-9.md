@@ -6,6 +6,7 @@ link: http://www.darktable.org/2015/10/released-darktable-1-6-9/
 slug: released-darktable-1-6-9
 title: released darktable 1.6.9
 lede: lede_wide.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 wordpress_id: 3820
 tags: announcement, darktable release
 

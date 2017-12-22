@@ -6,6 +6,7 @@ link: http://www.darktable.org/2015/11/first-release-candidate-for-darktable-2-0
 slug: first-release-candidate-for-darktable-2-0
 title: first release candidate for darktable 2.0
 lede: nut_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3835
 tags: announcement, darktable release
 

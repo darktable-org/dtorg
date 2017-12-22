@@ -4,6 +4,7 @@ author: smn
 link: http://www.darktable.org/development/
 wordpress_id: 404
 lede: lede-development.jpg
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 <div class="subnav">
     <a href="https://darktable.org/redmine/projects/darktable/wiki">developer's wiki</a>

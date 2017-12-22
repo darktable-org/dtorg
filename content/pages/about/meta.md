@@ -3,6 +3,7 @@ Date: 2017-06-16T13:50:27-06:00
 Author: Pat David
 Slug: about/meta
 lede: lede-meta.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 
 This is a meta page about this website and building it.
 [Pat David](https://patdavid.net) created this page for notes about building the site.

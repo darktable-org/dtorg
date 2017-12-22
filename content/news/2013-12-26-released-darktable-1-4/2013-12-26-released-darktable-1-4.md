@@ -6,6 +6,7 @@ link: http://www.darktable.org/2013/12/released-darktable-1-4/
 slug: released-darktable-1-4
 title: released darktable 1.4
 lede: dt_wide.png
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 3181
 tags: announcement, darktable release
 

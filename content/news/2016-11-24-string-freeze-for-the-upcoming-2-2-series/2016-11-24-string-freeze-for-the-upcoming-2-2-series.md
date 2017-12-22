@@ -6,6 +6,7 @@ link: http://www.darktable.org/2016/11/string-freeze-for-the-upcoming-2-2-series
 slug: string-freeze-for-the-upcoming-2-2-series
 title: String freeze for the upcoming 2.2 series
 lede: castle3_wide.jpg
+lede_author: <a href="https://houz.org/">houz</a>
 wordpress_id: 4616
 tags: announcement
 

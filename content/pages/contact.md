@@ -4,7 +4,7 @@ author: smn
 link: http://www.darktable.org/contact/
 wordpress_id: 124
 lede: lede-contact.jpg
-
+lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 # How to get in contact
 ![sun]({attach}sun.jpg)

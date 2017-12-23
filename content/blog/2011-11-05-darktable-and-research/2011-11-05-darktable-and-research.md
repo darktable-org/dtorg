@@ -44,7 +44,7 @@ L and C gain are straight forward, it just enhances local contrast for the given
 
 the L and C thresholds (bottom curve, defaults to zero everywhere) affect the wavelet shrinkage step and result in denoising. select one of the denoising presets to get a feel of how to use it.
 
-the last tab gives you access to the edge-avoiding part of the wavelet transform. pull down the curve to all zero to reduce it to a standard, non-edge-aware wavelet. a double-click on any curve will reset it to it's default. to get a feel for the effect of the edge weight, start from the _sharpen (strong)_ preset and look at how high contrast edges change when playing with the sharpness curve.
+the last tab gives you access to the edge-avoiding part of the wavelet transform. pull down the curve to all zero to reduce it to a standard, non-edge-aware wavelet. a double-click on any curve will reset it to its default. to get a feel for the effect of the edge weight, start from the _sharpen (strong)_ preset and look at how high contrast edges change when playing with the sharpness curve.
 
 
 

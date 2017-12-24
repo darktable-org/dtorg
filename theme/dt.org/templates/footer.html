@@ -23,10 +23,18 @@
  </g>
 </svg>
                         RSS Feeds:<br>
-                    <a href="{{ FEED_DOMAIN }}/news.rss.xml" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" >news feed
+                        {# <a href="{{ FEED_DOMAIN }}/news.rss.xml" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" >news feed
                     </a>
                     &middot;
                     <a href="{{ FEED_DOMAIN }}/blog.rss.xml" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" >blog feed
+                    </a>
+                    #}
+                    <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed">all feeds</a>
+                    &middot;
+                    <a href="{{ SITE_URL }}/feed/news.rss.xml" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" >news feed
+                    </a>
+                    &middot;
+                    <a href="{{ SITE_URL }}/feed/blog.rss.xml" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" >blog feed
                     </a>
                     </p>
                     <p>Connect with us on:<br>

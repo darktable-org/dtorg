@@ -182,7 +182,7 @@ and have fun.
 <h2 id='windows'>Microsoft Windows</h2>
 ![Microsoft Windows]({filename}/images/OS/windows.png)
 
-  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.0rc0/darktable-2.4.0rc0-win64.exe).
+  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-2.4.0-win64.exe).
   * Run it and install darktable.
   * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port.
 

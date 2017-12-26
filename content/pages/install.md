@@ -151,7 +151,7 @@ darktable can be installed through MacPorts:
 <h2 id='debian'>Debian</h2>
 ![debian]({filename}/images/OS/debian.png)
 
-(Of course) there is a darktable package in the Debian repositories. The current stable version _Jessie_ still has darktable 1.4.2 packaged, but version 1.6.9 is available through the backports. This is also what already landed in _Stretch_. See package description here: <https://packages.debian.org/stable/darktable>.
+(Of course) there is a darktable package in the Debian repositories. The current stable version _Stretch_ still has darktable 2.2.1 packaged, but version 2.2.5 is available through the backports. This is also what already landed in _Buster_. See package description here: <https://packages.debian.org/stable/darktable>.
 
 darktable can be installed just by running
 

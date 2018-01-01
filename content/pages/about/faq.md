@@ -96,7 +96,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
         Please be patient, currently you can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
 
-    * **I read in the manual to about changing some configuration setting, which supposed to be located in the user config directory. Where is the config file in the Windows version?**
+    * **I read in the manual about changing some configuration setting, which supposed to be located in the user config directory. Where is the config file in the Windows version?**
 
          The configuration file of darktable is located at `C:\Users\[username]\AppData\Local\darktable\darktablerc`. If you change it please use a text editor which can handle Unix line endings, like Notepad++ or similar.
 

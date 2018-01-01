@@ -96,17 +96,31 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
         Please be patient, currently you can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
 
+    * **I read in the manual to about changing some configuration setting, which supposed to be located in the user config directory. Where is the config file in the Windows version?**
+
+         The configuration file of darktable is located at `C:\Users\[username]\AppData\Local\darktable\darktablerc`. If you change it please use a text editor which can handle Unix line endings, like Notepad++ or similar.
+
     * **I have started darktable and its user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?**
 
         By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
 
         * You can launch darktable using the command line `darkable --conf ui_last/gui_language=C`
         * You can change the darktable shortcut at the Start Menu and append `--conf ui_last/gui_language=C` to the Target field
-        * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `C:\Users\[[username]]\AppData\Local\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
+        * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `C:\Users\[username]\AppData\Local\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
 
     * **I try to export to a TIFF file and it takes ages, what's happening?**
 
-        We have got a few similar reports on slow TIFF export, but so far we were not able to reproduce it. If you have this problem, please help us by reproducing it and sharing the image file and the reproduction steps using the [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
+        We have got a few similar reports on slow TIFF export, and we have identified the root cause in an upstream system. Please bear with us until this gets fixed.
+
+    * **I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?**
+
+        The Windows version of dt by default logs its debug information to the following places:
+
+        Windows 10:
+        `C:\Users\[username]\AppData\Local\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
+
+        Windows 7:
+        `C:\Users\[username]\AppData\Local\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
 
     * **I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?**
 

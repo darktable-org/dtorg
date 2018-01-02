@@ -255,7 +255,7 @@ generally do a good job at creating pleasant colours. this was done using the
 Lab space in the darktable pipeline).
 
 
-here is the [link to the fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz), and [how to use them](/usermanual/ch02s03s08.html.php).
+here is the [link to the fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz), and [how to use them](/usermanual/en/styles.html#styles).
 i should be doing pat's film emulation presets with this, too, and maybe
 styles from other cameras (canon picture styles?). `darktable-chart` will
 output a dtstyle file, with the mapping split into tone curve and colour
@@ -404,7 +404,7 @@ calibration though.
 
 * [pat david's film emulation luts](https://gmic.eu/film_emulation/)
 * [download fuji styles](https://jo.dreggn.org/blog/darktable-fuji-styles.tar.xz)
-* [darktable's user manual on styles](/usermanual/ch02s03s08.html.php)
+* [darktable's user manual on styles](/usermanual/en/styles.html#styles)
 * [it8 target](http://targets.coloraid.de)
 * [pascal's colormatch](https://github.com/pmjdebruijn/colormatch)
 * [lensfun calibration](http://wilson.bronger.org/lens_calibration_tutorial/#id3)

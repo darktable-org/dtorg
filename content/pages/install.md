@@ -125,7 +125,7 @@ Only darktable-1.0.5 can be provided for these distributions due to restrictions
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)
 
-  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.2.4/darktable-2.2.4.6.dmg)
+  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.2.5/darktable-2.2.5.dmg)
   * Mount the thing
   * Pull the darktable icon into applications folder
   * Good luck :)

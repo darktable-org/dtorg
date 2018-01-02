@@ -9,7 +9,7 @@ lede: lmaskdtyellow_wide.jpg
 wordpress_id: 3473
 tags: blog
 
-Pat David has a great [blog](https://blog.patdavid.net/) on photoediting in [GIMP](https://www.gimp.org/). I recently read his [post](https://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) on luminosity masks and was fairly impressed. Can darktable do something similar? Yes&nbsp;– they're a special case of [parametric masks](/usermanual/ch03s02s08.html.php).
+Pat David has a great [blog](https://blog.patdavid.net/) on photoediting in [GIMP](https://www.gimp.org/). I recently read his [post](https://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) on luminosity masks and was fairly impressed. Can darktable do something similar? Yes&nbsp;– they're a special case of [parametric masks](/usermanual/en/parametric_mask.html).
 
 I thought I'd post a quick tutorial on luminosity masks using parametric masks. First, I strongly suggest you read Pat David's [post](https://blog.patdavid.net/2013/11/getting-around-in-gimp-luminosity-masks.html) and thoroughly understand what's going on.
 
@@ -66,7 +66,7 @@ The resulting mask looks like:
 
 @![lmaskdtyellow](lmaskdtyellow.png)
 
-What did I do here? To fully understand it, you should read the [parametric masks](/usermanual/ch03s02s08.html.php) page in the darktable manual. By sliding the upper left triangle all the way to right, I told it to _fully_ select the brightest pixels, _not_ select the darkest pixels, and do a linear interpolation for all the intermediate pixels (so a 50% bright pixel is "half" selected).
+What did I do here? To fully understand it, you should read the [parametric masks](/usermanual/en/parametric_mask.html) page in the darktable manual. By sliding the upper left triangle all the way to right, I told it to _fully_ select the brightest pixels, _not_ select the darkest pixels, and do a linear interpolation for all the intermediate pixels (so a 50% bright pixel is "half" selected).
 
 Another way of looking at it: Apply the module to all the pixels, but apply an opacity on each pixel depending on its luminosity.
 

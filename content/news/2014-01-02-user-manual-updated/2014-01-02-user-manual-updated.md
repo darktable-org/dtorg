@@ -12,7 +12,7 @@ tags: website
 
 Dear all,
 
-we updated both the English online user manual and the PDF version to darktable 1.4. The online version can be found at [https://darktable.org/usermanual/](/usermanual/), the PDF document is available from [here](https://sourceforge.net/projects/darktable/files/darktable/1.4/darktable-usermanual.pdf/download).
+we updated both the English online user manual and the PDF version to darktable 1.4. The online version can be found at [https://darktable.org/usermanual/en/](/usermanual/en/), the PDF document is available from [here](https://sourceforge.net/projects/darktable/files/darktable/1.4/darktable-usermanual.pdf/download).
 
 Many thanks to Ulrich and Jérémy for their outstanding work on keeping our documentation up to date!
 

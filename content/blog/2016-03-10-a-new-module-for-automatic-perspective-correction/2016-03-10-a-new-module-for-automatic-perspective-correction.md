@@ -163,8 +163,8 @@ Clicking on the “fit both” icon (the rightmost in the automatic fit row) now
 
 A GUI enhancement suggested by Aldric has been added which allows to mass-select or deselect lines (changing their color from green/blue to red/yellow, or vice versa). You press the shift button  and then draw a rectangular area on the image base. All lines within that area are being selected or deselected on button release. The left mouse button selects, the right mouse button deselects.
 
-* [1] [Usermanual for basic modules](/usermanual/ch03s04.html.php#basic_group)
+* [1] [Usermanual for basic modules](/usermanual/en/modules.html#basic_group)
 * [2] [http://www.shiftn.de/](http://www.shiftn.de/)
-* [3] [Usermanual for correction modules](/usermanual/ch03s04s04.html.php)
+* [3] [Usermanual for correction modules](/usermanual/en/correction_group.html)
 * [4] [https://en.wikipedia.org/wiki/Perspective_control_lens](https://en.wikipedia.org/wiki/Perspective_control_lens)
 * [5] [https://github.com/darktable-org/darktable](https://github.com/darktable-org/darktable)

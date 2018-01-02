@@ -22,13 +22,13 @@ this is in a range where the image has to be processed carefully to display it i
 
 @![graduated density filter](img_0015.jpg "graduated density filter")
 
-using the [graudated density iop](/usermanual/ch03s04s05.html.php#graduated_density) works well in this case since the horizon here is more or less straight, so we can easily mask it out with a simple gradient in the graduated density module. now what if the objects can’t be masked out so easily?
+using the [graudated density iop](/usermanual/en/effect_group.html#graduated_density) works well in this case since the horizon here is more or less straight, so we can easily mask it out with a simple gradient in the graduated density module. now what if the objects can’t be masked out so easily?
 
 ### more complex example
 
 this image needed to be substantially underexposed in order not to clip the interesting highlight detail in the clouds.
 
-original image, then extreme settings in [the shadows and highlights iop]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md) (heavy fringing despite bilateral filter used for smoothing). also note how the shadow detail is still very dark. third one is [tone mapped (drago)](/usermanual/ch03s04s02.html.php#global_tonemap) and fourth is default darktable processing with +6ev exposure.
+original image, then extreme settings in [the shadows and highlights iop]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md) (heavy fringing despite bilateral filter used for smoothing). also note how the shadow detail is still very dark. third one is [tone mapped (drago)](/usermanual/en/tone_group.html#global_tonemap) and fourth is default darktable processing with +6ev exposure.
 
 @![original](img_0007.jpg "original")
 
@@ -115,9 +115,9 @@ note that the feature is currently merged to git master, but unreleased.
 ## links
 
 * [magic lantern dual iso](https://www.magiclantern.fm/forum/?topic=7139.0)
-* [graudated density iop](/usermanual/ch03s04s05.html.php#graduated_density)
+* [graudated density iop](/usermanual/en/effect_group.html#graduated_density)
 * [shadows and highlights iop]({filename}/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md)
-* [tone mapping iop](/usermanual/ch03s04s02.html.php#global_tonemap)
+* [tone mapping iop](/usermanual/en/tone_group.html#global_tonemap)
 * Tom Mertens, Jan Kautz, and Frank Van Reeth. 2007.
 
     [Exposure Fusion](https://web.stanford.edu/class/cs231m/project-1/exposure-fusion.pdf).

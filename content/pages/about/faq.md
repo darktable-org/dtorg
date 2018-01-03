@@ -86,6 +86,13 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
     In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) – but then your camera won't work with darktable.
 
+* **So, darktable uses gphoto2 for tethering. Are there any more third party projects influencing what works in darktable and what's not?**
+
+    Yes, there are two libraries we heavily rely on and which we point to quite often when people complain about darkable lacking something:
+
+    * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](/usermanual/en/image_information.html) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
+    * **lensfun** is used for lens correction. If the [lens correction](/usermanual/en/correction_group.html#lens_correction) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://sourceforge.net/p/lensfun/bugs/).
+
 * **I see there is now a new Windows version, what can I expect?**
 
     The Windows port is relatively new, and therefore might have some rough edges, or missing functionality compared to the more mature OS ports. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.

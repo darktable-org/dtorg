@@ -758,3 +758,14 @@ li.current {
 .container.content.minimal {
   margin-top: 3rem;
 }
+
+/* used for hidden anchor links on the faq page */
+.anchor {
+  padding-left: 0.3em;
+}
+p a.anchor {
+  visibility: hidden;
+}
+p:hover a.anchor {
+  visibility: visible;
+}

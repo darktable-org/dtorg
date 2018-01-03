@@ -9,6 +9,9 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 [Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)&nbsp;– [Google+](https://www.google.com/+darktable)
 
+# Frequently Asked Questions
+
+Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/faq.md). Please read it before reporting bugs or feature requests.
 
 # User manual
 ![drop]({attach}drop.jpg)

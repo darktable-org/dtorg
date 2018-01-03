@@ -5,6 +5,10 @@ wordpress_id: 124
 lede: lede-contact.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
+# Find us on...
+
+[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)&nbsp;– [Google+](https://www.google.com/+darktable)
+
 # How to get in contact
 ![sun]({attach}sun.jpg)
 

@@ -759,13 +759,21 @@ li.current {
   margin-top: 3rem;
 }
 
-/* used for hidden anchor links on the faq page */
+/* used for hidden anchor links on the faq page and in the usermanual */
 .anchor {
   padding-left: 0.3em;
 }
+h1 a.anchor,
+h2 a.anchor,
+h3 a.anchor,
+h4 a.anchor,
 p a.anchor {
   visibility: hidden;
 }
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
 p:hover a.anchor {
   visibility: visible;
 }

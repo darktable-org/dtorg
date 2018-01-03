@@ -146,6 +146,12 @@ or you can prevent this from happening by running `xattr -d com.apple.quarantine
 darktable can be installed through MacPorts:
 
     sudo port install darktable +quartz
+    
+### macOS Homebrew
+
+darktable can be installed through Homebrew:
+
+    brew cask install darktable
 
 
 <h2 id='debian'>Debian</h2>

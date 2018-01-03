@@ -6,6 +6,10 @@ wordpress_id: 1536
 lede: lede-faq.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
+* **So, I have seen a bunch of different ways to spell *darktable*. Which one is right?**
+
+    There is only one way, and that is "darktable". All lower case, in one word. Even when starting a sentence. Example: darktable is a great program.
+
 * **What's the best way to contact the developers/report bugs?**
 
     For fast discussions and short questions it's best to visit us in IRC (on Freenode, channel #darktable), especially in the Western European evening hours. If you don't want to use IRC, don't know what it is or want something less transient you can use our mailing lists. See our [contact page]({filename}/pages/contact.md).

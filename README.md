@@ -1,7 +1,7 @@
 
 # darktable-web
 
-This is a repository for testing migrating [darktable.org][] to [Pelican][].
+This repository holds the [Pelican][] source code of the [darktable.org][] website. Help improving the website by sumbitting pull-requests.
 
 [darktable.org]: http://darktable.org
 [Pelican]: https://blog.getpelican.com/

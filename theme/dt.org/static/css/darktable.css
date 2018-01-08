@@ -534,6 +534,7 @@ blockquote {
     bottom: 0;
     text-decoration: none;
     margin-left: 20px;
+    line-height: 1rem;
 }
 .rss_link svg {
     width: 16px;

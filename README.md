@@ -1,32 +1,20 @@
 
-# darktable-web
+# darktable Website
 
-This repository holds the [Pelican][] source code of the [darktable.org][] website. Help improving the website by sumbitting pull-requests.
+This repository holds the [Pelican][] source code of the [darktable.org][] website. Help improving the website by submitting pull-requests.
 
 [darktable.org]: http://darktable.org
 [Pelican]: https://blog.getpelican.com/
 
-
-## Front Page
-
-Content for the front page by priority at the moment:
-
-* Project name + description
-* Screenshots
-* 3-4 features to highlight
-
-
-## News/Blog
-
-These are two distinct things, possibly merge them but get a consensus from the dt team what they want.
+The website is a static site, pre-generated from source files using [Pelican][](Python).
 
 
 ## Tools
 
 Pelican uses Python.
-This is set up using:
+The site is currently built using:
 
-```
+```bash
 $ python --version
 Python 2.7.13
 
@@ -45,3 +33,4 @@ To build the site:
 ```bash
 $ pelican -s pelicanconf.py
 ```
+The entire site will then be available in the `output` directory.

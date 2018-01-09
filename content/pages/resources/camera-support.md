@@ -31,7 +31,7 @@ NOTE: this table does not list the availability of freely available sample at [r
 
 <!-- valid as of 2018/01/09, release-2.4.0
  -->
-<table class="smalltext altrows">
+<table class="smalltext altrows u-full-width">
   <thead><tr>
     <th><strong>Camera</strong><br/>579 (100%)</th>
     <th><strong>WB Presets</strong><br/>396 (68%)</th>

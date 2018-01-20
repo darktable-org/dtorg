@@ -125,7 +125,7 @@ Only darktable-1.0.5 can be provided for these distributions due to restrictions
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)
 
-  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.2.5/darktable-2.2.5.dmg)
+  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-2.4.0.dmg)
   * Mount the thing
   * Pull the darktable icon into applications folder
   * Good luck :)
@@ -146,7 +146,7 @@ or you can prevent this from happening by running `xattr -d com.apple.quarantine
 darktable can be installed through MacPorts:
 
     sudo port install darktable +quartz
-    
+
 ### macOS Homebrew
 
 darktable can be installed through Homebrew:

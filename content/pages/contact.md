@@ -377,7 +377,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Italian
 </td>
-<td>Germano Massullo
+<td>Germano Massullo, Maurizio Paglia
 </td>
 </tr>
 <tr>

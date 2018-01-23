@@ -29,7 +29,7 @@ NOTE: this table does not list the availability of freely available sample at [r
 
 ### [Please contribute samples!](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri)
 
-<!-- valid as of 2018/01/09, release-2.4.0
+<!-- valid as of 2018/01/23, release-2.4.0
  -->
 <table class="smalltext altrows u-full-width">
   <thead><tr>

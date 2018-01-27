@@ -115,13 +115,10 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
         By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
 
+        * You can set your preferred language at the Preferences (little gear icon at the top row)
         * You can launch darktable using the command line `darkable --conf ui_last/gui_language=C`
         * You can change the darktable shortcut at the Start Menu and append `--conf ui_last/gui_language=C` to the Target field
         * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `C:\Users\[username]\AppData\Local\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
-
-    * <a name="faq-windows-tiff"></a>**I try to export to a TIFF file and it takes ages, what's happening?**<a href="#faq-windows-tiff" class="anchor" title="Link to this FAQ entry">¶</a>
-
-        We have got a few similar reports on slow TIFF export, and we have identified the root cause in an upstream system. Please bear with us until this gets fixed.
 
     * <a name="faq-windows-logs"></a>**I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?**<a href="#faq-windows-logs" class="anchor" title="Link to this FAQ entry">¶</a>
 

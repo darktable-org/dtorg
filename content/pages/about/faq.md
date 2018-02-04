@@ -121,7 +121,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
     * <a name="faq-windows-tiff"></a>**I try to export to a TIFF file and it takes ages, what's happening?**<a href="#faq-windows-tiff" class="anchor" title="Link to this FAQ entry">¶</a>
 
-        We have got a few similar reports on slow TIFF export, and we have identified the root cause in an upstream system. Please bear with us until this gets fixed.
+        We have got a few similar reports on slow TIFF export, and we have identified the root cause in an upstream system. Please update your darktable install, the fixes are part of the installer since 2.4.1.
 
     * <a name="faq-windows-logs"></a>**I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?**<a href="#faq-windows-logs" class="anchor" title="Link to this FAQ entry">¶</a>
 

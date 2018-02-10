@@ -154,7 +154,7 @@ darktable can be installed through Homebrew:
 
 ## OBS
 
-The [OBS](https://build.opensuse.org/) allows packages to provide packages for multiple distributions.
+The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple distributions.
 Right now the darktable packages in the projects listed below build for the following linux distributions:
 
 * Debian 9, Next aka Testing
@@ -195,7 +195,7 @@ A description on how to enable the backports repository can be found here: <http
   * *nix (tested: Debian, Ubuntu, Arch Linux, Funtoo, Gentoo, Fedora, Macintosh OS X with Macports)
   * We strongly recommend using a **64bit operating system**!
   * Required packages: `libsqlite3, libjpeg, libpng, libpugixml, rawspeed (supplied), gtk+-3, cairo, lcms2, exiv2, tiff, curl, gphoto2, dbus-glib, fop, openexr, libsoup2.4`
-  * Optional: gcc >= 4.6
+  * Required: gcc >= 5.0
 
 
 # Current release from source

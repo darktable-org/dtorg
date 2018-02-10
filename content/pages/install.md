@@ -40,7 +40,7 @@ Ubuntu comes with darktable packages. You can install them with
 
     sudo apt-get install darktable
 
-If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
+If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 
 <h2 id='fedora'>Fedora packages</h2>
@@ -50,14 +50,14 @@ Fedora ships with darktable. A simple command should be enough.
 
     # dnf install darktable
 
-If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
+If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='opensuse'>openSUSE packages</h2>
 ![opensuse]({filename}/images/OS/opensuse.jpg)
 
 openSUSE ships with darktable. A simple `zypper install darktable` should be enough.
 
-If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
+If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='arch'>Arch Linux</h2>
 ![arch]({filename}/images/OS/arch.jpg)
@@ -77,8 +77,9 @@ darktable is in portage!
 <h2 id='rhel'>RHEL / Scientific Linux / Centos</h2>
 ![scientificlinux]({filename}/images/OS/scientificlinux.jpg)
 
-For many of those enterprise distro releases it is not possible to build the latest darktable releases anymore.
-You might be lucky with packages in the <a href="#3rdparty">3rd party packages</a> section.
+For many of those enterprise distribution releases it is not possible to build the latest darktable releases anymore.
+
+You might be lucky with packages in the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='debian'>Debian</h2>
 ![debian]({filename}/images/OS/debian.png)
@@ -89,12 +90,13 @@ darktable can be installed by running
 
     sudo apt-get install darktable
 
-If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
+If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='solaris'>Solaris</h2>
 ![opensolaris]({filename}/images/OS/opensolaris.png)
 
 The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <https://www.jmcpdotcom.com/blog/category/darktable/>.
+
 He has both the [darktable packages](https://www.jmcpdotcom.com/Packages/) and a [dependency package](https://www.jmcpdotcom.com/Packages/dt-deps.p5p.gz) in case this is the first time you are installing darktable on your system.
 
 
@@ -150,29 +152,24 @@ darktable can be installed through Homebrew:
     brew cask install darktable
 
 
-<h1 id="3rdparty">3rd party packages and PPAs</h1>
+<h1 id="3rdparty">third party packages and PPAs</h1>
 
 ## OBS
 
 The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple distributions.
-Right now the darktable packages in the projects listed below build for the following linux distributions:
 
-* Debian 9, Next aka Testing
+Right now the darktable packages listed below are built for the following Linux distributions:
+
+* Debian 9, testing (called *Next* on the OBS site)
 * Fedora 26, 27, Rawhide
 * openSUSE 42.2, 42.3, 15.0, Tumbleweed
 * Ubuntu 16.04, 17.10
 
-### Latest Release
+The available packages are:
 
-https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable
-
-### Snapshots from the latest release branch
-
-https://software.opensuse.org/download.html?project=graphics:darktable:stable&package=darktable
-
-### Snapshots from the master branch
-
-https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable
+* [latest release](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)
+* [snapshots from the stable release branch](https://software.opensuse.org/download.html?project=graphics:darktable:stable&package=darktable)
+* [snapshots from the master branch](https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable)
 
 
 ## PPA for Ubuntu

@@ -33,37 +33,14 @@ img.chooseos {
 </style>
 
 
-...&nbsp;or get the latest stable source package and build it yourself, look what to do if you are running OSX or Windows or get the hot new stuff from our git repository.
-
-
-# Prerequisites
-![bee]({attach}bee.jpg)
-
-  * *nix (tested: Debian, Ubuntu, Arch Linux, Funtoo, Gentoo, Fedora, Macintosh OS X with Macports)
-  * We strongly recommend using a **64bit operating system**!
-  * Required packages: `libsqlite3, libjpeg, libpng, libpugixml, rawspeed (supplied), gtk+-3, cairo, lcms2, exiv2, tiff, curl, gphoto2, dbus-glib, fop, openexr, libsoup2.4`
-  * Optional: gcc >= 4.6
-
-
 <h2 id='ubuntu'>Ubuntu packages</h2>
 ![ubuntu]({filename}/images/OS/ubuntu.jpg)
 
-We provide several PPAs to add to your Ubuntu installation:
+Ubuntu comes with darktable packages. You can install them with
 
-  * For stable releases add the [Darktable Release PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-release).
-  * If you are adventurous and are willing to deal with problems from time to time add the [Darktable Unstable PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-unstable). Don't use this PPA if you do time critical work with darktable!
-  * Follow the instructions on the Launchpad PPA page.
-  * Then search for "darktable" in the Software Center of Synaptic Package Manager and install it.
-  * You will find it under "Applications/Graphics/Darktable Photography Workflow Software"
+    sudo apt-get install darktable
 
-If you want to have nice packages on debian you can rebuild the PPA sources for debian: Download `darktable_$VERSION.orig.tar.gz` and `darktable_$VERSION.debian.tar.gz` from one of the PPAs.
-
-    $ sudo apt-get install debhelper dpkg-dev fakeroot
-    $ sudo apt-get build-dep darktable
-    $ tar zxvf darktable_$VERSION.orig.tar.gz
-    $ cd darktable-$VERSION
-    $ tar zxvf ../darktable_$VERSION.debian.tar.gz
-    $ dpkg-buildpackage -rfakeroot
+If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
 
 
 <h2 id='fedora'>Fedora packages</h2>
@@ -73,23 +50,14 @@ Fedora ships with darktable. A simple command should be enough.
 
     # dnf install darktable
 
-* If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.2 Snapshot repository](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.2&package=darktable). Don't use this repository if you do time critical work with darktable!
-* And lastly, there is is a repository for [nightly builds](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
-
-If you want to build darktable from the source on Fedora, here are the build dependencies:
-
-    # dnf install intltool atk-devel cairo-devel exiv2-devel fontconfig-devel freetype-devel libgomp gtk2-devel libjpeg-turbo-devel libtiff-devel lcms2-devel lensfun-devel libpng-devel libsq3-devel libstdc++-devel libxml2-devel OpenEXR-devel libcurl-devel libgphoto2-devel dbus-glib-devel libgnome-keyring-devel fop librsvg2-devel flickcurl-devel cmake libsoup-devel gcc-c++ colord-devel saxon libsecret-devel lua lua-devel GraphicsMagick openjpeg-devel json-glib-devel libwebp-devel SDL-devel
-
+If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
 
 <h2 id='opensuse'>openSUSE packages</h2>
 ![opensuse]({filename}/images/OS/opensuse.jpg)
 
 openSUSE ships with darktable. A simple `zypper install darktable` should be enough.
 
-* If you want the latest stable version you can use [darktable from the Graphics Repository](https://software.opensuse.org/download.html?project=graphics&package=darktable).
-* If you are adventurous and are willing to deal with problems from time to time add the [Darktable 2.0 Snapshot repository](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Astable-2.2&package=darktable). Don't use this repository if you do time critical work with darktable!
-* And lastly, there is is a repository for [nightly builds](https://software.opensuse.org/download.html?project=home%3Adarix%3Adarktable%3Amaster&package=darktable). Don't use this repository unless you understand what git master means!
-
+If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
 
 <h2 id='arch'>Arch Linux</h2>
 ![arch]({filename}/images/OS/arch.jpg)
@@ -106,21 +74,49 @@ darktable is in portage!
     # emerge darktable
     $ darktable
 
-<h2 id='rhel'>RHEL 6 / SL 6 / Centos 6</h2>
+<h2 id='rhel'>RHEL / Scientific Linux / Centos</h2>
 ![scientificlinux]({filename}/images/OS/scientificlinux.jpg)
 
-Only darktable-1.0.5 can be provided for these distributions due to restrictions on the Glib version available. Still, try it out, 1.0 has many nice features already and most of the hardware support has been ported back by Pascal&nbsp;– that's where the .5 comes from.
+For many of those enterprise distro releases it is not possible to build the latest darktable releases anymore.
+You might be lucky with packages in the <a href="#3rdparty">3rd party packages</a> section.
 
-  * install the linuxtech.repo config file if you don't have it already:
+<h2 id='debian'>Debian</h2>
+![debian]({filename}/images/OS/debian.png)
 
-        su - root
-        cd /etc/yum.repos.d/
-        wget http://pkgrepo.linuxtech.net/el6/release/linuxtech.repo
+(Of course) there is a darktable package in the Debian repositories.
 
-  * install darktable:
+darktable can be installed by running
 
-        yum --enablerepo=linuxtech-testing install darktable
+    sudo apt-get install darktable
 
+If you need a newer version that what is included in your distro, check out <a href="#3rdparty">3rd party packages</a> section.
+
+<h2 id='solaris'>Solaris</h2>
+![opensolaris]({filename}/images/OS/opensolaris.png)
+
+The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <https://www.jmcpdotcom.com/blog/category/darktable/>.
+He has both the [darktable packages](https://www.jmcpdotcom.com/Packages/) and a [dependency package](https://www.jmcpdotcom.com/Packages/dt-deps.p5p.gz) in case this is the first time you are installing darktable on your system.
+
+
+<h2 id='freebsd'>FreeBSD</h2>
+![freebsd]({filename}/images/OS/freebsd.png)
+
+darktable is packaged and compiled for FreeBSD, the binary package can be found here:
+<https://ftp.freebsd.org/pub/FreeBSD/ports/packages/graphics/>.
+
+To install darktable on your system, run
+
+    # pkg_add -r darktable
+
+and have fun.
+
+<h2 id='windows'>Microsoft Windows</h2>
+![Microsoft Windows]({filename}/images/OS/windows.png)
+
+  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.1/darktable-2.4.1-win64.exe).
+  * Run it and install darktable.
+  * Read the Windows version specific section [in the FAQ]({filename}/pages/about/faq.md) first.
+  * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port.
 
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)
@@ -154,44 +150,52 @@ darktable can be installed through Homebrew:
     brew cask install darktable
 
 
-<h2 id='debian'>Debian</h2>
-![debian]({filename}/images/OS/debian.png)
+<h1 id="3rdparty">3rd party packages and PPAs</h1>
 
-(Of course) there is a darktable package in the Debian repositories. The current stable version _Stretch_ still has darktable 2.2.1 packaged, but version 2.2.5 is available through the backports. This is also what already landed in _Buster_. See package description here: <https://packages.debian.org/stable/darktable>.
+## OBS
 
-darktable can be installed just by running
+The [OBS](https://build.opensuse.org/) allows packages to provide packages for multiple distributions.
+Right now the darktable packages in the projects listed below build for the following linux distributions:
 
-    sudo apt-get install darktable
+* Debian 9, Next aka Testing
+* Fedora 26, 27, Rawhide
+* openSUSE 42.2, 42.3, 15.0, Tumbleweed
+* Ubuntu 16.04, 17.10
+
+### Latest Release
+
+https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable
+
+### Snapshots from the latest release branch
+
+https://software.opensuse.org/download.html?project=graphics:darktable:stable&package=darktable
+
+### Snapshots from the master branch
+
+https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable
+
+
+## PPA for Ubuntu
+
+* For stable releases add the [Darktable Release PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-release).
+* If you are adventurous and are willing to deal with problems from time to time add the [Darktable Unstable PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-unstable). Don't use this PPA if you do time critical work with darktable!
+* Follow the instructions on the Launchpad PPA page.
+* Then search for "darktable" in the Software Center of Synaptic Package Manager and install it.
+* You will find it under "Applications/Graphics/Darktable Photography Workflow Software"
+
+## Backports for Debian
 
 A description on how to enable the backports repository can be found here: <https://backports.debian.org/Instructions/>
 
+<h1 id="source">Install from source</h1>
 
-<h2 id='solaris'>Solaris</h2>
-![opensolaris]({filename}/images/OS/opensolaris.png)
+## Prerequisites
+![bee]({attach}bee.jpg)
 
-The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <https://www.jmcpdotcom.com/blog/category/darktable/>.
-He has both the [darktable packages](https://www.jmcpdotcom.com/Packages/) and a [dependency package](https://www.jmcpdotcom.com/Packages/dt-deps.p5p.gz) in case this is the first time you are installing darktable on your system.
-
-
-<h2 id='freebsd'>FreeBSD</h2>
-![freebsd]({filename}/images/OS/freebsd.png)
-
-darktable is packaged and compiled for FreeBSD, the binary package can be found here:
-<https://ftp.freebsd.org/pub/FreeBSD/ports/packages/graphics/>.
-
-To install darktable on your system, run
-
-    # pkg_add -r darktable
-
-and have fun.
-
-<h2 id='windows'>Microsoft Windows</h2>
-![Microsoft Windows]({filename}/images/OS/windows.png)
-
-  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.1/darktable-2.4.1-win64.exe).
-  * Run it and install darktable.
-  * Read the Windows version specific section [in the FAQ]({filename}/pages/about/faq.md) first.
-  * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port.
+  * *nix (tested: Debian, Ubuntu, Arch Linux, Funtoo, Gentoo, Fedora, Macintosh OS X with Macports)
+  * We strongly recommend using a **64bit operating system**!
+  * Required packages: `libsqlite3, libjpeg, libpng, libpugixml, rawspeed (supplied), gtk+-3, cairo, lcms2, exiv2, tiff, curl, gphoto2, dbus-glib, fop, openexr, libsoup2.4`
+  * Optional: gcc >= 4.6
 
 
 # Current release from source

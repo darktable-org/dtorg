@@ -77,9 +77,8 @@ darktable is in portage!
 <h2 id='rhel'>RHEL / Scientific Linux / Centos</h2>
 ![scientificlinux]({filename}/images/OS/scientificlinux.jpg)
 
-For many of those enterprise distribution releases it is not possible to build the latest darktable releases anymore.
-
-You might be lucky with packages in the <a href="#3rdparty">third party packages</a> section.
+    # yum install epel-release
+    # yum install darktable
 
 <h2 id='debian'>Debian</h2>
 ![debian]({filename}/images/OS/debian.png)

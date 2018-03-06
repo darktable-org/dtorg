@@ -102,14 +102,11 @@ He has both the [darktable packages](https://www.jmcpdotcom.com/Packages/) and a
 <h2 id='freebsd'>FreeBSD</h2>
 ![freebsd]({filename}/images/OS/freebsd.png)
 
-darktable is packaged and compiled for FreeBSD, the binary package can be found here:
-<https://ftp.freebsd.org/pub/FreeBSD/ports/packages/graphics/>.
+darktable is available in the FreeBSD Ports Collection. It can be installed, pre-compiled, from the standard package repository.
 
 To install darktable on your system, run
 
-    # pkg_add -r darktable
-
-and have fun.
+    # pkg install graphics/darktable
 
 <h2 id='windows'>Microsoft Windows</h2>
 ![Microsoft Windows]({filename}/images/OS/windows.png)

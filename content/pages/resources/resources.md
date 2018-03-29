@@ -14,11 +14,10 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 
 You can either read the manual [online](/usermanual/en/) or download it in PDF format:
 
-  * [English](https://github.com/darktable-org/darktable/releases/download/release-2.2.0/darktable-usermanual.pdf)
-  * [French](https://github.com/darktable-org/darktable/releases/download/release-2.2.0/darktable-usermanual-fr.pdf)
-  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-2.2.0/darktable-usermanual-it.pdf)
-
-There is also an older version for darktable 2.0 in [Spanish](https://github.com/darktable-org/darktable/releases/download/release-2.0.0/darktable-usermanual-es.pdf).
+  * [English](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-usermanual.pdf)
+  * [French](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-usermanual-fr.pdf)
+  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-usermanual-it.pdf)
+  * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-usermanual-es.pdf)
 
 Translations into other languages are currently being worked on and will be published as soon as they are ready.
 

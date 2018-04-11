@@ -102,9 +102,9 @@ There is also a set of French videos available that cover a good part of darktab
 
 ## Tutorials and videos in German
 
-Mirco has some nice tutorials and screencasts for draktable on his blog&nbsp;– in German. Check them out:
+Some nice screencasts for draktable in German. Check them out:
 
-  * [Tutorials für darktable](http://www.shutter-speed.ch/?cat=22)
+  * [Full playlist](https://vimeo.com/user1479718)
 
 ## Miscellaneous
 

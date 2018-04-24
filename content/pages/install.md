@@ -111,7 +111,7 @@ To install darktable on your system, run
 <h2 id='windows'>Microsoft Windows</h2>
 ![Microsoft Windows]({filename}/images/OS/windows.png)
 
-  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.2/darktable-2.4.2-win64.exe).
+  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.3/darktable-2.4.3-win64.exe).
   * Run it and install darktable.
   * Read the Windows version specific section [in the FAQ]({filename}/pages/about/faq.md) first.
   * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port.
@@ -194,11 +194,11 @@ A description on how to enable the backports repository can be found here: <http
 # Current release from source
 ![leaves1]({filename}/images/OS/leaves1.jpg)
 
-* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.4.2) (recent version: darktable 2.4.2)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
+* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.4.3) (recent version: darktable 2.4.3)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.
 * Unpack:
 
-        $ tar xvf darktable-2.4.2.tar.xz && cd darktable-2.4.2
+        $ tar xvf darktable-2.4.3.tar.xz && cd darktable-2.4.3
 
 * Then either do
 

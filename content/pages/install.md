@@ -119,7 +119,7 @@ To install darktable on your system, run
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)
 
-  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.3/darktable-2.4.3.dmg)
+  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.4.3/darktable-2.4.3.1.dmg)
   * Mount the thing
   * Pull the darktable icon into applications folder
   * Good luck :)

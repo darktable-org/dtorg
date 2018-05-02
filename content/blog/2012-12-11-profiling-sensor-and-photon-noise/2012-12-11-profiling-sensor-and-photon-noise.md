@@ -11,6 +11,7 @@ tags: blog, development, upcoming feature
 
 # ... and how to get rid of it.
 
+**[update 02/05/2018 The information how to create camera noise profiles is outdated please read [this tutorial](https://pixls.us/articles/how-to-create-camera-noise-profiles-for-darktable/) instead!]**
 
 **[update 20/12/2012: ‘how to profile your camera’ includes instructions with the new gen-profile script]**
 
@@ -234,6 +235,7 @@ iso 25600 seems to have trouble with the black level, judging by the color cast 
 
 # how to profile your camera
 
+**The following information is outdated please read [this tutorial](https://pixls.us/articles/how-to-create-camera-noise-profiles-for-darktable/) instead!**
 
 the parameters (a, b) have to be found for each (camera, iso) pair. these are then stored in a preset for a new denoising module. there is a generic (poissonian only) preset, but you can’t dial in these values manually, you have to create a preset for your camera and iso (if it doesn’t already exist).
 
@@ -244,6 +246,7 @@ the steps in detail:
 
 ## taking noise profile images
 
+**The following information is outdated please read [this tutorial](https://pixls.us/articles/how-to-create-camera-noise-profiles-for-darktable/) instead!**
 
 take one shot per iso. it has to be out-of-focus and have a widespread histogram, i.e. be over- and underexposed at the same time (see example image below). if you want to be thorough, take 2–3 to verify the numbers.
 this image looks very green, because the ‘raw linear’ style has been applied to it (find it in `darktable/tools/noise`). this makes sure we get linear camera raw rgb with no basecurves, no whitebalance, etc in the way. it is essential that you apply this style.
@@ -261,6 +264,7 @@ your images should look something like this:
 
 ## generate plots and fits
 
+**The following information is outdated please read [this tutorial](https://pixls.us/articles/how-to-create-camera-noise-profiles-for-darktable/) instead!**
 
 open a terminal, go to the directory you just exported your images to. from there, type
 

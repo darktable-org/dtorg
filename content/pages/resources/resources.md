@@ -12,7 +12,11 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 # User manual
 ![drop]({attach}drop.jpg)
 
-You can either read the manual [online](/usermanual/en/) or download it in PDF format:
+You can read the manual online:
+
+  * [English](/usermanual/en/) 
+
+or download it in PDF format:
 
   * [English](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-usermanual.pdf)
   * [French](https://github.com/darktable-org/darktable/releases/download/release-2.4.0/darktable-usermanual-fr.pdf)

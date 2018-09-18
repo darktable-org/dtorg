@@ -157,9 +157,9 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 Right now the darktable packages listed below are built for the following Linux distributions:
 
 * Debian 9, testing (called *Next* on the OBS site)
-* Fedora 26, 27, Rawhide
-* openSUSE 42.2, 42.3, 15.0, Tumbleweed
-* Ubuntu 16.04, 17.10
+* Fedora 27, 28, Rawhide
+* openSUSE 42.3, 15.0, Tumbleweed
+* Ubuntu 16.04, 18.04
 
 The available packages are:
 

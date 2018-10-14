@@ -80,9 +80,9 @@ Here are some people you might meet on the mailing list or in IRC:
 </td>
 <td>Roman Lebedev
 </td>
-<td>developer
+<td>[RawSpeed](https://github.com/darktable-org/rawspeed) library maintainer / camera support / CI
 </td>
-<td>
+<td>[GitHub](https://github.com/LebedevRI)
 </td>
 <td>
 </td>

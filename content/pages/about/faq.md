@@ -113,7 +113,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
     * <a name="faq-windows-language"></a>**I have started darktable and its user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?**<a href="#faq-windows-language" class="anchor" title="Link to this FAQ entry">¶</a>
 
-        By default darktable uses you operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
+        By default darktable uses your operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
 
         * You can launch darktable using the command line `darkable --conf ui_last/gui_language=C`
         * You can change the darktable shortcut at the Start Menu and append `--conf ui_last/gui_language=C` to the Target field

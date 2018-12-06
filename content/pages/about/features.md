@@ -45,9 +45,9 @@ Currently darktable contains 61 image operation modules. Many modules support po
 ## Tone image operations:
 
 *   fill light: This module allows the local modification of the exposure based on pixel lightness.
-*   levels: This module offers the well-know levels adjustment tools to set black, grey and white points.
+*   levels: This module offers the well-known levels adjustment tools to set black, grey and white points.
 *   tone curve: This module is a classical tool in digital photography. You can change the lightness by dragging the line up or down. darktable lets you separately control the L, a and b channel. Read in [Ulrich's blog post]({filename}/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md "Mastering color with Lab tone curves") how to make use of this feature.
-*   zone system: This module changes the lightness of your image. It is based on the Ansel Adams' system. It allows to modify the lightness of a zone taking into account the effect on the adjacent zones. It divides the lightness in a user-defined number of zones.
+*   zone system: This module changes the lightness of your image. It is based on the Ansel Adams system. It allows to modify the lightness of a zone taking into account the effect on the adjacent zones. It divides the lightness in a user-defined number of zones.
 *   local contrast: This module can be used to boost details in the image.
 *   two different tone mapping modules: These modules allow to recreate some contrast for HDR images.
 

@@ -24,7 +24,7 @@ If you found a bug or managed to crash darktable, please submit a _helpful backt
 
 ## ...&nbsp;in terms of translations:
 
-If you want to _translate_ darktable into your language (in case it didn't already happen) we have a short introduction how to do that. You can find that file in our git repository, it's called [TRANSLATORS](https://github.com/darktable-org/darktable/blob/master/doc/TRANSLATORS).
+If you want to _translate_ darktable into your language (in case it didn't already happen) we have a short introduction how to do that. You can find that file in our git repository, it's called [TRANSLATORS.md](https://github.com/darktable-org/darktable/blob/master/doc/TRANSLATORS.md).
 
 You can find a list of the currently included languages on the [features page]({filename}/pages/about/features.md).
 

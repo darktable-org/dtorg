@@ -194,11 +194,11 @@ A description on how to enable the backports repository can be found here: <http
 # Current release from source
 ![leaves1]({filename}/images/OS/leaves1.jpg)
 
-* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.4.4) (recent version: darktable 2.4.4)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
+* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.6.0) (recent version: darktable 2.6.0)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.
 * Unpack:
 
-        $ tar xvf darktable-2.4.4.tar.xz && cd darktable-2.4.4
+        $ tar xvf darktable-2.6.0.tar.xz && cd darktable-2.6.0
 
 * Then either do
 

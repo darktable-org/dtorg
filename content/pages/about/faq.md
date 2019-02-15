@@ -95,7 +95,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 * <a name="faq-windows"></a>**I see there is now a new Windows version, what can I expect?**<a href="#faq-windows" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    The Windows port is relatively new, and therefore might have some rough edges, or missing functionality compared to the more mature OS ports. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://redmine.darktable.org/projects/darktable/issues/new) system.
+    The Windows port is relatively new, and therefore might have some rough edges, or missing functionality compared to the more mature OS ports. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
     * <a name="faq-windows-opencl"></a>**How does the OpenCL support in darktable work on Windows?**<a href="#faq-windows-opencl" class="anchor" title="Link to this FAQ entry">¶</a>
 
@@ -135,8 +135,8 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
     * <a name="faq-windows-unicode"></a>**I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?**<a href="#faq-windows-unicode" class="anchor" title="Link to this FAQ entry">¶</a>
 
-        Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases, mostly due to external libraries used by darktable. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new).
+        Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases, mostly due to external libraries used by darktable. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://github.com/darktable-org/darktable/issues).
 
     * <a name="faq-windows-bugs"></a>**I was working with darktable and it suddenly just crashed! What should I do?**<a href="#faq-windows-bugs" class="anchor" title="Link to this FAQ entry">¶</a>
 
-        Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://redmine.darktable.org/projects/darktable/issues/new), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates.
+        Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates.

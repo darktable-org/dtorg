@@ -6,8 +6,8 @@ lede: lede-development.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 <div class="subnav">
-    <a href="https://darktable.org/redmine/projects/darktable/wiki">developer's wiki</a>
-    <a href="https://darktable.org/redmine/projects/darktable/issues">bug tracker</a>
+    <a href="https://github.com/darktable-org/darktable/wiki">developer's wiki</a>
+    <a href="https://github.com/darktable-org/darktable/issues">bug tracker</a>
     <a href="https://github.com/darktable-org/darktable">browse code</a>
 </div>
 
@@ -18,7 +18,7 @@ If you feel like contributing to this project, here are a few suggestions.
 
 ## ...&nbsp;in terms of testing:
 
-Just use it! And afterwards let us know how you like it. Send your _bug reports_, _feature requests_, _suggestions_ or just your personal opinion to our [mailing list]({filename}/pages/contact.md#how-to-get-in-contact). You can file a bug to our [bug tracker](https://darktable.org/redmine/projects/darktable/issues) as well&nbsp;– but maybe you want to discuss it first (on IRC or mailing list).
+Just use it! And afterwards let us know how you like it. Send your _bug reports_, _feature requests_, _suggestions_ or just your personal opinion to our [mailing list]({filename}/pages/contact.md#how-to-get-in-contact). You can file a bug to our [bug tracker](https://github.com/darktable-org/darktable/issues) as well&nbsp;– but maybe you want to discuss it first (on IRC or mailing list).
 
 If you found a bug or managed to crash darktable, please submit a _helpful backtrace_! Instructions are below.
 

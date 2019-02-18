@@ -63,6 +63,7 @@ You can download the [pdf](https://sourceforge.net/projects/darktable/files/dark
 There are many brilliant screencasts on darktable, its various modules and general image development workflow made by Robert Hutton. You can get the full playlist of these very educational screencasts here:
 
   * [Robert Hutton's darktable screencast playlist](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
+  * [Bruce Williams's darktable screencast playlist](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)
 
 Pascal de Bruijn provides several useful screencasts on his website explaining the different functions of dartkable. Find the [0.7 screencast library](https://encrypted.pcode.nl/blog/2010/12/06/darktable-0-7-screencast-library/), the [0.9 screencast library addition](https://encrypted.pcode.nl/blog/2011/11/05/darktable-0-9-screencast-library-addition/) and the [1.0 screencast library addition](https://encrypted.pcode.nl/blog/2012/06/02/darktable-1-0-screencast-library-addition/) or just pick the one you want:
 

@@ -119,7 +119,7 @@ To install darktable on your system, run
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)
 
-  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.6.0/darktable-2.6.0.dmg)
+  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-2.6.1/darktable-2.6.1.dmg)
   * Mount the thing
   * Pull the darktable icon into applications folder
   * Good luck :)
@@ -194,11 +194,11 @@ A description on how to enable the backports repository can be found here: <http
 # Current release from source
 ![leaves1]({filename}/images/OS/leaves1.jpg)
 
-* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.6.0) (recent version: darktable 2.6.0)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
+* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-2.6.1) (recent version: darktable 2.6.1)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.
 * Unpack:
 
-        $ tar xvf darktable-2.6.0.tar.xz && cd darktable-2.6.0
+        $ tar xvf darktable-2.6.1.tar.xz && cd darktable-2.6.1
 
 * Then either do
 

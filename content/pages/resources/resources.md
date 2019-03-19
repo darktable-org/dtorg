@@ -12,12 +12,11 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 # User manual
 ![drop]({attach}drop.jpg)
 
-You can read the manual online (v2.4):
+You can read the manual online (v2.6):
 
-  * [English](/usermanual/en/)
-  * [Spanish](/usermanual/es/)
-  * [French](/usermanual/fr/)
-  * [Italian](/usermanual/it/)
+  * [English](https://darktable.gitlab.io/doc/en/)
+  * [French](https://darktable.gitlab.io/doc/fr/)
+  * [Italian](https://darktable.gitlab.io/doc/it/)
 
 or download it in PDF format (v2.6):
 

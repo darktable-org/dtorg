@@ -15,7 +15,7 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 You can read the manual online (v2.4):
 
   * [English](/usermanual/en/)
-  * [German](/usermanual/es/)
+  * [Spanish](/usermanual/es/)
   * [French](/usermanual/fr/)
   * [Italian](/usermanual/it/)
 

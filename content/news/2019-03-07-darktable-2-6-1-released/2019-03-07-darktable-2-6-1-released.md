@@ -3,7 +3,7 @@ date: 2019-03-07 19:50:00+00:00
 layout: post
 title: darktable 2.6.1 released
 lede: stquentin2.jpg
-lede_author: <a href="https://photos.obry.net">Pascal Obry</a>
+lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags: announcement, darktable release
 
 we’re proud to announce the first bugfix release for the 2.6 series of darktable, 2.6.1!

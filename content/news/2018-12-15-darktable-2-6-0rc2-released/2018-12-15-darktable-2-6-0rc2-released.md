@@ -3,7 +3,7 @@ date: 2018-12-15 23:30:00+00:00
 layout: post
 title: darktable 2.6.0rc2 released
 lede: lacdeder.jpg
-lede_author: <a href="https://photos.obry.net">Pascal Obry</a>
+lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags: announcement, darktable release
 
 we're proud to announce the third release candidate for the upcoming 2.6 series of darktable, 2.6.0rc2!

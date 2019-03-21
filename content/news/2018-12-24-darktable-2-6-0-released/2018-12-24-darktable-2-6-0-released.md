@@ -4,7 +4,7 @@ layout: post
 title: darktable 2.6.0 released
 slug: darktable-260-released
 lede: stquentin.jpg
-lede_author: <a href="https://photos.obry.net">Pascal Obry</a>
+lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags: announcement, darktable release
 
 we're proud to announce the new feature release of darktable, 2.6.0!

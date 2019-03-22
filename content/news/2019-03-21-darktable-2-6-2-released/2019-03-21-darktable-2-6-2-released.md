@@ -18,7 +18,7 @@ $ sha256sum darktable-2.6.2.tar.xz
 $ sha256sum darktable-2.6.2.dmg
 8cd945744e56a85c35f982a96be42332a57dc383ec228fcc1d21eb57c068f27c darktable-2.6.2.dmg
 $ sha256sum darktable-2.6.2-win64.exe
-??? darktable-2.6.2-win64.exe (to be announced later)
+eee5f4c1f0f6c5f8d5a16d66da1afb92ebde06101e6a84706785df504c8865cd darktable-2.6.2-win64.exe
 ```
 
 when updating from the currently stable 2.6.x series, please bear in mind that your edits will be preserved during this process, but it will not be possible to downgrade from 2.6 to 2.4.x any more.

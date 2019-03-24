@@ -16,6 +16,7 @@ You can read the manual online (v2.6):
 
   * [English](https://darktable.gitlab.io/doc/en/)
   * [French](https://darktable.gitlab.io/doc/fr/)
+  * [German](https://darktable.gitlab.io/doc/de/)
   * [Italian](https://darktable.gitlab.io/doc/it/)
 
 or download it in PDF format (v2.6):

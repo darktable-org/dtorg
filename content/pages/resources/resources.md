@@ -25,6 +25,7 @@ or download it in PDF format (v2.6):
   * [French](https://github.com/darktable-org/darktable/releases/download/release-2.6.1/darktable-usermanual-fr.pdf)
   * [German](https://github.com/darktable-org/darktable/releases/download/release-2.6.1/darktable-usermanual-de.pdf)
   * [Italian](https://github.com/darktable-org/darktable/releases/download/release-2.6.2/darktable-usermanual-it.pdf)
+  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-2.6.2/darktable-usermanual-pl.pdf)
 
 Translations into other languages are currently being worked on and will be published as soon as they are ready.
 

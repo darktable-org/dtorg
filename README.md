@@ -18,8 +18,11 @@ The site is currently built using:
 $ python --version
 Python 2.7.13
 
+$ pip install pelican==3.6.3
 $ pelican --version
 3.6.3
+
+$ pip install Markdown==2.6.6
 ```
 
 Additionally, some extra modules should be available:
@@ -28,6 +31,10 @@ Additionally, some extra modules should be available:
  `$ pip install pillow`
 * python-twitter  
  `$ pip install python-twitter`
+* BeautifulSoup  
+ `$ pip install bs4`
+* Typogrify  
+ `$ pip install typogrify`
 
 To build the site:
 ```bash

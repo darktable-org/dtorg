@@ -63,7 +63,7 @@ body {
     z-index: 1;
 }
 #menu.home {
-    line-height: 25px;
+    line-height: 50px;
 }
 /* @media (min-width: 64rem) { */
 @media (min-width: 1000px ) {

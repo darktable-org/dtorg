@@ -24,3 +24,4 @@ __pycache__/
 
 # Ignore virtual environments
 /env/
+py2-venv

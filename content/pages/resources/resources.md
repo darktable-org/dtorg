@@ -111,7 +111,7 @@ There is also a set of French videos available that cover a good part of darktab
 
 ## Tutorials and videos in German
 
-Some nice screencasts for draktable in German. Check them out:
+Some nice screencasts for darktable in German. Check them out:
 
   * [Full playlist](https://vimeo.com/user1479718)
 

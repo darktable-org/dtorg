@@ -9,16 +9,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
     html { font-size: 112%; }
 }
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
     html { font-size: 120%; }
 }
 
 /* For breaking words on mobile
  * layouts (not screwing up rendering) */
-@media (max-width: 40rem){
+@media (max-width: 640px){
     a, code {
         overflow-wrap: break-word;
         word-wrap: break-word;
@@ -395,7 +395,7 @@ section.article-lede.wordpress .wordpress-lede-img {
 .description p+p {
     margin-top: -1.5rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
     .description p {
         margin: 2rem 3rem;
     }

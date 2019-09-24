@@ -5,6 +5,7 @@ import os
 import sys
 sys.path.append(os.curdir)
 
+from datetime import date
 from dt_authors import *
 
 AUTHOR = u'darktable'
@@ -20,6 +21,8 @@ TIMEZONE = 'Etc/UTC'
 
 LOCALE = u'C'
 DEFAULT_LANG = u'en'
+
+CURRENTYEAR = date.today().year
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

@@ -178,7 +178,7 @@
                         <div>
                           <span class="static_comment_author">
                         {% if comment.author_url %}
-                          <a href="{{ SITEURL }}/{{ comment.author_url }}">{{ comment.author }}</a>
+                          <a href="{{ comment.author_url }}">{{ comment.author }}</a>
                         {% else %}
                           {{ comment.author }}
                         {% endif %}

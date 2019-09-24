@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pelican = "==3.6.3"
+pillow = "*"
+python-twitter = "*"
+bs4 = "*"
+typogrify = "*"
+markdown = "==2.6.6"
+
+[requires]
+python_version = "2.7"

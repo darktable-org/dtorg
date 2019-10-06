@@ -18,11 +18,15 @@ The site is currently built using:
 $ python --version
 Python 2.7.13
 
-$ pip install pelican==3.6.3
+$ virtualenv2 env/
+$ source env/bin/activate
+$ pip install -r requirements.txt
+
 $ pelican --version
 3.6.3
 
-$ pip install Markdown==2.6.6
+$ markdown_py --version
+markdown_py 2.6.6
 ```
 
 Additionally, some extra modules should be available:
@@ -40,4 +44,7 @@ To build the site:
 ```bash
 $ pelican -s pelicanconf.py
 ```
-The entire site will then be available in the `output` directory.
+The entire site will then be available in the `output` directory. To serve the site via HTTP, launch
+```bash
+$ cd output/ && python2 -m SimpleHTTPServer 8000
+```

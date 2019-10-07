@@ -3,22 +3,34 @@ table, tr, th, td {
 }
 
 .breadcrumbs {
-  margin-top: -2rem;
-  margin-bottom: 1.5rem;
-  margin-left: -3rem;
   font-size: smaller;
 }
 
 .navheader {
   text-align: center;
-  margin: 0 -3rem;
   font-size: smaller;
 }
 
 .navfooter {
   text-align: center;
-  margin: 4rem -3rem 0 -3rem;
   font-size: smaller;
+}
+
+@media (min-width: 750px) {
+  .breadcrumbs {
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    margin-left: -3rem;
+  }
+
+  .navheader {
+    margin: 0 -3rem;
+  }
+
+  .navfooter {
+    margin: 4rem -3rem 0 -3rem;
+  }
+
 }
 
 .usermanual_nav_clear {

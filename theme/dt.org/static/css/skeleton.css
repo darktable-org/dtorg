@@ -340,6 +340,17 @@ th:last-child,
 td:last-child {
   /* padding-right: 0; */ }
 
+@media (max-width: 750px) {
+  table, tr, th, td {
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  colgroup {
+    display: none;
+  }
+}
+
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

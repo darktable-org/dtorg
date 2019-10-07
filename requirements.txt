@@ -1,0 +1,6 @@
+pelican==3.6.3
+Markdown==2.6.6
+pillow
+python-twitter
+bs4
+typogrify

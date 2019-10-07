@@ -18,10 +18,6 @@ The site is currently built using:
 $ python --version
 Python 2.7.13
 
-$ virtualenv2 env/
-$ source env/bin/activate
-$ pip install -r requirements.txt
-
 $ pelican --version
 3.6.3
 
@@ -40,11 +36,31 @@ Additionally, some extra modules should be available:
 * Typogrify  
  `$ pip install typogrify`
 
+
+## Getting Started
+
+It's generally good practice to use a [virtual environment](https://docs.python-guide.org/dev/virtualenvs/):
+
+```bash
+$ virtualenv2 env/
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
 To build the site:
 ```bash
 $ pelican -s pelicanconf.py
 ```
-The entire site will then be available in the `output` directory. To serve the site via HTTP, launch
+
+The entire site will then be available in the `output` directory. 
+If you don't already have SimpleHTTPServer install it:
+
+```bash
+$ pip install SimpleHTTPServer
+```
+
+To serve the site via HTTP, launch:
+
 ```bash
 $ cd output/ && python2 -m SimpleHTTPServer 8000
 ```

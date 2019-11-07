@@ -159,14 +159,14 @@ Right now the darktable packages listed below are built for the following Linux 
 Right now this means for the stable package:
 
 * Debian 9, 10, Next aka Testing
-* Fedora  29, 30, Rawhide
+* Fedora  29, 30, 31, Rawhide
 * openSUSE 15.0, 15.1, Tumbleweed
 * Ubuntu 16.04, 18.04, 18.10, 19.04, 19.10
 
 For master we build for the following distributions because of missing required packages in older distributions:
 
 * Debian 9, 10, Next aka Testing
-* Fedora   29, 30, Rawhide
+* Fedora   29, 30, 31, Rawhide
 * openSUSE 15.0, 15.1, Tumbleweed
 * Ubuntu 18.04, 18.10, 19.04, 19.10
 

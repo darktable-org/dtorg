@@ -522,7 +522,7 @@ The translations of the darktable user manual are brought to you by:
 </td>
 <td>Italian
 </td>
-<td>Maurizio Paglia, Federico Bruni
+<td>Maurizio Paglia
 </td>
 </tr>
 <tr>

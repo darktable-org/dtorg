@@ -76,7 +76,7 @@ Currently darktable contains 61 image operation modules. Many modules support po
 *   denoise (bilateral filter): Another denoising module.
 *   liquify: Push image parts around, grow them, shrink them. More information can be found in [this blog post]({filename}/blog/2016-04-03-liquify-liquify/2016-04-03-liquify-liquify.md)
 *   perspective correction: A great module to automatically un-distort shots with straight lines. See [our blog post]({filename}/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md) for an introduction and examples.
-*   lens correction: lens defect correction using [lensfun](http://lensfun.sourceforge.net/ "liblensfun").
+*   lens correction: lens defect correction using [lensfun](https://github.com/lensfun/lensfun "liblensfun").
 *   spot removal: Spot removal allows you to correct a zone in your image by using another zone as model.
 *   profiled denoise: By measuring the typical noise of cameras at the different ISO levels darktable is able to remove a lot of it. Read [this blog post]({filename}/blog/2012-12-11-profiling-sensor-and-photon-noise/2012-12-11-profiling-sensor-and-photon-noise.md "profiling sensor and photon noise") for more information.
 *   raw denoise: Raw denoise allows you to perfom denoising on pre-demosaic data. It is ported from [dcraw](https://www.cybercom.net/~dcoffin/dcraw/ "dcraw").

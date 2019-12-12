@@ -91,7 +91,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
     Yes, there are two libraries we heavily rely on and which we point to quite often when people complain about darkable lacking something:
 
     * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](/usermanual/en/image_information.html) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
-    * **lensfun** is used for lens correction. If the [lens correction](/usermanual/en/correction_group.html#lens_correction) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://sourceforge.net/p/lensfun/bugs/).
+    * **lensfun** is used for lens correction. If the [lens correction](/usermanual/en/correction_group.html#lens_correction) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
 * <a name="faq-windows"></a>**I see there is now a new Windows version, what can I expect?**<a href="#faq-windows" class="anchor" title="Link to this FAQ entry">¶</a>
 

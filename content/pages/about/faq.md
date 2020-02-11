@@ -27,6 +27,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
              * **Since 3.0.x release:** `~/.config/darktable/themes` (themes folder needs to be created if it doesn't exist)
         * then add the following line on the beginning of the created css file: `@import url("/path/to/darktable.css");`, where the `/path/to/darktable.css` is the path... to the default darktable CSS (or one of the other themes you want to edit).
         * last step is to copy parts of the pointed css you want to edit and adjust settings as you want.
+    * Be aware: darktable 3.0 brings a whole new UI, so 3.0 CSS themes are not compatible with previous releases, and previous 2.4 and 2.6 themes are not compatible with darktable 3.0.
 
 * <a name="faq-rename-files"></a>**How do I rename files on my hard disk?**<a href="#faq-rename-files" class="anchor" title="Link to this FAQ entry">¶</a>
 

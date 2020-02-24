@@ -19,7 +19,7 @@ Here is a short list of highlights where darktable can improve your digital phot
 *   **Image formats**: darktable can import a variety of standard, raw and high dynamic range image formats (e.g. JPEG, CR2, NEF, HDR, PFM, RAF ... ).
 *   **Zero-latency, zoomable user interface**: through multi-level software caches darktable provides a fluid experience.
 *   **Tethered shooting**: support for instrumentation of your camera with live view for some camera brands.
-*   **Speaks your language**: darktable currently comes with **21 translations:** Albanian, Catalan, Czech, Danish, Dutch, French, German, Greek, Hebrew, Hungarian, Italian, Japanese, Polish, Portugese (Brazilian and Portugese), Russian, Slovak, Slovenian, Spanish, Swedish, Ukrainian.
+*   **Speaks your language**: darktable currently comes with **21 translations:** Albanian, Catalan, Czech, Danish, Dutch, French, German, Greek, Hebrew, Hungarian, Italian, Japanese, Polish, Portuguese (Brazilian and Portuguese), Russian, Slovak, Slovenian, Spanish, Swedish, Ukrainian.
 *   **Powerful export system** supports G+ and Facebook webalbums, flickr upload, disk storage, 1:1 copy, email attachments and can generate a simple html-based web gallery. darktable allows you to export to low dynamic range (JPEG, PNG, TIFF), 16-bit (PPM, TIFF), or linear high dynamic range (PFM, EXR) images.
 *   **Never lose your image development settings** darktable uses both **XMP sidecar** files as well as its **fast database** for saving metadata and processing settings. All Exif data is read and written using libexiv2.
 *   **Automate repetitive tasks**: Many aspects of darktable can be scripted in Lua.

@@ -111,10 +111,9 @@ To install darktable on your system, run
 <h2 id='windows'>Microsoft Windows</h2>
 ![Microsoft Windows]({filename}/images/OS/windows.png)
 
+  * Read the Windows version specific section [in the FAQ]({filename}/pages/about/faq.md) first.
   * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-3.0.0-win64.exe).
   * Run it and install darktable.
-  * Read the Windows version specific section [in the FAQ]({filename}/pages/about/faq.md) first.
-  * Read [this blog post]({filename}/news/2017-08-30-darktable-for-windows/2017-08-30-darktable-for-windows.md) to learn about the currrent state of the Windows port.
 
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)

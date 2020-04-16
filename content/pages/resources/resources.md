@@ -12,19 +12,24 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 # User manual
 ![drop]({attach}drop.jpg)
 
-You can read the manual online (v2.6):
+You can read the manual online (v3.0):
 
   * [English](https://darktable.gitlab.io/doc/en/)
   * [French](https://darktable.gitlab.io/doc/fr/)
   * [German](https://darktable.gitlab.io/doc/de/)
   * [Italian](https://darktable.gitlab.io/doc/it/)
+  * [Spanish](https://darktable.gitlab.io/doc/es/)
+
+or download it in PDF format (v3.0):
+
+  * [English](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual.pdf)
+  * [French](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-fr.pdf)
+  * [German](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-de.pdf)
+  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-it.pdf)
+  * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-es.pdf)
 
 or download it in PDF format (v2.6):
 
-  * [English](https://github.com/darktable-org/darktable/releases/download/release-2.6.1/darktable-usermanual.pdf)
-  * [French](https://github.com/darktable-org/darktable/releases/download/release-2.6.1/darktable-usermanual-fr.pdf)
-  * [German](https://github.com/darktable-org/darktable/releases/download/release-2.6.1/darktable-usermanual-de.pdf)
-  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-2.6.2/darktable-usermanual-it.pdf)
   * [Polish](https://github.com/darktable-org/darktable/releases/download/release-2.6.2/darktable-usermanual-pl.pdf)
 
 Translations into other languages are currently being worked on and will be published as soon as they are ready.

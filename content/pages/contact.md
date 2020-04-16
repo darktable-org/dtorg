@@ -377,7 +377,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Italian
 </td>
-<td>Germano Massullo, Maurizio Paglia, Matteo Mardegan
+<td>Maurizio Paglia, Matteo Mardegan, Germano Massullo
 </td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@ The translations of darktable are brought to you by:
 <tr>
 <td>pt_BR
 </td>
-<td>Brazilian Portugese
+<td>Brazilian Portuguese
 </td>
 <td>Guilherme Brondani Torri
 </td>
@@ -415,7 +415,7 @@ The translations of darktable are brought to you by:
 <tr>
 <td>pt_PT
 </td>
-<td>Portugese Portugese
+<td>Portuguese Portuguese
 </td>
 <td>José Carlos Casimiro
 </td>

@@ -19,7 +19,7 @@ You can read the manual online (v3.0):
   * [German](https://darktable.gitlab.io/doc/de/)
   * [Italian](https://darktable.gitlab.io/doc/it/)
   * [Spanish](https://darktable.gitlab.io/doc/es/)
-  * [Polish Portuguese](https://darktable.gitlab.io/doc/pl/)
+  * [Polish](https://darktable.gitlab.io/doc/pl/)
   * [Brazilian Portuguese](https://darktable.gitlab.io/doc/pt_BR/)
 
 or download it in PDF format (v3.0):

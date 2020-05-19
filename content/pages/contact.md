@@ -409,7 +409,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Brazilian Portuguese
 </td>
-<td>Guilherme Brondani Torri
+<td>Guilherme Brondani Torri, Frido Claudino, Jerônimo Pellegrini
 </td>
 </tr>
 <tr>

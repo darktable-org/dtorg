@@ -176,14 +176,6 @@ The available packages are:
 * [snapshots from the master branch](https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable)
 
 
-## PPA for Ubuntu
-
-* For stable releases add the [Darktable Release PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-release).
-* If you are adventurous and are willing to deal with problems from time to time add the [Darktable Unstable PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-unstable). Don't use this PPA if you do time critical work with darktable!
-* Follow the instructions on the Launchpad PPA page.
-* Then search for "darktable" in the Software Center of Synaptic Package Manager and install it.
-* You will find it under "Applications/Graphics/Darktable Photography Workflow Software"
-
 ## Backports for Debian
 
 A description on how to enable the backports repository can be found here: <https://backports.debian.org/Instructions/>

@@ -160,14 +160,14 @@ Right now this means for the stable package:
 * Debian 9, 10, Next aka Testing
 * Fedora  29, 30, 31, Rawhide
 * openSUSE 15.0, 15.1, Tumbleweed
-* Ubuntu 16.04, 18.04, 18.10, 19.04, 19.10
+* Ubuntu 18.04, 19.04, 19.10, 20.04 (only lates release, not snapshot from stable release branch)
 
 For master we build for the following distributions because of missing required packages in older distributions:
 
 * Debian 9, 10, Next aka Testing
 * Fedora   29, 30, 31, Rawhide
 * openSUSE 15.0, 15.1, Tumbleweed
-* Ubuntu 18.04, 18.10, 19.04, 19.10
+* Ubuntu 18.04, 19.04, 19.10, 20.04
 
 The available packages are:
 

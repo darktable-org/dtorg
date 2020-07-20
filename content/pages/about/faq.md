@@ -24,10 +24,14 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
     * It is possible to customize the look of darktable by following these steps:
         * creating a CSS file (for example mytheme.css) on following folder:
              * **2.4.x and 2.6.x releases:** `~/.config/darktable/`
-             * **Since 3.0.x release:** `~/.config/darktable/themes` (themes folder needs to be created if it doesn't exist)
+             * **On 3.0.x release:** `~/.config/darktable/themes` (themes folder needs to be created if it doesn't exist)
         * then add the following line on the beginning of the created css file: `@import url("/path/to/darktable.css");`, where the `/path/to/darktable.css` is the path... to the default darktable CSS (or one of the other themes you want to edit).
         * last step is to copy parts of the pointed css you want to edit and adjust settings as you want.
     * Be aware: darktable 3.0 brings a whole new UI, so 3.0 CSS themes are not compatible with previous releases, and previous 2.4 and 2.6 themes are not compatible with darktable 3.0.
+    
+    Since darktable 3.2, released in august 2020, tweak CSS is far more easier. Forget steps describe just above for that and just go in preferences window. See first general tab and: just select your theme, check _modify selected theme with tweaks below_ and add your tweaks in text field below, then save your tweaks. That's all!
+    
+    By the way, CSS file should be easier to read and lot of comments will help you find faster CSS part you want to tweak and so copy/modify in preferences. 
 
 * <a name="faq-rename-files"></a>**How do I rename files on my hard disk?**<a href="#faq-rename-files" class="anchor" title="Link to this FAQ entry">¶</a>
 

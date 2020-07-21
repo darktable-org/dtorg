@@ -1,5 +1,5 @@
-pelican==3.6.3
-Markdown==2.6.6
+pelican
+Markdown
 pillow
 python-twitter
 bs4

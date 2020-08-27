@@ -19,6 +19,8 @@ You can read the manual online (v3.0):
   * [German](https://darktable.gitlab.io/doc/de/)
   * [Italian](https://darktable.gitlab.io/doc/it/)
   * [Spanish](https://darktable.gitlab.io/doc/es/)
+  * [Polish](https://darktable.gitlab.io/doc/pl/)
+  * [Brazilian Portuguese](https://darktable.gitlab.io/doc/pt_BR/)
 
 or download it in PDF format (v3.0):
 
@@ -27,10 +29,8 @@ or download it in PDF format (v3.0):
   * [German](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-de.pdf)
   * [Italian](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-it.pdf)
   * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-es.pdf)
-
-or download it in PDF format (v2.6):
-
-  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-2.6.2/darktable-usermanual-pl.pdf)
+  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-pl.pdf)
+  * [Brazilian Portuguese](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-pt_BR.pdf)
 
 Translations into other languages are currently being worked on and will be published as soon as they are ready.
 

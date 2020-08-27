@@ -112,13 +112,13 @@ To install darktable on your system, run
 ![Microsoft Windows]({filename}/images/OS/windows.png)
 
   * Read the Windows version specific section [in the FAQ]({filename}/pages/about/faq.md) first.
-  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-3.0.1/darktable-3.0.1-win64.exe).
+  * Download the [latest Windows installer for darktable](https://github.com/darktable-org/darktable/releases/download/release-3.2.1/darktable-3.2.1-win64.exe).
   * Run it and install darktable.
 
 <h2 id='macos'>macOS</h2>
 ![macosx]({filename}/images/OS/macosx.jpg)
 
-  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-3.0.1/darktable-3.0.1.2.dmg)
+  * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-3.2.1/darktable-3.2.1.dmg)
   * Mount the thing
   * Pull the darktable icon into applications folder
   * Good luck :)
@@ -160,14 +160,14 @@ Right now this means for the stable package:
 * Debian 9, 10, Next aka Testing
 * Fedora  29, 30, 31, Rawhide
 * openSUSE 15.0, 15.1, Tumbleweed
-* Ubuntu 16.04, 18.04, 18.10, 19.04, 19.10
+* Ubuntu 18.04, 19.04, 19.10, 20.04 (only latest release, not snapshot from stable release branch)
 
 For master we build for the following distributions because of missing required packages in older distributions:
 
 * Debian 9, 10, Next aka Testing
 * Fedora   29, 30, 31, Rawhide
 * openSUSE 15.0, 15.1, Tumbleweed
-* Ubuntu 18.04, 18.10, 19.04, 19.10
+* Ubuntu 18.04, 19.04, 19.10, 20.04
 
 The available packages are:
 
@@ -175,14 +175,6 @@ The available packages are:
 * [snapshots from the stable release branch](https://software.opensuse.org/download.html?project=graphics:darktable:stable&package=darktable)
 * [snapshots from the master branch](https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable)
 
-
-## PPA for Ubuntu
-
-* For stable releases add the [Darktable Release PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-release).
-* If you are adventurous and are willing to deal with problems from time to time add the [Darktable Unstable PPA](https://launchpad.net/~pmjdebruijn/+archive/darktable-unstable). Don't use this PPA if you do time critical work with darktable!
-* Follow the instructions on the Launchpad PPA page.
-* Then search for "darktable" in the Software Center of Synaptic Package Manager and install it.
-* You will find it under "Applications/Graphics/Darktable Photography Workflow Software"
 
 ## Backports for Debian
 
@@ -202,11 +194,11 @@ A description on how to enable the backports repository can be found here: <http
 # Current release from source
 ![leaves1]({filename}/images/OS/leaves1.jpg)
 
-* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-3.0.1) (recent version: darktable 3.0.1)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
+* Grab the [latest source tarball](https://github.com/darktable-org/darktable/releases/tag/release-3.2.1) (recent version: darktable 3.2.1)&nbsp;– make sure to use the .tar.xz file and not the auto generated .zip or .tar.gz!
 * Install the dependencies. For details see the link below.
 * Unpack:
 
-        $ tar xvf darktable-3.0.1.tar.xz && cd darktable-3.0.1
+        $ tar xvf darktable-3.2.1.tar.xz && cd darktable-3.2.1
 
 * Then either do
 

@@ -46,8 +46,6 @@ structures and functions. You can either read the documentation [online](/lua-ap
 
 There is an online repository with darktable styles available for download at <https://dtstyle.net/>. It features live preview of the styles with four different sample images.
 
-We also have a [wiki page](https://darktable.org/redmine/projects/darktable/wiki/DarktableStyles) to share different styles for darktable. Feel free to put your own there and share them with others!
-
 To create a new darktable style just alter your image the way you want. Then click the button located in the history module in darkroom mode to create a style from the current history stack. In advanced options you can include or exclude single modules. To export or import a new style use the styles module in lighttable mode.
 
 

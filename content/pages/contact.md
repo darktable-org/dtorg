@@ -12,6 +12,28 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 # How to get in contact
 ![sun]({attach}sun.jpg)
 
+Need to reach us?
+We have multiple ways to reach out to the project.
+
+
+## GitHub
+
+Primary development communication happens on our [GitHub repository][].
+You can [file issues][] there (please search first to see if your issue has already been reported)
+and help with translations.
+
+[Github repository]: https://github.com/darktable-org "darktable on Github"
+[file issues]: https://github.com/darktable-org/darktable/issues "darktable issues"
+
+
+## PIXLS.US
+
+If you're a user looking for help or advice on using darktable you can reach out on the [darktable forums][] at [pixls.us](https://pixls.us).
+
+[darktable forums]: https://discuss.pixls.us/darktable
+
+## Mailing Lists
+
 Use our mailing lists! Please subscribe instead of just sending mails to the lists&nbsp;– we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
 
   * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): bugs, ideas, patches, translations&nbsp;– all goes here. This is also the right place to report vulnerabilities. If you are interested in technical details, choose this list. posts are made by subscribers only, subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).

@@ -1,0 +1,23 @@
+baseURL: 'https://www.darktable.com'
+title: darktable
+theme: darktable
+permalinks:
+  news: /:year/:month/:slug/
+  blog: /:year/:month/:slug/
+enableGitInfo: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+taxonomies:
+  tag: tags
+  author: author
+disableKinds: ['taxonomyTerm']
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+outputs:
+  home: ["HTML","RSS", "SearchIndex"]

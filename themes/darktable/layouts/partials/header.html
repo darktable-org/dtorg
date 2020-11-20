@@ -1,0 +1,19 @@
+<nav id="menu" class="home">
+  <ul>
+    {{ range .Site.Sections }}
+      {{ if ne .Params.main_nav false }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    {{ end }}
+    <li>
+      {{ partial "search" . }}
+    </li>
+  </ul>
+</nav>
+{{ if ne .IsHome true }}
+<span id="logo">
+  <a href="/" title="darktable.org">
+    <img src="/images/darktable-logo-name-480w.png">
+  </a>
+</span>
+{{ end }}

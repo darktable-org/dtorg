@@ -1,0 +1,794 @@
+@import url('open-sans.css');
+
+/* Initial stuff *
+ * ------------- */
+
+html {
+    font: 100%/1.6 "Open Sans", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@media (min-width: 640px) {
+    html { font-size: 112%; }
+}
+@media (min-width: 1024px) {
+    html { font-size: 120%; }
+}
+
+/* For breaking words on mobile
+ * layouts (not screwing up rendering) */
+@media (max-width: 640px){
+    a, code {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+  }
+}
+
+body {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+body {
+    background-color: #202020;
+    color: red;
+    color: #585858;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.smalltext {
+    font-size: 0.8rem;
+}
+
+.altrows tr:nth-child(even), thead tr {
+    background-color: #f1f1f1;
+}
+
+#logo img {
+    position: relative;
+    margin: 1rem auto 0;
+    display: block;
+    max-width: 90%;
+    margin-bottom: -1rem;
+    z-index: 1;
+}
+#menu {
+    text-align: center;
+    line-height: 2rem;
+    z-index: 1;
+}
+#menu.home {
+    line-height: 50px;
+}
+/* @media (min-width: 64rem) { */
+@media (min-width: 1000px ) {
+    #logo img {
+        position: absolute;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        max-width: 240px;
+        top: 0;
+    }
+    #menu {
+        text-align: right;
+        line-height: 50px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+        text-shadow: black 0 0 4px;
+    }
+}
+
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 2.5rem;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+}
+
+#menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.lede-img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.lede .lede-img {
+    height: 41.35vw;
+    /* this can be set to force a height
+     * for lede images, might help the flash
+     * of content being pushed down.
+     * downside: requires ledes be cropped to 2.39:1 */
+}
+
+/* This is for when there's
+ * no lede defined.  If we
+ * use a default lede, change this */
+section.lede.default {
+    margin-top: 50px;
+}
+
+section.lede {
+    position: relative;
+}
+section.lede-bg {
+    display: none;
+}
+
+@media( min-width: 1000px ){ /* for wider screens */
+    .lede {
+        margin-top: 50px;
+    }
+    .lede.page, .lede.author,
+    .lede.tag {
+        /* margin-bottom: -3.7rem; */
+        margin-top: 120px;
+    }
+    .lede .lede-img {
+        width: 960px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .lede-author {
+        bottom: 0;
+        right: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .lede-author > div {
+        width: 960px;
+        margin: 0 auto;
+        text-align: right;
+    }
+    section.lede-bg {
+        position: fixed;
+        z-index: -1;
+        display: initial;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( #202020, #000000 );
+    }
+    section.lede-bg.wp {
+        margin-left: 0;
+    }
+    section.lede-bg img {
+        min-height: 100vh;
+        min-width: 100vw;
+        opacity: 0.1;
+        filter: grayscale(100%);
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate( -50%, 0);
+    }
+    section.home.lede-bg img {
+      opacity: 0.5;
+      filter: none;
+    }
+    section.lede.default {
+        /* This fixes aggregate pages
+         * like blog/ and news/ to push
+         * down content so the H1 shows */
+        margin-top: 120px;
+    }
+    nav.home ~ section.footer {
+        background: rgba(16, 16, 16, 0.66);
+        padding-top: 4rem;
+        margin-top: 4rem;
+    }
+}
+
+.lede-author {
+    bottom: 0.5rem;
+    right: 1rem;
+    position: absolute;
+    font-style: italic;
+    font-size: small;
+    color: white;
+    text-shadow: black -1px -1px 1px,
+                 black 1px -1px 1px,
+                 black 1px 1px 1px,
+                 black -1px 1px 1px;
+}
+
+.lede-author a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Headings, 1.25:1 ratio
+ * ----------------------*/
+h1 { font-size: 3.052rem; }
+h1 { font-size: 2.441rem; }
+h2 { font-size: 1.953rem; }
+h3 { font-size: 1.563rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; font-variant: small-caps;}
+h6 { font-size: 0.9rem; font-variant: small-caps;} /* used in the usermanual. 0.8rem is a little too small. */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
+    margin-top: 0;
+}
+
+.category hr {
+    max-width: 33%;
+}
+
+/* Page Title
+============== */
+
+.container.title {
+    z-index: 1;
+}
+@media( min-width: 1000px ){ /* for wider screens */
+    .page .container.title,
+    .category .container.title {
+        position: absolute;
+        top: 2.6rem;
+        max-width: initial;
+    }
+    .page.search .container.title,
+    .page.minimal .container.title {
+        position: initial;
+        top: initial;
+    }
+    .page .container.title .row,
+    .category .container.title .row {
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        padding-right: 20px;
+    }
+}
+
+.container.title h1,
+.description .desc-title {
+    text-align: right;
+    font-size: 3rem;
+    color: #ecf0f1;
+    line-height: 0.9;
+    margin: 1rem 0 0 0;
+    text-shadow: 0 0 2px #202020;
+}
+.container.content {
+    background-color: #fcfcfc;
+    background-color: #DFDFDF;
+    background-color: #eeeeee;
+}
+
+/* Sub-navigation for pages (ie: about/features, about/meta) */
+.subnav {
+    float: right;
+    margin-right: -2rem;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    box-shadow: 0 6px 6px -6px grey;
+}
+@media (min-width: 750px){
+    .subnav {
+        margin-top: -2rem;
+        margin-right: -4rem;
+    }
+}
+
+.subnav a {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+}
+.subnav a::after {
+    content: " ·";
+}
+.subnav a:last-of-type::after {
+    content: "";
+}
+
+/* Page & article padding
+ * ============
+ */
+.page .content,
+.article .content {
+    padding: 0.2rem;
+}
+@media (min-width: 750px){
+    .page .content,
+    .article .content {
+        padding: 3rem 5rem;
+    }
+}
+
+
+/* Styling for category list pages
+ * so, /blog/ and /news/ right now
+ * ===============================
+ */
+
+.category article section.article-lede.wordpress:first-of-type,
+.category .column > article:first-of-type > section.content:first-child {
+    margin-top: 3rem;
+}
+
+article > section.content {
+    padding: 0 3rem;
+}
+
+.category .container.content {
+    padding: 0;
+    padding-bottom: 4rem;
+}
+
+article h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+article h1.entry-title a {
+    text-decoration: none;
+    color: inherit;
+}
+article h2 {
+    font-size: 1.4rem;
+}
+
+
+.post-info {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+address.vcard.author {
+    display: inline;
+}
+
+section.article-lede.wordpress {
+    padding: 0 3rem;
+}
+section.article-lede.wordpress .wordpress-lede-img {
+    max-width: 100%;
+}
+
+
+
+/* Home Page Styles
+ * ---------------- */
+#home-lede {
+    position: absolute;
+    max-width: 100%;
+}
+
+#home-logo { padding-top: 2rem; }
+#home-logo img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    width: 90%;
+}
+
+.description p {
+    /* margin: 2rem 3rem; */
+    margin: 2rem 0;
+}
+.description p+p {
+    margin-top: -1.5rem;
+}
+@media (min-width: 640px) {
+    .description p {
+        margin: 2rem 3rem;
+    }
+}
+
+.screenshot img {
+    position: relative;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+    height: auto;
+}
+
+section.description {
+    margin-top: 5rem;
+}
+section.description .feature {
+    margin-bottom: 2rem;
+}
+
+
+/* Paginator
+ * --------- */
+.pagination {
+    display: flex;
+    margin: auto;
+    max-width: 200px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination__item--current {
+  font-weight: 600;
+}
+
+
+/* Articles
+ * ---------- */
+
+h1.article-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+div.column img.lede-img {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: initial;
+    list-style-type: circle;
+}
+
+ol, ul {
+    padding-left: 2rem;
+    list-style-position: unset;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+    margin: 0.5rem 0 0 0;
+}
+
+li {
+    /* margin-bottom: 0.5rem; */
+}
+
+li p {
+    margin-bottom: 0.5rem;
+}
+
+li > p:first-child {
+    display: inline;
+}
+
+.article-content img,
+.container.content img {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid #888;
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+  font-style: italic;
+}
+
+
+/* Footer
+ * ------ */
+.footer {
+    color: #787878;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+@media( max-width: 1000px ){ /* for smaller screens */
+  .footer {
+    background-color: #111;
+  }
+}
+.footer a {
+    text-decoration: none;
+}
+
+.footer .sitenav {
+    list-style-type: none;
+}
+.footer .sitenav li {
+    margin-bottom: 0;
+}
+
+.footer .badge {
+    font-size: small;
+    line-height: 0.8rem;
+}
+.footer .badge-logo {
+    text-decoration: none;
+    float: left;
+    padding-right: 0.5rem;
+}
+.footer .badge-text {
+    min-width: 290px;
+    margin-bottom: 1.5rem;
+}
+
+.footer .pixlslove {
+    margin-top: 2rem;
+}
+.footer .pixlslove p {
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: solid 1px #222;
+    font-size: 0.8rem;
+}
+.footer .pixlslove .heart {
+    color: red;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.rss_link {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 1rem;
+}
+.rss_link svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Figure + figcaption styling
+ * --------------------------- */
+
+figure {
+    display: table;
+    margin: 1.5rem auto;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1rem;
+    display: table-caption;
+    caption-side: bottom;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+figure.u-pull-right {
+    margin: 0 0 1rem 1rem;
+    max-width: 50%;
+}
+figure.u-pull-left {
+    margin: 0 1rem 1rem 0;
+    max-width: 50%;
+}
+
+
+/* code pre styling
+ * ---------------- */
+pre {
+    margin: 1rem 0;
+    padding: 0;
+    border: none;
+}
+code {
+    background-color: white;
+}
+pre > code {
+    margin: 0;
+    white-space: pre-wrap;
+    padding: .2rem .5rem;
+}
+
+
+/* the tipue search box in the top
+ * -------------------------------*/
+#menu li form {
+  display: inline;
+}
+
+#tipue_search_input::placeholder {
+    color: white;
+}
+#tipue_search_input:focus::placeholder {
+    color: #666;
+}
+#tipue_search_input {
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    border-radius: 0;
+    color:white;
+    height: auto;
+    transition: 0.3s width ease,
+                0.3s font-size ease;
+    /* below is for houz
+     * fixes the "click on the icon"
+     * to display the searchbar thing */
+    width: 4.5rem;
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+    cursor: pointer;
+}
+#tipue_search_input:focus {
+    border-bottom: solid 1px white;
+    width: 18rem;
+    padding-left: 0.2rem;
+    font-size: 1.5rem;
+    height: auto;
+    /* below if for houz
+     * fixes the neg margin stuff :) */
+    margin-left: 0;
+    cursor: text;
+}
+
+#searchmode {
+  padding-top: 0.5rem;
+}
+#searchmode * {
+  font-size: 0.9rem;
+  font-weight: normal;
+  display: inline;
+  padding: 0 1rem 0 0.5rem;
+}
+#searchmode label:last-of-type
+{
+  padding-right: 0;
+}
+
+.page.search {
+    margin-top: 4rem;
+}
+
+.page.search #searchform {
+    text-align: right;
+}
+/* search input on search.html only */
+.page.search #tipue_search_input {
+    border-bottom: solid 1px white;
+    width: 18rem;
+    padding-left: 0.2rem;
+    font-size: 1.5rem;
+    height: auto;
+    width: 90%;
+    color: #1EAEDB;
+    margin-left: 0;
+    cursor: initial;
+}
+@media (min-width: 750px){
+    .page.search #tipue_search_input {
+        width: 50%;
+    }
+}
+
+div#tipue_search_results_count {
+    font-size: 0.8rem;
+}
+div#tipue_search_results_count:before {
+    content: "Found ";
+}
+.tipue_search_content_title a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.tipue_search_content_url {
+    font-size: small;
+}
+.tipue_search_content_text {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+div#tipue_search_foot {
+    text-align: center;
+}
+ul#tipue_search_foot_boxes {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+#tipue_search_foot_boxes li {
+    display: inline;
+    border: solid 1px gray;
+    margin: 0 0.1rem;
+}
+#tipue_search_foot_boxes li a, li.current {
+    cursor: pointer;
+    min-width: 50px;
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+}
+li.current {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.social_share {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#static_comment_pagination {
+  text-align: center;
+}
+
+#static_comment_pagination a {
+  text-decoration: none;
+}
+
+#static_comments_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.static_comment {
+  padding-left: 0.5rem;
+  margin-top: 1em;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #ddd;
+  font-size: smaller;
+}
+
+.static_comment_author {
+/*   font-size: smaller; */
+}
+
+.static_comment_date {
+/*   font-size: smaller; */
+}
+
+#discourse-comments {
+  margin: 4rem 0 4rem 0;
+}
+
+/* a page template without lede in the top. used for 403/404 error pages. */
+.page.minimal {
+  margin-top: 4rem;
+}
+
+.container.content.minimal {
+  margin-top: 3rem;
+}
+
+/* used for hidden anchor links on the faq page and in the usermanual */
+.anchor {
+  padding-left: 0.3em;
+}
+h1 a.anchor,
+h2 a.anchor,
+h3 a.anchor,
+h4 a.anchor,
+p a.anchor {
+  visibility: hidden;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+p:hover a.anchor {
+  visibility: visible;
+}
+
+.center {
+  text-align: center;
+}

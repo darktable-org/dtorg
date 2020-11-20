@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+  {{ with (index .Pages 0) }}
+    <section class="lede-bg">
+      {{ partial "lede/responsive" . }}
+    </section>
+  {{ end }}
+
+  <section class="lede default">
+  </section>
+
+  <section class="category">
+    <div class="container title">
+      <div class="row">
+        <div class="column">
+          {{ partial "rss" . }}
+          <h1 class="page-title">{{ .Title }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container content">
+      <div class="row">
+        <div class="column">
+          {{ range (.Paginate (where .Pages "Section" .Section)).Pages }}
+            <article>
+
+              <section class="article-lede">
+                <a href="{{ .RelPermalink }}">
+                  {{ partial "lede/responsive" . }}
+                </a>
+              </section>
+
+              <section class="content">
+
+                <h1 class="entry-title">
+                  <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">
+                    {{ .Title }}
+                  </a>
+                </h1>
+
+                <div class="post-info">
+                  posted on
+                  {{ partial "date" . }}
+                  {{ partial "author" . }}
+                </div>
+
+                <div class="entry-content">
+                  <div>{{ truncate 315 .Content }}</div>
+                  <div>
+                    <a href="{{ .RelPermalink }}">Continue Reading → </a>
+                  </div>
+                </div>
+
+              </section>
+
+            </article>
+            <hr>
+          {{ end }}
+          {{ partial "paginator" . }}
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}

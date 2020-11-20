@@ -1,0 +1,15 @@
+{{ if isset .Params "lede" }}
+  {{ $page := . }}
+  {{ with .Resources.Match .Params.lede }}
+    {{ $image := index . 0 }}
+    {{ $image2x := $image.Resize "1920x" }}
+    {{ $image = $image.Resize "960x" }}
+    <img
+      class="lede-img"
+      src="{{ $image.RelPermalink }}"
+      srcset="{{ $image2x.RelPermalink }} 2x"
+      alt="{{ $page.Title }}" />
+  {{ end }}
+{{ else }}
+  <img class="lede-img" src="/images/ledes/lede-about.jpg" alt="{{ .Title }}">
+{{ end }}

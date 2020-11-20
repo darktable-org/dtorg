@@ -1,0 +1,68 @@
+<section class='footer'>
+  <div class='container'>
+      <div class='row'>
+
+          <div class='six columns'>
+              <ul class='sitenav'>
+                <li><a href="/">darktable</a></li>
+                {{ range .Site.Sections }}
+                  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+              </ul>
+          </div>
+
+          <div class='six columns smalltext'>
+              <p>
+                  <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="12" width="12" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48.000001">
+                    <g transform="translate(0 -1004.4)">
+                    <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" cx="6.4379" cy="1045.9" r="6.5" fill="#787878"/>
+                    <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke="#787878" stroke-width="9" d="m-0.062104 1026.3a26.142 26.142 0 0 1 26.142 26.1"/>
+                    <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke-opacity=".94118" stroke="#787878" stroke-width="10" d="m0.0010728 1009.3a43.026 43.026 0 0 1 43.026 43.1"/>
+                    </g>
+                  </svg>
+                  RSS Feeds:
+                  {{ range .OutputFormats }}
+                    <a href="{{ .Permalink }}">RSS</a>
+                  {{ end }}
+
+              </p>
+              <p>Connect with us on:<br>
+                  <a href='http://www.facebook.com/darktable' title='darktable on Facebook'>Facebook</a>
+                  &middot;
+                  <a href='http://www.flickr.com/groups/darktable/' title='darktable on Flickr'>Flickr</a>
+                  &middot;
+                  <a href='http://twitter.com/#!/darktable_org' title='darktable on Twitter'>Twitter</a>
+              </p>
+
+              <div class='badge'>
+                  <a class='badge-logo' target="_blank" rel="license" title='GPLv3.0' href="http://www.gnu.org/licenses/gpl-3.0.html">
+                      <img alt="GPLv3.0" src="/images/gplv3-88x31.png">
+                  </a>
+                  <div class='badge-text'>
+                      darktable is released under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0</a><br>
+                      <a href="/">&copy;{{ dateFormat "2006" now }} by the darktable team.</a> »
+                      <a href="/credits/">credits</a>
+                  </div>
+              </div>
+
+              <div class='badge clearfix'>
+                  <a class='badge-logo' target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+                      <img alt="Creative Commons License" src="/images/CCBYSANC_88x31.png">
+                  </a>
+                  <div class='badge-text'>
+                      Unless otherwise stated, this website and images are licensed <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA 3.0 License</a>.
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class='row pixlslove'>
+          <div class='four columns offset-by-four'>
+          <p><a href="https://pixls.us">pixls.us</a> <span class='heart'>♡</span>'s darktable</p>
+          </div>
+      </div>
+
+  </div>
+</section>

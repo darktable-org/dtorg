@@ -12,6 +12,12 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 # User manual
 ![drop]({attach}drop.jpg)
 
+The new manual can be read here:
+
+  * [English](https://www.darktable.org/usermanual/en/)
+
+In the following sections, you can find the old manual which will be discontinued after 3.4.
+
 You can read the manual online (v3.4):
 
   * [English](https://darktable.gitlab.io/doc/en/)

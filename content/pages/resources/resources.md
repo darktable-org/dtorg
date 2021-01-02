@@ -12,7 +12,13 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 # User manual
 ![drop]({attach}drop.jpg)
 
-You can read the manual online (v3.0):
+The new manual can be read here:
+
+  * [English](https://www.darktable.org/usermanual/en/)
+
+In the following sections, you can find the old manual which will be discontinued after 3.4.
+
+You can read the manual online (v3.4):
 
   * [English](https://darktable.gitlab.io/doc/en/)
   * [French](https://darktable.gitlab.io/doc/fr/)
@@ -22,17 +28,15 @@ You can read the manual online (v3.0):
   * [Polish](https://darktable.gitlab.io/doc/pl/)
   * [Brazilian Portuguese](https://darktable.gitlab.io/doc/pt_BR/)
 
-or download it in PDF format (v3.0):
+or download it in PDF format (v3.4):
 
-  * [English](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual.pdf)
-  * [French](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-fr.pdf)
-  * [German](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-de.pdf)
-  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-it.pdf)
-  * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-es.pdf)
-  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-pl.pdf)
-  * [Brazilian Portuguese](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-pt_BR.pdf)
-
-Translations into other languages are currently being worked on and will be published as soon as they are ready.
+  * [English](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual.pdf)
+  * [French](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-fr.pdf)
+  * [German](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-de.pdf)
+  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-it.pdf)
+  * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-es.pdf)
+  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pl.pdf)
+  * [Brazilian Portuguese](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pt_BR.pdf)
 
 # Lua API documentation
 
@@ -45,8 +49,6 @@ structures and functions. You can either read the documentation [online](/lua-ap
 ![styles]({attach}styles.jpg)
 
 There is an online repository with darktable styles available for download at <https://dtstyle.net/>. It features live preview of the styles with four different sample images.
-
-We also have a [wiki page](https://darktable.org/redmine/projects/darktable/wiki/DarktableStyles) to share different styles for darktable. Feel free to put your own there and share them with others!
 
 To create a new darktable style just alter your image the way you want. Then click the button located in the history module in darkroom mode to create a style from the current history stack. In advanced options you can include or exclude single modules. To export or import a new style use the styles module in lighttable mode.
 

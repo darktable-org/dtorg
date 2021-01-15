@@ -144,7 +144,7 @@ darktable can be installed through MacPorts:
 
 darktable can be installed through Homebrew:
 
-    brew cask install darktable
+    brew install --cask darktable
 
 
 <h1 id="3rdparty">third party packages and PPAs</h1>

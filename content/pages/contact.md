@@ -1,5 +1,5 @@
 Title: contact
-Date: 2017-09-21T15:10:23-06:00
+Date: 2021-01-21T15:10:23-06:00
 author: smn
 wordpress_id: 124
 lede: lede-contact.jpg
@@ -7,7 +7,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 # Find us on...
 
-[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
+[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Mastodon](https://mastodon.social/@darktable)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
 
 # How to get in contact
 ![sun]({attach}sun.jpg)
@@ -329,7 +329,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Spanish
 </td>
-<td>Jose Carlos Garcia Sogo, Tatica Leandro
+<td>Jose Carlos Garcia Sogo, Tatica Leandro, Alejandro Criado-Pérez
 </td>
 </tr>
 <tr>

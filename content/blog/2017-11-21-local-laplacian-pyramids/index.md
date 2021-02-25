@@ -130,8 +130,6 @@ drag the separator in the middle to compare before/after!
 <span style="display: table-cell">![clarity](curve_clarity.svg)</span>
 </span>
 
-COMPIMG(id0001,images/flower.jpg,images/flower_01.jpg,original,clarity)
-
 {{< compimg "id0001" "images/flower.jpg" "images/flower_01.jpg" "original" "clarity" >}}
 ### pulled highlights down:
 
@@ -144,9 +142,7 @@ shadows. turns out it doesn't.
 <span style="display: table-cell">![highlights](curve_highlights.svg)</span>
 </span>
 
-COMPIMG(id0002,images/flower.jpg,images/flower_02.jpg,original,highlights compressed)
-
-{{< compimg "id0002" "images/flower.jpg" "images/flower_02.jpg" "highlights" "compressed" >}}
+{{< compimg "id0002" "images/flower.jpg" "images/flower_02.jpg" "original" "highlights compressed" >}}
 ### pushed shadows up:
 
 <span style="display: table-row;">
@@ -155,18 +151,16 @@ COMPIMG(id0002,images/flower.jpg,images/flower_02.jpg,original,highlights compre
 <span style="display: table-cell">![shadows](curve_shadows.svg)</span>
 </span>
 
-COMPIMG(id0003,images/flower.jpg,images/flower_03.jpg,original,shadows lifted)
-
+{{< compimg "id0003" "images/flower.jpg" "images/flower_03.jpg" "original" "shadows lifted" >}}
 ### inverse of the above
 and the inverse is also possible, top to bottom, left to right: original,
 removed details, pushed highlights out even more, pulled shadows deeper.
 
-COMPIMG(id0004,images/flower.jpg,images/flower_06.jpg,original,details removed)
+{{< compimg "id0004" "images/flower.jpg" "images/flower_06.jpg" "original" "details removed" >}}
 
-COMPIMG(id0005,images/flower.jpg,images/flower_04.jpg,original,highlights pushed)
+{{< compimg "id0005" "images/flower.jpg" "images/flower_04.jpg" "original" "highlights pushed" >}}
 
-COMPIMG(id0006,images/flower.jpg,images/flower_05.jpg,original,shadows deepened)
-
+{{< compimg "id0006" "images/flower.jpg" "images/flower_05.jpg" "original" "shadows deepened" >}}
 
 ## application to hdr compression
 
@@ -195,18 +189,16 @@ example history stacks are in the example comparison images seen below:
 [1](images/img_0004.jpg)
 [2](images/img_0006.jpg).
 
-COMPIMG(id0007,images/img_0001.jpg,images/img_0002.jpg,exposure fusion,local laplacian)
+{{< compimg "id0007" "images/img_0001.jpg" "images/img_0002.jpg" "exposure fusion" "local laplacian" >}}
 
-COMPIMG(id0008,images/img_0003.jpg,images/img_0004.jpg,exposure fusion,local laplacian)
+{{< compimg "id0008" "images/img_0003.jpg" "images/img_0004.jpg" "exposure fusion" "local laplacian" >}}
 
-COMPIMG(id0009,images/img_0005.jpg,images/img_0006.jpg,exposure fusion,local laplacian)
-
+{{< compimg "id0009" "images/img_0005.jpg" "images/img_0006.jpg" "exposure fusion" "local laplacian" >}}
 ## application to high contrast monochrome
 
-COMPIMG(id0010,images/bw_0002.jpg,images/bw_0001.jpg,original,local laplacian)
+{{< compimg "id0010" "images/bw_0002.jpg" "images/bw_0001.jpg" "original" "local laplacian" >}}
 
-COMPIMG(id0011,images/bw_0004.jpg,images/bw_0003.jpg,original,local laplacian)
-
+{{< compimg "id0011" "images/bw_0004.jpg" "images/bw_0003.jpg" "original" "local laplacian" >}}
 ## a note on noise
 
 when increasing contrast, you want to make sure the input isn't noisy, or else

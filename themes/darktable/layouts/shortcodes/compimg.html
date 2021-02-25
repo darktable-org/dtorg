@@ -1,8 +1,8 @@
 <div>
 	<div class="cato" id="{{ .Get 0 }}" ondragstart="return false">
-		<div draggable="false" style="background-image:url('{{ .Get 2 }}')"></div>
-		<div draggable="false" style="background-image: url('{{ .Get 1 }}');"></div>
-		<div class="cato_divider"></div><img draggable="false" src="{{ .Get 1 }}">
+		<div draggable="false" style="background-image:url('{{ partial "thumbnail" (dict "Page" .Page "img" (.Get 2) "width" "960") }}')"></div>
+		<div draggable="false" style="background-image: url('{{ partial "thumbnail" (dict "Page" .Page "img" (.Get 1) "width" "960") }}');"></div>
+		<div class="cato_divider"></div><img draggable="false" src="{{ partial "thumbnail" (dict "Page" .Page "img" (.Get 1) "width" "960") }}">
 		<div>
 			<p><a href="{{ .Get 1 }}">{{ .Get 3 }}</a></p>
 		</div>
@@ -14,3 +14,4 @@
 	  createSlider("{{ .Get 0 }}");
 	</script>
 </div>
+&nbsp;

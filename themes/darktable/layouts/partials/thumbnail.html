@@ -1,0 +1,6 @@
+{{- $width := .width -}}
+{{- with .Page.Resources.Match .img -}}
+  {{- $image := index . 0 -}}
+  {{- $image = $image.Resize (string (printf "%s%s" (string (mul (int $width) 2)) (string "x"))) -}}
+  {{- safeURL $image.RelPermalink -}}
+{{- end -}}

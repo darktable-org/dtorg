@@ -132,6 +132,7 @@ drag the separator in the middle to compare before/after!
 
 COMPIMG(id0001,images/flower.jpg,images/flower_01.jpg,original,clarity)
 
+{{< compimg "id0001" "images/flower.jpg" "images/flower_01.jpg" "original" "clarity" >}}
 ### pulled highlights down:
 
 yes, the curve changes the bottom part. which you would think belongs to the
@@ -145,6 +146,7 @@ shadows. turns out it doesn't.
 
 COMPIMG(id0002,images/flower.jpg,images/flower_02.jpg,original,highlights compressed)
 
+{{< compimg "id0002" "images/flower.jpg" "images/flower_02.jpg" "highlights" "compressed" >}}
 ### pushed shadows up:
 
 <span style="display: table-row;">

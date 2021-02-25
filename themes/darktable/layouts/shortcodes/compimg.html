@@ -1,0 +1,16 @@
+<div>
+	<div class="cato" id="{{ .Get 0 }}" ondragstart="return false">
+		<div draggable="false" style="background-image:url('{{ .Get 2 }}')"></div>
+		<div draggable="false" style="background-image: url('{{ .Get 1 }}');"></div>
+		<div class="cato_divider"></div><img draggable="false" src="{{ .Get 1 }}">
+		<div>
+			<p><a href="{{ .Get 1 }}">{{ .Get 3 }}</a></p>
+		</div>
+		<div>
+			<p class="cato_right"><a href="{{ .Get 2 }}">{{ .Get 4 }}</a></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	  createSlider("{{ .Get 0 }}");
+	</script>
+</div>

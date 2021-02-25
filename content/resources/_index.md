@@ -15,7 +15,13 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 # User manual
 ![drop](drop.jpg)
 
-You can read the manual online (v3.0):
+The new manual can be read here:
+
+  * [English](https://www.darktable.org/usermanual/en/)
+
+In the following sections, you can find the old manual which will be discontinued after 3.4.
+
+You can read the manual online (v3.4):
 
   * [English](https://darktable.gitlab.io/doc/en/)
   * [French](https://darktable.gitlab.io/doc/fr/)
@@ -25,17 +31,15 @@ You can read the manual online (v3.0):
   * [Polish](https://darktable.gitlab.io/doc/pl/)
   * [Brazilian Portuguese](https://darktable.gitlab.io/doc/pt_BR/)
 
-or download it in PDF format (v3.0):
+or download it in PDF format (v3.4):
 
-  * [English](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual.pdf)
-  * [French](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-fr.pdf)
-  * [German](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-de.pdf)
-  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-it.pdf)
-  * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-es.pdf)
-  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-pl.pdf)
-  * [Brazilian Portuguese](https://github.com/darktable-org/darktable/releases/download/release-3.0.0/darktable-usermanual-pt_BR.pdf)
-
-Translations into other languages are currently being worked on and will be published as soon as they are ready.
+  * [English](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual.pdf)
+  * [French](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-fr.pdf)
+  * [German](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-de.pdf)
+  * [Italian](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-it.pdf)
+  * [Spanish](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-es.pdf)
+  * [Polish](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pl.pdf)
+  * [Brazilian Portuguese](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pt_BR.pdf)
 
 # Lua API documentation
 

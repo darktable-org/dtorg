@@ -14,17 +14,14 @@
           <div class='six columns smalltext'>
               <p>
                   <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="12" width="12" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48.000001">
-                    <g transform="translate(0 -1004.4)">
-                    <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" cx="6.4379" cy="1045.9" r="6.5" fill="#787878"/>
-                    <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke="#787878" stroke-width="9" d="m-0.062104 1026.3a26.142 26.142 0 0 1 26.142 26.1"/>
-                    <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke-opacity=".94118" stroke="#787878" stroke-width="10" d="m0.0010728 1009.3a43.026 43.026 0 0 1 43.026 43.1"/>
-                    </g>
+                      <g transform="translate(0 -1004.4)">
+			  <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" cx="6.4379" cy="1045.9" r="6.5" fill="#787878"/>
+			  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke="#787878" stroke-width="9" d="m-0.062104 1026.3a26.142 26.142 0 0 1 26.142 26.1"/>
+			  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke-opacity=".94118" stroke="#787878" stroke-width="10" d="m0.0010728 1009.3a43.026 43.026 0 0 1 43.026 43.1"/>
+                      </g>
                   </svg>
                   RSS Feeds:
-                  {{ range .OutputFormats }}
-                    <a href="{{ .Permalink }}">RSS</a>
-                  {{ end }}
-
+		  <a href="{{ "news/index.xml" | absURL }}">News RSS</a>, <a href="{{ "blog/index.xml" | absURL }}">Blog RSS</a>
               </p>
               <p>Connect with us on:<br>
                   <a href='http://www.facebook.com/darktable' title='darktable on Facebook'>Facebook</a>

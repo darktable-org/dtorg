@@ -6,6 +6,7 @@ wordpress_id: 118
 lede: lede-install.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 400
+menu: ["main", "footer"]
 ---
 
 # Choose your OS:
@@ -37,6 +38,7 @@ img.chooseos {
 
 
 <h2 id='ubuntu'>Ubuntu packages</h2>
+
 ![ubuntu](/images/OS/ubuntu.jpg)
 
 Ubuntu comes with darktable packages. You can install them with
@@ -47,6 +49,7 @@ If you need a newer version than what is included in your distribution, check ou
 
 
 <h2 id='fedora'>Fedora packages</h2>
+
 ![fedora](/images/OS/fedora.jpg)
 
 Fedora ships with darktable. A simple command should be enough.
@@ -56,6 +59,7 @@ Fedora ships with darktable. A simple command should be enough.
 If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='opensuse'>openSUSE packages</h2>
+
 ![opensuse](/images/OS/opensuse.jpg)
 
 openSUSE ships with darktable. A simple `zypper install darktable` should be enough.
@@ -63,6 +67,7 @@ openSUSE ships with darktable. A simple `zypper install darktable` should be eno
 If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='arch'>Arch Linux</h2>
+
 ![arch](/images/OS/arch.jpg)
 
     $ pacman -S darktable
@@ -70,6 +75,7 @@ If you need a newer version than what is included in your distribution, check ou
 * thx to chressie for this, arch _is_ non-ancient :)
 
 <h2 id='gentoo'>Funtoo/Gentoo Linux</h2>
+
 ![gentoo](/images/OS/gentoo.jpg)
 
 darktable is in portage!
@@ -78,12 +84,14 @@ darktable is in portage!
     $ darktable
 
 <h2 id='rhel'>RHEL / Scientific Linux / Centos</h2>
+
 ![scientificlinux](/images/OS/scientificlinux.jpg)
 
     # yum install epel-release
     # yum install darktable
 
 <h2 id='debian'>Debian</h2>
+
 ![debian](/images/OS/debian.png)
 
 (Of course) there is a darktable package in the Debian repositories.
@@ -95,6 +103,7 @@ darktable can be installed by running
 If you need a newer version than what is included in your distribution, check out the <a href="#3rdparty">third party packages</a> section.
 
 <h2 id='solaris'>Solaris</h2>
+
 ![opensolaris](/images/OS/opensolaris.png)
 
 The darktable Solaris packages are provided and maintained by James. You can find his website here with all the packages provided: <https://www.jmcpdotcom.com/blog/category/darktable/>.
@@ -103,6 +112,7 @@ He has both the [darktable packages](https://www.jmcpdotcom.com/Packages/) and a
 
 
 <h2 id='freebsd'>FreeBSD</h2>
+
 ![freebsd](/images/OS/freebsd.png)
 
 darktable is available in the FreeBSD Ports Collection. It can be installed, pre-compiled, from the standard package repository.
@@ -112,6 +122,7 @@ To install darktable on your system, run
     # pkg install graphics/darktable
 
 <h2 id='windows'>Microsoft Windows</h2>
+
 ![Microsoft Windows](/images/OS/windows.png)
 
   * Read the Windows version specific section [in the FAQ](/about/faq/) first.
@@ -119,6 +130,7 @@ To install darktable on your system, run
   * Run it and install darktable.
 
 <h2 id='macos'>macOS</h2>
+
 ![macosx](/images/OS/macosx.jpg)
 
   * Download the [latest DMG disk image for darktable](https://github.com/darktable-org/darktable/releases/download/release-3.4.1/darktable-3.4.1.dmg)
@@ -222,6 +234,7 @@ A description on how to enable the backports repository can be found here: <http
 For a more complete set of instructions for different distributions have a look at [our Wiki](https://redmine.darktable.org/projects/darktable/wiki/Building_darktable_22).
 
 # git version
+
 ![fire](/images/OS/fire.jpg)
 
 _First a word of warning_: Using the development version of darktable might be risky in that it can break anytime, kill your edits, eat your kittens or do other nasty things. It is also not guaranteed that XMP sidecars written by a development version will work with a release version. It is also quite certain that any older version of darktable will **NOT** be able to read the database once a development build updated it to the latest schema. So for your own safety and our sanity, do make backups of your XMP files as well as your `library.db` and `data.db` (by default it is in `~/.config/darktable/`) **BEFORE** upgrading to the self compiled git version. That being said, it should be quite safe to actually use it and never go back, so all of this might be no issue for you at all. Just keep in mind that **IF** you ever want to go back it might be hard.

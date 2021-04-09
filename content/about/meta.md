@@ -5,6 +5,7 @@ Author: Pat David
 lede: lede-meta.jpg
 lede_author: <a href="https://houz.org/">houz</a>
 weight: 3
+menu: "footer"
 ---
 This is a meta page about this website and building it.
 [Pat David](https://patdavid.net) created this page for notes about building the site.

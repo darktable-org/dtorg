@@ -6,6 +6,7 @@ wordpress_id: 116
 lede: lede-screenshots.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 4
+menu: "footer"
 ---
 
 Click on a image to get it in full resolution.

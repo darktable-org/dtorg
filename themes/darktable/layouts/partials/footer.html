@@ -4,10 +4,16 @@
 
           <div class='six columns'>
               <ul class='sitenav'>
-                <li><a href="/">darktable</a></li>
-                {{ range .Site.Sections }}
-                  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}
+              <li><a href="/">darktable</a></li>
+              {{ $currentPage := . }}
+              {{ range sort .Site.Menus.footer ".Name" }}
+                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}">
+                        {{ .Pre }}
+                        <span>{{ .Name }}</span>
+                    </a>
+                </li>
+              {{ end }}
               </ul>
           </div>
 

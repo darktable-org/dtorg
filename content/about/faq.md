@@ -6,6 +6,7 @@ wordpress_id: 1536
 lede: lede-faq.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 1
+menu: "footer"
 ---
 * <a name="faq-spelling"></a>**So, I have seen a bunch of different ways to spell *darktable*. Which one is right?**<a href="#faq-spelling" class="anchor" title="Link to this FAQ entry">¶</a>
 

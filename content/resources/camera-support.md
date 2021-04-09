@@ -5,6 +5,7 @@ author: pedrocr
 wordpress_id: 3676
 lede: lede-camera-support.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
+menu: "footer"
 ---
 
 This is an auto-generated list of the state of support of different camera models. Cameras that produce DNG files should be supported even if they are not on the list but samples are still appreciated.

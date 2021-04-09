@@ -6,6 +6,7 @@ wordpress_id: 404
 lede: lede-development.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 600
+menu: "footer"
 ---
 
 <div class="subnav">

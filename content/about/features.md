@@ -4,6 +4,7 @@ Date: 2017-06-13T21:58:51-06:00
 lede: lede-features.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 2
+menu: "footer"
 ---
 Here is a short list of highlights where darktable can improve your digital photography processing workflow and help you to make better images with less effort. You can find a more detailed description of every single item in our [online user manual](/usermanual/en/ "usermanual").
 

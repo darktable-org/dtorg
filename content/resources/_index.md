@@ -6,6 +6,7 @@ wordpress_id: 120
 lede: lede-resources.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 500
+menu: ["main", "footer"]
 ---
 
 # Frequently Asked Questions

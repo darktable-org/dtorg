@@ -6,6 +6,7 @@ wordpress_id: 118
 lede: lede-install.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 400
+menu: ["main", "footer"]
 ---
 
 # Choose your OS:

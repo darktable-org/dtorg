@@ -178,6 +178,7 @@ section.lede-bg {
         top: 0;
         left: 50%;
         transform: translate( -50%, 0);
+        max-width: none;
     }
     section.home.lede-bg img {
       opacity: 0.5;

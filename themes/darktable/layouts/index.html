@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  <section class="home lede-bg">
+    <img src="{{ .Params.home_lede }}" alt="darktable page lede image">
+  </section>
+
+  <section class="home-project">
+
+    <div id="home-logo">
+      <img src="{{ .Params.home_logo }}">
+    </div>
+
+  {{ .Content }}
+
+  </section>
+
+{{ end }}

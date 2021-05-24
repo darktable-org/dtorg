@@ -1,0 +1,13 @@
+{{ $page := .Page }}
+{{ $lede := (.Page.Site.GetPage .lede).Resources }}
+
+{{ with $lede.Match .Page.Params.lede }}
+  {{ $image := index . 0 }}
+  {{ $image2x := $image.Resize "1920x" }}
+  {{ $image = $image.Resize "960x" }}
+  <img
+    class="lede-img"
+    src="{{ $image.RelPermalink }}"
+    srcset="{{ $image2x.RelPermalink }} 2x"
+    alt="{{ $page.Title }}" />
+{{ end }}

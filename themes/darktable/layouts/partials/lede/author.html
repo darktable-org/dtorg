@@ -1,0 +1,8 @@
+<section class="lede page">
+  {{ partial "lede/responsive2" (dict "Page" . "lede" "/images/ledes") }}
+  <div class="lede-author">
+    <div>
+      {{ .Params.lede_author | markdownify }}
+    </div>
+  </div>
+</section>

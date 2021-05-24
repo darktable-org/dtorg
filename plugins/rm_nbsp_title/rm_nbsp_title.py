@@ -4,7 +4,7 @@ import re
 
 '''
 This plugin will check for a lede-img or wordpress_lede
-in the frontmatter, and {attach} it to the page so that
+in the frontmatter, and  it to the page so that
 pelican moves the file to the same directory as the source
 file
 '''

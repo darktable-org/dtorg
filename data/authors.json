@@ -1,0 +1,65 @@
+{
+  "smn":{
+     "displayname":"smn"
+  },
+  "dt":{
+     "displayname":"dt"
+  },
+  "houz":{
+     "displayname":"houz",
+     "lede":"lede-houz.jpg"
+  },
+  "bieber":{
+     "displayname":"bieber"
+  },
+  "Henrik Andersson":{
+     "displayname":"Henrik Andersson"
+  },
+  "jo":{
+     "displayname":"jo"
+  },
+  "upegelow":{
+     "displayname":"upegelow"
+  },
+  "jcsogo":{
+     "displayname":"jcsogo"
+  },
+  "McBofh":{
+     "displayname":"McBofh"
+  },
+  "edgomez":{
+     "displayname":"Edouard Gomez"
+  },
+  "pmjdebruijn":{
+     "displayname":"pmjdebruijn"
+  },
+  "parafin":{
+     "displayname":"parafin"
+  },
+  "pascalobry":{
+     "displayname":"Pascal Obry"
+  },
+  "alicvb":{
+     "displayname":"Aldric Renaudin"
+  },
+  "boucman":{
+     "displayname":"boucman"
+  },
+  "dtorop":{
+     "displayname":"dtorop"
+  },
+  "mueen":{
+     "displayname":"Mueen Nawaz"
+  },
+  "pedrocr":{
+     "displayname":"pedrocr"
+  },
+  "LebedevRI":{
+     "displayname":"Roman"
+  },
+  "patdavid":{
+     "displayname":"Pat David",
+     "twitter":"@patdavid",
+     "lede":"lede-patdavid.jpg"
+  }
+}

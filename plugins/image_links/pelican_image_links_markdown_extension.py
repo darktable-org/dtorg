@@ -26,7 +26,7 @@ class PelicanImageLinksMarkdownExtensionPattern(markdown.inlinepatterns.Pattern)
         Turn
             @![alt text](filename.jpg "A Title!")
         into
-            <span>[![alt text](filename_thumb.jpg)]({attach}filename.jpg)</span>
+            <span>[![alt text](filename_thumb.jpg)](filename.jpg)</span>
         """
         node = etree.Element('span')
         # TODO: do we want to assign some special class to the span?
@@ -52,7 +52,7 @@ class PelicanImageLinksMarkdownExtensionPattern(markdown.inlinepatterns.Pattern)
         else:
             thumbnail = src
 
-        node.text = '[![' + alt + '](' + thumbnail + title + ')]({attach}' + src + ')'
+        node.text = '[![' + alt + '](' + thumbnail + title + ')](' + src + ')'
 
         return node
 

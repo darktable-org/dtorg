@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ hugo.Generator }}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}{{ if ne .IsHome true }} | {{ .Site.Title }}{{ end }}</title>
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/darktable.css">
+  <link rel="stylesheet" href="/css/cato.css">
+  <script src="/cato.js"></script>
+  <script async src="/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+
+  {{ partial "header.html" . }}
+
+  {{ block "main" . }}{{ end }}
+
+  {{ partial "footer.html" . }}
+
+
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+
+</body>
+</html>

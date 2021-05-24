@@ -30,9 +30,9 @@ class PelicanImageCompareMarkdownExtensionPattern(markdown.inlinepatterns.Patter
               <div draggable="false" style=background-image:url("thumb_right")></div>
               <div draggable="false" style=background-image:url("thumb_left")></div>
               <div class="cato_divider"></div>
-              <img draggable="false" src="{attach}thumb_left"/>
-              <div><p><a href="{attach}image_left">label_left</a></p></div>
-              <div><p class="cato_right"><a href="{attach}image_right">label_right</a></p></div>
+              <img draggable="false" src="thumb_left"/>
+              <div><p><a href="image_left">label_left</a></p></div>
+              <div><p class="cato_right"><a href="image_right">label_right</a></p></div>
             </div>
             <script type="text/javascript">createSlider("div_id"); </script>
         """
@@ -62,10 +62,10 @@ class PelicanImageCompareMarkdownExtensionPattern(markdown.inlinepatterns.Patter
         etree.SubElement(node_div_outer, "img", {'draggable': 'false', 'src': '%s' % thumb_left})
         node_div_label_left_div = etree.SubElement(node_div_outer, "div")
         node_div_label_left_p = etree.SubElement(node_div_label_left_div, "p")
-        etree.SubElement(node_div_label_left_p, 'a', {'href': '{attach}' + image_left}).text = label_left
+        etree.SubElement(node_div_label_left_p, 'a', {'href': '' + image_left}).text = label_left
         node_div_label_right_div = etree.SubElement(node_div_outer, "div")
         node_div_label_right_p = etree.SubElement(node_div_label_right_div, "p", {'class': 'cato_right'})
-        etree.SubElement(node_div_label_right_p, 'a', {'href': '{attach}' + image_right}).text = label_right
+        etree.SubElement(node_div_label_right_p, 'a', {'href': '' + image_right}).text = label_right
         etree.SubElement(node_wrapper, 'script', {'type': 'text/javascript'}).text = 'createSlider("%s");' % div_id
 
         return node_wrapper

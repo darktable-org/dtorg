@@ -1,0 +1,23 @@
+{{ if isset .Params "lede" }}
+  {{ $page := . }}
+  {{ with .Resources.Match .Params.lede }}
+    {{ $image := index . 0 }}
+    {{ $image2x := $image.Resize "1920x" }}
+    {{ $image1x := $image.Resize "960x" }}
+    <img
+      class="lede-img"
+      {{/*  hugo upscales images, so only show resized if greater than original  */}}
+      {{/*  https://laurakalbag.com/processing-responsive-images-with-hugo/#images  */}}
+      {{ if ge $image.Width 960 }}
+        src="{{ $image1x.RelPermalink }}"
+      {{ else }}
+        src="{{ $image.RelPermalink }}"
+      {{ end }}
+      {{ if ge $image.Width 1920 }}
+        srcset="{{ $image2x.RelPermalink }} 2x"
+      {{ end }}
+      alt="{{ $page.Title }}" />
+  {{ end }}
+{{ else }}
+  <img class="lede-img" src="/images/ledes/lede-about.jpg" alt="{{ .Title }}">
+{{ end }}

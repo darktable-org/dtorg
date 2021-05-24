@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+  {{ partial "lede/bg" (print "/images/ledes/lede-about.jpg") }}
+
+  <section class="lede default">
+  </section>
+
+  <section class="category">
+    <div class="container title">
+      <div class="row">
+        <div class="column">
+          <h1 class="page-title">tag: {{ .Title }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container content">
+      <div class="row">
+        <div class="column">
+          {{ range .Pages }}
+            <article>
+
+              <section class="article-lede">
+                <a href="{{ .RelPermalink }}">
+                  <img src="{{ .RelPermalink }}/{{ .Params.lede }}" class="lede-img" width="960" height="401">
+                </a>
+              </section>
+
+              <section class="content">
+
+                <h1 class="entry-title">
+                  <a href="{{ .RelPermalink }}" rel="bookmark" title="{{ .Title }}">
+                    {{ .Title }}
+                  </a>
+                </h1>
+
+                <div class="post-info">
+                  posted on
+                  {{ partial "date" . }}
+                  {{ partial "author" . }}
+                </div>
+
+                <div class="entry-content">
+                  <div>{{ .Summary | markdownify }}</div>
+                  <div>
+                    <a href="{{ .RelPermalink }}">Continue Reading → </a>
+                  </div>
+                </div>
+
+              </section>
+
+            </article>
+            <hr>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}

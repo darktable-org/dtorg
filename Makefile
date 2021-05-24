@@ -33,3 +33,7 @@ secondline: #shell only
 .PHONY: server
 server:
 	rm -rf public && hugo server --renderToDisk
+
+.PHONY: output
+output:
+	find output -name "*.html" -print > output.csv && sed 's/output/https:\/\/darktable.org/g' output.csv | tee output2.csv && sed 's/index.html//g' output2.csv | tee output.csv && rm output2.csv

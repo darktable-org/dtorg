@@ -6,7 +6,7 @@ layout: post
 link: /2012/11/released-1-1rc2/
 slug: released-1-1rc2
 title: "released 1.1rc2"
-wordpress_lede: lotus.jpg
+lede: lotus.jpg
 wordpress_id: 2356
 tags:
   - announcement

@@ -6,7 +6,7 @@ layout: post
 link: /2012/04/darktable-1-0-1-released/
 slug: darktable-1-0-1-released
 title: "darktable 1.0.3 released"
-wordpress_lede: tiny.jpg
+lede: tiny.jpg
 wordpress_id: 1486
 tags:
   - announcement

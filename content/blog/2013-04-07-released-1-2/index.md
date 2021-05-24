@@ -6,7 +6,7 @@ layout: post
 link: /2013/04/released-1-2/
 slug: released-1-2
 title: "released 1.2"
-wordpress_lede: rimutaka.jpg
+lede: rimutaka.jpg
 wordpress_id: 2839
 tags:
   - announcement

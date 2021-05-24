@@ -6,7 +6,7 @@ layout: post
 link: /2015/04/released-darktable-1-6-4/
 slug: released-darktable-1-6-4
 title: released darktable 1.6.4
-wordpress_lede: thumb.jpg
+lede: thumb.jpg
 wordpress_id: 3644
 tags:
   - darktable release

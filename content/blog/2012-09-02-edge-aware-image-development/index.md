@@ -6,7 +6,7 @@ layout: post
 link: /2012/09/edge-aware-image-development/
 slug: edge-aware-image-development
 title: "edge aware image development"
-wordpress_lede: pink.jpg
+lede: pink.jpg
 wordpress_id: 1908
 tags:
   - blog

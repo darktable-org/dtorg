@@ -6,7 +6,7 @@ layout: post
 link: /2010/11/released-0-7/
 slug: released-0-7
 title: "released 0.7"
-wordpress_lede: lagocoffee.jpg
+lede: lagocoffee.jpg
 wordpress_id: 221
 tags:
   - announcement

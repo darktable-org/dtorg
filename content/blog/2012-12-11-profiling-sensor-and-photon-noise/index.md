@@ -6,7 +6,7 @@ layout: post
 link: /2012/12/profiling-sensor-and-photon-noise/
 slug: profiling-sensor-and-photon-noise
 title: "profiling sensor and photon noise"
-wordpress_lede: denoise_teaser.jpg
+lede: denoise_teaser.jpg
 wordpress_id: 2368
 tags:
   - blog

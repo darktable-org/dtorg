@@ -6,7 +6,7 @@ layout: post
 link: /2012/09/geotagging-in-darktable/
 slug: geotagging-in-darktable
 title: "Geotagging in darktable"
-wordpress_lede: IMG_6337_export.jpg
+lede: IMG_6337_export.jpg
 wordpress_id: 2162
 tags:
   - upcoming feature

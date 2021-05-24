@@ -6,7 +6,7 @@ layout: post
 link: /2013/02/importing-lightroom-development/
 slug: importing-lightroom-development
 title: "Importing Lightroom Development"
-wordpress_lede: 2-lr-develop.jpg
+lede: 2-lr-develop.jpg
 wordpress_id: 2692
 tags:
   - blog

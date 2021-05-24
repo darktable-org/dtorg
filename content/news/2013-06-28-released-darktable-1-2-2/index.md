@@ -6,7 +6,7 @@ layout: post
 link: /2013/06/released-darktable-1-2-2/
 slug: released-darktable-1-2-2
 title: released darktable 1.2.2
-wordpress_lede: 3.jpg
+lede: 3.jpg
 wordpress_id: 2955
 tags:
   - announcement

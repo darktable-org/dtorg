@@ -6,7 +6,7 @@ layout: post
 link: /2016/04/liquify-liquify/
 slug: liquify-liquify
 title: "Liquify, liquify?"
-wordpress_lede: liquify-1.png
+lede: liquify-1.png
 wordpress_id: 4038
 tags:
   - blog

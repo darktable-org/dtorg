@@ -6,7 +6,7 @@ layout: post
 link: /2010/01/released-0-4/
 slug: released-0-4
 title: "released 0.4"
-wordpress_lede: rock1.jpg
+lede: rock1.jpg
 wordpress_id: 209
 tags:
   - announcement

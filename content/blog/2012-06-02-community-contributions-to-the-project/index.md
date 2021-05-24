@@ -6,7 +6,7 @@ layout: post
 link: /2012/06/community-contributions-to-the-project/
 slug: community-contributions-to-the-project
 title: "Community contributions to the project"
-wordpress_lede: IMG_6030_export.jpg
+lede: IMG_6030_export.jpg
 wordpress_id: 1779
 tags:
   - blog

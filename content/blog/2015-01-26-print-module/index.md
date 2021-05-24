@@ -6,7 +6,7 @@ layout: post
 link: /2015/01/print-module/
 slug: print-module
 title: "Print Module"
-wordpress_lede: dt-print-settingsv2.jpg
+lede: dt-print-settingsv2.jpg
 wordpress_id: 3507
 tags:
   - upcoming feature

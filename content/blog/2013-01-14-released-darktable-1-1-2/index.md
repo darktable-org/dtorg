@@ -6,7 +6,7 @@ layout: post
 link: /2013/01/released-darktable-1-1-2/
 slug: released-darktable-1-1-2
 title: "Released darktable 1.1.2"
-wordpress_lede: flamingos.png
+lede: flamingos.png
 wordpress_id: 2671
 tags:
   - announcement

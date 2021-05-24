@@ -6,7 +6,7 @@ layout: post
 link: /2009/10/0-3-beta-released/
 slug: 0-3-beta-released
 title: "0.3 beta released"
-wordpress_lede: crowrock.jpg
+lede: crowrock.jpg
 wordpress_id: 207
 tags:
   - announcement

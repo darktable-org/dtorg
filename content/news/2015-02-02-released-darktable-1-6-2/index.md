@@ -6,7 +6,7 @@ layout: post
 link: /2015/02/released-darktable-1-6-2/
 slug: released-darktable-1-6-2
 title: released darktable 1.6.2
-wordpress_lede: waterwheel.jpg
+lede: waterwheel.jpg
 wordpress_id: 3534
 tags:
   - announcement

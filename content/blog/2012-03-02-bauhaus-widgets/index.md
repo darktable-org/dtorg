@@ -6,7 +6,7 @@ layout: post
 link: /2012/03/bauhaus-widgets/
 slug: bauhaus-widgets
 title: "bauhaus widgets"
-wordpress_lede: fibonacci.jpg
+lede: fibonacci.jpg
 wordpress_id: 1230
 tags:
   - development

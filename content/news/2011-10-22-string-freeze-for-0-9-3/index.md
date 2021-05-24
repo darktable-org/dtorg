@@ -6,7 +6,7 @@ layout: post
 link: /2011/10/string-freeze-for-0-9-3/
 slug: string-freeze-for-0-9-3
 title: String freeze for 0.9.3
-wordpress_lede: 20110112_0009_small.jpg
+lede: 20110112_0009_small.jpg
 wordpress_id: 791
 tags:
   - announcement

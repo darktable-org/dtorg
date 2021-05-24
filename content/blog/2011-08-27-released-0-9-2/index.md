@@ -6,7 +6,7 @@ layout: post
 link: /2011/08/released-0-9-2/
 slug: released-0-9-2
 title: "released 0.9.2"
-wordpress_lede: foehr.jpg
+lede: foehr.jpg
 wordpress_id: 261
 tags:
   - announcement

@@ -6,7 +6,7 @@ layout: post
 link: /2011/10/different-kind-of-saturation/
 slug: different-kind-of-saturation
 title: "different kind of saturation"
-wordpress_lede: mushrooms_small.jpg
+lede: mushrooms_small.jpg
 wordpress_id: 806
 tags:
   - blog

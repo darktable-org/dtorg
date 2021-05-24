@@ -1,4 +1,4 @@
-HUGO_VERSION = 0.78.2
+HUGO_VERSION = 0.83.1
 
 -include .env
 export

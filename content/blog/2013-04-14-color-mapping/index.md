@@ -6,7 +6,7 @@ layout: post
 link: /2013/04/color-mapping/
 slug: color-mapping
 title: "Color Mapping"
-wordpress_lede: cm_featured.jpg
+lede: cm_featured.jpg
 lede_author: Ulrich Pegelow
 wordpress_id: 2853
 tags:

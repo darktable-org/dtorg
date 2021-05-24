@@ -6,7 +6,7 @@ layout: post
 link: /2012/07/darktable-1-0-5-released/
 slug: darktable-1-0-5-released
 title: "darktable 1.0.5 released"
-wordpress_lede: ladybugs.jpg
+lede: ladybugs.jpg
 wordpress_id: 1890
 tags:
   - announcement

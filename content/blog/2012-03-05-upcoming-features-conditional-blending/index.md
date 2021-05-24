@@ -6,7 +6,7 @@ layout: post
 link: /2012/03/upcoming-features-conditional-blending/
 slug: upcoming-features-conditional-blending
 title: "Upcoming features: Conditional Blending"
-wordpress_lede: IMG_1474_thumb.sm_.jpg
+lede: IMG_1474_thumb.sm_.jpg
 wordpress_id: 1318
 tags:
   - blog

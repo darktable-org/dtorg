@@ -6,7 +6,7 @@ layout: post
 link: /2016/12/darktable-2-2-0-released/
 slug: darktable-2-2-0-released
 title: darktable 2.2.0 released
-wordpress_lede: bee_small.jpg
+lede: bee_small.jpg
 wordpress_id: 4648
 tags:
   - announcement

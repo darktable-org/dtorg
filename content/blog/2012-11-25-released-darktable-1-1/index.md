@@ -6,7 +6,7 @@ layout: post
 link: /2012/11/released-darktable-1-1/
 slug: released-darktable-1-1
 title: "released darktable 1.1"
-wordpress_lede: panda.jpg
+lede: panda.jpg
 wordpress_id: 2378
 tags:
   - announcement

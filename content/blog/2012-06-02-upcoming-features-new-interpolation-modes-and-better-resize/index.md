@@ -6,7 +6,7 @@ layout: post
 link: /2012/06/upcoming-features-new-interpolation-modes-and-better-resize/
 slug: upcoming-features-new-interpolation-modes-and-better-resize
 title: "Upcoming features: New interpolation modes and better resize"
-wordpress_lede: dt-interpolation-results-testchart.png
+lede: dt-interpolation-results-testchart.png
 wordpress_id: 1527
 tags:
   - blog

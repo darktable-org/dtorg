@@ -6,7 +6,7 @@ layout: post
 link: /2012/03/release-candidate-darktable1-0rc1/
 slug: release-candidate-darktable1-0rc1
 title: "Release Candidate darktable1.0~rc1"
-wordpress_lede: img_0001_28.jpg
+lede: img_0001_28.jpg
 wordpress_id: 1306
 tags:
   - announcement

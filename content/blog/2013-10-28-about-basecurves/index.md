@@ -6,7 +6,7 @@ layout: post
 link: /2013/10/about-basecurves/
 slug: about-basecurves
 title: "about basecurves"
-wordpress_lede: basecurve-0.png
+lede: basecurve-0.png
 wordpress_id: 3065
 tags:
   - blog

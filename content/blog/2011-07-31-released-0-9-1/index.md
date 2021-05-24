@@ -6,7 +6,7 @@ layout: post
 link: /2011/07/released-0-9-1/
 slug: released-0-9-1
 title: "released 0.9.1"
-wordpress_lede: leaves.jpg
+lede: leaves.jpg
 wordpress_id: 231
 tags:
   - announcement

@@ -6,7 +6,7 @@ layout: post
 link: /2009/07/0-2-beta-is-out/
 slug: 0-2-beta-is-out
 title: "0.2 beta is out!"
-wordpress_lede: release_0.2.jpg
+lede: release_0.2.jpg
 wordpress_id: 200
 tags:
   - darktable release

@@ -6,7 +6,7 @@ layout: post
 link: /2016/05/colour-manipulation-with-the-colour-checker-lut-module/
 slug: colour-manipulation-with-the-colour-checker-lut-module
 title: "colour manipulation with the colour checker lut module"
-wordpress_lede: teaser.jpg
+lede: teaser.jpg
 wordpress_id: 4064
 tags:
   - blog

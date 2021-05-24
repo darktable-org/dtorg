@@ -6,7 +6,7 @@ layout: post
 link: /2010/08/released-0-6/
 slug: released-0-6
 title: "released 0.6"
-wordpress_lede: watt.jpg
+lede: watt.jpg
 wordpress_id: 217
 tags:
   - announcement

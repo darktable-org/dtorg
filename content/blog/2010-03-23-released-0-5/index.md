@@ -6,7 +6,7 @@ layout: post
 link: /2010/03/released-0-5/
 slug: released-0-5
 title: "released 0.5"
-wordpress_lede: redice.jpg
+lede: redice.jpg
 wordpress_id: 211
 tags:
   - announcement

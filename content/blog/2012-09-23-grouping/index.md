@@ -6,7 +6,7 @@ layout: post
 link: /2012/09/grouping/
 slug: grouping
 title: "Grouping"
-wordpress_lede: IMG_6375_export.jpg
+lede: IMG_6375_export.jpg
 wordpress_id: 2154
 tags:
   - upcoming feature

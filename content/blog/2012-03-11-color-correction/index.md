@@ -6,7 +6,7 @@ layout: post
 link: /2012/03/color-correction/
 slug: color-correction
 title: "color correction"
-wordpress_lede: 2012-03-11-170059_1920x1080_scrot.jpg
+lede: 2012-03-11-170059_1920x1080_scrot.jpg
 wordpress_id: 1366
 tags:
   - blog

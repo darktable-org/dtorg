@@ -6,7 +6,7 @@ layout: post
 link: /2013/02/multi-instances/
 slug: multi-instances
 title: "multi-instances"
-wordpress_lede: mi_screen_gnd.jpg
+lede: mi_screen_gnd.jpg
 wordpress_id: 2752
 tags:
   - blog

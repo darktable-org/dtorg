@@ -6,7 +6,7 @@ layout: post
 link: /2011/09/darktable-book-final-release-v1-0/
 slug: darktable-book-final-release-v1-0
 title: darktable book final release (v1.0)
-wordpress_lede: initial_release.jpg
+lede: initial_release.jpg
 wordpress_id: 600
 tags:
   - announcement

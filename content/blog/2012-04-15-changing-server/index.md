@@ -6,7 +6,7 @@ layout: post
 link: /2012/04/changing-server/
 slug: changing-server
 title: "Changing server [update]"
-wordpress_lede: highway.jpg
+lede: highway.jpg
 wordpress_id: 1459
 tags:
   - announcement

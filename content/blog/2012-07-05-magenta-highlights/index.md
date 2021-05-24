@@ -6,7 +6,7 @@ layout: post
 link: /2012/07/magenta-highlights/
 slug: magenta-highlights
 title: "magenta highlights"
-wordpress_lede: highlights.jpg
+lede: highlights.jpg
 wordpress_id: 1828
 tags:
   - blog

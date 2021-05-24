@@ -6,7 +6,7 @@ layout: post
 link: /2015/11/second-release-candidate-for-darktable-2-0/
 slug: second-release-candidate-for-darktable-2-0
 title: second release candidate for darktable 2.0
-wordpress_lede: cannobio2.jpg
+lede: cannobio2.jpg
 wordpress_id: 3855
 tags:
   - announcement

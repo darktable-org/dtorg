@@ -6,7 +6,7 @@ layout: post
 link: /2012/08/bringing-current-darktable-to-os-x/
 slug: bringing-current-darktable-to-os-x
 title: "Bringing current darktable to OS X"
-wordpress_lede: dtonosx.png
+lede: dtonosx.png
 wordpress_id: 1918
 tags:
   - blog

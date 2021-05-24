@@ -6,7 +6,7 @@ layout: post
 link: /2013/07/have-your-lens-calibrated/
 slug: have-your-lens-calibrated
 title: "have your lens calibrated!"
-wordpress_lede: lens.jpg
+lede: lens.jpg
 wordpress_id: 2984
 tags:
   - announcement

@@ -6,7 +6,7 @@ layout: post
 link: /2010/06/darktable-on-tv/
 slug: darktable-on-tv
 title: darktable on tv :)
-wordpress_lede: grass.jpg
+lede: grass.jpg
 wordpress_id: 213
 ---
 no new release today, but some great videos about dt:

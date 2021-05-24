@@ -6,7 +6,7 @@ layout: post
 link: /2011/06/released-0-9/
 slug: released-0-9
 title: "released 0.9"
-wordpress_lede: bay.jpg
+lede: bay.jpg
 wordpress_id: 227
 tags:
   - announcement

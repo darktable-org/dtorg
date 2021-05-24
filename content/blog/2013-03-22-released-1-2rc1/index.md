@@ -6,7 +6,7 @@ layout: post
 link: /2013/03/released-1-2rc1/
 slug: released-1-2rc1
 title: "released 1.2rc1"
-wordpress_lede: img_0001_27.jpg
+lede: img_0001_27.jpg
 wordpress_id: 2803
 tags:
   - announcement

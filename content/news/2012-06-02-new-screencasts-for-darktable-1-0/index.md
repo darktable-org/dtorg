@@ -6,7 +6,7 @@ layout: post
 link: /2012/06/new-screencasts-for-darktable-1-0/
 slug: new-screencasts-for-darktable-1-0
 title: New screencasts for darktable 1.0
-wordpress_lede: Bildschirmfoto-vom-2012-06-02-182519.png
+lede: Bildschirmfoto-vom-2012-06-02-182519.png
 wordpress_id: 1777
 tags:
   - further reading

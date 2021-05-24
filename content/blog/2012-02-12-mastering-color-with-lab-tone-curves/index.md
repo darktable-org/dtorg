@@ -6,7 +6,7 @@ layout: post
 link: /2012/02/mastering-color-with-lab-tone-curves/
 slug: mastering-color-with-lab-tone-curves
 title: "Mastering color with Lab tone curves"
-wordpress_lede: tc2-thumbnail.sm_.jpg
+lede: tc2-thumbnail.sm_.jpg
 wordpress_id: 1098
 tags:
   - blog

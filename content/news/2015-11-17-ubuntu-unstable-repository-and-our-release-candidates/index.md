@@ -6,7 +6,7 @@ layout: post
 link: /2015/11/ubuntu-unstable-repository-and-our-release-candidates/
 slug: ubuntu-unstable-repository-and-our-release-candidates
 title: Ubuntu Unstable Repository and our Release Candidates
-wordpress_lede: lumber.jpg
+lede: lumber.jpg
 wordpress_id: 3864
 ---
 Following is a public service announcement from Pascal de Bruijn, the maintainer of the Ubuntu PPAs.

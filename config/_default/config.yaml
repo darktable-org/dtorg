@@ -21,3 +21,4 @@ outputFormats:
     notAlternative: true
 outputs:
   home: ["HTML","RSS", "SearchIndex"]
+paginatePath: ""

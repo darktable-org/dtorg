@@ -6,7 +6,7 @@ layout: post
 link: /2012/05/darktable-and-solaris-it-just-workstm-and-there-are-some-nifty-benefits-too/
 slug: darktable-and-solaris-it-just-workstm-and-there-are-some-nifty-benefits-too
 title: "darktable and Solaris: It Just Works™ ... and there are some nifty benefits too"
-wordpress_lede: supermoon-ss.jpg
+lede: supermoon-ss.jpg
 wordpress_id: 1475
 tags:
   - blog

@@ -6,7 +6,7 @@ layout: post
 link: /2012/01/darktable-book-maintenance-release-v1-1-1/
 slug: darktable-book-maintenance-release-v1-1-1
 title: "darktable Book Maintenance Release (v1.1.1)"
-wordpress_lede: img_0001_30.jpg
+lede: img_0001_30.jpg
 wordpress_id: 970
 tags:
   - announcement

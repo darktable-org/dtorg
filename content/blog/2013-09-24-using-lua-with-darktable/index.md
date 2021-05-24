@@ -6,7 +6,7 @@ layout: post
 link: /2013/09/using-lua-with-darktable/
 slug: using-lua-with-darktable
 title: "Using Lua with darktable"
-wordpress_lede: img_0057.jpg
+lede: img_0057.jpg
 wordpress_id: 3036
 tags:
   - upcoming feature

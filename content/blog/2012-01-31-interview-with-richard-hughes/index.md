@@ -6,7 +6,7 @@ layout: post
 link: /2012/01/interview-with-richard-hughes/
 slug: interview-with-richard-hughes
 title: "Interview with Richard Hughes"
-wordpress_lede: colorhug1.jpg
+lede: colorhug1.jpg
 wordpress_id: 1017
 tags:
   - further reading

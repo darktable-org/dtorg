@@ -6,7 +6,7 @@ layout: post
 link: /2012/02/using-lowpass-filter-to-recover-shadows/
 slug: using-lowpass-filter-to-recover-shadows
 title: "Using lowpass filter to recover shadows"
-wordpress_lede: lp-thumb.jpg
+lede: lp-thumb.jpg
 wordpress_id: 1131
 tags:
   - blog

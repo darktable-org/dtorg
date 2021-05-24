@@ -6,7 +6,7 @@ layout: post
 link: /2011/02/released-0-8/
 slug: released-0-8
 title: "released 0.8"
-wordpress_lede: donau.jpg
+lede: donau.jpg
 wordpress_id: 225
 tags:
   - announcement

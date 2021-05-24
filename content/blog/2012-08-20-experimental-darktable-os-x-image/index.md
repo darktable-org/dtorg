@@ -6,7 +6,7 @@ layout: post
 link: /2012/08/experimental-darktable-os-x-image/
 slug: experimental-darktable-os-x-image
 title: "Experimental darktable OS X image"
-wordpress_lede: spider.jpg
+lede: spider.jpg
 wordpress_id: 1959
 tags:
   - announcement

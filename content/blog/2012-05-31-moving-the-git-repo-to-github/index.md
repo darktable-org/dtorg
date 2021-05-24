@@ -6,7 +6,7 @@ layout: post
 link: /2012/05/moving-the-git-repo-to-github/
 slug: moving-the-git-repo-to-github
 title: "Moving the git repo to github [done]"
-wordpress_lede: IMG_5841_export_01.jpg
+lede: IMG_5841_export_01.jpg
 wordpress_id: 1707
 tags:
   - announcement

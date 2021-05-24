@@ -6,7 +6,7 @@ layout: post
 link: /2012/01/color-management-on-linux/
 slug: color-management-on-linux
 title: "Color Management On Linux"
-wordpress_lede: img_0001_29.jpg
+lede: img_0001_29.jpg
 wordpress_id: 996
 tags:
   - further reading

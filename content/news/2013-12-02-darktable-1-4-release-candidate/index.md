@@ -6,7 +6,7 @@ layout: post
 link: /2013/12/darktable-1-4-release-candidate/
 slug: darktable-1-4-release-candidate
 title: darktable 1.4 release candidate
-wordpress_lede: oasis.png
+lede: oasis.png
 wordpress_id: 3133
 tags:
   - announcement

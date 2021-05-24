@@ -6,7 +6,7 @@ layout: post
 link: /2012/03/darktable-and-opencl/
 slug: darktable-and-opencl
 title: "darktable and OpenCL (updated)"
-wordpress_lede: ocl-menu-thumb.jpeg
+lede: ocl-menu-thumb.jpeg
 wordpress_id: 1279
 tags:
   - blog

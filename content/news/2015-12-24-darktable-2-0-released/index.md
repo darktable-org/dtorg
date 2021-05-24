@@ -6,7 +6,7 @@ layout: post
 link: /2015/12/darktable-2-0-released/
 slug: darktable-2-0-released
 title: darktable 2.0 released
-wordpress_lede: Christmas_Moon.jpg
+lede: Christmas_Moon.jpg
 wordpress_id: 3912
 tags:
   - announcement

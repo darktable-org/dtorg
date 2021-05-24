@@ -6,7 +6,7 @@ layout: post
 link: /2012/07/fixed-darktable-crashing-unity/
 slug: fixed-darktable-crashing-unity
 title: "Fixed: darktable crashing Unity"
-wordpress_lede: SAM_1890.jpg
+lede: SAM_1890.jpg
 wordpress_id: 1813
 tags:
   - announcement

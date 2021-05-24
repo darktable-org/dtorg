@@ -6,7 +6,7 @@ layout: post
 link: /2013/03/released-1-2rc2/
 slug: released-1-2rc2
 title: released 1.2rc2
-wordpress_lede: pohutekawa.jpg
+lede: pohutekawa.jpg
 wordpress_id: 2827
 tags:
   - announcement

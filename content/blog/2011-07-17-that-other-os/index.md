@@ -6,7 +6,7 @@ layout: post
 link: /2011/07/that-other-os/
 slug: that-other-os
 title: "That other OS"
-wordpress_lede: windoos.jpg
+lede: windoos.jpg
 wordpress_id: 321
 tags:
   - development

@@ -6,7 +6,7 @@ layout: post
 link: /2012/02/shadow-recovery-revisited/
 slug: shadow-recovery-revisited
 title: "Shadow recovery revisited"
-wordpress_lede: sh-thumb.sm_.jpg
+lede: sh-thumb.sm_.jpg
 wordpress_id: 1175
 tags:
   - blog

@@ -6,7 +6,7 @@ layout: post
 link: /2011/11/released-0-9-3/
 slug: released-0-9-3
 title: "Released 0.9.3"
-wordpress_lede: img_0001_23.jpg
+lede: img_0001_23.jpg
 wordpress_id: 941
 tags:
   - darktable release

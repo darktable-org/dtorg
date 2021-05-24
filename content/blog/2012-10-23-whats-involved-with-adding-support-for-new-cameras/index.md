@@ -6,7 +6,7 @@ layout: post
 link: /2012/10/whats-involved-with-adding-support-for-new-cameras/
 slug: whats-involved-with-adding-support-for-new-cameras
 title: "What's involved with adding support for new cameras"
-wordpress_lede: camera.jpg
+lede: camera.jpg
 wordpress_id: 2300
 tags:
   - blog

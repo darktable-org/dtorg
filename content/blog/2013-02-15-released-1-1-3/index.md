@@ -6,7 +6,7 @@ layout: post
 link: /2013/02/released-1-1-3/
 slug: released-1-1-3
 title: "released 1.1.3"
-wordpress_lede: img_0012.jpg
+lede: img_0012.jpg
 wordpress_id: 2743
 tags:
   - announcement

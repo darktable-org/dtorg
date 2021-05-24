@@ -1,12 +1,15 @@
-title: darktable 3.4: Encore!
+---
+title: "darktable 3.4: Encore!"
 author: the darktable team
 slug: darktable-3-4
 date: 2020-12-24
 lede: deer.jpg
 lede_author: Chris Elston
-tags: announcement, darktable-release
-
-Translations of this article: [German](https://www.bilddateien.de/blog/2020-12-24-darktable-3-4-weiteres-update.html), [French](https://darktable.fr/2020/12/darktable-3-4-la-revolution-colorimetrique-continue/), [Italian](https://www.mauriziopaglia.it/darktable-3-4-encore/)
+tags:
+  - announcement
+  - darktable-release
+---
+Translations of this article: [German](https://www.bilddateien.de/blog/2020-12-24-darktable-3-4-weiteres-update.html), [French](https://darktable.fr/2020/12/darktable-3-4-la-revolution-colorimetrique-continue/)
 
 Happy holidays everyone -- it's time for your favourite Christmast gift. This is the second major release of 2020 from the darktable project following the early release of darktable 3.2 in August, and we've been busy: between the darktable, rawspeed, and dtdocs repos, there have been more than 5,500 commits in 2020!
 

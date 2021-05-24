@@ -1,11 +1,14 @@
+---
 author: Pascal Obry
 date: 2020-12-24 10:30:23+00:00
 layout: post
 title: darktable 3.4.0 released
 lede: archi.jpg
 lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
-tags: announcement, darktable release
-
+tags:
+  - announcement
+  - darktable release
+---
 We're proud to announce the new feature release of darktable, 3.4.0!
 
 The github release is here: [https://github.com/darktable-org/darktable/releases/tag/release-3.4.0](https://github.com/darktable-org/darktable/releases/tag/release-3.4.0).

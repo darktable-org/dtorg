@@ -1,5 +1,5 @@
 Title: contact
-Date: 2017-09-21T15:10:23-06:00
+Date: 2021-06-14T17:00:00-00:00
 author: smn
 wordpress_id: 124
 lede: lede-contact.jpg
@@ -7,21 +7,24 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 # Find us on...
 
-[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
+[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Mastodon](https://mastodon.social/@darktable)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
 
 # How to get in contact
 ![sun]({attach}sun.jpg)
 
-Use our mailing lists! Please subscribe instead of just sending mails to the lists&nbsp;– we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
+If you require assistance with using darktable we recommend that you create an account at [discuss.pixls.us](https://discuss.pixls.us). Many of darktable's developers and users are there and are very welcoming to new users.
 
-  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): bugs, ideas, patches, translations&nbsp;– all goes here. This is also the right place to report vulnerabilities. If you are interested in technical details, choose this list. posts are made by subscribers only, subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
-  * [users mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): for all concerns of a darktable user: usage questions, experience reports&nbsp;... posts are made by subscribers only, subscribe via email to `darktable-user+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
-  * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/): read-only, messages from automated test builds. `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
+If you want to report a bug or suggest a new feature, please [raise an issue](https://github.com/darktable-org/darktable/issues/new/choose).
 
-Join us on IRC! You will find us at _irc.oftc.net_, channel _#darktable_. There is also a [web interface](https://webchat.oftc.net/?channels=%23darktable) available.
+If you wish to contribute code or provide a translation, please [raise a pull request](https://github.com/darktable-org/darktable/pulls).
 
-Every file released by darktable as of version 1.4.1 gets signed with the GPG key with the fingerprint `C4CB C150 6999 56E2 A326 8EF5 BB5C C829 5B17 79C9` for the signing part. The fingerprint is also in the topic of the IRC channel to cross-check.
+You can also join us on IRC! You will find us at _irc.oftc.net_, channel _#darktable_. There is also a [web interface](https://webchat.oftc.net/?channels=%23darktable) available.
 
+For all other comments/questions you can subscribe to one of our mailing lists. Ideally the mailing lists should be your last resort - the above communication methods are usually more actively monitored. Please keep emails short and to the point and do not include attachments. Please subscribe instead of just sending mails to the lists&nbsp;– we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
+
+  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): For discussions of a technical nature and information about upcoming releases. Posts are made by subscribers only - subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
+  * [user mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): For questions about how to use darktable: usage questions, experience reports. Posts are made by subscribers only - subscribe via email to `darktable-user+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
+  * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/): Read-only, messages from automated test builds. `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
 
 # Developers / darktable Team
 ![sails]({attach}sails.jpg)

@@ -18,7 +18,7 @@ Use our mailing lists! Please subscribe instead of just sending mails to the lis
   * [users mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): for all concerns of a darktable user: usage questions, experience reports&nbsp;... posts are made by subscribers only, subscribe via email to `darktable-user+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
   * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/): read-only, messages from automated test builds. `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
 
-Join us on IRC! You will find us at _irc.freenode.net_, channel _#darktable_. There is also a [web interface](https://webchat.freenode.net/?channels=%23darktable) available.
+Join us on IRC! You will find us at _irc.oftc.net_, channel _#darktable_. There is also a [web interface](https://webchat.oftc.net/?channels=%23darktable) available.
 
 Every file released by darktable as of version 1.4.1 gets signed with the GPG key with the fingerprint `C4CB C150 6999 56E2 A326 8EF5 BB5C C829 5B17 79C9` for the signing part. The fingerprint is also in the topic of the IRC channel to cross-check.
 

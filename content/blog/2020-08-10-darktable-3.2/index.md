@@ -8,6 +8,8 @@ lede_author: AlicVB
 tags:
   - announcement
   - darktable-release
+aliases:
+    - /2020/08/darktable-3-2/  
 ---
 In other languages:
 [Français](https://linuxfr.org/news/darktable-3-2-l-effet-confinement),

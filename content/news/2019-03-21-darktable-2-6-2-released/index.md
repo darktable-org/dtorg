@@ -8,6 +8,8 @@ lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2019/03/darktable-262-released/  
 ---
 we’re proud to announce the second bugfix release for the 2.6 series of darktable, 2.6.2!
 

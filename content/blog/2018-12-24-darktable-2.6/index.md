@@ -8,6 +8,8 @@ lede_author: <a href="https://matthieu-moy.fr/">Matthieu Moy</a>
 tags:
   - announcement
   - darktable-release
+aliases:
+    - /2018/12/darktable-26/  
 ---
 In other languages:
 [Français](https://linuxfr.org/news/darktable-2-6-0),

@@ -8,6 +8,8 @@ lede_author: <a href="https://www.flickr.com/photos/philipphaegi/">Philipp Haegi
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2018/01/darktable-241-released/
 ---
 we’re proud to announce the first bugfix release for the 2.4 series of darktable, 2.4.1!
 

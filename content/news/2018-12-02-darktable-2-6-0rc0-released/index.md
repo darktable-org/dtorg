@@ -8,6 +8,8 @@ lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2018/12/darktable-260rc0-released/
 ---
 we're proud to announce the first release candidate for the upcoming 2.6 series of darktable, 2.6.0rc0!
 

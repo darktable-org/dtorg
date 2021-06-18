@@ -8,6 +8,8 @@ lede_author: <a href="http://photo.aurelienpierre.com/">Aurélien Pierre</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2019/12/darktable-300-released/
 ---
 We're proud to announce the new feature release of darktable, 3.0.0!
 

@@ -8,6 +8,8 @@ lede_author: <a href="https://www.flickr.com/photos/andabata">Kees Guequierre</a
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2018/03/darktable-242-released/
 ---
 we’re proud to announce the second bugfix release for the 2.4 series of darktable, 2.4.2!
 

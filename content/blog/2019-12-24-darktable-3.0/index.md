@@ -8,6 +8,8 @@ lede_author: Nicolas Auffray
 tags:
   - announcement
   - darktable-release
+aliases:
+    - /2019/12/darktable-30/  
 ---
 In other languages:
 [Français](https://linuxfr.org/news/darktable-3-0-une-version-plus-que-majeure),

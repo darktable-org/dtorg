@@ -8,6 +8,8 @@ lede_author: <a href="https://houz.org/">houz</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2018/04/darktable-243-released/
 ---
 we’re proud to announce the third bugfix release for the 2.4 series of darktable, 2.4.3!
 

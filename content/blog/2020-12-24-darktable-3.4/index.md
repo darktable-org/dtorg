@@ -8,6 +8,8 @@ lede_author: Chris Elston
 tags:
   - announcement
   - darktable-release
+aliases:
+    - /2020/12/darktable-3-4/  
 ---
 Translations of this article: [German](https://www.bilddateien.de/blog/2020-12-24-darktable-3-4-weiteres-update.html), [French](https://darktable.fr/2020/12/darktable-3-4-la-revolution-colorimetrique-continue/)
 

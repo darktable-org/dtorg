@@ -8,6 +8,8 @@ lede_author: <a href="http://jpverrue.fr/">Jean-Pierre Verrue</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2019/11/darktable-300rc2-released/
 ---
 We're proud to announce the third release candidate for the upcoming 3.0 series of darktable, 3.0.0rc2!
 

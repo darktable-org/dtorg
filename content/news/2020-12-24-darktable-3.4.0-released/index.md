@@ -8,6 +8,8 @@ lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2020/12/darktable-340-released/
 ---
 We're proud to announce the new feature release of darktable, 3.4.0!
 

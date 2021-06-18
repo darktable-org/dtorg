@@ -10,7 +10,7 @@ Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-0
 
 The darktable team is proud to announce our second summer feature release, darktable 3.6. Merry (summer) Christmas!
 
-This is the first of two release this year and, from here on in, we intend to issue two new feature releases each year, around the summer and winter solstices.
+This is the first of two releases this year and, from here on, we intend to issue two new feature releases each year, around the summer and winter solstices.
 
 As usual, all of the new features are fully documented in the [user manual](https://darktable.org/usermanual/3.6/en). The manual is still English-only for now, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and an epub version is now available.
 
@@ -18,13 +18,13 @@ As usual, all of the new features are fully documented in the [user manual](http
 
 ### Quick access panel 
 
-The *quick access panel* is a replacement for *basic adjustments* and then some. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics. 
+The *quick access panel* is a replacement for *basic adjustments*. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics. 
 
-This new implementation is GUI only-- controls and pixel filters still belong to their respective modules and can be properly moved along the pipeline individually using their original, linked, module.
+This new implementation is GUI only -- controls and pixel filters still belong to their respective modules and can be properly moved along the pipeline individually using their original, linked, module.
 
 ### Module groups enhancements
 
-Modules can now be quickly added to or removed from a module group by right-clicking on the group tabs. This avoids the need to modify the group in the maintenance window, but bear in mind it doesn't yet update your custom presets. You can also quickly access the *module group maintenance* window by Ctrl+clicking on the preset menu icon.
+Modules can now be quickly added to or removed from a module group by right-clicking on the group tabs. This avoids the need to modify the group in the maintenance window, but bear in mind it doesn't yet update your custom presets. You can also quickly access the *module group maintenance* window by `Ctrl`+clicking on the preset menu icon.
 
 The *module group maintenance* window has also been enhanced to include setup for the quick access panel. You can now auto-apply module group presets depending on the type of image you are editing.
 
@@ -62,7 +62,7 @@ A new interface has been added to the color calibration module that allows you t
 
 The same interface can also be used as a quality control, to measure the color deviation over the color checker. This is useful to assert the quality of a generic input ICC profile, for example.
 
-X-Rite/Gretag Macbeth Passport 24 (pre-2014 and post-2014) and Spyder ColorCheckr 24 and 48 (pre-2018 and post-2018) are currently supported. We do not plan to let users add their own charts, and only reference charts  from reputable manufacturers will be added to the library in the future.
+X-Rite/Gretag Macbeth Passport 24 (pre-2014 and post-2014) and Spyder ColorCheckr 24 and 48 (pre-2018 and post-2018) are currently supported. We do not plan to let users add their own charts, and only reference charts from reputable manufacturers will be added to the library in the future.
 
 Note that this tool is intended to refine the standard input color profile of the camera in the current lighting situation, not to replace it or to create generic ICC profiles. 
 
@@ -146,7 +146,7 @@ Some things that the vectorscope cannot do:
 
 The header line of processing modules has been amended to include a mask indicator, for those modules where a drawn or parametric mask has been used. You can click on this icon to show or hide the mask.
 
-A number of processing modules include drawn elements (e.g. the charts in _filmic rgb_ or the spline curves in the _contrast equalizer_). These elements default to a 16:9 aspect ratio but can be resized by hovering your mouse over them and scrolling with the mouse's scroll wheel while holding Ctrl.
+A number of processing modules include drawn elements (e.g. the charts in _filmic rgb_ or the spline curves in the _contrast equalizer_). These elements default to a 16:9 aspect ratio but can be resized by hovering your mouse over them and scrolling with the mouse's scroll wheel while holding `Ctrl`.
 
 ## Performance
 
@@ -187,8 +187,8 @@ The "collect images" module has been renamed to "collections" in darktable 3.6 i
 While in folder view you can toggle between various views of the images in that folder as follows:
 
 - Double-click to show only the images in the selected folder 
-- Ctrl+click to show only the images from any sub-folders
-- Shift+click to show the images from the current folder plus all sub-folders
+- `Ctrl`+click to show only the images from any sub-folders
+- `Shift`+click to show the images from the current folder plus all sub-folders
 
 ## Map and Geotagging Changes
 
@@ -211,7 +211,7 @@ A number of changes have been made to the map module and the layout of the geota
 
 Our next release is already being planned for December. Here are some of the things you can look forward to:
 
-- All new method of defining shortcuts, that can be used with a much wider range of input devices, including midi controllers
+- A new method of defining shortcuts, that can be used with a much wider range of input devices, including midi controllers
 - Diffuse/Sharpen module
 - More enhancements to the histogram module
 - Changes to the print view to allow multiple images to be displayed

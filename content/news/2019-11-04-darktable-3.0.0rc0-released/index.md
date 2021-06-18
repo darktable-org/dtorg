@@ -8,6 +8,8 @@ lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2019/11/darktable-300rc0-released/
 ---
 we're proud to announce the first release candidate for the upcoming 3.0 series of darktable, 3.0.0rc0!
 

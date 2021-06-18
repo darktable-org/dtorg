@@ -8,6 +8,8 @@ lede_author: <a href="https://houz.org/">houz</a>
 tags:
   - announcement
   - darktable release
+aliases:
+    - /2017/12/darktable-240-released/
 ---
 we're proud to finally announce the new feature release of darktable, 2.4.0!
 

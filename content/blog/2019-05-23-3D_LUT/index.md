@@ -7,6 +7,8 @@ lede: CollegialeSaint-Thiebaut.jpg
 lede_author: <a href="http://ph-wd.com/piwigo/">Philippe Weyland</a>
 tags:
   - announcement
+aliases:
+    - /2019/05/new-module-lut3d/  
 ---
 The *lut3d* module will be introduced in darktable 3.0 and is designed to apply a *3D LUT* (LookUp Table) to an image.
 

@@ -10,21 +10,21 @@ Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-0
 
 The darktable team is proud to announce our second summer feature release, darktable 3.6. Merry (summer) Christmas!
 
-This is the first of two releases this year and, from here on in, we intend to issue two new feature releases each year, around the summer and winter solstices.
+This is the first of two releases this year and, from here on, we intend to issue two new feature releases each year, around the summer and winter solstices.
 
 As usual, all the new features are fully documented in the [user manual](https://darktable.org/usermanual/3.6/en). The manual is still English-only for now, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and an epub version is now available.
 
 ## Module Groups & Quick Access Panel
 
-### Quick access panel 
+### Quick access panel
 
-The *quick access panel* is a replacement for *basic adjustments* and then some. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics. 
+The *quick access panel* is a replacement for *basic adjustments* and much more. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics.
 
-This new implementation is GUI only-- controls and pixel filters still belong to their respective modules and can be properly moved along the pipeline individually using their original, linked, module.
+This new implementation is GUI only -- controls and pixel filters still belong to their respective modules and can be properly moved along the pipeline individually using their original, linked, module.
 
 ### Module groups enhancements
 
-Modules can now be quickly added to or removed from a module group by right-clicking on the group tabs. This avoids the need to modify the group in the maintenance window, but bear in mind it doesn't yet update your custom presets. You can also quickly access the *module group maintenance* window by Ctrl+clicking on the preset menu icon.
+Modules can now be quickly added to or removed from a module group by right-clicking on the group tabs. This avoids the need to modify the group in the maintenance window, but bear in mind it doesn't yet update your custom presets. You can also quickly access the *module group maintenance* window by `Ctrl`+clicking on the preset menu icon.
 
 The *module group maintenance* window has also been enhanced to include setup for the quick access panel. You can now auto-apply module group presets depending on the type of image you are editing.
 
@@ -34,7 +34,7 @@ Now that scene-referred image processing is virtually feature-complete in darkta
 
 ### New spline in Filmic RGB
 
-A new interpolation method, dubbed *safe*, is the new default to build the characteristic "S" shaped tone curve. This method uses a rational polynomial (similar to the Michaelis-Menten equation) which prevents the under- and over-shooting that sometimes occurs with high contrast and latitude when using the "hard" and "soft" interpolation methods. 
+A new interpolation method, dubbed *safe*, is the new default to build the characteristic "S" shaped tone curve. This method uses a rational polynomial (similar to the Michaelis-Menten equation) which prevents the under- and over-shooting that sometimes occurs with high contrast and latitude when using the "hard" and "soft" interpolation methods.
 
 The trade-off is that this method gives muted contrast near white and black (unless the latitude is increased), but allows much more drastic settings on the user-side without nasty side effects on the curve.
 
@@ -42,7 +42,7 @@ The trade-off is that this method gives muted contrast near white and black (unl
 
 The *color balance RGB* module brings several unique innovations to help colorists edit pictures in a cinematographic way and with a refined level of control in a scene-referred and HDR-able workflow.
 
-First, it sanitizes the color gamut in the RGB working space at the output of the module and internally between each color space conversion. This ensures that color-grading does not push colors outside the valid range, which could happen quickly when increasing saturation (as in the former color balance module). This makes daring color editing a lot safer and enables the creation of rich colors that won't degrade into artifacts later. 
+First, it sanitizes the color gamut in the RGB working space at the output of the module and internally between each color space conversion. This ensures that color-grading does not push colors outside the valid range, which could happen quickly when increasing saturation (as in the former color balance module). This makes daring color editing a lot safer and enables the creation of rich colors that won't degrade into artifacts later.
 
 Second, it uses luminance masks that explicitly split the image into real shadows, highlights and midtones, so they can be color-graded separately. The classic slope/offset/power settings mostly affect highlights, shadows, and midtones implicitly, as an algorithmic side effect. The internal color algorithm is the usual slope/offset/power where the slope has been decomposed into two parts -- a shadows lift and a highlights gain -- each applied separately on different luminance masks. The luminance masks are user-defined and viewable to allow complete and transparent control over the regions where the grading settings apply.
 
@@ -62,9 +62,9 @@ A new interface has been added to the color calibration module that allows you t
 
 The same interface can also be used as a quality control, to measure the color deviation over the color checker. This is useful to assert the quality of a generic input ICC profile, for example.
 
-X-Rite/Gretag Macbeth Passport 24 (pre-2014 and post-2014) and Spyder ColorCheckr 24 and 48 (pre-2018 and post-2018) are currently supported. We do not plan to let users add their own charts, and only reference charts  from reputable manufacturers will be added to the library in the future.
+X-Rite/Gretag Macbeth Passport 24 (pre-2014 and post-2014) and Spyder ColorCheckr 24 and 48 (pre-2018 and post-2018) are currently supported. We do not plan to let users add their own charts, and only reference charts from reputable manufacturers will be added to the library in the future.
 
-Note that this tool is intended to refine the standard input color profile of the camera in the current lighting situation, not to replace it or to create generic ICC profiles. 
+Note that this tool is intended to refine the standard input color profile of the camera in the current lighting situation, not to replace it or to create generic ICC profiles.
 
 This feature makes color adjustments a lot faster and a lot more reliable, enabling darktable use in exigent color pipelines and professional setups, or simply allowing a fast correction of undesirable color casts and low-CRI lighting.
 
@@ -72,9 +72,9 @@ darktable 3.6 also introduces an OpenCL kernel for color calibration, which shou
 
 ## Censorization Module
 
-The censorization modules allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts. 
+The censorization modules allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts.
 
-It applies physically realistic Gaussian blur and Gaussian noise in linear RGB. As such, it can also be used for various creative effects, including Orton effect (blooming). 
+It applies physically realistic Gaussian blur and Gaussian noise in linear RGB. As such, it can also be used for various creative effects, including Orton effect (blooming).
 
 Note that the censorization module does not prevent forensic reconstruction of the censorized parts (using machine-learning and AI). For real forensic-level anonymization, you need to paint solid colors over the sensitive parts.
 
@@ -92,7 +92,7 @@ The existing crop & rotate module is becoming very hard to maintain, mostly beca
 
 A new [Ratio-Corrected Demosaicing](https://github.com/LuisSR/RCD-Demosaicing) (RCD) algorithm has been added for Bayer array sensors. This is essentially an improvement over the AMaZE method, offering almost the same amount of detail recovery but with fewer artifacts. Notably, low-ISO and astro-photographs will be smoother and noise will appear less grainy. This method is also orders of magnitude faster than AMaZE and an OpenCL version is provided for GPU execution.
 
-To take advantage of the strengths of different demosaicing methods, "dual demosaicing" modes have been added, similarly to RawTherapee. This allows the use of different algorithms on different parts of the image, depending on content. 
+To take advantage of the strengths of different demosaicing methods, "dual demosaicing" modes have been added, similarly to RawTherapee. This allows the use of different algorithms on different parts of the image, depending on content.
 
 ### Details mask refinement
 
@@ -102,7 +102,7 @@ A new parametric masking option has been added to include or exclude sharp edges
 
 The masks GUI has been improved. The "reversed" blending modes are now accessible from an "invert" icon and the blurring (using Gaussian blur) and feathering (using edge-aware guided filter) mask refining steps can be applied in a user-defined order.
 
-The darktable default for blending modes is to apply the module output over the module input with some optional transparency (using classical [alpha compositing](https://en.wikipedia.org/wiki/Alpha_compositing) and assuming a fully opaque input). The reversed modes will instead apply the input over the output. 
+The darktable default for blending modes is to apply the module output over the module input with some optional transparency (using classical [alpha compositing](https://en.wikipedia.org/wiki/Alpha_compositing) and assuming a fully opaque input). The reversed modes will instead apply the input over the output.
 
 As of darktable 3.4, the mask feathering (using a guided filter) was always applied before the mask blurring (using a Gaussian blur). Both techniques aim at ensuring contiguous image regions are masked continuously, without holes, especially in the presence of noise and when using chromaticity masks. However, the Gaussian blur is not edge-aware and can leak out of the boundaries of masked regions, producing edge halos in some situations, whereas the guided filter is taped closely to edges. While the Gaussian blur is more effective to deal with noise, using it after the guided filter voids the edge-awareness of the latter. Applying in reversed order may help to more aggressively correct noise while still retaining the edge-aware properties of the guided filter (use small blurring radii).
 
@@ -114,7 +114,7 @@ The existing *chromatic aberrations* module has been renamed "raw chromatic aber
 
 ### New module
 
-A new *chromatic aberrations* module has been added. This module works in RGB after demosaicing and is therefore available for all images and sensors. It brings a new filtering technique (inspired by [adaptive manifolds](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), published in 2012) that allows it to guide, more or less, closely two of the RGB channels with the third, to ensure the gradients of all 3 channels are correlated. Note that chromatic aberrations happen either because gradients of the RGB channels are slightly spatially shifted in the image w.r.t one another, either because gradients are more blurry in a channel than in others. 
+A new *chromatic aberrations* module has been added. This module works in RGB after demosaicing and is therefore available for all images and sensors. It brings a new filtering technique (inspired by [adaptive manifolds](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), published in 2012) that allows it to guide, more or less, closely two of the RGB channels with the third, to ensure the gradients of all 3 channels are correlated. Note that chromatic aberrations happen either because gradients of the RGB channels are slightly spatially shifted in the image w.r.t one another, either because gradients are more blurry in a channel than in others.
 
 The radius of the neighborhood used for correcting gradients and the strength of the correction are user-defined. This works much better on large chromatic aberrations (above f/2.8) than the old module and regularizes some of the noise as a side effect. It can also be used with several instances using different guiding strategies to overcome the most difficult cases without producing gray fringes at edges.
 
@@ -146,7 +146,7 @@ Some things that the vectorscope cannot do:
 
 The header line of processing modules has been amended to include a mask indicator, for those modules where a drawn or parametric mask has been used. You can click on this icon to show or hide the mask.
 
-A number of processing modules include drawn elements (e.g., the charts in _filmic rgb_ or the spline curves in the _contrast equalizer_). These elements default to a 16:9 aspect ratio, but can be resized by hovering your mouse over them and scrolling with the mouse's scroll wheel while holding Ctrl.
+A number of processing modules include drawn elements (e.g., the charts in _filmic rgb_ or the spline curves in the _contrast equalizer_). These elements default to a 16:9 aspect ratio, but can be resized by hovering your mouse over them and scrolling with the mouse's scroll wheel while holding `Ctrl`.
 
 ## Performance
 
@@ -160,7 +160,7 @@ The following modules are deprecated because they have internal design weaknesse
 
 - Spot removal (Replaced by _Retouch_)
 - Vibrance (Now part of _Color Balance RGB_)
-- Basic adjustments (Replaced by the [Quick Access Panel](#quick access panel)) 
+- Basic adjustments (Replaced by the [Quick Access Panel](#quick access panel))
 - Defringe (Replaced by the new _Chromatic Aberrations_ module, see above)
 
 These modules are retained to preserve old edits, but will be no longer available for new edits with the next release.
@@ -186,9 +186,9 @@ The "collect images" module has been renamed to "collections" in darktable 3.6 i
 
 While in folder view, you can toggle between various views of the images in that folder as follows:
 
-- Double-click to show only the images in the selected folder 
-- Ctrl+click to show only the images from any sub-folders
-- Shift+click to show the images from the current folder plus all sub-folders
+- Double-click to show only the images in the selected folder
+- `Ctrl`+click to show only the images from any sub-folders
+- `Shift`+click to show the images from the current folder plus all sub-folders
 
 ## Map and Geotagging Changes
 
@@ -211,7 +211,7 @@ A number of changes have been made to the map module and the layout of the geota
 
 Our next release is already being planned for December. Here are some of the things you can look forward to:
 
-- All new method of defining shortcuts, that can be used with a much wider range of input devices, including midi controllers
+- A new method of defining shortcuts, that can be used with a much wider range of input devices, including midi controllers
 - Diffuse/Sharpen module
 - More enhancements to the histogram module
 - Changes to the print view to allow multiple images to be displayed

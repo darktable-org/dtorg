@@ -10,9 +10,9 @@ Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-0
 
 The darktable team is proud to announce our second summer feature release, darktable 3.6. Merry (summer) Christmas!
 
-This is the first of two release this year and, from here on in, we intend to issue two new feature releases each year, around the summer and winter solstices.
+This is the first of two releases this year and, from here on in, we intend to issue two new feature releases each year, around the summer and winter solstices.
 
-As usual, all of the new features are fully documented in the [user manual](https://darktable.org/usermanual/3.6/en). The manual is still English-only for now, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and an epub version is now available.
+As usual, all the new features are fully documented in the [user manual](https://darktable.org/usermanual/3.6/en). The manual is still English-only for now, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and an epub version is now available.
 
 ## Module Groups & Quick Access Panel
 
@@ -36,29 +36,29 @@ Now that scene-referred image processing is virtually feature-complete in darkta
 
 A new interpolation method, dubbed *safe*, is the new default to build the characteristic "S" shaped tone curve. This method uses a rational polynomial (similar to the Michaelis-Menten equation) which prevents the under- and over-shooting that sometimes occurs with high contrast and latitude when using the "hard" and "soft" interpolation methods. 
 
-The trade-off is that this method gives muted contrast near white and black (unless the latitude is increased), but allows much more drastic settings on the user-side without nasty side-effects on the curve.
+The trade-off is that this method gives muted contrast near white and black (unless the latitude is increased), but allows much more drastic settings on the user-side without nasty side effects on the curve.
 
 ### Color balance RGB
 
 The *color balance RGB* module brings several unique innovations to help colorists edit pictures in a cinematographic way and with a refined level of control in a scene-referred and HDR-able workflow.
 
-First, it sanitizes the color gamut in the RGB working space at the output of the module and internally between each color space conversion. This ensures that color-grading does not push colors outside of the valid range, which could happen quickly when increasing saturation (as in the former color balance module). This makes daring color editing a lot safer and enables the creation of rich colors that won't degrade into artifacts later. 
+First, it sanitizes the color gamut in the RGB working space at the output of the module and internally between each color space conversion. This ensures that color-grading does not push colors outside the valid range, which could happen quickly when increasing saturation (as in the former color balance module). This makes daring color editing a lot safer and enables the creation of rich colors that won't degrade into artifacts later. 
 
-Second, it uses luminance masks that explicitly split the image into real shadows, highlights and midtones so they can be color-graded separately. The classic slope/offset/power settings mostly affect highlights, shadows, and midtones implicitly, as an algorithmic side-effect. The internal color algorithm is the usual slope/offset/power where the slope has been decomposed into two parts -- a shadows lift and a highlights gain -- each applied separately on different luminance masks. The luminance masks are user-defined and viewable to allow complete and transparent control over the regions where the grading settings apply.
+Second, it uses luminance masks that explicitly split the image into real shadows, highlights and midtones, so they can be color-graded separately. The classic slope/offset/power settings mostly affect highlights, shadows, and midtones implicitly, as an algorithmic side effect. The internal color algorithm is the usual slope/offset/power where the slope has been decomposed into two parts -- a shadows lift and a highlights gain -- each applied separately on different luminance masks. The luminance masks are user-defined and viewable to allow complete and transparent control over the regions where the grading settings apply.
 
-Third, the module introduces a real "saturation" setting that honors the Munsell and CIE (International Commission on Illumination) definition of saturation: colorfulness relative to lightness. Note that, in 99% of software, what is called "saturation" is a setting that actually corrects chroma (colorfulness irrespective of lightness). While desaturating (in real saturation) also brightens and allows you to reach pastel colors (red degrades to pink), chroma reduction takes place at constant lightness and allows you only to reach a shade of gray with the same luminance (red degrades to grey), which is quite unpleasant and inconsistent with painting. A chroma setting is also provided. Both saturation and chroma settings can be tuned globally and separately for shadows, midtones and highlights, using the luminance masks.
+Third, the module introduces a real "saturation" setting that honors the Munsell and CIE (International Commission on Illumination) definition of saturation: colorfulness relative to lightness. Note that, in 99% of software, what is called "saturation" is a setting that actually corrects chroma (colorfulness irrespective of lightness). While desaturating (in real saturation) also brightens and allows you to reach pastel colors (red degrades to pink), chroma reduction takes place at constant lightness and allows you only to reach a shade of gray with the same luminance (red degrades to gray), which is quite unpleasant and inconsistent with painting. A chroma setting is also provided. Both saturation and chroma settings can be tuned globally and separately for shadows, midtones and highlights, using the luminance masks.
 
-Finally, the linear color-grading takes place in a specific RGB color space (published in 2019) to exhibit a uniform repartition of Munsell hues across the luminance range. This makes all color corrections uniform and well-behaved across hues, which is generally not the case for standard RGB spaces (sRGB/Rec709, Rec2020, ProPhoto RGB, etc.). The perceptual part of the color-grading uses the JzAzBz space (published in 2017), which is already used in scene-linear parametric masks. This is a fully-perceptual color space (similar to CIE Lab 1976) suitable for HDR signals up to 10,000 Cd/m². Pushing chroma or saturation keeps the hue unchanged, which can be easily ascertained with the new vectorscope graph ([see below](#Vectorscope)), and has not previously been the case with other chroma and saturation settings in darktable.
+Finally, the linear color-grading takes place in a specific RGB color space (published in 2019) to exhibit a uniform repartition of Munsell hues across the luminance range. This makes all color corrections uniform and well-behaved across hues, which is generally not the case for standard RGB spaces (sRGB/Rec709, Rec2020, ProPhoto RGB, etc.). The perceptual part of the color-grading uses the JzAzBz space (published in 2017), which is already used in scene-linear parametric masks. This is a fully perceptual color space (similar to CIE Lab 1976) suitable for HDR signals up to 10,000 Cd/m². Pushing chroma or saturation keeps the hue unchanged, which can be easily ascertained with the new vectorscope graph ([see below](#Vectorscope)), and has not previously been the case with other chroma and saturation settings in darktable.
 
-Vibrance and contrast settings have been ported from other modules to take advantage of the special RGB space used in color balance RGB, making it the all-purpose hub for all things color in darktable 3.6, with modern, perceptually-accurate and HDR-able color science inside.
+Vibrance and contrast settings have been ported from other modules to take advantage of the special RGB space used in color balance RGB, making it the all-purpose hub for all things color in darktable 3.6, with modern, perceptually accurate and HDR-able color science inside.
 
 The color balance RGB module is provided with an OpenCL kernel for GPU offloading that is 6× to 22× faster than the CPU implementation, depending on hardware.
 
 ### Color calibration: add color checker support
 
-Color checkers are well-known tools in the industry that consist of a hardware array of reference color patches, to be shot on-location, and used to ensure color constancy and accuracy over a series of pictures no matter the lighting conditions or the camera used.
+Color checkers are well-known tools in the industry, that consist of a hardware array of reference color patches, to be shot on-location, and used to ensure color constancy and accuracy over a series of pictures no matter the lighting conditions or the camera used.
 
-A new interface has been added to the color calibration module that allows you to quickly extract the best white balance and RGB mixer settings from a color checker image, to minimize the color deviation of the image. An internal solver computes the best-suited settings following user-set strategies, for example to minimize the deviation or some hues in priority, or in average. A report gives the user feedback on the quality of the fitting, showing the average and maximum delta E of the remaining color-deviation after calibration. The computed settings can then be defined as presets or copy&pasted to all photos taken in the same lighting conditions, as a primary color-grading.
+A new interface has been added to the color calibration module that allows you to quickly extract the best white balance and RGB mixer settings from a color checker image, to minimize the color deviation of the image. An internal solver computes the best-suited settings following user-set strategies, for example to minimize the deviation or some hues in priority, or in average. A report gives the user feedback on the quality of the fitting, showing the average and maximum delta E of the remaining color-deviation after calibration. The computed settings can then be defined as presets or copy-pasted to all photos taken in the same lighting conditions, as a primary color-grading.
 
 The same interface can also be used as a quality control, to measure the color deviation over the color checker. This is useful to assert the quality of a generic input ICC profile, for example.
 
@@ -72,9 +72,9 @@ darktable 3.6 also introduces an OpenCL kernel for color calibration, which shou
 
 ## Censorization Module
 
-The censorization modules allows you to quickly blur and pixellate parts of an image, in an aesthetically-pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts. 
+The censorization modules allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts. 
 
-It applies physically-realistic gaussian blur and gaussian noise in linear RGB. As such, it can also be used for various creative effects, including Orton effect (blooming). 
+It applies physically realistic Gaussian blur and Gaussian noise in linear RGB. As such, it can also be used for various creative effects, including Orton effect (blooming). 
 
 Note that the censorization module does not prevent forensic reconstruction of the censorized parts (using machine-learning and AI). For real forensic-level anonymization, you need to paint solid colors over the sensitive parts.
 
@@ -82,9 +82,9 @@ Note that the censorization module does not prevent forensic reconstruction of t
 
 A number of enhancements have been made so that the pipeline can better handle shapes and distorting modules.
 
-When shapes are drawn on the image they are actually drawn on the original raw image co-ordinates and then distorted through the pipe along with your image. This can mean, for example, that straight gradient lines appear curved, or circular masks are drawn as ellipses. In darktable 3.6 you will see these distortions in your drawn shapes _before_ you place them on your image and while you are editing any already-placed shapes. The retouch module has also been enhanced to better manage distortions in the source and target shapes. In addition, the gradient mask can now have its curvature set before it is placed on the image.
+When shapes are drawn on the image, they are actually drawn on the original raw image coordinates and then distorted through the pipe along with your image. This can mean, for example, that straight gradient lines appear curved, or circular masks are drawn as ellipses. In darktable 3.6 you will see these distortions in your drawn shapes _before_ you place them on your image and while you are editing any already-placed shapes. The retouch module has also been enhanced to better manage distortions in the source and target shapes. In addition, the gradient mask can now have its curvature set before it is placed on the image.
 
-The existing crop & rotate module is becoming very hard to maintain, mostly because it tries to do three things (crop, rotate, keystone) at the same time and the code to do this has become very convoluted. As part of a project to improve and replace crop & rotate, a new module, crop, has been created. This module has been placed after the retouch module in the pipeline so that retouch can use source spots outside of the cropped image area. You are recommended to use the new module for cropping and, for now, to use the original crop & rotate module for rotation and keystone correction only.
+The existing crop & rotate module is becoming very hard to maintain, mostly because it tries to do three things (crop, rotate, keystone) at the same time and the code to do this has become very convoluted. As part of a project to improve and replace crop & rotate, a new module, crop, has been created. This module has been placed after the retouch module in the pipeline so that retouch can use source spots outside the cropped image area. You are recommended to use the new module for cropping and, for now, to use the original crop & rotate module for rotation and keystone correction only.
 
 ## Demosaic & Details Mask
 
@@ -92,19 +92,19 @@ The existing crop & rotate module is becoming very hard to maintain, mostly beca
 
 A new [Ratio-Corrected Demosaicing](https://github.com/LuisSR/RCD-Demosaicing) (RCD) algorithm has been added for Bayer array sensors. This is essentially an improvement over the AMaZE method, offering almost the same amount of detail recovery but with fewer artifacts. Notably, low-ISO and astro-photographs will be smoother and noise will appear less grainy. This method is also orders of magnitude faster than AMaZE and an OpenCL version is provided for GPU execution.
 
-To take advantage of the strengths of different demosaicing methods, "dual demosaicing" modes have been added in a similar manner as Rawtherapee, allowing you to use different algorithms on different parts of the image, depending on content. 
+To take advantage of the strengths of different demosaicing methods, "dual demosaicing" modes have been added, similarly to RawTherapee. This allows the use of different algorithms on different parts of the image, depending on content. 
 
 ### Details mask refinement
 
-A new parametric masking option has been added to include or exclude sharp edges and details from parametric masks. This is mostly useful to apply sharpening and blurring effects that ignore out-of-focus (bokeh) regions or, alternatively, to sharpen only the blurry parts, preventing over-sharpening of in-focus regions. This option is only available for RAW files as it depends on details from demosaic stage.
+A new parametric masking option has been added to include or exclude sharp edges and details from parametric masks. This is mostly useful to apply sharpening and blurring effects that ignore out-of-focus (bokeh) regions or, alternatively, to sharpen only the blurry parts, preventing over-sharpening of in-focus regions. This option is only available for RAW files, as it depends on details from demosaic stage.
 
 ## Masks refactoring
 
-The masks GUI has been improved. The "reversed" blending modes are now accessible from an "invert" icon and the blurring (using gaussian blur) and feathering (using edge-aware guided filter) mask refining steps can be applied in a user-defined order.
+The masks GUI has been improved. The "reversed" blending modes are now accessible from an "invert" icon and the blurring (using Gaussian blur) and feathering (using edge-aware guided filter) mask refining steps can be applied in a user-defined order.
 
 The darktable default for blending modes is to apply the module output over the module input with some optional transparency (using classical [alpha compositing](https://en.wikipedia.org/wiki/Alpha_compositing) and assuming a fully opaque input). The reversed modes will instead apply the input over the output. 
 
-As of darktable 3.4, the mask feathering (using a guided filter) was always applied before the mask blurring (using a gaussian blur). Both techniques aim at ensuring contiguous image regions are masked continuously, without holes, especially in the presence of noise and when using chromaticity masks. However, the gaussian blur is not edge-aware and can leak out of the boundaries of masked regions, producing edge halos in some situations, whereas the guided filter is taped closely to edges. While the gaussian blur is more effective to deal with noise, using it after the guided filter voids its edge-awareness. Applying in reversed order may help to more aggressively correct noise while still retaining the edge-aware properties of the guided filter (use small blurring radii).
+As of darktable 3.4, the mask feathering (using a guided filter) was always applied before the mask blurring (using a Gaussian blur). Both techniques aim at ensuring contiguous image regions are masked continuously, without holes, especially in the presence of noise and when using chromaticity masks. However, the Gaussian blur is not edge-aware and can leak out of the boundaries of masked regions, producing edge halos in some situations, whereas the guided filter is taped closely to edges. While the Gaussian blur is more effective to deal with noise, using it after the guided filter voids the edge-awareness of the latter. Applying in reversed order may help to more aggressively correct noise while still retaining the edge-aware properties of the guided filter (use small blurring radii).
 
 ## Chromatic Aberrations
 
@@ -114,9 +114,9 @@ The existing *chromatic aberrations* module has been renamed "raw chromatic aber
 
 ### New module
 
-A new *chromatic aberrations* module has been added. This module works in RGB after demosaicing and is therefore available for all images and sensors. It brings a new filtering technique (inspired by [adaptative manifolds](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), published in 2012) that allows it to guide, more or less, closely two of the RGB channels with the third, to ensure the gradients of all 3 channels are correlated. Note that chromatic aberrations happen either because gradients of the RGB channels are slightly spatially shifted in the image w.r.t one another, either because gradients are more blurry in a channel than in others. 
+A new *chromatic aberrations* module has been added. This module works in RGB after demosaicing and is therefore available for all images and sensors. It brings a new filtering technique (inspired by [adaptive manifolds](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), published in 2012) that allows it to guide, more or less, closely two of the RGB channels with the third, to ensure the gradients of all 3 channels are correlated. Note that chromatic aberrations happen either because gradients of the RGB channels are slightly spatially shifted in the image w.r.t one another, either because gradients are more blurry in a channel than in others. 
 
-The radius of the neighborhood used for correcting gradients and the strength of the correction are user-defined. This works much better on large chromatic aberrations (above f/2.8) than the old module and regularizes some of the noise as a side-effect. It can also be used with several instances using different guiding strategies to overcome the most difficult cases without producing grey fringes at edges.
+The radius of the neighborhood used for correcting gradients and the strength of the correction are user-defined. This works much better on large chromatic aberrations (above f/2.8) than the old module and regularizes some of the noise as a side effect. It can also be used with several instances using different guiding strategies to overcome the most difficult cases without producing gray fringes at edges.
 
 ### Lens correction
 
@@ -131,22 +131,22 @@ The graph represents color "volume" by rendering the more frequently used colors
 
 A graticule marks the primaries/secondaries of the histogram profile. A "hue ring" represents the maximum possible chroma of each hue (in bounded RGB) in the histogram profile.
 
-The vectorscope can describe the image in either the [CIELUV colorspace](https://en.wikipedia.org/wiki/CIELUV) (a well-known standard) or [JzAzBz](https://www.osapublishing.org/oe/fulltext.cfm?uri=oe-25-13-15131&id=368272) (generally more perceptually accurate but slower to calculate). It can represent chroma either in a linear (accurate to the color model) or logarithmic scale (to understand low-chroma images).
+The vectorscope can describe the image in either the [CIELUV color space](https://en.wikipedia.org/wiki/CIELUV) (a well-known standard) or [JzAzBz](https://www.osapublishing.org/oe/fulltext.cfm?uri=oe-25-13-15131&id=368272) (generally more perceptually accurate but slower to calculate). It can represent chroma either in a linear (accurate to the color model) or logarithmic scale (to understand low-chroma images).
 
-This tool, originally used in video editors, is useful for color-matching different images in a series by showing what the dominant colors are. This means that users only have to ensure the consistency of dominant colors between frames. It can also be used to analyse, teach and further understand the effects of module settings on image colors.
+This tool, originally used in video editors, is useful for color-matching different images in a series by showing what the dominant colors are. This means that users only have to ensure the consistency of dominant colors between frames. It can also be used to analyze, teach and further understand the effects of module settings on image colors.
 
 Some things that the vectorscope cannot do:
 
 - The hue ring is not a gamut check, as a color can be within the hue ring, yet out of gamut due to its darkness/lightness.
 - When adjusting an image based upon a color checker, faster and more accurate results will come from using the new "calibrate with a color checker" option in *color calibration* ([see above](#Color-calibrationnbspadd-color-checker-support)).
-- The vectorscope does not have a "skin tone line." Skin tone varies in chromaticity, hence any such line would inevitably represent a presupposition. Furthermore (see next point) this scope does not provide specific guidance to correct for specific image content.
+- The vectorscope does not have a "skin tone line." Skin tone varies in chromaticity, hence any such line would inevitably represent a presupposition. Furthermore (see next point), this scope does not provide specific guidance to correct for specific image content.
 - The vectorscope represents a colorimetric encoding of an image, which inevitably diverges from a viewer's perception of the image.
 
 ## Darkroom UI Amendments
 
 The header line of processing modules has been amended to include a mask indicator, for those modules where a drawn or parametric mask has been used. You can click on this icon to show or hide the mask.
 
-A number of processing modules include drawn elements (e.g. the charts in _filmic rgb_ or the spline curves in the _contrast equalizer_). These elements default to a 16:9 aspect ratio but can be resized by hovering your mouse over them and scrolling with the mouse's scroll wheel while holding Ctrl.
+A number of processing modules include drawn elements (e.g., the charts in _filmic rgb_ or the spline curves in the _contrast equalizer_). These elements default to a 16:9 aspect ratio, but can be resized by hovering your mouse over them and scrolling with the mouse's scroll wheel while holding Ctrl.
 
 ## Performance
 
@@ -160,8 +160,8 @@ The following modules are deprecated because they have internal design weaknesse
 
 - Spot removal (Replaced by _Retouch_)
 - Vibrance (Now part of _Color Balance RGB_)
-- Basic adjustments (Replaced by the [Quick Access Panel](#quick access panel) 
-- Defringe (Replaced by the new _Chromatic Abberations_ module, see above)
+- Basic adjustments (Replaced by the [Quick Access Panel](#quick access panel)) 
+- Defringe (Replaced by the new _Chromatic Aberrations_ module, see above)
 
 These modules are retained to preserve old edits, but will be no longer available for new edits with the next release.
 
@@ -182,9 +182,9 @@ Furthermore, a problem regarding the star rating during import has been fixed. H
 
 ### Collect
 
-The "collect images" module has been renamed to "collections" in darktable 3.6 in order to provide clarity and consistency with other modules. You can now toggle between folder and filmroll view by clicking an entry while holding `Ctrl`+`Shift`.
+The "collect images" module has been renamed to "collections" in darktable 3.6 in order to provide clarity and consistency with other modules. You can now toggle between folder and film roll view by clicking an entry while holding `Ctrl`+`Shift`.
 
-While in folder view you can toggle between various views of the images in that folder as follows:
+While in folder view, you can toggle between various views of the images in that folder as follows:
 
 - Double-click to show only the images in the selected folder 
 - Ctrl+click to show only the images from any sub-folders
@@ -199,13 +199,13 @@ A number of changes have been made to the map module and the layout of the geota
 - blend shortcuts: you can now use keyboard shortcuts to access blending controls
 - preferences: some preferences have been moved out of the global preferences menu to options within the "presets" menu in the individual modules
 - tagging: A quick way to organize the tag structure is to drag and drop the tags. In the _tree_ view mode, you can drag any tag (node or leaf) and drop it on top of another one (node or leaf). The first tag and its descendants, if any, become descendants of the second tag. Dragging over a node automatically opens the node
-- presets: Pressing the "export" button at the bottom of the _Preferences_/_Presets_ window will allow you to export all of your presets (excluding predefined presets) to a chosen directory.
+- presets: Pressing the "export" button at the bottom of the _Preferences_/_Presets_ window will allow you to export all your presets (excluding predefined presets) to a chosen directory.
 - You can now use the reset button on the styles module to remove all styles
-- Within the lighttable view, you can now switch display mode using a newly-designed suite of icons. These replace the previous drop-down menu.
-- The export module has been added to left-hand panel in the darkroom
+- Within the lighttable view, you can now switch display mode using a newly designed suite of icons. These replace the previous drop-down menu.
+- The export module has been added to the left-hand panel in the darkroom
 - You can now create a new instance of a module with a given preset by right-clicking on the preset name (instead of middle-click as it was in 3.4). This should make this shortcut accessible to more users.
 - The prompt that appears before exporting in overwrite mode is now optional
-- zoom scaling on 4K and high-DPi displays is fixed, so 100% zoom level is now 1:1 pixel no matter the viewport pixel scaling.
+- zoom scaling on 4K and high-DPI displays is fixed, so 100% zoom level is now 1:1 pixel no matter the viewport pixel scaling.
 
 ## What's Next
 

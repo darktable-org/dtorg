@@ -68,11 +68,11 @@ Note that this tool is intended to refine the standard input color profile of th
 
 This feature makes color adjustments a lot faster and a lot more reliable, enabling darktable use in exigent color pipelines and professional setups, or simply allowing a fast correction of undesirable color casts and low-CRI lighting.
 
-darktable 3.6 also introduces an OpenCL kernel for color calibration, which should be 0.3× to 8× faster than CPU path, depending on hardware.
+darktable 3.6 also introduces an OpenCL kernel for color calibration, which should be 0.3× to 8× faster than the CPU path, depending on hardware.
 
 ## Censorization Module
 
-The censorization modules allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts.
+The censorization module allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts.
 
 It applies physically realistic Gaussian blur and Gaussian noise in linear RGB. As such, it can also be used for various creative effects, including Orton effect (blooming).
 
@@ -84,7 +84,7 @@ A number of enhancements have been made so that the pipeline can better handle s
 
 When shapes are drawn on the image, they are actually drawn on the original raw image coordinates and then distorted through the pipe along with your image. This can mean, for example, that straight gradient lines appear curved, or circular masks are drawn as ellipses. In darktable 3.6 you will see these distortions in your drawn shapes _before_ you place them on your image and while you are editing any already-placed shapes. The retouch module has also been enhanced to better manage distortions in the source and target shapes. In addition, the gradient mask can now have its curvature set before it is placed on the image.
 
-The existing crop & rotate module is becoming very hard to maintain, mostly because it tries to do three things (crop, rotate, keystone) at the same time and the code to do this has become very convoluted. As part of a project to improve and replace crop & rotate, a new module, crop, has been created. This module has been placed after the retouch module in the pipeline so that retouch can use source spots outside the cropped image area. You are recommended to use the new module for cropping and, for now, to use the original crop & rotate module for rotation and keystone correction only.
+The existing crop & rotate module is becoming very hard to maintain, mostly because it tries to do three things (crop, rotate, keystone) at the same time, and the code to do this has become very convoluted. As part of a project to improve and replace crop & rotate, a new module, crop, has been created. This module has been placed after the retouch module in the pipeline so that retouch can use source spots outside the cropped image area. You are recommended to use the new module for cropping and, for now, to use the original crop & rotate module for rotation and keystone correction only.
 
 ## Demosaic & Details Mask
 

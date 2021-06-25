@@ -332,7 +332,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Spanish
 </td>
-<td>Jose Carlos Garcia Sogo, Tatica Leandro
+<td>Jose Carlos Garcia Sogo, Tatica Leandro, Alejandro Criado-Pérez
 </td>
 </tr>
 <tr>

@@ -13,6 +13,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 <a href='#opensuse' title='openSUSE'><img class='chooseos' alt="opensuse" src="{filename}/images/OS/opensuse.jpg"></a>
 <a href='#arch' title='Arch'><img class='chooseos' alt="arch" src="{filename}/images/OS/arch.jpg"></a>
 <a href='#gentoo' title='Funtoo/Gentoo'><img class='chooseos' alt="gentoo" src="{filename}/images/OS/gentoo.jpg"></a>
+<a href='#nixos' title='NixOS'><img class='chooseos' alt="nixos" src="{filename}/images/OS/nixos.jpg"></a>
 <a href='#rhel' title='RHEL 6 / SL 6 / CentOS 6'><img class='chooseos' alt="macosx" src="{filename}/images/OS/scientificlinux.jpg"></a>
 <a href='#macos' title='macOS'><img class='chooseos' alt="macosx" src="{filename}/images/OS/macosx.jpg"></a>
 <a href='#debian' title='Debian'><img class='chooseos' alt="debian" src="{filename}/images/OS/debian.png"></a>
@@ -72,6 +73,15 @@ If you need a newer version than what is included in your distribution, check ou
 darktable is in portage!
 
     # emerge darktable
+    $ darktable
+
+<h2 id='nixos'>NixOS</h2>
+![nixos]({filename}/images/OS/nixos.jpg)
+
+darktable is in nixpkgs!
+Add it to your `configuration.nix` or install with `nix-env`.
+
+    # nix-env -iA nixos.darktable
     $ darktable
 
 <h2 id='rhel'>RHEL / Scientific Linux / Centos</h2>

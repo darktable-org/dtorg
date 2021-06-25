@@ -12,7 +12,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 
 * <a name="faq-contact"></a>**What's the best way to contact the developers/report bugs?**<a href="#faq-contact" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    For fast discussions and short questions it's best to visit us in IRC (on Freenode, channel #darktable), especially in the Western European evening hours. If you don't want to use IRC, don't know what it is or want something less transient you can use our mailing lists. See our [contact page]({filename}/pages/contact.md).
+    For fast discussions and short questions it's best to visit us in IRC (on _irc.oftc.net_, channel #darktable), especially in the Western European evening hours. If you don't want to use IRC, don't know what it is or want something less transient you can use our mailing lists. See our [contact page]({filename}/pages/contact.md).
 
 * <a name="faq-red-borders"></a>**After updating my system I suddenly see red borders and giant buttons everywhere!**<a href="#faq-red-borders" class="anchor" title="Link to this FAQ entry">¶</a>
 

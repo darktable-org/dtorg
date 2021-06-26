@@ -215,7 +215,8 @@ A number of changes have been made to the [map view] (https://darktable.org/user
 Our next release is already being planned for December. Here are some of the things you can look forward to:
 
 - A new method of defining shortcuts, that can be used with a much wider range of input devices, including midi controllers
-- Diffuse/Sharpen module
+- A new diffuse/sharpen module, which uses a physical model for particle diffusion, modified for edge-awareness. This module can be used to add or revert atmospheric hazing, lens blur, inpaint clipped highlights or damaged image parts, or create artistic effects like watercolor painting or line drawing
 - More enhancements to the histogram module
 - Changes to the print view to allow multiple images to be displayed
 - Further improvements to color handling within the pixelpipe
+- A new LMMSE demosaic algorithm, that is particularly suited to high-ISO images

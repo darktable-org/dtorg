@@ -14,7 +14,7 @@ This is the first of two releases this year and, from here on, we intend to issu
 
 ## Documentation
 
-As usual, all of the new features are fully documented in the [user manual](https://darktable.org/usermanual/stable/en), which is now available in epub format along with the existing online and pdf versions. Help links within darktable have been updated to point to the new manual and the old version will now be officially discontinued. The user manual is still English-only for the moment, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and we expect other languages to be available in time for darktable 3.8. 
+Thanks to countless hours of work of very dedicated contributors, all of the new features are fully documented in time in the [user manual](https://darktable.org/usermanual/stable/en), which is now available in epub format along with the existing online and pdf versions. Help links within darktable have been updated to point to the new manual and the old version will now be officially discontinued. The user manual is still English-only for the moment, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and we expect other languages to be available in time for darktable 3.8. 
 
 This time we are also launching a new version of the lua documentation, [here](https://www.darktable.org/lua-docs/3.6/).
 

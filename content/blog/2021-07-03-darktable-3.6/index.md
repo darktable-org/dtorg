@@ -2,8 +2,8 @@ title: darktable 3.6: Summer Release 2021
 author: the darktable team
 slug: darktable-3-6
 date: 2021-07-03
-lede: --
-lede_author: --
+lede: trona-pinacles-ir.jpg
+lede_author: paperdigits
 tags: announcement, darktable-release
 
 Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-03-darktable-3-6-weiteres-update.html), [French](https://darktable.fr/2021/06/darktable-3-6-sortie-de-la-version-ete-2021)

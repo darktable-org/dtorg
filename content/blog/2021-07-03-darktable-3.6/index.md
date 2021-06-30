@@ -14,7 +14,7 @@ This is the first of two releases this year and, from here on, we intend to issu
 
 ## Documentation
 
-Thanks to countless hours of work of very dedicated contributors, all of the new features are fully documented in time in the [user manual](https://darktable.org/usermanual/stable/en), which is now available in epub format along with the existing online and pdf versions. Help links within darktable have been updated to point to the new manual and the old version will now be officially discontinued. The user manual is still English-only for the moment, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and we expect other languages to be available in time for darktable 3.8.
+Thanks to countless hours of work of very dedicated contributors, all of the new features are fully documented in time in the [user manual](https://www.darktable.org/usermanual/3.6/en), which is now available in epub format along with the existing online and pdf versions. Help links within darktable have been updated to point to the new manual and the old version will now be officially discontinued. The user manual is still English-only for the moment, but translations are in progress ([here](https://darktable-org.github.io/dtdocs/)) and we expect other languages to be available in time for darktable 3.8.
 
 This time we are also launching a new version of the lua documentation, [here](https://www.darktable.org/lua-docs/3.6/).
 
@@ -22,7 +22,7 @@ This time we are also launching a new version of the lua documentation, [here](h
 
 ### Quick Access Panel
 
-The [*quick access panel*](https://darktable.org/usermanual/stable/en/darkroom/organization/quick-access-panel/) is a replacement for the *basic adjustments* module and much more. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics.
+The [*quick access panel*](https://www.darktable.org/usermanual/3.6/en/darkroom/organization/quick-access-panel/) is a replacement for the *basic adjustments* module and much more. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics.
 
 ![quick access panel](quick-access-panel.png)
 
@@ -32,7 +32,7 @@ This new implementation is GUI only -- controls and pixel filters still belong t
 
 Modules can now be quickly added to or removed from a module group by right-clicking on the group tabs. This avoids the need to modify the group in the maintenance window, but bear in mind that it doesn't yet update your custom presets. You can also quickly access the *manage module layouts* window by `Ctrl`+clicking on the preset menu icon.
 
-The [*manage module layouts*](https://darktable.org/usermanual/stable/en/darkroom/organization/manage-module-layouts/) window has also been enhanced to include setup for the quick access panel. You can also now auto-apply module group presets depending on the type of image you are editing.
+The [*manage module layouts*](https://www.darktable.org/usermanual/3.6/en/darkroom/organization/manage-module-layouts/) window has also been enhanced to include setup for the quick access panel. You can also now auto-apply module group presets depending on the type of image you are editing.
 
 ## Color Science Modules
 
@@ -46,7 +46,7 @@ The trade-off is that this method gives muted contrast near white and black (unl
 
 ### Color balance RGB
 
-The [*color balance RGB*](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/color-balance-rgb/) module brings several unique innovations to help colorists edit pictures in a cinematographic way and with a refined level of control in a scene-referred and HDR-ready workflow.
+The [*color balance RGB*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/color-balance-rgb/) module brings several unique innovations to help colorists edit pictures in a cinematographic way and with a refined level of control in a scene-referred and HDR-ready workflow.
 
 ![color balance rgb module](color-balance-rgb.png)
 
@@ -68,7 +68,7 @@ Color checkers are well-known tools in the industry, consisting of a hardware ar
 
 ![color checker target](color-checker.png)
 
-A new interface has been added to the [*color calibration*](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/color-calibration/#extracting-settings-using-a-color-checker) module that allows you to quickly extract the best white balance and RGB mixer settings from a color checker image, to minimize color deviation. An internal solver computes the best-suited settings following user-set strategies, for example to minimize the deviation or some hues in priority, or in average. A report gives the user feedback on the quality of the fitting, showing the average and maximum delta E of the remaining color-deviation after calibration. The computed settings can then be defined as presets or copy-pasted to all photos taken in the same lighting conditions, as a primary color-grading.
+A new interface has been added to the [*color calibration*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/color-calibration/#extracting-settings-using-a-color-checker) module that allows you to quickly extract the best white balance and RGB mixer settings from a color checker image, to minimize color deviation. An internal solver computes the best-suited settings following user-set strategies, for example to minimize the deviation or some hues in priority, or in average. A report gives the user feedback on the quality of the fitting, showing the average and maximum delta E of the remaining color-deviation after calibration. The computed settings can then be defined as presets or copy-pasted to all photos taken in the same lighting conditions, as a primary color-grading.
 
 The same interface can also be used as a quality control, to measure the color deviation over the color checker. This is useful to assert the quality of a generic input ICC profile, for example.
 
@@ -82,7 +82,7 @@ darktable 3.6 also introduces an OpenCL kernel for color calibration, which shou
 
 ## Censorize Module
 
-The [*censorize*](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/censorize/) module allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts.
+The [*censorize*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/censorize/) module allows you to quickly blur and pixelate parts of an image, in an aesthetically pleasing way, for anonymization purposes and to comply with social media regulations regarding body parts.
 
 It applies physically realistic Gaussian blur and Gaussian noise in linear RGB. As such, it can also be used for various creative effects, including the Orton effect (bloom).
 
@@ -94,13 +94,13 @@ A number of enhancements have been made so that the pipeline can better handle s
 
 When shapes are drawn on the image, they are actually drawn on the original raw image coordinates and then distorted through the pipe along with the underlying image. This can mean, for example, that straight gradient lines appear curved, or circular masks are drawn as ellipses. In darktable 3.6 you will see these distortions in your drawn shapes _before_ you place them on your image and while you are editing any already-placed shapes. The retouch module has also been enhanced to better manage distortions in the source and target shapes. In addition, the gradient mask can now have its curvature set before it is placed on the image, and with greater accuracy.
 
-The existing *crop & rotate* module is becoming very hard to maintain, mostly because it tries to do three things (crop, rotate, keystone) at the same time, and the code to do this has become very convoluted. As part of an ongoing project to improve and replace crop & rotate, a new module, [*crop*](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/crop/), has been created. This module has been placed after the retouch module in the pipeline so that retouch can use source spots outside of the cropped image area. You are recommended to use the new module for cropping and, for now, to use the original *crop & rotate* module for rotation and keystone correction only.
+The existing *crop & rotate* module is becoming very hard to maintain, mostly because it tries to do three things (crop, rotate, keystone) at the same time, and the code to do this has become very convoluted. As part of an ongoing project to improve and replace crop & rotate, a new module, [*crop*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/crop/), has been created. This module has been placed after the retouch module in the pipeline so that retouch can use source spots outside of the cropped image area. You are recommended to use the new module for cropping and, for now, to use the original *crop & rotate* module for rotation and keystone correction only.
 
 ## Demosaic & Details Mask
 
 ### New Demosaic Algorithms
 
-A new [Ratio-Corrected Demosaicing](https://github.com/LuisSR/RCD-Demosaicing) (RCD) algorithm has been added to the [*demosaic*](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/demosaic/) module for Bayer array sensors. This is essentially an improvement over the AMaZE method, offering almost the same amount of detail recovery but with fewer artifacts. Notably, low-ISO and astro-photographs will be smoother and noise will appear less grainy. This method is also orders of magnitude faster than AMaZE and an OpenCL version is provided for GPU execution.
+A new [Ratio-Corrected Demosaicing](https://github.com/LuisSR/RCD-Demosaicing) (RCD) algorithm has been added to the [*demosaic*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/demosaic/) module for Bayer array sensors. This is essentially an improvement over the AMaZE method, offering almost the same amount of detail recovery but with fewer artifacts. Notably, low-ISO and astro-photographs will be smoother and noise will appear less grainy. This method is also orders of magnitude faster than AMaZE and an OpenCL version is provided for GPU execution.
 
 To take advantage of the strengths of different demosaicing methods, new "dual demosaicing" modes have also been added, similarly to RawTherapee. This allows the use of different algorithms on different parts of the image, depending on content.
 
@@ -122,11 +122,11 @@ As of darktable 3.4, the mask feathering (using a guided filter) was always appl
 
 ### Old Module
 
-The existing *chromatic aberrations* module has been renamed [*raw chromatic aberrations*](https://darktable.org/usermanual/stable/en/module-reference/processing-modules/raw-chromatic-aberrations/) and now has a new option to prevent color shifts. Note that this module only works for Bayer sensors and is therefore limited in usefulness.
+The existing *chromatic aberrations* module has been renamed [*raw chromatic aberrations*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/raw-chromatic-aberrations/) and now has a new option to prevent color shifts. Note that this module only works for Bayer sensors and is therefore limited in usefulness.
 
 ### New Module
 
-A new [*chromatic aberrations*] (https://darktable.org/usermanual/stable/en/module-reference/processing-modules/chromatic-aberrations/) module has been added. This module works in RGB after demosaicing and is therefore available for all images and sensor types. It brings a new filtering technique (inspired by [adaptive manifolds](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), published in 2012) that allows it to guide, more or less closely, two of the RGB channels with the third, to ensure the gradients of all 3 channels are correlated. Note that chromatic aberrations occur either because gradients of the RGB channels are slightly spatially shifted in the image with respect to one another, or because gradients are more blurry in one channel than in others.
+A new [*chromatic aberrations*] (https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/chromatic-aberrations/) module has been added. This module works in RGB after demosaicing and is therefore available for all images and sensor types. It brings a new filtering technique (inspired by [adaptive manifolds](https://www.inf.ufrgs.br/~eslgastal/AdaptiveManifolds/), published in 2012) that allows it to guide, more or less closely, two of the RGB channels with the third, to ensure the gradients of all 3 channels are correlated. Note that chromatic aberrations occur either because gradients of the RGB channels are slightly spatially shifted in the image with respect to one another, or because gradients are more blurry in one channel than in others.
 
 The radius of the neighborhood used for correcting gradients and the strength of the correction are user-defined. This works much better on large chromatic aberrations (above f/2.8) than the old module and regularizes some of the noise as a side effect. It can also be used with several instances using different guiding strategies to overcome the most difficult cases without producing gray fringes at edges.
 
@@ -136,7 +136,7 @@ The chromatic aberration correction that is built into the *lens correction* mod
 
 ## Vectorscope
 
-A [vectorscope](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/histogram/#vectorscope) view has been added as a complement to the histogram and waveform views. The vectorscope is a hue/chroma diagram that shows [chromaticity](https://en.wikipedia.org/wiki/Chromaticity) isolated from lightness or spatial information.
+A [vectorscope](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/shared/histogram/#vectorscope) view has been added as a complement to the histogram and waveform views. The vectorscope is a hue/chroma diagram that shows [chromaticity](https://en.wikipedia.org/wiki/Chromaticity) isolated from lightness or spatial information.
 
 ![vectorscope](vectorscope.png)
 
@@ -182,7 +182,7 @@ These modules have been retained to preserve old edits, but will be no longer av
 
 ### Import
 
-With the release of darktable 3.6 the two buttons *Image...* and *Directory...* buttons in the [import](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/lighttable/import/) module have been replaced by two new options:
+With the release of darktable 3.6 the two buttons *Image...* and *Directory...* buttons in the [import](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/lighttable/import/) module have been replaced by two new options:
 
 - The _add to library_ option takes images that already exist on your file system and adds them to the library database (this is the equivalent of the previous functionality).
 - The _copy & import_ option creates copies of images before importing those copies into the library. This will most often be used for images that are stored on an external data carrier like a memory card or camera and need to be copied to your local file system before import. You can choose to rename images as part of the copy process.
@@ -195,7 +195,7 @@ Furthermore, a problem regarding the star rating during import has been fixed. T
 
 ### Collect
 
-The "collect images" module has been renamed to [collections](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/collections/) in order to provide clarity and consistency with other modules. You can now toggle between folder and film roll view by clicking an entry while holding `Ctrl`+`Shift`.
+The "collect images" module has been renamed to [collections](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/shared/collections/) in order to provide clarity and consistency with other modules. You can now toggle between folder and film roll view by clicking an entry while holding `Ctrl`+`Shift`.
 
 While in folder view, you can toggle between various views of the images in that folder as follows:
 
@@ -205,7 +205,7 @@ While in folder view, you can toggle between various views of the images in that
 
 ## Map and Geotagging Changes
 
-A number of changes have been made to the [map view] (https://darktable.org/usermanual/stable/en/map/) and the layout of the [geotagging](https://darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/geotagging/) module has been updated in both the lighttable and map views.
+A number of changes have been made to the [map view] (https://www.darktable.org/usermanual/3.6/en/map/) and the layout of the [geotagging](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/shared/geotagging/) module has been updated in both the lighttable and map views.
 
 ## Others
 

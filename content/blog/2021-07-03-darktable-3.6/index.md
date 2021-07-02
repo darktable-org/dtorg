@@ -6,7 +6,7 @@ lede: trona-pinacles-ir.jpg
 lede_author: paperdigits
 tags: announcement, darktable-release
 
-Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-03-darktable-3-6-weiteres-update.html), [French](https://darktable.fr/2021/06/darktable-3-6-sortie-de-la-version-ete-2021)
+Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-03-darktable-3-6-weiteres-update.html), [French](https://darktable.fr/2021/07/darktable-3-6-sortie-de-la-version-ete-2021)
 
 The darktable team is proud to announce our second summer feature release, darktable 3.6. Merry (summer) Christmas!
 
@@ -205,7 +205,7 @@ While in folder view, you can toggle between various views of the images in that
 
 ## Map and Geotagging Changes
 
-A number of changes have been made to the [map view] (https://www.darktable.org/usermanual/3.6/en/map/) and the layout of the [geotagging](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/shared/geotagging/) module has been updated in both the lighttable and map views.
+A number of changes have been made to the [map view](https://www.darktable.org/usermanual/3.6/en/map/) and the layout of the [geotagging](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/shared/geotagging/) module has been updated in both the lighttable and map views.
 
 ## Others
 

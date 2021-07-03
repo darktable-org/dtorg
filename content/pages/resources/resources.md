@@ -12,9 +12,11 @@ Some commonly asked questions can be found in our [FAQ]({filename}/pages/about/f
 # User manual
 ![drop]({attach}drop.jpg)
 
-The new manual can be read here:
+The user  manual can be read here:
 
-  * [English](https://www.darktable.org/usermanual/en/)
+  * [English](https://www.darktable.org/usermanual/3.6/en/)
+
+Other languages are currently being translated and are targeted for release with version 3.8 in December 2021.
 
 In the following sections, you can find the old manual which will be discontinued after 3.4.
 

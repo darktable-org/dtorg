@@ -6,7 +6,7 @@ lede: trona-pinacles-ir.jpg
 lede_author: paperdigits
 tags: announcement, darktable-release
 
-Translations of this article: [German](https://www.bilddateien.de/blog/2021-07-03-darktable-3-6-weiteres-update.html), [French](https://darktable.fr/2021/07/darktable-3-6-sortie-de-la-version-ete-2021)
+Translations of this article: [German](https://www.bilddateien.de/blog/d2021-07-03-darktable-3-6-weiteres-update.html?q=darktable%203.6), [French](https://darktable.fr/2021/07/darktable-3-6-sortie-de-la-version-ete-2021)
 
 The darktable team is proud to announce our second summer feature release, darktable 3.6. Merry (summer) Christmas!
 

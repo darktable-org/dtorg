@@ -1,10 +1,14 @@
+---
 author: Pascal Obry
 date: 2021-07-03 08:50:00+00:00
 layout: post
-title: darktable 3.6.0 released
+title: "darktable 3.6.0 released"
 lede: reflet.jpg
 lede_author: <a href="http://photos.obry.net">Pascal Obry</a>
-tags: announcement, darktable release
+tags:
+  - announcement
+  - darktable release
+---
 
 We're proud to announce the new feature release of darktable, 3.6.0!
 

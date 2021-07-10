@@ -45,7 +45,7 @@ In addition, filmic RGB version 4 now works with OpenCL and highlight reconstruc
 
 The color revolution in darktable continues! This time, the _channel mixer_ module has been swallowed up by a new module, _color calibration_.
 
-![the color calibration module]({filename}color-calibration-module.png)
+![the color calibration module](color-calibration-module.png)
 
 There are a number of issues within the existing channel mixer module that cannot be resolved without adversely impacting older edits. At the same time as resolving all of these issues, the new module also offers improved white balancing, or _Chromatic Adaptation_.
 
@@ -71,7 +71,7 @@ Three new visualisation modes have been added to the filmic RGB module to aid us
 
 Of particular note is the _dynamic range mapping_ view. This view is inspired by the Ansel Adams Zone System, showing in 1-dimensional how the EV zones in the input scene are mapped to the output. Middle grey from the scene is, by default, mapped to 18% in the output (linear) space. This visualisation shows how the tonal ranges towards the extremes of the scene exposure range are compressed into a smaller number of zones in the display space, leaving more room for the mid-tones to be spread out over the remaining zones. This view has been designed to replace the usual tone curve view, which hides under a 2-dimensional graph the very important fact that what is tone is a 1-dimensional intensity shuffle from input range to output range.
 
-![the dynamic range mapping view]({filename}filmic-rgb-dyanmic-range-mapping.png)
+![the dynamic range mapping view](filmic-rgb-dyanmic-range-mapping.png)
 
 Please see the [user manual](https://www.darktable.org/usermanual/en/module-reference/processing-modules/filmic-rgb/) for more information.
 
@@ -79,7 +79,7 @@ Please see the [user manual](https://www.darktable.org/usermanual/en/module-refe
 
 One of the main issues with the current version of the Tone Equalizer module is that the guided filter algorithm tends to smooth the highlights much less than it smooths the shadows, and to be more sensitive to vertical/horizontal edges than to diagonal ones. The latest release of darktable introduces a new default exposure-independent guided filter (eigf) specially developed by the darktable team, that resolves some of these issues while also significantly improving the module's performance.
 
-![tone equalizer module's masking tab]({filename}tone-equlizer-masking.png)
+![tone equalizer module's masking tab](tone-equlizer-masking.png)
 
 The available smoothing algorithms for the 'preserve details' control are now as follows:
 
@@ -95,7 +95,7 @@ You can find detailed descriptions of the smoothing algorithms in the [documenta
 
 Currently, most blending modes clip pixel values at 100%, which makes them unsuited for scene-referred adjustments. Recall that a display-referred pipeline forces pixel values between 0 and 100%, relative to the display white luminance. This is a limitation for HDR imagery because it needs to be non-linearly force-fit into that range early in the pipe, losing color along the way. Scene-referred workflows keep pixel intensities unbounded for as long as possible and defer the non-linear range mapping to the last step in the pipe, allowing for correct alpha compositing and optical filters within the pipe, no matter the dynamic range of the scene.
 
-![the new blend modes]({filename}blend-modes.png)
+![the new blend modes](blend-modes.png)
 
 Also, RGB parametric masking uses an HSL color model, in which pixels greater than 100% will produce negative saturation. So, even with unbounded blending modes, it still does not work with scene-referred.
 
@@ -109,7 +109,7 @@ Along with these new blending capabilities, the parametric mask UI has been tidi
 
 # Module Groups
 
-![managing the module groups]({filename}module-groups.png)
+![managing the module groups](module-groups.png)
 
 Many users have requested customization of module groups, and now that feature is here! Processing modules in the darkroom can now be assigned to user-defined module groups. This replaces the previous "favourites" group and the "more modules" module with a tool that allows you to create your own module groups and presets based on your workflow. A number of default presets are included.  See [the manual](https://www.darktable.org/usermanual/en/darkroom/interacting-with-modules/search-and-group/) for details.
 
@@ -119,7 +119,7 @@ Currently, the darkroom's over-exposure preview highlights pixels where any of t
 
 darktable 3.4 replaces the over-exposure preview with a new "clipping warning" which combines the luminance and gamut clipping indicators into a single utility. Please see [the manual](https://www.darktable.org/usermanual/en/module-reference/utility-modules/darkroom/clipping/) for full documentation of this new mode. Note that the gamut warning is still available for now but is largely superseded by the new functionality.
 
-![the new clipping indicator]({filename}clipping-indicator.png)
+![the new clipping indicator](clipping-indicator.png)
 
 # Export Print Sizes
 
@@ -128,13 +128,13 @@ The lighttable export module now provides the ability to calculate the size of t
 - A scale factor, to be applied to the size of the original image (after cropping); or
 - The height and/or width of the exported image in inches or centimetres, along with the desired DPI
 
-![export file size in inches]({filename}export-file-size.png)
+![export file size in inches](export-file-size.png)
 
 # Map View Changes
 
 Great news for geotagging enthusiasts! Images that are close together are now grouped within the map view and a count of the grouped images displayed. This improves performance in situations where many images in a collection have location data stored. Mouse-scrolling over an image group cycles through the grouped images. Groups containing selected images are highlighted with a white border. The image count is displayed as a white number if all images of the group are exactly at the same place, and in yellow otherwise.
 
-![the new map view]({filename}map-view.png)
+![the new map view](map-view.png)
 
 A new [_locations_](https://www.darktable.org/usermanual/en/module-reference/utility-modules/map/locations/) module has been added, allowing you to create areas or locations and organize them using hierarchical tags.
 

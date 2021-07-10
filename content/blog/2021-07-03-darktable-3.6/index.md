@@ -28,7 +28,7 @@ This time we are also launching a new version of the lua documentation, [here](h
 
 The [*quick access panel*](https://www.darktable.org/usermanual/3.6/en/darkroom/organization/quick-access-panel/) is a replacement for the *basic adjustments* module and much more. This feature provides a new interface to the existing processing modules within a single unified layout. Users can add controls from _any_ module to the quick access panel for increased productivity and enhanced ergonomics.
 
-![quick access panel]({filename}quick-access-panel.png)
+![quick access panel](quick-access-panel.png)
 
 This new implementation is GUI only -- controls and pixel filters still belong to their respective modules and can be properly moved along the pipeline individually using their original, linked, module.
 
@@ -52,7 +52,7 @@ The trade-off is that this method gives muted contrast near white and black (unl
 
 The [*color balance RGB*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/color-balance-rgb/) module brings several unique innovations to help colorists edit pictures in a cinematographic way and with a refined level of control in a scene-referred and HDR-ready workflow.
 
-![color balance rgb module]({filename}color-balance-rgb.png)
+![color balance rgb module](color-balance-rgb.png)
 
 First, it sanitizes the color gamut in the RGB working space at the output of the module and internally between each color space conversion. This ensures that color-grading does not push colors outside of the valid range, which could happen quickly when increasing saturation (as in the former color balance module). This makes daring color editing a lot safer and enables the creation of rich colors that won't degrade into artifacts later.
 
@@ -70,7 +70,7 @@ The color balance RGB module is provided with an OpenCL kernel for GPU offloadin
 
 Color checkers are well-known tools in the industry, consisting of a hardware array of reference color patches, to be shot on-location, and used to ensure color constancy and accuracy over a series of pictures no matter the lighting conditions or the camera used.
 
-![color checker target]({filename}color-checker.png)
+![color checker target](color-checker.png)
 
 A new interface has been added to the [*color calibration*](https://www.darktable.org/usermanual/3.6/en/module-reference/processing-modules/color-calibration/#extracting-settings-using-a-color-checker) module that allows you to quickly extract the best white balance and RGB mixer settings from a color checker image, to minimize color deviation. An internal solver computes the best-suited settings following user-set strategies, for example to minimize the deviation or some hues in priority, or in average. A report gives the user feedback on the quality of the fitting, showing the average and maximum delta E of the remaining color-deviation after calibration. The computed settings can then be defined as presets or copy-pasted to all photos taken in the same lighting conditions, as a primary color-grading.
 
@@ -112,7 +112,7 @@ To take advantage of the strengths of different demosaicing methods, new "dual d
 
 A new parametric masking option has been added to allow you to include or exclude sharp edges and details from parametric masks. This is especially useful to apply sharpening and blurring effects that ignore out-of-focus (bokeh) regions, or, to sharpen only the blurry parts, preventing over-sharpening of in-focus regions. This option is only available for RAW files, as it depends on details taken from the demosaic stage.
 
-![details mask]({filename}details-mask.png)
+![details mask](details-mask.png)
 
 ## Masks Refactoring
 
@@ -142,7 +142,7 @@ The chromatic aberration correction that is built into the *lens correction* mod
 
 A [vectorscope](https://www.darktable.org/usermanual/3.6/en/module-reference/utility-modules/shared/histogram/#vectorscope) view has been added as a complement to the histogram and waveform views. The vectorscope is a hue/chroma diagram that shows [chromaticity](https://en.wikipedia.org/wiki/Chromaticity) isolated from lightness or spatial information.
 
-![vectorscope]({filename}vectorscope.png)
+![vectorscope](vectorscope.png)
 
 The graph represents color "volume" by rendering the more frequently used colors in the image in lighter tones. Graph points are colored to represent the chromaticity that each point describes.
 

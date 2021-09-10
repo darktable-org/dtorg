@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  {{ partial "lede/bg" (print "/images/ledes/" .Params.lede) }}
+
+  {{ partial "lede/author" . }}
+
+  {{ partial "content" . }}
+
+{{ end }}

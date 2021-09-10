@@ -1,4 +1,4 @@
-baseURL: 'https://www.darktable.com'
+baseURL: 'https://www.darktable.org'
 title: darktable
 theme: darktable
 permalinks:

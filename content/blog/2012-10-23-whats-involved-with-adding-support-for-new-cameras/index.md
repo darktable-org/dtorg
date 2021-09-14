@@ -11,7 +11,7 @@ wordpress_id: 2300
 tags:
   - blog
 ---
-_Update: This post is a few years old by now, and while most things are still valid there is at least one change: darktable doesn't use dcraw/libraw and more._
+_Update: Some of the information on this page is oudated. See (the github wiki page on camera support for up-to-date instructions)[https://github.com/darktable-org/darktable/wiki/Camera-support]._
 
 Say you're running darktable, you've just bought a brand spanking new camera and it's not supported yet by darktable. Here is a list of things that need to be done (typically we'd recommend to check this _before_ actually buying anything, often you'll be able to find sample raw files online):
 

@@ -10,7 +10,7 @@ menu: "footer"
 ---
 * <a name="faq-spelling"></a>**So, I have seen a bunch of different ways to spell *darktable*. Which one is right?**<a href="#faq-spelling" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    There is only one way, and that is "darktable". All lower case, in one word. Even when starting a sentence. Example: darktable is a great program.
+    There is only one way, and that is "darktable". All lower case, in one word, except when starting a sentence. 
 
 * <a name="faq-contact"></a>**What's the best way to contact the developers/report bugs?**<a href="#faq-contact" class="anchor" title="Link to this FAQ entry">¶</a>
 

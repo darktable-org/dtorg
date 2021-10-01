@@ -13,16 +13,16 @@ menu: ["main", "footer"]
 <div style="text-align: center;">
   <h2>Source Code</h2>
   <p>
-  <a href="https://github.com/darktable-org/darktable/releases/download/release-3.6.0/darktable-3.6.0.tar.xz">darktable-3.6.0.tar.xz</a>
+  <a href="https://github.com/darktable-org/darktable/releases/download/release-3.6.1/darktable-3.6.1.tar.xz">darktable-3.6.1.tar.xz</a>
   </p>
 </div>
 <div style="text-align: center;">
   <h2>Windows</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-3.6.0/darktable-3.6.0.1-win64.exe' title='Microsoft Windows'>darktable-3.6.0.1-win64.exe</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-3.6.1/darktable-3.6.1-win64.exe' title='Microsoft Windows'>darktable-3.6.1-win64.exe</a></p>
 </div>
 <div style="text-align: center;">
   <h2>macOS</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-3.6.0/darktable-3.6.0.3.dmg' title='macOS'>darktable-3.6.0.3.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-3.6.1/darktable-3.6.1.6.dmg' title='macOS'>darktable-3.6.1.6.dmg</a></p>
   <p><a href="#macos">installation notes</a></p>
 </div>
 </div>

@@ -6,7 +6,7 @@ lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 2
 menu: "footer"
 ---
-Here is a short list of highlights where darktable can improve your digital photography processing workflow and help you to make better images with less effort. You can find a more detailed description of every single item in our [online user manual](/usermanual/en/ "usermanual").
+Here is a short list of highlights where darktable can improve your digital photography processing workflow and help you to make better images with less effort. You can find a more detailed description of every single item in our [online user manual](https://www.darktable.org/usermanual/3.6/en/ "usermanual").
 
 # General Features
 
@@ -35,7 +35,7 @@ Currently darktable contains 61 image operation modules. Many modules support po
 ## Basic image operations:
 
 *   contrast, brightness, saturation: Quickly tune your image using this simple module.
-*   shadows and highlights: Improve images by lightening shadows and darkening highlights. Read [Ulrich's blog post](/blog/2012-02-17-shadow-recovery-revisited/2012-02-17-shadow-recovery-revisited.md "Shadow recovery revisited") on this.
+*   shadows and highlights: Improve images by lightening shadows and darkening highlights. Read [Ulrich's blog post](/2012/02/shadow-recovery-revisited "Shadow recovery revisited") on this.
 *   crop and rotate: This module is used to crop, rotate and correct the perspective of your image. It also includes many helpful guidelines that assist you using the tools (e.g. rule of thirds or golden ratio).
 *   base curve: darktable comes with general enhanced basecurve presets for several models that are automatically applied to raw images for better colors and contrast.
 *   exposure controls: Tweak the image exposure either by using the sliders in the module or dragging the histogram around.
@@ -48,7 +48,7 @@ Currently darktable contains 61 image operation modules. Many modules support po
 
 *   fill light: This module allows the local modification of the exposure based on pixel lightness.
 *   levels: This module offers the well-known levels adjustment tools to set black, grey and white points.
-*   tone curve: This module is a classical tool in digital photography. You can change the lightness by dragging the line up or down. darktable lets you separately control the L, a and b channel. Read in [Ulrich's blog post](/blog/2012-02-12-mastering-color-with-lab-tone-curves/2012-02-12-mastering-color-with-lab-tone-curves.md "Mastering color with Lab tone curves") how to make use of this feature.
+*   tone curve: This module is a classical tool in digital photography. You can change the lightness by dragging the line up or down. darktable lets you separately control the L, a and b channel. Read in [Ulrich's blog post](/2012/02/mastering-color-with-lab-tone-curves "Mastering color with Lab tone curves") how to make use of this feature.
 *   zone system: This module changes the lightness of your image. It is based on the Ansel Adams system. It allows to modify the lightness of a zone taking into account the effect on the adjacent zones. It divides the lightness in a user-defined number of zones.
 *   local contrast: This module can be used to boost details in the image.
 *   two different tone mapping modules: These modules allow to recreate some contrast for HDR images.
@@ -58,12 +58,12 @@ Currently darktable contains 61 image operation modules. Many modules support po
 *   velvia: The velvia module enhances the saturation in the image; it increases saturation on lower saturated pixels more than on high saturated pixels.
 *   channel mixer: This module is a powerful tool to manage channels. As entry, it manipulates red, green and blue channels. As output, it uses red, green, blue or grey or hue, saturation, lightness.
 *   color contrast
-*   color correction: This module can be used to modify the global saturation or to give a tint. Read [Johannes' blog post](/blog/2012-03-11-color-correction/2012-03-11-color-correction.md "color correction").
+*   color correction: This module can be used to modify the global saturation or to give a tint. Read [Johannes' blog post](/2012/03/color-correction "color correction").
 *   monochrome: This module is a quick way to convert an image to black and white. You can simulate a color filter in order to modify your conversion. The filter can be changed in size and color center.
 *   color zones: This module allows to selectively modify the colors in your image. It is highly versatile and allows every transformation possible in the LCh colorspace.
 *   color balance: Use lift/gamma/gain to change highlights, midtones and shadows.
-*   vibrance: For a detailed description read [Henrik's blog post](/blog/2011-10-22-different-kind-of-saturation/2011-10-22-different-kind-of-saturation.md "different kind of saturation").
-*   color look up table: Apply styles or film emulations. You can also easily edit the changes done. For more information you can [read this blog post](/blog/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module/2016-05-24-colour-manipulation-with-the-colour-checker-lut-module.md)
+*   vibrance: For a detailed description read [Henrik's blog post](/2011/10/different-kind-of-saturation "different kind of saturation").
+*   color look up table: Apply styles or film emulations. You can also easily edit the changes done. For more information you can [read this blog post](/2016/05/colour-manipulation-with-the-colour-checker-lut-module)
 *   input/output/display color profile management
 *   A useful feature that displays pixels outside the dynamic range.
 
@@ -76,11 +76,11 @@ Currently darktable contains 61 image operation modules. Many modules support po
 *   defringe: Remove color fringes on high contrast edges.
 *   haze removal: This module allows to remove the low contrast and color tint coming from haze and air pollution.
 *   denoise (bilateral filter): Another denoising module.
-*   liquify: Push image parts around, grow them, shrink them. More information can be found in [this blog post](/blog/2016-04-03-liquify-liquify/2016-04-03-liquify-liquify.md)
-*   perspective correction: A great module to automatically un-distort shots with straight lines. See [our blog post](/blog/2016-03-10-a-new-module-for-automatic-perspective-correction/2016-03-10-a-new-module-for-automatic-perspective-correction.md) for an introduction and examples.
+*   liquify: Push image parts around, grow them, shrink them. More information can be found in [this blog post](/2016/04//liquify-liquify "liquify")
+*   perspective correction: A great module to automatically un-distort shots with straight lines. See [our blog post](/2016/03/a-new-module-for-automatic-perspective-correction "Perspective correction") for an introduction and examples.
 *   lens correction: lens defect correction using [lensfun](https://github.com/lensfun/lensfun "liblensfun").
 *   spot removal: Spot removal allows you to correct a zone in your image by using another zone as model.
-*   profiled denoise: By measuring the typical noise of cameras at the different ISO levels darktable is able to remove a lot of it. Read [this blog post](/blog/2012-12-11-profiling-sensor-and-photon-noise/2012-12-11-profiling-sensor-and-photon-noise.md "profiling sensor and photon noise") for more information.
+*   profiled denoise: By measuring the typical noise of cameras at the different ISO levels darktable is able to remove a lot of it. Read [this blog post](/2012/12/profiling-sensor-and-photon-noise "profiling sensor and photon noise") for more information.
 *   raw denoise: Raw denoise allows you to perfom denoising on pre-demosaic data. It is ported from [dcraw](https://www.cybercom.net/~dcoffin/dcraw/ "dcraw").
 *   hot pixels: This module allows you to visualize and correct stuck and hot pixels.
 *   chromatic aberrations: This module automatically detects and corrects chromatic aberrations.
@@ -95,7 +95,7 @@ Currently darktable contains 61 image operation modules. Many modules support po
 *   soften: This module is an artistic feature that creates the Orton effect also commonly known as softening the image. Michael Orton achieved such result on slide film by using 2 exposures of the same scene: one well exposed and one overexposed; then he used a technique to blend those into a final image where the overexposed image was blurred.
 *   grain: This module is an artistic feature which simulates the grain of a film.
 *   highpass: This module acts as highpass filter.
-*   lowpass: This module acts as lowpass filter. One use case is described in [Ulrich's blog post](/blog/2012-02-13-using-lowpass-filter-to-recover-shadows/2012-02-13-using-lowpass-filter-to-recover-shadows.md "Using lowpass filter to recover shadows").
+*   lowpass: This module acts as lowpass filter. One use case is described in [Ulrich's blog post](/2012/02/using-lowpass-filter-to-recover-shadows "Using lowpass filter to recover shadows").
 *   lowlight vision: Low light module allows to simulate human lowlight vision, thus providing the ability to make lowlight pictures look closer to reality. It can also be used to perform a day to night conversion.
 *   bloom: This module boost highlights and softly blooms them over the image.
 *   color mapping: Transfer colors from one image to another.

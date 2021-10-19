@@ -41,6 +41,7 @@ dtsytles an online repository with darktable styles available for download at <h
 
 # Videos
 
-  * [Robert Hutton's darktable screencast playlist](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
-  * [Bruce Williams's darktable screencast playlist](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)
-  * [Rico Richardson's darktable screencast playlist](https://www.youtube.com/playlist?list=PLy01z3xJ2KuqLf8z4B-bldkf5hKcqnRJh)
+  * [Bruce Williams](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)
+  * [Boris Hajdukovic](https://www.youtube.com/playlist?list=PLmZmCIhOC2Frt6Wq3gc0-egOy_P1sXjau)
+  * [Aurélien Pierre](https://www.youtube.com/c/Aur%C3%A9lienPIERREPhoto/videos)
+  * [Robert Hutton](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)

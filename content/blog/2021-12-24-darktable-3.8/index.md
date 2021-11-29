@@ -58,7 +58,7 @@ Our resident color scientist Aurélien Pierre (support him on [liberapay](https:
 
 ## Diffuse or Sharpen
 
-![diffuse or sharpen](diffuse_or_sharpen_module.png "The new diffuse or sharpen moudle")
+![diffuse or sharpen](diffuse_or_sharpen_module.png "The new diffuse or sharpen module")
 
 Diffusion is a family of physical processes by which particles move and spread gradually with time, from a source that generates them. In image processing, diffusion mostly occurs in two places:
 

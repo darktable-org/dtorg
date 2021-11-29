@@ -10,8 +10,6 @@ tags:
   - darktable-release
 ---
 
-# darktable 3.8: Shortcuts, Shortcuts Everywhere
-
 The darktable team is proud to announce the second feature release of 2021.
 
 # Documentation

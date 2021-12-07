@@ -142,3 +142,12 @@ Support has been added for multiple images in the [print view](https://docs.dark
 - The automatic mask tuning has been improved in the [_tone equalizer_](https://docs.darktable.org/3.8/en/module-reference/processing-modules/tone-equalizer/#masking-tab) module
 
 This is just a brief guide to the major changes in darktable 3.8. For details of other changes/fixes please see the **release notes**.
+
+# darktable 4.0
+
+The next planned feature release will be darktable 4.0 in Summer 2022 and we are hard at work on more exciting features. Among other things, changes (now made possible by the linear scene-referred pipeline) will allow you to:
+
+1. Ensure color and exposure consistency of the same object over different pictures by normalizing the CAT and exposure settings. The main goal is to ensure that the secondary color-grading (color balance RGB settings) have the same effect over a series, which is not guaranteed if you simply duplicate the history.
+2. Force some object or reference color, for which you know (a priori) the color coordinates, to have these exact coordinates at the output of color calibration
+
+Both features allow you to perform an exact white-balancing even when you don't have neutral greys in the image, provided that you still have another reference color you can use. They can also be useful when the lighting changes during a shooting session. A "measure" mode allows you to sample a reference color/exposure and a "correction" mode allows you to apply that reference to another image. This will be of particular use in event/book/catalogue photography.

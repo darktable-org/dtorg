@@ -10,6 +10,8 @@ tags:
   - darktable-release
 ---
 
+_Translations of this article: [German](https://www.bilddateien.de/blog/2021-12-24-darktable-3-8-tastaturbefehle-ueberall.html)._
+
 The darktable team is proud to announce the second feature release of 2021.
 
 # Documentation

@@ -15,25 +15,34 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 
 # User manual
 
+## Version 3.8
+
+  * English [html](https://docs.darktable.org/usermanual/3.8/en/)/[epub](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.pdf)
+  * German [html](https://docs.darktable.org/usermanual/3.8/de/)/[epub](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.pdf)
+  * French [html](https://docs.darktable.org/usermanual/3.8/fr/)/[epub](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.pdf)
+  * Ukranian [html](https://docs.darktable.org/usermanual/3.8/uk/)/[epub](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.pdf)
+  * Brazilian Portuguese [html](https://docs.darktable.org/usermanual/3.8/pt_br/)/[epub](https://docs.darktable.org/usermanual/3.8/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/pt_br/darktable_user_manual.pdf)
+
 ## Version 3.6
 
-  * English [HTML](https://www.darktable.org/usermanual/3.6/en/)
-
-Other languages are currently being translated and are targeted for release with version 3.8 in December 2021.
+  * English [html](https://docs.darktable.org/usermanual/3.6/en/)/[epub](https://docs.darktable.org/usermanual/3.6/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/en/darktable_user_manual.pdf)
+  * German [html](https://docs.darktable.org/usermanual/3.6/de/)/[epub](https://docs.darktable.org/usermanual/3.6/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/de/darktable_user_manual.pdf)
+  * Spanish [html](https://docs.darktable.org/usermanual/3.6/es/)/[epub](https://docs.darktable.org/usermanual/3.6/es/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/es/darktable_user_manual.pdf)
+  * Ukranian [html](https://docs.darktable.org/usermanual/3.6/uk/)/[epub](https://docs.darktable.org/usermanual/3.6/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/uk/darktable_user_manual.pdf)
 
 ## Version 3.4
 
-  * English [HTML](https://darktable.gitlab.io/doc/en/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual.pdf)
-  * French [HTML](https://darktable.gitlab.io/doc/fr/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-fr.pdf)
-  * German [HTML](https://darktable.gitlab.io/doc/de/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-de.pdf)
-  * Italian  [HTML](https://darktable.gitlab.io/doc/it/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-it.pdf)
-  * Spanish [HTML](https://darktable.gitlab.io/doc/es/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-es.pdf)
-  * Polish [HTML](https://darktable.gitlab.io/doc/pl/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pl.pdf)
-  * Brazilian Portuguese [HTML](https://darktable.gitlab.io/doc/pt_BR/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pt_BR.pdf)
+  * English [html](https://darktable.gitlab.io/doc/en/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual.pdf)
+  * French [html](https://darktable.gitlab.io/doc/fr/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-fr.pdf)
+  * German [html](https://darktable.gitlab.io/doc/de/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-de.pdf)
+  * Italian  [html](https://darktable.gitlab.io/doc/it/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-it.pdf)
+  * Spanish [html](https://darktable.gitlab.io/doc/es/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-es.pdf)
+  * Polish [html](https://darktable.gitlab.io/doc/pl/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pl.pdf)
+  * Brazilian Portuguese [html](https://darktable.gitlab.io/doc/pt_BR/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pt_BR.pdf)
 
 # Lua API documentation
 
-[HTML](/lua-api/)/[PDF](https://github.com/darktable-org/darktable/releases/download/release-2.0.0/darktable-lua-api.pdf)
+[html](https://docs.darktable.org/lua/stable/)
 
 # darktable Styles
 

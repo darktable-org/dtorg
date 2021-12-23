@@ -36,7 +36,7 @@ As a by-product of this work, the quick access panel now supports a number of gr
 
 # Canon CR3 Support
 
-Canon CR3 files are now fully supported by darktable -- for a complete list of supported cameras please see the **release notes**. This support is provided by LibRaw and requires (at least) exiv2 version 0.27.4 with BMFF support enabled. We are aware that some people have been using builds with experimental CR3 support and, while this (LibRaw) solution is quite different those experimental builds, we are not aware of any conflicts with the new implementation.
+Canon CR3 files are now fully supported by darktable -- for a complete list of supported cameras please see the [release notes](https://github.com/darktable-org/darktable/releases/tag/release-3.8.0). This support is provided by LibRaw and requires (at least) exiv2 version 0.27.4 with BMFF support enabled. We are aware that some people have been using builds with experimental CR3 support and, while this (LibRaw) solution is quite different those experimental builds, we are not aware of any conflicts with the new implementation.
 
 # RIP Crop & Rotate
 
@@ -143,7 +143,7 @@ Support has been added for multiple images in the [print view](https://docs.dark
 - The [_denoise (profiled)_](https://docs.darktable.org/usermanual/3.8/en/module-reference/processing-modules/denoise-profiled/) module now uses wavelets mode by default and its default settings in Y0U0V0 mode have been improved
 - The automatic mask tuning has been improved in the [_tone equalizer_](https://docs.darktable.org/usermanual/3.8/en/module-reference/processing-modules/tone-equalizer/#masking-tab) module
 
-This is just a brief guide to the major changes in darktable 3.8. For details of other changes/fixes please see the **release notes**.
+This is just a brief guide to the major changes in darktable 3.8. For details of other changes/fixes please see the [release notes](https://github.com/darktable-org/darktable/releases/tag/release-3.8.0).
 
 # darktable 4.0
 

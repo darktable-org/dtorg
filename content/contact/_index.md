@@ -419,7 +419,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Ukrainian
 </td>
-<td>Nazarii Vitak
+<td>Nazarii Vitak, Victor Forsiuk
 </td>
 </tr>
 <tr>
@@ -469,6 +469,14 @@ The translations of the darktable user manual are brought to you by:
 <td>Spanish
 </td>
 <td>Tatica Leandro, Edgar De la Luz (EdgarLux)
+</td>
+</tr>
+<tr>
+<td>uk
+</td>
+<td>Ukrainian
+</td>
+<td>Victor Forsiuk
 </td>
 </tr>
 </tbody>

@@ -22,7 +22,7 @@ $ sha256sum darktable-3.8.0.tar.xz
 2e65c7c78d074ad218e3ef7a8c3051a8ea78f4a0406386667859645e5e4bf705 darktable-3.8.0.tar.xz
 $ sha256sum darktable-3.8.0.dmg
 fe1f1100bf3ca1acc11f69e2ffc6dbb58d11449ed85c086e0ecc52d5acb78e24 darktable-3.8.0.dmg
-$ sha256sum darktable-3.8.0.exe
+$ sha256sum darktable-3.8.0-win64.exe
 c74d76f9feefc5648c41938bf430b261d3a3308df0ef87085be590b5a5d1110d darktable-3.8.0-win64.exe
 ```
 

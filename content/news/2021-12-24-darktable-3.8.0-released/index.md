@@ -1,6 +1,6 @@
 ---
 author: Pascal Obry
-date: 2021-12-24 11:00:00+00:00
+date: 2021-12-24 01:00:00+00:00
 layout: post
 title: "darktable 3.8.0 released"
 lede: chartres.jpg

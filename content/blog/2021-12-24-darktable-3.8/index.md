@@ -11,7 +11,7 @@ tags:
 ---
 
 _Translations of this article: [German](https://www.bilddateien.de/blog/2021-12-24-darktable-3-8-tastaturbefehle-ueberall.html), 
-[Espanol](https://www.ramonclemente.com/blog/post/darktable-38-lanzamiento-invierno-2021)._
+[Spanish](https://www.ramonclemente.com/blog/post/darktable-38-lanzamiento-invierno-2021)._
 
 The darktable team is proud to announce the second feature release of 2021.
 

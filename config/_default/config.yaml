@@ -1,6 +1,11 @@
 baseURL: 'https://www.darktable.org'
 title: darktable
 theme: darktable
+
+params:
+  description: "darktable is an open source photography workflow application and raw developer"
+  Logo: /images/logo-name-small.png
+
 permalinks:
   news: /:year/:month/:slug/
   blog: /:year/:month/:slug/

@@ -315,7 +315,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Italian
 </td>
-<td>Maurizio Paglia, Matteo Mardegan, Luca Cignoni
+<td>Maurizio Paglia, Matteo Mardegan, Luca Cignoni, Germano Massullo
 </td>
 </tr>
 <tr>

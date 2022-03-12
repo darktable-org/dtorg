@@ -14,7 +14,6 @@ menu: ["main", "footer"]
 [Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Mastodon](https://mastodon.social/@darktable)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
 
 # How to get in contact
-![sun](../sun.jpg)
 
 If you require assistance with using darktable we recommend that you create an account at [discuss.pixls.us](https://discuss.pixls.us). Many of darktable's developers and users are there and are very welcoming to new users.
 
@@ -31,7 +30,6 @@ For all other comments/questions you can subscribe to one of our mailing lists. 
   * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/): Read-only, messages from automated test builds. `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
 
 # Developers / darktable Team
-![sails](../sails.jpg)
 
 Here are some people you might meet on the mailing list or in IRC:
 <table class="smalltext altrows">
@@ -198,8 +196,6 @@ Here are some people you might meet on the mailing list or in IRC:
 </table>
 
 # darktable Translators
-![img_0001_29](../img_0001_29.jpg)
-
 
 The translations of darktable are brought to you by:
 <table class='smalltext altrows' markdown=1>

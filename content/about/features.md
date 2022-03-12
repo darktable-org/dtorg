@@ -10,8 +10,6 @@ Here is a short list of highlights where darktable can improve your digital phot
 
 # General Features
 
-![gold](../gold.jpg "gold")
-
 *   **Non-destructive** editing throughout the complete workflow, your original images are never modified.
 *   **Take advantage of the real power of raw**: All darktable core functions operate on **4x32-bit floating point pixel buffers**, enabling SSE instructions for speedups.
 *   **GPU accelerated image processing**: many image opertions are lightning fast thanks to  **OpenCL** support (runtime detection and enabling).
@@ -27,8 +25,6 @@ Here is a short list of highlights where darktable can improve your digital phot
 *   **Automate repetitive tasks**: Many aspects of darktable can be scripted in Lua.
 
 # Modules
-
-![moon](../moon.jpg "moon")
 
 Currently darktable contains 61 image operation modules. Many modules support powerful **blending operators** offering blend functionality that works on the incoming image information and the output of the current module or be used with drawn masks.
 
@@ -86,7 +82,6 @@ Currently darktable contains 61 image operation modules. Many modules support po
 *   chromatic aberrations: This module automatically detects and corrects chromatic aberrations.
 
 ## Effects/artistic image postprocessing:
-
 
 *   watermark: The watermark module provides a way to render a vector-based overlay onto your image. Watermarks are standard SVG documents and can be designed using Inkscape. The SVG processor of darktable also substitutes strings within the SVG document which gives the opportunity to include image-dependent information in the watermark such as aperture, exposure time and other metadata.
 *   framing: This module allows you to add an artistic frame around an image.

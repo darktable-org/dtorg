@@ -16,7 +16,6 @@ menu: "footer"
 </div>
 
 # Contributing ...
-![mushroom](/mushroom.jpg)
 
 If you feel like contributing to this project, here are a few suggestions.
 
@@ -38,7 +37,6 @@ You can help us by providing a _color matrix_ for your specific camera. Color ma
 
 
 # Coding
-![firering](/firering.jpg)
 
 Write image operation _modules_! Submit _patches_! Help to track down bugs by supplying _backtraces_!
 

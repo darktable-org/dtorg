@@ -12,7 +12,7 @@ This is a meta page about this website and building it.
 
 
 
-## Pelican
+## Hugo
 
 We're using [Hugo][] to create a static website.
 
@@ -22,7 +22,7 @@ We're using [Hugo][] to create a static website.
 
 ## Content Classification
 
-From a template/Pelican point of view, there are 2 major types of generated content: `pages` and `articles`.
+From a template/Hugo point of view, there are 2 major types of generated content: `pages` and `articles`.
 
 * `pages` are static pages like [about](/about) or [install](/install).
 * `articles` are timely, chronological content like [news](/news) or [blog](/blog) posts.

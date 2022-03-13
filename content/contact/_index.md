@@ -9,29 +9,29 @@ weight: 700
 menu: ["main", "footer"]
 ---
 
-# Find us on...
+# Social Meida
 
 [Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Mastodon](https://mastodon.social/@darktable)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
 
 # How to get in contact
 
-If you require assistance with using darktable we recommend that you create an account at [discuss.pixls.us](https://discuss.pixls.us). Many of darktable's developers and users are there and are very welcoming to new users.
+help/forum: [discuss.pixls.us](https://discuss.pixls.us)
 
-If you want to report a bug or suggest a new feature, please [raise an issue](https://github.com/darktable-org/darktable/issues/new/choose).
+report issues or feature requests:  [github issue](https://github.com/darktable-org/darktable/issues/new/choose).
 
-If you wish to contribute code or provide a translation, please [raise a pull request](https://github.com/darktable-org/darktable/pulls).
+code contributionse or translation: [open a pull request](https://github.com/darktable-org/darktable/pulls).
 
-You can also join us on IRC! You will find us at _irc.oftc.net_, channel _#darktable_. There is also a [web interface](https://webchat.oftc.net/?channels=%23darktable) available.
+IRC:! _irc.oftc.net_, channel _#darktable_ or use the [web interface](https://webchat.oftc.net/?channels=%23darktable)
 
-For all other comments/questions you can subscribe to one of our mailing lists. Ideally the mailing lists should be your last resort - the above communication methods are usually more actively monitored. Please keep emails short and to the point and do not include attachments. Please subscribe instead of just sending mails to the lists&nbsp;– we tend to forget about the moderation queue for unsubscribed mails and they might rot there for some time. We currently have three different lists, choose the proper one for your needs:
+Mailing lists (last resort, posts by subscribers only):
 
-  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): For discussions of a technical nature and information about upcoming releases. Posts are made by subscribers only - subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
-  * [user mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): For questions about how to use darktable: usage questions, experience reports. Posts are made by subscribers only - subscribe via email to `darktable-user+subscribe@lists.darktable.org` and likewise unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
-  * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/): Read-only, messages from automated test builds. `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
+  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
+  * [user mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): subscribe via email to `darktable-user+subscribe@lists.darktable.org` and unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
+  * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/) (Read-only, messages from automated test builds): `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
 
 # Developers / darktable Team
 
-Here are some people you might meet on the mailing list or in IRC:
+Here are some members of our community:
 <table class="smalltext altrows">
 	<thead>
 		<tr>

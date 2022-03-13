@@ -10,7 +10,7 @@ menu: "footer"
 ---
 * <a name="faq-spelling"></a>**So, I have seen a bunch of different ways to spell *darktable*. Which one is right?**<a href="#faq-spelling" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    There is only one way, and that is "darktable". All lower case, in one word, except when starting a sentence. 
+    There is only one way, and that is "darktable". All lower case, in one word, except when starting a sentence.
 
 * <a name="faq-contact"></a>**What's the best way to contact the developers/report bugs?**<a href="#faq-contact" class="anchor" title="Link to this FAQ entry">¶</a>
 
@@ -31,7 +31,7 @@ menu: "footer"
         * last step is to copy parts of the pointed css you want to edit and adjust settings as you want.
     * Be aware: darktable 3.0 brings a whole new UI, so 3.0 CSS themes are not compatible with previous releases, and previous 2.4 and 2.6 themes are not compatible with darktable 3.0.
 
-    Since darktable 3.2, released in august 2020, tweak CSS is far more easier. Forget steps describe just above for that and just go in preferences window. See first general tab and: just select your theme, check _modify selected theme with tweaks below_ and add your tweaks in text field below, then save your tweaks. That's all!
+    Since darktable 3.2, released in august 2020, CSS tweaks are far easier. Forget the steps described just above for that and just go into the preferences window. In the general tab: select your theme, check _modify selected theme with tweaks below_ and add your tweaks in text field below. That's all!
 
     By the way, CSS file should be easier to read and lot of comments will help you find faster CSS part you want to tweak and so copy/modify in preferences.
 
@@ -45,7 +45,7 @@ menu: "footer"
 
 * <a name="faq-moduleorder"></a>**How do I change the order in which modules are applied to an image?**<a href="#faq-moduleorder" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    You don't. The order of the processing pixel pipeline is fixed and supposed to "just work". If you have a (valid) use case where the order doesn't work feel free to tell us. And if you really want to know the reason why this is fixed you may want to have a look at the output SVG of `tools/iop_dependencies.py`
+    See the [user manual](https://docs.darktable.org/usermanual/3.8/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/#changing-module-order) for more details.
 
 * <a name="faq-modules"></a>**Modules? What modules?**<a href="#faq-modules" class="anchor" title="Link to this FAQ entry">¶</a>
 
@@ -53,7 +53,7 @@ menu: "footer"
 
 * <a name="faq-sigill"></a>**darktable crashes with SIGILL. What's up?**<a href="#faq-sigill" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than fifteen years after the feature's introduction, then it really is time for you to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
+    Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than fifteen years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
 
 * <a name="faq-import"></a>**How do I open images? I only see a grey canvas.**<a href="#faq-import" class="anchor" title="Link to this FAQ entry">¶</a>
 
@@ -65,7 +65,7 @@ menu: "footer"
 
 * <a name="faq-save"></a>**How do I save my changes?**<a href="#faq-save" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    You don't have to. Everything you do is immediately stored on disk. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image (while in lighttable mode) using the export module.
+    You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image (while in lighttable mode) using the export module.
 
 * <a name="faq-demosaic"></a>**What happened to the demosaic module in darkroom? How can I select more demosaicing algorithms?**<a href="#faq-demosaic" class="anchor" title="Link to this FAQ entry">¶</a>
 
@@ -73,17 +73,17 @@ menu: "footer"
 
 * <a name="faq-docs"></a>**This confuses me. Is there a manual?**<a href="#faq-docs" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    Yes, [here](/usermanual/en/). There is also [a book](/resources/resources/#the-book) in finished PDF format or .zip file containing the Open Document source and image files. Pascal has created some [screencast tutorials](/resources/resources/#screencast-tutorials) that cover many fundamental use cases and descriptions of technical expressions. You might also want to read through the [blog section](/blog/) of this website.
+    Yes, [here](/usermanual/en/). You might also want to read through the [blog section](/blog/) of this website.
 
 * <a name="faq-old-presets"></a>**My auto-applied presets aren't enabled for pictures imported before upgrade to version 1.1 (or higher), what's happening?**<a href="#faq-old-presets" class="anchor" title="Link to this FAQ entry">¶</a>
 
     *This question is probably not affecting many people these days, but we kept it for historical reasons.*
 
-    This is intended. In pre-1.1 era enabled by default modules didn't get recorded in the history stack, which meant that changing these presets would retroactively change your pictures. It was decided that this is totally broken behaviour and since darktable version 1.1 auto-enabled modules for newly imported pictures are saved in history stack. However this change left all old photos without any user-defined auto-applied presets enabled. To fix this you will have to manually edit them. We suggest making a style out of preset, filtering photos to which it should apply using collect module, then selecting all in resulting collection and applying the style, repeat for every needed preset.
+    This is intended. In the pre-1.1 era, modules that were enabled by default didn't get recorded in the history stack, which meant that changing these presets would retroactively change your pictures. It was decided that this is totally broken behaviour and since darktable version 1.1 auto-enabled modules for newly imported pictures are saved in history stack. However this change left all old photos without any user-defined auto-applied presets enabled. To fix this you will have to manually edit them. We suggest making a style out of preset, filtering photos to which it should apply using collect module, then selecting all in resulting collection and applying the style, repeat for every needed preset.
 
 * <a name="faq-tethering"></a>**I attached and turned on my camera, but it doesn't show up in darktable, what's wrong?**<a href="#faq-tethering" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    If the camera in question is supported by libgphoto2, then the most likely cause is that some other process is blocking the device.
+    If the camera in question is supported by `libgphoto2`, then the most likely cause is that some other process is blocking the device.
 
     If you're using Linux, check that your desktop environment hasn't auto-mounted it.
 

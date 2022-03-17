@@ -9,19 +9,19 @@ weight: 700
 menu: ["main", "footer"]
 ---
 
-# Social Meida
+# Social Media
 
 [Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;– [Mastodon](https://mastodon.social/@darktable)&nbsp;– [Twitter](https://twitter.com/#!/darktable_org)
 
 # How to get in contact
 
-help/forum: [discuss.pixls.us](https://discuss.pixls.us)
+Help/forum: [discuss.pixls.us](https://discuss.pixls.us)
 
-report issues or feature requests:  [github issue](https://github.com/darktable-org/darktable/issues/new/choose).
+Report issues or feature requests:  [github issue](https://github.com/darktable-org/darktable/issues/new/choose).
 
-code contributionse or translation: [open a pull request](https://github.com/darktable-org/darktable/pulls).
+Code contributionse or translation: [open a pull request](https://github.com/darktable-org/darktable/pulls).
 
-IRC:! _irc.oftc.net_, channel _#darktable_ or use the [web interface](https://webchat.oftc.net/?channels=%23darktable)
+IRC: _irc.oftc.net_, channel _#darktable_ or use the [web interface](https://webchat.oftc.net/?channels=%23darktable)
 
 Mailing lists (last resort, posts by subscribers only):
 
@@ -190,6 +190,14 @@ Here are some members of our community:
 			<td>
 				<a href="https://pixls.us/">homepage</a>
 			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><img alt="elstoc" src="/images/team/elstoc.jpg"></td>
+			<td>elstoc</td>
+			<td>Chris Elston</td>
+			<td>user manual maintainer / developer</td>
+			<td></td>
 			<td></td>
 		</tr>
 	</tbody>

@@ -319,7 +319,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Italian
 </td>
-<td>Maurizio Paglia, Matteo Mardegan, Germano Massullo
+<td>Maurizio Paglia, Matteo Mardegan, Luca Cignoni, Germano Massullo
 </td>
 </tr>
 <tr>
@@ -464,7 +464,7 @@ The translations of the darktable user manual are brought to you by:
 </td>
 <td>Italian
 </td>
-<td>Maurizio Paglia
+<td>Maurizio Paglia, Matteo Mardegan, Luca Cignoni
 </td>
 </tr>
 <tr>

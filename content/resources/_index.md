@@ -18,10 +18,13 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 ## Version 3.8
 
   * English [html](https://docs.darktable.org/usermanual/3.8/en/)/[epub](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.pdf)
-  * German [html](https://docs.darktable.org/usermanual/3.8/de/)/[epub](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.pdf)
-  * French [html](https://docs.darktable.org/usermanual/3.8/fr/)/[epub](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.pdf)
-  * Ukrainian [html](https://docs.darktable.org/usermanual/3.8/uk/)/[epub](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.pdf)
   * Brazilian Portuguese [html](https://docs.darktable.org/usermanual/3.8/pt_br/)/[epub](https://docs.darktable.org/usermanual/3.8/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/pt_br/darktable_user_manual.pdf)
+  * Dutch [html](https://docs.darktable.org/usermanual/3.8/nl/)/[epub](https://docs.darktable.org/usermanual/3.8/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/nl/darktable_user_manual.pdf)
+  * French [html](https://docs.darktable.org/usermanual/3.8/fr/)/[epub](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.pdf)
+  * German [html](https://docs.darktable.org/usermanual/3.8/de/)/[epub](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.pdf)
+  * Polish [html](https://docs.darktable.org/usermanual/3.8/pl/)/[epub](https://docs.darktable.org/usermanual/3.8/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/pl/darktable_user_manual.pdf)
+  * Spanish [html](https://docs.darktable.org/usermanual/3.8/es/)/[epub](https://docs.darktable.org/usermanual/3.8/es/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/es/darktable_user_manual.pdf)
+  * Ukrainian [html](https://docs.darktable.org/usermanual/3.8/uk/)/[epub](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.pdf)
 
 ## Version 3.6
 

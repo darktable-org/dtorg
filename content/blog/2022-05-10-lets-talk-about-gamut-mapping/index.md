@@ -3,7 +3,7 @@ title: "Let's talk about gamut mapping"
 author:  Aurélien Pierre
 slug: gamut-mapping
 date: 2022-05-10
-lede: sands.jpg
+lede: test-sRGB2014-LCMS2-perceptual.jpg
 lede_author: aurelienpierre
 tags:
   - color
@@ -11,7 +11,7 @@ tags:
 
 ## Photography is color reproduction
 
-Each photographic medium (film, sensor, file, print, screen, hologram, you name it…) is by its nature merely a __reproduction__ that fixes a scene onto a permanent support. We only ever transfer a photograph from one medium to another in order to create a reproduction that will be seen by an audience. Unforunately, these photographic media are not equal. For example the most colorful red of some medium may be only half as colorful as that of another (similarly for the other primary colors), or the reference white of some medium might be slightly warmer or colder than another.
+Each photographic medium (film, sensor, file, print, screen, hologram, you name it…) is by its nature merely a __reproduction__ that fixes a scene onto a permanent support. We only ever transfer a photograph from one medium to another in order to create a reproduction that will be seen by an audience. Unfortunately, these photographic media are not equal. For example the most colorful red of some medium may be only half as colorful as that of another (similarly for the other primary colors), or the reference white of some medium might be slightly warmer or colder than another.
 
 To quantify how colorful each medium is compared to another, we create color spaces, which are mostly geometric 3D cubic spaces where each R, G, B intensity is given a value. Basically, we move the color rendition problem to the mathematical world, because that's the only way we can solve it.
 
@@ -51,7 +51,7 @@ Little CMS 2, when enabled, should take care of the intent and gamut mapping to 
 
 ## What really happens in darktable
 
-First, we don't define the A-to-B/B-to-A look-up tables for our internal profiles, so the perceptual intent actually falls back to something close to relative colorimetric. This applies to all internal profiles (sRGB, Adobe RGB compatible, etc). The reason we don't do it is that those look-up tables are based on hand-tuning, involving taste, art, preferences and a bit of black magic -- we can't simply calibrate them objectively.
+First, we don't define the A-to-B/B-to-A look-up tables for our internal profiles, so the perceptual and relative colorimetric intents actually fall back to simple RGB clipping. This applies to all internal profiles (sRGB, Adobe RGB compatible, etc). The reason we don't define those LUTs is because they rely on hand-tuning, involving taste, art, preferences and a bit of black magic -- we can't simply calibrate them objectively.
 
 Then, for third-party profiles (like the ones your printer may provide), what happens is entirely up to the profile -- you'd better hope that whoever provided it did a good job.
 

@@ -60,7 +60,7 @@ Good candidate pictures to test this are sunset pictures, because those bright a
 
 ## How to improve gamut mapping in darktable
 
-The ICC provides an [sRGB v2 profile](https://color.org/srgbprofiles.xalter#v2) with the proper data, such that it actually enables gamut-mapping for perceptual and relative colorimetric intents with Little CMS2. You can download it and install it in `~/.config/darktable/color/im`, restart darktable and it will appear in the list under `sRGB2014`.
+The ICC provides an [sRGB v2 profile](https://color.org/srgbprofiles.xalter#v2) with the proper data, such that it actually enables gamut-mapping for perceptual and relative colorimetric intents with Little CMS2. You can download it and install it in `~/.config/darktable/color/out/`, restart darktable and it will appear in the list under `sRGB2014`.
 
 Without the proper tags and data registered in the ICC profile, unfortunately, nothing will happen and out-of-gamut colors will be simply clipped in RGB, resulting in hue shifts and non-constant luminance (see below).
 

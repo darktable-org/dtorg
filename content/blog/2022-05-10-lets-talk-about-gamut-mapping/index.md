@@ -11,15 +11,11 @@ tags:
 
 ## Photography is color reproduction
 
-Each photographic medium (film, sensor, file, print, screen, hologram, you name it…) is by its nature merely a __reproduction__ that fixes a scene onto a permanent support. We only ever transfer a photograph from one medium to another in order to create a reproduction that will be seen by an audience. Unfortunately, these photographic media are not equal. For example the most colorful red of some medium may be only half as colorful as that of another (similarly for the other primary colors), or the reference white of some medium might be slightly warmer or colder than another.
+Each photographic medium (film, sensor, file, print, screen, hologram, you name it…) is by its nature a __reproduction__ that fixes a scene onto a permanent support. We only transfer a photograph from one medium to another in order to create a reproduction that will be seen by an audience. Unfortunately, these photographic media are not all equal. For example the most colorful red of some medium may be only half as colorful as that of another (similarly for the other primary colors), or the reference white of some medium might be slightly warmer or colder than another.
 
-To quantify how colorful each medium is compared to another, we create color spaces, which are mostly geometric 3D cubic spaces where each R, G, B intensity is given a value. Basically, we move the color rendition problem to the mathematical world, because that's the only way we can solve it.
+To quantify how colorful each medium is compared to another, we create color spaces, which are mostly geometric 3D cubic spaces where each R, G, B intensity is given a value. Basically, we move the color rendition problem to the mathematical world, because that's the only way we can solve it. Then we write a recipe that converts from space to space (that is, from medium to medium) inside a color profile, so that we can rescale those R, G, B numbers to reproduce the same perceived color on each medium.
 
-Then we write a recipe that converts from space to space (that is, from medium to medium) inside a color profile, so that we can rescale those R, G, B numbers to reproduce the same perceived color on each medium.
-
-Color profiles are translation recipes that allow color spaces to be switched in a controlled fashion when the image is slapped onto a different medium. Because, no matter the medium, you want to see the same color (as much as possible).
-
-Problems occur when the medium you want to print on is much less colorful than the medium holding your original file. This means that the destination color space is smaller than the original space which, in turn, means some colors of your original will not fit into your reproduction. This occurs quite a lot because digital sensors can actually record colors beyond what is printable.
+Color profiles are translation recipes that allow color spaces to be switched in a controlled fashion when the image is slapped onto a different medium. Because, no matter the medium, you want to see the same color (as much as possible). Problems occur when the medium you want to print on is much less colorful than the medium holding your original file. This means that the destination color space is smaller than the original space which, in turn, means some colors of your original will not fit into your reproduction. This occurs quite a lot because digital sensors can actually record colors beyond what is printable.
 
 The volume of colors (volume, because it's a 3D space) that can fit on to a medium (that is within its color space) is called the gamut. So, what we need to mind when converting from color space to color space are the colors that fall out of gamut after the conversion. Because we will not be able to print or display them at all, and yet they are still part of the image.
 
@@ -101,8 +97,8 @@ The change is almost imperceptible, but highlights are slighly less saturated.
 
 ## Conclusion
 
-It is an understatement to say that most photographers are overwhelmed by the technicalities of color management. Most of them just install and use color profiles hoping they will magically solve all their issues. But not all color profiles are equal, some are bad and actually worse than no color management at all.
+It is an understatement to say that most photographers are overwhelmed by the technicalities of color management. Most of us just install and use color profiles hoping they will magically solve all their issues. But not all color profiles are equal, some are bad and actually worse than no color management at all.
 
 In this mess, it is useful to recall that all the mathematics at work, no matter how advanced and complicated, only aims at emulating and predicting how the eye will see. So human perception is the only valid reference, meaning that you need to trust your eyes before everything else, criticize what you see: Everything is fine as long as it _looks_ fine.
 
-Problems occur in the open-source world, which is known to attract technically-minded people with a tendency to trust numbers over perception. And, while perception can be subject to many illusions, it is not only the best we have in the art world, but also the fundamental reference upon which all color manipulation/conversion mathematics is based.
+Trust your eyes!

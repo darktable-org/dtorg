@@ -15,6 +15,10 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 
 # User manual
 
+## Version 4.0
+
+  * English [html](https://docs.darktable.org/usermanual/4.0/en/)/[epub](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.pdf)
+
 ## Version 3.8
 
   * English [html](https://docs.darktable.org/usermanual/3.8/en/)/[epub](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.pdf)

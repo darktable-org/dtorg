@@ -18,6 +18,8 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 ## Version 4.0
 
   * English [html](https://docs.darktable.org/usermanual/4.0/en/)/[epub](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.pdf)
+  * Polish [html](https://docs.darktable.org/usermanual/4.0/pl/)/[epub](https://docs.darktable.org/usermanual/4.0/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/pl/darktable_user_manual.pdf)
+  * Ukrainian [html](https://docs.darktable.org/usermanual/4.0/uk/)/[epub](https://docs.darktable.org/usermanual/4.0/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/uk/darktable_user_manual.pdf)
 
 ## Version 3.8
 

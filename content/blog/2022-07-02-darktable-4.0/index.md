@@ -14,7 +14,7 @@ _Translations of this article: [German](https://www.bilddateien.de/blog/2022-07-
 
 A little over 10 years since darktable 1.0 was first released, the darktable team is proud to present darktable 4.0!
 
-For a complete changelog, please see the [release notes](https://www.darktable.org/2022/07/darktable-4.0.0-released/). The latest version of the user manual is [here](https://docs.darktable.org/usermanual/4.0/en/). As usual, the user manual is English-only for now but we expect to be able to provide translations over the next couple of months.
+For a complete changelog, please see the [release notes](https://www.darktable.org/2022/07/darktable-4.0.0-released/). The latest version of the user manual is [here](https://docs.darktable.org/usermanual/4.0/en/). Ukrainian and Polish translations are currently available and we expect to add more over the coming months.
 
 ## Color and Exposure Mapping
 

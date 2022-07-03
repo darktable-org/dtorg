@@ -39,17 +39,17 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 Right now this means for the stable package:
 
-* Debian 9, 10, Next aka Testing
-* Fedora  29, 30, 31, Rawhide
-* openSUSE 15.0, 15.1, Tumbleweed
-* Ubuntu 18.04, 19.04, 19.10, 20.04 (only latest release, not snapshot from stable release branch)
+* Debian 10, 11, Testing
+* Fedora 34, 35, 36, Rawhide
+* openSUSE 15.3, 15.4, Tumbleweed
+* Ubuntu 20.04, 21.04, 21.10, 22.04
 
 For master we build for the following distributions because of missing required packages in older distributions:
 
-* Debian 9, 10, Next aka Testing
-* Fedora   29, 30, 31, Rawhide
-* openSUSE 15.0, 15.1, Tumbleweed
-* Ubuntu 18.04, 19.04, 19.10, 20.04
+* Debian 11, Testing, Unstable
+* Fedora 35, 36, Rawhide
+* openSUSE 15.2, 15.3, Tumbleweed
+* Ubuntu 20.04, 21.04, 21.10, 22.04
 
 The available packages are:
 

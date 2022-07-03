@@ -63,7 +63,7 @@ The available packages are:
 
 <h2 id='macos'>macOS</h2>
 
-This bundle supports macOS versions starting with 10.14 (Mojave) running on 64 bit Intel architecture.
+This bundle supports macOS versions starting with 10.14 (Mojave).
 
 What to do with dialog saying *"darktable" can't be opened because it was not downloaded from the Mac App Store*:
 

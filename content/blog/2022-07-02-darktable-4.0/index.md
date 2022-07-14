@@ -10,7 +10,7 @@ tags:
   - darktable-release
 ---
 
-_Translations of this article: [German](https://www.bilddateien.de/blog/2022-07-02-darktable-4-0.html)._
+_Translations of this article: [German](https://www.bilddateien.de/blog/2022-07-02-darktable-4-0.html), [Spanish](https://www.ramonclemente.com/blog/post/darktable-40-3763-dias-despues)._
 
 A little over 10 years since darktable 1.0 was first released, the darktable team is proud to present darktable 4.0!
 

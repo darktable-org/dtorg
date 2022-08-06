@@ -1,8 +1,7 @@
 ---
 title: camera support
-Date: 2017-09-21T14:00:56-06:00
-author: pedrocr
-wordpress_id: 3676
+Date: 2022-08-06 14:15:10+02:00
+author: Victor Forsiuk
 lede: lede-camera-support.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 menu: "footer"
@@ -27,18 +26,18 @@ The table has the following fields:
 
   * **Custom Matrix:** If darktable has a user supplied custom matrix for the camera as a potential alternative in the color input module
 
-NOTE: this table does not list the availability of freely available sample at [raw.pixls.us](https://raw.pixls.us/). Please refer to [this post](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri) for the up-to-date information. There currently are [![count of unique cameras in the archive](https://raw.pixls.us/button-cameras.svg)](https://raw.pixls.us/) unique cameras, [![total count of unique samples](https://raw.pixls.us/button-samples.svg)](https://raw.pixls.us/) unique samples.
+NOTE: this table does not list the availability of freely available sample at [raw.pixls.us](https://raw.pixls.us/). Please refer to [this post](https://discuss.pixls.us/t/raw-samples-wanted/5420) for the up-to-date information. There currently are [![count of unique cameras in the archive](https://raw.pixls.us/button-cameras.svg)](https://raw.pixls.us/) unique cameras, [![total count of unique samples](https://raw.pixls.us/button-samples.svg)](https://raw.pixls.us/) unique samples.
 
-### [Please contribute samples!](https://discuss.pixls.us/t/raw-samples-wanted/5420?u=lebedevri)
+### [Please contribute samples!](https://discuss.pixls.us/t/raw-samples-wanted/5420)
 
-<!-- valid as of 2020/12/17, release-3.4.0
+<!-- valid as of 2022/07/31, release-4.0.0
  -->
 <table class="smalltext altrows u-full-width">
   <thead><tr>
-    <th><strong>Camera</strong><br/>699 (100%)</th>
-    <th><strong>WB Presets</strong><br/>453 (64%)</th>
-    <th><strong>Noise Profile</strong><br/>373 (53%)</th>
-    <th><strong>Custom Matrix</strong><br/>116 (16%)</th>
+    <th><strong>Camera</strong><br/>703 (100%)</th>
+    <th><strong>WB Presets</strong><br/>461 (66%)</th>
+    <th><strong>Noise Profile</strong><br/>406 (58%)</th>
+    <th><strong>Custom Matrix</strong><br/>111 (16%)</th>
   </tr></thead>
   <tr><td>Canon EOS 1000D</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Canon EOS Digital Rebel XS</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -55,13 +54,16 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Canon EOS 1300D</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Kiss X80</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Rebel T6</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon EOS 1500D</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon EOS 2000D</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon EOS Rebel T7</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS 1500D</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS 2000D</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS Rebel T7</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS 200D</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Kiss X9</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Rebel SL2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS 20D</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Canon EOS 250D</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS Kiss X10</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS Rebel SL3</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS 300D</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Digital Rebel</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Kiss Digital</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -121,23 +123,35 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Canon EOS REBEL T7i</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS Rebel T7i</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS 80D</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS 850D</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS Kiss X10i</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS Rebel T8i</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS 90D</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS D2000C</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS D30</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon EOS D60</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS D60</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS M</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS M10</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS M100</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon EOS M2</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS M200</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS M3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS M50</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS M50 Mark II</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS M5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS M6</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS M6 Mark II</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS R</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS RP</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS R5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS R6</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1D</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1D Mark II</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1D Mark II N</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1D Mark III</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1D Mark IV</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1D X</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon EOS-1D X Mark II</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS-1D X Mark II</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon EOS 1D X Mark III</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1Ds</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon EOS-1Ds Mark II</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Canon EOS-1Ds Mark III</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -162,15 +176,17 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Canon PowerShot G3 X</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G5</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G5 X</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon PowerShot G5 X Mark II</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G6</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G7 X</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G7 X Mark II</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon PowerShot G7 X Mark III</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G9</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G9 X</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot G9 X Mark II</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot Pro1</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot S100</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Canon PowerShot S110</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Canon PowerShot S110</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot S120</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot S3 IS</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Canon PowerShot S30</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -203,7 +219,6 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Fujifilm FinePix HS10 HS11</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix HS20EXR</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix HS30EXR</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm FinePix HS50EXR</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S100FS</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S200EXR</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -214,19 +229,18 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Fujifilm FinePix S5500</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S5600</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S5Pro</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm FinePix S6000fd</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S6500fd</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S7000</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S9000</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S9500</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix S9600</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm FinePix S9600fd</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix X10</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm FinePix X100</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Fujifilm GFX 100</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm GFX 50R</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm GFX 50S</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm IS-1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm GFX100S</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm GFX50S II</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-A1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-A10</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-A2</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -236,12 +250,14 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Fujifilm X-E2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-E2S</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-E3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm X-E4</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-H1</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-M1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-Pro1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-Pro2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm X-Pro3</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm X-Pro3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-S1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm X-S10</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-T1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-T10</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X-T100</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -254,17 +270,16 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Fujifilm X100F</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X100S</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X100T</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm X100V</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm X100V</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X20</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X30</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm X70</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm XF1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Fujifilm XF10</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Fujifilm XF10</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm XQ1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Fujifilm XQ2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>GITUP GIT2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>GITUP GIT2P</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>GoPro FUSION</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>GoPro HERO5 Black</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>GoPro HERO6 Black</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>GoPro HERO7 Black</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -286,7 +301,6 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Kodak DCS760C</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Kodak EOS DCS 1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Kodak EOS DCS 3</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Kodak EasyShare Z980</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Kodak EasyShare Z981</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Kodak EasyShare Z990</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Kodak P880</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -297,28 +311,27 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>LG US996</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>LG VS995</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leaf Aptus 22</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Leaf Aptus-II 5</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leaf Credo 40</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Leaf Credo 60</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Leaf Credo 80</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica C (Typ 112)</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Leica C-Lux</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica CL</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica D-LUX (Typ 109)</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica D-LUX 3</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica D-LUX 4</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica D-LUX 5</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Leica D-LUX 6</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Leica D-Lux 7</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Leica Digilux 2</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Leica Digilux 3</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica M (Typ 240)</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Leica M10</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Leica M8</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica Q (Typ 116)</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica Q2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Leica SL (Typ 601)</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Leica SL (Typ 601)</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Leica V-LUX (Typ 114)</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica V-LUX 1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Leica X2</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Mamiya ZD</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Minolta DiMAGE 5</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Minolta DiMAGE 7</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Minolta DiMAGE 7Hi</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Minolta DiMAGE 7i</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -335,30 +348,25 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Nikon 1 J1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 J2</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 J3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon 1 J4</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 J5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon 1 S1</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 S2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 V1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 V2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon 1 V3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon COOLPIX B700</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon COOLPIX P1000</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon COOLPIX P950</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon COOLPIX P950</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Coolpix A</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Coolpix P330</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Coolpix P340</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Coolpix P6000</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Coolpix P7000</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Nikon Coolpix P7100</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon Coolpix P7700</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Coolpix P7800</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D1</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D100</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon D1H</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D1X</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D200</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Nikon D2H</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D2Hs</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D2X</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D2Xs</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -371,12 +379,11 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Nikon D3300</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D3400</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D3500</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon D3S</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D3X</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D4</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D40</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D40X</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
-  <tr><td>Nikon D4S</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon D4S</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D5</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D50</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D500</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -386,6 +393,7 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Nikon D5300</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nikon D5500</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D5600</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon D6</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D60</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nikon D600</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nikon D610</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -397,7 +405,7 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Nikon D7200</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D750</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nikon D7500</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon D780</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon D780</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon D80</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nikon D800</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Nikon D800E</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -408,17 +416,19 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Nikon E5400</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon E5700</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon LS-5000</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Nikon Z 5</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon Z 5</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Z 50</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Z 6</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon Z 6_2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nikon Z 7</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon Z 7_2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Nikon Z fc</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Nokia Lumia 1020</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus C5050Z</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus C5060WZ</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus C7070WZ</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus C8080WZ</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Olympus E-10</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-20</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-30</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -438,7 +448,7 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Olympus E-M10</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Olympus E-M10 Mark II</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-M10 Mark III</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Olympus E-M10 Mark IV</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Olympus E-M10 Mark IV</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-M1MarkII</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-M1MarkIII</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus E-M1X</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -462,10 +472,8 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Olympus E-PM2</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Olympus PEN-F</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus SH-2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Olympus SP320</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus SP350</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus SP500UZ</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Olympus SP570UZ</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Olympus Stylus1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus TG-4</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus TG-5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -474,11 +482,13 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Olympus XZ-10</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Olympus XZ-2</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>OnePlus One</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-FZ10002</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-FZ10002</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-FZ80</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-FZ82</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-FZ80</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-FZ85</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-G100</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-G110</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-G9</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-G90</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-G91</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -489,28 +499,29 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Panasonic DC-GX850</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-GH5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-GH5S</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-GF10</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-GX880</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic GF90</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-GX7MK3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-GX9</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-LX100M2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-S1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-S1H</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-S1R</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-S5</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-S1R</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-S5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-TZ200</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-TZ202</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-ZS200</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-FZ91</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-FZ92</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-FZ93</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-TZ90</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-TZ91</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DC-ZS70</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-FZ91</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-FZ92</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-FZ93</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-TZ90</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-TZ91</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DC-ZS70</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-TZ95</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-TZ96</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DC-ZS80</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-CM1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DMC-FX150</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-FZ100</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Panasonic DMC-FZ1000</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-FZ150</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -532,16 +543,15 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Panasonic DMC-FZ8</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-G1</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Panasonic DMC-G10</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DMC-G2</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Panasonic DMC-G3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-G5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-G6</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-G7</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-G70</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DMC-G8</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DMC-G80</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DMC-G81</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Panasonic DMC-G85</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DMC-G8</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DMC-G80</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DMC-G81</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Panasonic DMC-G85</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-GF1</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Panasonic DMC-GF2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Panasonic DMC-GF3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -597,9 +607,10 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Pentax 645Z</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K-01</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K-1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Pentax K-1 Mark II</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Pentax K-1 Mark II</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K-3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K-3 II</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Pentax K-3 Mark III</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K-30</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K-5</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Pentax K-5 II</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -617,47 +628,34 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Pentax K100D Super</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K10D</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K110D</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Pentax K2000</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Pentax K200D</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax K20D</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Pentax KP</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax MX-1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax Q</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Pentax Q10</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Pentax Q7</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Phase One IQ140</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Phase One IQ250</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Phase One P30</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Phase One P65+</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Ricoh GR</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Ricoh GR II</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung EK-GN120</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Ricoh GR II</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Ricoh GR III</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung EX1</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung EX2F</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung G920F</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung G935F</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung GX10</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung GX20</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung NX1</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung NX10</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Samsung NX100</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Samsung NX1000</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung NX11</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
+  <tr><td>Samsung NX1000</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung NX1100</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung NX20</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung NX200</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung NX2000</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung NX210</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung NX30</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung NX300</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Samsung NX300M</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Samsung NX3000</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
-  <tr><td>Samsung NX5</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
   <tr><td>Samsung NX500</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Samsung WB2000</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Sinar Hy6</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sjcam SJ6 LEGEND</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-F828</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony DSC-HX95</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-HX99</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-R1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-RX0</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
@@ -674,7 +672,7 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Sony DSC-RX100M7</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-RX10M2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-RX10M3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Sony DSC-RX10M4</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony DSC-RX10M4</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-RX1R</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSC-RX1RM2</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A100</td><td>Yes</td><td><strong>NO</strong></td><td>Yes</td></tr>
@@ -684,12 +682,10 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Sony DSLR-A300</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A330</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A350</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
-  <tr><td>Sony DSLR-A380</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A390</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A450</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A500</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A550</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Sony DSLR-A560</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A580</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony DSLR-A700</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Sony DSLR-A850</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -697,6 +693,7 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Sony ILCA-68</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCA-77M2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCA-99M2</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-1</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-3000</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-3500</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-5000</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -708,17 +705,22 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Sony ILCE-6500</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-6600</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Sony ILCE-7C</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-7C</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7M2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7M3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-7M4</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7R</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7RM2</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7RM3</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-7RM3A</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7RM4</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-7RM4A</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7S</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-7SM2</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-7SM3</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-9</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
   <tr><td>Sony ILCE-9M2</td><td><strong>NO</strong></td><td>Yes</td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ILCE-QX1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony NEX-3</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Sony NEX-3N</td><td>Yes</td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
   <tr><td>Sony NEX-5</td><td>Yes</td><td>Yes</td><td><strong>NO</strong></td></tr>
@@ -739,4 +741,5 @@ NOTE: this table does not list the availability of freely available sample at [r
   <tr><td>Sony SLT-A77</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Sony SLT-A99</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Sony ZV-1</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
+  <tr><td>Sony ZV-E10</td><td><strong>NO</strong></td><td><strong>NO</strong></td><td><strong>NO</strong></td></tr>
 </table>

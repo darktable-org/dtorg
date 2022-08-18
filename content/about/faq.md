@@ -45,7 +45,7 @@ menu: "footer"
 
 * <a name="faq-moduleorder"></a>**How do I change the order in which modules are applied to an image?**<a href="#faq-moduleorder" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    See the [user manual](https://docs.darktable.org/usermanual/3.8/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/#changing-module-order) for more details.
+    See the [user manual](/usermanual/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/#changing-module-order) for more details.
 
 * <a name="faq-modules"></a>**Modules? What modules?**<a href="#faq-modules" class="anchor" title="Link to this FAQ entry">¶</a>
 

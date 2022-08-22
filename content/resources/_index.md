@@ -20,6 +20,7 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
   * English [html](https://docs.darktable.org/usermanual/4.0/en/)/[epub](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.pdf)
   * Brazilian Portuguese [html](https://docs.darktable.org/usermanual/4.0/pt_br/)/[epub](https://docs.darktable.org/usermanual/4.0/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/pt_br/darktable_user_manual.pdf)
   * Dutch [html](https://docs.darktable.org/usermanual/4.0/nl/)/[epub](https://docs.darktable.org/usermanual/4.0/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/nl/darktable_user_manual.pdf)
+  * German [html](https://docs.darktable.org/usermanual/4.0/de/)/[epub](https://docs.darktable.org/usermanual/4.0/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/de/darktable_user_manual.pdf)
   * Polish [html](https://docs.darktable.org/usermanual/4.0/pl/)/[epub](https://docs.darktable.org/usermanual/4.0/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/pl/darktable_user_manual.pdf)
   * Ukrainian [html](https://docs.darktable.org/usermanual/4.0/uk/)/[epub](https://docs.darktable.org/usermanual/4.0/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/uk/darktable_user_manual.pdf)
 

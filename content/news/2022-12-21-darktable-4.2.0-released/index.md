@@ -1,6 +1,6 @@
 ---
 author: Pascal Obry
-date: 2022-12-21 07:00:00+00:00
+date: 2022-12-21 01:00:00+00:00
 layout: post
 title: "darktable 4.2.0 released"
 lede: portishead.jpg

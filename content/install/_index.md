@@ -13,7 +13,7 @@ menu: ["main", "footer"]
 <div style="text-align: center;">
   <h2>Source Code</h2>
   <p>
-  <a href="https://github.com/darktable-org/darktable/releases/download/release-4.0.1/darktable-4.2.0.tar.xz">darktable-4.2.0.tar.xz</a>
+  <a href="https://github.com/darktable-org/darktable/releases/download/release-4.2.0/darktable-4.2.0.tar.xz">darktable-4.2.0.tar.xz</a>
   </p>
 </div>
 <div style="text-align: center;">

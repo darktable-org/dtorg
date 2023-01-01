@@ -45,7 +45,7 @@ Right now this means for the stable package:
 * openSUSE 15.4, Tumbleweed
 * Ubuntu 21.04, 21.10, 22.04, 22.10
 
-For master we build for the following distributions because of missing required packages in older distributions:
+For master git branch we build for the following distributions:
 
 * Debian 11, Testing, Unstable
 * Fedora 36, 37, Rawhide

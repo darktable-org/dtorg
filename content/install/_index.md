@@ -34,7 +34,7 @@ menu: ["main", "footer"]
 
 If your unix-like operating system is capable of running a graphical session, darktable is likely available. Check your package manager or software center.
 
-## OBS
+## OBS (Open Build Service)
 
 The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple Linux distributions.
 

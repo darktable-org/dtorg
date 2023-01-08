@@ -34,23 +34,23 @@ menu: ["main", "footer"]
 
 If your unix-like operating system is capable of running a graphical session, darktable is likely available. Check your package manager or software center.
 
-## OBS
+## OBS (Open Build Service)
 
 The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple Linux distributions.
 
 Right now this means for the stable package:
 
-* Debian 10, 11, Testing
-* Fedora 34, 35, 36, Rawhide
-* openSUSE 15.3, 15.4, Tumbleweed
-* Ubuntu 20.04, 21.04, 21.10, 22.04
+* Debian 11, Testing, Unstable
+* Fedora 36, 37, Rawhide
+* openSUSE 15.4, Tumbleweed
+* Ubuntu 21.04, 21.10, 22.04, 22.10
 
-For master we build for the following distributions because of missing required packages in older distributions:
+For master git branch we build for the following distributions:
 
 * Debian 11, Testing, Unstable
-* Fedora 35, 36, Rawhide
-* openSUSE 15.2, 15.3, Tumbleweed
-* Ubuntu 20.04, 21.04, 21.10, 22.04
+* Fedora 36, 37, Rawhide
+* openSUSE 15.4, Tumbleweed
+* Ubuntu 21.04, 21.10, 22.04
 
 The available packages are:
 

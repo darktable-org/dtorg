@@ -1,7 +1,8 @@
 
 # darktable Website
 
-A work-in-progress for a hugo port of the darktable website.
+Hugo source code and other artifacts used to generate the public Darktable website,
+found at https://www.darktable.org/
 
 ## Get started
 

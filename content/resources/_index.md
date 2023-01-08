@@ -67,3 +67,4 @@ dtsytles an online repository with darktable styles available for download at <h
   * [Aurélien Pierre](https://www.youtube.com/c/Aur%C3%A9lienPIERREPhoto/videos)
   * [Robert Hutton](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
   * [A dabble in photography](https://www.youtube.com/channel/UCxHYygok15XQ6bqu9FK-oCw)
+  * [Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)

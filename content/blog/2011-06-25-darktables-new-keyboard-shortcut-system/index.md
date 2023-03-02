@@ -11,7 +11,9 @@ tags:
   - GSoC
 ---
 <figure markdown="span" class="u-pull-left">
-![Screenshot-darktable-preferences-300x163](Screenshot-darktable-preferences-300x163.png)
+
+![Screenshot-darktable-preferences-300x163](/2011/06/darktables-new-keyboard-shortcut-system/Screenshot-darktable-preferences-300x163.png)
+
 </figure>
 
 It took longer than I expected thanks to some unforeseen twists and turns, but the new keyboard accelerator system is basically finished.  There may still be some need for minor bug fixes and string changes (in particular, the new translation system needs to be tested out), but by and large everything that needs to be in place is, and next week I plan to start working on changes to the color picker module.  Now that the accelerator interface is stable, lets take a little tour of it.

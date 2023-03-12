@@ -107,7 +107,7 @@ menu: "footer"
     * **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/stable/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
 
-# <a name="faq-windows"></a>**Windows**<a href="#faq-windows" class="anchor" title="Link to this FAQ entry">¶</a>
+## <a name="faq-windows"></a>**Windows**<a href="#faq-windows" class="anchor" title="Link to this FAQ entry">¶</a>
 darktable is developed for linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) URCT environment is used to compile the program. Nightly builds are performed in github to ensure the program builds under windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
 * <a name="faq-windows-locations"></a>**Install file locations**<a href="#faq-windows-locations" class="anchor" title="Link to this FAQ entry">¶</a>
@@ -157,10 +157,21 @@ darktable is developed for linux, but it was ported to build on Windows. The [MS
 
     Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates. Generating a log of the crash can also aid in discovering the cause. The simplest way is to start Windows Command Propt, navigate `C:\Program files\darktable\bin` and start darktable via `darktable.exe -d perf` or `darktable -d opencl` or `darktable -d all` or to see all the options `darktable -h`. The log file will be generated in the hidden path listed above.
         
-## <a name="faq-windows-issues"></a>**Known Windows issues**<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-windows-issues"></a>**Known Windows issues**<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
 * OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults on darktable. Uninstall the Compatibility from Windows.
 
 * Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
 
-# <a name="faq-mac"></a>**Mac**<a href="#faq-mac" class="anchor" title="Link to this FAQ entry">¶</a>
-darktable is developed for linux, but it was ported to build on Mac. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
+## <a name="faq-flatpak"></a>**Flatpak**<a href="#faq-flatpak" class="anchor" title="Link to this FAQ entry">¶</a>
+
+
+* <a name="faq-flatpak-locations"></a>**Where are the darktable files in flatpak?**<a href="#faq-flatpak-locations" class="anchor" title="Link to this FAQ entry">¶</a>
+
+    The darktable files live at: `~/.var/app/org.darktable.Darktable`
+
+* <a name="faq-flatpak-terminal"></a>**How do I start darktable from terminal?**<a href="#faq-flatpak-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
+
+    To start darktable from terminal use: `flatpak run org.darktable.Darktable`. You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
+    
+## <a name="faq-mac"></a>**Mac**<a href="#faq-mac" class="anchor" title="Link to this FAQ entry">¶</a>
+darktable is developed for linux, but it was ported to build on Mac. If you experience problems, please check the next few known issues below specific to the Mac port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.

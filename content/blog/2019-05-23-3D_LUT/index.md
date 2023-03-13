@@ -8,24 +8,24 @@ lede_author: <a href="http://ph-wd.com/piwigo/">Philippe Weyland</a>
 tags:
   - announcement
 aliases:
-    - /2019/05/new-module-lut3d/  
+    - /2019/05/new-module-lut3d/
 ---
 The *lut3d* module will be introduced in darktable 3.0 and is designed to apply a *3D LUT* (LookUp Table) to an image.
 
-##3D LUT
+## 3D LUT
 A *3D LUT* is a tridimensional table which allows to transform any RGB value into another RGB value.
 The most common applications of LUTs are film simulation and color grading. But they can be used for any other technical transforms like LOG to REC.709, which are used in video edition for example.
 
 The module accepts *cube* files, *haldclut* files and *compressed LUT* files.
 
-###*Cube* files
+### *Cube* files
 *Cube* files are used by video editors and colorists. They are text files with the *cube* extension.
 You can find such files through these links:
 
 - [free-film-luts-for-editors-dits-and-colorists](https://jonnyelwyn.co.uk/film-and-video-editing/free-film-luts-for-editors-dits-and-colorists/)
 - [print-film-emulation-luts-for-download](http://juanmelara.com.au/blog/print-film-emulation-luts-for-download)
 
-###*Haldclut* files
+### *Haldclut* files
 *Haldclut* files are used in Rawtherapee and PhotoFlow.
 The are usually coded as a png image.
 Smaller than *cube* files, they are also more accurate (see **LUT dimension** below).
@@ -35,7 +35,7 @@ Here are some places to find them:
 - [http://gmic.eu/color_presets/index.shtml](http://gmic.eu/color_presets/index.shtml)
 - [https://freshluts.com/](https://freshluts.com/)
 
-###*Compressed LUT* files
+### *Compressed LUT* files
 *Compressed LUT* files have been created by the G'MIC team (see [Pixls.us - CLUT compression](https://discuss.pixls.us/t/clut-compression/11752)) which offers a ready to use library (gmic_cluts.gmz).
 
 The compressed luts are actually 100 times smaller than *haldclut* files.
@@ -49,7 +49,7 @@ Note: except for compressed LUT, due to the size of the LUT file, LUT data are n
 > CAUTION: dt understands *Compressed LUT* files only if G'MIC library is installed on your machine.
 
 ---
-##The module itself
+## The module itself
 Before using the module you must define the folder where you have stored the LUTs you like. This folder can have sub-folders. This is done selecting the correct *3D lut root folder* in *Configuration/Core options/Miscellaneous*.
 
 {{< center >}}
@@ -70,7 +70,7 @@ Lut3d has three parameters:
 
 {{< /center >}}
 
-###LUT file
+### LUT file
 The different types of source file are described above.
 
 The important point to remember is the difference between compressed and not compressed files.
@@ -79,14 +79,14 @@ If compressed, the LUT itself is saved (compressed) with the parameters of the i
 Otherwise the parameters only hold the file name and path (relative to *3D lut root folder*).
 As a consequence the module cannot recalculate the image without original LUT file.
 
-###Color space
+### Color space
 Each 3D LUT is built to be applied on a given color space. The module lut3d lets you select the appropriated one.
 Usually *cube* files are built for REC.709 and *haldclut* for sRGB.
 
 Note: The color space selection is effective when lut3d module is placed between input color profile and output color profile modules.
 Otherwise the selected color profile is ignored, and the LUT is applied on the current profile in the pipeline.
 
-###Interpolation
+### Interpolation
 The interpolation method defines the way to calculate colors which are not exactly on a node of the RGB cube (described by the LUT).
 
 There are three interpolation methods available: tetrahedral (the default one), trilinear and pyramid.
@@ -104,19 +104,19 @@ Usually *haldclut* cubes (64x64x64 is common) are larger than *cube* cubes (33x3
 
 {{< /center >}}
 ---
-##G'MIC commands.
+## G'MIC commands.
 G'MIC offers some useful commands to manipulate LUT files.
 To be able to run these commands you must have G'MIC installed on your machine.
 
 See [https://gmic.eu/](https://gmic.eu/).
 
-###*Cube* to *Haldclut*
+### *Cube* to *Haldclut*
 Be careful, as an *haldclut* file is an image, the square of the image width must be equal to the cube of the cube size.
 The below command first resizes the input cube and then transforms the result into a flat image.
 
 `gmic -input_cube <filename1>.cube -r 64,64,64,3,3 -r 512,512,1,3,-1 -o <filename2>.png`
 
-###Compression
+### Compression
 Compression is a process which takes time.
 
 * To compress an *haldclut* file:

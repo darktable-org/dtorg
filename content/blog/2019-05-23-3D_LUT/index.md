@@ -104,7 +104,7 @@ Usually *haldclut* cubes (64x64x64 is common) are larger than *cube* cubes (33x3
 
 {{< /center >}}
 ---
-## G'MIC commands.
+## G'MIC commands
 G'MIC offers some useful commands to manipulate LUT files.
 To be able to run these commands you must have G'MIC installed on your machine.
 

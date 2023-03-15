@@ -13,7 +13,7 @@ A new year is coming on us quickly, so how about a nice new website to go with i
 
 <figure>
 <a title="J. C. Leyendecker [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ABabynew.jpg">
-<img alt="Babynew" src="Babynew.jpg" width="288" height="369"/>
+<img alt="Babynew" src="/2017/12/a-new-website/Babynew.jpg" width="288" height="369"/>
 </a>
 <figcaption>
 Baby New Year from 110 years ago ...

@@ -82,9 +82,17 @@ not band limited at all. don't use this curve at home. it will produce
 random aliasing when used with the fast local laplacian code.
 
 <span style="display: table-row;">
-<span style="display: table-cell; max-width: 50%; position: relative">![fig 6](fig6.png)</span>
+<span style="display: table-cell; max-width: 50%; position: relative">
+
+![fig 6](fig6.png)
+
+</span>
 &nbsp;
-<span style="display: table-cell; max-width: 50%; position: relative">![clarity](curve_clarity.svg)</span>
+<span style="display: table-cell; max-width: 50%; position: relative">
+
+![clarity](curve_clarity.svg)
+
+</span>
 </span>
 
 darktable uses what is shown on the right instead: the contrast-s curve in the center
@@ -125,9 +133,17 @@ drag the separator in the middle to compare before/after!
 ### increased local contrast:
 
 <span style="display: table-row;">
-<span style="display: table-cell">![ident](curve_ident.svg)</span>
+<span style="display: table-cell">
+
+![ident](curve_ident.svg)
+
+</span>
 &nbsp;
-<span style="display: table-cell">![clarity](curve_clarity.svg)</span>
+<span style="display: table-cell">
+
+![clarity](curve_clarity.svg)
+
+</span>
 </span>
 
 {{< compimg "id0001" "images/flower.jpg" "images/flower_01.jpg" "original" "clarity" >}}
@@ -137,18 +153,34 @@ yes, the curve changes the bottom part. which you would think belongs to the
 shadows. turns out it doesn't.
 
 <span style="display: table-row;">
-<span style="display: table-cell">![ident](curve_ident.svg)</span>
+<span style="display: table-cell">
+
+![ident](curve_ident.svg)
+
+</span>
 &nbsp;
-<span style="display: table-cell">![highlights](curve_highlights.svg)</span>
+<span style="display: table-cell">
+
+![highlights](curve_highlights.svg)
+
+</span>
 </span>
 
 {{< compimg "id0002" "images/flower.jpg" "images/flower_02.jpg" "original" "highlights compressed" >}}
 ### pushed shadows up:
 
 <span style="display: table-row;">
-<span style="display: table-cell">![ident](curve_ident.svg)</span>
+<span style="display: table-cell">
+
+![ident](curve_ident.svg)
+
+</span>
 &nbsp;
-<span style="display: table-cell">![shadows](curve_shadows.svg)</span>
+<span style="display: table-cell">
+
+![shadows](curve_shadows.svg)
+
+</span>
 </span>
 
 {{< compimg "id0003" "images/flower.jpg" "images/flower_03.jpg" "original" "shadows lifted" >}}

@@ -15,6 +15,18 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 
 # User manual
 
+## Version 4.2
+
+  * English [html](https://docs.darktable.org/usermanual/4.2/en/)/[epub](https://docs.darktable.org/usermanual/4.2/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/en/darktable_user_manual.pdf)
+
+Please note that the following translations are not complete (and will not be updated) for new features in version 4.2 -- untranslated portions of text will be presented in English.
+
+  * Brazilian Portuguese [html](https://docs.darktable.org/usermanual/4.2/pt_br/)/[epub](https://docs.darktable.org/usermanual/4.2/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/pt_br/darktable_user_manual.pdf)
+  * Dutch [html](https://docs.darktable.org/usermanual/4.2/nl/)/[epub](https://docs.darktable.org/usermanual/4.2/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/nl/darktable_user_manual.pdf)
+  * German [html](https://docs.darktable.org/usermanual/4.2/de/)/[epub](https://docs.darktable.org/usermanual/4.2/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/de/darktable_user_manual.pdf)
+  * Polish [html](https://docs.darktable.org/usermanual/4.2/pl/)/[epub](https://docs.darktable.org/usermanual/4.2/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/pl/darktable_user_manual.pdf)
+  * Ukrainian [html](https://docs.darktable.org/usermanual/4.2/uk/)/[epub](https://docs.darktable.org/usermanual/4.2/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/uk/darktable_user_manual.pdf)
+
 ## Version 4.0
 
   * English [html](https://docs.darktable.org/usermanual/4.0/en/)/[epub](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.pdf)

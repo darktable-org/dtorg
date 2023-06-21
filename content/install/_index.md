@@ -13,17 +13,17 @@ menu: ["main", "footer"]
 <div style="text-align: center;">
   <h2>Source Code</h2>
   <p>
-  <a href="https://github.com/darktable-org/darktable/releases/download/release-4.2.1/darktable-4.2.1.tar.xz">darktable-4.2.1.tar.xz</a>
+  <a href="https://github.com/darktable-org/darktable/releases/download/release-4.4.0/darktable-4.4.0.tar.xz">darktable-4.4.0.tar.xz</a>
   </p>
 </div>
 <div style="text-align: center;">
   <h2>Windows</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.2.1/darktable-4.2.1-win64.exe' title='Microsoft Windows'>darktable-4.2.1-win64.exe</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.4.0/darktable-4.4.0-win64.exe' title='Microsoft Windows'>darktable-4.4.0-win64.exe</a></p>
 </div>
 <div style="text-align: center;">
   <h2>macOS</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.2.1/darktable-4.2.1_x86_64.dmg' title='macOS on Intel'>darktable-4.2.1_x86_64.dmg</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.2.1/darktable-4.2.1_arm64.dmg' title='macOS on Apple silicon'>darktable-4.2.1_arm64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.4.0/darktable-4.4.0-x86_64.dmg' title='macOS on Intel'>darktable-4.4.0-x86_64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.4.0/darktable-4.4.0-arm64.dmg' title='macOS on Apple silicon'>darktable-4.4.0-arm64.dmg</a></p>
   <p><a href="#macos">installation notes</a></p>
 </div>
 </div>

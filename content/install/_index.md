@@ -62,9 +62,19 @@ The available packages are:
 
 * [flatpak](https://www.flathub.org/apps/details/org.darktable.Darktable)
 
+<h2 id='windows'>Windows</h2>
+
+The installer supports Windows 8.1 w/ [UCRT](https://support.microsoft.com/en-us/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c) added, and later.
+
+### MSYS2 Package Manager
+
+From your UCRT64, CLANG64, or CLANGARM64 terminal run:
+
+    pacman -S --needed ${MINGW_PACKAGE_PREFIX}-darktable
+
 <h2 id='macos'>macOS</h2>
 
-This bundle supports macOS versions starting with 10.14 (Mojave).
+This bundle supports macOS versions starting with 11.3 (Big Sur).
 
 What to do with dialog saying *"darktable" can't be opened because it was not downloaded from the Mac App Store*:
 

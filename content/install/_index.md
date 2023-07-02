@@ -24,7 +24,7 @@ menu: ["main", "footer"]
   <h2>macOS</h2>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.4.1/darktable-4.4.1-x86_64.dmg' title='macOS on Intel'>darktable-4.4.1-x86_64.dmg</a></p>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.4.1/darktable-4.4.1-arm64.dmg' title='macOS on Apple silicon'>darktable-4.4.1-arm64.dmg</a></p>
-  <p><a href="#macos">installation notes</a></p>
+  <p><a href="#macos" class="attention">installation notes</a></p>
 </div>
 </div>
 

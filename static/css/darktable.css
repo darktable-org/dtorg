@@ -793,3 +793,7 @@ p:hover a.anchor {
 .center {
   text-align: center;
 }
+
+.attention {
+    color: #df2525;
+}

@@ -66,18 +66,32 @@ The available packages are:
 
 These bundles support macOS versions starting with 11.3 (Big Sur).
 
-Depending on OS version there may be problems with the installation due to security settings of the Mac:
-1. Upcoming Dialog saying *"darktable" can't be opened because it was not downloaded from the Mac App Store* (use Method 1 or 2)
-2. Upcoming dialog saying *"darktable.app" is damaged* (Use Method 2, Method 1 will not work)
+### Fixing issues with macOS security settings
 
-**Method 1:** Locate darktable in Applications folder (or wherever you installed it) using Finder
-  * Do "Open" via context menu
-  * You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application
-  * After that you will be able to start darktable without this trick (well, until you update it, then you will have to do above steps again)
+Depending on the version of macOS, there maybe some warnings causing darktable not to run.
 
-**Method 2:** Permanently override security setting for darktable
-  * run `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg` command before mounting the image
-  * or run `xattr -dr com.apple.quarantine /Applications/darktable.app` after installing
+#### Dialog: *"darktable" can't be opened because it was not downloaded from the Mac App Store*
+
+Do one of the follow:
+
+1. Locate darktable in Applications folder (or wherever you installed it) using Finder
+2. Do "Open" via context menu
+3. You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application
+4. After that you will be able to start darktable without this trick (well, until you update it, then you will have to do above steps again)
+
+or
+
+1. Open the Terminal app.
+2. Do one of the following:
+  * If the image is not mounted, run `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg`
+  * If darktable is already installed, run `xattr -dr com.apple.quarantine /Applications/darktable.app`
+
+#### Dialog: *"darktable.app" is damaged*
+
+1. Open the Terminal app.
+2. Do one of the following:
+  * If the image is not mounted, run `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg`
+  * If darktable is already installed, run `xattr -dr com.apple.quarantine /Applications/darktable.app`
 
 ### macOS Package Managers
 

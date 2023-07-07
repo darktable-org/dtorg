@@ -40,17 +40,17 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 Right now this means for the stable package:
 
-* Debian 11, Testing, Unstable
+* Debian Testing
 * Fedora 36, 37, Rawhide
-* openSUSE 15.4, Tumbleweed
-* Ubuntu 21.04, 21.10, 22.04, 22.10
+* openSUSE Tumbleweed
+* Ubuntu 23.04
 
 For master git branch we build for the following distributions:
 
-* Debian 11, Testing, Unstable
+* Debian Testing
 * Fedora 36, 37, Rawhide
-* openSUSE 15.4, Tumbleweed
-* Ubuntu 21.04, 21.10, 22.04
+* openSUSE Tumbleweed
+* Ubuntu 22.10, 23.04
 
 The available packages are:
 

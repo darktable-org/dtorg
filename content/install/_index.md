@@ -66,14 +66,18 @@ The available packages are:
 
 These bundles support macOS versions starting with 11.3 (Big Sur).
 
-What to do with dialog saying *"darktable" can't be opened because it was not downloaded from the Mac App Store*:
+Depending on OS version there may be problems with the installation due to security settings of the Mac:
+1. Upcoming Dialog saying *"darktable" can't be opened because it was not downloaded from the Mac App Store* (use Method 1 or 2)
+2. Upcoming dialog saying *"darktable.app" is damaged* (Use Method 2, Method 1 will not work)
 
-  * Locate darktable in Applications folder (or wherever you installed it) using Finder
+**Method 1:** Locate darktable in Applications folder (or wherever you installed it) using Finder
   * Do "Open" via context menu
   * You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application
   * After that you will be able to start darktable without this trick (well, until you update it, then you will have to do above steps again)
 
-or you can prevent this from happening by running `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg` command before mounting the image (or `xattr -dr com.apple.quarantine /Applications/darktable.app` after installing).
+**Method 2:** Permanently override security setting for darktable
+  * run `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg` command before mounting the image
+  * or run `xattr -dr com.apple.quarantine /Applications/darktable.app` after installing
 
 ### macOS Package Managers
 

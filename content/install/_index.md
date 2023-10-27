@@ -38,25 +38,19 @@ If your unix-like operating system is capable of running a graphical session, da
 
 The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple Linux distributions.
 
-Right now this means for the stable package:
+[Latest darktable release](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable) is built for the following distribution releases:
 
-* Debian 11, Testing, Unstable
+* Debian Testing
 * Fedora 36, 37, Rawhide
-* openSUSE 15.4, Tumbleweed
-* Ubuntu 21.04, 21.10, 22.04, 22.10
+* openSUSE Tumbleweed
+* Ubuntu 23.04
 
-For master git branch we build for the following distributions:
+[Master git branch](https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable) is built for:
 
-* Debian 11, Testing, Unstable
+* Debian Testing
 * Fedora 36, 37, Rawhide
-* openSUSE 15.4, Tumbleweed
-* Ubuntu 21.04, 21.10, 22.04
-
-The available packages are:
-
-* [latest release](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable)
-* [snapshots from the stable release branch](https://software.opensuse.org/download.html?project=graphics:darktable:stable&package=darktable)
-* [snapshots from the master branch](https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable)
+* openSUSE Tumbleweed
+* Ubuntu 22.10, 23.04
 
 ## Universal Package Formats
 

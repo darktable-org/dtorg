@@ -28,6 +28,8 @@ menu: ["main", "footer"]
 </div>
 </div>
 
+Some commonly asked questions can be found in our [FAQ](/about/faq). Please read it before reporting bugs or feature requests.
+
 <h1 id="linux">Linux/Unix Binary Packages</h1>
 
 ## From Your Package Manager

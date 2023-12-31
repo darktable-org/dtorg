@@ -25,7 +25,7 @@ Please note that the following translation is not yet complete -- untranslated p
 
 ## Version 4.4
 
-The user manual was incomplete for version 4.4 -- you are advised to refer to the v4.2 or v4.6 manuals instead
+The user manual was incomplete for version 4.4 -- you are advised to refer to the v4.2 or v4.6 manuals instead.
 
 ## Version 4.2
 

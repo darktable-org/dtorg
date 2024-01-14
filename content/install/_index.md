@@ -60,7 +60,7 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 <h2 id='macos'>macOS</h2>
 
-These bundles support macOS versions starting with 11.3 (Big Sur).
+These bundles support macOS versions starting with 12.5 (Monterey).
 
 ### Fixing issues with macOS security settings
 

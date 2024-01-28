@@ -18,10 +18,9 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 ## Version 4.6
 
   * English [html](https://docs.darktable.org/usermanual/4.6/en/)/[epub](https://docs.darktable.org/usermanual/4.6/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/en/darktable_user_manual.pdf)
-
-Please note that the following translation is not yet complete -- untranslated portions of text will be presented in English.
-
   * Ukrainian [html](https://docs.darktable.org/usermanual/4.6/uk/)/[epub](https://docs.darktable.org/usermanual/4.6/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/uk/darktable_user_manual.pdf)
+  * Dutch [html](https://docs.darktable.org/usermanual/4.6/nl/)/[epub](https://docs.darktable.org/usermanual/4.6/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/nl/darktable_user_manual.pdf)
+  * Polish [html](https://docs.darktable.org/usermanual/4.6/pl/)/[epub](https://docs.darktable.org/usermanual/4.6/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/pl/darktable_user_manual.pdf)
 
 ## Version 4.4
 

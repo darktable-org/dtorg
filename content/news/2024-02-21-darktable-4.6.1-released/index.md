@@ -1,6 +1,6 @@
 ---
 author: Pascal Obry
-date: 2024-02-21 00:10:00+00:00
+date: 2024-02-17 00:10:00+00:00
 layout: post
 title: "darktable 4.6.1 released"
 lede: queyras.jpg

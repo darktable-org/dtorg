@@ -10,7 +10,7 @@ tags:
   - darktable release
 ---
 
-We're proud to announce the new feature release of darktable, 4.6.1!
+We're proud to announce the new corrective release of darktable, 4.6.1!
 
 The github release is here: [https://github.com/darktable-org/darktable/releases/tag/release-4.6.1](https://github.com/darktable-org/darktable/releases/tag/release-4.6.1).
 

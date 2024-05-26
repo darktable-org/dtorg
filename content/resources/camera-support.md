@@ -11,24 +11,26 @@ This is an auto-generated list of the state of support of different camera model
 
 If your particular camera is not on the list or is missing some form of support please check for an open bug report and if one doesn't exist create one and attach sample files. For details on the kinds of things that are needed see these two blog posts:
 
-  * [What's involved with adding support for new cameras](/2012/10/whats-involved-with-adding-support-for-new-cameras/)
-  * [Profiling sensor and photon noise](/2012/12/profiling-sensor-and-photon-noise/)
+- [What's involved with adding support for new cameras](/2012/10/whats-involved-with-adding-support-for-new-cameras/)
+- [Profiling sensor and photon noise](/2012/12/profiling-sensor-and-photon-noise/)
 
 You don't need to go through these steps yourself necessarily but instead attach enough sample files to the bug report so we can do it ourselves.
 
 The following formats are explicitly not supported:
 
- * Fujifilm lossy
- * Nikon high efficiency
- * Sony lossless
+- Apple ProRAW DNGs
+- CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
+- DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
+- Fujifilm lossy RAFs
+- Nikon high efficiency NEFs
+- OM System 14-bit high resolution ORFs
+- Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
 The table has the following fields:
 
-  * **Camera:** The name of the camera with at least basic support in darktable
-
-  * **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the temperature module
-
-  * **Noise Profile:** If darktable has a noise profile so you can use the profiled denoise module with the camera
+- **Camera:** The name of the camera with at least basic support in darktable
+- **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the temperature module
+- **Noise Profile:** If darktable has a noise profile so you can use the profiled denoise module with the camera
 
 NOTE: this table does not list the availability of freely available sample at [raw.pixls.us](https://raw.pixls.us/). Please refer to [this post](https://discuss.pixls.us/t/raw-samples-wanted/5420) for the up-to-date information. There currently are [![count of unique cameras in the archive](https://raw.pixls.us/button-cameras.svg)](https://raw.pixls.us/) unique cameras, [![total count of unique samples](https://raw.pixls.us/button-samples.svg)](https://raw.pixls.us/) unique samples.
 

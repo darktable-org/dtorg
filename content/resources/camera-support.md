@@ -16,6 +16,12 @@ If your particular camera is not on the list or is missing some form of support 
 
 You don't need to go through these steps yourself necessarily but instead attach enough sample files to the bug report so we can do it ourselves.
 
+The following formats are explicitly not supported:
+
+ * Fujifilm lossy
+ * Nikon high efficiency
+ * Sony lossless
+
 The table has the following fields:
 
   * **Camera:** The name of the camera with at least basic support in darktable

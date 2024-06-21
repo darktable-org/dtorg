@@ -61,6 +61,8 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 ## Universal Package Formats
 
+* [Official AppImage 4.8.0](https://github.com/darktable-org/darktable/releases/download/release-4.8.0/darktable-4.8.0-x86_64.AppImage)
+
 * [flatpak](https://www.flathub.org/apps/details/org.darktable.Darktable)
 
 <h2 id='macos'>macOS</h2>

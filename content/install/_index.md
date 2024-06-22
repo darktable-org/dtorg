@@ -28,7 +28,7 @@ menu: ["main", "footer"]
   <h2>macOS</h2>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.0/darktable-4.8.0-x86_64.dmg' title='macOS 13.5 on Intel'>darktable-4.8.0-x86_64.dmg</a></p>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.0/darktable-4.8.0-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-4.8.0-arm64.dmg</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.0/darktable-4.8.0-arm64-macOS-13.5.dmg' title='macOS 13.5 on Apple silicon'>darktable-4.8.0-arm64-macOS-12.5.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.0/darktable-4.8.0-arm64-macOS-13.5.dmg' title='macOS 13.5 on Apple silicon'>darktable-4.8.0-arm64-macOS-13.5.dmg</a></p>
   <p><a href="#macos" class="attention">installation notes</a></p>
 </div>
 </div>
@@ -67,7 +67,7 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 <h2 id='macos'>macOS</h2>
 
-These bundles support macOS versions starting with 12.5 (Monterey).
+These bundles support macOS versions starting with 13.5 (Ventura).
 
 ### Fixing issues with macOS security settings
 

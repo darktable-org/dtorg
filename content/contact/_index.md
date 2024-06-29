@@ -23,12 +23,6 @@ Code contributions or translation: [open a pull request](https://github.com/dark
 
 IRC: _irc.oftc.net_, channel _#darktable_ or use the [web interface](https://webchat.oftc.net/?channels=%23darktable)
 
-Mailing lists (last resort, posts by subscribers only):
-
-  * [development mailing list](https://www.mail-archive.com/darktable-dev@lists.darktable.org/): subscribe via email to `darktable-dev+subscribe@lists.darktable.org` and unsubscribe via email to `darktable-dev+unsubscribe@lists.darktable.org` (run by mlmmj).
-  * [user mailing list](https://www.mail-archive.com/darktable-user@lists.darktable.org/): subscribe via email to `darktable-user+subscribe@lists.darktable.org` and unsubscribe via email to `darktable-user+unsubscribe@lists.darktable.org` (run by mlmmj).
-  * [CI mailing list](https://www.mail-archive.com/darktable-ci@lists.darktable.org/) (Read-only, messages from automated test builds): `darktable-ci+subscribe@lists.darktable.org` (subscription may not work, mail Johannes directly in that case.) (run by mlmmj).
-
 # Developers / darktable Team
 
 Here are some members of our community:

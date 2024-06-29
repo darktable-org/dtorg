@@ -17,11 +17,13 @@ menu: ["main", "footer"]
 
 Help/forum: [discuss.pixls.us](https://discuss.pixls.us)
 
-Report issues or feature requests:  [github issue](https://github.com/darktable-org/darktable/issues/new/choose).
+Report issues or feature requests:  [github issue](https://github.com/darktable-org/darktable/issues/new/choose)
 
-Code contributions or translation: [open a pull request](https://github.com/darktable-org/darktable/pulls).
+Code contributions or translation: [open a pull request](https://github.com/darktable-org/darktable/pulls)
 
 IRC: _irc.oftc.net_, channel _#darktable_ or use the [web interface](https://webchat.oftc.net/?channels=%23darktable)
+
+Matrix: [#darktable](https://matrix.to/#/#_oftc_#darktable:matrix.org) room (bridged with the IRC channel mentioned above)
 
 # Developers / darktable Team
 

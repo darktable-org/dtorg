@@ -24,6 +24,8 @@ $ sha256sum darktable-4.8.1-x86_64.dmg (macOS 13.5)
 84698315ad23c745cb126b5b695b211781f3e6355924cb9016e36d4c2dc0c6f7  darktable-4.8.1-x86_64.dmg
 $ sha256sum darktable-4.8.1-arm64.dmg (macOS 14.0)
 1947ffb16f1fcc21d43c7bc7002e79f49fa82ee3d17a76832c11ee6b4d3cad73  darktable-4.8.1-arm64.dmg
+$ sha256sum darktable-4.8.1-arm64-13.5.dmg
+459e476bd6b48330b5293bee4e135c258070af574bd179e7d9fb7e74acc61d1b  darktable-4.8.1-arm64-13.5.dmg
 $ sha256sum darktable-4.8.1-win64.exe
 a7255eaad0cd36ad4771441ef5ad052d3069a90991de50f9b394a7c235de61e3  darktable-4.8.1-win64.exe
 $ sha256sum darktable-4.8.1-x86_64.AppImage

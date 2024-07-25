@@ -28,6 +28,7 @@ menu: ["main", "footer"]
   <h2>macOS</h2>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.1/darktable-4.8.1-x86_64.dmg' title='macOS 13.5 on Intel'>darktable-4.8.1-x86_64.dmg</a></p>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.1/darktable-4.8.1-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-4.8.1-arm64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-4.8.1/darktable-4.8.1-arm64-macOS-13.5.dmg' title='macOS 13.5 on Apple silicon'>darktable-4.8.1-arm64-macOS-13.5.dmg</a></p>
   <p><a href="#macos" class="attention">installation notes</a></p>
 </div>
 </div>

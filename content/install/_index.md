@@ -46,17 +46,17 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 [Latest darktable release](https://software.opensuse.org/download.html?project=graphics:darktable&package=darktable) is built for the following distribution releases:
 
-* Debian Testing
-* Fedora 36, 37, Rawhide
+* Debian 12, Testing, Unstable
+* Fedora 39, 40
 * openSUSE Tumbleweed
-* Ubuntu 23.04
+* Ubuntu 22.04, 22.10, 23.04, 23.10, 24.04
 
 [Master git branch](https://software.opensuse.org/download.html?project=graphics:darktable:master&package=darktable) is built for:
 
-* Debian Testing
-* Fedora 36, 37, Rawhide
+* Debian 12, Testing, Unstable
+* Fedora 38, 39, 40
 * openSUSE Tumbleweed
-* Ubuntu 22.10, 23.04
+* Ubuntu 22.04, 22.10, 23.04, 23.10, 24.04
 
 ## Universal Package Formats
 

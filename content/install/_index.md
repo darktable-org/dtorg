@@ -35,13 +35,15 @@ menu: ["main", "footer"]
 
 Some commonly asked questions can be found in our [FAQ](/about/faq). Please read it before reporting bugs or feature requests.
 
-<h1 id="linux">Linux/Unix Binary Packages</h1>
+# Community maintained packages for Linux/Unix
 
-## From Your Package Manager
+<h2 id="linux">Linux/Unix Binary Packages</h2>
+
+### From Your Package Manager
 
 If your unix-like operating system is capable of running a graphical session, darktable is likely available. Check your package manager or software center.
 
-## OBS (Open Build Service)
+### OBS (Open Build Service)
 
 The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple Linux distributions.
 
@@ -59,13 +61,11 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 * openSUSE Tumbleweed
 * Ubuntu 22.04, 22.10, 23.04, 23.10, 24.04
 
-## Universal Package Formats
-
-* [Official AppImage 4.8.1](https://github.com/darktable-org/darktable/releases/download/release-4.8.1/darktable-4.8.1-x86_64.AppImage)
+### Universal Package Formats
 
 * [flatpak](https://www.flathub.org/apps/details/org.darktable.Darktable)
 
-<h2 id='macos'>macOS</h2>
+<h1 id='macos'>macOS</h1>
 
 These bundles support macOS versions starting with 13.5 (Ventura).
 

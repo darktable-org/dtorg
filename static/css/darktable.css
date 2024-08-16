@@ -797,3 +797,9 @@ p:hover a.anchor {
 .attention {
     color: #df2525;
 }
+
+table th {
+    position: sticky;
+    top: 0;
+    background-color: inherit;
+}

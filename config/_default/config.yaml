@@ -16,7 +16,7 @@ markup:
 taxonomies:
   tag: tags
   author: author
-disableKinds: ['taxonomyTerm']
+disableKinds: ['taxonomy']
 outputFormats:
   SearchIndex:
     mediaType: "application/json"

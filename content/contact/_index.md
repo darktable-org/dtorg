@@ -135,18 +135,6 @@ Here are some members of our community:
 			<td></td>
 		</tr>
 		<tr>
-			<td><img alt="parafin" src="/images/team/parafin.png"></td>
-			<td>parafin</td>
-			<td>Igor Kuzmin</td>
-			<td><span class="caps">OS</span> X maintainer</td>
-			<td>
-				<a href="http://paraf.in/">homepage</a>
-			</td>
-			<td>
-				<a href="http://wiki.paraf.in/~parafin/photos">gallery</a>
-			</td>
-		</tr>
-		<tr>
 			<td><img alt="alicvb" src="/images/team/aldric_100.jpg"></td>
 			<td>alicvb</td>
 			<td>Aldric Renaudin</td>

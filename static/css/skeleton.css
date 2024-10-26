@@ -163,12 +163,8 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1D74DB;
-  transition: color .3s ease;
-}
-a:hover {
-  color: #1256a8; }
+a { color: #1EAEDB; }
+a:hover { color: #1256a8; }
 
 
 /* Buttons

@@ -234,6 +234,14 @@ h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
     margin-top: 0;
 }
 
+a {
+    color: #1D74DB;
+    transition: color .3s ease;
+}
+a:hover {
+    color: #1256a8; 
+}
+
 .category hr {
     max-width: 33%;
 }

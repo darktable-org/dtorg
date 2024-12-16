@@ -3,6 +3,8 @@ title: "How do I ... in darktable 5.0?"
 author: "Ralf Brown"
 slug: howto-in-5.0
 date: 2024-12-12
+lede: falls.jpg
+lede_author: "Ralf Brown"
 tags:
   - howto
 ---
@@ -290,7 +292,7 @@ You can add multi-line text with a single instance of the module by
 inserting "$(NL)" where the text should wrap to the next line.  Other
 [variables](https://darktable.org/usermanual/en/special-topics/variables/) can also be inserted and
 will be replaced by their current values whenever the image is
-processed.
+processed.  The lede image for this post shows an example of multi-line text using the _watermark_ module.
 
 </details>
 

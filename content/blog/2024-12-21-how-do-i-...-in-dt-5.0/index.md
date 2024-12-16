@@ -2,7 +2,7 @@
 title: "How do I ... in darktable 5.0?"
 author: "Ralf Brown"
 slug: howto-in-5.0
-date: 2024-12-21
+date: 2024-12-12
 tags:
   - howto
 ---
@@ -17,7 +17,7 @@ Have a tip not covered here?  Share it in the comments!
 
 ### How do I...
 
-<details><summary>run darktable in "simple" or "beginner" mode</summary>
+<details><summary><b>run darktable in "simple" or "beginner" mode</b></summary>
 
 The large number of processing modules and many different ways of
 accomplishing the same goal often leaves first-time users feeling
@@ -31,12 +31,12 @@ contains the most-used sliders and controls other than cropping, so a
 suggested strategy to ease yourself into darktable is to limit
 yourself to the QAP and the cropping module while editing until you
 feel comfortable with them, then gradually explore other modules
-(many of which are rather specialized) and additional controls from
+(many of which are quite specialized) and additional controls from
 the modules on the QAP which are not displayed in the panel.
 
 </details>
 
-<details><summary>remove all the automatically-applied edits</summary>
+<details><summary><b>remove all the automatically-applied edits</b></summary>
 
 Most of the automatically-applied edits you see in the
 [_darkroom_](https://darktable.org/usermanual/en/darkroom/) view when opening an image are required
@@ -56,24 +56,7 @@ _global preferences_ dialog.
 
 </details>
 
-<details><summary>undo edits or other changes</summary>
-
-Most actions done in [lightable view](https://darktable.org/usermanual/en/lighttable/undo-redo/) can
-be reversed with the standard Ctrl-Z shortcut key and reapplied with
-Ctrl-Y.
-
-In darkroom view, you can either use
-[Ctrl-Z](https://darktable.org/usermanual/en/darkroom/pixelpipe/undo-redo/) to undo actions one step
-at a time, or you can click on an item in the
-[_history stack_](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/history-stack/)
-module to reset the edit state to what it was when that item was added to
-the stack.  You can freely jump between different positions in the
-history as long as you do not change settings in any of the
-[processing modules](https://darktable.org/usermanual/en/module-reference/processing-modules/).
-
-</details>
-
-<details><summary>make images look like out-of-camera JPEGs</summary>
+<details><summary><b>make images look like out-of-camera JPEGs</b></summary>
 
 By default, darktable displays your raw images with minimal processing -
 just enough to get a displayable image (for unedited images, the
@@ -101,7 +84,27 @@ to make them look like JPEGs from the other model, but may still yield
 interesting results.
 </details>
 
-<details><summary>batch edit photos</summary>
+<details><summary><b>undo edits or other changes</b></summary>
+
+Most actions done in [lightable view](https://darktable.org/usermanual/en/lighttable/undo-redo/) can
+be reversed with the standard Ctrl-Z shortcut key and reapplied with
+Ctrl-Y.
+
+In darkroom view, you can either use
+[Ctrl-Z](https://darktable.org/usermanual/en/darkroom/pixelpipe/undo-redo/) to undo actions one step
+at a time, or you can click on an item in the
+[_history stack_](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/history-stack/)
+module to reset the edit state to what it was when that item was added to
+the stack.  You can freely jump between different positions in the
+history as long as you do not change settings in any of the
+[processing modules](https://darktable.org/usermanual/en/module-reference/processing-modules/).
+Changing settings while displaying a history position other than the
+topmost (last) one will discard any changes above that point and add
+your change to the displayed edit.
+
+</details>
+
+<details><summary><b>batch edit photos</b></summary>
 
 To apply the same edit to multiple photos, you can
 
@@ -114,20 +117,21 @@ See also the [tutorial](https://darktable.org/usermanual/en/guides-tutorials/bat
 
 </details>
 
-<details><summary>make a virtual copy of an image</summary>
+<details><summary><b>make a virtual copy of an image</b></summary>
 
 darktable calls multiple developments of a single image "duplicates".  You
 can create, remove, or name them using the
 [_duplicate manager_](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/duplicate-manager/)
 in [_darkroom_](https://darktable.org/usermanual/en/darkroom/darkroom-view-layout/) view, and you can
-create duplicates by selecting one or more images in the lighttable
+create duplicates by selecting one or more images in the
+[_lighttable_](https://darktable.org/usermanual/en/lighttable/lighttable-view-layout/)
 and clicking on the _duplicate_ button in the
 [_actions on selection_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/selected-image/)
 module.
 
 </details>
 
-<details><summary>make adjustment layers</summary>
+<details><summary><b>make adjustment layers</b></summary>
 
 The darktable [pixelpipe](https://darktable.org/usermanual/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/) is effectively equivalent to a stack of
 adjustment layers, and the right-hand active modules display can be
@@ -145,7 +149,24 @@ any processing module in darktable can be [masked](https://darktable.org/userman
 
 </details>
 
-<details><summary>add clarity</summary>
+<details><summary><b>apply a preset</b></summary>
+
+What other programs call presets, darktable calls _styles_.
+
+In darktable, a _preset_ is a particular configuration of a __single__
+module, which may be accessed by clicking on the hamburger icon at the
+right of the module's header.
+
+A _style_ is a collection of presets for one or more modules which can
+be applied to one or more images at once.  You can apply styles in
+lighttable view with the
+[_styles_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/)
+module, or in darkroom view by clicking on the styles quick access
+button ![styles](styles-icon.png#icon) just below the bottom left corner of the image.
+
+</details>
+
+<details><summary><b>add clarity</b></summary>
 
 What other programs call clarity is an adjustment of local contrast.
 You can do this in darktable with the
@@ -159,7 +180,7 @@ module (generally very subtle).
 
 </details>
 
-<details><summary>adjust hue/saturation/lightness (HSL)</summary>
+<details><summary><b>adjust hue/saturation/lightness (HSL)</b></summary>
 
 To adjust the hue, saturation, and/or lightness of pixels based on
 their original colors, use the
@@ -173,7 +194,7 @@ module.
 
 </details>
 
-<details><summary>adjust contrast/brightness/saturation</summary>
+<details><summary><b>adjust contrast/brightness/saturation</b></summary>
 
 To adjust contrast, you can use
 
@@ -212,7 +233,7 @@ To adjust saturation, you can use
 
 </details>
 
-<details><summary>adjust shadows/highlights</summary>
+<details><summary><b>adjust shadows/highlights</b></summary>
 
 To open shadows or improve details in highlights, use the
 [_tone equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/tone-equalizer/).
@@ -225,7 +246,15 @@ the image with that brightness.
 
 </details>
 
-<details><summary>make a luminosity mask</summary>
+<details><summary><b>apply Camera Calibration settings</b></summary>
+
+The [_rgb primaries_](https://darktable.org/usermanual/en/module-reference/processing-modules/rgb-primaries/)
+module gives you similar control over reg/green/blue hue and
+saturation and tinting of neutral colors.
+
+</details>
+
+<details><summary><b>make a luminosity mask</b></summary>
 
 Since a luminosity masks adjusts the strength of an effect by the
 brightness of each pixel, you can accomplish this by creating a
@@ -241,7 +270,7 @@ produce a perceptually linear ramp.
 
 </details>
 
-<details><summary>add text to an image</summary>
+<details><summary><b>add text to an image</b></summary>
 
 Use the [_watermark_](https://darktable.org/usermanual/en/module-reference/processing-modules/watermark/)
 module with one of the text markers, i.e. "simple-text",
@@ -255,7 +284,7 @@ processed.
 
 </details>
 
-<details><summary>combine multiple images</summary>
+<details><summary><b>combine multiple images</b></summary>
 
 To combine multiple images, such as creating a mosaic or inserting
 additional content into an image (e.g. replacing the sky):
@@ -284,7 +313,7 @@ US Letter (8.5x11") paper.
 
 </details>
 
-<details><summary>replace the sky in an image</summary>
+<details><summary><b>replace the sky in an image</b></summary>
 
 To replace the sky in an image, you will first need another picture of
 just sky with the appearance you like.  Ensure that the image has been
@@ -303,7 +332,7 @@ losing a portion of the sky.
 
 </details>
 
-<details><summary>make an image black&white/monochrome</summary>
+<details><summary><b>make an image black&white/monochrome</b></summary>
 
 See the tutorial [_developing monochrome images_](https://darktable.org/usermanual/en/guides-tutorials/monochrome/).
 
@@ -314,7 +343,7 @@ modules to desaturate a color image to shades of gray.
 
 </details>
 
-<details><summary>apply a radial gradient</summary>
+<details><summary><b>apply a radial gradient</b></summary>
 
 darktable does not have radial gradients, but you can get a very similar effect by
 [_masking_](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/drawn/)
@@ -328,7 +357,7 @@ a point source for an effect.
 
 </details>
 
-<details><summary>remove an object from an image</summary>
+<details><summary><b>remove an object from an image</b></summary>
 
 darktable does not provide any AI-based object removal or inpainting
 methods, but you can replace an area in your image using either the
@@ -340,7 +369,7 @@ _composite_ lets you insert an arbitrary image from your library.
 
 </details>
 
-<details><summary>unsqueeze an anamorphic image</summary>
+<details><summary><b>unsqueeze an anamorphic image</b></summary>
 
 Images taken with an anamorphic lens will have a different pixel
 aspect ratio than the scene which was photographed.  To restore the
@@ -350,7 +379,7 @@ module.
 
 </details>
 
-<details><summary>create a "smart collection"</summary>
+<details><summary><b>create a "smart collection"</b></summary>
 
 Every [_collection_](https://darktable.org/usermanual/en/module-reference/utility-modules/shared/collections/)
 in darktable is "smart", and will immediately update when an image's

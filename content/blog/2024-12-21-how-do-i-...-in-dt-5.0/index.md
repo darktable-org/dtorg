@@ -26,7 +26,7 @@ single option right from the beginning, but focusing on a few key
 controls and slowly learning the rest as you discover that you need
 them.
 
-The [_Quick Access Panel_](https://darktable-org.github.io/dtdocs/en/darkroom/organization/quick-access-panel.md)
+The [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
 contains the most-used sliders and controls other than cropping, so a
 suggested strategy to ease yourself into darktable is to limit
 yourself to the QAP and the cropping module while editing until you
@@ -39,7 +39,7 @@ the modules on the QAP which are not displayed in the panel.
 <details><summary>remove all the automatically-applied edits</summary>
 
 Most of the automatically-applied edits you see in the
-[_darkroom_](https://darktable-org.github.io/dtdocs/en/darkroom.md) view when opening an image are required
+[_darkroom_](https://darktable.org/usermanual/en/darkroom/) view when opening an image are required
 to display your raw file _at all_.  Other software applies equivalent
 edits, but doesn't tell you about it.
 
@@ -51,25 +51,25 @@ Others which show with the usual power-button icon can be turned off,
 but are needed to have a _useful_ image display.  Automatic addition
 of the _color calibration_ and _filmic rgb_ or _sigmoid_ modules can
 be disabled by adjusting the auto-applied workflow defaults in the
-[_processing_](https://darktable-org.github.io/dtdocs/en/preferences-settings/processing.md) tab of the
+[_processing_](https://darktable.org/usermanual/en/preferences-settings/processing/) tab of the
 _global preferences_ dialog.
 
 </details>
 
 <details><summary>undo edits or other changes</summary>
 
-Most actions done in [lightable view](https://darktable-org.github.io/dtdocs/en/lighttable/undo-redo.md) can
+Most actions done in [lightable view](https://darktable.org/usermanual/en/lighttable/undo-redo/) can
 be reversed with the standard Ctrl-Z shortcut key and reapplied with
 Ctrl-Y.
 
 In darkroom view, you can either use
-[Ctrl-Z](https://darktable-org.github.io/dtdocs/en/darkroom/pixelpipe/undo-redo.md) to undo actions one step
+[Ctrl-Z](https://darktable.org/usermanual/en/darkroom/pixelpipe/undo-redo/) to undo actions one step
 at a time, or you can click on an item in the
-[_history stack_](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/darkroom/history-stack.md)
+[_history stack_](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/history-stack/)
 module to reset the edit state to what it was when that item was added to
 the stack.  You can freely jump between different positions in the
 history as long as you do not change settings in any of the
-[processing modules](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/_index.md).
+[processing modules](https://darktable.org/usermanual/en/module-reference/processing-modules/).
 
 </details>
 
@@ -87,12 +87,12 @@ automatically on import.
 
 For automatic application, install and activate the
 `apply_camera_style` Lua script in the [script
-installer](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/lua-scripts-installer.md).
+installer](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/lua-scripts-installer/).
 You can also use this script to apply the appropriate style to a
 selection of images which have already been imported.
 
 For manual application, open the
-[_styles_](https://darktable-org.github.io/dtdocs/en/../module-reference/utility-modules/lighttable/styles.md)
+[_styles_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/)
 module and navigate to the `darktable camera styles` entry in the list
 of styles.  Expand this entry to show camera manufacturers, then
 expand the appropriate manufacturer to access its models.  Note that
@@ -105,12 +105,12 @@ interesting results.
 
 To apply the same edit to multiple photos, you can
 
-- use a [style](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/styles.md)
+- use a [style](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/)
 
-- edit one photo and then [copy and paste](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/history-stack.md)
+- edit one photo and then [copy and paste](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/history-stack/)
   the edits onto others
 
-See also the [tutorial](https://darktable-org.github.io/dtdocs/en/guides-tutorials/batch-editing.md).
+See also the [tutorial](https://darktable.org/usermanual/en/guides-tutorials/batch-editing/).
 
 </details>
 
@@ -118,30 +118,30 @@ See also the [tutorial](https://darktable-org.github.io/dtdocs/en/guides-tutoria
 
 darktable calls multiple developments of a single image "duplicates".  You
 can create, remove, or name them using the
-_duplicate manager_](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/darkroom/duplicate-manager.md)
-in [_darkroom_](https://darktable-org.github.io/dtdocs/en/darkroom/darkroom-view-layout.md) view, and you can
+[_duplicate manager_](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/duplicate-manager/)
+in [_darkroom_](https://darktable.org/usermanual/en/darkroom/darkroom-view-layout/) view, and you can
 create duplicates by selecting one or more images in the lighttable
 and clicking on the _duplicate_ button in the
-[_actions on selection_](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/selected-image.md)
+[_actions on selection_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/selected-image/)
 module.
 
 </details>
 
 <details><summary>make adjustment layers</summary>
 
-The darktable [pixelpipe](https://darktable-org.github.io/dtdocs/en/darkroom/pixelpipe/the-pixelpipe-and-module-order.md) is effectively equivalent to a stack of
+The darktable [pixelpipe](https://darktable.org/usermanual/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/) is effectively equivalent to a stack of
 adjustment layers, and the right-hand active modules display can be
 treated very much like a Layers window/pane in pixel editors.  You
 start with a base image at the bottom, and then each successive module
 takes its input from below, makes some modification (if enabled), and
 passes the result to the module above it - just like in a Layers tool,
 where making a particular layer invisible is just turning off its
-effects.  As with adjustment layers, [reordering](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/darkroom/module-order.md) modules will
+effects.  As with adjustment layers, [reordering](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/module-order/) modules will
 change the overall effect of the processing.
 
-By enabling a module, or by [duplicating](https://darktable-org.github.io/dtdocs/en/darkroom/processing-modules/multiple-instances.md) one, you have just added
+By enabling a module, or by [duplicating](https://darktable.org/usermanual/en/darkroom/processing-modules/multiple-instances/) one, you have just added
 an adjustment layer to your processing.  Just like layers, (almost)
-any processing module in darktable can be [masked](https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/_index.md).
+any processing module in darktable can be [masked](https://darktable.org/usermanual/en/darkroom/masking-and-blending/).
 
 </details>
 
@@ -149,12 +149,12 @@ any processing module in darktable can be [masked](https://darktable-org.github.
 
 What other programs call clarity is an adjustment of local contrast.
 You can do this in darktable with the
-[_local contrast_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/local-contrast.md)
-module (on the [_Quick Access Panel_](https://darktable-org.github.io/dtdocs/en/darkroom/organization/quick-access-panel.md)
+[_local contrast_](https://darktable.org/usermanual/en/module-reference/processing-modules/local-contrast/)
+module (on the [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
 by default) or by starting with the "clarity" preset in the
-[_contrast equalizer_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/contrast-equalizer.md)
+[_contrast equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/contrast-equalizer/)
 module (quite strong) or one of the "local contrast" presets in the
-[_diffuse and sharpen_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/diffuse.md)
+[_diffuse and sharpen_](https://darktable.org/usermanual/en/module-reference/processing-modules/diffuse/)
 module (generally very subtle).
 
 </details>
@@ -163,12 +163,12 @@ module (generally very subtle).
 
 To adjust the hue, saturation, and/or lightness of pixels based on
 their original colors, use the
-[_color equalizer_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-equalizer.md)
+[_color equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-equalizer/)
 module.
 
 To adjust the hue, saturation, and/or lightness of pixels based on
 their saturation or lightness, use the
-[_color zones_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-zones.md)
+[_color zones_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-zones/)
 module.
 
 </details>
@@ -177,45 +177,45 @@ module.
 
 To adjust contrast, you can use
 
-- the contrast slider in either [_filmic rgb_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/filmic-rgb.md)
-  (on the _look_ tab) or [_sigmoid_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/sigmoid.md)
-  (on the [_Quick Access Panel_](https://darktable-org.github.io/dtdocs/en/darkroom/organization/quick-access-panel.md)
+- the contrast slider in either [_filmic rgb_](https://darktable.org/usermanual/en/module-reference/processing-modules/filmic-rgb/)
+  (on the _look_ tab) or [_sigmoid_](https://darktable.org/usermanual/en/module-reference/processing-modules/sigmoid/)
+  (on the [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
   by default when workflow is set to either of the "scene-referred" options in preferences).
 
-- the contrast slider in [_color balance rgb_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-balance-rgb.md),
+- the contrast slider in [_color balance rgb_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-balance-rgb/),
   adjusting the _contrast gray fulcrum_ slider on the _masks_ tab to control the center point of the contrast.
 
-- the [_contrast equalizer_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/contrast-equalizer.md)
+- the [_contrast equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/contrast-equalizer/)
   module for more localized contrast.
 
-- the [_local contrast_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/local-contrast.md)
+- the [_local contrast_](https://darktable.org/usermanual/en/module-reference/processing-modules/local-contrast/)
   module for very localized contrast enhancement, also known as
-  "clarity" (on the [_Quick Access Panel_](https://darktable-org.github.io/dtdocs/en/darkroom/organization/quick-access-panel.md)
+  "clarity" (on the [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
   by default).
 
 To adjust brightness, you can use
 
-- the [_exposure_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/exposure.md) module for linear adjustment
+- the [_exposure_](https://darktable.org/usermanual/en/module-reference/processing-modules/exposure/) module for linear adjustment
 
 - the _brilliance grading_ sliders in
-  [_color balance rgb_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-balance-rgb.md)
+  [_color balance rgb_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-balance-rgb/)
   for perceptual brightness adjustments (the "global brilliance" slider is
   on the Quick Access Panel by default).
 
 To adjust saturation, you can use
 
 - the _global vibrance_, _chroma grading_, or _saturation grading_ sliders in
-  [_color balance rgb_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-balance-rgb.md)
+  [_color balance rgb_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-balance-rgb/)
   (on the Quick Access Panel by default).
 
-- the [_velvia_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-module/velvia.md) module
+- the [_velvia_](https://darktable.org/usermanual/en/module-reference/processing-modules/velvia/) module
 
 </details>
 
 <details><summary>adjust shadows/highlights</summary>
 
 To open shadows or improve details in highlights, use the
-[_tone equalizer_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/tone-equalizer.md).
+[_tone equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/tone-equalizer/).
 
 On its _masking_ tab, click the two magic wands, and fine-tune the
 mask brightness with the _mask exposure compensation_ and _mask
@@ -229,7 +229,7 @@ the image with that brightness.
 
 Since a luminosity masks adjusts the strength of an effect by the
 brightness of each pixel, you can accomplish this by creating a
-[_parametric mask_](https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/parametric.md)
+[_parametric mask_](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/parametric/)
 for the effect and adjusting the "g" (gray) or L/Jz channel controls.
 For a mask targeting highlights, move the upper left triangle all the
 way to the right; for a mask targeting shadows, move the upper right
@@ -243,13 +243,13 @@ produce a perceptually linear ramp.
 
 <details><summary>add text to an image</summary>
 
-Use the [_watermark_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/watermark.md)
+Use the [_watermark_](https://darktable.org/usermanual/en/module-reference/processing-modules/watermark/)
 module with one of the text markers, i.e. "simple-text",
 "simple-text-shadow", or "fixed-size-text".
 
 You can add multi-line text with a single instance of the module by
 inserting "$(NL)" where the text should wrap to the next line.  Other
-[variables](https://darktable-org.github.io/dtdocs/en/special-topics/variables.md) can also be inserted and
+[variables](https://darktable.org/usermanual/en/special-topics/variables/) can also be inserted and
 will be replaced by their current values whenever the image is
 processed.
 
@@ -258,18 +258,17 @@ processed.
 <details><summary>combine multiple images</summary>
 
 To combine multiple images, such as creating a mosaic or inserting
-additional content into an image (such as [replacing the
-sky](sky-replacement.md):
+additional content into an image (e.g. replacing the sky):
 
 - ensure that all images you want to combine have been
-  [imported](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/import.md)
+  [imported](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/import/)
   into your library
 
-- use [_canvas enlargement_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/enlarge-canvas.md)
+- use [_canvas enlargement_](https://darktable.org/usermanual/en/module-reference/processing-modules/enlarge-canvas/)
   on one image (the "base" image) to add more space for the other images, if needed
 
 - use the
-  [_composite_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/composite.md)
+  [_composite_](https://darktable.org/usermanual/en/module-reference/processing-modules/composite/)
   module and drag the second image from the filmstrip into the module.
   Adjust the position, size, and rotation as desired.  Use a mask to
   include only part of the overlaid image.
@@ -277,8 +276,8 @@ sky](sky-replacement.md):
 - if you want to combine more than two images, create additional
   instances of the _composite_ module, one per image
 
-An [example style]() (download and import into darktable from the
-[styles](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/styles.md) module)
+An [example style](example-4up-montage.dtstyle) (download and import into darktable from the
+[styles](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/) module)
 shows the use of _canvas enlargement_ and _composite_ to make a 2x2
 grid of images plus caption text suitable for printing borderless on
 US Letter (8.5x11") paper.
@@ -289,15 +288,15 @@ US Letter (8.5x11") paper.
 
 To replace the sky in an image, you will first need another picture of
 just sky with the appearance you like.  Ensure that the image has been
-[imported](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/lighttable/import.md)
+[imported](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/import/)
 into your library.
 
 On the image whose sky you want to replace, open the
-[_composite_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/composite.md)
+[_composite_](https://darktable.org/usermanual/en/module-reference/processing-modules/composite/)
 module and drag your sky image from the filmstrip into the module.
 
-Turn on [parametric](https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/parametric.md)
-or [drawn and parametric](https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/drawn-and-parametric.md)
+Turn on [parametric](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/parametric/)
+or [drawn and parametric](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/drawn-and-parametric/)
 masking, then use color and lightness to select the sky and optionally
 a drawn mask to exclude any areas which can't be excluded without
 losing a portion of the sky.
@@ -306,11 +305,11 @@ losing a portion of the sky.
 
 <details><summary>make an image black&white/monochrome</summary>
 
-See the tutorial [_developing monochrome images_](https://darktable-org.github.io/dtdocs/en/guides-tutorial/monochrome.md).
+See the tutorial [_developing monochrome images_](https://darktable.org/usermanual/en/guides-tutorials/monochrome/).
 
-You can use the [_color calibration_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-calibration.md),
-[_color balance rgb_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/color-balance-rgb.md),
-or [_monochrome_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/monochrome.md)
+You can use the [_color calibration_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-calibration/),
+[_color balance rgb_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-balance-rgb/),
+or [_monochrome_](https://darktable.org/usermanual/en/module-reference/processing-modules/monochrome/)
 modules to desaturate a color image to shades of gray.
 
 </details>
@@ -318,7 +317,7 @@ modules to desaturate a color image to shades of gray.
 <details><summary>apply a radial gradient</summary>
 
 darktable does not have radial gradients, but you can get a very similar effect by
-[_masking_](https://darktable-org.github.io/dtdocs/en/darkroom/masking-and-blending/masks/drawn.md)
+[_masking_](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/drawn/)
 with a circle or ellipse which you adjust to a very small size with a
 very large feather to get a gradual drop-off in intensity in all
 directions from a central point.
@@ -333,8 +332,8 @@ a point source for an effect.
 
 darktable does not provide any AI-based object removal or inpainting
 methods, but you can replace an area in your image using either the
-[_retouch_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/retouch.md)
-or [_composite_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/composite.md)
+[_retouch_](https://darktable.org/usermanual/en/module-reference/processing-modules/retouch/)
+or [_composite_](https://darktable.org/usermanual/en/module-reference/processing-modules/composite/)
 modules.  With _retouch_, you can replace the area with content from
 elsewhere in the same image using the "heal" or "clone" modes, while
 _composite_ lets you insert an arbitrary image from your library.
@@ -346,30 +345,17 @@ _composite_ lets you insert an arbitrary image from your library.
 Images taken with an anamorphic lens will have a different pixel
 aspect ratio than the scene which was photographed.  To restore the
 correct appearance, use the
-_scale pixels_](https://darktable-org.github.io/dtdocs/en/module-reference/processing-modules/scale-pixels.md)
+[_scale pixels_](https://darktable.org/usermanual/en/module-reference/processing-modules/scale-pixels/)
 module.
 
 </details>
 
 <details><summary>create a "smart collection"</summary>
 
-Every [_collection_](https://darktable-org.github.io/dtdocs/en/module-reference/utility-modules/shared/collections.md)
+Every [_collection_](https://darktable.org/usermanual/en/module-reference/utility-modules/shared/collections/)
 in darktable is "smart", and will immediately update when an image's
 metadata changes such that it is newly included in or excluded from
 the collection's search criteria.
 
-</details>
-
-<details><summary></summary>
-
-</details>
-
-<details><summary></summary>
-
-</details>
-
-<details><summary></summary>
-
-</details>
 
 

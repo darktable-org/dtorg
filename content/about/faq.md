@@ -140,14 +140,17 @@ darktable is developed for linux, but it was ported to build on Windows. The [MS
 
 * <a name="faq-windows-logs"></a>**I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?**<a href="#faq-windows-logs" class="anchor" title="Link to this FAQ entry">¶</a>
 
-    The Windows version of darktable by default logs its debug information to the following places (*This is a hidden folder in Windows, therefore copy and paste the link to windows explorer for access*):
+    Starting with release 5.0.0, the Windows version of darktable writes debugging information to the following place:
+        `C:\Users\[username]\Documents\Darktable\darktable-log.txt`
+
+    Earlier releases wrote debug information to the following places (*This is a hidden folder in Windows, therefore copy and paste the link to windows explorer for access*):
 
     Windows 10:
         `C:\Users\[username]\AppData\Local\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
 
     Windows 7:
         `C:\Users\[username]\AppData\Local\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
-             
+
 
 * <a name="faq-windows-unicode"></a>**I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?**<a href="#faq-windows-unicode" class="anchor" title="Link to this FAQ entry">¶</a>
 

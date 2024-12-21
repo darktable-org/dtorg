@@ -38,6 +38,27 @@ the modules on the QAP which are not displayed in the panel.
 
 </details>
 
+<details><summary><b>start editing an image</b></summary>
+
+darktable uses a database to manage your images, including allowing
+you to select which images to view/edit based on any combination of
+criteria such as directory, camera model, focal length, date taken,
+and tags or star ratings you have applied.  This means that you need
+to first tell darktable about the files it should manage by
+[importing](https://darktable.org/usermanual/en/overview/workflow/import-review/)
+them so that they are added to the database.  Importing does not make
+copies of your files, it only stores information about them.
+
+You can import images using the
+[_import_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/import/)
+module after starting darktable or by specifying the image(s) on
+darktable's command line.  Your file manager may have been set up to
+call darktable with the filename on its commandline when clicking on a
+RAW image file; if not, you can probably use an "open with" command to
+give the filename to darktable.
+
+</details>
+
 <details><summary><b>remove all of the automatically-applied edits</b></summary>
 
 Most of the automatically-applied edits you see in the
@@ -141,6 +162,21 @@ To apply the same edit to multiple photos, you can
   (new in 5.0)
 
 See also the [tutorial](https://darktable.org/usermanual/en/guides-tutorials/batch-editing/).
+
+</details>
+
+<details><summary><b>save my edit</b></summary>
+
+You never need to manually save the state of the edit you are making
+to an image -- darktable automatically stores the sequence of module
+changes you make to its database and to the image's sidecar file.
+
+However, these saved changes are merely the "recipe" which lets
+darktable recreate your edit, so an edited photo is only viewable in
+its edited state inside darktable until you create a new image with
+the edits "baked in" by
+[exporting](https://darktable.org/usermanual/en/overview/workflow/export/)
+the image.
 
 </details>
 

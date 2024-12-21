@@ -57,6 +57,13 @@ call darktable with the filename on its commandline when clicking on a
 RAW image file; if not, you can probably use an "open with" command to
 give the filename to darktable.
 
+Once you have some images in darktable's database, you can start
+editing one by double-clicking on its thumbnail in
+[_lighttable_](https://darktable.org/usermanual/en/lighttable/lighttable-view-layout/)
+view, which will open it in _darkroom_ view, ready for editing.  If
+darktable was called with a single filename on the command line, it
+will open that image directly in the darkroom.
+
 {{< /details >}}
 
 {{< details title="**remove all of the automatically-applied edits**" >}}

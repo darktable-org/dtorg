@@ -2,7 +2,7 @@
 title: "How do I ... in darktable 5.0?"
 author: "Ralf Brown"
 slug: howto-in-5.0
-date: 2024-12-12
+date: 2024-12-20
 lede: falls.jpg
 lede_author: "Ralf Brown"
 tags:
@@ -91,6 +91,22 @@ to make them look like JPEGs from the other model, but may still yield
 interesting results.
 </details>
 
+<details><summary><b>zoom the image</b></summary>
+
+In [_darkroom_](https://darktable.org/usermanual/en/darkroom/) view,
+you can scroll while the mouse pointer is on the central image, or you can
+
+- select a zoom factor from the pulldown menu at bottom right of the
+  small navigation window which shows the portion of the full image
+  displayed in the center view
+
+- use keyboard shortcuts: Alt-1 to switch to 100% (200% if already at
+  100%), Alt-2 to switch to "fill" (fills center view, may crop off
+  ends along one axis), or Alt-3 to switch to "fit" (shows entire
+  image, may leave unused gray areas in center view).
+
+</details>
+
 <details><summary><b>undo edits or other changes</b></summary>
 
 Most actions done in [lightable view](https://darktable.org/usermanual/en/lighttable/undo-redo/) can
@@ -177,20 +193,6 @@ button ![styles](styles-icon.png#icon) just below the bottom left corner of the 
 
 </details>
 
-<details><summary><b>add clarity</b></summary>
-
-What other programs call clarity is an adjustment of local contrast.
-You can do this in darktable with the
-[_local contrast_](https://darktable.org/usermanual/en/module-reference/processing-modules/local-contrast/)
-module (on the [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
-by default) or by starting with the "clarity" preset in the
-[_contrast equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/contrast-equalizer/)
-module (quite strong) or one of the "local contrast" presets in the
-[_diffuse and sharpen_](https://darktable.org/usermanual/en/module-reference/processing-modules/diffuse/)
-module (generally very subtle).
-
-</details>
-
 <details><summary><b>adjust hue/saturation/lightness (HSL)</b></summary>
 
 To adjust the hue, saturation, and/or lightness of pixels based on
@@ -201,6 +203,28 @@ module.
 To adjust the hue, saturation, and/or lightness of pixels based on
 their saturation or lightness, use the
 [_color zones_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-zones/)
+module.
+
+</details>
+
+<details><summary><b>crop/straighten an image</b></summary>
+
+To crop an image, open the
+[_crop_](https://darktable.org/usermanual/en/module-reference/processing-modules/crop/)
+module and drag the edges/corners of the crop box drawn on your image.
+
+To straighten an image, right-click on your image and drag along a
+line which _should_ be horizontal or vertical, then release the mouse
+button.  darktable will then rotate your image to make the line along
+which you dragged exactly horizontal or vertical.  You can also use
+the _rotation_ slider in the
+[_rotate and perspective_](https://darktable.org/usermanual/en/module-reference/processing-modules/rotate-perspective/),
+which is shown in the
+[_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
+by default.
+
+To rotate the image by multiples of 90 degrees, use the
+[_orientation_](https://darktable.org/usermanual/en/module-reference/processing-modules/orientation/)
 module.
 
 </details>
@@ -255,6 +279,42 @@ mask brightness with the _mask exposure compensation_ and _mask
 contrast compensation_ sliders.  Then move your mouse over areas of
 the image you want to adjust and scroll to brighten or darken areas of
 the image with that brightness.
+
+</details>
+
+<details><summary><b>make more extreme adjustments</b></summary>
+
+Most sliders in darktable have both soft and hard limits.  The soft
+limit is the range displayed by default (e.g. -3 to +4 EV adjustment
+in the _exposure_ module).  The hard limit is the maximum which
+darktable actually supports, but which is usually too extreme and
+results in insufficiently precise control using the slider (e.g. -18
+to +18 EV adjustment for _exposure_, which is an amount only useful
+for merged HDR sequences).  You can override the soft limits by
+
+- holding Ctrl+Shift while dragging the slider or using arrow keys
+- scrolling while in the left-most or right-most 10% of the slider
+- right-clicking on the slider and typing in the desired value
+
+In cases where there is no separate hard limit, or the hard limit is
+_still_ too small, you can usually strengthen whichever effect is not
+enough by adding a second (third, etc.)
+[instance](https://darktable.org/usermanual/en/darkroom/processing-modules/multiple-instances/)
+of the module.
+
+</details>
+
+<details><summary><b>add clarity</b></summary>
+
+What other programs call clarity is an adjustment of local contrast.
+You can do this in darktable with the
+[_local contrast_](https://darktable.org/usermanual/en/module-reference/processing-modules/local-contrast/)
+module (on the [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
+by default) or by starting with the "clarity" preset in the
+[_contrast equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/contrast-equalizer/)
+module (quite strong) or one of the "local contrast" presets in the
+[_diffuse and sharpen_](https://darktable.org/usermanual/en/module-reference/processing-modules/diffuse/)
+module (generally very subtle).
 
 </details>
 
@@ -398,5 +458,51 @@ in darktable is "smart", and will immediately update when an image's
 metadata changes such that it is newly included in or excluded from
 the collection's search criteria.
 
+</details>
 
+<details><summary><b>print my images</b></summary>
 
+Use the
+[_Print_](https://darktable.org/usermanual/en/lighttable/lighttable-modes/culling/)
+view by clicking on the "other" pulldown at top right and selecting
+"print".  Unfortunately, printing is not available for the Windows
+version due to lack of the printer library used on Linux and MacOS.
+
+</details>
+
+<details><summary><b>get a list of keyboard shortcuts</b></summary>
+
+Press _and hold_ the 'h' key.  The window which pops up will show a
+listing of all keyboard shortcuts available in the current view,
+including those you've defined yourself.  This window will disappear
+when you release the key, unless you click on the icon at top right
+while still holding down 'h'.
+
+You can define your own keyboard shortcut by clicking on the keybaord
+icon above the top right corner of the thumbnail grid (lighttable
+view), center image (darkroom view), or map (map view), then pressing
+a key combination while hovering your mouse pointer over a mappable
+control (the pointer will change to a little keyboard).  To cancel
+mapping mode, click on the keyboard icon a second time.
+
+Keyboard shortcuts can combine mouse actions with keystrokes, e.g. you
+can define a shortcut which consists of scrolling your mouse wheel
+while holding down the 'e' key and map that action to adjusting
+exposure (scrolling up will increase, scrolling down will decrease).
+
+</details>
+
+<details><summary><b>get a histogram of the image</b></summary>
+
+As of version 5.0, darktable defaults to using the "waveform"
+[_scope_](https://darktable.org/usermanual/en/module-reference/utility-modules/shared/scopes/),
+which provides much more information about the distribution of colors
+and tones in your image than the traditional histogram.  You can think
+of it as making hundreds of individual histograms for vertical slices
+of your image, and lining them all up side-by-side.
+
+To switch from waveform to traditional histogram, hover your mouse
+over the waveform and click on the fourth button from the left which
+appears while hovering.
+
+</details>

@@ -17,9 +17,9 @@ accomplish what you want to do.
 
 Have a tip not covered here?  Share it in the comments!
 
-### How do I...
+## How do I...
 
-<details><summary><b>run darktable in "simple" or "beginner" mode</b></summary>
+{{< details title="**run darktable in 'simple' or 'beginner' mode**" >}}
 
 The large number of processing modules and many different ways of
 accomplishing the same goal often leaves first-time users feeling
@@ -36,9 +36,9 @@ feel comfortable with them, then gradually explore other modules
 (many of which are quite specialized) and additional controls from
 the modules on the QAP which are not displayed in the panel.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>start editing an image</b></summary>
+{{< details title="**start editing an image**" >}}
 
 darktable uses a database to manage your images, including allowing
 you to select which images to view/edit based on any combination of
@@ -57,9 +57,9 @@ call darktable with the filename on its commandline when clicking on a
 RAW image file; if not, you can probably use an "open with" command to
 give the filename to darktable.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>remove all of the automatically-applied edits</b></summary>
+{{< details title="**remove all of the automatically-applied edits**" >}}
 
 Most of the automatically-applied edits you see in the
 [_darkroom_](https://darktable.org/usermanual/en/darkroom/) view when opening an image are required
@@ -77,9 +77,9 @@ be disabled by adjusting the auto-applied workflow defaults in the
 [_processing_](https://darktable.org/usermanual/en/preferences-settings/processing/) tab of the
 _global preferences_ dialog.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>make images look like out-of-camera JPEGs</b></summary>
+{{< details title="**make images look like out-of-camera JPEGs**" >}}
 
 By default, darktable displays your raw images with minimal processing -
 just enough to get a displayable image (for unedited images, the
@@ -110,9 +110,9 @@ expand the appropriate manufacturer to access its models.  Note that
 applying a different model's style to your camera's images is unlikely
 to make them look like JPEGs from the other model, but may still yield
 interesting results.
-</details>
+{{< /details >}}
 
-<details><summary><b>zoom the image</b></summary>
+{{< details title="**zoom the image**" >}}
 
 In [_darkroom_](https://darktable.org/usermanual/en/darkroom/) view,
 you can scroll while the mouse pointer is on the central image, or you can
@@ -126,9 +126,22 @@ you can scroll while the mouse pointer is on the central image, or you can
   ends along one axis), or Alt-3 to switch to "fit" (shows entire
   image, may leave unused gray areas in center view).
 
-</details>
+{{< /details >}}
 
-<details><summary><b>undo edits or other changes</b></summary>
+{{< details title="**navigate among images in darkroom view**" >}}
+
+While editing an image in the darkroom, you can move to the next image
+shown in the filmstrip at the bottom by pressing the space bar, or to
+the previous image by pressing Backspace.  You can also navigate to an
+arbitrary image by double-clicking its thumbnail in the filmstrip
+(prior to version 5.0, a single click would change images, but that
+made selecting images for copy&paste operations more difficult),
+possibly after shifting the displayed images by scrolling while
+hovering the mouse over the filmstrip
+
+{{< /details >}}
+
+{{< details title="**undo edits or other changes**" >}}
 
 Most actions done in [lightable view](https://darktable.org/usermanual/en/lighttable/undo-redo/) can
 be reversed with the standard Ctrl-Z shortcut key and reapplied with
@@ -146,9 +159,9 @@ Note that changing settings while displaying a history position other
 than the topmost (last) one will **discard** any changes above that point
 and add your change to the displayed edit.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>batch edit photos</b></summary>
+{{< details title="**batch edit photos**" >}}
 
 To apply the same edit to multiple photos, you can
 
@@ -163,13 +176,14 @@ To apply the same edit to multiple photos, you can
 
 See also the [tutorial](https://darktable.org/usermanual/en/guides-tutorials/batch-editing/).
 
-</details>
+{{< /details >}}
 
-<details><summary><b>save my edit</b></summary>
+{{< details title="**save my edit**" >}}
 
 You never need to manually save the state of the edit you are making
 to an image -- darktable automatically stores the sequence of module
-changes you make to its database and to the image's sidecar file.
+changes you make to its database and to the image's sidecar file (same
+name as the image but with an added extension *.xmp*).
 
 However, these saved changes are merely the "recipe" which lets
 darktable recreate your edit, so an edited photo is only viewable in
@@ -178,9 +192,9 @@ the edits "baked in" by
 [exporting](https://darktable.org/usermanual/en/overview/workflow/export/)
 the image.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>make a virtual copy of an image</b></summary>
+{{< details title="**make a virtual copy of an image**" >}}
 
 darktable calls multiple developments of a single image "duplicates".  You
 can create, remove, or name them using the
@@ -192,9 +206,9 @@ and clicking on the _duplicate_ button in the
 [_actions on selection_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/selected-image/)
 module.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>make adjustment layers</b></summary>
+{{< details title="**make adjustment layers**" >}}
 
 The darktable [pixelpipe](https://darktable.org/usermanual/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/) is effectively equivalent to a stack of
 adjustment layers, and the right-hand active modules display can be
@@ -210,9 +224,9 @@ By enabling a module, or by [duplicating](https://darktable.org/usermanual/en/da
 an adjustment layer to your processing.  Just like layers, (almost)
 any processing module in darktable can be [masked](https://darktable.org/usermanual/en/darkroom/masking-and-blending/).
 
-</details>
+{{< /details >}}
 
-<details><summary><b>apply a preset</b></summary>
+{{< details title="**apply a preset**" >}}
 
 What other programs call presets, darktable calls _styles_.
 
@@ -227,9 +241,9 @@ lighttable view with the
 module, or in darkroom view by clicking on the styles quick access
 button ![styles](styles-icon.png#icon) just below the bottom left corner of the image.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>adjust hue/saturation/lightness (HSL)</b></summary>
+{{< details title="**adjust hue/saturation/lightness (HSL)**" >}}
 
 To adjust the hue, saturation, and/or lightness of pixels based on
 their original colors, use the
@@ -241,13 +255,9 @@ their saturation or lightness, use the
 [_color zones_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-zones/)
 module.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>crop/straighten an image</b></summary>
-
-To crop an image, open the
-[_crop_](https://darktable.org/usermanual/en/module-reference/processing-modules/crop/)
-module and drag the edges/corners of the crop box drawn on your image.
+{{< details title="**crop/straighten an image**" >}}
 
 To straighten an image, right-click on your image and drag along a
 line which _should_ be horizontal or vertical, then release the mouse
@@ -263,9 +273,13 @@ To rotate the image by multiples of 90 degrees, use the
 [_orientation_](https://darktable.org/usermanual/en/module-reference/processing-modules/orientation/)
 module.
 
-</details>
+To crop an image, open the
+[_crop_](https://darktable.org/usermanual/en/module-reference/processing-modules/crop/)
+module and drag the edges/corners of the crop box drawn on your image.
 
-<details><summary><b>adjust contrast/brightness/saturation</b></summary>
+{{< /details >}}
+
+{{< details title="**adjust contrast/brightness/saturation**" >}}
 
 To adjust contrast, you can use
 
@@ -303,9 +317,9 @@ To adjust saturation, you can use
 
 - the [_velvia_](https://darktable.org/usermanual/en/module-reference/processing-modules/velvia/) module
 
-</details>
+{{< /details >}}
 
-<details><summary><b>adjust shadows/highlights</b></summary>
+{{< details title="**adjust shadows/highlights**" >}}
 
 To open shadows or improve details in highlights, use the
 [_tone equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/tone-equalizer/).
@@ -316,9 +330,9 @@ contrast compensation_ sliders.  Then move your mouse over areas of
 the image you want to adjust and scroll to brighten or darken areas of
 the image with that brightness.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>make more extreme adjustments</b></summary>
+{{< details title="**make more extreme adjustments**" >}}
 
 Most sliders in darktable have both soft and hard limits.  The soft
 limit is the range displayed by default (e.g. -3 to +4 EV adjustment
@@ -338,9 +352,9 @@ enough by adding a second (third, etc.)
 [instance](https://darktable.org/usermanual/en/darkroom/processing-modules/multiple-instances/)
 of the module.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>add clarity</b></summary>
+{{< details title="**add clarity**" >}}
 
 What other programs call clarity is an adjustment of local contrast.
 You can do this in darktable with the
@@ -352,17 +366,17 @@ module (quite strong) or one of the "local contrast" presets in the
 [_diffuse and sharpen_](https://darktable.org/usermanual/en/module-reference/processing-modules/diffuse/)
 module (generally very subtle).
 
-</details>
+{{< /details >}}
 
-<details><summary><b>apply Camera Calibration settings</b></summary>
+{{< details title="**apply Camera Calibration settings**" >}}
 
 The [_rgb primaries_](https://darktable.org/usermanual/en/module-reference/processing-modules/rgb-primaries/)
 module gives you similar control over reg/green/blue hue and
 saturation and tinting of neutral colors.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>make a luminosity mask</b></summary>
+{{< details title="**make a luminosity mask**" >}}
 
 Since a luminosity masks adjusts the strength of an effect by the
 brightness of each pixel, you can accomplish this by creating a
@@ -376,9 +390,9 @@ you may need to reduce the _opacity_ slider to around 50%.  The gray
 channel will provide a scene-linear ramp, while the L and Jz channels
 produce a perceptually linear ramp.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>add text to an image</b></summary>
+{{< details title="**add text to an image**" >}}
 
 Use the [_watermark_](https://darktable.org/usermanual/en/module-reference/processing-modules/watermark/)
 module with one of the text markers, i.e. "simple-text",
@@ -390,9 +404,9 @@ inserting "$(NL)" where the text should wrap to the next line.  Other
 will be replaced by their current values whenever the image is
 processed.  The lede image for this post shows an example of multi-line text using the _watermark_ module.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>combine multiple images</b></summary>
+{{< details title="**combine multiple images**" >}}
 
 To combine multiple images, such as creating a mosaic or inserting
 additional content into an image (e.g. replacing the sky):
@@ -419,9 +433,9 @@ shows the use of _canvas enlargement_ and _composite_ to make a 2x2
 grid of images plus caption text suitable for printing borderless on
 US Letter (8.5x11") paper.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>replace the sky in an image</b></summary>
+{{< details title="**replace the sky in an image**" >}}
 
 To replace the sky in an image, you will first need another picture of
 just sky with the appearance you like.  Ensure that the image has been
@@ -438,9 +452,9 @@ masking, then use color and lightness to select the sky and optionally
 a drawn mask to exclude any areas which can't be excluded without
 losing a portion of the sky.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>make an image black&white/monochrome</b></summary>
+{{< details title="**make an image black&white/monochrome**" >}}
 
 See the tutorial [_developing monochrome images_](https://darktable.org/usermanual/en/guides-tutorials/monochrome/).
 
@@ -449,9 +463,9 @@ You can use the [_color calibration_](https://darktable.org/usermanual/en/module
 or [_monochrome_](https://darktable.org/usermanual/en/module-reference/processing-modules/monochrome/)
 modules to desaturate a color image to shades of gray.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>apply a radial gradient</b></summary>
+{{< details title="**apply a radial gradient**" >}}
 
 darktable does not have radial gradients, but you can get a very similar effect by
 [_masking_](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/drawn/)
@@ -463,9 +477,9 @@ It is also possible to curve a gradient mask, but this is more
 appropriate for matching a curved line in the image than for emulating
 a point source for an effect.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>remove an object from an image</b></summary>
+{{< details title="**remove an object from an image**" >}}
 
 darktable does not provide any AI-based object removal or inpainting
 methods, but you can replace an area in your image using either the
@@ -475,9 +489,9 @@ modules.  With _retouch_, you can replace the area with content from
 elsewhere in the same image using the "heal" or "clone" modes, while
 _composite_ lets you insert an arbitrary image from your library.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>unsqueeze an anamorphic image</b></summary>
+{{< details title="**unsqueeze an anamorphic image**" >}}
 
 Images taken with an anamorphic lens will have a different pixel
 aspect ratio than the scene which was photographed.  To restore the
@@ -485,18 +499,18 @@ correct appearance, use the
 [_scale pixels_](https://darktable.org/usermanual/en/module-reference/processing-modules/scale-pixels/)
 module.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>create a "smart collection"</b></summary>
+{{< details title="**create a 'smart collection'**" >}}
 
 Every [_collection_](https://darktable.org/usermanual/en/module-reference/utility-modules/shared/collections/)
 in darktable is "smart", and will immediately update when an image's
 metadata changes such that it is newly included in or excluded from
 the collection's search criteria.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>print my images</b></summary>
+{{< details title="**print my images**" >}}
 
 Use the
 [_Print_](https://darktable.org/usermanual/en/lighttable/lighttable-modes/culling/)
@@ -504,9 +518,9 @@ view by clicking on the "other" pulldown at top right and selecting
 "print".  Unfortunately, printing is not available for the Windows
 version due to lack of the printer library used on Linux and MacOS.
 
-</details>
+{{< /details >}}
 
-<details><summary><b>get a list of keyboard shortcuts</b></summary>
+{{< details title="**get a list of keyboard shortcuts**" >}}
 
 Press _and hold_ the 'h' key.  The window which pops up will show a
 listing of all keyboard shortcuts available in the current view,
@@ -526,9 +540,9 @@ can define a shortcut which consists of scrolling your mouse wheel
 while holding down the 'e' key and map that action to adjusting
 exposure (scrolling up will increase, scrolling down will decrease).
 
-</details>
+{{< /details >}}
 
-<details><summary><b>get a histogram of the image</b></summary>
+{{< details title="**get a histogram of the image**" >}}
 
 As of version 5.0, darktable defaults to using the "waveform"
 [_scope_](https://darktable.org/usermanual/en/module-reference/utility-modules/shared/scopes/),
@@ -541,4 +555,4 @@ To switch from waveform to traditional histogram, hover your mouse
 over the waveform and click on the fourth button from the left which
 appears while hovering.
 
-</details>
+{{< /details >}}

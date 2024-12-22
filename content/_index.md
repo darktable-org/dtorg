@@ -1,7 +1,7 @@
 ---
 title: darktable
 home_lede: /images/lede-home.jpg
-home_logo: /images//darktable-logo-name-1520w.png
+home_logo: /images/darktable-logo-name-1520w.png
 ---
 <div class='container content description'>
     <div class='row'>
@@ -13,7 +13,7 @@ home_logo: /images//darktable-logo-name-1520w.png
 </div>
 
 <section class='screenshot'>
-    <img src='/images/screenshot_lighttable.jpg' width='1440' height='900'>
+    <img src='/images/screenshot_lighttable.jpg' width='1440' height='900' title='screen shot of darktable 5.0 lighttable view. thumbnail images by: 01McAc, 123sg, CPfister, clind, jdneumeyer, kap55, luator, nish, qmpel, quovadit, ralfbrown, rudantu, sugarbravo'>
 </section>
 
 

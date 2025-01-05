@@ -31,10 +31,12 @@ them.
 The [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
 contains the most-used sliders and controls other than cropping, so a
 suggested strategy to ease yourself into darktable is to limit
-yourself to the QAP and the cropping module while editing until you
-feel comfortable with them, then gradually explore other modules
-(many of which are quite specialized) and additional controls from
-the modules on the QAP which are not displayed in the panel.
+yourself to the QAP and the
+_crop_](https://darktable.org/usermanual/en/module-reference/processing-modules/crop/)
+module while editing until you feel comfortable with them, then
+gradually explore other modules (many of which are quite specialized)
+and additional controls from the modules on the QAP which are not
+displayed in the panel.
 
 {{< /details >}}
 
@@ -46,8 +48,9 @@ criteria such as directory, camera model, focal length, date taken,
 and tags or star ratings you have applied.  This means that you need
 to first tell darktable about the files it should manage by
 [importing](https://darktable.org/usermanual/en/overview/workflow/import-review/)
-them so that they are added to the database.  Importing does not make
-copies of your files, it only stores information about them.
+them so that they are added to the database.  Importing with "add to
+library" does not make copies of your files, it only stores
+information about them.
 
 You can import images using the
 [_import_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/import/)
@@ -119,32 +122,50 @@ to make them look like JPEGs from the other model, but may still yield
 interesting results.
 {{< /details >}}
 
-{{< details title="**zoom the image**" >}}
+{{< details title="**pan/zoom the image**" >}}
 
 In [_darkroom_](https://darktable.org/usermanual/en/darkroom/) view,
-you can scroll while the mouse pointer is on the central image, or you can
+you can zoom by
 
-- select a zoom factor from the pulldown menu at bottom right of the
+- scrolling while the mouse pointer is on the central image
+  but not on any on-image controls or shapes (to zoom instead of
+  adjusting a control/shape, hold down the 'a' key while scrolling)
+
+- selecting a zoom factor from the pulldown menu at bottom right of the
   small navigation window which shows the portion of the full image
   displayed in the center view
 
-- use keyboard shortcuts: Alt-1 to switch to 100% (200% if already at
-  100%), Alt-2 to switch to "fill" (fills center view, may crop off
+- using keyboard shortcuts: Alt-1 to switch to 100% (200% if already
+  at 100%), Alt-2 to switch to "fill" (fills center view, may crop off
   ends along one axis), or Alt-3 to switch to "fit" (shows entire
-  image, may leave unused gray areas in center view).
+  image, may leave unused gray areas in center view).  You can adjust
+  the zoom factor in steps of 1.1x with Ctrl-Minus and Ctrl-Plus
+  (Ctrl-Shift-=) on the main portion of your keyboard (the keypad keys
+  are not mapped by default).
 
-{{< /details >}}
+You can pan a zoomed image by
+
+- dragging the center image with the mouse (hold down the 'a' key to pan the image
+rather than dragging on-image controls)
+
+- dragging the highlighted box on the navigation thumbnail at the top
+  of the left side panel
+
+- using arrow keys (note: if a slider is currently selected, the arrow
+  keys will adjust the slider rather than panning the image)
+
+ {{< /details >}}
 
 {{< details title="**navigate among images in darkroom view**" >}}
 
 While editing an image in the darkroom, you can move to the next image
 shown in the filmstrip at the bottom by pressing the space bar, or to
 the previous image by pressing Backspace.  You can also navigate to an
-arbitrary image by double-clicking its thumbnail in the filmstrip
-(prior to version 5.0, a single click would change images, but that
-made selecting images for copy&paste operations more difficult),
+arbitrary image by double-clicking its thumbnail in the filmstrip,
 possibly after shifting the displayed images by scrolling while
-hovering the mouse over the filmstrip
+hovering the mouse over the filmstrip.  (Prior to version 5.0, a
+single click would change images, but that made selecting images for
+copy&paste operations more difficult.)
 
 {{< /details >}}
 
@@ -168,23 +189,6 @@ and add your change to the displayed edit.
 
 {{< /details >}}
 
-{{< details title="**batch edit photos**" >}}
-
-To apply the same edit to multiple photos, you can
-
-- use a [style](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/)
-
-- edit one photo and then [copy and paste](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/history-stack/)
-  the edits onto others
-
-- in _darkroom_ view, use the Ctrl-X shortcut key to copy the settings
-  of the module in which you last made changes to all selected images
-  (new in 5.0)
-
-See also the [tutorial](https://darktable.org/usermanual/en/guides-tutorials/batch-editing/).
-
-{{< /details >}}
-
 {{< details title="**save my edit**" >}}
 
 You never need to manually save the state of the edit you are making
@@ -198,6 +202,27 @@ its edited state inside darktable until you create a new image with
 the edits "baked in" by
 [exporting](https://darktable.org/usermanual/en/overview/workflow/export/)
 the image.
+
+{{< /details >}}
+
+{{< details title="**batch edit photos**" >}}
+
+To apply the same edit to multiple photos, you can
+
+- use a [style](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/)
+
+- edit one photo and then
+  [copy and paste](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/history-stack/)
+  the edits onto others.  In _darkroom_ view, you will need to use
+  keyboard shortcuts to access _copy_ (Ctrl-C) or _selective copy_
+  (Ctrl-Shift-C) and _paste_ (Ctrl-V) functions; in _lighttable_, they
+  are also available in the _history stack_ module.
+
+- in _darkroom_ view, use the Ctrl-X shortcut key to copy the settings
+  of the module in which you last made changes to all selected images
+  (new in 5.0)
+
+See also the [tutorial](https://darktable.org/usermanual/en/guides-tutorials/batch-editing/).
 
 {{< /details >}}
 
@@ -250,6 +275,18 @@ button ![styles](styles-icon.png#icon) just below the bottom left corner of the 
 
 {{< /details >}}
 
+{{< details title="**adjust white balance**" >}}
+
+In the default scene-referred workflows, white balance is adjusted
+using the CAT (chromatic adaptation transform) tab in the
+[_color calibration_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-calibration/)
+module, which performs a perceptual white balance and
+allows balancing multiple areas with differently-colored lighting
+using masks and
+[multiple instances](https://darktable.org/usermanual/en/darkroom/processing-modules/multiple-instances/).
+
+{{< /details >}}
+
 {{< details title="**adjust hue/saturation/lightness (HSL)**" >}}
 
 To adjust the hue, saturation, and/or lightness of pixels based on
@@ -271,8 +308,8 @@ line which _should_ be horizontal or vertical, then release the mouse
 button.  darktable will then rotate your image to make the line along
 which you dragged exactly horizontal or vertical.  You can also use
 the _rotation_ slider in the
-[_rotate and perspective_](https://darktable.org/usermanual/en/module-reference/processing-modules/rotate-perspective/),
-which is shown in the
+[_rotate and perspective_](https://darktable.org/usermanual/en/module-reference/processing-modules/rotate-perspective/)
+module, which is shown in the
 [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
 by default.
 
@@ -339,6 +376,26 @@ the image with that brightness.
 
 {{< /details >}}
 
+{{< details title="**make fine/exact adjustments to a control**" >}}
+
+darktable has multiple ways to adjust a slider:
+
+- click on a position on the slider to set it to the corresponding value
+
+- scroll while on the slider; use Shift-Scroll for larger (usually
+  10x) increments and Ctrl-Scroll for finer (usually 0.1x) increments
+
+- use the arrow keys while the slider is selected; Shift-Arrow for
+  larger increments and Ctrl-Arrow for smaller increments
+
+- right-click for a popup; you can either enter an exact numeric value
+  by typing it or adjust the value by sliding your mouse left or right
+  to "wag the tail".  The higher up the mouse pointer is, the more
+  quickly the values will be adjusted; for the finest adjustments,
+  move the mouse pointer along the bottom edge.
+
+{{< /details >}}
+
 {{< details title="**make more extreme adjustments**" >}}
 
 Most sliders in darktable have both soft and hard limits.  The soft
@@ -364,21 +421,28 @@ of the module.
 {{< details title="**add clarity**" >}}
 
 What other programs call clarity is an adjustment of local contrast.
-You can do this in darktable with the
-[_local contrast_](https://darktable.org/usermanual/en/module-reference/processing-modules/local-contrast/)
-module (on the [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
-by default) or by starting with the "clarity" preset in the
-[_contrast equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/contrast-equalizer/)
-module (quite strong) or one of the "local contrast" presets in the
-[_diffuse and sharpen_](https://darktable.org/usermanual/en/module-reference/processing-modules/diffuse/)
-module (generally very subtle).
+You can do this in darktable
+
+- with the
+  [_local contrast_](https://darktable.org/usermanual/en/module-reference/processing-modules/local-contrast/)
+  module (on the
+  [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organization/quick-access-panel/)
+  by default)
+
+- by starting with the "clarity" preset in the
+  [_contrast equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/contrast-equalizer/)
+  module (quite strong)
+
+- by starting with one of the "local contrast" presets in the
+  [_diffuse and sharpen_](https://darktable.org/usermanual/en/module-reference/processing-modules/diffuse/)
+  module (generally very subtle).
 
 {{< /details >}}
 
 {{< details title="**apply Camera Calibration settings**" >}}
 
 The [_rgb primaries_](https://darktable.org/usermanual/en/module-reference/processing-modules/rgb-primaries/)
-module gives you similar control over reg/green/blue hue and
+module gives you similar control over red/green/blue hue and
 saturation and tinting of neutral colors.
 
 {{< /details >}}
@@ -388,14 +452,43 @@ saturation and tinting of neutral colors.
 Since a luminosity masks adjusts the strength of an effect by the
 brightness of each pixel, you can accomplish this by creating a
 [_parametric mask_](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/parametric/)
-for the effect and adjusting the "g" (gray) or L/Jz channel controls.
-For a mask targeting highlights, move the upper left triangle all the
-way to the right; for a mask targeting shadows, move the upper right
-triangle all the way to the left.  A midtone mask can be created by
-moving both upper triangles to the middle; to match other software,
-you may need to reduce the _opacity_ slider to around 50%.  The gray
-channel will provide a scene-linear ramp, while the L and Jz channels
-produce a perceptually linear ramp.
+for the effect and adjusting the "g" (gray) or L/Jz
+(luminance/lightness) channel controls.
+
+- For a mask targeting highlights, move the upper left triangle all
+  the way to the right;
+
+- for a mask targeting shadows, move the upper right triangle all the
+  way to the left.
+
+- A midtone mask can be created by moving both upper triangles to the
+  middle; to match other software, you may need to reduce the
+  _opacity_ slider to around 50%.
+
+The gray channel will provide a scene-linear ramp, while the L and Jz
+channels produce a perceptually linear ramp.
+
+{{< /details >}}
+
+{{< details title="**apply a split-toning effect**" >}}
+
+Use the
+[_color balance rgb_](https://darktable.org/usermanual/en/module-reference/processing-modules/color-balance-rgb/)
+module and adjust the hue/chroma sliders for "shadows lift" and
+"highlights gain" on the "4 ways" tab.
+
+- The _hue_ and _chroma_ sliders for "shadows lift" control the color
+  and intensity of the toning in dark areas of the image, while the
+  sliders for "highlights gain" control the color and intensity of the
+  toning in light areas.
+
+- The "mask middle-gray fulcrum" together with the two "fall-off"
+  sliders on the "masks" tab controls which luminance values are
+  considered shadows and highlights.
+
+There is also a legacy
+[_split-toning_](https://darktable.org/usermanual/en/module-reference/processing-modules/split-toning/)
+module for use with monochrome images.
 
 {{< /details >}}
 
@@ -486,6 +579,25 @@ a point source for an effect.
 
 {{< /details >}}
 
+{{< details title="**select an object/person in my image**" >}}
+
+darktable does not have AI-based object/subject selection, so you will
+need to use a combination of
+[drawn](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/drawn/)
+and
+[parametric](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/parametric/)
+masks.  Start by drawing the rough outline of the desired object (you
+do not need to be exact) using the "path"
+![path](path-button.png#icon) tool.
+
+Adjust the
+"[feathering radius](https://darktable.org/usermanual/en/darkroom/masking-and-blending/masks/refinement-controls/)"
+slider to make the boundary of the selection follow edges in the image
+and adjust the "mask opacity" and "mask contrast" sliders to sharpen
+the feathered edges.
+
+{{< /details >}}
+
 {{< details title="**remove an object from an image**" >}}
 
 darktable does not provide any AI-based object removal or inpainting
@@ -514,6 +626,39 @@ Every [_collection_](https://darktable.org/usermanual/en/module-reference/utilit
 in darktable is "smart", and will immediately update when an image's
 metadata changes such that it is newly included in or excluded from
 the collection's search criteria.
+
+{{< /details >}}
+
+{{< details title="**make a before/after (A/B) comparison**" >}}
+
+Use the
+[_snapshots_](https://darktable.org/usermanual/en/module-reference/utility-modules/darkroom/snapshots/)
+utility module, which will let you compare two different edit states
+in an adjustable split view, even between different images.
+
+In darkroom view, go to the first image/edit state you want to compare
+and click on the "take snapshot" button in the _snapshots_ module.
+Then go to the second image/edit state you want to compare and click
+on the button for the snapshot you just took.  You can drag the
+divider line to adjust the split and click on its midpoint to rotate
+the split.  Click on the snapshot button again to turn off the
+split-image view.
+
+You can also make a duplicate (virtual copy) of the image and compare
+the two completed edits on the copies side-by-side using
+[culling mode](https://darktable.org/usermanual/en/lighttable/lighttable-modes/culling/)
+in the lighttable view.
+
+{{< /details >}}
+
+{{< details title="**show composition guides (e.g. rule of thirds)**" >}}
+
+In [_darkroom_](https://darktable.org/usermanual/en/darkroom/darkroom-view-layout/)
+view, click on the "guides" button ![guides](guides-button.png#icon)
+at the bottom right of the central image or press "g" to toggle an
+overlay with a composition guide.  Right-click the button to select
+which type of guide to show (grid, harmonic triangles, golden spiral,
+...), as well as its color, subdivisions, etc.
 
 {{< /details >}}
 
@@ -563,3 +708,24 @@ over the waveform and click on the fourth button from the left which
 appears while hovering.
 
 {{< /details >}}
+
+## Additional Resources
+
+Bruce Williams' ["understanding darktable"](https://www.youtube.com/@audio2u)
+series of Youtube tutorial videos, especially
+- [Episode 128](https://www.youtube.com/watch?v=RqTMAmf0r80) Modules a noobie should get familiar with (1/2)
+- [Episode 129](https://www.youtube.com/watch?v=EhHz3_5b2zo) Modules a noobie should get familiar with (2/2)
+- [Episode 138](https://www.youtube.com/watch?v=xbsFIDjmnAY) A noobie's guide to processing jpegs
+- [Episode 140](https://www.youtube.com/watch?v=GxUu2g1vNQU) A noobie's guide to processing RAW files
+
+The [Darktable Landscapes](https://www.youtube.com/@DarktableLandscapes) Youtube channel, especially
+- [From Lightroom to Darktable](https://www.youtube.com/watch?v=6SflKR6JYrk)
+- [Darktable workflow for Lightroom Users](https://www.youtube.com/watch?v=uZ0bh5sAjyc)
+
+["Mastering Darktable"](https://avidandrew.com/pages/darktable.html) text tutorials, including
+- [dehazing](https://avidandrew.com/cutting-through-haze.html)
+- [graduated neutral density filters](https://avidandrew.com/understanding-gnds.html) 
+- [masking](https://avidandrew.com/harnessing-darktable-masks-easily.html)
+- [targeted color adjustments](https://avidandrew.com/color-adjustments-color-equalizer.html)
+
+*Last updated 2025-01-05.*

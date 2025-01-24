@@ -16,6 +16,8 @@ If your particular camera is not on the list or is missing some form of support 
 
 You don't need to go through these steps yourself necessarily but instead attach enough sample files to the bug report so we can do it ourselves.
 
+## File Formats That Are Not Supported
+
 The following formats are explicitly not supported:
 
 - Apple ProRAW DNGs
@@ -26,19 +28,21 @@ The following formats are explicitly not supported:
 - OM System 14-bit high resolution ORFs
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
-The table has the following fields:
+If you are having problems opening a file and the camera is supported, make sure you are not using one of these formats.
 
-- **Camera:** The name of the camera with at least basic support in darktable
-- **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the temperature module
-- **Noise Profile:** If darktable has a noise profile so you can use the profiled denoise module with the camera
+## Supported Cameras
 
 NOTE: this table does not list the availability of freely available sample at [raw.pixls.us](https://raw.pixls.us/). Please refer to [this post](https://discuss.pixls.us/t/raw-samples-wanted/5420) for the up-to-date information. There currently are [![count of unique cameras in the archive](https://raw.pixls.us/button-cameras.svg)](https://raw.pixls.us/) unique cameras, [![total count of unique samples](https://raw.pixls.us/button-samples.svg)](https://raw.pixls.us/) unique samples.
 
 ### [Please contribute samples!](https://discuss.pixls.us/t/raw-samples-wanted/5420)
 
-## Supported Cameras
+The table has the following fields:
 
-The following table is based on the source code from the 4.8.x branch.
+- **Model, Aliases:** The name of the camera with at least basic support in darktable
+- **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the temperature module
+- **Noise Profile:** If darktable has a noise profile so you can use the profiled denoise module with the camera
+
+The table is based on the source code from the 4.8.x branch.
 
 
 ### Canon

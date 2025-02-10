@@ -13,22 +13,22 @@ menu: ["main", "footer"]
 <div style="text-align: center;">
   <h2>Source Code</h2>
   <p>
-  <a href="https://github.com/darktable-org/darktable/releases/download/release-5.0.0/darktable-5.0.0.tar.xz">darktable-5.0.0.tar.xz</a>
+  <a href="https://github.com/darktable-org/darktable/releases/download/release-5.0.1/darktable-5.0.1.tar.xz">darktable-5.0.1.tar.xz</a>
   </p>
 </div>
 <div style="text-align: center;">
   <h2>AppImage</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.0/Darktable-5.0.0-x86_64.AppImage' title='GNU/Linux AppImage'>Darktable-5.0.0-x86_64.AppImage</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.1/Darktable-5.0.1-x86_64.AppImage' title='GNU/Linux AppImage'>Darktable-5.0.1-x86_64.AppImage</a></p>
 </div>
 <div style="text-align: center;">
   <h2>Windows</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.0/darktable-5.0.0-win64.exe' title='Microsoft Windows'>darktable-5.0.0-win64.exe</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.1/darktable-5.0.1-win64.exe' title='Microsoft Windows'>darktable-5.0.1-win64.exe</a></p>
 </div>
 <div style="text-align: center;">
   <h2>macOS</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.0/darktable-5.0.0-x86_64.dmg' title='macOS 13.5 on Intel'>darktable-5.0.0-x86_64.dmg</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.0/darktable-5.0.0-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-5.0.0-arm64.dmg</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.0/darktable-5.0.0-arm64-13.5.dmg' title='macOS 13.5 on Apple silicon'>darktable-5.0.0-arm64-13.5.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.1/darktable-5.0.1-x86_64.dmg' title='macOS 13.5 on Intel'>darktable-5.0.1-x86_64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.1/darktable-5.0.1-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-5.0.1-arm64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.0.1/darktable-5.0.1-arm64-13.5.dmg' title='macOS 13.5 on Apple silicon'>darktable-5.0.1-arm64-13.5.dmg</a></p>
   <p><a href="#macos" class="attention">installation notes</a></p>
 </div>
 </div>

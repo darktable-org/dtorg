@@ -728,4 +728,13 @@ The [Darktable Landscapes](https://www.youtube.com/@DarktableLandscapes) Youtube
 - [masking](https://avidandrew.com/harnessing-darktable-masks-easily.html)
 - [targeted color adjustments](https://avidandrew.com/color-adjustments-color-equalizer.html)
 
-*Last updated 2025-01-05.*
+Tutorials by [Rico Richardson](https://www.youtube.com/@RicoResolves), including
+- [5 Tips in Darktable 5](https://www.youtube.com/watch?v=FqATUdWOQ2I)
+- [Stunning Autumn Effects](https://www.youtube.com/watch?v=5HXAnjlJ4Jk)
+- [Darktable 5 Masterclass](https://www.youtube.com/watch?v=cqyaplMkJlk)
+
+Tutorials by [Aperlust](https://www.youtube.com/@aperlust/videos)
+- [Histogram, Waveform, and Vectorscope](https://www.youtube.com/watch?v=iVmn-iFNzYA)
+- [Learn Darktable in 90 Minutes](https://www.youtube.com/watch?v=VJv9kb7Ocvg)
+
+*Last updated 2025-02-23.*

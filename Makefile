@@ -32,7 +32,7 @@ secondline: #shell only
 
 .PHONY: server
 server:
-	rm -rf public && hugo server --renderToDisk
+	rm -rf public && hugo server --renderStaticToDisk
 
 .PHONY: output
 output:

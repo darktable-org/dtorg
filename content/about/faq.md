@@ -21,16 +21,10 @@ Please see the [camera support page](/resources/camera-support/).
 Some file formats are not supported. The camera support page has a full list.
 
 ### <a name="faq-initial-look"></a>Why doesn’t the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
-*…because you haven’t processed it yet.*
-
-One of the first things people notice when switching from lighttable to darkroom view is that the image looks different – often flatter and less saturated than that shown in the lighttable view. This is because the darkroom view displays the (mostly unprocessed) Raw image, but the lighttable view initially displays the (in-camera) JPEG preview. Now that you have opened the image in the darkroom view, the lighttable view will update to show the edited version.
-
-Most Raw software goes to great lengths to reproduce the look of standard camera JPEGs out of the box. While this can be useful (if you only want to make very minor adjustments to the camera’s rendition of an image) we assume that you are using a Raw editor to make the image your own, and that the camera does not know how to do this.
-
-The default settings in darktable are therefore intended to provide you with a neutral starting point for further editing and nothing more. We do not intend to change this.
+This is explained [in the manual](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).
 
 ### <a name="faq-grey-interface"></a>Why is the interface so flat and grey?<a href="#faq-grey-interface" class="anchor" title="Link to this FAQ entry">¶</a>
-The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/darkroom/color-assessment/) and [here](https://docs.darktable.org/usermanual/stable/en/preferences-settings/general/).
+The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/darkroom/color-assessment/), [here](https://docs.darktable.org/usermanual/stable/en/preferences-settings/general/) and [here](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#edit-in-a-controlled-environment).
 
 ### <a name="faq-rename-files"></a>How do I rename files on my hard disk?<a href="#faq-rename-files" class="anchor" title="Link to this FAQ entry">¶</a>
 Use your file manager (or the command line). Image renaming is not a feature we are developing for darktable. Make sure to first remove the files from darktable's library, then rename them (and the associated sidecar) and re-import them afterwards.
@@ -90,7 +84,7 @@ On Windows the situation is a little more complicated. libgphoto2 doesn't work w
 In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) – but then your camera won't work with darktable.
 
 ### <a name="faq-external-deps"></a>So, darktable uses gphoto2 for tethering. Are there any more third party projects influencing what works in darktable and what's not?<a href="#faq-external-deps" class="anchor" title="Link to this FAQ entry">¶</a>
-Yes, there are two libraries we heavily rely on and which we point to quite often when people complain about darkable lacking something:
+Yes, there are two libraries we heavily rely on:
 
 * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
 * **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/stable/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).

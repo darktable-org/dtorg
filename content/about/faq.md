@@ -89,18 +89,6 @@ Yes, there are two libraries we heavily rely on:
 * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
 * **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/stable/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
-### It is possible to customize the look of darktable by following these steps
-  * creating a CSS file (for example mytheme.css) on following folder:
-    * **2.4.x and 2.6.x releases:** `~/.config/darktable/`
-    * **On 3.0.x release:** `~/.config/darktable/themes` (themes folder needs to be created if it doesn't exist)
-    * then add the following line on the beginning of the created css file: `@import url("/path/to/darktable.css");`, where the `/path/to/darktable.css` is the path... to the default darktable CSS (or one of the other themes you want to edit).
-  * last step is to copy parts of the pointed css you want to edit and adjust settings as you want.
-* Be aware: darktable 3.0 brings a whole new UI, so 3.0 CSS themes are not compatible with previous releases, and previous 2.4 and 2.6 themes are not compatible with darktable 3.0.
-
-Since darktable 3.2, released in august 2020, CSS tweaks are far easier. Forget the steps described just above for that and just go into the preferences window. In the general tab: select your theme, check _modify selected theme with tweaks below_ and add your tweaks in text field below. That's all!
-
-By the way, CSS file should be easier to read and lot of comments will help you find faster CSS part you want to tweak and so copy/modify in preferences.
-
 
 ## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ entry">¶</a>
 

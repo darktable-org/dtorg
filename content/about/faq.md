@@ -27,7 +27,7 @@ This is explained [in the manual](https://docs.darktable.org/usermanual/stable/e
 The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/darkroom/color-assessment/), [here](https://docs.darktable.org/usermanual/stable/en/preferences-settings/general/) and [here](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#edit-in-a-controlled-environment).
 
 ### <a name="faq-rename-files"></a>How do I rename files on my hard disk?<a href="#faq-rename-files" class="anchor" title="Link to this FAQ entry">¶</a>
-Use your file manager (or the command line). Image renaming is not a feature we are developing for darktable. Make sure to first remove the files from darktable's library, then rename them (and the associated sidecar) and re-import them afterwards.
+Use your file manager (or the command line). Image renaming is not a feature we are developing for darktable. Make sure to first remove the files from darktable's library, then rename them (and the associated XMP sidecar files) and re-import them afterwards.
 
 ### <a name="faq-filemanager"></a>Will you add file manager capabilities in the future?<a href="#faq-filemanager" class="anchor" title="Link to this FAQ entry">¶</a>
 No.
@@ -36,13 +36,13 @@ No.
 See the [user manual](https://docs.darktable.org/usermanual/stable/en/darkroom/pixelpipe/the-pixelpipe-and-module-order/#changing-module-order) for more details.
 
 ### <a name="faq-modules"></a>Modules? What modules?<a href="#faq-modules" class="anchor" title="Link to this FAQ entry">¶</a>
-See the section below about the manual, book and tutorial videos.
+darktable's interface is organised into modules. You can find a full list [in the manual](https://docs.darktable.org/usermanual/stable/en/module-reference/overview/).
 
 ### <a name="faq-import"></a>How do I open images? I only see a grey canvas.<a href="#faq-import" class="anchor" title="Link to this FAQ entry">¶</a>
-You have to import a single image or a film roll (directory) using the buttons on the left side of the lighttable Add to Library.
+You have to import a single image or a film roll (directory) using the [import module](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/lighttable/import/) on the left side of the lighttable.
 
 ### <a name="faq-filter"></a>Ok, I imported some images, but I still don't see anything, though after importing a single image it is shown in darkroom mode.<a href="#faq-filter" class="anchor" title="Link to this FAQ entry">¶</a>
-Try to set the display filter in the top panel to "all" and check the "initial rating when importing filmrolls" setting in the preference pane (the small gear wheel at the top).
+You may have applied a filter, such as showing only certain star ratings. In either the [collection filters module](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/collection-filters/) or [top panel](https://docs.darktable.org/usermanual/stable/en/overview/user-interface/top-panel/), make sure module order is set to "all images" and that all possible star ratings and no color labels have been selected. You may also want to check the *initial rating* parameter in the import module.
 
 ### <a name="faq-save"></a>How do I save my changes?<a href="#faq-save" class="anchor" title="Link to this FAQ entry">¶</a>
 You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image using the export module.
@@ -83,7 +83,7 @@ On Windows the situation is a little more complicated. libgphoto2 doesn't work w
 
 In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) – but then your camera won't work with darktable.
 
-### <a name="faq-external-deps"></a>So, darktable uses gphoto2 for tethering. Are there any more third party projects influencing what works in darktable and what's not?<a href="#faq-external-deps" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-external-deps"></a>So, darktable uses gphoto2 for tethering. Are there any more third party projects influencing what works in darktable?<a href="#faq-external-deps" class="anchor" title="Link to this FAQ entry">¶</a>
 Yes, there are two libraries we heavily rely on:
 
 * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
@@ -175,10 +175,9 @@ darktable is developed for Linux, but it was ported to build on Mac. If you expe
 
 
 ## Very Old Versions
+These questions are probably not affecting many people these days, but we kept them for historical reasons.
 
 ### <a name="faq-old-presets"></a>My auto-applied presets aren't enabled for pictures imported before upgrade to version 1.1 (or higher), what's happening?<a href="#faq-old-presets" class="anchor" title="Link to this FAQ entry">¶</a>
-*This question is probably not affecting many people these days, but we kept it for historical reasons.*
-
 This is intended. In the pre-1.1 era, modules that were enabled by default didn't get recorded in the history stack, which meant that changing these presets would retroactively change your pictures. It was decided that this is totally broken behaviour and since darktable version 1.1 auto-enabled modules for newly imported pictures are saved in history stack. However this change left all old photos without any user-defined auto-applied presets enabled. To fix this you will have to manually edit them. We suggest making a style out of preset, filtering photos to which it should apply using collect module, then selecting all in resulting collection and applying the style, repeat for every needed preset.
 
 ### <a name="faq-demosaic"></a>What happened to the demosaic module in darkroom? How can I select more demosaicing algorithms?<a href="#faq-demosaic" class="anchor" title="Link to this FAQ entry">¶</a>

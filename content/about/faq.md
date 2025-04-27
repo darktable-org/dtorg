@@ -32,7 +32,7 @@ No. Due to differences in how processing works in different programs, this is si
 Please see the [camera support page](/resources/camera-support/).
 
 ### <a name="faq-file-support"></a>My camera is supported, but darktable can't open the photos<a href="#faq-file-support" class="anchor" title="Link to this FAQ entry">¶</a>
-Some file formats are not supported. The camera support page has a full list.
+Some file formats are not supported, as are some compression options for otherwise-supported formats. The camera support page has a full list.
 
 ### <a name="faq-initial-look"></a>Why doesn’t the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
 This is explained [in the manual](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).

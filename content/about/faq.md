@@ -11,17 +11,20 @@ menu: "footer"
 
 ## New Users
 
-### <a name="faq-lightroom"></a>Is darktable a free Lightroom alternative?<a href="#faq-lightroom" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-lightroom"></a>Is darktable a free Lightroom replacement?<a href="#faq-lightroom" class="anchor" title="Link to this FAQ entry">¶</a>
 No. Other than both being raw editors with DAM features, and looking somewhat similar, they have very little in common. Darktable is a powerful and flexible raw processing toolbox, that leaves the user in charge of their workflow and provides a level of power and control that few others can match. This also means that the initial learning curve can be steep, since very little workflow and tool knowledge can be transferred from other programs.
 
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 
 ### <a name="faq-file-support"></a>My camera is supported, but darktable can't open the photos<a href="#faq-file-support" class="anchor" title="Link to this FAQ entry">¶</a>
-Some file formats are not supported. The camera support page has a full list.
+Some file formats are not supported, as are some compression options for otherwise-supported formats. The camera support page has a full list.
 
 ### <a name="faq-initial-look"></a>Why doesn’t the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
 This is explained [in the manual](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).
+
+### <a name="faq-very-dark"></a>No, I mean my images are **very** dark, not just dull
+If you are using Dynamic Range, Highlight Preservation, or HDR modes, your camera is deliberately underexposing the image by using a lower ISO than you've set (and is recorded in the image's metadata), and is relying on post-processing lightening to give a "normal"-looking image with better highlight definition.  darktable is unable to determine the corrections needed (which are proprietary and often in the form of a custom tone curve instead of simple EV correction), so [you will need to manually apply the correction](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).  For Fujifilm, DR200 mode needs an additional +1 EV exposure correction and DR400 mode needs +2 EV.  For Nikon Z-series cameras, HLG tone mode needs an additional +2 EV and probably some tone curve adjustment.
 
 ### <a name="faq-grey-interface"></a>Why is the interface so flat and grey?<a href="#faq-grey-interface" class="anchor" title="Link to this FAQ entry">¶</a>
 The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/darkroom/color-assessment/), [here](https://docs.darktable.org/usermanual/stable/en/preferences-settings/general/) and [here](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#edit-in-a-controlled-environment).

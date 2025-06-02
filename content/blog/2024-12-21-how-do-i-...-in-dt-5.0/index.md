@@ -32,7 +32,7 @@ The [_Quick Access Panel_](https://darktable.org/usermanual/en/darkroom/organiza
 contains the most-used sliders and controls other than cropping, so a
 suggested strategy to ease yourself into darktable is to limit
 yourself to the QAP and the
-_crop_](https://darktable.org/usermanual/en/module-reference/processing-modules/crop/)
+[_crop_](https://darktable.org/usermanual/en/module-reference/processing-modules/crop/)
 module while editing until you feel comfortable with them, then
 gradually explore other modules (many of which are quite specialized)
 and additional controls from the modules on the QAP which are not

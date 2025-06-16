@@ -62,7 +62,7 @@ There are also a number of video tutorials. You can find a list of some of them 
 There is only one way, and that is "darktable". All lower case, in one word, except when starting a sentence.
 
 ### <a name="faq-contact"></a>What's the best way to contact the developers/report bugs?<a href="#faq-contact" class="anchor" title="Link to this FAQ entry">¶</a>
-For fast discussions and short questions it's best to visit us in IRC (on _irc.oftc.net_, channel #darktable), especially in the Western European evening hours. If you don't want to use IRC, don't know what it is or want something less transient you can use our mailing lists. See our [contact page](/contact). For Issues/bugs, please use [GitHub Issues](https://github.com/darktable-org/darktable/issues)
+For issues/bugs, please use [GitHub Issues](https://github.com/darktable-org/darktable/issues). For more general help and discussion there's the [discuss.pixls.us](https://discuss.pixls.us/) forum. For fast discussions and short questions it's best to visit us in one of the IRC or Matrix channels, which are listed on the [contact page](/contact/).
 
 ### <a name="faq-sigill"></a>darktable crashes with SIGILL. What's up?<a href="#faq-sigill" class="anchor" title="Link to this FAQ entry">¶</a>
 Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than fifteen years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.

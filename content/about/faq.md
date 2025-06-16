@@ -92,7 +92,7 @@ In rare cases that might break other software accessing the camera though! If yo
 Yes, there are two libraries we heavily rely on:
 
 * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
-* **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/stable/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
+* **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/stable/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, try running `lensfun-update-data` to get the newest lens database.  If lens correction still does not show your camera/lens, or shows a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
 
 ## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ entry">¶</a>

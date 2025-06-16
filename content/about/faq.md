@@ -28,6 +28,8 @@ No. Presets (what darktable calls styles) are specific to the program that creat
 ### <a name="faq-import-edits"></a>Can darktable import edits from other programs?<a href="#faq-import-edits" class="anchor" title="Link to this FAQ entry">¶</a>
 No. Due to differences in how processing works in different programs, this is simply not possible to do properly. There is some very basic support for importing Lightroom edits, but that code is old and somewhat broken and you're probably best off discarding the edit history after import and just start over.
 
+We have a [blog post](https://www.darktable.org/2024/12/howto-in-5.0/) to help you figure out how to do the equivalents of Lightroom actions in darktable.
+
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 

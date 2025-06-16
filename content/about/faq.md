@@ -108,7 +108,7 @@ Occasionally an old module may be deprecated and become unavailable for new edit
 If, for some reason, you really want to continue using it, you can open an old edit using that module and create a style, which you can then apply to new edits. But, as said, there are good reasons for why it was deprecated, so you're encouraged to use the replacement instead.
 
 ### <a name="faq-sigill"></a>darktable crashes with SIGILL. What's up?<a href="#faq-sigill" class="anchor" title="Link to this FAQ entry">¶</a>
-Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than fifteen years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
+Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for an x86 CPU to run darktable is one which supports SSE2. If your CPU does not support SSE2 more than twenty years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
 
 ### <a name="faq-tethering"></a>I attached and turned on my camera, but it doesn't show up in darktable, what's wrong?<a href="#faq-tethering" class="anchor" title="Link to this FAQ entry">¶</a>
 If the camera in question is supported by `libgphoto2`, then the most likely cause is that some other process is blocking the device.

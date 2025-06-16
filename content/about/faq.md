@@ -14,6 +14,8 @@ menu: "footer"
 ### <a name="faq-lightroom"></a>Is darktable a free Lightroom replacement?<a href="#faq-lightroom" class="anchor" title="Link to this FAQ entry">¶</a>
 No, darktable is an _alternative_, not a drop-in replacement. Other than both being raw editors with DAM features, and looking somewhat similar, they have very little in common. Darktable is a powerful and flexible raw processing toolbox, that leaves the user in charge of their workflow and provides a level of power and control that few others can match. This also means that the initial learning curve can be steep, since very little workflow and tool knowledge can be transferred from other programs.
 
+We have a [blog post](https://www.darktable.org/2024/12/howto-in-5.0/) to help you figure out how to do the equivalents of Lightroom actions in darktable.
+
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 

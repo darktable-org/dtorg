@@ -60,6 +60,13 @@ For technical reasons the old White Balance module is still required when using 
 ### <a name="faq-save"></a>How do I save my changes?<a href="#faq-save" class="anchor" title="Link to this FAQ entry">¶</a>
 You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image using the export module.
 
+### <a name="faq-scene-referred">I keep seeing the terms display-referred and scene-referred. What do they mean?<a href="#faq-scene-referred" class="anchor" title="Link to this FAQ entry">¶</a>
+The manual has [a short explanation](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#scene-referred-workflow-a-new-approach).
+
+[This article](https://pixls.us/articles/darktable-3-rgb-or-lab-which-modules-help/) explains them in more detail and the reasons behind darktable moving to a scene-referred workflow. Note that it was written for darktable 3.0, so some of the specific recommendations for which modules to use are no longer relevant.
+
+Elle Stone has an article [here](https://ninedegreesbelow.com/photography/display-referred-scene-referred.html) that explains them in a more general way.
+
 ### <a name="faq-docs"></a>This confuses me. Is there a manual?<a href="#faq-docs" class="anchor" title="Link to this FAQ entry">¶</a>
 Yes, [here](https://docs.darktable.org/usermanual/stable/en/). You might also want to read through the [blog section](/blog/) of this website.
 

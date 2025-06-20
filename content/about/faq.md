@@ -14,6 +14,12 @@ menu: "footer"
 ### <a name="faq-lightroom"></a>Is darktable a free Lightroom alternative?<a href="#faq-lightroom" class="anchor" title="Link to this FAQ entry">¶</a>
 No. Other than both being raw editors with DAM features, and looking somewhat similar, they have very little in common. Darktable is a powerful and flexible raw processing toolbox, that leaves the user in charge of their workflow and provides a level of power and control that few others can match. This also means that the initial learning curve can be steep, since very little workflow and tool knowledge can be transferred from other programs.
 
+### <a name="faq-presets"></a>Is darktable compatible with presets from other programs?<a href="#faq-presets" class="anchor" title="Link to this FAQ entry">¶</a>
+No. Presets (what darktable calls styles) are specific to the program that created them. It can, however, use LUTs in several different formats, so that may be a solution if cross-program compatibility is needed.
+
+### <a name="faq-import-edits"></a>Can darktable import edits from other programs?<a href="#faq-import-edits" class="anchor" title="Link to this FAQ entry">¶</a>
+No. Due to differences in how processing works in different programs, this is simply not possible to do properly. There is some very basic support for importing Lightroom edits, but that code is old and somewhat broken and you're probably best off discarding the edit history after import and just start over.
+
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 

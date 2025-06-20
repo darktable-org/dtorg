@@ -50,6 +50,13 @@ You have to import a single image or a film roll (directory) using the [import m
 ### <a name="faq-filter"></a>Ok, I imported some images, but I still don't see anything, though after importing a single image it is shown in darkroom mode.<a href="#faq-filter" class="anchor" title="Link to this FAQ entry">¶</a>
 You may have applied a filter, such as showing only certain star ratings. In either the [collection filters module](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/collection-filters/) or [top panel](https://docs.darktable.org/usermanual/stable/en/overview/user-interface/top-panel/), make sure module order is set to "all images" and that all possible star ratings and no color labels have been selected. You may also want to check the *initial rating* parameter in the import module.
 
+### <a name="faq-wb-error"></a>Why do I get an error about white balance being applied twice?<a href="#faq-wb-error" class="anchor" title="Link to this FAQ entry">¶</a>
+This isn't really an error, but a warning that you're doing something that you probably shouldn't be doing. Normally you should set the correct white balance in Color Calibration and leave the White Balance module at its default setting.
+
+This happens when the Color Calibration CAT is active and the White Balance module has been changed from the default (camera reference - either of the two light bulb icons). If you want to change the white balance with the White Balance module, either disable Color Calibration or, if you want to use one of the other tabs in Color Calibration, set CAT adaptation to *none (bypass)*, but be aware that the chromatic adaptation transform (CAT) done by Color Calibration is more powerful and accurate than traditional white balance and should be preferred.
+
+For technical reasons the old White Balance module is still required when using the Color Calibration CAT, which is why both are active by default.
+
 ### <a name="faq-save"></a>How do I save my changes?<a href="#faq-save" class="anchor" title="Link to this FAQ entry">¶</a>
 You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image using the export module.
 

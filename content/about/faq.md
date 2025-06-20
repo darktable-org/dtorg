@@ -14,6 +14,12 @@ menu: "footer"
 ### <a name="faq-lightroom"></a>Is darktable a free Lightroom alternative?<a href="#faq-lightroom" class="anchor" title="Link to this FAQ entry">¶</a>
 No. Other than both being raw editors with DAM features, and looking somewhat similar, they have very little in common. Darktable is a powerful and flexible raw processing toolbox, that leaves the user in charge of their workflow and provides a level of power and control that few others can match. This also means that the initial learning curve can be steep, since very little workflow and tool knowledge can be transferred from other programs.
 
+### <a name="faq-presets"></a>Is darktable compatible with presets from other programs?<a href="#faq-presets" class="anchor" title="Link to this FAQ entry">¶</a>
+No. Presets (what darktable calls styles) are specific to the program that created them. It can, however, use LUTs in several different formats, so that may be a solution if cross-program compatibility is needed.
+
+### <a name="faq-import-edits"></a>Can darktable import edits from other programs?<a href="#faq-import-edits" class="anchor" title="Link to this FAQ entry">¶</a>
+No. Due to differences in how processing works in different programs, this is simply not possible to do properly. There is some very basic support for importing Lightroom edits, but that code is old and somewhat broken and you're probably best off discarding the edit history after import and just start over.
+
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 
@@ -44,8 +50,22 @@ You have to import a single image or a film roll (directory) using the [import m
 ### <a name="faq-filter"></a>Ok, I imported some images, but I still don't see anything, though after importing a single image it is shown in darkroom mode.<a href="#faq-filter" class="anchor" title="Link to this FAQ entry">¶</a>
 You may have applied a filter, such as showing only certain star ratings. In either the [collection filters module](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/shared/collection-filters/) or [top panel](https://docs.darktable.org/usermanual/stable/en/overview/user-interface/top-panel/), make sure module order is set to "all images" and that all possible star ratings and no color labels have been selected. You may also want to check the *initial rating* parameter in the import module.
 
+### <a name="faq-wb-error"></a>Why do I get an error about white balance being applied twice?<a href="#faq-wb-error" class="anchor" title="Link to this FAQ entry">¶</a>
+This isn't really an error, but a warning that you're doing something that you probably shouldn't be doing. Normally you should set the correct white balance in Color Calibration and leave the White Balance module at its default setting.
+
+This happens when the Color Calibration CAT is active and the White Balance module has been changed from the default (camera reference - either of the two light bulb icons). If you want to change the white balance with the White Balance module, either disable Color Calibration or, if you want to use one of the other tabs in Color Calibration, set CAT adaptation to *none (bypass)*, but be aware that the chromatic adaptation transform (CAT) done by Color Calibration is more powerful and accurate than traditional white balance and should be preferred.
+
+For technical reasons the old White Balance module is still required when using the Color Calibration CAT, which is why both are active by default.
+
 ### <a name="faq-save"></a>How do I save my changes?<a href="#faq-save" class="anchor" title="Link to this FAQ entry">¶</a>
 You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image using the export module.
+
+### <a name="faq-scene-referred">I keep seeing the terms display-referred and scene-referred. What do they mean?<a href="#faq-scene-referred" class="anchor" title="Link to this FAQ entry">¶</a>
+The manual has [a short explanation](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#scene-referred-workflow-a-new-approach).
+
+[This article](https://pixls.us/articles/darktable-3-rgb-or-lab-which-modules-help/) explains them in more detail and the reasons behind darktable moving to a scene-referred workflow. Note that it was written for darktable 3.0, so some of the specific recommendations for which modules to use are no longer relevant.
+
+Elle Stone has an article [here](https://ninedegreesbelow.com/photography/display-referred-scene-referred.html) that explains them in a more general way.
 
 ### <a name="faq-docs"></a>This confuses me. Is there a manual?<a href="#faq-docs" class="anchor" title="Link to this FAQ entry">¶</a>
 Yes, [here](https://docs.darktable.org/usermanual/stable/en/). You might also want to read through the [blog section](/blog/) of this website.
@@ -63,6 +83,11 @@ There is only one way, and that is "darktable". All lower case, in one word, exc
 
 ### <a name="faq-contact"></a>What's the best way to contact the developers/report bugs?<a href="#faq-contact" class="anchor" title="Link to this FAQ entry">¶</a>
 For issues/bugs, please use [GitHub Issues](https://github.com/darktable-org/darktable/issues). For more general help and discussion there's the [discuss.pixls.us](https://discuss.pixls.us/) forum. For fast discussions and short questions it's best to visit us in one of the IRC or Matrix channels, which are listed on the [contact page](/contact/).
+
+### <a name="faq-deprecated-module"></a>My favourite module has been removed from darktable. What happened and can I get it back?<a href="#faq-deprecated-module" class="anchor" title="Link to this FAQ entry">¶</a>
+Occasionally an old module may be deprecated and become unavailable for new edits. However, this only happens if there are quality or technical issues with that module and a suitable replacement is available.
+
+If, for some reason, you really want to continue using it, you can open an old edit using that module and create a style, which you can then apply to new edits. But, as said, there are good reasons for why it was deprecated, so you're encouraged to use the replacement instead.
 
 ### <a name="faq-sigill"></a>darktable crashes with SIGILL. What's up?<a href="#faq-sigill" class="anchor" title="Link to this FAQ entry">¶</a>
 Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than fifteen years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.

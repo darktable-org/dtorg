@@ -25,7 +25,7 @@ The following formats are explicitly not supported:
 - DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
 - Fujifilm lossy RAFs
 - Nikon high efficiency NEFs
-- OM System 14-bit high resolution ORFs
+- Phase One other than IIQ L
 - Sony downsized lossless ARWs ("M" for full-frame, "S" for full-frame & APS-C)
 
 If you are having problems opening a file and the camera is supported, make sure you are not using one of these formats.

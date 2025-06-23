@@ -245,7 +245,8 @@ The table is based on the source code from the 5.2.x branch.
 | GFX 50R                 |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | GFX 50S                 |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | GFX100                  |                                                                                               | ✅ Yes      | ❌ No          | Unknown  |
-| GFX100 II               |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
+| GFX100 II               |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| GFX100RF                |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | GFX100S                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | GFX100S II              |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | GFX50S II               |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
@@ -976,6 +977,7 @@ The table is based on the source code from the 5.2.x branch.
 | ZV-1                    | ZV-1A                                                                                         | ❌ No       | ✅ Yes         | RawSpeed |
 | ZV-E1                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | ZV-E10                  |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
+| ZV-E10M2                |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 
 ### YI TECHNOLOGY
 

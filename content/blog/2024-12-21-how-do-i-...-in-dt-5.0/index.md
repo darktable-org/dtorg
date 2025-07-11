@@ -1,5 +1,5 @@
 ---
-title: "How do I ... in darktable 5.0?"
+title: "How do I ... in darktable 5.x?"
 author: "Ralf Brown"
 slug: howto-in-5.0
 date: 2024-12-20

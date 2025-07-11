@@ -114,7 +114,8 @@ selection of images which have already been imported.
 
 For manual application, open the
 [_styles_](https://darktable.org/usermanual/en/module-reference/utility-modules/lighttable/styles/)
-module and navigate to the "darktable camera styles" entry in the list
+module and navigate to the "darktable camera styles" (v5.0) or
+"darktable > camera styles" (v5.2+) entry in the list
 of styles.  Expand this entry to show camera manufacturers, then
 expand the appropriate manufacturer to access its models.  Note that
 applying a different model's style to your camera's images is unlikely
@@ -186,6 +187,8 @@ history as long as you do not change settings in any of the
 Note that changing settings while displaying a history position other
 than the topmost (last) one will **discard** any changes above that point
 and add your change to the displayed edit.
+
+Note: The Ctrl-Z undo history is cleared when switching betweeen views (lighttable/darkroom/map/etc).
 
 {{< /details >}}
 
@@ -737,4 +740,7 @@ Tutorials by [Aperlust](https://www.youtube.com/@aperlust/videos)
 - [Histogram, Waveform, and Vectorscope](https://www.youtube.com/watch?v=iVmn-iFNzYA)
 - [Learn Darktable in 90 Minutes](https://www.youtube.com/watch?v=VJv9kb7Ocvg)
 
-*Last updated 2025-02-23.*
+Tutorials by [TG Photoblog](https://www.youtube.com/@TGPhotoblog)
+- [How to Apply a Lightroom Workflow](https://www.youtube.com/watch?v=cbVI7hB1BVg)
+
+*Last updated 2025-07-11.*

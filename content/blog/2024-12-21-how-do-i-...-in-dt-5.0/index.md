@@ -379,6 +379,26 @@ the image with that brightness.
 
 {{< /details >}}
 
+{{< details title="**dodge/burn areas of my image**" >}}
+
+Dodging and burning is simply localized brightness adjustment, so it
+can be accomplished with a [masked](https://darktable.org/usermanual/en/darkroom/masking-and-blending/)
+instance of the
+[_exposure_](https://darktable.org/usermanual/en/module-reference/processing-modules/exposure/)
+module.  This is one of the few instances where the brush tool may be
+preferable to the path tool for selecting large areas, because one can
+use the SUM operation on multiple low-opacity brush strokes to
+gradually build up a subtle and varied mask for the exposure
+adjustment.
+
+The [_tone equalizer_](https://darktable.org/usermanual/en/module-reference/processing-modules/tone-equalizer/)
+can also be used for brightness-based brightness adjustments which
+preserve local contrast.  You will likely need a rough mask to
+restrict adjustments to only a specific area having the selected
+brightness.
+
+{{< /details >}}
+
 {{< details title="**make fine/exact adjustments to a control**" >}}
 
 darktable has multiple ways to adjust a slider:

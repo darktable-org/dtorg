@@ -737,11 +737,6 @@ The [Darktable Landscapes](https://www.youtube.com/@DarktableLandscapes) Youtube
 - [masking](https://avidandrew.com/harnessing-darktable-masks-easily.html)
 - [targeted color adjustments](https://avidandrew.com/color-adjustments-color-equalizer.html)
 
-Tutorials by [Rico Richardson](https://www.youtube.com/@RicoResolves), including
-- [5 Tips in Darktable 5](https://www.youtube.com/watch?v=FqATUdWOQ2I)
-- [Stunning Autumn Effects](https://www.youtube.com/watch?v=5HXAnjlJ4Jk)
-- [Darktable 5 Masterclass](https://www.youtube.com/watch?v=cqyaplMkJlk)
-
 Tutorials by [Aperlust](https://www.youtube.com/@aperlust/videos)
 - [Histogram, Waveform, and Vectorscope](https://www.youtube.com/watch?v=iVmn-iFNzYA)
 - [Learn Darktable in 90 Minutes](https://www.youtube.com/watch?v=VJv9kb7Ocvg)
@@ -749,9 +744,4 @@ Tutorials by [Aperlust](https://www.youtube.com/@aperlust/videos)
 Tutorials by [TG Photoblog](https://www.youtube.com/@TGPhotoblog)
 - [How to Apply a Lightroom Workflow](https://www.youtube.com/watch?v=cbVI7hB1BVg)
 
-Tutorials by [Andy Astbury](https://www.youtube.com/@AndyAstbury)
-- [Masking, Ep. 1](https://www.youtube.com/watch?v=IyS6kn7qsn4)
-- [Masking, Ep. 2](https://www.youtube.com/watch?v=xIieSZibkH8)
-- [Mask Export](https://www.youtube.com/watch?v=mumS6pxGNMk)
-
-*Last updated 2025-07-11.*
+*Last updated 2025-08-02.*

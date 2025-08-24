@@ -11,7 +11,7 @@ menu: ["main", "footer"]
 
 # Social Media
 
-[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)&nbsp;–
+[Mastodon](https://photog.social/@darktable)&nbsp;– [Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)
 
 # How to get in contact
 
@@ -23,7 +23,7 @@ Code contributions or translation: [open a pull request](https://github.com/dark
 
 IRC: _irc.oftc.net_, channel _#darktable_ or use the [web interface](https://webchat.oftc.net/?channels=%23darktable)
 
-Matrix: [#darktable](https://matrix.to/#/#_oftc_#darktable:matrix.org) room (bridged with the IRC channel mentioned above)
+Matrix: [#darktable](https://matrix.to/#/#_oftc_#darktable:matrix.org) room (bridged with the IRC channel mentioned above). [darktable user](https://matrix.to/#/#darktable-user:matrix.org) room for general user support. [darktable dev](https://matrix.to/#/#darktable-dev:matrix.org) room for developer support.
 
 # Developers / darktable Team
 

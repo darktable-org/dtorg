@@ -39,10 +39,10 @@ NOTE: this table does not list the availability of freely available sample at [r
 The table has the following fields:
 
 - **Model, Aliases:** The name of the camera with at least basic support in darktable
-- **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the temperature module
+- **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the white balance module
 - **Noise Profile:** If darktable has a noise profile so you can use the profiled denoise module with the camera
 
-The table is based on the source code from the 5.2.x branch.
+The table is based on the source code from the 5.2.1 branch.
 
 ### Canon
 
@@ -86,7 +86,7 @@ The table is based on the source code from the 5.2.x branch.
 | EOS 77D                 | EOS 9000D                                                                                     | ✅ Yes      | ✅ Yes         | RawSpeed |
 | EOS 7D                  |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | EOS 7D Mark II          |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
-| EOS 800D                | EOS Kiss X9i, EOS REBEL T7i, EOS Rebel T7i                                                    | ❌ No       | ✅ Yes         | RawSpeed |
+| EOS 800D                | EOS Kiss X9i, EOS Rebel T7i                                                                   | ❌ No       | ✅ Yes         | RawSpeed |
 | EOS 80D                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | EOS 850D                | EOS Kiss X10i, EOS Rebel T8i                                                                  | ❌ No       | ✅ Yes         | LibRaw   |
 | EOS 90D                 |                                                                                               | ❌ No       | ✅ Yes         | LibRaw   |
@@ -241,13 +241,13 @@ The table is based on the source code from the 5.2.x branch.
 | FinePix SL1000          |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | FinePix X10             |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | FinePix X100            |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
-| GFX 100                 |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
+| GFX 100                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | GFX 50R                 |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | GFX 50S                 |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
-| GFX100                  |                                                                                               | ✅ Yes      | ❌ No          | Unknown  |
 | GFX100 II               |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
+| GFX100RF                |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | GFX100S                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
-| GFX100S II              |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| GFX100S II              |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | GFX50S II               |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | X-A1                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | X-A10                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
@@ -559,7 +559,7 @@ The table is based on the source code from the 5.2.x branch.
 | Z 9                     |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | Z f                     |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | Z fc                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
-| Z50_2                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| Z50_2                   |                                                                                               | ✅ Yes      | ❌ No          | RawSpeed |
 | Z5_2                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | Z6_3                    |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 
@@ -668,6 +668,7 @@ The table is based on the source code from the 5.2.x branch.
 | DC-GH5M2                |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | DC-GH5S                 |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | DC-GH6                  |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| DC-GH7                  |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | DC-GX880                | DC-GF10, GF90                                                                                 | ❌ No       | ❌ No          | RawSpeed |
 | DC-GX9                  | DC-GX7MK3                                                                                     | ✅ Yes      | ✅ Yes         | RawSpeed |
 | DC-LX100M2              |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
@@ -677,7 +678,7 @@ The table is based on the source code from the 5.2.x branch.
 | DC-S1RM2                |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | DC-S5                   | DC-S5D                                                                                        | ✅ Yes      | ✅ Yes         | RawSpeed |
 | DC-S5M2                 |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
-| DC-S5M2X                |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| DC-S5M2X                |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | DC-S9                   |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | DC-TZ202                | DC-TZ200, DC-TZ200D, DC-TZ202D, DC-TZ220, DC-TZ220D, DC-ZS200, DC-ZS200D, DC-ZS220, DC-ZS220D | ❌ No       | ❌ No          | RawSpeed |
 | DC-TZ90                 | DC-FZ91, DC-FZ92, DC-FZ93, DC-TZ91, DC-ZS70                                                   | ❌ No       | ✅ Yes         | RawSpeed |
@@ -750,7 +751,7 @@ The table is based on the source code from the 5.2.x branch.
 
 | Model                   | Aliases                                                                                       | WB Presets | Noise Profile | Decoder  |
 | ----------------------- | --------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| *ist D                  |                                                                                               | ✅ Yes      | ❌ No          | RawSpeed |
+| *ist D                  |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | *ist DL                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | *ist DL2                |                                                                                               | ✅ Yes      | ❌ No          | RawSpeed |
 | *ist DS                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
@@ -802,6 +803,7 @@ The table is based on the source code from the 5.2.x branch.
 | P20+                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | P25+                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | P30                     |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| P40+                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | P45                     | P45+                                                                                          | ❌ No       | ❌ No          | RawSpeed |
 | P65+                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 
@@ -829,7 +831,6 @@ The table is based on the source code from the 5.2.x branch.
 | EX2F                    |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | G920F                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | G935F                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
-| GX-1S                   |                                                                                               | ✅ Yes      | ❌ No          | Unknown  |
 | GX10                    |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | GX20                    |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | NX mini                 |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
@@ -976,6 +977,7 @@ The table is based on the source code from the 5.2.x branch.
 | ZV-1                    | ZV-1A                                                                                         | ❌ No       | ✅ Yes         | RawSpeed |
 | ZV-E1                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | ZV-E10                  |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
+| ZV-E10M2                |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 
 ### YI TECHNOLOGY
 

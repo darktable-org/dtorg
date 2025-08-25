@@ -9,7 +9,15 @@ weight: 1
 menu: "footer"
 ---
 
-## New Users
+- [New Users](#faq-new-users)
+- [General](#faq-general)
+- [Linux](#faq-linux)
+- [Windows](#faq-windows)
+- [Flatpak](#faq-flatpak)
+- [Mac](#faq-mac)
+- [Very Old Versions](#faq-old-versions)
+
+## <a name="faq-new-users"></a>New Users<a href="#faq-new-users" class="anchor" title="Link to this FAQ section">¶</a>
 
 ### <a name="faq-lightroom"></a>Is darktable a free Lightroom alternative?<a href="#faq-lightroom" class="anchor" title="Link to this FAQ entry">¶</a>
 No. Other than both being raw editors with DAM features, and looking somewhat similar, they have very little in common. Darktable is a powerful and flexible raw processing toolbox, that leaves the user in charge of their workflow and provides a level of power and control that few others can match. This also means that the initial learning curve can be steep, since very little workflow and tool knowledge can be transferred from other programs.
@@ -76,7 +84,7 @@ The best place is the [Pixls.us discussion forum](https://discuss.pixls.us/). Th
 There are also a number of video tutorials. You can find a list of some of them at the bottom of the [resources page](/resources/).
 
 
-## <a name="faq-general"></a>General<a href="#faq-general" class="anchor" title="Link to this FAQ entry">¶</a>
+## <a name="faq-general"></a>General<a href="#faq-general" class="anchor" title="Link to this FAQ section">¶</a>
 
 ### <a name="faq-spelling"></a>So, I have seen a bunch of different ways to spell *darktable*. Which one is right?<a href="#faq-spelling" class="anchor" title="Link to this FAQ entry">¶</a>
 There is only one way, and that is "darktable". All lower case, in one word, except when starting a sentence.
@@ -115,7 +123,7 @@ Yes, there are two libraries we heavily rely on:
 * **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/stable/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
 
-## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ entry">¶</a>
+## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ section">¶</a>
 
 ### <a name="faq-red-borders"></a>After updating my system I suddenly see red borders and giant buttons everywhere!<a href="#faq-red-borders" class="anchor" title="Link to this FAQ entry">¶</a>
 darktable uses GTK3 to create its GUI. We make heavy use of styling to change the look to what you are used to. Unfortunately there were several incompatible changes in the past with how GTK3 handles that. As a result darktable needs to be compiled for the same version of the library as what it's being used with later. Otherwise you risk GTK3 not supporting the stylesheet darktable uses. When you see those red borders that's exactly what's happening.
@@ -125,7 +133,7 @@ darktable uses GTK3 to create its GUI. We make heavy use of styling to change th
 * If you use your system's official darktable package you should file a bug report against the distribution and ask them to build a new package.
 
 
-## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ entry">¶</a>
+## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ section">¶</a>
 darktable is developed for Linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) URCT environment is used to compile the program. Nightly builds are performed in github to ensure the program builds under Windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
 ### <a name="faq-windows-locations"></a>Install file locations<a href="#faq-windows-locations" class="anchor" title="Link to this FAQ entry">¶</a>
@@ -175,7 +183,7 @@ Don't panic, sometimes it happens. If you can reproduce the crash, please file a
 
 * Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
 
-## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ entry">¶</a>
+## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ section">¶</a>
 
 ### <a name="faq-flatpak-locations"></a>Where are the darktable files in flatpak?<a href="#faq-flatpak-locations" class="anchor" title="Link to this FAQ entry">¶</a>
 The darktable files live at: `~/.var/app/org.darktable.Darktable`
@@ -187,7 +195,7 @@ To start darktable from terminal use: `flatpak run org.darktable.Darktable`. You
 darktable is developed for Linux, but it was ported to build on Mac. If you experience problems, please check the next few known issues below specific to the Mac port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
 
-## Very Old Versions
+## <a name="faq-old-versions"></a>Very Old Versions<a href="#faq-old-versions" class="anchor" title="Link to this FAQ section">¶</a>
 These questions are probably not affecting many people these days, but we kept them for historical reasons.
 
 ### <a name="faq-old-presets"></a>My auto-applied presets aren't enabled for pictures imported before upgrade to version 1.1 (or higher), what's happening?<a href="#faq-old-presets" class="anchor" title="Link to this FAQ entry">¶</a>

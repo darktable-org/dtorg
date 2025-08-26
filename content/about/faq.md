@@ -138,45 +138,44 @@ darktable is developed for Linux, but it was ported to build on Windows. The [MS
 
 ### <a name="faq-windows-locations"></a>Install file locations<a href="#faq-windows-locations" class="anchor" title="Link to this FAQ entry">¶</a>
 The install of darktable creates the following folders:
-* `C:\Program files\darktable\` - the program files to run darktable
-* `C:\Users\<username>\AppData\Local\darktable`- configuration (darktablerc.txt), databases (data.db and library.db), styles, and backups files are stored here. If the user manual references `.config/darktable/` , it means this location on Windows.
+* `%ProgramFiles%\darktable\` - the program files to run darktable
+* `%LOCALAPPDATA%\darktable\` - configuration (darktablerc), databases (data.db and library.db), styles, and backups files are stored here. If the user manual references `.config/darktable/` , it means this location on Windows.
 
 ### <a name="faq-windows-opencl"></a>How does the OpenCL support in darktable work on Windows?<a href="#faq-windows-opencl" class="anchor" title="Link to this FAQ entry">¶</a>
 The Windows port of darktable fully supports OpenCL with all the performance benefits, assuming you have a GPU with appropriate OpenCL drivers installed. Popular NVIDIA and AMD GPUs are working fine, but please note that in some cases the default drivers which are installed/updated by Windows Update do not necessarily contain the OpenCL driver. The best solution is typically to install the driver directly from the GPU manufacturers (like) [NVIDIA drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us) or [AMD drivers](http://support.amd.com/en-us/download)), and check the OpenCL support in the driver first.
 
-* You can always run an OpenCL test by launching `C:\Program Files\darktable\bin\darktable-cltest.exe` from a command line window, this will give you detailed information on your current OpenCL status.
+* You can always run an OpenCL test by launching `%ProgramFiles%\darktable\bin\darktable-cltest.exe` from a command line window, this will give you detailed information on your current OpenCL status.
 
 ### <a name="faq-windows-print"></a>I cannot see the Print module in the Windows version. How can I print my images?<a href="#faq-windows-print" class="anchor" title="Link to this FAQ entry">¶</a>
 The darktable Windows packaging can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
 
 ### <a name="faq-windows-config"></a>I read in the manual about changing some configuration setting, which supposed to be located in the user config directory. Where is the config file in the Windows version?<a href="#faq-windows-config" class="anchor" title="Link to this FAQ entry">¶</a>
-The configuration file of darktable is located at `C:\Users\[username]\AppData\Local\darktable\darktablerc`. If you change it please use a text editor which can handle Unix line endings, like Notepad++ or similar.
+The configuration file of darktable is located at `%LOCALAPPDATA%\darktable\darktablerc`. If you change it please use a text editor which can handle Unix line endings, like Notepad++ or similar.
 
 ### <a name="faq-windows-language"></a>I have started darktable and its user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?<a href="#faq-windows-language" class="anchor" title="Link to this FAQ entry">¶</a>
 By default darktable uses your operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
 
 * You can launch darktable using the command line `darkable --conf ui_last/gui_language=C`
 * You can change the darktable shortcut in the Start Menu and append `--conf ui_last/gui_language=C` to the Target field
-* You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `C:\Users\[username]\AppData\Local\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
+* You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `%LOCALAPPDATA%\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
 
 ### <a name="faq-windows-logs"></a>I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?<a href="#faq-windows-logs" class="anchor" title="Link to this FAQ entry">¶</a>
-The Windows version of **darktable (up to and including release 4.8.1**) by default logs its debug information to the following places (*This is a hidden folder in Windows, therefore copy and paste the link to windows explorer for access*):
+The Windows version of **darktable (up to and including release 4.8.1**) by default logs its debug information to the following places (*these are hidden folders in Windows, therefore copy and paste the link to Windows File Explorer for access*):
 
-Windows 10:
-        `C:\Users\[username]\AppData\Local\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
+Windows 10 and later:
+        `%LOCALAPPDATA%\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
 
 Windows 7:
-        `C:\Users\[username]\AppData\Local\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
-
+        `%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
 
 Since **darktable 5.0** the default location is:
-        `C:\Users\[username]\Documents\Darktable\darktable-log.txt`
+        `%USERPROFILE%\Documents\Darktable\darktable-log.txt`
 
 ### <a name="faq-windows-unicode"></a>I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?<a href="#faq-windows-unicode" class="anchor" title="Link to this FAQ entry">¶</a>
 Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases, mostly due to external libraries used by darktable. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://github.com/darktable-org/darktable/issues).
 
 ### <a name="faq-windows-bugs"></a>I was working with darktable and it suddenly just crashed! What should I do?<a href="#faq-windows-bugs" class="anchor" title="Link to this FAQ entry">¶</a>
-Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates. Generating a log of the crash can also aid in discovering the cause. The simplest way is to start Windows Command Prompt (cmd), navigate to `C:\Program files\darktable\bin` and start darktable via `darktable.exe -d common` or `darktable -d opencl` or `darktable -d perf` or to see all the options `darktable -h`. The log file will be generated in the hidden path listed above.
+Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates. Generating a log of the crash can also aid in discovering the cause. The simplest way is to start Windows Command Prompt (cmd), navigate to `%ProgramFiles%\darktable\bin\` and start darktable via `darktable -d common` or `darktable -d opencl` or `darktable -d perf` or to see all the options `darktable -h`. The log file will be generated in the hidden path listed above.
         
 ### <a name="faq-windows-issues"></a>Known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
 * OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`.

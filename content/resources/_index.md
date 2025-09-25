@@ -82,10 +82,6 @@ Please note that the following translations are not complete (and will not be up
 
 [html](https://docs.darktable.org/lua/stable/)
 
-# darktable Styles
-
-dtsytles an online repository with darktable styles available for download at <https://dtstyle.net/>. It features live preview of the styles with four different sample images.
-
 # Videos
 
   * [Bruce Williams](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)

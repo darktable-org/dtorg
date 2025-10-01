@@ -17,13 +17,7 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 
 ## Version 5.2
 
-  * English [html](https://docs.darktable.org/usermanual/5.2/en/)/[epub](https://docs.darktable.org/usermanual/5.2/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/en/darktable_user_manual.pdf)
-  * Brazilian Portuguese [html](https://docs.darktable.org/usermanual/5.2/pt_br/)/[epub](https://docs.darktable.org/usermanual/5.2/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/pt_br/darktable_user_manual.pdf)
-  * Dutch [html](https://docs.darktable.org/usermanual/5.2/nl/)/[epub](https://docs.darktable.org/usermanual/5.2/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/nl/darktable_user_manual.pdf)
-  * French [html](https://docs.darktable.org/usermanual/5.2/fr/)/[epub](https://docs.darktable.org/usermanual/5.2/fr/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/fr/darktable_user_manual.pdf)
-  * German [html](https://docs.darktable.org/usermanual/5.2/de/)/[epub](https://docs.darktable.org/usermanual/5.2/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/de/darktable_user_manual.pdf)
-  * Polish [html](https://docs.darktable.org/usermanual/5.2/pl/)/[epub](https://docs.darktable.org/usermanual/5.2/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/pl/darktable_user_manual.pdf)
-  * Ukrainian [html](https://docs.darktable.org/usermanual/5.2/uk/)/[epub](https://docs.darktable.org/usermanual/5.2/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/5.2/uk/darktable_user_manual.pdf)
+  * English [html](https://docs.darktable.org/usermanual/5.2/en/)
 
 ## Version 4.6
 

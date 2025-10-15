@@ -37,6 +37,11 @@ Some file formats are not supported. The camera support page has a full list.
 ### <a name="faq-initial-look"></a>Why doesn’t the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
 This is explained [in the manual](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).
 
+### <a name="faq-default-modules"></a>Why are all those modules applied by default to my raw files?<a href="#faq-default-modules" class="anchor" title="Link to this FAQ entry">¶</a>
+Unlike with a JPEG, the data stored in a raw file is not suitable for display and must be processed first. This is something all raw editors do, but they usually hide the process from the user, while darktable shows everything it does. Another difference is that while darktable does barely more than the minimum required to show something reasonable on the screen, other editors tend to also apply some combination of contrast curves, saturation, sharpness and even LUTs. This minimal processing is also why the image is flatter and less colorful than what you may be used to.
+
+While some of the default modules can be considered optional in certain situations, as a beginner you should treat them all as required until you fully understand their purpose.
+
 ### <a name="faq-grey-interface"></a>Why is the interface so flat and grey?<a href="#faq-grey-interface" class="anchor" title="Link to this FAQ entry">¶</a>
 The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/development/en/module-reference/utility-modules/darkroom/color-assessment/), [here](https://docs.darktable.org/usermanual/development/en/preferences-settings/general/) and [here](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#edit-in-a-controlled-environment).
 

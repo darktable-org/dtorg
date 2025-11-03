@@ -31,7 +31,7 @@ A short introduction can be found in our git repository,  [TRANSLATORS.md](https
 
 ## Supplying a color matrix for your camera:
 
-Color matrices are specifications on how camera-native color is transformed into something that an end user might like, and ideally will be correct when viewed on a calibrated display. Read more about this in Pascal's [detailed blog post](https://encrypted.pcode.nl/blog/2010/06/28/darktable-camera-color-profiling/) or watch his [screencast](https://encrypted.pcode.nl/blog/2010/09/06/darktable-camera-color-profiling-screencast/).
+Color matrices are specifications on how camera-native color is transformed into something that an end user might like, and ideally will be correct when viewed on a calibrated display. Read more about this in [our docs](https://docs.darktable.org/usermanual/development/en/special-topics/darktable-chart/).
 
 
 ## Coding

@@ -6,7 +6,7 @@ found at https://www.darktable.org/
 
 ## Get started
 
-### With make(reccomended)
+### With make(recomended)
 
 Make sure you have hugo version `0.78.2` installed. You can run `make install-mac` or `make install-linux`.
 

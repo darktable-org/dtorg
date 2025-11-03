@@ -6,6 +6,12 @@ found at https://www.darktable.org/
 
 ## Get started
 
+### With make(reccomended)
+
 Make sure you have hugo version `0.78.2` installed. You can run `make install-mac` or `make install-linux`.
 
 Then, run `make server` and navigate to `http://localhost:1313`.
+
+### Without make
+
+Testing the site without `make` installed may be easier in some cases, especially on windows. On these systems, you must first [install Hugo](https://gohugo.io/installation/) manually, then run `rm -rf public && hugo server --renderStaticToDisk` and navigate to `http://localhost:1313`.

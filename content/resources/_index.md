@@ -90,7 +90,6 @@ Please note that the following translations are not complete (and will not be up
 
   * [Bruce Williams](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)
   * [Boris Hajdukovic](https://www.youtube.com/playlist?list=PLmZmCIhOC2Frt6Wq3gc0-egOy_P1sXjau)
-  * [Aurélien Pierre](https://www.youtube.com/c/Aur%C3%A9lienPIERREPhoto/videos)
   * [Robert Hutton](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
   * [A dabble in photography](https://www.youtube.com/channel/UCxHYygok15XQ6bqu9FK-oCw)
   * [Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)

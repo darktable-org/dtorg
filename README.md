@@ -14,4 +14,4 @@ Then, run `make server` and navigate to `http://localhost:1313`.
 
 ### Without make
 
-Testing the site without `make` installed may be easier in some cases, especially on windows. On these systems, you must first [install Hugo](https://gohugo.io/installation/) manually, then run `rm -rf public && hugo server --renderStaticToDisk` and navigate to `http://localhost:1313`.
+Testing the site without `make` installed may be easier in some cases, especially on windows. On these systems, you must first [install Hugo](https://gohugo.io/installation/) manually, then run hugo server --renderStaticToDisk` and navigate to `http://localhost:1313`.

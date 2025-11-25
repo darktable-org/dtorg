@@ -75,14 +75,14 @@ Depending on the version of macOS, there maybe some warnings causing darktable n
 
 #### Dialog: *"darktable" can't be opened because it was not downloaded from the Mac App Store*
 
-Do one of the follow:
-
 1. Locate darktable in Applications folder (or wherever you installed it) using Finder
 2. Do "Open" via context menu
 3. You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application
 4. After that you will be able to start darktable without this trick (well, until you update it, then you will have to do above steps again)
 
-or
+or use the following solution:
+
+### Dialog: *Apple could not verify "darktable.app" is free from malware*
 
 1. Open the Terminal app.
 2. Do one of the following:

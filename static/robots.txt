@@ -1,0 +1,9 @@
+# Google Image
+User-agent: Googlebot-Image
+Disallow:
+Allow: /*
+
+User-agent: *
+Disallow: /redmine/projects/darktable/repository/revisions/
+Disallow: /redmine/projects/*/repository/revisions/
+Disallow: /piwik/

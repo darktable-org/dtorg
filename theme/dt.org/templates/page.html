@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title itemprop='name'>{{ page.title |striptags }} | {{ SITENAME }}</title>
+{%endblock title%}
+
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
+
+        <meta itemprop="name" content="{{ page.title |striptags }}" >
+        <meta name="twitter:title" content="{{ page.title |striptags }}" >
+        <meta property="og:title" content="{{ page.title |striptags }}" >
+        <meta itemprop="headline" content="{{ page.title |striptags }}" >
+
+        <meta property="og:type" content="article">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if page.author %}
+        {% if page.author|string in AUTHORS and AUTHORS.get(page.author|string).displayname %}
+        <meta itemprop="author" content="{{ AUTHORS.get(page.author|string).displayname }}" />
+        <meta property="article:author" content="{{ AUTHORS.get(page.author|string).displayname }}" />
+        {% else %}
+        <meta itemprop="author" content="{{ page.author }}" />
+        <meta property="article:author" content="{{ page.author }}" />
+        {% endif %}
+        {% endif %}
+
+        {% if page.date %}
+        <meta itemprop="datePublished" content="{{ page.date }}" />
+        <meta property="article:published_time" content="{{ page.date }}" />
+        {% endif %}
+
+        {% if page.lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/images/ledes/{{ page.lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/images/ledes/{{ page.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/ledes/{{ page.lede }}">
+        {% else %}
+        <meta itemprop="image" content="{{ SITEURL }}{{ DEFAULT_LEDE }}">
+        <meta property="og:image" content="{{ SITEURL }}{{ DEFAULT_LEDE }}">
+        <meta name="twitter:image" content="{{ SITEURL }}{{ DEFAULT_LEDE }}">
+        {% endif %}
+
+        {% if page.summary %}
+        <meta itemprop="description" content="{{ page.summary |striptags }}">
+        <meta property="og:description" content="{{ page.summary |striptags }}">
+        <meta name="twitter:description" content="{{ page.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta property="og:description" content="darktable is an open source photography workflow application and raw developer.">
+        <meta name="twitter:description" content="darktable is an open source photography workflow application and raw developer.">
+        {% endif %}
+
+        {% if page.author and page.author|string in AUTHORS and AUTHORS.get(page.author|string).twitter %}
+        <meta name="twitter:creator" content="{{ AUTHORS.get(page.author|string).twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if page.canonical %}
+        <link rel="canonical" href="{{ page.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ page.canonical }}" />
+        <meta property="url" content="{{ page.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ page.url }}" />
+        {% endif %}
+{%endblock metadata %}
+
+
+{% block header %}
+
+    <section class='lede-bg'>
+    {% if page.lede %}
+        <img src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image'>
+    {% else %}
+        <img src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image'>
+    {% endif %}
+    </section>
+
+    <section class='lede page'>
+    {% if page.lede %}
+        <img class='lede-img' src='{{ SITEURL }}/images/ledes/{{ page.lede }}' alt='darktable page lede image' width='960' height='402'>
+        {% if page.lede_author %}
+        <div class="lede-author">
+            <div>{{ page.lede_author }}</div>
+        </div>
+        {% endif %}
+    {% else %}
+        <img class='lede-img' src='{{ SITEURL }}{{ DEFAULT_LEDE }}' alt='darktable page lede image' width='960' height='402'>
+    {% endif %}
+    </section>
+
+{% endblock header %}
+
+{% block content %}
+
+    <section class='page'>
+
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='page-title'>{{ page.title |striptags }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='container content'>
+
+
+            <div class='subnav'>
+            {% set curtitle = page.title %}
+            {% for page in pages|sort(attribute='url') %}
+                {% if page.url.startswith( curtitle ) and ( page.url != curtitle+"/" ) %}
+                <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title |striptags }}</a>
+                {% endif %}
+            {% endfor %}
+            </div>
+
+            <div class='row'>
+                <div class='column'>
+                    {% block data %}
+                    {{ page.content }}
+                    {% endblock data %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

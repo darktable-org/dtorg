@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+{% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+<title itemprop='name'>{{ AUTHORS.get(author|string).displayname }} | {{ SITENAME }}</title>
+{% else %}
+<title itemprop='name'>{{ author |striptags }} | {{ SITENAME }}</title>
+{% endif %}
+{% endblock title %}
+
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
+
+        {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+        <meta itemprop="name" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta name="twitter:title" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta property="og:title" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta itemprop="headline" content="posts by {{ AUTHORS.get(author|string).displayname }}" >
+        <meta itemprop="author" content="{{ AUTHORS.get(author|string).displayname }}" />
+        <meta property="og:author" content="{{ AUTHORS.get(author|string).displayname }}" />
+        {% else %}
+        <meta itemprop="name" content="posts by {{ author |striptags }}" >
+        <meta name="twitter:title" content="posts by {{ author |striptags }}" >
+        <meta property="og:title" content="posts by {{ author |striptags }}" >
+        <meta itemprop="headline" content="posts by {{ author |striptags }}" >
+        <meta itemprop="author" content="{{ author |striptags }}" />
+        <meta property="og:author" content="{{ author |striptags }}" />
+        {% endif %}
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if author.date %}
+        <meta itemprop="datePublished" content="{{ author.date }}" />
+        <meta property="og:published_time" content="{{ author.date }}" />
+        {% endif %}
+
+        {% if author|string in AUTHORS and AUTHORS.get(author|string).lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}">
+        {% else %}
+        {# Don't forget to change this if it gets changed below #}
+        <meta itemprop="image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
+        <meta property="og:image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
+        <meta name="twitter:image" content="{{ SITEURL }}/theme/images/lede-author.jpg">
+        {% endif %}
+
+        {% if author.summary %}
+        <meta itemprop="description" content="{{ author.summary |striptags }}">
+        <meta property="og:description" content="{{ author.summary |striptags }}">
+        <meta name="twitter:description" content="{{ author.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="Posts by {{ author }} on darktable.org">
+        <meta property="og:description" content="Posts by {{ author }} on darktable.org">
+        <meta name="twitter:description" content="Posts by {{ author }} on darktable.org">
+        {% endif %}
+
+        {% if author|string in AUTHORS and AUTHORS.get(author|string).twitter  %}
+        <meta name="twitter:creator" content="{{ AUTHORS.get(author|string).twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if author.canonical %}
+        <link rel="canonical" href="{{ author.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ author.canonical }}" />
+        <meta property="url" content="{{ author.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ author.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ author.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ author.url }}" />
+        {% endif %}
+{%endblock metadata %}
+
+
+
+{% block header %}
+    {% if author|string in AUTHORS and AUTHORS.get(author|string).lede %}
+    <section class='lede-bg'>
+        {# If you change this, don't forget to change it in the metadata above #}
+        <img src='{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}'>
+    </section>
+    <section class='lede author'>
+        <img class='lede-img' src='{{ SITEURL }}/images/ledes/authors/{{ AUTHORS.get(author|string).lede }}'>
+    </section>
+    {% else %}
+    <section class='lede-bg'>
+        {# If you change this, don't forget to change it in the metadata above #}
+        <img src='{{ SITEURL }}/theme/images/lede-author.jpg'>
+    </section>
+    <section class='lede author'>
+        {# If you change this, don't forget to change it in the metadata above #}
+        <img class='lede-img' src='{{ SITEURL }}/theme/images/lede-author.jpg'>
+    </section>
+    {% endif %}
+{% endblock header %}
+
+{% block content %}
+
+    <section class='category'>
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                    <h1 class='page-title'>posts by {{ AUTHORS.get(author|string).displayname }}</h1>
+                    {% else %}
+                    <h1 class='page-title'>posts by {{ author }}</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class='container content'>
+            <div class='row'>
+                <div class='column'>
+
+                    {% for article in articles_page.object_list %}
+
+                    <article>
+                        <section class='article-lede'>
+                        </section>
+
+                        <section class='content'>
+
+                            <h1 class='entry-title'>
+                                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                    {{ article.title }}
+                                </a>
+                            </h1>
+
+                            <div class='post-info'>
+                                posted on
+                                <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                                <address class="vcard author">by
+                                    {% for author in article.authors %}
+                                    {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                                    <a class="url fn" rel='author' href="{{ SITEURL }}/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
+                                    {% else %}
+                                    <a class="url fn" rel='author' href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                                    {% endif %}
+                                    {% endfor %}
+                                </address>
+
+                            </div>
+
+                            <div class='entry-content'>
+                                {% if article.summary %}
+                                {{ article.summary }}
+                                {% else %}
+                                {{ article.content|truncate() }}
+                                {% endif %}
+                                <p>
+                                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                        Continue Reading &rarr;
+                                    </a>
+                                    </p>
+                            </div>
+                        </section>
+
+                    </article>
+
+                    <hr/>
+
+                    {% endfor %}
+                    {% if articles_page.has_other_pages() %}
+                    {% include 'pagination.html' %}
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

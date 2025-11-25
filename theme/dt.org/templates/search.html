@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}
+        <title itemprop='name'>search | {{ SITENAME }}</title>
+{%endblock title%}
+
+{% block script %}
+    <script type="text/javascript" src="{{ SITEURL }}/theme/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+        // taken from tipuesearch.js as it's handy
+        function getURLP(name)
+        {
+            var _locSearch = location.search;
+            var _splitted = (new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(_locSearch)||[,""]);
+            var searchString = _splitted[1].replace(/\+/g, '%20');
+            try
+            {
+                searchString = decodeURIComponent(searchString);
+            }
+            catch(e)
+            {
+                searchString = unescape(searchString);
+            }
+            return searchString || null;
+        }
+
+        $(document).ready(function() {
+            var contentLocation = 'tipuesearch_content.json';
+            if(getURLP('search') == 'lua-api')
+            {
+                contentLocation = 'tipuesearch_lua_api.json';
+                $("input[name='search'][value='lua-api']").prop("checked","checked");
+            }
+
+            $('#tipue_search_input').tipuesearch({
+              'mode' : 'json',
+              'show': 10,
+              'newWindow': false,
+              'contentLocation': contentLocation
+            });
+        });
+    </script>
+{% endblock script %}
+
+{% block searchtop %}
+{% endblock searchtop %}
+
+{% block content %}
+
+<section class='lede-bg'>
+    <img src='{{ SITEURL }}/theme/images/lede-search.jpg' alt='darktable page lede image'>
+</section>
+
+<section class='page search'>
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    <h1 class='page-title'>Search</h1>
+                    <form id="searchform" action="{{ SITEURL }}/search.html">
+                    <svg viewBox="0 0 16 16" height="16" width="16" style="vertical-align: middle;">
+                         <g transform="translate(0 -1036.4)">
+                          <ellipse style="color-rendering:auto;color:#000000;shape-rendering:auto;solid-color:#000000;stroke:#fff;stroke-width:2;fill:none;" rx="5.0368" ry="5.0368" cy="1042.4" cx="9.9632"></ellipse>
+                          <path style="stroke:#fff;stroke-width:3;fill:none" d="m1.0607 1051.3 5.114-5.114"></path>
+                         </g>
+                    </svg>
+                    <input type="text" class="searchbox" name="q" id="tipue_search_input" placeholder="search">
+                    <fieldset class="searchmode" id="searchmode">
+                      <span>Search in</span>
+                      <input type="radio" name="search" value="website" id="searchmode_website" checked>
+                      <label for="searchmode_website">website and usermanual</label>
+                      <input type="radio" name="search" value="lua-api" id="searchmode_lua_api">
+                      <label for="searchmode_lua_api">lua api</label>
+                    </fieldset>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <div class='container content'>
+            <div class="row">
+                <div class='column'>
+                    <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock content %}

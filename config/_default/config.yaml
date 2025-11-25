@@ -1,0 +1,28 @@
+baseURL: 'https://www.darktable.org'
+title: darktable
+theme: darktable
+
+params:
+  description: "darktable is an open source photography workflow application and raw developer"
+  Logo: /images/darktable-logo-only-512w.png
+permalinks:
+  news: /:year/:month/:slug/
+  blog: /:year/:month/:slug/
+enableGitInfo: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+taxonomies:
+  tag: tags
+  author: author
+disableKinds: ['taxonomy']
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+outputs:
+  home: ["HTML","RSS", "SearchIndex"]
+paginatePath: ""

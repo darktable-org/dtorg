@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+  {{ partial "lede/bg" .Params.lede }}
+
+  <section class="lede">
+    {{ partial "lede/responsive" . }}
+    <div class="lede-author">
+      <div>
+        {{ .Params.lede_author | markdownify }}
+      </div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="container content">
+      <div class="row">
+        <div class="column article">
+          <h1 class='article-title'>{{ .Title }}</h1>
+          <div class='post-info'>
+            posted on
+            {{ partial "date" . }}
+            {{ partial "author" . }}
+          </div>
+          <div class="article-content">
+            {{ .Content }}
+          </div>
+          <small class='clearfix'>
+            Filed under:
+            {{ range .GetTerms "tags" }}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+          </small>
+
+          <!-- <p class='social_share'>
+               Share this on:
+               <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&via=darktable_org&text={{ .Title }}" target="_blank" title="Share this post on twitter">Twitter</a> |
+               <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" title="Share this post on Facebook">Facebook</a>
+               </p> -->
+
+          <div id='discourse-comments'></div>
+
+          <script type="text/javascript">
+            DiscourseEmbed = { discourseUrl: 'https://discuss.pixls.us/',
+                                discourseEmbedUrl: '{{ .Permalink }}' };
+
+            (function() {
+              var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+              d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+            })();
+          </script>
+
+          <div class="static_comments" id="static_comments">
+            <i>These are comments from the old website, archived as static HTML</i>
+            <ol id="static_comments_list" start="1">
+              {{ $page := . }}
+              {{ with .Params.wordpress_id }}
+                {{ range (index $page.Site.Data.comments (string .)) }}
+                  <li class="static_comment" id="comment-{{ .id }}">
+                    <div>
+                      <span class="static_comment_author">
+                        {{ $author := .author }}
+                        {{ with .author_url }}
+                          <a href="{{ . }}">{{ $author }}</a>
+                        {{ else }}
+                          {{ $author }}
+                        {{ end }}
+                      </span>
+                      {{ $date := .date_gmt | time }}
+                      <span class="static_comment_date">on <a href="#comment-{{ .id }}">{{ $date.Format "Mon Jan 02 15:04:05 2006" }}</a>:</span>
+                    </div>
+                    <div class="static_comment_content">{{ safeHTML .comment }}</div>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{{ end }}

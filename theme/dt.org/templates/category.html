@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block title %}
+        <title itemprop='name'>{{ category |striptags }} | {{ SITENAME }}</title>
+{% endblock title %}
+
+
+{%block metadata %}
+        {# <!-- OpenGraph/Twitter/Schema Stuff
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> #}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@darktable_org">
+
+        <meta itemprop="name" content="darktable {{ category.name |striptags }}" >
+        <meta name="twitter:title" content="darktable {{ category.name |striptags }}" >
+        <meta property="og:title" content="darktable {{ category.name |striptags }}" >
+        <meta itemprop="headline" content="darktable {{ category.name |striptags }}" >
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="darktable.org">
+
+        {% if author %}
+        <meta itemprop="author" content="{{ author }}" />
+        <meta property="og:author" content="{{ author }}" />
+        {% endif %}
+
+        {% if category.date %}
+        <meta itemprop="datePublished" content="{{ category.date }}" />
+        <meta property="og:published_time" content="{{ category.date }}" />
+        {% endif %}
+
+        {% if category.lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ category.url }}{{ category.lede }}">
+        {% elif category.wordpress_lede %}
+        <meta itemprop="image" content="{{ SITEURL }}/{{ category.url }}{{ category.wordpress_lede }}">
+        <meta property="og:image" content="{{ SITEURL }}/{{ category.url }}{{ category.wordpress_lede }}">
+        <meta name="twitter:image" content="{{ SITEURL }}/{{ category.url }}{{ category.wordpress_lede }}">
+        {% else %}
+        {# Don't forget to change this if it gets changed below #}
+        <meta itemprop="image" content="{{ SITEURL }}/images/ledes/lede-about.jpg">
+        <meta property="og:image" content="{{ SITEURL }}/images/ledes/lede-about.jpg">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/ledes/lede-about.jpg">
+        {% endif %}
+
+        {% if category.summary %}
+        <meta itemprop="description" content="{{ category.summary |striptags }}">
+        <meta property="og:description" content="{{ category.summary |striptags }}">
+        <meta name="twitter:description" content="{{ category.summary |striptags }}">
+        {% else %}
+        <meta itemprop="description" content="{{ category.name }} posts on darktable.org">
+        <meta property="og:description" content="{{ category.name }} posts on darktable.org">
+        <meta name="twitter:description" content="{{ category.name }} posts on darktable.org">
+        {% endif %}
+
+        {% if category.author_twitter %}
+        <meta name="twitter:creator" content="{{ category.author_twitter }}">
+        {% else %}
+        <meta name="twitter:creator" content="@darktable_org">
+        {% endif %}
+
+        {% if category.canonical %}
+        <link rel="canonical" href="{{ category.canonical }}" itemprop="url">
+        <meta property="og:url" content="{{ category.canonical }}" />
+        <meta property="url" content="{{ category.canonical }}" />
+        {% else %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ category.url }}" itemprop="url">
+        <meta property="og:url" content="{{ SITEURL }}/{{ category.url }}" />
+        <meta property="url" content="{{ SITEURL }}/{{ category.url }}" />
+        {% endif %}
+{%endblock metadata %}
+
+{% block header %}
+    {% if articles_page.object_list[0].wordpress_lede %}
+    <section class='lede-bg wp'>
+        <img src='{{ SITEURL }}/{{ articles_page.object_list[0].url }}{{ articles_page.object_list[0].wordpress_lede }}'>
+    </section>
+    {% elif articles_page.object_list[0].lede %}
+    <section class='lede-bg'>
+        <img src='{{ SITEURL }}/{{ articles_page.object_list[0].url }}{{ articles_page.object_list[0].lede | insert_thumbnail }}'>
+    </section>
+    {% endif %}
+    <section class='lede default'>
+        {# don't forget to change this above if you change it here #}
+        {# ie: in the metadata/opengraph stuff #}
+        {# <img class='lede-img' src='{{ SITEURL }}/images/ledes/lede-about.jpg'> #}
+    </section>
+{% endblock header %}
+
+{% block content %}
+
+    <section class='category'>
+        <div class='container title'>
+            <div class='row'>
+                <div class='column'>
+                    {% if CATEGORY_FEED_RSS and category %}
+                    <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ category }} RSS Feed" class='rss_link'>feed
+                        <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="48" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48.000001">
+ <g transform="translate(0 -1004.4)">
+  <circle style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" cx="6.4379" cy="1045.9" r="6.5" fill="#1eaedb"/>
+  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke="#1eaedb" stroke-width="9" d="m-0.062104 1026.3a26.142 26.142 0 0 1 26.142 26.1"/>
+  <path style="color-rendering:auto;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;image-rendering:auto" fill="none" stroke-opacity=".94118" stroke="#1eaedf" stroke-width="10" d="m0.0010728 1009.3a43.026 43.026 0 0 1 43.026 43.1"/>
+ </g>
+</svg>
+                    </a>
+                    {% endif %}
+                    <h1 class='page-title'>{{ category }}</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class='container content'>
+            <div class='row'>
+                <div class='column'>
+
+                    {% for article in articles_page.object_list %}
+
+                    <article>
+                        {% if article.wordpress_lede %}
+                        <section class='article-lede wordpress'>
+                            <a href="{{ SITEURL }}/{{ article.url }}"><img src='{{ SITEURL }}/{{ article.url }}{{ article.wordpress_lede }}' class='wordpress-lede-img'></a>
+                        </section>
+                        {% elif article.lede %}
+                        <section class='article-lede'>
+                            <a href="{{ SITEURL }}/{{ article.url }}"><img src='{{ SITEURL }}/{{ article.url }}{{ article.lede | insert_thumbnail }}' class='lede-img' width='960' height='401'></a>
+                        </section>
+                        {% endif %}
+
+                        <section class='content'>
+
+                            <h1 class='entry-title'>
+                                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                    {{ article.title }}
+                                </a>
+                            </h1>
+
+                            <div class='post-info'>
+                                posted on
+                                <time class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                                <address class="vcard author">by
+                                    {% for author in article.authors %}
+                                    {% if author|string in AUTHORS and AUTHORS.get(author|string).displayname %}
+                                    <a class="url fn" rel='author' href="{{ SITEURL }}/{{ author.url }}">{{ AUTHORS.get(author|string).displayname }}</a>
+                                    {% else %}
+                                    <a class="url fn" rel='author' href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                                    {% endif %}
+                                    {% endfor %}
+                                </address>
+                            </div>
+
+                            <div class='entry-content'>
+                                {% if article.summary %}
+                                {{ article.summary }}
+                                {% else %}
+                                {{ article.content|truncate() }}
+                                {% endif %}
+                                <p>
+                                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                                        Continue Reading &rarr;
+                                    </a>
+                                    </p>
+                            </div>
+                        </section>
+
+                    </article>
+
+                    <hr/>
+
+                    {% endfor %}
+                    {% if articles_page.has_other_pages() %}
+                    {% include 'pagination.html' %}
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

@@ -1,0 +1,91 @@
+table, tr, th, td {
+  border-width: 0px;
+}
+
+.breadcrumbs {
+  font-size: smaller;
+}
+
+.navheader {
+  text-align: center;
+  font-size: smaller;
+}
+
+.navfooter {
+  text-align: center;
+  font-size: smaller;
+}
+
+@media (min-width: 750px) {
+  .breadcrumbs {
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    margin-left: -3rem;
+  }
+
+  .navheader {
+    margin: 0 -3rem;
+  }
+
+  .navfooter {
+    margin: 4rem -3rem 0 -3rem;
+  }
+
+}
+
+.usermanual_nav_clear {
+  clear: both;
+}
+
+.usermanual_nav_left {
+  width: 33%;
+  text-align: left;
+  float: left;
+}
+
+.usermanual_nav_right {
+  width: 33%;
+  text-align: right;
+  float: right;
+}
+
+.usermanual_nav_center {
+  width: 33%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title code, .breadcrumbs code {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.language_list {
+  padding-left: 0;
+  display: inline;
+  float: left;
+}
+
+.language_list_entry {
+  display:inline;
+}
+
+.language_list_entry::after {
+  content: " | ";
+  margin: 0 0.3rem;
+}
+
+.language_list_entry:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.informaltable table table {
+  width: 100%;
+}
+
+.informaltable table table th, .informaltable table table td{
+  padding: 0;
+}

@@ -73,16 +73,16 @@ These bundles support macOS versions starting with 13.5 (Ventura).
 
 Depending on the version of macOS, there maybe some warnings causing darktable not to run.
 
-#### Dialog: *"darktable" can't be opened because it was not downloaded from the Mac App Store*
+#### Dialog: *"darktable" can't be opened because it was not downloaded from the Mac App Store* or *Apple could not verify "darktable.app" is free from malware*
+
+Do one of the following:
 
 1. Locate darktable in Applications folder (or wherever you installed it) using Finder
 2. Do "Open" via context menu
-3. You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application
+3. You will be presented with similar-looking dialog, but this time there will be second button allowing you to run the application. If not, proceed to the next solution
 4. After that you will be able to start darktable without this trick (well, until you update it, then you will have to do above steps again)
 
-or use the following solution:
-
-### Dialog: *Apple could not verify "darktable.app" is free from malware*
+or
 
 1. Open the Terminal app.
 2. Do one of the following:

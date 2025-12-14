@@ -319,7 +319,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Dutch
 </td>
-<td>Ger Siemerink
+<td>Reinder Mulder
 </td>
 </tr>
 <tr>

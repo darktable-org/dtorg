@@ -207,7 +207,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Afrikaans
 </td>
-<td>
+<td>H. Vandenberg
 </td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Czech
 </td>
-<td>František Šidák
+<td>Jan Šmucr, František Šidák
 </td>
 </tr>
 <tr>
@@ -239,7 +239,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>German
 </td>
-<td>Tobias Ellinghaus
+<td>Martin Straeten, Tobias Ellinghaus
 </td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Spanish
 </td>
-<td>Jose Carlos Garcia Sogo, Tatica Leandro, Edgar De la Luz (EdgarLux)
+<td>Edgar De la Luz (EdgarLux), Jose Carlos Garcia Sogo, Tatica Leandro
 </td>
 </tr>
 <tr>
@@ -263,7 +263,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Finnish
 </td>
-<td>Mikko Ruohola
+<td>Marko Vertainen, Mikko Ruohola
 </td>
 </tr>
 <tr>
@@ -311,7 +311,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Japanese
 </td>
-<td>"a3novy"
+<td>Ryo Shinozaki, "a3novy"
 </td>
 </tr>
 <tr>
@@ -335,7 +335,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Brazilian Portuguese
 </td>
-<td>Guilherme Brondani Torri, Frido Claudino, Jerônimo Pellegrini
+<td>Jerônimo Pellegrini, Guilherme Brondani Torri, Frido Claudino
 </td>
 </tr>
 <tr>
@@ -407,7 +407,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Ukrainian
 </td>
-<td>Nazarii Vitak, Victor Forsiuk
+<td>Victor Forsiuk, Nazarii Vitak
 </td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ The translations of darktable are brought to you by:
 </td>
 <td>Simplified Chinese
 </td>
-<td>"jiero"
+<td>Tianhao Chai, "jiero"
 </td>
 </tr>
 </tbody>

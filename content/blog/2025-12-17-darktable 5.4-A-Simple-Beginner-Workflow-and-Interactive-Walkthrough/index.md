@@ -4,7 +4,7 @@ author: "Andrew Raub"
 slug: darktable-5.4-beginner-workflow
 date: 2025-12-17
 lede: 18-final.jpg
-lede_author: "Ralf Brown"
+lede_author: "Andrew Raub"
 tags:
   - howto
   - beginner

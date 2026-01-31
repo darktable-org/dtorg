@@ -89,6 +89,13 @@ or
   * If the image is not mounted, run `xattr -d com.apple.quarantine ~/Downloads/darktable*.dmg`
   * If darktable is already installed, run `xattr -dr com.apple.quarantine /Applications/darktable.app`
 
+or
+
+1. Open the Settings app
+2. Go to Privacy and Security
+3. Scroll down to Security
+4. Click allow next to darktable
+
 #### Dialog: *"darktable.app" is damaged*
 
 1. Open the Terminal app.

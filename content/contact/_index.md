@@ -176,14 +176,6 @@ Here are some members of our community:
 			</td>
 			<td></td>
 		</tr>
-		<tr>
-			<td><img alt="elstoc" src="/images/team/elstoc.jpg"></td>
-			<td>elstoc</td>
-			<td>Chris Elston</td>
-			<td>user manual maintainer / developer</td>
-			<td></td>
-			<td></td>
-		</tr>
 	</tbody>
 </table>
 

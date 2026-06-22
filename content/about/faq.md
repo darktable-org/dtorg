@@ -28,11 +28,13 @@ No. Presets (what darktable calls styles) are specific to the program that creat
 ### <a name="faq-import-edits"></a>Can darktable import edits from other programs?<a href="#faq-import-edits" class="anchor" title="Link to this FAQ entry">¶</a>
 No. Due to differences in how processing works in different programs, this is simply not possible to do properly. There is some very basic support for importing Lightroom edits, but that code is old and somewhat broken and you're probably best off discarding the edit history after import and just start over.
 
+We have a [blog post](https://www.darktable.org/2024/12/howto-in-5.0/) to help you figure out how to do the equivalents of Lightroom actions in darktable.
+
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 
 ### <a name="faq-file-support"></a>My camera is supported, but darktable can't open the photos<a href="#faq-file-support" class="anchor" title="Link to this FAQ entry">¶</a>
-Some file formats are not supported. The camera support page has a full list.
+Some file formats are not supported, as are some compression options for otherwise-supported formats. The camera support page has a full list.
 
 ### <a name="faq-initial-look"></a>Why doesn’t the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
 This is explained [in the manual](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).
@@ -41,6 +43,11 @@ This is explained [in the manual](https://docs.darktable.org/usermanual/developm
 Unlike with a JPEG, the data stored in a raw file is not suitable for display and must be processed first. This is something all raw editors do, but they usually hide the process from the user, while darktable shows everything it does. Another difference is that while darktable does barely more than the minimum required to show something reasonable on the screen, other editors tend to also apply some combination of contrast curves, saturation, sharpness and even LUTs. This minimal processing is also why the image is flatter and less colorful than what you may be used to.
 
 While some of the default modules can be considered optional in certain situations, as a beginner you should treat them all as required until you fully understand their purpose.
+
+### <a name="faq-very-dark"></a>No, I mean my images are **very** dark, not just dull
+If you are using Dynamic Range, Highlight Preservation, or HDR modes, your camera is deliberately underexposing the image by using a lower ISO than you've set (and is recorded in the image's metadata), and is relying on post-processing lightening to give a "normal"-looking image with better highlight definition.  darktable is unable to determine the corrections needed (which are proprietary and often in the form of a custom tone curve instead of simple EV correction), so [you will need to manually apply the correction](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).  For Fujifilm, DR200 mode needs an additional +1 EV exposure correction and DR400 mode needs +2 EV.  For Nikon Z-series cameras, HLG tone mode needs an additional +2 EV and probably some tone curve adjustment.
+
+As of version 5.4, darktable can interpret the metadata for *some* manufacturers and automatically apply an appropriate compensation in the [exposure|https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/exposure/] module, but it is not able to adjust the tone curve to match automatically.
 
 ### <a name="faq-grey-interface"></a>Why is the interface so flat and grey?<a href="#faq-grey-interface" class="anchor" title="Link to this FAQ entry">¶</a>
 The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/development/en/module-reference/utility-modules/darkroom/color-assessment/), [here](https://docs.darktable.org/usermanual/development/en/preferences-settings/general/) and [here](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#edit-in-a-controlled-environment).
@@ -103,7 +110,7 @@ Occasionally an old module may be deprecated and become unavailable for new edit
 If, for some reason, you really want to continue using it, you can open an old edit using that module and create a style, which you can then apply to new edits. But, as said, there are good reasons for why it was deprecated, so you're encouraged to use the replacement instead.
 
 ### <a name="faq-sigill"></a>darktable crashes with SIGILL. What's up?<a href="#faq-sigill" class="anchor" title="Link to this FAQ entry">¶</a>
-Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for a CPU to run darktable is one which supports SSE2. If your cpu does not support SSE2 more than fifteen years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
+Due to the large number of mathematically intense operations which the Image Operators (IOPs) perform, the minimum requirement for an x86 CPU to run darktable is one which supports SSE2. If your CPU does not support SSE2 more than twenty years after the feature's introduction, then it really is time to upgrade. Please see [the Wikipedia page](https://en.wikipedia.org/wiki/SSE2) for more details on SSE2-capable CPUs.
 
 ### <a name="faq-tethering"></a>I attached and turned on my camera, but it doesn't show up in darktable, what's wrong?<a href="#faq-tethering" class="anchor" title="Link to this FAQ entry">¶</a>
 If the camera in question is supported by `libgphoto2`, then the most likely cause is that some other process is blocking the device.
@@ -125,7 +132,8 @@ In rare cases that might break other software accessing the camera though! If yo
 Yes, there are two libraries we heavily rely on:
 
 * **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/development/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
-* **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, or a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
+
+* **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, try running `lensfun-update-data` to get the newest lens database.  If lens correction still does not show your camera/lens, or shows a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
 
 ## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ section">¶</a>

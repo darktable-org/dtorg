@@ -39,6 +39,12 @@ Some commonly asked questions can be found in our [FAQ](/about/faq). Please read
 
 <h2 id="linux">Linux/Unix Binary Packages</h2>
 
+Latest release is available as source for you to compile or an
+appimage for immediate installation.
+
+It should also appear in your package manager or in the OBS at some
+point but the timing is outside our control.
+
 ### From Your Package Manager
 
 If your unix-like operating system is capable of running a graphical session, darktable is likely available. Check your package manager or software center.

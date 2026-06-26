@@ -49,6 +49,8 @@ point but the timing is outside our control.
 
 If your unix-like operating system is capable of running a graphical session, darktable is likely available. Check your package manager or software center.
 
+[![darktable packaging status](https://repology.org/badge/vertical-allrepos/darktable.svg?exclude_unsupported=1&columns=3&exclude_sources=modules,site&header=darktable%20packaging%20status)](https://repology.org/project/darktable/versions)
+
 ### OBS (Open Build Service)
 
 The [OBS](https://build.opensuse.org/) allows packagers to provide packages for multiple Linux distributions.

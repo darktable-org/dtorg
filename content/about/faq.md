@@ -30,6 +30,9 @@ No. Due to differences in how processing works in different programs, this is si
 
 We have a [blog post](https://www.darktable.org/2024/12/howto-in-5.0/) to help you figure out how to do the equivalents of Lightroom actions in darktable.
 
+### Does darktable support DCP camera profiles?
+No, only ICC profiles are supported. And this is unlikely to change, since DCPs are intended for a fundamentally different processing pipeline. If this is important to you, we recommend you try [RawTherapee](https://rawtherapee.com/) or [ART](https://artraweditor.github.io/) instead.
+
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Please see the [camera support page](/resources/camera-support/).
 

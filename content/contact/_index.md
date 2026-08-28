@@ -11,7 +11,7 @@ menu: ["main", "footer"]
 
 # Social Media
 
-[Mastodon](https://photog.social/@darktable)&nbsp;– [Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)
+[Facebook](https://www.facebook.com/darktable)&nbsp;– [Flickr](https://www.flickr.com/groups/darktable/)
 
 # How to get in contact
 

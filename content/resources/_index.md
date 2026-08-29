@@ -1,6 +1,6 @@
 ---
 Title: resources
-Date: 2017-09-21T13:43:33-06:00
+Date: 2026-08-26T15:00:00
 author: smn
 wordpress_id: 120
 lede: lede-resources.jpg
@@ -9,95 +9,41 @@ weight: 500
 menu: ["main", "footer"]
 ---
 
-# Frequently Asked Questions
+# User manual
+
+The [user manual](https://docs.darktable.org/usermanual/development/en/) contains the reference documentation for all features included in darktable. It is also available as [PDF](https://docs.darktable.org/usermanual/development/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/development/en/darktable_user_manual.epub).
+
+The [Lua API](https://docs.darktable.org/lua/stable/) has its own manual. A guide for getting started with scripting is also available in the [main manual](https://docs.darktable.org/usermanual/development/en/lua/).
+
+If you would like to help maintain the user manual, please see [our GitHub repository](https://github.com/darktable-org/dtdocs) or the overview of our [workflow](https://docs.darktable.org/usermanual/development/en/contributing/workflow/). It currently tracks the development version of darktable so it might contain features you are missing in your stable installation. 
+
+Translations of the manual are available in various languages. Many languages are fairly incomplete and you are welcome to contribute. The translations are managed through [Weblate](https://hosted.weblate.org/projects/darktable-documentation/). More on translating the manual can be found in the [translators' guide](https://docs.darktable.org/usermanual/development/en/contributing/translators-guide/).
+
+# Frequently asked questions
 
 Some commonly asked questions can be found in our [FAQ](/about/faq). Please read it before reporting bugs or feature requests.
 
-# User manual
+# Forum
 
-As of darktable 5.2 we no longer maintain separate versions of the user manual for each release of darktable, since we don't have the resources to support this.
+If you can't find a solution for your issue in the FAQ or manual (see above), you are welcome to ask on the [forum at discuss.pixls.us](https://discuss.pixls.us/c/software/darktable/19 ).
 
-Please see the following link for the current [development version of the user manual (in English)](https://docs.darktable.org/usermanual/development/en/). This is likely to remain a work in progress -- it may be missing some new functionality and it may also contain documentation for features that have not yet been delivered in a release.
+# More resources
 
-While translations of the user manual are still available (see links from within the English version above), many of them will likely be incomplete, since we lost our translation server some time ago and have not yet been able to resurrect it. Please see the bottom of this page for older versions of the user manual which, though out of date, may contain more complete translations.
+- [Planet darktable](https://planet.darktable.org/) offers an aggregation of recent content on darktable.
+- [darktable.info](https://darktable.info/en/welcome-to-the-modern-darkroom/) is an opinionated collection of tutorials and themes for darktable, intended for beginners and available in German, English, Dutch and French.
+  
+## Videos
 
-If you would like to help contribute to the maintenance of the user manual, please see [our github repository](https://github.com/darktable-org/dtdocs).
+- [Bruce Williams](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)
+- [Boris Hajdukovic](https://www.youtube.com/playlist?list=PLmZmCIhOC2Frt6Wq3gc0-egOy_P1sXjau)
+- [Robert Hutton](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
+- [A dabble in photography](https://www.youtube.com/channel/UCxHYygok15XQ6bqu9FK-oCw)
+- [Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)
+  
+# Previous versions of the darktable user manual
 
-# Lua API documentation
-
-[html](https://docs.darktable.org/lua/stable/)
-
-# Videos
-
--   [Bruce Williams](https://www.youtube.com/playlist?list=PLlYWvzmJQTrRq7JrYdD7k3-8-v-uHnhK_)
--   [Boris Hajdukovic](https://www.youtube.com/playlist?list=PLmZmCIhOC2Frt6Wq3gc0-egOy_P1sXjau)
--   [Robert Hutton](https://www.youtube.com/playlist?list=PLmvlUro_Up1NBX7VK8UUuyWo1B468zEA0)
--   [A dabble in photography](https://www.youtube.com/channel/UCxHYygok15XQ6bqu9FK-oCw)
--   [Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)
-
-# Previous Versions of the darktable User Manual
-
-The following user manual links are for older versions of darktable.
-
-## Version 4.6
-
--   English [html](https://docs.darktable.org/usermanual/4.6/en/)/[epub](https://docs.darktable.org/usermanual/4.6/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/en/darktable_user_manual.pdf)
--   Brazilian Portuguese [html](https://docs.darktable.org/usermanual/4.6/pt_br/)/[epub](https://docs.darktable.org/usermanual/4.6/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/pt_br/darktable_user_manual.pdf)
--   Dutch [html](https://docs.darktable.org/usermanual/4.6/nl/)/[epub](https://docs.darktable.org/usermanual/4.6/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/nl/darktable_user_manual.pdf)
--   French [html](https://docs.darktable.org/usermanual/4.6/fr/)/[epub](https://docs.darktable.org/usermanual/4.6/fr/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/fr/darktable_user_manual.pdf)
--   German [html](https://docs.darktable.org/usermanual/4.6/de/)/[epub](https://docs.darktable.org/usermanual/4.6/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/de/darktable_user_manual.pdf)
--   Polish [html](https://docs.darktable.org/usermanual/4.6/pl/)/[epub](https://docs.darktable.org/usermanual/4.6/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/pl/darktable_user_manual.pdf)
--   Ukrainian [html](https://docs.darktable.org/usermanual/4.6/uk/)/[epub](https://docs.darktable.org/usermanual/4.6/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.6/uk/darktable_user_manual.pdf)
-
-## Version 4.4
-
-The user manual was incomplete for version 4.4 -- you are advised to refer to the v4.2 or v4.6 manuals instead.
-
-## Version 4.2
-
--   English [html](https://docs.darktable.org/usermanual/4.2/en/)/[epub](https://docs.darktable.org/usermanual/4.2/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/en/darktable_user_manual.pdf)
-
-Please note that the following translations are not complete (and will not be updated) for new features in version 4.2 -- untranslated portions of text will be presented in English.
-
--   Brazilian Portuguese [html](https://docs.darktable.org/usermanual/4.2/pt_br/)/[epub](https://docs.darktable.org/usermanual/4.2/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/pt_br/darktable_user_manual.pdf)
--   Dutch [html](https://docs.darktable.org/usermanual/4.2/nl/)/[epub](https://docs.darktable.org/usermanual/4.2/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/nl/darktable_user_manual.pdf)
--   German [html](https://docs.darktable.org/usermanual/4.2/de/)/[epub](https://docs.darktable.org/usermanual/4.2/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/de/darktable_user_manual.pdf)
--   Polish [html](https://docs.darktable.org/usermanual/4.2/pl/)/[epub](https://docs.darktable.org/usermanual/4.2/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/pl/darktable_user_manual.pdf)
--   Ukrainian [html](https://docs.darktable.org/usermanual/4.2/uk/)/[epub](https://docs.darktable.org/usermanual/4.2/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.2/uk/darktable_user_manual.pdf)
-
-## Version 4.0
-
--   English [html](https://docs.darktable.org/usermanual/4.0/en/)/[epub](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/en/darktable_user_manual.pdf)
--   Brazilian Portuguese [html](https://docs.darktable.org/usermanual/4.0/pt_br/)/[epub](https://docs.darktable.org/usermanual/4.0/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/pt_br/darktable_user_manual.pdf)
--   Dutch [html](https://docs.darktable.org/usermanual/4.0/nl/)/[epub](https://docs.darktable.org/usermanual/4.0/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/nl/darktable_user_manual.pdf)
--   German [html](https://docs.darktable.org/usermanual/4.0/de/)/[epub](https://docs.darktable.org/usermanual/4.0/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/de/darktable_user_manual.pdf)
--   Polish [html](https://docs.darktable.org/usermanual/4.0/pl/)/[epub](https://docs.darktable.org/usermanual/4.0/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/pl/darktable_user_manual.pdf)
--   Ukrainian [html](https://docs.darktable.org/usermanual/4.0/uk/)/[epub](https://docs.darktable.org/usermanual/4.0/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/4.0/uk/darktable_user_manual.pdf)
-
-## Version 3.8
-
--   English [html](https://docs.darktable.org/usermanual/3.8/en/)/[epub](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/en/darktable_user_manual.pdf)
--   Brazilian Portuguese [html](https://docs.darktable.org/usermanual/3.8/pt_br/)/[epub](https://docs.darktable.org/usermanual/3.8/pt_br/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/pt_br/darktable_user_manual.pdf)
--   Dutch [html](https://docs.darktable.org/usermanual/3.8/nl/)/[epub](https://docs.darktable.org/usermanual/3.8/nl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/nl/darktable_user_manual.pdf)
--   French [html](https://docs.darktable.org/usermanual/3.8/fr/)/[epub](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/fr/darktable_user_manual.pdf)
--   German [html](https://docs.darktable.org/usermanual/3.8/de/)/[epub](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/de/darktable_user_manual.pdf)
--   Polish [html](https://docs.darktable.org/usermanual/3.8/pl/)/[epub](https://docs.darktable.org/usermanual/3.8/pl/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/pl/darktable_user_manual.pdf)
--   Spanish [html](https://docs.darktable.org/usermanual/3.8/es/)/[epub](https://docs.darktable.org/usermanual/3.8/es/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/es/darktable_user_manual.pdf)
--   Ukrainian [html](https://docs.darktable.org/usermanual/3.8/uk/)/[epub](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.8/uk/darktable_user_manual.pdf)
-
-## Version 3.6
-
--   English [html](https://docs.darktable.org/usermanual/3.6/en/)/[epub](https://docs.darktable.org/usermanual/3.6/en/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/en/darktable_user_manual.pdf)
--   German [html](https://docs.darktable.org/usermanual/3.6/de/)/[epub](https://docs.darktable.org/usermanual/3.6/de/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/de/darktable_user_manual.pdf)
--   Spanish [html](https://docs.darktable.org/usermanual/3.6/es/)/[epub](https://docs.darktable.org/usermanual/3.6/es/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/es/darktable_user_manual.pdf)
--   Ukrainian [html](https://docs.darktable.org/usermanual/3.6/uk/)/[epub](https://docs.darktable.org/usermanual/3.6/uk/darktable_user_manual.epub)/[pdf](https://docs.darktable.org/usermanual/3.6/uk/darktable_user_manual.pdf)
-
-## Version 3.4
-
--   English [html](https://darktable.gitlab.io/doc/en/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual.pdf)
--   French [html](https://darktable.gitlab.io/doc/fr/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-fr.pdf)
--   German [html](https://darktable.gitlab.io/doc/de/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-de.pdf)
--   Italian [html](https://darktable.gitlab.io/doc/it/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-it.pdf)
--   Spanish [html](https://darktable.gitlab.io/doc/es/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-es.pdf)
--   Polish [html](https://darktable.gitlab.io/doc/pl/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pl.pdf)
--   Brazilian Portuguese [html](https://darktable.gitlab.io/doc/pt_BR/)/[pdf](https://github.com/darktable-org/darktable/releases/download/release-3.4.0/darktable-usermanual-pt_BR.pdf)
+Archiving previous versions of the manual has been suspended since 4.6; the last archived versions are listed below. The [user manual](https://docs.darktable.org/usermanual/development/en/) tracks the state of the current development version (nightly).
+The following user manual links are snapshots for older versions of darktable.
+- [Version 4.6](https://docs.darktable.org/usermanual/4.6/en/)
+- [Version 4.2](https://docs.darktable.org/usermanual/4.2/en/)
+- [Version 4.0](https://docs.darktable.org/usermanual/4.0/en/)

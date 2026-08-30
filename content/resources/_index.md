@@ -30,6 +30,7 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
 
 # More resources
 
+- Our own [blog](/blog); including a [guide on getting started](/2025/12/darktable-5.4-beginner-workflow). 
 - [Planet darktable](https://planet.darktable.org/) offers an aggregation of recent content on darktable.
 - [darktable.info](https://darktable.info/en/welcome-to-the-modern-darkroom/) is an opinionated collection of tutorials and themes for darktable, intended for beginners and available in German, English, Dutch and French.
   

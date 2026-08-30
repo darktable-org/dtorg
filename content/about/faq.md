@@ -194,9 +194,18 @@ Windows handles path names very differently than Unix-like systems. One of the b
 Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates. Generating a log of the crash can also aid in discovering the cause. The simplest way is to start Windows Command Prompt (cmd), navigate to `%ProgramFiles%\darktable\bin\` and start darktable via `darktable -d common` or `darktable -d opencl` or `darktable -d perf` or to see all the options `darktable -h`. The log file will be generated in the hidden path listed above.
         
 ### <a name="faq-windows-issues"></a>Known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
+
+* Windows 11's Smart App Control (and, on some systems, Windows Defender SmartScreen) may block darktable from starting, reporting that it can't verify the publisher of one or more DLLs in the `bin` folder. This is because our Windows builds aren't currently signed with a trusted code-signing certificate. Workarounds:
+  - If you only get a SmartScreen warning dialog ("Windows protected your PC"), click "More info", then "Run anyway".
+  - If Smart App Control itself is blocking the app, you can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
+  - See [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032) and Microsoft's [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003) for more information.
+
 * OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`.
 
 * Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
+
+
+
 
 ## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ section">¶</a>
 

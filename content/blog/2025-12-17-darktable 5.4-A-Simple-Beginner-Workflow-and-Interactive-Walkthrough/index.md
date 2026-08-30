@@ -180,7 +180,7 @@ The way I use these tone mappers is more corrective than artistic. The goal is t
 
 #### agx
 
-Documentation coming soon
+[Documentation](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/agx/)
 
 The _agx_ module is a newer tone mapper released in darktable 5.4. I personally find that it provides better results in how it handles hue shifts and subtleties in flowers and insects compared to the other tone mappers _filmic rgb_ and _sigmoid_. The _agx_ tone mapper has many controls which affect the overall contrast, saturation, colors, and more. For the sake of simplicity, we will ignore most of them.
 

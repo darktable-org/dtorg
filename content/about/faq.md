@@ -152,12 +152,15 @@ darktable uses GTK3 to create its GUI. We make heavy use of styling to change th
 ## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ section">¶</a>
 darktable is developed for Linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) URCT environment is used to compile the program. Nightly builds are performed in github to ensure the program builds under Windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
-### <a name="faq-windows-smart-screen"></a>An error message prevents darktable from starting on Windows 11<a href="#faq-windows-smart-screen" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-windows-smart-screen"></a>An error message prevents darktable from installing or starting on Windows<a href="#faq-windows-smart-screen" class="anchor" title="Link to this FAQ entry">¶</a>
 
-* Windows 11's Smart App Control (and, on some systems, Windows Defender SmartScreen) may block darktable from starting, reporting that it can't verify the publisher of one or more DLLs in the `bin` folder. This is because our Windows builds aren't currently signed with a trusted code-signing certificate. Workarounds:
+Windows 11's Smart App Control (and, on some systems, Windows Defender SmartScreen) may block darktable from starting, reporting that it can't verify the publisher of one or more DLLs in the `bin` folder. This is because our Windows builds aren't currently signed with a trusted code-signing certificate. 
+
+Workarounds:
   - If you only get a SmartScreen warning dialog ("Windows protected your PC"), click "More info", then "Run anyway".
   - If Smart App Control itself is blocking the app, you can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
-* See [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032) and Microsoft's [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003) for more information.
+
+See [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032) and Microsoft's [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003) for more information.
 
 ### <a name="faq-windows-issues"></a>Other known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
 

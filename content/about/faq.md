@@ -154,13 +154,14 @@ darktable is developed for Linux, but it was ported to build on Windows. The [MS
 
 ### <a name="faq-windows-smart-screen"></a>An error message prevents darktable from installing or starting on Windows<a href="#faq-windows-smart-screen" class="anchor" title="Link to this FAQ entry">¶</a>
 
-Windows 11's Smart App Control (and, on some systems, Windows Defender SmartScreen) may block darktable from starting, reporting that it can't verify the publisher of one or more DLLs in the `bin` folder. This is because our Windows builds aren't currently signed with a trusted code-signing certificate. 
+Windows may show an error message preventing you from installing or running darktable. Depending on the error message this may be due to either SmartScreen or Smart App Control. This is because our Windows builds aren't currently signed with a trusted code-signing certificate.
 
-Workarounds:
-  - If you only get a SmartScreen warning dialog ("Windows protected your PC"), click "More info", then "Run anyway".
-  - If Smart App Control itself is blocking the app, you can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
+- If it says "Windows protected your PC", this is SmartScreen. Click "More info", then "Run anyway".
+- If it says "Part of this app has been blocked", that it can't verify the signature of a .dll, or that one or more .dll files contain an error, this is Smart App Control. You can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
 
-See [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032) and Microsoft's [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003) for more information.
+More information here:
+- [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032)
+- [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003)
 
 ### <a name="faq-windows-issues"></a>Other known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
 

@@ -152,6 +152,23 @@ darktable uses GTK3 to create its GUI. We make heavy use of styling to change th
 ## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ section">¶</a>
 darktable is developed for Linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) URCT environment is used to compile the program. Nightly builds are performed in github to ensure the program builds under Windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
+### <a name="faq-windows-smart-screen"></a>An error message prevents darktable from installing or starting on Windows<a href="#faq-windows-smart-screen" class="anchor" title="Link to this FAQ entry">¶</a>
+
+Windows may show an error message preventing you from installing or running darktable. Depending on the error message this may be due to either SmartScreen or Smart App Control. This is because our Windows builds aren't currently signed with a trusted code-signing certificate.
+
+- If it says "Windows protected your PC", this is SmartScreen. Click "More info", then "Run anyway".
+- If it says "Part of this app has been blocked", that it can't verify the signature of a .dll, or that one or more .dll files contain an error, this is Smart App Control. You can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
+
+More information here:
+- [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032)
+- [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003)
+
+### <a name="faq-windows-issues"></a>Other known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
+
+* OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`.
+
+* Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
+
 ### <a name="faq-windows-locations"></a>Install file locations<a href="#faq-windows-locations" class="anchor" title="Link to this FAQ entry">¶</a>
 The install of darktable creates the following folders:
 * `%ProgramFiles%\darktable\` - the program files to run darktable
@@ -192,11 +209,6 @@ Windows handles path names very differently than Unix-like systems. One of the b
 
 ### <a name="faq-windows-bugs"></a>I was working with darktable and it suddenly just crashed! What should I do?<a href="#faq-windows-bugs" class="anchor" title="Link to this FAQ entry">¶</a>
 Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates. Generating a log of the crash can also aid in discovering the cause. The simplest way is to start Windows Command Prompt (cmd), navigate to `%ProgramFiles%\darktable\bin\` and start darktable via `darktable -d common` or `darktable -d opencl` or `darktable -d perf` or to see all the options `darktable -h`. The log file will be generated in the hidden path listed above.
-        
-### <a name="faq-windows-issues"></a>Known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
-* OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`.
-
-* Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
 
 ## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ section">¶</a>
 

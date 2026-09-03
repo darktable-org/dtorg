@@ -24,6 +24,7 @@ menu: ["main", "footer"]
   <h2>Windows</h2>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-win64.exe' title='Microsoft Windows'>darktable-5.6.1-win64.exe</a></p>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-woa64.exe' title='Microsoft Windows on ARM'>darktable-5.6.1-woa64.exe</a></p>
+  <p><a href="/about/faq/#faq-windows-smart-screen" class="attention">known issues</a></p>
 </div>
 <div style="text-align: center;">
   <h2>macOS</h2>

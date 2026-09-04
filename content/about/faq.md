@@ -30,7 +30,7 @@ No. Due to differences in how processing works in different programs, this is si
 
 We have a [blog post](https://www.darktable.org/2024/12/howto-in-5.0/) to help you figure out how to do the equivalents of Lightroom actions in darktable.
 
-### Does darktable support DCP camera profiles?
+### <a name="faq-dcp"></a>Does darktable support DCP camera profiles?<a href="#faq-dcp" class="anchor" title="Link to this FAQ entry">¶</a>
 No, only ICC profiles are supported. And this is unlikely to change, since DCPs are intended for a fundamentally different processing pipeline. If this is important to you, we recommend you try [RawTherapee](https://rawtherapee.com/) or [ART](https://artraweditor.github.io/) instead.
 
 ### <a name="faq-camera-support"></a>Is my camera supported?<a href="#faq-camera-support" class="anchor" title="Link to this FAQ entry">¶</a>
@@ -39,7 +39,7 @@ Please see the [camera support page](/resources/camera-support/).
 ### <a name="faq-file-support"></a>My camera is supported, but darktable can't open the photos<a href="#faq-file-support" class="anchor" title="Link to this FAQ entry">¶</a>
 Some file formats are not supported, as are some compression options for otherwise-supported formats. The camera support page has a full list.
 
-### <a name="faq-initial-look"></a>Why doesn’t the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-initial-look"></a>Why doesn't the raw image look like the JPEG?<a href="#faq-initial-look" class="anchor" title="Link to this FAQ entry">¶</a>
 This is explained [in the manual](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).
 
 ### <a name="faq-default-modules"></a>Why are all those modules applied by default to my raw files?<a href="#faq-default-modules" class="anchor" title="Link to this FAQ entry">¶</a>
@@ -47,10 +47,10 @@ Unlike with a JPEG, the data stored in a raw file is not suitable for display an
 
 While some of the default modules can be considered optional in certain situations, as a beginner you should treat them all as required until you fully understand their purpose.
 
-### <a name="faq-very-dark"></a>No, I mean my images are **very** dark, not just dull
-If you are using Dynamic Range, Highlight Preservation, or HDR modes, your camera is deliberately underexposing the image by using a lower ISO than you've set (and is recorded in the image's metadata), and is relying on post-processing lightening to give a "normal"-looking image with better highlight definition.  darktable is unable to determine the corrections needed (which are proprietary and often in the form of a custom tone curve instead of simple EV correction), so [you will need to manually apply the correction](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg).  For Fujifilm, DR200 mode needs an additional +1 EV exposure correction and DR400 mode needs +2 EV.  For Nikon Z-series cameras, HLG tone mode needs an additional +2 EV and probably some tone curve adjustment.
+### <a name="faq-very-dark"></a>No, I mean my images are **very** dark, not just dull<a href="#faq-very-dark" class="anchor" title="Link to this FAQ entry">¶</a>
+If you are using Dynamic Range, Highlight Preservation, or HDR modes, your camera is deliberately underexposing the image by using a lower ISO than you've set (this lower ISO is recorded in the image's metadata), and is relying on post-processing lightening to give a "normal"-looking image with better highlight definition. darktable is unable to determine the corrections needed (which are proprietary and often in the form of a custom tone curve instead of simple EV correction), so [you will need to manually apply the correction](https://docs.darktable.org/usermanual/stable/en/overview/workflow/process/#why-doesnt-the-raw-image-look-like-the-jpeg). For Fujifilm, DR200 mode needs an additional +1 EV exposure correction and DR400 mode needs +2 EV. For Nikon Z-series cameras, HLG tone mode needs an additional +2 EV and probably some tone curve adjustment.
 
-As of version 5.4, darktable can interpret the metadata for *some* manufacturers and automatically apply an appropriate compensation in the [exposure|https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/exposure/] module, but it is not able to adjust the tone curve to match automatically.
+As of version 5.4, darktable can interpret the metadata for *some* manufacturers and automatically apply an appropriate compensation in the [exposure](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/exposure/) module, but it is not able to adjust the tone curve to match automatically.
 
 ### <a name="faq-grey-interface"></a>Why is the interface so flat and grey?<a href="#faq-grey-interface" class="anchor" title="Link to this FAQ entry">¶</a>
 The default theme has been carefully designed to limit certain optical illusions that affect how brightness, contrast and saturation are perceived. Changing to a darker theme, in particular, can lead to images that are too dark or over-saturated. This is explained in detail in the manual [here](https://docs.darktable.org/usermanual/development/en/module-reference/utility-modules/darkroom/color-assessment/), [here](https://docs.darktable.org/usermanual/development/en/preferences-settings/general/) and [here](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#edit-in-a-controlled-environment).
@@ -81,7 +81,7 @@ This happens when the Color Calibration CAT is active and the White Balance modu
 For technical reasons the old White Balance module is still required when using the Color Calibration CAT, which is why both are active by default.
 
 ### <a name="faq-save"></a>How do I save my changes?<a href="#faq-save" class="anchor" title="Link to this FAQ entry">¶</a>
-You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to _export_ your final image using the export module.
+You don't have to. Everything you do is immediately saved. You can just quit darktable and go on editing later. Once you are done you have to *export* your final image using the export module.
 
 ### <a name="faq-scene-referred"></a>I keep seeing the terms display-referred and scene-referred. What do they mean?<a href="#faq-scene-referred" class="anchor" title="Link to this FAQ entry">¶</a>
 The manual has [a short explanation](https://docs.darktable.org/usermanual/development/en/overview/workflow/process/#scene-referred-workflow-a-new-approach).
@@ -97,7 +97,6 @@ Yes, [here](https://docs.darktable.org/usermanual/development/en/). You might al
 The best place is the [Pixls.us discussion forum](https://discuss.pixls.us/). There you can get help with both editing and technical issues. It is also a good place to get help with other open-source graphics software.
 
 There are also a number of video tutorials. You can find a list of some of them at the bottom of the [resources page](/resources/).
-
 
 ## <a name="faq-general"></a>General<a href="#faq-general" class="anchor" title="Link to this FAQ section">¶</a>
 
@@ -131,51 +130,51 @@ On Windows the situation is a little more complicated. libgphoto2 doesn't work w
 
 In rare cases that might break other software accessing the camera though! If you experience this, you can roll back, and remove the WinUSB driver following [this description](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it) – but then your camera won't work with darktable.
 
-### <a name="faq-external-deps"></a>So, darktable uses gphoto2 for tethering. Are there any more third party projects influencing what works in darktable?<a href="#faq-external-deps" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-external-deps"></a>So, darktable uses gphoto2 for tethering. Are there any more third-party projects influencing what works in darktable?<a href="#faq-external-deps" class="anchor" title="Link to this FAQ entry">¶</a>
 Yes, there are two libraries we heavily rely on:
 
-* **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/development/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues)&nbsp;– there isn't much we can do to fix those things ourselves.
+* **exiv2** is used for reading metadata from image files. If something isn't shown correctly in the [image information](https://docs.darktable.org/usermanual/development/en/module-reference/utility-modules/shared/image-information/) panel on the left side then please check with the command line tool `exiv2` and report any problems upstream on [their bug tracker](https://github.com/Exiv2/exiv2/issues) – there isn't much we can do to fix those things ourselves.
 
-* **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, try running `lensfun-update-data` to get the newest lens database.  If lens correction still does not show your camera/lens, or shows a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
-
+* **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, try running `lensfun-update-data` to get the newest lens database. If lens correction still does not show your camera/lens, or shows a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
 ## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ section">¶</a>
 
 ### <a name="faq-red-borders"></a>After updating my system I suddenly see red borders and giant buttons everywhere!<a href="#faq-red-borders" class="anchor" title="Link to this FAQ entry">¶</a>
 darktable uses GTK3 to create its GUI. We make heavy use of styling to change the look to what you are used to. Unfortunately there were several incompatible changes in the past with how GTK3 handles that. As a result darktable needs to be compiled for the same version of the library as what it's being used with later. Otherwise you risk GTK3 not supporting the stylesheet darktable uses. When you see those red borders that's exactly what's happening.
 
-* Most of the time this happens when using third party package repos like Pascal's PPA on Ubuntu. When upgrading the base system the PPA gets disabled while the old darktable package is still installed. Just make sure to re-enable it, point it to the right distro release version and update darktable. That should fix the problem.
+* Most of the time this happens when using third-party package repos like Pascal's PPA on Ubuntu. When upgrading the base system the PPA gets disabled while the old darktable package is still installed. Just make sure to re-enable it, point it to the right distro release version and update darktable. That should fix the problem.
 * If you compiled darktable yourself make sure to remove both the installed files as well as your build/ folder before re-compiling.
 * If you use your system's official darktable package you should file a bug report against the distribution and ask them to build a new package.
 
-
 ## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ section">¶</a>
-darktable is developed for Linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) URCT environment is used to compile the program. Nightly builds are performed in github to ensure the program builds under Windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
+
+darktable is developed for Linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) UCRT environment is used to compile the program. Nightly builds are performed on GitHub to ensure the program builds under Windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
 ### <a name="faq-windows-smart-screen"></a>An error message prevents darktable from installing or starting on Windows<a href="#faq-windows-smart-screen" class="anchor" title="Link to this FAQ entry">¶</a>
 
 Windows may show an error message preventing you from installing or running darktable. Depending on the error message this may be due to either SmartScreen or Smart App Control. This is because our Windows builds aren't currently signed with a trusted code-signing certificate.
 
-- If it says "Windows protected your PC", this is SmartScreen. Click "More info", then "Run anyway".
-- If it says "Part of this app has been blocked", that it can't verify the signature of a .dll, or that one or more .dll files contain an error, this is Smart App Control. You can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
+* If it says "Windows protected your PC", this is SmartScreen. Click "More info", then "Run anyway".
+* If it says "Part of this app has been blocked", that it can't verify the signature of a .dll, or that one or more .dll files contain an error, this is Smart App Control. You can turn it off under Settings > Privacy & security > Windows Security > App & browser control > Smart App Control settings.
 
 More information here:
-- [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032)
-- [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003)
+
+* [GitHub issue #22032](https://github.com/darktable-org/darktable/issues/22032)
+* [Smart App Control FAQ](https://support.microsoft.com/en-us/windows/smart-app-control-frequently-asked-questions-285ea03d-fa88-4d56-882e-6698afdb7003)
 
 ### <a name="faq-windows-issues"></a>Other known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
 
-* OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`.
+* OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using:  `darktable --disable-opencl`
 
-* Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
+* Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & browser control > Exploit Protection Settings > Force Randomization and set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
 
 ### <a name="faq-windows-locations"></a>Install file locations<a href="#faq-windows-locations" class="anchor" title="Link to this FAQ entry">¶</a>
 The install of darktable creates the following folders:
 * `%ProgramFiles%\darktable\` - the program files to run darktable
-* `%LOCALAPPDATA%\darktable\` - configuration (darktablerc), databases (data.db and library.db), styles, and backups files are stored here. If the user manual references `.config/darktable/` , it means this location on Windows.
+* `%LOCALAPPDATA%\darktable\` - configuration (darktablerc), databases (data.db and library.db), styles, and backup files are stored here. If the user manual references `.config/darktable/`, it means this location on Windows.
 
 ### <a name="faq-windows-opencl"></a>How does the OpenCL support in darktable work on Windows?<a href="#faq-windows-opencl" class="anchor" title="Link to this FAQ entry">¶</a>
-The Windows port of darktable fully supports OpenCL with all the performance benefits, assuming you have a GPU with appropriate OpenCL drivers installed. Popular NVIDIA and AMD GPUs are working fine, but please note that in some cases the default drivers which are installed/updated by Windows Update do not necessarily contain the OpenCL driver. The best solution is typically to install the driver directly from the GPU manufacturers (like) [NVIDIA drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us) or [AMD drivers](http://support.amd.com/en-us/download)), and check the OpenCL support in the driver first.
+The Windows port of darktable fully supports OpenCL with all the performance benefits, assuming you have a GPU with appropriate OpenCL drivers installed. Popular NVIDIA and AMD GPUs are working fine, but please note that in some cases the default drivers which are installed/updated by Windows Update do not necessarily contain the OpenCL driver. The best solution is typically to install the driver directly from the GPU manufacturers (like [NVIDIA drivers](http://www.nvidia.com/Download/index.aspx?lang=en-us) or [AMD drivers](http://support.amd.com/en-us/download)), and check the OpenCL support in the driver first.
 
 * You can always run an OpenCL test by launching `%ProgramFiles%\darktable\bin\darktable-cltest.exe` from a command line window, this will give you detailed information on your current OpenCL status.
 
@@ -188,21 +187,18 @@ The configuration file of darktable is located at `%LOCALAPPDATA%\darktable\dark
 ### <a name="faq-windows-language"></a>I have started darktable and its user interface is Finnish/Italian/Urdu/etc. How can I change the language of the user interface to English?<a href="#faq-windows-language" class="anchor" title="Link to this FAQ entry">¶</a>
 By default darktable uses your operating system's language and if a localization is available in that language it will start using that localization for the user interface. You can override that and switch to an English user interface in multiple ways:
 
-* You can launch darktable using the command line `darkable --conf ui_last/gui_language=C`
+* You can launch darktable using the command line `darktable --conf ui_last/gui_language=C`
 * You can change the darktable shortcut in the Start Menu and append `--conf ui_last/gui_language=C` to the Target field
 * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `%LOCALAPPDATA%\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
 
 ### <a name="faq-windows-logs"></a>I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?<a href="#faq-windows-logs" class="anchor" title="Link to this FAQ entry">¶</a>
-The Windows version of **darktable (up to and including release 4.8.1**) by default logs its debug information to the following places (*these are hidden folders in Windows, therefore copy and paste the link to Windows File Explorer for access*):
+The Windows version of **darktable (up to and including release 4.8.1)** by default logs its debug information to the following places (*these are hidden folders in Windows, therefore copy and paste the link to Windows File Explorer for access*):
 
-Windows 10 and later:
-        `%LOCALAPPDATA%\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
+Windows 10 and later: `%LOCALAPPDATA%\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
 
-Windows 7:
-        `%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
+Windows 7: `%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
 
-Since **darktable 5.0** the default location is:
-        `%USERPROFILE%\Documents\Darktable\darktable-log.txt`
+Since **darktable 5.0** the default location is: `%USERPROFILE%\Documents\Darktable\darktable-log.txt`
 
 ### <a name="faq-windows-unicode"></a>I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?<a href="#faq-windows-unicode" class="anchor" title="Link to this FAQ entry">¶</a>
 Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases, mostly due to external libraries used by darktable. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://github.com/darktable-org/darktable/issues).
@@ -217,12 +213,13 @@ The darktable files live at: `~/.var/app/org.darktable.Darktable`
 
 ### <a name="faq-flatpak-terminal"></a>How do I start darktable from terminal?<a href="#faq-flatpak-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
 To start darktable from terminal use: `flatpak run org.darktable.Darktable`. You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
-    
+
 ## <a name="faq-mac"></a>Mac<a href="#faq-mac" class="anchor" title="Link to this FAQ entry">¶</a>
+
 darktable is developed for Linux, but it was ported to build on Mac. If you experience problems, please check the next few known issues below specific to the Mac port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
-
 ## <a name="faq-old-versions"></a>Very Old Versions<a href="#faq-old-versions" class="anchor" title="Link to this FAQ section">¶</a>
+
 These questions are probably not affecting many people these days, but we kept them for historical reasons.
 
 ### <a name="faq-old-presets"></a>My auto-applied presets aren't enabled for pictures imported before upgrade to version 1.1 (or higher), what's happening?<a href="#faq-old-presets" class="anchor" title="Link to this FAQ entry">¶</a>

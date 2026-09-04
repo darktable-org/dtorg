@@ -72,7 +72,7 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 ### Universal Package Formats
 
-* [flatpak](https://www.flathub.org/apps/details/org.darktable.Darktable)
+* [Flatpak](https://www.flathub.org/apps/details/org.darktable.Darktable) (Note: Does not include darktable's AI features)
 
 <h1 id='macos'>macOS</h1>
 

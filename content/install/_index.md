@@ -117,7 +117,3 @@ or
 MacPorts:
 
     sudo port install darktable +quartz
-
-Homebrew:
-
-    brew install --cask darktable

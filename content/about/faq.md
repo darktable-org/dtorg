@@ -107,6 +107,9 @@ There is only one way, and that is "darktable". All lower case, in one word, exc
 ### <a name="faq-contact"></a>What's the best way to contact the developers/report bugs?<a href="#faq-contact" class="anchor" title="Link to this FAQ entry">¶</a>
 For issues/bugs, please use [GitHub Issues](https://github.com/darktable-org/darktable/issues). For more general help and discussion there's the [discuss.pixls.us](https://discuss.pixls.us/) forum. For fast discussions and short questions it's best to visit us in one of the IRC or Matrix channels, which are listed on the [contact page](/contact/).
 
+### <a name="faq-multiple-computers"></a>How can I use darktable on multiple computers?<a href="#faq-multiple-computers" class="anchor" title="Link to this FAQ entry">¶</a>
+There is no built-in support for sharing darktables database and settings across multiple computers. Some possible setups on how to use darktable on multiple computers are available in the [manual](https://docs.darktable.org/usermanual/development/en/special-topics/multiple-computers/).
+
 ### <a name="faq-deprecated-module"></a>My favourite module has been removed from darktable. What happened and can I get it back?<a href="#faq-deprecated-module" class="anchor" title="Link to this FAQ entry">¶</a>
 Occasionally an old module may be deprecated and become unavailable for new edits. However, this only happens if there are quality or technical issues with that module and a suitable replacement is available.
 

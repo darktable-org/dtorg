@@ -221,7 +221,7 @@ The darktable files live at: `~/.var/app/org.darktable.Darktable`
 ### <a name="faq-flatpak-terminal"></a>How do I start darktable from terminal?<a href="#faq-flatpak-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
 To start darktable from terminal use: `flatpak run org.darktable.Darktable`. You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
 
-### <a name="faq-flatpak-ai"></a>Does the Flatpak support darktables AI features?<a href="#faq-flatpak-ail" class="anchor" title="Link to this FAQ entry">¶</a>
+### <a name="faq-flatpak-ai"></a>Does the Flatpak support darktables AI features?<a href="#faq-flatpak-ai" class="anchor" title="Link to this FAQ entry">¶</a>
 No, as of September 2026 the Flatpak release of darktable doesn't include AI features. 
     
 ## <a name="faq-mac"></a>Mac<a href="#faq-mac" class="anchor" title="Link to this FAQ entry">¶</a>

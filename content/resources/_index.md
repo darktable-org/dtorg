@@ -15,7 +15,7 @@ The [user manual](https://docs.darktable.org/usermanual/5.6/en/) contains the re
 
 The manual is [also available](https://docs.darktable.org/usermanual/development/en/) for the current [development snapshot](https://github.com/darktable-org/darktable/releases/tag/nightly).
 
-The [Lua API](https://docs.darktable.org/lua/stable/) has its own manual. A guide for getting started with scripting is also available in the [main manual](https://docs.darktable.org/usermanual/development/en/lua/).
+The [Lua API](https://docs.darktable.org/lua/stable/) has its own manual. A guide for getting started with scripting is also available in the [main manual](https://docs.darktable.org/usermanual/5.6/en/lua/).
 
 If you would like to help maintain the user manual, please see [our GitHub repository](https://github.com/darktable-org/dtdocs) or the overview of our [workflow](https://docs.darktable.org/usermanual/development/en/contributing/workflow/). 
 

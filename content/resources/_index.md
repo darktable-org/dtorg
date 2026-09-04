@@ -11,8 +11,9 @@ menu: ["main", "footer"]
 
 # User manual
 
-The [user manual](https://docs.darktable.org/usermanual/development/en/) contains the reference documentation for all features included in darktable. It is also available as [PDF](https://docs.darktable.org/usermanual/development/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/development/en/darktable_user_manual.epub). 
-It currently tracks the development version of darktable so it might contain features you are missing in your stable installation. 
+The [user manual](https://docs.darktable.org/usermanual/5.6/en/) contains the reference documentation for all features included in darktable for the current stable version 5.6.1. It is also available as [PDF](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.epub). 
+
+The manual is [also available](https://docs.darktable.org/usermanual/development/en/) for the current [development snapshot](https://github.com/darktable-org/darktable/releases/tag/nightly).
 
 The [Lua API](https://docs.darktable.org/lua/stable/) has its own manual. A guide for getting started with scripting is also available in the [main manual](https://docs.darktable.org/usermanual/development/en/lua/).
 

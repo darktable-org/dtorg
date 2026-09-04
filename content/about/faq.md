@@ -165,7 +165,7 @@ More information here:
 
 ### <a name="faq-windows-issues"></a>Other known Windows issues<a href="#faq-windows-issues" class="anchor" title="Link to this FAQ entry">¶</a>
 
-* OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`.
+* OpenCL will speed up the processing in darktable. Sometimes Windows 11 preinstalls an OpenCL Compatibility app and it causes faults in darktable. Uninstall the OpenCL Compatibility from Windows or start darktable using `darktable --disable-opencl`
 
 * Windows 11 Pro security blocks installs. To resolve, go to Windows Security > App & Browsers Control > Exploit Protection Settings > Force Randomization and Set the Force Randomization for images (Mandatory ASLR) to "Off", and reboot Windows.
 

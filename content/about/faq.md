@@ -217,6 +217,9 @@ The darktable files live at: `~/.var/app/org.darktable.Darktable`
 
 ### <a name="faq-flatpak-terminal"></a>How do I start darktable from terminal?<a href="#faq-flatpak-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
 To start darktable from terminal use: `flatpak run org.darktable.Darktable`. You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
+
+### <a name="faq-flatpak-ai"></a>Does the Flatpak support darktables AI features?<a href="#faq-flatpak-ail" class="anchor" title="Link to this FAQ entry">¶</a>
+No, as of September 2026 the Flatpak release of darktable doesn't include AI features. 
     
 ## <a name="faq-mac"></a>Mac<a href="#faq-mac" class="anchor" title="Link to this FAQ entry">¶</a>
 darktable is developed for Linux, but it was ported to build on Mac. If you experience problems, please check the next few known issues below specific to the Mac port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.

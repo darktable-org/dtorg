@@ -183,7 +183,7 @@ The Windows port of darktable fully supports OpenCL with all the performance ben
 * You can always run an OpenCL test by launching `%ProgramFiles%\darktable\bin\darktable-cltest.exe` from a command line window, this will give you detailed information on your current OpenCL status.
 
 ### <a name="faq-windows-print"></a>I cannot see the Print module in the Windows version. How can I print my images?<a href="#faq-windows-print" class="anchor" title="Link to this FAQ entry">¶</a>
-The darktable Windows packaging can not print. The Print module in darktable is using [CUPS](https://en.wikipedia.org/wiki/CUPS) on all operating systems, but that is not available on Windows. This means there was no easy way to port that functionality, and it will require further efforts to find a proper solution for printing in the Windows version as well. Until that time you can use your favorite image printing software separately to print the exported images.
+Printing on Windows was introduced in darktable 5.8. Versions prior to 5.8 do not support printing on windows. 
 
 ### <a name="faq-windows-config"></a>I read in the manual about changing some configuration setting, which supposed to be located in the user config directory. Where is the config file in the Windows version?<a href="#faq-windows-config" class="anchor" title="Link to this FAQ entry">¶</a>
 The configuration file of darktable is located at `%LOCALAPPDATA%\darktable\darktablerc`. If you change it please use a text editor which can handle Unix line endings, like Notepad++ or similar.

@@ -212,15 +212,17 @@ Don't panic, sometimes it happens. If you can reproduce the crash, please file a
 ### <a name="faq-windows-terminal"></a>I have started Darktable and a terminal window appeared alongside the program. How do I get rid of it?<a href="#faq-windows-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
 This is a known problem on versions of Windows too old to support the standards targeted by Darktable. But don't worry: everything will still work fine, and there is a workaround to permanently hide the window.
 
-To do that you can edit the program's shortcuts, which are used to start Darktable: (Technically, what this does is start the program through PowerShell, which also means it will *not* work when launching it from the *right-click menu* of a file or folder, nor from other applications like GIMP.)
+Technically, what this will do is start the program through a hidden PowerShell terminal, which also means the fix will *not* apply when launching from the *right-click menu* of a file or folder, nor from other applications like GIMP.
+
+To apply the workaround you can edit the program's shortcuts, which are used to start Darktable:
 
 1. Find the locations of your Darktable shortcuts, which can be found on the Desktop, and in the Start Menu by searching for Darktable, right-clicking on the entry, and selecting *Explore*. Possible common locations can be:
-  * **%ProgramData%\Microsoft\Windows\Start Menu\Programs\darktable**
-  * **%AppData%\Microsoft\Windows\Start Menu\Programs\darktable**
+    * **%ProgramData%\Microsoft\Windows\Start Menu\Programs\darktable**
+    * **%AppData%\Microsoft\Windows\Start Menu\Programs\darktable**
 2. Then choose one to edit. Right-click on it, select *Properties*, and in the new window edit the value of *Target* by copying and pasting the following:
-  * Add at the beginning: `%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -command "& '`
-  * Add at the end: `' *>&1"`
-  * Only if you had installed it in a custom location, and only if there are apostrophes (**'**) in that location's path that's already present in the *Target* field: edit the path, ignoring the new additions, doubling each of the apostrophes (**''**). If you're unsure, it likely means that you can ignore this step.
+    * Add at the beginning: `%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -command "& '`
+    * Add at the end: `' *>&1"`
+    * Only if you had installed it in a custom location, and only if there are apostrophes (**'**) in that location's path that's already present in the *Target* field: edit the path, ignoring the new additions, doubling each of the apostrophes (**''**). If you're unsure, it likely means that you can ignore this step.
 3. Click *Apply*, close the *Properties* window, and *Rename* the shortcut to something else (for example, "Darktable Launcher"). This will ensure the change persists after updating to new versions.
 4. Replace all other shortcuts with the modified one. After testing it, you can safely delete the old ones. To replace the Quick Launch shortcut, drag one of the others onto the bar.
 

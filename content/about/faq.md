@@ -12,8 +12,8 @@ menu: "footer"
 - [New Users](#faq-new-users)
 - [General](#faq-general)
 - [Linux](#faq-linux)
-- [Windows](#faq-windows)
 - [Flatpak](#faq-flatpak)
+- [Windows](#faq-windows)
 - [Mac](#faq-mac)
 - [Very Old Versions](#faq-old-versions)
 
@@ -149,6 +149,20 @@ darktable uses GTK3 to create its GUI. We make heavy use of styling to change th
 * If you compiled darktable yourself make sure to remove both the installed files as well as your build/ folder before re-compiling.
 * If you use your system's official darktable package you should file a bug report against the distribution and ask them to build a new package.
 
+## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ section">¶</a>
+
+### <a name="faq-flatpak-locations"></a>Where are the darktable files in flatpak?<a href="#faq-flatpak-locations" class="anchor" title="Link to this FAQ entry">¶</a>
+The darktable files live at: `~/.var/app/org.darktable.Darktable`
+
+### <a name="faq-flatpak-terminal"></a>How do I start darktable from terminal?<a href="#faq-flatpak-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
+
+To start darktable from terminal use: `flatpak run org.darktable.Darktable`
+
+You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
+
+### <a name="faq-flatpak-ai"></a>Does the Flatpak support darktables AI features?<a href="#faq-flatpak-ai" class="anchor" title="Link to this FAQ entry">¶</a>
+No, as of September 2026 the Flatpak release of darktable doesn't include AI features. 
+
 ## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ section">¶</a>
 
 darktable is developed for Linux, but it was ported to build on Windows. The [MSYS2](https://www.msys2.org/) UCRT environment is used to compile the program. Nightly builds are performed on GitHub to ensure the program builds under Windows against the current master code. If you experience problems, please check the next few known issues below specific to the Windows port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
@@ -227,21 +241,6 @@ To apply the workaround you can edit the program's shortcuts, which are used to 
 4. Replace all other shortcuts with the modified one. After testing it, you can safely delete the old ones. To replace the Quick Launch shortcut, drag one of the others onto the bar.
 
 After this, simply start Darktable from the new shortcuts from now on. When updating to a new version, to avoid confusion, check the option "*Don't create a Start Menu folder*" which will stop it from recreating the simpler shortcuts on top of yours.
-
-## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ section">¶</a>
-
-### <a name="faq-flatpak-locations"></a>Where are the darktable files in flatpak?<a href="#faq-flatpak-locations" class="anchor" title="Link to this FAQ entry">¶</a>
-The darktable files live at: `~/.var/app/org.darktable.Darktable`
-
-### <a name="faq-flatpak-terminal"></a>How do I start darktable from terminal?<a href="#faq-flatpak-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
-
-To start darktable from terminal use: `flatpak run org.darktable.Darktable`
-
-You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
-
-### <a name="faq-flatpak-ai"></a>Does the Flatpak support darktables AI features?<a href="#faq-flatpak-ai" class="anchor" title="Link to this FAQ entry">¶</a>
-No, as of September 2026 the Flatpak release of darktable doesn't include AI features. 
-
 
 ## <a name="faq-mac"></a>Mac<a href="#faq-mac" class="anchor" title="Link to this FAQ entry">¶</a>
 

@@ -210,17 +210,21 @@ Windows handles path names very differently than Unix-like systems. One of the b
 Don't panic, sometimes it happens. If you can reproduce the crash, please file a [bug report](https://github.com/darktable-org/darktable/issues), and send the so called "backtrace" file as well. You can find the location of this backtrace file in the folder where the crash dialog indicates. Generating a log of the crash can also aid in discovering the cause. The simplest way is to start Windows Command Prompt (cmd), navigate to `%ProgramFiles%\darktable\bin\` and start darktable via `darktable -d common` or `darktable -d opencl` or `darktable -d perf` or to see all the options `darktable -h`. The log file will be generated in the hidden path listed above.
 
 ### <a name="faq-windows-terminal"></a>I have started Darktable and a terminal window appeared alongside the program. How do I get rid of it?<a href="#faq-windows-terminal" class="anchor" title="Link to this FAQ entry">¶</a>
-This is a known problem on versions of Windows too old to support the standards targeted by Darktable. But don't worry: everything will still work fine, and there is a workaround to permanently hide the window:
+This is a known problem on versions of Windows too old to support the standards targeted by Darktable. But don't worry: everything will still work fine, and there is a workaround to permanently hide the window.
 
-* Find the locations of your Darktable shortcuts, which can be found on the Desktop, and in the Start Menu by searching for Darktable, right-clicking on the entry, and selecting Explore.
-* Then choose one to edit. Right-click on it, select Properties, and in the new window edit the value of Target by copying and pasting the following:
-* Add at the beginning: `%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -command "& '`
-* Add at the end: `' *>&1"`
-* Only if you had installed it in a custom location, and only if there are apostrophes (') in that location's path that's already present in the Target field: edit the path, ignoring the new additions, doubling each of the apostrophes (''). If you're unsure it likely means that you can ignore this step.
-* Apply, close the Properties window, and Rename the shortcut to something else (for example, "Darktable Launcher"). This will ensure the change persists after updating to new versions.
-* Replace all other shortcuts with the modified one. After testing it, you can safely delete the old ones. To replace the Quick Launch shortcut, drag one of the others onto the bar.
+To do that you can edit the program's shortcuts, which are used to start Darktable: (Technically, what this does is start the program through PowerShell, which also means it will *not* work when launching it from the *right-click menu* of a file or folder, nor from other applications like GIMP.)
 
-After this, simply start Darktable from the new shortcuts from now on. When updating to a new version, to avoid confusion, check the "Don't create a Start Menu folder" option which will stop it from recreating the simpler shortcuts on top of yours.
+1. Find the locations of your Darktable shortcuts, which can be found on the Desktop, and in the Start Menu by searching for Darktable, right-clicking on the entry, and selecting *Explore*. Possible common locations can be:
+  * **%ProgramData%\Microsoft\Windows\Start Menu\Programs\darktable**
+  * **%AppData%\Microsoft\Windows\Start Menu\Programs\darktable**
+2. Then choose one to edit. Right-click on it, select *Properties*, and in the new window edit the value of *Target* by copying and pasting the following:
+  * Add at the beginning: `%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -command "& '`
+  * Add at the end: `' *>&1"`
+  * Only if you had installed it in a custom location, and only if there are apostrophes (**'**) in that location's path that's already present in the *Target* field: edit the path, ignoring the new additions, doubling each of the apostrophes (**''**). If you're unsure, it likely means that you can ignore this step.
+3. Click *Apply*, close the *Properties* window, and *Rename* the shortcut to something else (for example, "Darktable Launcher"). This will ensure the change persists after updating to new versions.
+4. Replace all other shortcuts with the modified one. After testing it, you can safely delete the old ones. To replace the Quick Launch shortcut, drag one of the others onto the bar.
+
+After this, simply start Darktable from the new shortcuts from now on. When updating to a new version, to avoid confusion, check the option "*Don't create a Start Menu folder*" which will stop it from recreating the simpler shortcuts on top of yours.
 
 ## <a name="faq-flatpak"></a>Flatpak<a href="#faq-flatpak" class="anchor" title="Link to this FAQ section">¶</a>
 

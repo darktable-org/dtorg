@@ -228,7 +228,7 @@ This is a known problem on versions of Windows too old to support the standards 
 
 Caveat: This fix will *not* apply when launching from the *right-click menu* of a file or folder, nor from other applications like GIMP.
 
-To apply the workaround you have to edit the program's shortcuts, which are used to start Darktable. 
+To use the workaround either use our pre-prepared [shortcut](darktable-win-launcher-shortcuts.zip) (pick the appropriate one depending on whether you installed for "all users" or just for the active user) or edit the program's shortcuts, which are used to start darktable. 
 
 1. Find the locations of darktable's shortcuts:
     * By default they are in the start menu and (if enabled during setup) on the desktop.

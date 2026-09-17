@@ -140,6 +140,10 @@ Yes, there are two libraries we heavily rely on:
 
 * **lensfun** is used for lens correction. If the [lens correction](https://docs.darktable.org/usermanual/development/en/module-reference/processing-modules/lens-correction/) module isn't showing your camera or lens, try running `lensfun-update-data` to get the newest lens database. If lens correction still does not show your camera/lens, or shows a wrong one, then please report that to [those folks](https://github.com/lensfun/lensfun).
 
+### <a name="faq-donations"></a>I want to donate to darktable, how to?<a href="#faq-donations" class="anchor" title="Link to this FAQ entry">¶</a>
+The project doesn't accept donations. If you want, you can support darktable's internet home [pixls.us](https://pixls.us/support/). 
+
+
 ## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ section">¶</a>
 
 ### <a name="faq-red-borders"></a>After updating my system I suddenly see red borders and giant buttons everywhere!<a href="#faq-red-borders" class="anchor" title="Link to this FAQ entry">¶</a>

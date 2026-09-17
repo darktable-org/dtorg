@@ -143,7 +143,7 @@ Yes, there are two libraries we heavily rely on:
 
 
 ### <a name="faq-donations"></a>I want to donate to darktable, how to?<a href="#faq-donations" class="anchor" title="Link to this FAQ entry">¶</a>
-The project doesn't accept donations. If you want, you can support darktables internet home [pixls.us](https://pixls.us/support/). 
+The project doesn't accept donations. If you want, you can support darktable's internet home [pixls.us](https://pixls.us/support/). 
 
 
 ## <a name="faq-linux"></a>Linux<a href="#faq-linux" class="anchor" title="Link to this FAQ section">¶</a>

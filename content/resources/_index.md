@@ -11,11 +11,11 @@ menu: ["main", "footer"]
 
 # User manual
 
-The [user manual](https://docs.darktable.org/usermanual/5.6/en/) contains the reference documentation for all features included in darktable for the current stable version 5.6.1. It is also available as [PDF](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.epub). 
+The [user manual](https://docs.darktable.org/usermanual/stable/en/) contains the reference documentation for all features included in darktable for the current stable version 5.6.1. It is also available as [PDF](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.epub). 
 
 The manual is [also available](https://docs.darktable.org/usermanual/development/en/) for the current [development snapshot](https://github.com/darktable-org/darktable/releases/tag/nightly).
 
-The [Lua API](https://docs.darktable.org/lua/stable/) has its own manual. A guide for getting started with scripting is also available in the [main manual](https://docs.darktable.org/usermanual/5.6/en/lua/).
+The [Lua API](https://docs.darktable.org/lua/stable/) has its own manual. A guide for getting started with scripting is also available in the [main manual](https://docs.darktable.org/usermanual/stable/en/lua/).
 
 If you would like to help maintain the user manual, please see [our GitHub repository](https://github.com/darktable-org/dtdocs) or the overview of our [workflow](https://docs.darktable.org/usermanual/development/en/contributing/workflow/). 
 
@@ -45,7 +45,8 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
   
 # Previous versions of the darktable user manual
 
-Archiving previous versions of the manual has been suspended since 4.6; the last archived versions are listed below. The [user manual](https://docs.darktable.org/usermanual/development/en/) tracks the state of the current development version (nightly).
+Archiving previous versions of the manual has been suspended between 4.6 and 5.6; older versions of the manual are listed below. 
+
 The following user manual links are snapshots for older versions of darktable.
 - [Version 4.6](https://docs.darktable.org/usermanual/4.6/en/)
 - [Version 4.2](https://docs.darktable.org/usermanual/4.2/en/)

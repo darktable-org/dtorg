@@ -4,7 +4,7 @@ Date: 2026-08-26T15:00:00
 author: smn
 wordpress_id: 120
 lede: lede-resources.jpg
-lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
+lede_author: <a href="https://www.yannicmeyer.de">ym</a>
 weight: 500
 menu: ["main", "footer"]
 ---

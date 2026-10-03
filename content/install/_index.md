@@ -3,8 +3,8 @@ Title: install
 Date: 2026-08-27T00:01:00-00:00
 author: smn
 wordpress_id: 118
-lede: lede-install.jpg
-lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
+lede: saclay.jpg
+lede_author: <a href="https://photos.obry.net/">Pascal Obry</a>
 weight: 400
 menu: ["main", "footer"]
 ---
@@ -13,24 +13,24 @@ menu: ["main", "footer"]
 <div style="text-align: center;">
   <h2>Source Code</h2>
   <p>
-  <a href="https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1.tar.xz">darktable-5.6.1.tar.xz</a>
+  <a href="https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2.tar.xz">darktable-5.6.2.tar.xz</a>
   </p>
 </div>
 <div style="text-align: center;">
   <h2>AppImage</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/Darktable-5.6.1-x86_64.AppImage' title='GNU/Linux AppImage'>Darktable-5.6.1-x86_64.AppImage</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/Darktable-5.6.1-aarch64.AppImage' title='GNU/Linux AppImage on ARM'>Darktable-5.6.1-aarch64.AppImage</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/Darktable-5.6.2-x86_64.AppImage' title='GNU/Linux AppImage'>Darktable-5.6.2-x86_64.AppImage</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/Darktable-5.6.2-aarch64.AppImage' title='GNU/Linux AppImage on ARM'>Darktable-5.6.2-aarch64.AppImage</a></p>
 </div>
 <div style="text-align: center;">
   <h2>Windows</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-win64.exe' title='Microsoft Windows'>darktable-5.6.1-win64.exe</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-woa64.exe' title='Microsoft Windows on ARM'>darktable-5.6.1-woa64.exe</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-win64.exe' title='Microsoft Windows'>darktable-5.6.2-win64.exe</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-woa64.exe' title='Microsoft Windows on ARM'>darktable-5.6.2-woa64.exe</a></p>
   <p><a href="/about/faq/#faq-windows-smart-screen" class="attention">known issues</a></p>
 </div>
 <div style="text-align: center;">
   <h2>macOS</h2>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-5.6.1-arm64.dmg</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.1/darktable-5.6.1-x86_64.dmg' title='macOS 15.0 on Intel'>darktable-5.6.1-x86_64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-5.6.2-arm64.dmg</a></p>
+  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-x86_64.dmg' title='macOS 15.0 on Intel'>darktable-5.6.2-x86_64.dmg</a></p>
   <p><a href="#macos" class="attention">installation notes</a></p>
 </div>
 </div>

@@ -28,9 +28,6 @@ $ sha256sum darktable-5.6.2-x86_64.AppImage
 $ sha256sum darktable-5.6.2-aarch64.AppImage
   5b8015f8534453cb3bbd6e5a03e362cb7d9d9573f20d3928aadad354df18ad10  Darktable-5.6.2-aarch64.AppImage
 
-$ sha256sum darktable-5.6.2-x86_64.dmg
-  darktable-5.6.2-x86_64.dmg
-
 $ sha256sum darktable-5.6.2-arm64.dmg
   6ff88e58a2a59cb07b0a1502fea7205e68cd783380a33a3ce7bda68ec29def0c  darktable-5.6.2-arm64.dmg
 

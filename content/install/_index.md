@@ -3,7 +3,7 @@ Title: install
 Date: 2026-08-27T00:01:00-00:00
 author: smn
 wordpress_id: 118
-lede: saclay.jpg
+lede: lede-install.jpg
 lede_author: <a href="https://photos.obry.net/">Pascal Obry</a>
 weight: 400
 menu: ["main", "footer"]

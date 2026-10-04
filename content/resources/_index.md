@@ -45,7 +45,7 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
   
 # Previous versions of the darktable user manual
 
-Archiving previous versions of the manual has been suspended intermittently; somes archived versions are listed below. The following user manual links are snapshots for older versions of darktable.
+Archiving previous versions of the manual has been suspended intermittently; some archived versions are listed below. The following user manual links are snapshots for older versions of darktable.
 
 - [Version 4.6](https://docs.darktable.org/usermanual/4.6/en/)
 - [Version 4.2](https://docs.darktable.org/usermanual/4.2/en/)

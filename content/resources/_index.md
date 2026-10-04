@@ -1,17 +1,17 @@
 ---
 Title: resources
-Date: 2026-08-26T15:00:00
+Date: 2026-10-03T15:00:00
 author: smn
 wordpress_id: 120
 lede: lede-resources.jpg
-lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
+lede_author: <a href="https://www.yannicmeyer.de">ym</a>
 weight: 500
 menu: ["main", "footer"]
 ---
 
 # User manual
 
-The [user manual](https://docs.darktable.org/usermanual/5.6/en/) contains the reference documentation for all features included in darktable for the current stable version 5.6.1. It is also available as [PDF](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/5.6/en/darktable_user_manual.epub). 
+The [user manual](https://docs.darktable.org/usermanual/stable/en/) contains the reference documentation for all features included in darktable for the current stable version. It is also available as [PDF](https://docs.darktable.org/usermanual/stable/en/darktable_user_manual.pdf) or as [EPUB](https://docs.darktable.org/usermanual/stable/en/darktable_user_manual.epub). 
 
 The manual is [also available](https://docs.darktable.org/usermanual/development/en/) for the current [development snapshot](https://github.com/darktable-org/darktable/releases/tag/nightly).
 
@@ -45,8 +45,8 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
   
 # Previous versions of the darktable user manual
 
-Archiving previous versions of the manual has been suspended since 4.6; the last archived versions are listed below. The [user manual](https://docs.darktable.org/usermanual/development/en/) tracks the state of the current development version (nightly).
-The following user manual links are snapshots for older versions of darktable.
+Archiving previous versions of the manual has been suspended intermittently; some archived versions are listed below. The following user manual links are snapshots for older versions of darktable.
+
 - [Version 4.6](https://docs.darktable.org/usermanual/4.6/en/)
 - [Version 4.2](https://docs.darktable.org/usermanual/4.2/en/)
 - [Version 4.0](https://docs.darktable.org/usermanual/4.0/en/)

@@ -42,7 +42,7 @@ The table has the following fields:
 - **WB Presets:** If darktable has white balance presets for the camera so you can choose things like "Daylight" and "Fluorescent" in the white balance module
 - **Noise Profile:** If darktable has a noise profile so you can use the profiled denoise module with the camera
 
-The table is based on the source code from the 5.6.1 release.
+The table is based on the source code from the 5.6.2 release.
 
 ### Canon
 
@@ -431,6 +431,7 @@ The table is based on the source code from the 5.6.1 release.
 | SL2                     |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
 | SL2-S                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | SL3                     |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
+| SL3-P                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | SL3-S                   |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | T (Typ 701)             |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | TL                      |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
@@ -954,6 +955,7 @@ The table is based on the source code from the 5.6.1 release.
 | ILCE-7RM3               | ILCE-7RM3A                                                                                    | ✅ Yes      | ✅ Yes         | RawSpeed |
 | ILCE-7RM4               | ILCE-7RM4A                                                                                    | ✅ Yes      | ✅ Yes         | RawSpeed |
 | ILCE-7RM5               |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |
+| ILCE-7RM6               |                                                                                               | ❌ No       | ❌ No          | RawSpeed |
 | ILCE-7S                 |                                                                                               | ✅ Yes      | ✅ Yes         | RawSpeed |
 | ILCE-7SM2               |                                                                                               | ✅ Yes      | ❌ No          | RawSpeed |
 | ILCE-7SM3               |                                                                                               | ❌ No       | ✅ Yes         | RawSpeed |

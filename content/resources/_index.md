@@ -45,13 +45,15 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
   
 # Previous versions of the manual
 
+Currently the only deployed versions of darktable's manual are for [release 5.6](https://docs.darktable.org/usermanual/5.6/en/) and the [development version](https://docs.darktable.org/usermanual/development/en/).
+
 Older versions of the manual for older releases of darktable are archived in PDF and EPUB format and available on Github:
 
-* https://github.com/darktable-org/dtdocs/releases/tag/v4.8
-* https://github.com/darktable-org/dtdocs/releases/tag/v4.6
-* https://github.com/darktable-org/dtdocs/releases/tag/v4.2
-* https://github.com/darktable-org/dtdocs/releases/tag/v4.0
-* https://github.com/darktable-org/dtdocs/releases/tag/v3.8
-* https://github.com/darktable-org/dtdocs/releases/tag/v3.6
+* [Version 4.8](https://github.com/darktable-org/dtdocs/releases/tag/v4.8)
+* [Version 4.6](https://github.com/darktable-org/dtdocs/releases/tag/v4.6)
+* [Version 4.2](https://github.com/darktable-org/dtdocs/releases/tag/v4.2)
+* [Version 4.0](https://github.com/darktable-org/dtdocs/releases/tag/v4.0)
+* [Version 3.8](https://github.com/darktable-org/dtdocs/releases/tag/v3.8)
+* [Version 3.6](https://github.com/darktable-org/dtdocs/releases/tag/v3.6)
 
-Between 4.8 and 5.6 no versioned snapshots of the manual are available because versioning of the manual had been suspended in that period. 
+Between 4.8 and 5.6 no snapshots of the manual are available because versioning of the manual had been suspended in that period. 

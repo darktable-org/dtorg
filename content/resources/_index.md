@@ -43,7 +43,7 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
 - [A dabble in photography](https://www.youtube.com/channel/UCxHYygok15XQ6bqu9FK-oCw)
 - [Raw Photography Tutorials](https://www.youtube.com/@RawPhotographyTutorials)
   
-# Previous versions of the darktable user manual
+# Previous versions of the manual
 
 Older versions of the manual for older releases of darktable are archived in PDF and EPUB format and available on Github:
 

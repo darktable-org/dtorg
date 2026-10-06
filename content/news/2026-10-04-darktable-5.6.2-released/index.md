@@ -169,12 +169,12 @@ The following is a summary of the main features added to darktable 5.6.2. Please
 
 ### Base Support
 
-- N/A
+- Leica SL3-P (DNG)
+- Sony ILCE-7RM6
 
 ### White Balance Presets
 
-- Leica SL3-P (DNG)
-- Sony ILCE-7RM6
+- N/A
 
 ### Noise Profiles
 

@@ -45,8 +45,13 @@ If you can't find a solution for your issue in the FAQ or manual (see above), yo
   
 # Previous versions of the darktable user manual
 
-Archiving previous versions of the manual has been suspended intermittently; some archived versions are listed below. The following user manual links are snapshots for older versions of darktable.
+Older versions of the manual for older releases of darktable are archived in PDF and EPUB format and available on Github:
 
-- [Version 4.6](https://docs.darktable.org/usermanual/4.6/en/)
-- [Version 4.2](https://docs.darktable.org/usermanual/4.2/en/)
-- [Version 4.0](https://docs.darktable.org/usermanual/4.0/en/)
+* https://github.com/darktable-org/dtdocs/releases/tag/v4.8
+* https://github.com/darktable-org/dtdocs/releases/tag/v4.6
+* https://github.com/darktable-org/dtdocs/releases/tag/v4.2
+* https://github.com/darktable-org/dtdocs/releases/tag/v4.0
+* https://github.com/darktable-org/dtdocs/releases/tag/v3.8
+* https://github.com/darktable-org/dtdocs/releases/tag/v3.6
+
+Between 4.8 and 5.6 no versioned snapshots of the manual are available because versioning of the manual had been suspended in that period. 

@@ -27,6 +27,6 @@ __pycache__/
 py2-venv
 
 ### hugo
-public
-resources
+/public/
+/resources/
 .hugo_build.lock

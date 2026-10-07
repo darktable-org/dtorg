@@ -2,6 +2,6 @@
 *.swp
 
 ### hugo
-public
-resources
+/public/
+/resources/
 .hugo_build.lock

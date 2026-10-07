@@ -1,6 +1,0 @@
-pelican==3.6.3
-Markdown==3.8.1
-pillow
-python-twitter
-bs4
-typogrify

@@ -1,7 +1,7 @@
 ---
 title: images
 cascade:
-  _build:
+  build:
     render: false
     list: false
 ---

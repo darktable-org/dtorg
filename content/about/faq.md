@@ -255,6 +255,10 @@ After this, simply start Darktable from the new shortcuts from now on. When upda
 
 darktable is developed for Linux, but it was ported to build on Mac. If you experience problems, please check the next few known issues below specific to the Mac port. If you don't find your answer or believe that you have found a new bug, please report it through our [bug tracking](https://github.com/darktable-org/darktable/issues) system.
 
+### <a name="faq-mac-intel"></a>Why is there no official release for Intel Macs?<a href="#faq-mac-intel" class="anchor" title="Link to this FAQ entry">¶</a>
+
+GitHub has discontinued the Intel-based macOS runners that were used to build darktable, so there are no current releases for Intel Macs. The last version released for Intel Macs was [5.6.1](https://github.com/darktable-org/darktable/releases/tag/release-5.6.1). Community-built versions for Intel Macs are often available on the [forum](https://discuss.pixls.us/c/software/darktable/19). Please note that these builds are unofficial and not supported by the darktable project.
+
 ## <a name="faq-old-versions"></a>Very Old Versions<a href="#faq-old-versions" class="anchor" title="Link to this FAQ section">¶</a>
 
 These questions are probably not affecting many people these days, but we kept them for historical reasons.

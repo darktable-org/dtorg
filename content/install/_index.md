@@ -30,7 +30,6 @@ menu: ["main", "footer"]
 <div style="text-align: center;">
   <h2>macOS</h2>
   <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-arm64.dmg' title='macOS 14.0 on Apple silicon'>darktable-5.6.2-arm64.dmg</a></p>
-  <p><a href='https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-x86_64.dmg' title='macOS 15.0 on Intel'>darktable-5.6.2-x86_64.dmg</a></p>
   <p><a href="#macos" class="attention">installation notes</a></p>
 </div>
 </div>

@@ -76,7 +76,9 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 
 <h1 id='macos'>macOS</h1>
 
-These bundles support macOS versions starting with 13.5 (Ventura).
+These bundles support macOS versions starting with 13.5 (Ventura). 
+
+Currently there are no official releases for [Intel Macs](https://www.darktable.org/about/faq/#faq-mac-intel).
 
 ### Fixing issues with macOS security settings
 

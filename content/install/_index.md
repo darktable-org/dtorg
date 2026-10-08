@@ -11,7 +11,7 @@ menu: ["main", "footer"]
 
 <div style="display:flex;flex-direction: row;justify-content:space-evenly;">
 <div style="text-align: center;">
-  <h2>Source Code</h2>
+  <h2>Source</h2>
   <p>
   <a href="https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2.tar.xz">darktable-5.6.2.tar.xz</a>
   </p>

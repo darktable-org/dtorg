@@ -257,7 +257,7 @@ darktable is developed for Linux, but it was ported to build on Mac. If you expe
 
 ### <a name="faq-mac-intel"></a>Why is there no official release for Intel Macs?<a href="#faq-mac-intel" class="anchor" title="Link to this FAQ entry">¶</a>
 
-[Homebrew](https://brew.sh/), which is used to build darktable for Mac through our GitHub actions, has discontinued support for Intel Macs, so there are no current releases for Intel Macs. The last version released for Intel Macs was [5.6.1](https://github.com/darktable-org/darktable/releases/tag/release-5.6.1). Community-built versions for Intel Macs are often available on the [forum](https://discuss.pixls.us/c/software/darktable/19). Please note that these builds are unofficial and not supported by the darktable project.
+[Homebrew](https://brew.sh/), which is used to build darktable for Mac through our GitHub actions, has [discontinued support](https://brew.sh/2026/09/13/homebrew-7.0.0/) for Intel Macs, so there are no current releases for Intel Macs. The last version released for Intel Macs was [5.6.1](https://github.com/darktable-org/darktable/releases/tag/release-5.6.1). Community-built versions for Intel Macs are often available on the [forum](https://discuss.pixls.us/c/software/darktable/19). Please note that these builds are unofficial and not supported by the darktable project.
 
 ## <a name="faq-old-versions"></a>Very Old Versions<a href="#faq-old-versions" class="anchor" title="Link to this FAQ section">¶</a>
 

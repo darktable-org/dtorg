@@ -6,7 +6,7 @@ home_logo: /images/darktable-logo-name-1520w.png
 <div class='container content description'>
     <div class='row'>
         <div class='column'>
-            <p>darktable is an open source photography workflow application and raw developer. Made by and for photographers that want full control, its flexible stack-based and scene-referred editing approach provides superior raw processing capabilities, while the lighttable lets you import, cull, tag and manage your photos.</p>
+            <p>darktable is an open source digital lighttable and darkroom. Made for and by photographers that value full control, its flexible stack-based and scene-referred editing approach provides advanced raw photo processing, while the library features offer versatile digital asset management.</p>
             <p>Have a look at our current <a href="/about/features/" title="features">features</a> and how to <a href="/install/" title="install">install</a> it on your system. And if you're new to darktable, the <a href="/about/faq/" title="FAQ">FAQ</a> will answer many of your questions.</p>
         </div>
     </div>

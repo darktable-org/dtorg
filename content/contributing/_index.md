@@ -1,5 +1,5 @@
 ---
-Title: development
+Title: contributing
 Date: 2017-09-21T14:55:35-06:00
 author: smn
 wordpress_id: 404
@@ -7,6 +7,8 @@ lede: lede-development.jpg
 lede_author: <a href="https://jo.dreggn.org/home/">jo</a>
 weight: 600
 menu: "footer"
+aliases:
+  - /development/
 ---
 
 <div class="subnav">
@@ -25,9 +27,13 @@ Just use it! And afterwards let us know how you like it. Send your _bug reports_
 
 If you found a bug or managed to crash darktable, please submit a _helpful backtrace_! Instructions are below.
 
+## Helping others
+
+Help others who have questions on our <a href="https://discuss.pixls.us/c/software/darktable" title="darktable Category on PIXLS.US">forum</a> or on <a href="https://github.com/darktable-org/darktable/issues">GitHub</a>.
+
 ## Translating
 
-A short introduction can be found in our git repository,  [TRANSLATORS.md](https://github.com/darktable-org/darktable/blob/master/doc/TRANSLATORS.md).
+Help keep your language maintained translating [darktable's UI](https://github.com/darktable-org/darktable/blob/master/doc/TRANSLATORS.md) or the [docs](https://docs.darktable.org/usermanual/development/en/contributing/translators-guide/).
 
 ## Calibrating Cameras
 

@@ -69,7 +69,7 @@ home_logo: /images/darktable-logo-name-1520w.png
       <div class='row'>
           <div class='column'>
               <p>
-              You do not need to write code to be involved in the darktable community! You can help other users by providing your input on the <a href="/contact/#how-to-get-in-contact" title="How to get in contact">mailing list</a> or the <a href="https://discuss.pixls.us/c/software/darktable" title="darktable Category on PIXLS.US">forum</a>. If you'd like to show others what darktable is capable of, contribute to the <a href="https://www.flickr.com/groups/1284326@N23/" title="darktable Flickr Group">Flickr</a> page. If you can write code, check out the <a href="https://github.com/darktable-org/darktable" title="darktable Repository on Github">source code</a>!
+                darktable has a friendly and welcoming community. Join us at the <a href="https://discuss.pixls.us/c/software/darktable" title="darktable Category on PIXLS.US">forum</a>, our <a href="https://www.flickr.com/groups/1284326@N23/" title="darktable Flickr Group">Flickr</a> page or in our <a href="https://matrix.to/#/#_oftc_#darktable:matrix.org">Matrix room</a>. You are also welcome to <a href="/contributing/">contribute</a> by participating on <a href="https://github.com/darktable-org/darktable">GitHub</a> or just by being part of the community.
               </p>
           </div>
       </div>

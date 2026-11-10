@@ -70,9 +70,12 @@ The [OBS](https://build.opensuse.org/) allows packagers to provide packages for 
 * openSUSE Tumbleweed
 * Ubuntu 22.04, 22.10, 23.04, 23.10, 24.04
 
-### Universal Package Formats
+### Universal Package Formats 
 
 * [Flatpak](https://www.flathub.org/apps/details/org.darktable.Darktable) (Note: Does not include darktable's AI features)
+* [Flatpark](https://flatpark.org/apps/org.darktable.Darktable/) (includes darktable's AI features)
+
+Note: Both Flatpak releases are community maintained.
 
 <h1 id='macos'>macOS</h1>
 

@@ -164,7 +164,9 @@ To start darktable from terminal use: `flatpak run org.darktable.Darktable`
 You can also invoke options like: `flatpak run org.darktable.Darktable -d perf`
 
 ### <a name="faq-flatpak-ai"></a>Does the Flatpak support darktables AI features?<a href="#faq-flatpak-ai" class="anchor" title="Link to this FAQ entry">¶</a>
-No, as of September 2026 the Flatpak release of darktable doesn't include AI features. 
+No, as of November 2026 the Flatpak release of darktable doesn't include AI features. The release on [Flatpark](https://flatpark.org/apps/org.darktable.Darktable/) however, does. 
+
+Note: Both Flatpak releases are community maintained. 
 
 ## <a name="faq-windows"></a>Windows<a href="#faq-windows" class="anchor" title="Link to this FAQ section">¶</a>
 

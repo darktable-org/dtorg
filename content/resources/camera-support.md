@@ -21,9 +21,8 @@ You don't need to go through these steps yourself necessarily but instead attach
 The following formats are explicitly not supported:
 
 - Apple ProRAW DNGs
-- CinemaDNG lossless (Blackmagic, some DJI, etc.) and lossy (Blackmagic)
 - DNG 1.7 using JPEG XL (Adobe enhanced, Samsung Expert RAW)
-- Nikon high efficiency NEFs from the Z5 II
+- Nikon high efficiency NEFs from cameras other than those listed below
 - Phase One other than IIQ L
 - Sony ARW 4.0/5.0 downsized lossless ("M" for full-frame, "S" for full-frame & APS-C)
 
@@ -33,11 +32,12 @@ If you are having problems opening a file and the camera is supported, make sure
 
 Starting with darktable 5.8, the following formats are loaded via LibRaw for cameras that are otherwise supported:
 
+- CinemaDNG lossless (Blackmagic, DJI) and lossy (Blackmagic)
 - Fujifilm lossy RAFs
 - Nikon high efficiency (HE/HE\*) NEFs (Z 8, Z 9, Z f, Z6 III)
 - Sony ARW 6.0 compressed and compressed HQ
 
-darktable builds that use a system LibRaw instead of the bundled one need LibRaw snapshot202611 or newer (with HE/HE* support in place for the Nikon) and Sony formats.
+darktable builds that use a system LibRaw instead of the bundled one need LibRaw snapshot 202611 or newer for the Nikon (with HE/HE\* support in place) and Sony formats.
 
 ## Supported Cameras
 

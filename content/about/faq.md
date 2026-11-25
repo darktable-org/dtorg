@@ -212,13 +212,7 @@ By default darktable uses your operating system's language and if a localization
 * You can change this setting in the configuration file itself. Open with an editor the configuration file of darktable `%LOCALAPPDATA%\darktable\darktablerc`, find the line `ui_last/gui_language=` and modify it to `ui_last/gui_language=C`. Please use a text editor which can handle Unix line endings, like Notepad++ or similar
 
 ### <a name="faq-windows-logs"></a>I read a lot of information in the manual to turn on some debug settings, but I cannot see any debug information. Where can I find those debug logs?<a href="#faq-windows-logs" class="anchor" title="Link to this FAQ entry">¶</a>
-The Windows version of **darktable (up to and including release 4.8.1)** by default logs its debug information to the following places (*these are hidden folders in Windows, therefore copy and paste the link to Windows File Explorer for access*):
-
-Windows 10 and later: `%LOCALAPPDATA%\Microsoft\Windows\INetCache\darktable\darktable-log.txt`
-
-Windows 7: `%LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files\darktable\darktable-log.txt`
-
-Since **darktable 5.0** the default location is: `%USERPROFILE%\Documents\Darktable\darktable-log.txt`
+The Windows version by default logs its debug information to: `%USERPROFILE%\Documents\Darktable\darktable-log.txt`
 
 ### <a name="faq-windows-unicode"></a>I export my image with a filename which contains some non-English characters, and it's not working perfectly, what can I do?<a href="#faq-windows-unicode" class="anchor" title="Link to this FAQ entry">¶</a>
 Windows handles path names very differently than Unix-like systems. One of the biggest challenges of porting to Windows was making sure that path and file name handling works both on original Unix-like operating systems and also on Windows. While we have tested the Windows port with various Unicode path and file names, it still can happen that it won't work in all cases, mostly due to external libraries used by darktable. In such cases you can fall back using plain ASCII characters in path and file names, but please also file a [bug report](https://github.com/darktable-org/darktable/issues).
